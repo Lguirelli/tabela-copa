@@ -1,0 +1,20 @@
+{
+  "modelo": "neural incremental + prior Poisson contextual",
+  "usa_previsoes_anteriores_como_entrada": false,
+  "usa_simulacoes_anteriores_como_entrada": false,
+  "validacao_sem_vazamento": true,
+  "jogos_previstos": 104,
+  "jogos_com_placar_real_validado": 62,
+  "acuracia_vencedor_percentual": 48.39,
+  "placar_exato_percentual": 6.45,
+  "erro_medio_total_gols": 2.323,
+  "erro_medio_xg_total": 2.064,
+  "proximidade_media_0_100": 38.77,
+  "dias_validados": 16,
+  "peso_resultado_anterior": "momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time",
+  "peso_desempenho": "menções de jogadores/desempenho entram somente após o jogo validado",
+  "rede_neural": "MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual",
+  "sklearn_disponivel": true,
+  "neural_min_samples": 16,
+  "simulations_parameter": 10000
+}
