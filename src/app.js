@@ -1,3 +1,4 @@
+
 const baseData = window.WC2026_DATA;
 const baseMatches = baseData.matches;
 const groups = baseData.groups;
@@ -19,17 +20,39 @@ const phaseLabels = {
   "Final": "Final"
 };
 
-const bracketRounds = [
-  { title: "16 avos", phases: ["16 avos de final"] },
-  { title: "Oitavas", phases: ["Oitavas de final"] },
-  { title: "Quartas", phases: ["Quartas de final"] },
-  { title: "Semifinais", phases: ["Semifinais"] },
-  { title: "Final e 3º lugar", phases: ["Final", "Disputa de 3º lugar"] }
-];
-
 const predictionByGame = new Map(predictions.map((item) => [Number(item.jogo), item]));
 const realByGame = new Map(realResults.map((item) => [Number(item.jogo), item]));
 const correctionByGame = new Map(corrections.map((item) => [Number(item.jogo), item]));
+
+const bracketLayout = {
+  left: {
+    r32: [73, 75, 74, 77, 83, 84, 81, 82],
+    r16: [89, 90, 93, 94],
+    qf: [97, 98],
+    sf: [101]
+  },
+  right: {
+    r32: [76, 78, 79, 80, 85, 87, 86, 88],
+    r16: [91, 92, 96, 95],
+    qf: [99, 100],
+    sf: [102]
+  },
+  center: {
+    final: 104,
+    third: 103
+  }
+};
+
+const bracketConnections = [
+  [73, 89], [75, 89], [74, 90], [77, 90], [89, 97], [90, 97],
+  [83, 93], [84, 93], [81, 94], [82, 94], [93, 98], [94, 98],
+  [97, 101], [98, 101],
+  [76, 91], [78, 91], [79, 92], [80, 92], [91, 99], [92, 99],
+  [85, 96], [87, 96], [86, 95], [88, 95], [95, 100], [96, 100],
+  [99, 102], [100, 102],
+  [101, 104], [102, 104],
+  [101, 103], [102, 103]
+];
 
 function normalize(value) {
   return String(value || "")
@@ -37,6 +60,7 @@ function normalize(value) {
     .replace(/\p{Diacritic}/gu, "")
     .toLowerCase();
 }
+
 function colorKey(value) {
   return normalize(value)
     .replace(/[^a-z0-9 ]+/g, " ")
@@ -80,40 +104,24 @@ function getTeamColors(team) {
   return null;
 }
 
-function textColorFor(hex) {
-  if (!hex || !/^#[0-9A-Fa-f]{6}$/.test(hex)) return "#ffffff";
-  const r = parseInt(hex.slice(1, 3), 16);
-  const g = parseInt(hex.slice(3, 5), 16);
-  const b = parseInt(hex.slice(5, 7), 16);
-  const yiq = (r * 299 + g * 587 + b * 114) / 1000;
-  return yiq >= 160 ? "#07101d" : "#ffffff";
-}
-
 function teamChip(team, side = "left") {
   if (!team || /^([123]º|Vencedor|Perdedor|TBD)/.test(team)) {
     return `<span class="team-chip team-chip--slot"><span class="team-chip__name">${team || "—"}</span></span>`;
   }
-  const colors = getTeamColors(team);
+
   const asset = getTeamAsset(team);
-  const primary = colors?.primary || "#38bdf8";
-  const secondary = colors?.secondary || primary;
-  const accent = colors?.accent || secondary;
-  const text = textColorFor(primary);
   const iconSource = asset?.icon || asset?.flagPng || asset?.flag || "";
   const icon = iconSource
     ? `<img class="team-flag-icon" src="${safeAttr(iconSource)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'" />`
-    : `<i aria-hidden="true"></i>`;
-  return `<span class="team-chip team-chip--${side}" title="${safeAttr(team)}" style="--team-primary:${primary};--team-secondary:${secondary};--team-accent:${accent};--team-text:${text};">${icon}<span class="team-chip__name">${team}</span></span>`;
-}
+    : `<span class="team-flag-fallback" aria-hidden="true"></span>`;
 
-function matchAccentStyle(match) {
-  const c1 = getTeamColors(match.equipe1);
-  const c2 = getTeamColors(match.equipe2);
-  const p1 = c1?.primary || "rgba(56,189,248,.7)";
-  const p2 = c2?.primary || "rgba(132,204,22,.7)";
-  return `style="--team-a:${p1};--team-b:${p2};"`;
+  return `
+    <span class="team-chip team-chip--${side}" title="${safeAttr(team)}">
+      ${icon}
+      <span class="team-chip__name">${team}</span>
+    </span>
+  `;
 }
-
 
 function formatDate(dateISO) {
   if (!dateISO) return "—";
@@ -127,15 +135,6 @@ function parseScore(score) {
   const found = clean.match(/^(\d+)(?:x|-|:)(\d+)$/i);
   if (!found) return null;
   return [Number(found[1]), Number(found[2])];
-}
-
-function winnerFromScore(team1, team2, score) {
-  const parsed = parseScore(score);
-  if (!parsed) return "";
-  const [g1, g2] = parsed;
-  if (g1 > g2) return team1;
-  if (g2 > g1) return team2;
-  return "Empate";
 }
 
 function buildMatches() {
@@ -179,8 +178,8 @@ function buildMatches() {
   });
 }
 
-function isFinished(match) {
-  return Boolean(match.hasReal);
+function matchByGame(game) {
+  return matches.find((item) => Number(item.jogo) === Number(game));
 }
 
 function renderStats() {
@@ -352,43 +351,117 @@ function renderGroupGames() {
   `).join("");
 }
 
-function renderMatchCard(match) {
+function renderBracketCard(match, extraClass = "") {
+  if (!match) return "";
   return `
-    <article class="match-card ${isFinished(match) ? "match-card--done" : ""}" ${matchAccentStyle(match)}>
-      <div class="match-card__top">
+    <article class="bracket-card ${match.hasReal ? "bracket-card--done" : ""} ${extraClass}" data-game="${match.jogo}">
+      <div class="bracket-card__meta">
         <span>Jogo ${match.jogo}</span>
         <span>${phaseLabels[match.fase] || match.fase}</span>
       </div>
-      <div class="match-card__teams">
-        <span>${teamChip(match.equipe1, "left")}</span>
-        <div class="score-stack">
-          <small>Prev.</small>${renderScore(match.predictionScore, "prediction")}
-          <small>Real</small>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}
-        </div>
-        <span>${teamChip(match.equipe2, "right")}</span>
+      <div class="bracket-card__teams">
+        <div class="bracket-team">${teamChip(match.equipe1, "left")}</div>
+        <div class="bracket-card__score">${renderScore(match.predictionScore, "prediction")}</div>
+        <div class="bracket-team bracket-team--right">${teamChip(match.equipe2, "right")}</div>
       </div>
-      ${match.hasReal ? `<div class="match-card__winner">Real: ${match.realWinner} · ${renderCorrection(match)}</div>` : `<div class="match-card__winner">Status: simulação · Previsto: ${match.predictionWinner || "—"}</div>`}
-      <div class="match-card__meta">${formatDate(match.data)} · ${match.horaLocal} · ${match.cidade}</div>
+      <div class="bracket-card__resultline">
+        <span class="label">Real</span>
+        <span class="value">${match.hasReal ? match.realScore : "—"}</span>
+        <span class="bracket-card__status ${match.hasReal ? "is-real" : "is-sim"}">${match.hasReal ? "Finalizado" : "Simulação"}</span>
+      </div>
+      <div class="bracket-card__winner">${match.hasReal ? `Vencedor real: ${match.realWinner}` : `Previsto: ${match.predictionWinner || "—"}`}</div>
     </article>
   `;
 }
 
-function renderBracket() {
-  const container = document.getElementById("bracket");
-  container.innerHTML = bracketRounds.map((round) => {
-    const roundMatches = matches
-      .filter((match) => round.phases.includes(match.fase))
-      .sort((a, b) => a.jogo - b.jogo);
-
+function makeBracketSlots(games, column, rows, side) {
+  return games.map((game, index) => {
+    const match = matchByGame(game);
+    const row = rows[index];
     return `
-      <section class="bracket-round">
-        <h3>${round.title}</h3>
-        <div class="bracket-stack">
-          ${roundMatches.map(renderMatchCard).join("")}
-        </div>
-      </section>
+      <div class="bracket-slot" style="grid-column:${column}; grid-row:${row};">
+        ${renderBracketCard(match, side === "right" ? "bracket-card--right" : "")}
+      </div>
     `;
   }).join("");
+}
+
+function renderBracket() {
+  const container = document.getElementById("bracket");
+  const html = `
+    <div class="bracket-frame">
+      <div id="bracket-board" class="bracket-board">
+        <svg class="bracket-svg" aria-hidden="true"></svg>
+
+        ${makeBracketSlots(bracketLayout.left.r32, 1, [1,3,5,7,9,11,13,15], "left")}
+        ${makeBracketSlots(bracketLayout.left.r16, 2, [2,6,10,14], "left")}
+        ${makeBracketSlots(bracketLayout.left.qf, 3, [4,12], "left")}
+        ${makeBracketSlots(bracketLayout.left.sf, 4, [8], "left")}
+
+        <div class="bracket-slot bracket-slot--center" style="grid-column:5; grid-row:7 / span 2;">
+          ${renderBracketCard(matchByGame(bracketLayout.center.final), "bracket-card--center")}
+        </div>
+        <div class="bracket-slot bracket-slot--third" style="grid-column:5; grid-row:11 / span 2;">
+          ${renderBracketCard(matchByGame(bracketLayout.center.third), "bracket-card--third")}
+        </div>
+
+        ${makeBracketSlots(bracketLayout.right.sf, 6, [8], "right")}
+        ${makeBracketSlots(bracketLayout.right.qf, 7, [4,12], "right")}
+        ${makeBracketSlots(bracketLayout.right.r16, 8, [2,6,10,14], "right")}
+        ${makeBracketSlots(bracketLayout.right.r32, 9, [1,3,5,7,9,11,13,15], "right")}
+      </div>
+    </div>
+  `;
+  container.innerHTML = html;
+  requestAnimationFrame(drawBracketLines);
+}
+
+function drawBracketLines() {
+  const board = document.getElementById("bracket-board");
+  if (!board) return;
+  const svg = board.querySelector(".bracket-svg");
+  if (!svg) return;
+
+  const boardRect = board.getBoundingClientRect();
+  const width = board.scrollWidth;
+  const height = board.scrollHeight;
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+  svg.setAttribute("width", width);
+  svg.setAttribute("height", height);
+  svg.innerHTML = "";
+
+  bracketConnections.forEach(([fromGame, toGame]) => {
+    const fromCard = board.querySelector(`[data-game="${fromGame}"]`);
+    const toCard = board.querySelector(`[data-game="${toGame}"]`);
+    if (!fromCard || !toCard) return;
+
+    const fromRect = fromCard.getBoundingClientRect();
+    const toRect = toCard.getBoundingClientRect();
+
+    const fromCenterY = fromRect.top - boardRect.top + fromRect.height / 2 + board.scrollTop;
+    const toCenterY = toRect.top - boardRect.top + toRect.height / 2 + board.scrollTop;
+    const fromIsLeft = fromRect.left < toRect.left;
+
+    const startX = fromIsLeft
+      ? (fromRect.right - boardRect.left + board.scrollLeft)
+      : (fromRect.left - boardRect.left + board.scrollLeft);
+    const endX = fromIsLeft
+      ? (toRect.left - boardRect.left + board.scrollLeft)
+      : (toRect.right - boardRect.left + board.scrollLeft);
+
+    const elbowX = fromIsLeft
+      ? startX + Math.max(24, (endX - startX) * 0.45)
+      : startX - Math.max(24, (startX - endX) * 0.45);
+
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", `M ${startX} ${fromCenterY} L ${elbowX} ${fromCenterY} L ${elbowX} ${toCenterY} L ${endX} ${toCenterY}`);
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", toGame === 103 ? "rgba(96,165,250,.65)" : "rgba(239,68,68,.65)");
+    path.setAttribute("stroke-width", toGame === 104 ? "3" : "2.4");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+    svg.appendChild(path);
+  });
 }
 
 function renderKnockoutTable() {
@@ -431,6 +504,9 @@ function bindEvents() {
       document.querySelectorAll(".view").forEach((view) => view.classList.remove("is-active"));
       tab.classList.add("is-active");
       document.getElementById(`${tab.dataset.view}-view`).classList.add("is-active");
+      if (tab.dataset.view === "knockout") {
+        setTimeout(drawBracketLines, 40);
+      }
     });
   });
 
@@ -440,6 +516,11 @@ function bindEvents() {
     renderGroupGames();
   });
   document.getElementById("ko-phase-filter").addEventListener("change", renderKnockoutTable);
+  window.addEventListener("resize", () => {
+    if (document.getElementById("knockout-view").classList.contains("is-active")) {
+      drawBracketLines();
+    }
+  });
 }
 
 function init() {
