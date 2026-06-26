@@ -76,3 +76,14 @@ scripts/atualizar_modelo.py
 - Proximidade média inicial: **24.7%**
 - Última data real na base: **2026-06-25**
 
+
+
+## Atualização aplicada
+
+- `data/team_colors.csv` e `src/team-colors.js` guardam as cores por seleção.
+- O front usa essas cores apenas como identidade visual dos cards e chips, sem exibir a base CSV.
+- O mata-mata foi recalculado com a classificação projetada dos grupos, usando resultado real quando existe e simulação quando ainda não existe resultado.
+- Arquivos auxiliares do recálculo:
+  - `data/neural/classificacao_projetada_grupos.csv`
+  - `data/neural/melhores_terceiros_projetados.csv`
+  - `data/neural/terceiros_colocados_mata_mata.csv`

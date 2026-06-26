@@ -14,7 +14,7 @@ Como usar:
    - src/model-data.js
 """
 from pathlib import Path
-import json, re, unicodedata
+import json, re, unicodedata, subprocess, sys
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -177,4 +177,5 @@ if not new_df.empty:
 else:
     print('Nenhuma nova entrada encontrada. Recalculando estado atual.')
 rebuild(real_df)
-print('Modelo e visualizador atualizados.')
+subprocess.run([sys.executable, str(ROOT / 'scripts' / 'recalcular_mata_mata.py')], check=True)
+print('Modelo, mata-mata e visualizador atualizados.')

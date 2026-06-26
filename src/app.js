@@ -5,6 +5,7 @@ const predictions = window.WC2026_PREDICTIONS || [];
 const realResults = window.WC2026_REAL_RESULTS || [];
 const corrections = window.WC2026_CORRECTIONS || [];
 const modelMetrics = window.WC2026_MODEL_METRICS || {};
+const teamColors = window.WC2026_TEAM_COLORS || {};
 
 let matches = [];
 
@@ -35,6 +36,49 @@ function normalize(value) {
     .replace(/\p{Diacritic}/gu, "")
     .toLowerCase();
 }
+function colorKey(value) {
+  return normalize(value)
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getTeamColors(team) {
+  const direct = teamColors[team];
+  if (direct) return direct;
+  const key = colorKey(team);
+  const foundName = Object.keys(teamColors).find((name) => colorKey(name) === key);
+  return foundName ? teamColors[foundName] : null;
+}
+
+function textColorFor(hex) {
+  if (!hex || !/^#[0-9A-Fa-f]{6}$/.test(hex)) return "#ffffff";
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  const yiq = (r * 299 + g * 587 + b * 114) / 1000;
+  return yiq >= 160 ? "#07101d" : "#ffffff";
+}
+
+function teamChip(team, side = "left") {
+  if (!team || /^([123]º|Vencedor|Perdedor)/.test(team)) return `<span class="team-chip team-chip--slot">${team || "—"}</span>`;
+  const colors = getTeamColors(team);
+  if (!colors) return `<span class="team-chip">${team}</span>`;
+  const primary = colors.primary || "#38bdf8";
+  const secondary = colors.secondary || primary;
+  const accent = colors.accent || secondary;
+  const text = textColorFor(primary);
+  return `<span class="team-chip team-chip--${side}" style="--team-primary:${primary};--team-secondary:${secondary};--team-accent:${accent};--team-text:${text};"><i aria-hidden="true"></i>${team}</span>`;
+}
+
+function matchAccentStyle(match) {
+  const c1 = getTeamColors(match.equipe1);
+  const c2 = getTeamColors(match.equipe2);
+  const p1 = c1?.primary || "rgba(56,189,248,.7)";
+  const p2 = c2?.primary || "rgba(132,204,22,.7)";
+  return `style="--team-a:${p1};--team-b:${p2};"`;
+}
+
 
 function formatDate(dateISO) {
   if (!dateISO) return "—";
@@ -207,7 +251,7 @@ function renderStandings() {
             ${rows.map((row, index) => `
               <tr>
                 <td>${index + 1}</td>
-                <td>${row.team}</td>
+                <td>${teamChip(row.team)}</td>
                 <td>${row.pts}</td>
                 <td>${row.played}</td>
                 <td>${row.wins}</td>
@@ -262,7 +306,7 @@ function renderGroupGames() {
       <td>${formatDate(match.data)}</td>
       <td>${match.horaLocal}</td>
       <td>${match.grupo}</td>
-      <td><strong>${match.equipe1}</strong> x <strong>${match.equipe2}</strong></td>
+      <td><div class="versus-line">${teamChip(match.equipe1, "left")}<span>x</span>${teamChip(match.equipe2, "right")}</div></td>
       <td>${renderScore(match.predictionScore, "prediction")}</td>
       <td>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}</td>
       <td>${renderStatus(match)}</td>
@@ -275,18 +319,18 @@ function renderGroupGames() {
 
 function renderMatchCard(match) {
   return `
-    <article class="match-card ${isFinished(match) ? "match-card--done" : ""}">
+    <article class="match-card ${isFinished(match) ? "match-card--done" : ""}" ${matchAccentStyle(match)}>
       <div class="match-card__top">
         <span>Jogo ${match.jogo}</span>
         <span>${phaseLabels[match.fase] || match.fase}</span>
       </div>
       <div class="match-card__teams">
-        <span>${match.equipe1}</span>
+        <span>${teamChip(match.equipe1, "left")}</span>
         <div class="score-stack">
           <small>Prev.</small>${renderScore(match.predictionScore, "prediction")}
           <small>Real</small>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}
         </div>
-        <span>${match.equipe2}</span>
+        <span>${teamChip(match.equipe2, "right")}</span>
       </div>
       ${match.hasReal ? `<div class="match-card__winner">Real: ${match.realWinner} · ${renderCorrection(match)}</div>` : `<div class="match-card__winner">Status: simulação · Previsto: ${match.predictionWinner || "—"}</div>`}
       <div class="match-card__meta">${formatDate(match.data)} · ${match.horaLocal} · ${match.cidade}</div>
@@ -325,7 +369,7 @@ function renderKnockoutTable() {
       <td>${phaseLabels[match.fase] || match.fase}</td>
       <td>${formatDate(match.data)}</td>
       <td>${match.horaLocal}</td>
-      <td><strong>${match.equipe1}</strong> x <strong>${match.equipe2}</strong></td>
+      <td><div class="versus-line">${teamChip(match.equipe1, "left")}<span>x</span>${teamChip(match.equipe2, "right")}</div></td>
       <td>${renderScore(match.predictionScore, "prediction")}</td>
       <td>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}</td>
       <td>${renderStatus(match)}</td>
