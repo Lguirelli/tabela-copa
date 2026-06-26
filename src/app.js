@@ -80,30 +80,46 @@ function parseResultsText(text) {
   return updates;
 }
 
+function applyResultUpdates(updates) {
+  matches = baseMatches.map((match) => {
+    const update = updates.get(match.jogo);
+    if (!update) return { ...match, placar: "", vencedor: "" };
+
+    const equipe1 = update.equipe1 || match.equipe1;
+    const equipe2 = update.equipe2 || match.equipe2;
+    return {
+      ...match,
+      equipe1,
+      equipe2,
+      confronto: `${equipe1} x ${equipe2}`,
+      status: update.status || match.status,
+      placar: update.placar || "",
+      vencedor: update.vencedor || ""
+    };
+  });
+}
+
 async function loadResults() {
+  const fallbackText = window.WC2026_RESULTS_TXT || "";
+
   try {
     const response = await fetch(`./data/resultados.txt?v=${Date.now()}`);
     if (!response.ok) throw new Error("resultados.txt não encontrado");
     const text = await response.text();
     const updates = parseResultsText(text);
 
-    matches = baseMatches.map((match) => {
-      const update = updates.get(match.jogo);
-      if (!update) return { ...match, placar: "", vencedor: "" };
+    if (!updates.size && fallbackText) {
+      applyResultUpdates(parseResultsText(fallbackText));
+      return;
+    }
 
-      const equipe1 = update.equipe1 || match.equipe1;
-      const equipe2 = update.equipe2 || match.equipe2;
-      return {
-        ...match,
-        equipe1,
-        equipe2,
-        confronto: `${equipe1} x ${equipe2}`,
-        status: update.status || match.status,
-        placar: update.placar || "",
-        vencedor: update.vencedor || ""
-      };
-    });
+    applyResultUpdates(updates);
   } catch (error) {
+    if (fallbackText) {
+      applyResultUpdates(parseResultsText(fallbackText));
+      return;
+    }
+
     matches = baseMatches.map((match) => ({ ...match, placar: "", vencedor: "" }));
   }
 }

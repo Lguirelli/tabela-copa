@@ -1,4 +1,4 @@
-jogo;status;placar;equipe1;equipe2;vencedor
+window.WC2026_RESULTS_TXT = `jogo;status;placar;equipe1;equipe2;vencedor
 1;Finalizado;2-1;México;África do Sul;México
 2;Finalizado;2-1;Coreia do Sul;Tchéquia;Coreia do Sul
 3;Finalizado;3-1;Canadá;Bósnia e Herzegovina;Canadá
@@ -103,3 +103,4 @@ jogo;status;placar;equipe1;equipe2;vencedor
 102;Finalizado;1-2;Iraque;Bélgica;Bélgica
 103;Finalizado;1-0;Espanha;Iraque;Espanha
 104;Finalizado;1-2;Japão;Bélgica;Bélgica
+`;
