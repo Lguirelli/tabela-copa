@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Copa 2026 | Análise de melhoria do modelo</title>
+  <meta name="description" content="Página de análise para entender o que influencia as previsões e como as correções melhoram o modelo." />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="hero hero--analysis">
+    <div class="hero__content">
+      <p class="eyebrow">Copa do Mundo FIFA 2026</p>
+      <h1>Análise de melhoria</h1>
+      <p class="subtitle">Página para entender quais dados influenciam a previsão, quanto o modelo errou nos jogos finalizados e quais sinais devem ser usados para corrigir as próximas entradas.</p>
+      <div class="source-line">
+        <a class="pill pill-link" href="./index.html">← Voltar ao visualizador</a>
+        <span class="pill">Matriz de influência</span>
+        <span class="pill pill--safe">Correções incrementais</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-shell analysis-shell">
+    <section class="analysis-grid" aria-label="Resumo de aprendizado">
+      <article class="stat-card">
+        <span>Jogos corrigidos</span>
+        <strong id="ana-corrections">—</strong>
+        <small>com resultado real registrado</small>
+      </article>
+      <article class="stat-card stat-card--accent">
+        <span>Acerto vencedor</span>
+        <strong id="ana-winner-accuracy">—</strong>
+        <small>previsão x real</small>
+      </article>
+      <article class="stat-card">
+        <span>Erro médio</span>
+        <strong id="ana-avg-error">—</strong>
+        <small>gols por jogo</small>
+      </article>
+      <article class="stat-card">
+        <span>Proximidade média</span>
+        <strong id="ana-proximity">—</strong>
+        <small>0 a 100</small>
+      </article>
+    </section>
+
+    <section class="view is-active analysis-section">
+      <div class="panel-head">
+        <div>
+          <h2>O que influencia o que</h2>
+          <p>Matriz de leitura para separar dado de entrada, impacto no modelo e tipo de melhoria esperada. Esta tabela ajuda a decidir quais campos merecem mais cuidado quando você atualizar novos resultados.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="games-table influence-table">
+          <thead>
+            <tr>
+              <th>Fator</th>
+              <th>Fonte</th>
+              <th>Impacta</th>
+              <th>Como melhora</th>
+              <th>Peso</th>
+              <th>Observação</th>
+            </tr>
+          </thead>
+          <tbody id="influence-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="analysis-columns">
+      <article class="view is-active analysis-section">
+        <div class="panel-head panel-head--compact">
+          <div>
+            <h2>Erros por tipo</h2>
+            <p>Agrupamento dos jogos finalizados por qualidade da previsão.</p>
+          </div>
+        </div>
+        <div id="error-buckets" class="bucket-list"></div>
+      </article>
+
+      <article class="view is-active analysis-section">
+        <div class="panel-head panel-head--compact">
+          <div>
+            <h2>Arbitragem</h2>
+            <p>Relação entre rigor/fluidez simulados e erro registrado.</p>
+          </div>
+        </div>
+        <div id="referee-impact" class="bucket-list"></div>
+      </article>
+    </section>
+
+    <section class="view is-active analysis-section">
+      <div class="panel-head">
+        <div>
+          <h2>Correções por seleção</h2>
+          <p>Mostra quais seleções tiveram maior ajuste positivo ou negativo depois que os resultados reais entraram.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="games-table compact-table">
+          <thead>
+            <tr>
+              <th>Seleção</th>
+              <th>Jogos corrigidos</th>
+              <th>Ajuste acumulado</th>
+              <th>Sentido da correção</th>
+              <th>Leitura</th>
+            </tr>
+          </thead>
+          <tbody id="team-adjustments-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="view is-active analysis-section">
+      <div class="panel-head">
+        <div>
+          <h2>Últimas correções registradas</h2>
+          <p>Previsão anterior, resultado real e tipo de erro. Use esta tabela para entender por que o modelo precisa ser ajustado antes dos próximos jogos.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="games-table compact-table">
+          <thead>
+            <tr>
+              <th>Jogo</th>
+              <th>Confronto</th>
+              <th>Previsão</th>
+              <th>Real</th>
+              <th>Vencedor</th>
+              <th>Erro gols</th>
+              <th>Proximidade</th>
+              <th>Correção</th>
+            </tr>
+          </thead>
+          <tbody id="corrections-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="./src/data.js"></script>
+  <script src="./src/model-data.js"></script>
+  <script src="./src/team-assets.js"></script>
+  <script src="./src/analysis.js"></script>
+</body>
+</html>

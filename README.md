@@ -87,3 +87,8 @@ scripts/atualizar_modelo.py
   - `data/neural/classificacao_projetada_grupos.csv`
   - `data/neural/melhores_terceiros_projetados.csv`
   - `data/neural/terceiros_colocados_mata_mata.csv`
+
+
+## Página de análise
+
+A página `analise.html` mostra a matriz de influência do modelo, os erros por tipo, ajustes por seleção e últimas correções registradas. Ela usa os dados já exportados em `src/model-data.js` e a matriz em `data/analise/matriz_influencia.csv`.

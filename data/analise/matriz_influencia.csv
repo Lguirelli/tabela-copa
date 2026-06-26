@@ -1,0 +1,11 @@
+fator,fonte,impacta,como_melhora_o_modelo,peso_pratico,observacao
+Resultado real,data/resultados_reais.csv e data/neural/correcoes_modelo.csv,"Erro, proximidade, vencedor correto e ajuste de rating",Atualiza a força das seleções e registra a correção,Muito alto,É o dado que sobrepõe a simulação quando o jogo termina.
+Previsão anterior,data/previsoes_modelo.csv,Diferença entre previsto e real,Serve como ponto de comparação para medir o erro,Muito alto,"Sem previsão anterior não existe aprendizado, apenas registro de resultado."
+Força agregada da seleção,data/database/team_strengths.csv,"xG, vencedor provável e confiança",Ajusta a tendência inicial antes de entrar o resultado real,Alto,"Combina jogadores, experiência, ataque, meio, defesa, goleiro e estilo."
+Estilo do técnico,data/database/teams_tactical.csv,"Ritmo, posse, pressão, risco tático",Modifica como a força do time aparece em campo,Médio/alto,"Ajuda a entender confrontos de estilos, mas ainda é leitura qualitativa."
+Arbitragem simulada,data/database/simulated_referee_assignments.csv,"Cartões proxy, fluidez, ritmo de jogo","Pode alterar intensidade, faltas e risco de jogo travado",Médio,"A escala e o perfil ainda são simulados, então o peso deve ser limitado."
+Correção acumulada por seleção,data/neural/estado_times.csv e model_state.json,Rating ajustado para os próximos jogos,Corrige excesso ou falta de confiança em cada seleção,Alto,"A cada erro, o modelo sobe ou reduz rating das equipes envolvidas."
+Erro total de gols,data/neural/correcoes_modelo.csv,Precisão do placar,Recalibra tendência de placares muito altos ou muito baixos,Alto,"Quanto maior o erro, maior a necessidade de ajuste no modelo."
+Erro de saldo,data/neural/correcoes_modelo.csv,Leitura de domínio entre as equipes,Revisa força relativa entre adversários,Alto,"Importante para mata-mata, onde saldo ajuda a entender favoritismo."
+Confiança do modelo,data/previsoes_modelo.csv,Risco da previsão,Permite filtrar jogos onde o modelo está inseguro,Médio,Baixa confiança deve gerar alerta visual e menor peso decisório.
+Assets e cores,assets/teams e data/team_colors.csv,Visualização e leitura dos times,"Não altera previsão, só melhora interface",Visual,Não deve influenciar o modelo matemático.
