@@ -1,7 +1,12 @@
 const baseData = window.WC2026_DATA;
 const baseMatches = baseData.matches;
 const groups = baseData.groups;
-let matches = [...baseMatches];
+const predictions = window.WC2026_PREDICTIONS || [];
+const realResults = window.WC2026_REAL_RESULTS || [];
+const corrections = window.WC2026_CORRECTIONS || [];
+const modelMetrics = window.WC2026_MODEL_METRICS || {};
+
+let matches = [];
 
 const phaseLabels = {
   "16 avos de final": "16 avos",
@@ -20,6 +25,10 @@ const bracketRounds = [
   { title: "Final e 3º lugar", phases: ["Final", "Disputa de 3º lugar"] }
 ];
 
+const predictionByGame = new Map(predictions.map((item) => [Number(item.jogo), item]));
+const realByGame = new Map(realResults.map((item) => [Number(item.jogo), item]));
+const correctionByGame = new Map(corrections.map((item) => [Number(item.jogo), item]));
+
 function normalize(value) {
   return String(value || "")
     .normalize("NFD")
@@ -29,13 +38,8 @@ function normalize(value) {
 
 function formatDate(dateISO) {
   if (!dateISO) return "—";
-  const [year, month, day] = dateISO.split("-");
+  const [year, month, day] = String(dateISO).split("-");
   return `${day}/${month}/${year}`;
-}
-
-function isFinished(match) {
-  const status = normalize(match.status);
-  return Boolean(match.placar) || status.includes("final") || status.includes("encerr") || status.includes("complet");
 }
 
 function parseScore(score) {
@@ -46,89 +50,68 @@ function parseScore(score) {
   return [Number(found[1]), Number(found[2])];
 }
 
-function splitLine(line) {
-  return line.split(";").map((item) => item.trim());
+function winnerFromScore(team1, team2, score) {
+  const parsed = parseScore(score);
+  if (!parsed) return "";
+  const [g1, g2] = parsed;
+  if (g1 > g2) return team1;
+  if (g2 > g1) return team2;
+  return "Empate";
 }
 
-function parseResultsText(text) {
-  const rows = text
-    .replace(/^\uFEFF/, "")
-    .split(/\r?\n/)
-    .map((line) => line.trim())
-    .filter(Boolean);
+function buildMatches() {
+  matches = baseMatches.map((base) => {
+    const prediction = predictionByGame.get(Number(base.jogo));
+    const real = realByGame.get(Number(base.jogo));
+    const correction = correctionByGame.get(Number(base.jogo));
+    const hasReal = Boolean(real && real.placar_real);
 
-  if (!rows.length) return new Map();
+    const equipe1 = hasReal
+      ? real.equipe1
+      : prediction?.equipe1_prevista || base.equipe1;
+    const equipe2 = hasReal
+      ? real.equipe2
+      : prediction?.equipe2_prevista || base.equipe2;
 
-  const header = splitLine(rows[0]).map(normalize);
-  const index = Object.fromEntries(header.map((name, idx) => [name, idx]));
-  const updates = new Map();
+    const predictionScore = hasReal
+      ? prediction?.placar_previsto_original
+      : prediction?.placar_previsto_atual || prediction?.placar_previsto_original;
 
-  rows.slice(1).forEach((line) => {
-    const cols = splitLine(line);
-    const gameNumber = Number(cols[index.jogo]);
-    if (!gameNumber) return;
+    const predictionWinner = hasReal
+      ? prediction?.vencedor_previsto_original
+      : prediction?.vencedor_previsto_atual || prediction?.vencedor_previsto_original;
 
-    updates.set(gameNumber, {
-      status: cols[index.status] || "",
-      placar: cols[index.placar] || "",
-      equipe1: cols[index.equipe1] || "",
-      equipe2: cols[index.equipe2] || "",
-      vencedor: cols[index.vencedor] || ""
-    });
-  });
-
-  return updates;
-}
-
-function applyResultUpdates(updates) {
-  matches = baseMatches.map((match) => {
-    const update = updates.get(match.jogo);
-    if (!update) return { ...match, placar: "", vencedor: "" };
-
-    const equipe1 = update.equipe1 || match.equipe1;
-    const equipe2 = update.equipe2 || match.equipe2;
     return {
-      ...match,
+      ...base,
       equipe1,
       equipe2,
       confronto: `${equipe1} x ${equipe2}`,
-      status: update.status || match.status,
-      placar: update.placar || "",
-      vencedor: update.vencedor || ""
+      prediction,
+      real,
+      correction,
+      hasReal,
+      predictionScore: predictionScore || "",
+      predictionWinner: predictionWinner || "",
+      realScore: hasReal ? real.placar_real : "",
+      realWinner: hasReal ? real.vencedor_real : "",
+      status: hasReal ? "Finalizado" : "Simulação",
+      scoreForTable: hasReal ? real.placar_real : (predictionScore || "")
     };
   });
 }
 
-async function loadResults() {
-  const fallbackText = window.WC2026_RESULTS_TXT || "";
-
-  try {
-    const response = await fetch(`./data/resultados.txt?v=${Date.now()}`);
-    if (!response.ok) throw new Error("resultados.txt não encontrado");
-    const text = await response.text();
-    const updates = parseResultsText(text);
-
-    if (!updates.size && fallbackText) {
-      applyResultUpdates(parseResultsText(fallbackText));
-      return;
-    }
-
-    applyResultUpdates(updates);
-  } catch (error) {
-    if (fallbackText) {
-      applyResultUpdates(parseResultsText(fallbackText));
-      return;
-    }
-
-    matches = baseMatches.map((match) => ({ ...match, placar: "", vencedor: "" }));
-  }
+function isFinished(match) {
+  return Boolean(match.hasReal);
 }
 
 function renderStats() {
+  const finished = matches.filter((match) => match.hasReal).length;
   document.getElementById("stat-total").textContent = matches.length;
-  document.getElementById("stat-groups").textContent = matches.filter((match) => match.fase === "Fase de grupos").length;
-  document.getElementById("stat-ko").textContent = matches.filter((match) => match.fase !== "Fase de grupos").length;
-  document.getElementById("stat-finished").textContent = matches.filter(isFinished).length;
+  document.getElementById("stat-finished").textContent = finished;
+  document.getElementById("stat-simulated").textContent = matches.length - finished;
+  document.getElementById("stat-proximity").textContent = modelMetrics.proximidade_media_0_100
+    ? `${modelMetrics.proximidade_media_0_100}%`
+    : "—";
 }
 
 function populateFilters() {
@@ -142,7 +125,7 @@ function populateFilters() {
     groupFilter.appendChild(option);
   });
 
-  [...new Set(matches.filter((match) => match.fase !== "Fase de grupos").map((match) => match.fase))]
+  [...new Set(baseMatches.filter((match) => match.fase !== "Fase de grupos").map((match) => match.fase))]
     .forEach((phase) => {
       const option = document.createElement("option");
       option.value = phase;
@@ -170,7 +153,7 @@ function calculateStandings(group) {
   matches
     .filter((match) => match.fase === "Fase de grupos" && match.grupo === group.grupo)
     .forEach((match) => {
-      const score = parseScore(match.placar);
+      const score = parseScore(match.scoreForTable);
       if (!score) return;
 
       const [g1, g2] = score;
@@ -240,14 +223,24 @@ function renderStandings() {
   }).join("");
 }
 
-function renderStatus(status) {
-  const label = status || "Agendado";
-  const done = normalize(label).includes("final") || normalize(label).includes("encerr") || normalize(label).includes("complet");
-  return `<span class="status ${done ? "status--done" : ""}">${label}</span>`;
+function renderStatus(match) {
+  const done = match.hasReal;
+  return `<span class="status ${done ? "status--done" : "status--sim"}">${done ? "Finalizado" : "Simulação"}</span>`;
 }
 
-function renderScore(match) {
-  return match.placar ? `<strong class="score">${match.placar}</strong>` : `<span class="muted">—</span>`;
+function renderScore(score, type = "prediction") {
+  if (!score) return `<span class="muted">—</span>`;
+  return `<strong class="score score--${type}">${score}</strong>`;
+}
+
+function renderCorrection(match) {
+  if (!match.hasReal || !match.correction) return `<span class="muted">—</span>`;
+  const ok = match.correction.acertou_vencedor === "Sim";
+  return `
+    <span class="correction ${ok ? "correction--ok" : "correction--miss"}">
+      ${match.correction.proximidade_0_100}% · erro ${match.correction.erro_total_gols}
+    </span>
+  `;
 }
 
 function renderGroupGames() {
@@ -264,14 +257,16 @@ function renderGroupGames() {
     });
 
   body.innerHTML = filtered.map((match) => `
-    <tr>
+    <tr class="${match.hasReal ? "row-real" : "row-sim"}">
       <td>${match.jogo}</td>
       <td>${formatDate(match.data)}</td>
       <td>${match.horaLocal}</td>
       <td>${match.grupo}</td>
       <td><strong>${match.equipe1}</strong> x <strong>${match.equipe2}</strong></td>
-      <td>${renderScore(match)}</td>
-      <td>${renderStatus(match.status)}</td>
+      <td>${renderScore(match.predictionScore, "prediction")}</td>
+      <td>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}</td>
+      <td>${renderStatus(match)}</td>
+      <td>${renderCorrection(match)}</td>
       <td>${match.estadio}</td>
       <td>${match.cidade}</td>
     </tr>
@@ -287,10 +282,13 @@ function renderMatchCard(match) {
       </div>
       <div class="match-card__teams">
         <span>${match.equipe1}</span>
-        ${renderScore(match)}
+        <div class="score-stack">
+          <small>Prev.</small>${renderScore(match.predictionScore, "prediction")}
+          <small>Real</small>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}
+        </div>
         <span>${match.equipe2}</span>
       </div>
-      ${match.vencedor ? `<div class="match-card__winner">Vencedor: ${match.vencedor}</div>` : ""}
+      ${match.hasReal ? `<div class="match-card__winner">Real: ${match.realWinner} · ${renderCorrection(match)}</div>` : `<div class="match-card__winner">Status: simulação · Previsto: ${match.predictionWinner || "—"}</div>`}
       <div class="match-card__meta">${formatDate(match.data)} · ${match.horaLocal} · ${match.cidade}</div>
     </article>
   `;
@@ -322,15 +320,17 @@ function renderKnockoutTable() {
     .filter((match) => selectedPhase === "all" || match.fase === selectedPhase);
 
   body.innerHTML = filtered.map((match) => `
-    <tr>
+    <tr class="${match.hasReal ? "row-real" : "row-sim"}">
       <td>${match.jogo}</td>
       <td>${phaseLabels[match.fase] || match.fase}</td>
       <td>${formatDate(match.data)}</td>
       <td>${match.horaLocal}</td>
       <td><strong>${match.equipe1}</strong> x <strong>${match.equipe2}</strong></td>
-      <td>${renderScore(match)}</td>
-      <td>${renderStatus(match.status)}</td>
-      <td>${match.vencedor || "—"}</td>
+      <td>${renderScore(match.predictionScore, "prediction")}</td>
+      <td>${match.hasReal ? renderScore(match.realScore, "real") : `<span class="muted">—</span>`}</td>
+      <td>${renderStatus(match)}</td>
+      <td>${match.hasReal ? match.realWinner : match.predictionWinner || "—"}</td>
+      <td>${renderCorrection(match)}</td>
       <td>${match.estadio}</td>
       <td>${match.cidade}</td>
     </tr>
@@ -363,10 +363,10 @@ function bindEvents() {
   document.getElementById("ko-phase-filter").addEventListener("change", renderKnockoutTable);
 }
 
-async function init() {
+function init() {
+  buildMatches();
   populateFilters();
   bindEvents();
-  await loadResults();
   renderAll();
 }
 

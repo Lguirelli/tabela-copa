@@ -12,12 +12,12 @@
     <div class="hero__content">
       <p class="eyebrow">Copa do Mundo FIFA 2026</p>
       <h1>Visualizador de resultados</h1>
-      <p class="subtitle">Tabela estática dividida entre fase de grupos e mata-mata. Para atualizar placares, status e equipes classificadas, edite apenas <code>data/resultados.txt</code>.</p>
+      <p class="subtitle">Tabela estática dividida entre fase de grupos e mata-mata. Resultado real e previsão aparecem lado a lado. Novas entradas devem ser adicionadas em <code>data/entrada/novos_resultados.csv</code> e processadas pelo script de atualização.</p>
       <div class="source-line">
         <span class="pill">104 jogos</span>
         <span class="pill">48 seleções</span>
         <span class="pill">12 grupos</span>
-        <span class="pill pill--safe">Atualização por TXT</span>
+        <span class="pill pill--safe">Aprendizado incremental</span>
       </div>
     </div>
   </header>
@@ -29,20 +29,20 @@
         <strong id="stat-total">104</strong>
         <small>jogos no calendário</small>
       </article>
-      <article class="stat-card">
-        <span>Fase de grupos</span>
-        <strong id="stat-groups">72</strong>
-        <small>partidas</small>
-      </article>
-      <article class="stat-card">
-        <span>Mata-mata</span>
-        <strong id="stat-ko">32</strong>
-        <small>partidas</small>
-      </article>
       <article class="stat-card stat-card--accent">
-        <span>Finalizados</span>
+        <span>Finalizados reais</span>
         <strong id="stat-finished">0</strong>
-        <small>via resultados.txt</small>
+        <small>com correção registrada</small>
+      </article>
+      <article class="stat-card">
+        <span>Em simulação</span>
+        <strong id="stat-simulated">0</strong>
+        <small>sem resultado real</small>
+      </article>
+      <article class="stat-card">
+        <span>Proximidade média</span>
+        <strong id="stat-proximity">—</strong>
+        <small>previsão x real</small>
       </article>
     </section>
 
@@ -55,7 +55,7 @@
       <div class="panel-head">
         <div>
           <h2>Fase de grupos</h2>
-          <p>Jogos, placares e classificação calculada a partir do arquivo de resultados.</p>
+          <p>Resultados reais disponíveis e simulações para jogos pendentes, com correção do modelo registrada por partida.</p>
         </div>
         <div class="controls">
           <label>
@@ -82,8 +82,10 @@
               <th>Hora local</th>
               <th>Grupo</th>
               <th>Confronto</th>
-              <th>Resultado</th>
+              <th>Previsão</th>
+              <th>Resultado real</th>
               <th>Status</th>
+              <th>Correção</th>
               <th>Estádio</th>
               <th>Cidade</th>
             </tr>
@@ -121,9 +123,11 @@
               <th>Data</th>
               <th>Hora local</th>
               <th>Confronto</th>
-              <th>Resultado</th>
+              <th>Previsão</th>
+              <th>Resultado real</th>
               <th>Status</th>
               <th>Vencedor</th>
+              <th>Correção</th>
               <th>Estádio</th>
               <th>Cidade</th>
             </tr>
@@ -135,6 +139,7 @@
   </main>
 
   <script src="./src/data.js"></script>
+  <script src="./src/model-data.js"></script>
   <script src="./src/results.js"></script>
   <script src="./src/app.js"></script>
 </body>

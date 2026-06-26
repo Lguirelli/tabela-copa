@@ -1,4 +1,4 @@
-﻿jogo,data,fase,equipe1,equipe2,gols1_real,gols2_real,placar,vencedor,status,fonte,placar_original
+﻿jogo,data,fase,equipe1,equipe2,gols1_real,gols2_real,placar_real,vencedor_real,status_real,fonte,placar_original
 1,2026-06-11,Fase de grupos,México,África do Sul,2,0,2-0,México,Finalizado,https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/,México 2 x 0 África do Sul
 2,2026-06-11,Fase de grupos,Coreia do Sul,Tchéquia,2,1,2-1,Coreia do Sul,Finalizado,https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/,República da Coreia 2 x 1 Tchéquia
 3,2026-06-12,Fase de grupos,Canadá,Bósnia e Herzegovina,1,1,1-1,Empate,Finalizado,https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/,Canadá 1 x 1 Bósnia e Herzegovina

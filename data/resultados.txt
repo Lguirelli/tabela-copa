@@ -1,105 +1,61 @@
 jogo;status;placar;equipe1;equipe2;vencedor
-1;Finalizado;2-1;México;África do Sul;México
+1;Finalizado;2-0;México;África do Sul;México
 2;Finalizado;2-1;Coreia do Sul;Tchéquia;Coreia do Sul
-3;Finalizado;3-1;Canadá;Bósnia e Herzegovina;Canadá
-4;Finalizado;2-0;Estados Unidos;Paraguai;Estados Unidos
-5;Finalizado;2-2;Haiti;Escócia;Empate
-6;Finalizado;1-3;Austrália;Turquia;Turquia
-7;Finalizado;1-0;Brasil;Marrocos;Brasil
-8;Finalizado;0-2;Catar;Suíça;Suíça
-9;Finalizado;1-2;Costa do Marfim;Equador;Equador
-10;Finalizado;0-2;Alemanha;Curaçao;Curaçao
-11;Finalizado;0-2;Países Baixos;Japão;Japão
-12;Finalizado;2-1;Suécia;Tunísia;Suécia
-13;Finalizado;1-0;Arábia Saudita;Uruguai;Arábia Saudita
-14;Finalizado;1-0;Espanha;Cabo Verde;Espanha
-15;Finalizado;2-1;Irã;Nova Zelândia;Irã
-16;Finalizado;0-1;Bélgica;Egito;Egito
-17;Finalizado;1-1;França;Senegal;Empate
-18;Finalizado;0-2;Iraque;Noruega;Noruega
-19;Finalizado;2-0;Argentina;Argélia;Argentina
-20;Finalizado;0-1;Áustria;Jordânia;Jordânia
-21;Finalizado;0-1;Gana;Panamá;Panamá
-22;Finalizado;2-4;Inglaterra;Croácia;Croácia
+3;Finalizado;1-1;Canadá;Bósnia e Herzegovina;Empate
+4;Finalizado;4-1;Estados Unidos;Paraguai;Estados Unidos
+5;Finalizado;0-1;Haiti;Escócia;Escócia
+6;Finalizado;2-0;Austrália;Turquia;Austrália
+7;Finalizado;1-1;Brasil;Marrocos;Empate
+8;Finalizado;1-1;Catar;Suíça;Empate
+9;Finalizado;1-0;Costa do Marfim;Equador;Costa do Marfim
+10;Finalizado;7-1;Alemanha;Curaçao;Alemanha
+11;Finalizado;2-2;Países Baixos;Japão;Empate
+12;Finalizado;5-1;Suécia;Tunísia;Suécia
+13;Finalizado;1-1;Arábia Saudita;Uruguai;Empate
+14;Finalizado;0-0;Espanha;Cabo Verde;Empate
+15;Finalizado;2-2;Irã;Nova Zelândia;Empate
+16;Finalizado;1-1;Bélgica;Egito;Empate
+17;Finalizado;3-1;França;Senegal;França
+18;Finalizado;1-4;Iraque;Noruega;Noruega
+19;Finalizado;3-0;Argentina;Argélia;Argentina
+20;Finalizado;3-1;Áustria;Jordânia;Áustria
+21;Finalizado;1-0;Gana;Panamá;Gana
+22;Finalizado;4-2;Inglaterra;Croácia;Inglaterra
 23;Finalizado;1-1;Portugal;RD Congo;Empate
-24;Finalizado;2-1;Uzbequistão;Colômbia;Uzbequistão
-25;Finalizado;0-2;Tchéquia;África do Sul;África do Sul
-26;Finalizado;1-0;Suíça;Bósnia e Herzegovina;Suíça
-27;Finalizado;0-1;Canadá;Catar;Catar
-28;Finalizado;0-2;México;Coreia do Sul;Coreia do Sul
+24;Finalizado;1-3;Uzbequistão;Colômbia;Colômbia
+25;Finalizado;1-1;Tchéquia;África do Sul;Empate
+26;Finalizado;4-1;Suíça;Bósnia e Herzegovina;Suíça
+27;Finalizado;6-0;Canadá;Catar;Canadá
+28;Finalizado;1-0;México;Coreia do Sul;México
 29;Finalizado;3-0;Brasil;Haiti;Brasil
-30;Finalizado;3-1;Escócia;Marrocos;Escócia
-31;Finalizado;2-0;Turquia;Paraguai;Turquia
-32;Finalizado;0-0;Estados Unidos;Austrália;Empate
-33;Finalizado;3-2;Alemanha;Costa do Marfim;Alemanha
-34;Finalizado;5-0;Equador;Curaçao;Equador
-35;Finalizado;2-0;Países Baixos;Suécia;Países Baixos
-36;Finalizado;1-1;Tunísia;Japão;Empate
-37;Finalizado;2-0;Uruguai;Cabo Verde;Uruguai
-38;Finalizado;2-0;Espanha;Arábia Saudita;Espanha
+30;Finalizado;0-1;Escócia;Marrocos;Marrocos
+31;Finalizado;0-1;Turquia;Paraguai;Paraguai
+32;Finalizado;2-0;Estados Unidos;Austrália;Estados Unidos
+33;Finalizado;2-1;Alemanha;Costa do Marfim;Alemanha
+34;Finalizado;0-0;Equador;Curaçao;Empate
+35;Finalizado;5-1;Países Baixos;Suécia;Países Baixos
+36;Finalizado;0-4;Tunísia;Japão;Japão
+37;Finalizado;2-2;Uruguai;Cabo Verde;Empate
+38;Finalizado;4-0;Espanha;Arábia Saudita;Espanha
 39;Finalizado;0-0;Bélgica;Irã;Empate
-40;Finalizado;0-2;Nova Zelândia;Egito;Egito
-41;Finalizado;1-2;Noruega;Senegal;Senegal
-42;Finalizado;1-1;França;Iraque;Empate
-43;Finalizado;0-1;Argentina;Áustria;Áustria
-44;Finalizado;0-2;Jordânia;Argélia;Argélia
-45;Finalizado;2-0;Inglaterra;Gana;Inglaterra
-46;Finalizado;0-2;Panamá;Croácia;Croácia
-47;Finalizado;1-1;Portugal;Uzbequistão;Empate
-48;Finalizado;3-0;Colômbia;RD Congo;Colômbia
-49;Finalizado;1-2;Escócia;Brasil;Brasil
-50;Finalizado;0-0;Marrocos;Haiti;Empate
-51;Finalizado;2-0;Suíça;Canadá;Suíça
-52;Finalizado;2-2;Bósnia e Herzegovina;Catar;Empate
-53;Finalizado;0-1;Tchéquia;México;México
+40;Finalizado;1-3;Nova Zelândia;Egito;Egito
+41;Finalizado;3-2;Noruega;Senegal;Noruega
+42;Finalizado;3-0;França;Iraque;França
+43;Finalizado;2-0;Argentina;Áustria;Argentina
+44;Finalizado;1-2;Jordânia;Argélia;Argélia
+45;Finalizado;0-0;Inglaterra;Gana;Empate
+46;Finalizado;0-1;Panamá;Croácia;Croácia
+47;Finalizado;5-0;Portugal;Uzbequistão;Portugal
+48;Finalizado;1-0;Colômbia;RD Congo;Colômbia
+49;Finalizado;0-3;Escócia;Brasil;Brasil
+50;Finalizado;4-2;Marrocos;Haiti;Marrocos
+51;Finalizado;2-1;Suíça;Canadá;Suíça
+52;Finalizado;3-1;Bósnia e Herzegovina;Catar;Bósnia e Herzegovina
+53;Finalizado;0-3;Tchéquia;México;México
 54;Finalizado;1-0;África do Sul;Coreia do Sul;África do Sul
-55;Finalizado;1-0;Curaçao;Costa do Marfim;Curaçao
-56;Finalizado;1-1;Equador;Alemanha;Empate
-57;Finalizado;2-0;Japão;Suécia;Japão
-58;Finalizado;0-1;Tunísia;Países Baixos;Países Baixos
-59;Finalizado;0-0;Turquia;Estados Unidos;Empate
-60;Finalizado;1-4;Paraguai;Austrália;Austrália
-61;Finalizado;0-0;Noruega;França;Empate
-62;Finalizado;1-3;Senegal;Iraque;Iraque
-63;Finalizado;2-1;Egito;Irã;Egito
-64;Finalizado;0-3;Nova Zelândia;Bélgica;Bélgica
-65;Finalizado;1-2;Cabo Verde;Arábia Saudita;Arábia Saudita
-66;Finalizado;1-0;Uruguai;Espanha;Uruguai
-67;Finalizado;1-2;Panamá;Inglaterra;Inglaterra
-68;Finalizado;3-3;Croácia;Gana;Empate
-69;Finalizado;0-0;Argélia;Áustria;Empate
-70;Finalizado;0-1;Jordânia;Argentina;Argentina
-71;Finalizado;3-3;Colômbia;Portugal;Empate
-72;Finalizado;3-1;RD Congo;Uzbequistão;RD Congo
-73;Finalizado;0-2;África do Sul;Catar;Catar
-74;Finalizado;3-0;Equador;México;Equador
-75;Finalizado;3-0;Japão;Escócia;Japão
-76;Finalizado;1-0;Brasil;Países Baixos;Brasil
-77;Finalizado;3-3;Noruega;Arábia Saudita;Noruega
-78;Finalizado;1-2;Curaçao;Iraque;Iraque
-79;Finalizado;1-1;Coreia do Sul;Alemanha;Alemanha
-80;Finalizado;2-0;Croácia;Áustria;Croácia
-81;Finalizado;0-0;Turquia;Senegal;Turquia
-82;Finalizado;3-1;Egito;México;Egito
-83;Finalizado;0-0;RD Congo;Inglaterra;RD Congo
-84;Finalizado;4-1;Espanha;Argélia;Espanha
-85;Finalizado;1-0;Suíça;Irã;Suíça
-86;Finalizado;2-0;Argentina;Uruguai;Argentina
-87;Finalizado;1-0;Colômbia;Austrália;Colômbia
-88;Finalizado;0-1;Estados Unidos;Bélgica;Bélgica
-89;Finalizado;0-2;Catar;Japão;Japão
-90;Finalizado;2-3;Equador;Noruega;Noruega
-91;Finalizado;1-2;Brasil;Iraque;Iraque
-92;Finalizado;1-0;Alemanha;Croácia;Alemanha
-93;Finalizado;1-2;RD Congo;Espanha;Espanha
-94;Finalizado;1-0;Turquia;Egito;Turquia
-95;Finalizado;0-2;Argentina;Bélgica;Bélgica
-96;Finalizado;2-1;Suíça;Colômbia;Suíça
-97;Finalizado;1-0;Japão;Noruega;Japão
-98;Finalizado;1-0;Espanha;Turquia;Espanha
-99;Finalizado;0-0;Iraque;Alemanha;Iraque
-100;Finalizado;2-0;Bélgica;Suíça;Bélgica
-101;Finalizado;1-1;Japão;Espanha;Japão
-102;Finalizado;1-2;Iraque;Bélgica;Bélgica
-103;Finalizado;1-0;Espanha;Iraque;Espanha
-104;Finalizado;1-2;Japão;Bélgica;Bélgica
+55;Finalizado;0-2;Curaçao;Costa do Marfim;Costa do Marfim
+56;Finalizado;2-1;Equador;Alemanha;Equador
+57;Finalizado;1-1;Japão;Suécia;Empate
+58;Finalizado;1-3;Tunísia;Países Baixos;Países Baixos
+59;Finalizado;3-2;Turquia;Estados Unidos;Turquia
+60;Finalizado;0-0;Paraguai;Austrália;Empate

@@ -1,43 +1,78 @@
-# Copa 2026 | Visualizador de resultados
+# Copa 2026 — Visualizador de resultados com correção incremental
 
-Repositório estático para visualizar a tabela da Copa 2026 em duas áreas:
+Repositório estático para visualizar jogos da Copa 2026 com **previsão ao lado do resultado real**.
 
-- Fase de grupos
-- Mata-mata
+Quando o resultado real existe, o site mostra:
 
-## Como rodar
+- placar previsto;
+- placar real;
+- status **Finalizado**;
+- erro de previsão;
+- proximidade do modelo.
+
+Quando o resultado real ainda não existe, o site mostra:
+
+- placar previsto atualizado;
+- status **Simulação**.
+
+## Como abrir
 
 Abra `index.html` no navegador.
 
-Também é possível rodar com servidor local:
+Também pode rodar localmente:
 
 ```bash
 python -m http.server 8000
 ```
 
-Depois acesse:
+Depois acesse `http://localhost:8000`.
 
-```txt
-http://localhost:8000
+## Como registrar novos resultados
+
+1. Edite o arquivo:
+
+```text
+data/entrada/novos_resultados.csv
 ```
 
-## Atualização de resultados
+2. Adicione as novas linhas no mesmo formato:
 
-O arquivo principal para atualizar placares é:
-
-```txt
-data/resultados.txt
+```csv
+data;dia_semana;fase;time_1;gols_time_1;gols_time_2;time_2;placar;status;fonte
+2026-06-26;Sexta-feira;Fase de grupos;Noruega;0;0;França;Noruega 0 x 0 França;Finalizado;
 ```
 
-Formato:
+3. Rode:
 
-```txt
-jogo;status;placar;equipe1;equipe2;vencedor
-1;Finalizado;2-1;México;África do Sul;México
-73;Finalizado;0-2;África do Sul;Catar;Catar
+```bash
+python scripts/atualizar_modelo.py
 ```
 
-## Base de dados
+O script compara a previsão anterior com o resultado real, registra o erro e atualiza a próxima simulação.
 
-A base CSV fica dentro de `data/` e `data/database/`.
-Esses arquivos permanecem no repositório, mas não aparecem como abas ou seções no front.
+## Arquivos principais
+
+```text
+index.html
+src/app.js
+src/data.js
+src/model-data.js
+data/matches.csv
+data/previsoes_modelo.csv
+data/resultados_reais.csv
+data/neural/correcoes_modelo.csv
+data/neural/estado_times.csv
+data/neural/model_state.json
+data/desempenho/jogos_finalizados_copa_2026_ate_25-06.csv
+data/desempenho/jogadores_citados_desempenho_copa_2026.csv
+data/desempenho/resumo_desempenho_por_jogo_copa_2026.csv
+scripts/atualizar_modelo.py
+```
+
+## Estado inicial
+
+- Resultados reais carregados: **60**
+- Correções registradas: **60**
+- Proximidade média inicial: **24.7%**
+- Última data real na base: **2026-06-25**
+

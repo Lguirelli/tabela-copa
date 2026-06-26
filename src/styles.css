@@ -197,3 +197,32 @@ input, select {
   label { width: 100%; }
   .view { padding: 14px; border-radius: 22px; }
 }
+
+
+.score--prediction { color: #bfdbfe; }
+.score--real { color: #d9f99d; }
+.status--sim { border-color: rgba(56, 189, 248, .34); color: #bae6fd; background: rgba(56, 189, 248, .10); }
+.correction {
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,.14);
+}
+.correction--ok { color: #d9f99d; background: rgba(132,204,22,.10); border-color: rgba(132,204,22,.30); }
+.correction--miss { color: #fed7aa; background: rgba(249,115,22,.10); border-color: rgba(249,115,22,.30); }
+.row-real { background: rgba(132,204,22,.035); }
+.row-sim { background: rgba(56,189,248,.025); }
+.score-stack {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px 8px;
+  align-items: center;
+  justify-items: center;
+  min-width: 90px;
+}
+.score-stack small { color: var(--muted); font-size: 10px; text-transform: uppercase; font-weight: 800; }
+.games-table th, .games-table td { vertical-align: middle; }
