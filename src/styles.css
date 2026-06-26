@@ -291,3 +291,67 @@ input, select {
 .match-card__teams > span:last-child {
   min-width: 0;
 }
+
+/* Team assets: flags/icons kept compact to avoid layout breaks */
+.team-flag-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  flex: 0 0 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(255,255,255,.72);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.18);
+}
+.team-chip {
+  max-width: 100%;
+  min-width: 0;
+}
+.team-chip__name {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.standing-card .team-chip {
+  max-width: 190px;
+}
+.games-table .team-chip {
+  max-width: 185px;
+}
+.match-card .team-chip {
+  max-width: 100%;
+}
+.match-card .team-flag-icon {
+  width: 22px;
+  height: 22px;
+  flex-basis: 22px;
+}
+.versus-line {
+  flex-wrap: nowrap;
+  min-width: 250px;
+}
+.versus-line .team-chip {
+  flex: 0 1 auto;
+}
+.standing-card td:nth-child(2) {
+  max-width: 210px;
+}
+.match-card__teams > span {
+  min-width: 0;
+}
+@media (max-width: 640px) {
+  .team-flag-icon {
+    width: 18px;
+    height: 18px;
+    flex-basis: 18px;
+  }
+  .standing-card .team-chip,
+  .games-table .team-chip {
+    max-width: 165px;
+  }
+  .versus-line {
+    min-width: 220px;
+  }
+}

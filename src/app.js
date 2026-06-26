@@ -6,6 +6,7 @@ const realResults = window.WC2026_REAL_RESULTS || [];
 const corrections = window.WC2026_CORRECTIONS || [];
 const modelMetrics = window.WC2026_MODEL_METRICS || {};
 const teamColors = window.WC2026_TEAM_COLORS || {};
+const teamAssets = window.WC2026_TEAM_ASSETS || {};
 
 let matches = [];
 
@@ -43,12 +44,40 @@ function colorKey(value) {
     .trim();
 }
 
+function safeAttr(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function getTeamAsset(team) {
+  const direct = teamAssets[team];
+  if (direct) return direct;
+  const key = colorKey(team);
+  const foundName = Object.keys(teamAssets).find((name) => colorKey(name) === key);
+  return foundName ? teamAssets[foundName] : null;
+}
+
 function getTeamColors(team) {
   const direct = teamColors[team];
   if (direct) return direct;
   const key = colorKey(team);
   const foundName = Object.keys(teamColors).find((name) => colorKey(name) === key);
-  return foundName ? teamColors[foundName] : null;
+  if (foundName) return teamColors[foundName];
+  const asset = getTeamAsset(team);
+  if (asset?.palette?.length) {
+    const usable = asset.palette.filter((color) => /^#[0-9A-Fa-f]{6}$/.test(color));
+    return {
+      code: asset.code || "",
+      primary: usable[0] || "#38bdf8",
+      secondary: usable[1] || usable[0] || "#38bdf8",
+      accent: usable[2] || usable[1] || usable[0] || "#38bdf8",
+      palette: usable
+    };
+  }
+  return null;
 }
 
 function textColorFor(hex) {
@@ -61,14 +90,20 @@ function textColorFor(hex) {
 }
 
 function teamChip(team, side = "left") {
-  if (!team || /^([123]º|Vencedor|Perdedor)/.test(team)) return `<span class="team-chip team-chip--slot">${team || "—"}</span>`;
+  if (!team || /^([123]º|Vencedor|Perdedor|TBD)/.test(team)) {
+    return `<span class="team-chip team-chip--slot"><span class="team-chip__name">${team || "—"}</span></span>`;
+  }
   const colors = getTeamColors(team);
-  if (!colors) return `<span class="team-chip">${team}</span>`;
-  const primary = colors.primary || "#38bdf8";
-  const secondary = colors.secondary || primary;
-  const accent = colors.accent || secondary;
+  const asset = getTeamAsset(team);
+  const primary = colors?.primary || "#38bdf8";
+  const secondary = colors?.secondary || primary;
+  const accent = colors?.accent || secondary;
   const text = textColorFor(primary);
-  return `<span class="team-chip team-chip--${side}" style="--team-primary:${primary};--team-secondary:${secondary};--team-accent:${accent};--team-text:${text};"><i aria-hidden="true"></i>${team}</span>`;
+  const iconSource = asset?.icon || asset?.flagPng || asset?.flag || "";
+  const icon = iconSource
+    ? `<img class="team-flag-icon" src="${safeAttr(iconSource)}" alt="" loading="lazy" decoding="async" onerror="this.style.display='none'" />`
+    : `<i aria-hidden="true"></i>`;
+  return `<span class="team-chip team-chip--${side}" title="${safeAttr(team)}" style="--team-primary:${primary};--team-secondary:${secondary};--team-accent:${accent};--team-text:${text};">${icon}<span class="team-chip__name">${team}</span></span>`;
 }
 
 function matchAccentStyle(match) {

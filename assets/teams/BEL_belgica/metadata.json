@@ -1,0 +1,27 @@
+{
+  "country_pt": "Bélgica",
+  "country_en": "Belgium",
+  "iso2": "be",
+  "iso3": "BEL",
+  "slug": "belgica",
+  "federation_name": "Royal Belgian Football Association",
+  "official_site": "https://www.rbfa.be",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/be.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#000000",
+    "#EF3340",
+    "#FDDA25",
+    "#A89018",
+    "#FFE226"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

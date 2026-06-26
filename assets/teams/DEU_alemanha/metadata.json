@@ -1,0 +1,27 @@
+{
+  "country_pt": "Alemanha",
+  "country_en": "Germany",
+  "iso2": "de",
+  "iso3": "DEU",
+  "slug": "alemanha",
+  "federation_name": "German Football Association",
+  "official_site": "https://www.dfb.de",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/de.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#000000",
+    "#FFCE00",
+    "#DD0000",
+    "#930000",
+    "#E50000"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}
