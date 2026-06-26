@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Análise e melhoria | Modelo</title>
+  <title>Chaveamento | Mata-mata</title>
   <meta name="description" content="Visualizador responsivo de resultados e simulações da Copa do Mundo 2026." />
   <link rel="stylesheet" href="./src/styles.css" />
 </head>
-<body class="dashboard" data-page="analysis">
+<body class="dashboard" data-page="knockout-bracket">
   <div class="app-frame">
     <aside class="sidebar" aria-label="Menu lateral">
       <div class="brand"><span class="brand-mark">✦</span><strong>Copa 2026</strong></div>
@@ -16,10 +16,10 @@
         <a class="side-link" href="grupos-resultados.html"><span>▦</span><b>Resultados gerais</b></a>
         <a class="side-link" href="grupos-jogos.html"><span>☷</span><b>Tabela de jogos</b></a>
         <p>Mata-mata</p>
-        <a class="side-link" href="mata-mata-chave.html"><span>⌁</span><b>Chaveamento</b></a>
+        <a class="side-link is-active" href="mata-mata-chave.html"><span>⌁</span><b>Chaveamento</b></a>
         <a class="side-link" href="mata-mata-jogos.html"><span>☰</span><b>Lista de jogos</b></a>
         <p>Modelo</p>
-        <a class="side-link is-active" href="analise.html"><span>◎</span><b>Análise e melhoria</b></a>
+        <a class="side-link" href="analise.html"><span>◎</span><b>Análise e melhoria</b></a>
       </nav>
       <div class="side-note">
         <small>Atualização</small>
@@ -31,9 +31,9 @@
     <main class="main-view">
       <header class="topbar">
         <div>
-          <span class="breadcrumb">Copa 2026 / Modelo</span>
-          <h1>Análise e melhoria</h1>
-          <p>Tela lateral para entender o que influencia o modelo: força base, competitividade dos campeonatos, desempenho dos jogadores, data e correções.</p>
+          <span class="breadcrumb">Copa 2026 / Mata-mata</span>
+          <h1>Chaveamento</h1>
+          <p>Chave visual em tela única, com previsão e resultado real lado a lado quando já existir placar.</p>
         </div>
         <div class="top-actions">
           <span class="mini-stat"><small>Jogos</small><b id="stat-total">104</b></span>
@@ -42,19 +42,9 @@
         </div>
       </header>
       
-      <section class="analysis-layout">
-        <article class="panel analysis-panel analysis-panel--matrix">
-          <div class="panel-title"><h2>O que influencia o que</h2><span>matriz de variáveis</span></div>
-          <div id="influence-matrix" class="matrix-list"></div>
-        </article>
-        <article class="panel analysis-panel">
-          <div class="panel-title"><h2>Força contextual</h2><span>top 10</span></div>
-          <div id="context-strength" class="rank-list"></div>
-        </article>
-        <article class="panel analysis-panel">
-          <div class="panel-title"><h2>Correções recentes</h2><span>previsão x real</span></div>
-          <div id="recent-corrections" class="correction-list"></div>
-        </article>
+      <section class="panel panel--bracket full-panel">
+        <div class="panel-title"><h2>Chaveamento</h2><span class="hint">Escala automática para caber na tela</span></div>
+        <div id="bracket-fit" class="bracket-fit"><div id="bracket-board" class="bracket-board"></div></div>
       </section>
     
     </main>

@@ -178,4 +178,5 @@ else:
     print('Nenhuma nova entrada encontrada. Recalculando estado atual.')
 rebuild(real_df)
 subprocess.run([sys.executable, str(ROOT / 'scripts' / 'recalcular_mata_mata.py')], check=True)
-print('Modelo, mata-mata e visualizador atualizados.')
+subprocess.run([sys.executable, str(ROOT / 'scripts' / 'recalcular_modelo_contextual.py')], check=True)
+print('Modelo, mata-mata, força contextual e visualizador atualizados.')

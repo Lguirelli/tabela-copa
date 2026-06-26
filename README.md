@@ -1,94 +1,71 @@
-# Copa 2026 — Visualizador de resultados com correção incremental
+# Copa 2026 — Visualizador responsivo de jogos
 
-Repositório estático para visualizar jogos da Copa 2026 com **previsão ao lado do resultado real**.
+Repositório estático em HTML/CSS/JS para visualizar resultados, previsões e chaveamento da Copa 2026.
 
-Quando o resultado real existe, o site mostra:
+## Telas principais
 
-- placar previsto;
-- placar real;
-- status **Finalizado**;
-- erro de previsão;
-- proximidade do modelo.
+- `grupos-resultados.html` — resultados gerais e tabelas dos grupos.
+- `grupos-jogos.html` — tabela paginada dos jogos da fase de grupos.
+- `mata-mata-chave.html` — chaveamento visual em tela única.
+- `mata-mata-jogos.html` — lista paginada dos jogos do mata-mata.
+- `analise.html` — menu lateral de análise do modelo, variáveis e melhorias.
 
-Quando o resultado real ainda não existe, o site mostra:
+O `index.html` redireciona para `grupos-resultados.html`.
 
-- placar previsto atualizado;
-- status **Simulação**.
+## Responsividade
 
-## Como abrir
+As páginas foram divididas para caber em uma visualização sem scroll de página. Quando há muitos dados, a visualização usa paginação interna, não rolagem vertical.
 
-Abra `index.html` no navegador.
+## Atualização de resultados
 
-Também pode rodar localmente:
+Adicione novas entradas em:
 
-```bash
-python -m http.server 8000
-```
-
-Depois acesse `http://localhost:8000`.
-
-## Como registrar novos resultados
-
-1. Edite o arquivo:
-
-```text
+```txt
 data/entrada/novos_resultados.csv
 ```
 
-2. Adicione as novas linhas no mesmo formato:
-
-```csv
-data;dia_semana;fase;time_1;gols_time_1;gols_time_2;time_2;placar;status;fonte
-2026-06-26;Sexta-feira;Fase de grupos;Noruega;0;0;França;Noruega 0 x 0 França;Finalizado;
-```
-
-3. Rode:
+Depois rode:
 
 ```bash
 python scripts/atualizar_modelo.py
 ```
 
-O script compara a previsão anterior com o resultado real, registra o erro e atualiza a próxima simulação.
+O script atualiza:
 
-## Arquivos principais
+- resultados reais;
+- correções previsão x real;
+- força contextual das seleções;
+- chaveamento do mata-mata;
+- arquivos JS usados pelo front.
 
-```text
-index.html
-src/app.js
-src/data.js
-src/model-data.js
-data/matches.csv
-data/previsoes_modelo.csv
-data/resultados_reais.csv
-data/neural/correcoes_modelo.csv
-data/neural/estado_times.csv
-data/neural/model_state.json
-data/desempenho/jogos_finalizados_copa_2026_ate_25-06.csv
-data/desempenho/jogadores_citados_desempenho_copa_2026.csv
-data/desempenho/resumo_desempenho_por_jogo_copa_2026.csv
-scripts/atualizar_modelo.py
+## Variáveis consideradas pelo modelo contextual
+
+O script `scripts/recalcular_modelo_contextual.py` considera:
+
+- força base do elenco;
+- competitividade do campeonato dos jogadores;
+- desempenho dos jogadores;
+- resultado anterior com peso por data;
+- correção acumulada do modelo.
+
+Saídas principais:
+
+```txt
+data/modelo/modelo_times.csv
+data/modelo/matriz_variaveis.csv
+src/modelo-dados.js
 ```
 
-## Estado inicial
+## Rodar localmente
 
-- Resultados reais carregados: **60**
-- Correções registradas: **60**
-- Proximidade média inicial: **24.7%**
-- Última data real na base: **2026-06-25**
+Pode abrir os HTMLs diretamente no navegador. Para evitar bloqueios locais em alguns browsers, use:
 
+```bash
+python -m http.server 8000
+```
 
+Depois acesse:
 
-## Atualização aplicada
-
-- `data/team_colors.csv` e `src/team-colors.js` guardam as cores por seleção.
-- O front usa essas cores apenas como identidade visual dos cards e chips, sem exibir a base CSV.
-- O mata-mata foi recalculado com a classificação projetada dos grupos, usando resultado real quando existe e simulação quando ainda não existe resultado.
-- Arquivos auxiliares do recálculo:
-  - `data/neural/classificacao_projetada_grupos.csv`
-  - `data/neural/melhores_terceiros_projetados.csv`
-  - `data/neural/terceiros_colocados_mata_mata.csv`
-
-
-## Página de análise
-
-A página `analise.html` mostra a matriz de influência do modelo, os erros por tipo, ajustes por seleção e últimas correções registradas. Ela usa os dados já exportados em `src/model-data.js` e a matriz em `data/analise/matriz_influencia.csv`.
+```txt
+http://localhost:8000/grupos-resultados.html
+```
