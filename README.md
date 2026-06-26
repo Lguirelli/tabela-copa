@@ -1,33 +1,37 @@
-# Copa 2026 — Visualização de tabelas sem resultados
+# Copa 2026 — Visualizador de resultados
 
-Repositório estático para visualizar a tabela de jogos da Copa do Mundo FIFA 2026 em duas partes:
+Repositório estático para visualizar a tabela da Copa do Mundo 2026 em duas partes:
 
-1. **Fase de grupos**: lista filtrável por grupo, equipe, estádio e cidade.
-2. **Mata-mata**: chave visual e tabela completa usando apenas os slots oficiais de classificação.
+1. Fase de grupos
+2. Mata-mata
 
-## Importante
+## Como atualizar os resultados
 
-Este repositório **não usa placares, resultados, classificação atual ou equipes classificadas via resultados de Copa**.
+Edite somente este arquivo:
 
-No mata-mata, os confrontos aparecem como:
+```txt
+data/resultados.txt
+```
 
-- `1º Grupo A`
-- `2º Grupo B`
-- `3º Grupo C/E/F/H/I`
-- `Vencedor do jogo 73`
-- `Perdedor do jogo 101`
+Formato usado:
 
-Isso mantém a tabela neutra para uso antes ou durante o torneio, sem depender de resultados.
+```txt
+jogo;status;placar;equipe1;equipe2;vencedor
+1;Finalizado;2-0;México;África do Sul;México
+73;Agendado;;2º Grupo A;2º Grupo B;
+```
+
+Campos:
+
+- `jogo`: número do jogo, de 1 a 104.
+- `status`: Agendado, Ao vivo, Finalizado ou outro status que você quiser exibir.
+- `placar`: use formatos como `2-0`, `2 x 0` ou `2:0`.
+- `equipe1` e `equipe2`: use para substituir os placeholders do mata-mata quando as equipes forem definidas.
+- `vencedor`: use nos jogos eliminatórios ou quando quiser destacar o vencedor.
 
 ## Como rodar
 
-### Opção 1 — abrir direto
-
-Abra o arquivo `index.html` no navegador.
-
-### Opção 2 — servidor local simples
-
-No terminal, dentro da pasta do repositório:
+Abra `index.html` em um servidor local:
 
 ```bash
 python -m http.server 8000
@@ -35,32 +39,21 @@ python -m http.server 8000
 
 Depois acesse:
 
-```text
+```txt
 http://localhost:8000
 ```
 
 ## Estrutura
 
-```text
-.
+```txt
+copa-2026-resultados-viewer-repo/
 ├── index.html
-├── src
+├── src/
 │   ├── app.js
 │   ├── data.js
 │   └── styles.css
-├── data
-│   ├── matches.json
-│   └── matches.csv
-└── docs
-    └── fontes.md
+└── data/
+    ├── matches.json
+    ├── matches.csv
+    └── resultados.txt
 ```
-
-## Dados
-
-- `data/matches.json`: base completa usada pela interface.
-- `data/matches.csv`: versão tabular para conferência ou edição.
-- `src/data.js`: mesma base em formato JavaScript para uso estático sem build.
-
-## Fontes
-
-As fontes estão documentadas em `docs/fontes.md`.

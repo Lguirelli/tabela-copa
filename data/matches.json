@@ -5,31 +5,7 @@
     "mataMata": 32,
     "grupos": 12,
     "selecoes": 48,
-    "sedes": [
-      "Atlanta",
-      "Boston",
-      "Dallas",
-      "Guadalajara",
-      "Houston",
-      "Kansas City",
-      "Los Angeles",
-      "Mexico City",
-      "Miami",
-      "Monterrey",
-      "New York/New Jersey",
-      "Philadelphia",
-      "San Francisco Bay Area",
-      "Seattle",
-      "Toronto",
-      "Vancouver"
-    ],
-    "paisesSede": [
-      "Canadá",
-      "Estados Unidos",
-      "México"
-    ],
-    "periodo": "2026-06-11 a 2026-07-19",
-    "semResultados": true
+    "periodo": "2026-06-11 a 2026-07-19"
   },
   "groups": [
     {
@@ -158,11 +134,7 @@
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 2,
@@ -180,11 +152,7 @@
       "estadio": "Estadio Akron",
       "cidade": "Guadalajara",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 3,
@@ -202,11 +170,7 @@
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 4,
@@ -224,11 +188,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 5,
@@ -246,11 +206,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 6,
@@ -268,11 +224,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "No PDF/listagem aparece como 24:00 ET; normalizado para 00:00 do dia seguinte."
+      "status": "Agendado"
     },
     {
       "jogo": 7,
@@ -290,11 +242,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 8,
@@ -312,11 +260,7 @@
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 9,
@@ -334,11 +278,7 @@
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 10,
@@ -356,11 +296,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 11,
@@ -378,11 +314,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 12,
@@ -400,11 +332,7 @@
       "estadio": "Estadio BBVA",
       "cidade": "Monterrey",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 13,
@@ -422,11 +350,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 14,
@@ -444,11 +368,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 15,
@@ -466,11 +386,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 16,
@@ -488,11 +404,7 @@
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 17,
@@ -510,11 +422,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 18,
@@ -532,11 +440,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 19,
@@ -554,11 +458,7 @@
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 20,
@@ -576,11 +476,7 @@
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "No PDF/listagem aparece como 24:00 ET; normalizado para 00:00 do dia seguinte."
+      "status": "Agendado"
     },
     {
       "jogo": 21,
@@ -598,11 +494,7 @@
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 22,
@@ -620,11 +512,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 23,
@@ -642,11 +530,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 24,
@@ -664,11 +548,7 @@
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 25,
@@ -686,11 +566,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 26,
@@ -708,11 +584,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 27,
@@ -730,11 +602,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 28,
@@ -752,11 +620,7 @@
       "estadio": "Estadio Akron",
       "cidade": "Guadalajara",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 29,
@@ -774,11 +638,7 @@
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 30,
@@ -796,11 +656,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 31,
@@ -818,11 +674,7 @@
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 32,
@@ -840,11 +692,7 @@
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 33,
@@ -862,11 +710,7 @@
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 34,
@@ -884,11 +728,7 @@
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 35,
@@ -906,11 +746,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 36,
@@ -928,11 +764,7 @@
       "estadio": "Estadio BBVA",
       "cidade": "Monterrey",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "No PDF/listagem aparece como 24:00 ET; normalizado para 00:00 do dia seguinte."
+      "status": "Agendado"
     },
     {
       "jogo": 37,
@@ -950,11 +782,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 38,
@@ -972,11 +800,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 39,
@@ -994,11 +818,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 40,
@@ -1016,11 +836,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 41,
@@ -1038,11 +854,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 42,
@@ -1060,11 +872,7 @@
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 43,
@@ -1082,11 +890,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 44,
@@ -1104,11 +908,7 @@
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 45,
@@ -1126,11 +926,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 46,
@@ -1148,11 +944,7 @@
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 47,
@@ -1170,11 +962,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 48,
@@ -1192,11 +980,7 @@
       "estadio": "Estadio Akron",
       "cidade": "Guadalajara",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 49,
@@ -1214,11 +998,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 50,
@@ -1236,11 +1016,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 51,
@@ -1258,11 +1034,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 52,
@@ -1280,11 +1052,7 @@
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 53,
@@ -1302,11 +1070,7 @@
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 54,
@@ -1324,11 +1088,7 @@
       "estadio": "Estadio BBVA",
       "cidade": "Monterrey",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 55,
@@ -1346,11 +1106,7 @@
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 56,
@@ -1368,11 +1124,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 57,
@@ -1390,11 +1142,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 58,
@@ -1412,11 +1160,7 @@
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 59,
@@ -1434,11 +1178,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 60,
@@ -1456,11 +1196,7 @@
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 61,
@@ -1478,11 +1214,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 62,
@@ -1500,11 +1232,7 @@
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 63,
@@ -1522,11 +1250,7 @@
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 64,
@@ -1544,11 +1268,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 65,
@@ -1566,11 +1286,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 66,
@@ -1588,11 +1304,7 @@
       "estadio": "Estadio Akron",
       "cidade": "Guadalajara",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 67,
@@ -1610,11 +1322,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 68,
@@ -1632,11 +1340,7 @@
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 69,
@@ -1654,11 +1358,7 @@
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 70,
@@ -1676,11 +1376,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 71,
@@ -1698,11 +1394,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 72,
@@ -1720,11 +1412,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": null
+      "status": "Agendado"
     },
     {
       "jogo": 73,
@@ -1742,11 +1430,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 74,
@@ -1764,11 +1448,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 75,
@@ -1786,11 +1466,7 @@
       "estadio": "Estadio BBVA",
       "cidade": "Monterrey",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 76,
@@ -1808,11 +1484,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 77,
@@ -1830,11 +1502,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 78,
@@ -1852,11 +1520,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 79,
@@ -1874,11 +1538,7 @@
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 80,
@@ -1896,11 +1556,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 81,
@@ -1918,11 +1574,7 @@
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 82,
@@ -1940,11 +1592,7 @@
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 83,
@@ -1962,11 +1610,7 @@
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 84,
@@ -1984,11 +1628,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 85,
@@ -2006,11 +1646,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 86,
@@ -2028,11 +1664,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 87,
@@ -2050,11 +1682,7 @@
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 88,
@@ -2072,11 +1700,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 89,
@@ -2094,11 +1718,7 @@
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 90,
@@ -2116,11 +1736,7 @@
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 91,
@@ -2138,11 +1754,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 92,
@@ -2160,11 +1772,7 @@
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 93,
@@ -2182,11 +1790,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 94,
@@ -2204,11 +1808,7 @@
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 95,
@@ -2226,11 +1826,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 96,
@@ -2248,11 +1844,7 @@
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 97,
@@ -2270,11 +1862,7 @@
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 98,
@@ -2292,11 +1880,7 @@
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 99,
@@ -2314,11 +1898,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 100,
@@ -2336,11 +1916,7 @@
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 101,
@@ -2358,11 +1934,7 @@
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 102,
@@ -2380,11 +1952,7 @@
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 103,
@@ -2402,11 +1970,7 @@
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     },
     {
       "jogo": 104,
@@ -2424,11 +1988,7 @@
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Agendado",
-      "resultadoIncluido": "Não",
-      "fontePrincipal": "https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/",
-      "fonteOficialFIFA": "https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf",
-      "observacoes": "Mata-mata com vagas/slots oficiais, sem usar placares ou classificação atual da Copa."
+      "status": "Agendado"
     }
   ]
 }
