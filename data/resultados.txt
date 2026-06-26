@@ -59,3 +59,5 @@ jogo;status;placar;equipe1;equipe2;vencedor
 58;Finalizado;1-3;Tunísia;Países Baixos;Países Baixos
 59;Finalizado;3-2;Turquia;Estados Unidos;Turquia
 60;Finalizado;0-0;Paraguai;Austrália;Empate
+61;Finalizado;1-4;Noruega;França;França
+62;Finalizado;5-0;Senegal;Iraque;Senegal

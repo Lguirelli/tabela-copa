@@ -1,12 +1,12 @@
 {
   "metrics": {
-    "jogos_com_resultado_real": 60,
-    "jogos_com_correcao": 60,
-    "proximidade_media_0_100": 24.7,
-    "erro_medio_total_gols": 2.48,
-    "acuracia_vencedor_percentual": 36.7,
-    "placar_exato_percentual": 8.3,
-    "ultima_entrada_real": "2026-06-25",
+    "jogos_com_resultado_real": 62,
+    "jogos_com_correcao": 62,
+    "proximidade_media_0_100": 23.9,
+    "erro_medio_total_gols": 2.6,
+    "acuracia_vencedor_percentual": 35.5,
+    "placar_exato_percentual": 8.1,
+    "ultima_entrada_real": "2026-06-26",
     "learning_rate": 0.18,
     "logica": "modelo incremental que compara previsão x real, registra erro e ajusta forças das seleções para os próximos jogos"
   },
@@ -182,10 +182,10 @@
     {
       "selecao": "França",
       "forca_inicial_0_100": 63.8,
-      "ajuste_acumulado": 1.395,
-      "forca_atualizada_0_100": 65.19,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 2.0
+      "ajuste_acumulado": 2.205,
+      "forca_atualizada_0_100": 66.0,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 1.3
     },
     {
       "selecao": "Gana",
@@ -214,10 +214,10 @@
     {
       "selecao": "Iraque",
       "forca_inicial_0_100": 57.5,
-      "ajuste_acumulado": -1.035,
-      "forca_atualizada_0_100": 56.47,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 17.0
+      "ajuste_acumulado": -2.745,
+      "forca_atualizada_0_100": 54.76,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 11.3
     },
     {
       "selecao": "Irã",
@@ -262,10 +262,10 @@
     {
       "selecao": "Noruega",
       "forca_inicial_0_100": 64.3,
-      "ajuste_acumulado": 0.81,
-      "forca_atualizada_0_100": 65.11,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 19.0
+      "ajuste_acumulado": -0.0,
+      "forca_atualizada_0_100": 64.3,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 12.7
     },
     {
       "selecao": "Nova Zelândia",
@@ -318,10 +318,10 @@
     {
       "selecao": "Senegal",
       "forca_inicial_0_100": 66.0,
-      "ajuste_acumulado": -1.17,
-      "forca_atualizada_0_100": 64.83,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 4.0
+      "ajuste_acumulado": 0.54,
+      "forca_atualizada_0_100": 66.54,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 2.7
     },
     {
       "selecao": "Suécia",
