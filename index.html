@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Copa do Mundo 2026 | Tabela sem resultados</title>
+  <meta name="description" content="Visualização estática da tabela de jogos da Copa do Mundo 2026, separada por fase de grupos e mata-mata, sem placares ou resultados." />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Copa do Mundo FIFA 2026</p>
+      <h1>Tabela de jogos sem resultados</h1>
+      <p class="subtitle">Visualização dividida entre fase de grupos e mata-mata. O mata-mata usa apenas os slots oficiais de classificação, sem preencher vencedores reais.</p>
+      <div class="source-line">
+        <span class="pill pill--safe">Sem placares</span>
+        <span class="pill">104 jogos</span>
+        <span class="pill">48 seleções</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="stats-grid" aria-label="Resumo do torneio">
+      <article class="stat-card">
+        <span>Total</span>
+        <strong id="stat-total">104</strong>
+        <small>jogos no calendário</small>
+      </article>
+      <article class="stat-card">
+        <span>Grupos</span>
+        <strong id="stat-groups">72</strong>
+        <small>partidas da fase inicial</small>
+      </article>
+      <article class="stat-card">
+        <span>Mata-mata</span>
+        <strong id="stat-ko">32</strong>
+        <small>partidas por slots</small>
+      </article>
+      <article class="stat-card">
+        <span>Sedes</span>
+        <strong id="stat-hosts">16</strong>
+        <small>cidades-sede</small>
+      </article>
+    </section>
+
+    <nav class="tabs" aria-label="Seções da tabela">
+      <button class="tab is-active" data-view="groups">Fase de grupos</button>
+      <button class="tab" data-view="knockout">Mata-mata</button>
+    </nav>
+
+    <section id="groups-view" class="view is-active">
+      <div class="panel-head">
+        <div>
+          <h2>Fase de grupos</h2>
+          <p>Jogos de cada grupo, sem qualquer resultado ou classificação atual.</p>
+        </div>
+        <div class="controls">
+          <label>
+            Buscar
+            <input id="group-search" type="search" placeholder="Time, estádio ou cidade" />
+          </label>
+          <label>
+            Grupo
+            <select id="group-filter">
+              <option value="all">Todos</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div id="groups-grid" class="groups-grid" aria-label="Composição dos grupos"></div>
+
+      <div class="table-wrap">
+        <table class="games-table">
+          <thead>
+            <tr>
+              <th>Jogo</th>
+              <th>Data</th>
+              <th>Hora local</th>
+              <th>Grupo</th>
+              <th>Confronto</th>
+              <th>Estádio</th>
+              <th>Cidade</th>
+            </tr>
+          </thead>
+          <tbody id="group-games-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="knockout-view" class="view">
+      <div class="panel-head">
+        <div>
+          <h2>Mata-mata</h2>
+          <p>Chave montada por posições oficiais dos grupos. Nenhum jogo usa resultado da Copa.</p>
+        </div>
+        <div class="controls">
+          <label>
+            Fase
+            <select id="ko-phase-filter">
+              <option value="all">Todas</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="ko-note">
+        <strong>Importante:</strong> os jogos 73 a 104 usam placeholders como “1º Grupo A”, “Vencedor do jogo 73” e “Perdedor do jogo 101”. Assim, o repositório continua neutro e sem placares.
+      </div>
+
+      <div id="bracket" class="bracket" aria-label="Chave do mata-mata"></div>
+
+      <h3 class="subheading">Lista completa do mata-mata</h3>
+      <div class="table-wrap">
+        <table class="games-table">
+          <thead>
+            <tr>
+              <th>Jogo</th>
+              <th>Fase</th>
+              <th>Data</th>
+              <th>Hora local</th>
+              <th>Confronto</th>
+              <th>Estádio</th>
+              <th>Cidade</th>
+            </tr>
+          </thead>
+          <tbody id="ko-games-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="sources">
+      <h2>Fontes e observação</h2>
+      <p>A visualização foi gerada a partir da tabela de jogos sem resultados criada anteriormente. Para evitar contaminação por placares, o mata-mata foi preenchido com slots oficiais de classificação e não com seleções já classificadas.</p>
+      <ul>
+        <li><a href="https://www.roadtrips.com/world-cup/2026-world-cup-packages/schedule/" target="_blank" rel="noreferrer">Calendário de jogos e sedes</a></li>
+        <li><a href="https://digitalhub.fifa.com/m/1be9ce37eb98fcc5/original/FWC26-Match-Schedule_English.pdf" target="_blank" rel="noreferrer">PDF oficial do calendário FIFA 2026</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="./src/data.js"></script>
+  <script src="./src/app.js"></script>
+</body>
+</html>
