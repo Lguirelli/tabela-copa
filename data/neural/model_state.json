@@ -1,11 +1,11 @@
 {
   "metrics": {
-    "jogos_com_resultado_real": 62,
-    "jogos_com_correcao": 62,
-    "proximidade_media_0_100": 23.9,
-    "erro_medio_total_gols": 2.6,
-    "acuracia_vencedor_percentual": 35.5,
-    "placar_exato_percentual": 8.1,
+    "jogos_com_resultado_real": 64,
+    "jogos_com_correcao": 64,
+    "proximidade_media_0_100": 23.3,
+    "erro_medio_total_gols": 2.59,
+    "acuracia_vencedor_percentual": 34.4,
+    "placar_exato_percentual": 7.8,
     "ultima_entrada_real": "2026-06-26",
     "learning_rate": 0.18,
     "logica": "modelo incremental que compara previsão x real, registra erro e ajusta forças das seleções para os próximos jogos"
@@ -38,10 +38,10 @@
     {
       "selecao": "Arábia Saudita",
       "forca_inicial_0_100": 63.4,
-      "ajuste_acumulado": -0.81,
-      "forca_atualizada_0_100": 62.59,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 35.0
+      "ajuste_acumulado": -1.17,
+      "forca_atualizada_0_100": 62.23,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 25.3
     },
     {
       "selecao": "Austrália",
@@ -78,10 +78,10 @@
     {
       "selecao": "Cabo Verde",
       "forca_inicial_0_100": 59.3,
-      "ajuste_acumulado": 0.945,
-      "forca_atualizada_0_100": 60.24,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 21.0
+      "ajuste_acumulado": 1.305,
+      "forca_atualizada_0_100": 60.6,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 16.0
     },
     {
       "selecao": "Canadá",
@@ -166,10 +166,10 @@
     {
       "selecao": "Espanha",
       "forca_inicial_0_100": 68.9,
-      "ajuste_acumulado": 0.09,
-      "forca_atualizada_0_100": 68.99,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 35.0
+      "ajuste_acumulado": 0.675,
+      "forca_atualizada_0_100": 69.58,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 24.7
     },
     {
       "selecao": "Estados Unidos",
@@ -366,10 +366,10 @@
     {
       "selecao": "Uruguai",
       "forca_inicial_0_100": 66.3,
-      "ajuste_acumulado": -0.225,
-      "forca_atualizada_0_100": 66.08,
-      "jogos_corrigidos": 2,
-      "proximidade_media_0_100": 21.0
+      "ajuste_acumulado": -0.81,
+      "forca_atualizada_0_100": 65.49,
+      "jogos_corrigidos": 3,
+      "proximidade_media_0_100": 15.3
     },
     {
       "selecao": "Uzbequistão",

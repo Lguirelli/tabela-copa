@@ -61,3 +61,5 @@ jogo;status;placar;equipe1;equipe2;vencedor
 60;Finalizado;0-0;Paraguai;Austrália;Empate
 61;Finalizado;1-4;Noruega;França;França
 62;Finalizado;5-0;Senegal;Iraque;Senegal
+65;Finalizado;0-0;Cabo Verde;Arábia Saudita;Empate
+66;Finalizado;0-1;Uruguai;Espanha;Espanha

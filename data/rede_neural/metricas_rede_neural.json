@@ -1,30 +1,30 @@
 {
   "modelo": "CopaMatchNet PyTorch MLP + embeddings",
   "base_referencia": "NVIDIA DeepLearningExamples: arquitetura modular PyTorch adaptada, sem copiar modelo pesado",
-  "amostras_reais": 62,
-  "amostras_treino": 48,
-  "amostras_validacao_cronologica": 14,
+  "amostras_reais": 64,
+  "amostras_treino": 49,
+  "amostras_validacao_cronologica": 15,
   "jogos_totais_inferidos": 104,
   "variaveis_numericas": 65,
   "times_com_embedding": 48,
   "blend_rede_neural": 0.42,
   "treino": {
-    "mae_goal_diff": 0.4167,
-    "mae_total_goals": 0.5833,
-    "erro_medio_total_gols": 0.6667,
-    "acuracia_vencedor": 87.5,
-    "placar_exato": 56.25,
-    "amostras": 48
+    "mae_goal_diff": 0.5102,
+    "mae_total_goals": 0.551,
+    "erro_medio_total_gols": 0.6327,
+    "acuracia_vencedor": 87.76,
+    "placar_exato": 53.06,
+    "amostras": 49
   },
   "validacao_cronologica": {
-    "mae_goal_diff": 1.0714,
-    "mae_total_goals": 1.5,
-    "erro_medio_total_gols": 2.0714,
-    "acuracia_vencedor": 64.29,
-    "placar_exato": 28.57,
-    "amostras": 14
+    "mae_goal_diff": 0.6667,
+    "mae_total_goals": 1.6,
+    "erro_medio_total_gols": 1.7333,
+    "acuracia_vencedor": 66.67,
+    "placar_exato": 33.33,
+    "amostras": 15
   },
-  "epochs_executados": 48,
-  "best_val_loss": 0.978451,
+  "epochs_executados": 51,
+  "best_val_loss": 0.99324,
   "observacao": "A rede aprende incrementalmente com poucos jogos reais; por isso a saída final mistura rede neural e baseline contextual para reduzir overfit."
 }
