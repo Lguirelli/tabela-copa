@@ -8,6 +8,8 @@ const modelMetrics = window.WC2026_MODEL_METRICS || {};
 const teamAssets = window.WC2026_TEAM_ASSETS || {};
 const modeloTimes = window.WC2026_MODELO_TIMES || [];
 const matrizVariaveis = window.WC2026_MATRIZ_VARIAVEIS || [];
+const modeloDiarioResumo = window.WC2026_MODELO_DIARIO_RESUMO || [];
+const modeloDiarioMetricas = window.WC2026_MODELO_DIARIO_METRICAS || {};
 
 const page = document.body.dataset.page;
 const predictionByGame = new Map(predictions.map((item) => [Number(item.jogo), item]));
@@ -17,13 +19,11 @@ let matches = [];
 let groupPage = 0;
 let groupGamesPage = 0;
 let knockoutGamesPage = 0;
-let bracketAutoScale = 1;
-let bracketZoom = 1;
-let bracketPanX = 0;
-let bracketPanY = 0;
+let bracketBaseScale = 1;
+let bracketUserScale = 1;
+let bracketOffset = { x: 0, y: 0 };
 let bracketDragging = false;
-let bracketDragLastX = 0;
-let bracketDragLastY = 0;
+let bracketDragStart = { x: 0, y: 0 };
 
 const phaseLabels = {
   "16 avos de final": "16 avos",
@@ -396,13 +396,14 @@ function renderBracketPage() {
   svg += `</svg>`;
   board.innerHTML = svg + cards;
   fitBracket();
+  setupBracketZoom();
 }
 
 function applyBracketTransform() {
   const board = document.getElementById("bracket-board");
   if (!board) return;
-  const scale = bracketAutoScale * bracketZoom;
-  board.style.transform = `translate(calc(-50% + ${bracketPanX}px), calc(-50% + ${bracketPanY}px)) scale(${scale})`;
+  const scale = bracketBaseScale * bracketUserScale;
+  board.style.transform = `translate(calc(-50% + ${bracketOffset.x}px), calc(-50% + ${bracketOffset.y}px)) scale(${scale})`;
 }
 
 function fitBracket() {
@@ -410,20 +411,7 @@ function fitBracket() {
   const board = document.getElementById("bracket-board");
   if (!fit || !board) return;
   const rect = fit.getBoundingClientRect();
-  bracketAutoScale = Math.min(rect.width / 2380, rect.height / 1500, 1);
-  applyBracketTransform();
-}
-
-function resetBracketView() {
-  bracketZoom = 1;
-  bracketPanX = 0;
-  bracketPanY = 0;
-  applyBracketTransform();
-}
-
-function zoomBracket(deltaY) {
-  const factor = deltaY < 0 ? 1.12 : 0.88;
-  bracketZoom = Math.max(0.55, Math.min(3.25, bracketZoom * factor));
+  bracketBaseScale = Math.min(rect.width / 2380, rect.height / 1500, 1);
   applyBracketTransform();
 }
 
@@ -442,6 +430,101 @@ function renderAnalysisPage() {
   }
 }
 
+
+function setupBracketZoom() {
+  const fit = document.getElementById("bracket-fit");
+  if (!fit || fit.dataset.zoomReady) return;
+  fit.dataset.zoomReady = "1";
+
+  fit.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    const delta = event.deltaY > 0 ? -0.08 : 0.08;
+    bracketUserScale = Math.max(0.55, Math.min(3.2, bracketUserScale + delta));
+    applyBracketTransform();
+  }, { passive: false });
+
+  fit.addEventListener("pointerdown", (event) => {
+    bracketDragging = true;
+    bracketDragStart = { x: event.clientX - bracketOffset.x, y: event.clientY - bracketOffset.y };
+    fit.setPointerCapture?.(event.pointerId);
+    fit.classList.add("is-dragging");
+  });
+
+  fit.addEventListener("pointermove", (event) => {
+    if (!bracketDragging) return;
+    bracketOffset = { x: event.clientX - bracketDragStart.x, y: event.clientY - bracketDragStart.y };
+    applyBracketTransform();
+  });
+
+  const stopDrag = (event) => {
+    bracketDragging = false;
+    fit.classList.remove("is-dragging");
+    if (event?.pointerId !== undefined) fit.releasePointerCapture?.(event.pointerId);
+  };
+  fit.addEventListener("pointerup", stopDrag);
+  fit.addEventListener("pointercancel", stopDrag);
+  fit.addEventListener("dblclick", () => {
+    bracketUserScale = 1;
+    bracketOffset = { x: 0, y: 0 };
+    applyBracketTransform();
+  });
+}
+
+
+function metricValue(value, suffix = "") {
+  if (value === undefined || value === null || value === "") return "—";
+  return `${value}${suffix}`;
+}
+
+function renderNeuralPage() {
+  const flow = document.getElementById("neural-flow");
+  if (flow) {
+    const steps = [
+      ["1", "Base do elenco", "Rating inicial, técnico, sistema, força por seleção e histórico da base."],
+      ["2", "Competitividade da liga", "Jogadores em ligas mais competitivas aumentam a confiança do time."],
+      ["3", "Desempenho dos jogadores", "Proxy individual, destaques por jogo e impacto de jogadores citados entram como reforço."],
+      ["4", "Data e momentum", "Resultados recentes pesam mais no próximo jogo do mesmo time."],
+      ["5", "Correção incremental", "Previsão anterior x resultado real gera erro, proximidade e ajuste acumulado."],
+      ["6", "Próxima simulação", "O modelo recalcula força contextual e atualiza placar previsto e chaveamento."]
+    ];
+    flow.innerHTML = steps.map(([n, title, body]) => `<div class="flow-step"><b>${n}</b><div><strong>${title}</strong><span>${body}</span></div></div>`).join("");
+  }
+
+  const metrics = document.getElementById("neural-metrics");
+  if (metrics) {
+    const rows = [
+      ["Modelo", modeloDiarioMetricas.modelo || "neural incremental"],
+      ["Jogos validados", metricValue(modeloDiarioMetricas.jogos_com_placar_real_validado)],
+      ["Acerto vencedor", metricValue(modeloDiarioMetricas.acuracia_vencedor_percentual, "%")],
+      ["Placar exato", metricValue(modeloDiarioMetricas.placar_exato_percentual, "%")],
+      ["Erro médio gols", metricValue(modeloDiarioMetricas.erro_medio_total_gols)],
+      ["Proximidade média", metricValue(modeloDiarioMetricas.proximidade_media_0_100, "%")],
+      ["Amostra mínima neural", metricValue(modeloDiarioMetricas.neural_min_samples)],
+      ["Simulações", metricValue(modeloDiarioMetricas.simulations_parameter)]
+    ];
+    metrics.innerHTML = rows.map(([label, value]) => `<div class="metric-row"><span>${label}</span><b>${value}</b></div>`).join("");
+  }
+
+  const weights = document.getElementById("neural-weights");
+  if (weights) {
+    weights.innerHTML = matrizVariaveis.map((row) => `<div class="weight-row"><div><b>${row.variavel}</b><span>${row.influencia}</span></div><strong>${row.peso_modelo}</strong></div>`).join("");
+  }
+
+  const daily = document.getElementById("neural-daily-body");
+  if (daily) {
+    const validRows = modeloDiarioResumo.filter((row) => Number(row.jogos_previstos || 0) > 0).slice(0, 22);
+    daily.innerHTML = validRows.map((row) => `<tr><td>${formatDate(row.data)}</td><td>${row.jogos_previstos}</td><td>${row.jogos_validados}</td><td>${metricValue(row["acuracia_vencedor_%"], "%")}</td><td>${metricValue(row["placar_exato_%"], "%")}</td><td>${metricValue(row.erro_medio_total_gols)}</td></tr>`).join("");
+  }
+
+  const teamGrid = document.getElementById("neural-team-grid");
+  if (teamGrid) {
+    teamGrid.innerHTML = modeloTimes.slice(0, 12).map((row, index) => {
+      const strength = Number(row.forca_contextual_0_100 || 0);
+      return `<div class="neural-team"><b>${index + 1}</b><div>${teamChip(row.selecao)}<span>Base ${row.forca_modelo_0_100 || "—"} · Liga ${row.competitividade_liga_0_100 || "—"} · Jogadores ${row.desempenho_jogadores_0_100 || "—"} · Momentum ${row.momentum_data_0_100 || "—"}</span><i style="width:${Math.max(0, Math.min(100, strength))}%"></i></div><strong>${row.forca_contextual_0_100}</strong></div>`;
+    }).join("");
+  }
+}
+
 function bindEvents() {
   document.getElementById("group-prev")?.addEventListener("click", () => { groupPage--; renderStandingsPage(); });
   document.getElementById("group-next")?.addEventListener("click", () => { groupPage++; renderStandingsPage(); });
@@ -452,40 +535,6 @@ function bindEvents() {
   document.getElementById("ko-games-prev")?.addEventListener("click", () => { knockoutGamesPage--; renderKnockoutGamesPage(); });
   document.getElementById("ko-games-next")?.addEventListener("click", () => { knockoutGamesPage++; renderKnockoutGamesPage(); });
   document.getElementById("ko-phase-filter")?.addEventListener("change", () => { knockoutGamesPage = 0; renderKnockoutGamesPage(); });
-  const bracketFit = document.getElementById("bracket-fit");
-  if (bracketFit) {
-    bracketFit.addEventListener("wheel", (event) => {
-      event.preventDefault();
-      zoomBracket(event.deltaY);
-    }, { passive: false });
-
-    bracketFit.addEventListener("dblclick", resetBracketView);
-
-    bracketFit.addEventListener("pointerdown", (event) => {
-      bracketDragging = true;
-      bracketDragLastX = event.clientX;
-      bracketDragLastY = event.clientY;
-      bracketFit.classList.add("is-panning");
-      bracketFit.setPointerCapture?.(event.pointerId);
-    });
-
-    bracketFit.addEventListener("pointermove", (event) => {
-      if (!bracketDragging) return;
-      bracketPanX += event.clientX - bracketDragLastX;
-      bracketPanY += event.clientY - bracketDragLastY;
-      bracketDragLastX = event.clientX;
-      bracketDragLastY = event.clientY;
-      applyBracketTransform();
-    });
-
-    ["pointerup", "pointercancel", "pointerleave"].forEach((eventName) => {
-      bracketFit.addEventListener(eventName, (event) => {
-        bracketDragging = false;
-        bracketFit.classList.remove("is-panning");
-        try { bracketFit.releasePointerCapture?.(event.pointerId); } catch (error) {}
-      });
-    });
-  }
   window.addEventListener("resize", () => {
     if (page === "groups-results") renderStandingsPage();
     if (page === "groups-games") renderGroupGamesPage();
@@ -503,6 +552,7 @@ function init() {
   if (page === "knockout-bracket") renderBracketPage();
   if (page === "knockout-games") { setupKoFilter(); renderKnockoutGamesPage(); }
   if (page === "analysis") renderAnalysisPage();
+  if (page === "neural-network") renderNeuralPage();
 }
 
 init();
