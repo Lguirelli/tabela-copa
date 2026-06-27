@@ -444,33 +444,6 @@ function fitBracket() {
   applyBracketTransform();
 }
 
-function renderAnalysisPage() {
-  const matrix = document.getElementById("influence-matrix");
-  if (matrix) {
-    const rows = [
-      ["Resultados reais", "Treino supervisionado", "Alvos de gols e vencedor usados para corrigir a rede"],
-      ["Elenco", "Features numéricas", "Qualidade média, top 18, experiência e gols pela seleção"],
-      ["Competitividade da liga", "Features numéricas", "Nível dos campeonatos dos jogadores convocados"],
-      ["Técnico e estilo", "Features de equipe", "Pressão, posse, intensidade e encaixe setorial"],
-      ["Calendário", "Feature temporal", "Data do jogo e fase ajudam a ordenar o aprendizado"],
-      ["Embeddings", "Camada treinável", "Representam padrões próprios de cada seleção"],
-      ["Rede MLP", "Saída final", "Prevê saldo de gols e total de gols saída neural direta"]
-    ];
-    matrix.innerHTML = rows.map((row) => `<div class="matrix-row"><div><b>${row[0]}</b><br><span>${row[2]}</span></div><span>${row[1]}</span><span class="mini-chip">NN</span></div>`).join("");
-  }
-  const rank = document.getElementById("context-strength");
-  if (rank) {
-    rank.innerHTML = redeNeuralTeams.slice(0, 10).map((row, i) => {
-      const strength = Number(row.forca_modelo_0_100 || 0);
-      return `<div class="rank-row"><b>${i + 1}</b><div>${teamChip(row.selecao)}<span>Liga ${Number(row.league_score_top11 || row.league_score_mean || 0).toFixed(1)} · Jogadores ${Number(row.player_proxy_top18 || row.player_proxy_mean || 0).toFixed(1)}</span><div class="rank-meter"><i style="width:${Math.max(0, Math.min(100, strength))}%"></i></div></div><b>${strength.toFixed(1)}</b></div>`;
-    }).join("");
-  }
-  const recent = document.getElementById("recent-corrections");
-  if (recent) {
-    recent.innerHTML = corrections.slice(-7).reverse().map((c) => `<div class="correction-row"><b>Jogo ${c.jogo} · ${c.equipe1} x ${c.equipe2}</b><span>Rede ${c.previsao_antes} → Real ${c.resultado_real}</span><div class="chipline"><span class="mini-chip">Prox. ${c.proximidade_0_100}%</span><span class="mini-chip">Erro ${c.erro_total_gols}</span><span class="mini-chip">${c.correcao_registrada}</span></div></div>`).join("");
-  }
-}
-
 function setupBracketZoom() {
   const fit = document.getElementById("bracket-fit");
   if (!fit || fit.dataset.zoomReady) return;
@@ -628,7 +601,6 @@ function init() {
   if (page === "groups-games") { setupGroupFilter(); renderGroupGamesPage(); }
   if (page === "knockout-bracket") renderBracketPage();
   if (page === "knockout-games") { setupKoFilter(); renderKnockoutGamesPage(); }
-  if (page === "analysis") renderAnalysisPage();
   if (page === "neural-network") renderNeuralPage();
 }
 

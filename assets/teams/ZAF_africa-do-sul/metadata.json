@@ -1,0 +1,27 @@
+{
+  "country_pt": "África do Sul",
+  "country_en": "South Africa",
+  "iso2": "za",
+  "iso3": "ZAF",
+  "slug": "africa-do-sul",
+  "federation_name": "South African Football Association",
+  "official_site": "https://www.safa.net",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/za.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#007749",
+    "#E03C31",
+    "#001489",
+    "#000000",
+    "#FFFFFF"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

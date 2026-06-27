@@ -8,8 +8,7 @@ Visualizador estático para acompanhar a Copa 2026 com resultados reais e previs
 - `grupos-jogos.html` — lista de jogos da fase de grupos.
 - `mata-mata-chave.html` — chaveamento do mata-mata.
 - `mata-mata-jogos.html` — lista dos jogos eliminatórios.
-- `analise.html` — análise de erros, variáveis e aprendizado.
-- `rede-neural.html` — arquitetura, métricas, treino e visualização da rede.
+- `rede-neural.html` — arquitetura, métricas, treino, desempenho, erros e visualização da rede.
 
 ## Fonte de previsão
 
