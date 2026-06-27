@@ -1,4 +1,4 @@
-jogo,data,fase,equipe1,equipe2,placar_rede_neural_puro,vencedor_rede_neural_puro
+﻿jogo,data,fase,equipe1,equipe2,placar_rede_neural_puro,vencedor_rede_neural_puro
 1,2026-06-11,Fase de grupos,México,África do Sul,2-1,México
 2,2026-06-11,Fase de grupos,Coreia do Sul,Tchéquia,3-1,Coreia do Sul
 3,2026-06-12,Fase de grupos,Canadá,Bósnia e Herzegovina,3-1,Canadá
@@ -71,35 +71,35 @@ jogo,data,fase,equipe1,equipe2,placar_rede_neural_puro,vencedor_rede_neural_puro
 70,2026-06-27,Fase de grupos,Jordânia,Argentina,1-2,Argentina
 71,2026-06-27,Fase de grupos,Colômbia,Portugal,2-1,Colômbia
 72,2026-06-27,Fase de grupos,RD Congo,Uzbequistão,1-1,RD Congo
-73,2026-06-28,16 avos de final,África do Sul,Canadá,1-2,Canadá
-74,2026-06-29,16 avos de final,Alemanha,Paraguai,2-1,Alemanha
+73,2026-06-28,16 avos de final,África do Sul,Canadá,2-1,África do Sul
+74,2026-06-29,16 avos de final,Alemanha,Suécia,2-1,Alemanha
 75,2026-06-29,16 avos de final,Países Baixos,Marrocos,2-1,Países Baixos
-76,2026-06-29,16 avos de final,Brasil,Japão,3-1,Brasil
-77,2026-06-30,16 avos de final,França,Bélgica,2-2,França
-78,2026-06-30,16 avos de final,Costa do Marfim,Noruega,1-2,Noruega
-79,2026-06-30,16 avos de final,México,Senegal,2-1,México
-80,2026-07-01,16 avos de final,Inglaterra,RD Congo,2-0,Inglaterra
-81,2026-07-01,16 avos de final,Estados Unidos,Bósnia e Herzegovina,3-1,Estados Unidos
-82,2026-07-01,16 avos de final,Egito,Argélia,1-2,Argélia
-83,2026-07-02,16 avos de final,Colômbia,Gana,1-0,Colômbia
+76,2026-06-29,16 avos de final,Brasil,Japão,2-1,Brasil
+77,2026-06-30,16 avos de final,França,Paraguai,2-1,França
+78,2026-06-30,16 avos de final,Costa do Marfim,Noruega,2-1,Costa do Marfim
+79,2026-06-30,16 avos de final,México,Equador,1-1,Equador
+80,2026-07-01,16 avos de final,Inglaterra,Argélia,2-1,Inglaterra
+81,2026-07-01,16 avos de final,Estados Unidos,Bósnia e Herzegovina,2-1,Estados Unidos
+82,2026-07-01,16 avos de final,Irã,Senegal,2-2,Senegal
+83,2026-07-02,16 avos de final,Portugal,Gana,2-0,Portugal
 84,2026-07-02,16 avos de final,Espanha,Áustria,3-1,Espanha
-85,2026-07-02,16 avos de final,Suíça,Suécia,2-1,Suíça
+85,2026-07-02,16 avos de final,Suíça,Egito,2-1,Suíça
 86,2026-07-03,16 avos de final,Argentina,Cabo Verde,2-1,Argentina
-87,2026-07-03,16 avos de final,Portugal,Equador,3-1,Portugal
-88,2026-07-03,16 avos de final,Austrália,Irã,1-2,Irã
-89,2026-07-04,Oitavas de final,Canadá,Países Baixos,2-1,Canadá
-90,2026-07-04,Oitavas de final,Alemanha,Bélgica,2-1,Alemanha
+87,2026-07-03,16 avos de final,Colômbia,Croácia,2-1,Colômbia
+88,2026-07-03,16 avos de final,Austrália,Bélgica,1-2,Bélgica
+89,2026-07-04,Oitavas de final,África do Sul,Países Baixos,2-2,Países Baixos
+90,2026-07-04,Oitavas de final,Alemanha,França,2-1,Alemanha
 91,2026-07-05,Oitavas de final,Brasil,Costa do Marfim,2-1,Brasil
-92,2026-07-05,Oitavas de final,México,Inglaterra,2-1,México
-93,2026-07-06,Oitavas de final,Colômbia,Espanha,2-1,Colômbia
-94,2026-07-06,Oitavas de final,Estados Unidos,Argélia,2-1,Estados Unidos
-95,2026-07-07,Oitavas de final,Argentina,Irã,2-0,Argentina
-96,2026-07-07,Oitavas de final,Suíça,Portugal,2-2,Suíça
+92,2026-07-05,Oitavas de final,Equador,Inglaterra,2-1,Equador
+93,2026-07-06,Oitavas de final,Portugal,Espanha,3-1,Portugal
+94,2026-07-06,Oitavas de final,Estados Unidos,Senegal,3-1,Estados Unidos
+95,2026-07-07,Oitavas de final,Argentina,Bélgica,3-1,Argentina
+96,2026-07-07,Oitavas de final,Suíça,Colômbia,1-1,Colômbia
 97,2026-07-09,Quartas de final,Países Baixos,Alemanha,2-1,Países Baixos
-98,2026-07-10,Quartas de final,Espanha,Estados Unidos,3-1,Espanha
-99,2026-07-11,Quartas de final,Brasil,México,1-1,México
-100,2026-07-11,Quartas de final,Argentina,Portugal,3-1,Argentina
-101,2026-07-14,Semifinais,Alemanha,Estados Unidos,2-1,Alemanha
-102,2026-07-15,Semifinais,México,Portugal,2-1,México
-103,2026-07-18,Disputa de 3º lugar,Alemanha,México,1-1,México
-104,2026-07-19,Final,Estados Unidos,Portugal,2-1,Estados Unidos
+98,2026-07-10,Quartas de final,Portugal,Estados Unidos,3-1,Portugal
+99,2026-07-11,Quartas de final,Brasil,Equador,1-1,Brasil
+100,2026-07-11,Quartas de final,Argentina,Colômbia,2-1,Argentina
+101,2026-07-14,Semifinais,Países Baixos,Portugal,2-1,Países Baixos
+102,2026-07-15,Semifinais,Brasil,Argentina,2-1,Brasil
+103,2026-07-18,Disputa de 3º lugar,Portugal,Argentina,3-1,Portugal
+104,2026-07-19,Final,Países Baixos,Brasil,2-1,Países Baixos
