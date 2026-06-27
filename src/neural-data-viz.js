@@ -4,9 +4,7 @@
   const metrics = window.WC2026_REDE_NEURAL_METRICAS || {};
   const history = window.WC2026_REDE_NEURAL_HISTORICO || [];
   const predictions = window.WC2026_REDE_NEURAL_PREVISOES || [];
-  const daily = window.WC2026_MODELO_DIARIO_RESUMO || [];
-  const teams = window.WC2026_MODELO_TIMES || [];
-  const matrix = window.WC2026_MATRIZ_VARIAVEIS || [];
+  const teams = window.WC2026_REDE_NEURAL_TEAMS || [];
 
   const COLORS = {
     text: '#f8fafc',
@@ -165,24 +163,16 @@
   function renderFeatureBars() {
     const target = document.getElementById('feature-impact-bars');
     if (!target) return;
-    const fallback = [
-      { variavel: 'Força base do elenco', peso_modelo: '42%', influencia: 'qualidade estrutural do time' },
-      { variavel: 'Competitividade da liga', peso_modelo: '20%', influencia: 'nível médio dos campeonatos dos jogadores' },
-      { variavel: 'Desempenho dos jogadores', peso_modelo: '18%', influencia: 'proxy individual e destaques recentes' },
-      { variavel: 'Resultado anterior por data', peso_modelo: '12%', influencia: 'momentum e recência' },
-      { variavel: 'Correção do modelo', peso_modelo: '8%', influencia: 'erro acumulado ajustado' }
-    ];
-    const rows = (matrix.length ? matrix : fallback).slice(0, 8);
-    target.innerHTML = rows.map(row => {
-      const label = row.variavel || row.nome || row.feature || 'Variável';
-      const pct = toNum(row.peso_modelo || row.peso || row.peso_percentual || 0);
-      const influence = row.influencia || row.descricao || row.uso || '';
-      return `<div class="feature-bar-row">
-        <div><b>${label}</b><span>${influence}</span></div>
-        <strong>${pct}%</strong>
-        <i><em style="width:${Math.max(4, Math.min(100, pct))}%"></em></i>
-      </div>`;
-    }).join('');
+    const rows = (window.WC2026_REDE_NEURAL_SCHEMA || []).slice(0, 10).map((row, index) => ({
+      label: row.feature || `feature_${index}`,
+      influence: row.uso || row.tipo || 'entrada da rede neural',
+      pct: Math.max(8, 100 - index * 8)
+    }));
+    target.innerHTML = rows.map(row => `<div class="feature-bar-row">
+      <div><b>${row.label}</b><span>${row.influence}</span></div>
+      <strong>NN</strong>
+      <i><em style="width:${Math.max(4, Math.min(100, row.pct))}%"></em></i>
+    </div>`).join('');
   }
 
   function drawTeamMap(canvas, rows) {
@@ -192,9 +182,9 @@
     const pad = { left: 52, right: 24, top: 28, bottom: 42 };
     const chartW = width - pad.left - pad.right;
     const chartH = height - pad.top - pad.bottom;
-    const xs = rows.map(r => toNum(r.competitividade_liga_0_100));
-    const ys = rows.map(r => toNum(r.desempenho_jogadores_0_100));
-    const ss = rows.map(r => toNum(r.forca_contextual_0_100));
+    const xs = rows.map(r => toNum((r.league_score_top11 || r.league_score_mean)));
+    const ys = rows.map(r => toNum((r.player_proxy_top18 || r.player_proxy_mean)));
+    const ss = rows.map(r => toNum(r.forca_modelo_0_100));
     const minX = Math.min(...xs) - 2;
     const maxX = Math.max(...xs) + 2;
     const minY = Math.min(...ys) - 2;
@@ -212,11 +202,11 @@
     }
     drawAxes(ctx, width, height, pad, 'Competitividade da liga', 'Desempenho jogadores');
 
-    const sorted = [...rows].sort((a,b) => toNum(a.forca_contextual_0_100) - toNum(b.forca_contextual_0_100));
+    const sorted = [...rows].sort((a,b) => toNum(a.forca_modelo_0_100) - toNum(b.forca_modelo_0_100));
     sorted.forEach(row => {
-      const xVal = toNum(row.competitividade_liga_0_100);
-      const yVal = toNum(row.desempenho_jogadores_0_100);
-      const sVal = toNum(row.forca_contextual_0_100);
+      const xVal = toNum((row.league_score_top11 || row.league_score_mean));
+      const yVal = toNum((row.player_proxy_top18 || row.player_proxy_mean));
+      const sVal = toNum(row.forca_modelo_0_100);
       const x = pad.left + ((xVal - minX) / Math.max(.0001, maxX - minX)) * chartW;
       const y = pad.top + (1 - ((yVal - minY) / Math.max(.0001, maxY - minY))) * chartH;
       const r = 4 + 8 * ((sVal - minS) / Math.max(.0001, maxS - minS));
@@ -265,9 +255,37 @@
       </div>`;
   }
 
+
+  function buildDailyRows() {
+    const byDate = new Map();
+    predictions.forEach(row => {
+      if (!byDate.has(row.data)) byDate.set(row.data, { data: row.data, jogos_previstos: 0, jogos_validados: 0, 'acuracia_vencedor_%': '', 'placar_exato_%': '', erro_medio_total_gols: '' });
+      const item = byDate.get(row.data);
+      item.jogos_previstos += 1;
+      if (row.possui_real === 'Sim' && row.placar_real) {
+        item.jogos_validados += 1;
+        const predWinner = row.vencedor_rede_neural || winner(row.equipe1, row.equipe2, row.placar_rede_neural);
+        const realWinner = winner(row.equipe1, row.equipe2, row.placar_real);
+        item._winnerOk = (item._winnerOk || 0) + (predWinner === realWinner ? 1 : 0);
+        item._exact = (item._exact || 0) + (row.placar_rede_neural === row.placar_real ? 1 : 0);
+        const p = parseScore(row.placar_rede_neural) || [0, 0];
+        const r = parseScore(row.placar_real) || [0, 0];
+        item._err = (item._err || 0) + Math.abs(p[0] - r[0]) + Math.abs(p[1] - r[1]);
+      }
+    });
+    return [...byDate.values()].map(item => {
+      if (item.jogos_validados) {
+        item['acuracia_vencedor_%'] = Math.round((item._winnerOk || 0) / item.jogos_validados * 100);
+        item['placar_exato_%'] = Math.round((item._exact || 0) / item.jogos_validados * 100);
+        item.erro_medio_total_gols = ((item._err || 0) / item.jogos_validados).toFixed(2);
+      }
+      return item;
+    });
+  }
+
   function refresh() {
     drawLineChart(document.getElementById('training-loss-chart'), history);
-    drawDailyChart(document.getElementById('daily-performance-chart'), daily);
+    drawDailyChart(document.getElementById('daily-performance-chart'), buildDailyRows());
     drawTeamMap(document.getElementById('team-feature-map'), teams);
   }
 

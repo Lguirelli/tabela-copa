@@ -1,40 +1,27 @@
-# Model Card — Rede Neural Copa 2026
+# CopaMatchNet — Rede neural da Copa 2026
 
-## Objetivo
-Prever placar, vencedor e tendência de gols em jogos da Copa 2026, usando dados já presentes no repositório.
+Este repositório usa a rede neural `CopaMatchNet` como fonte única para previsões de jogos.
 
-## Arquitetura
-`CopaMatchNet`: rede neural PyTorch com:
+## Entradas usadas
 
-- embeddings para seleção 1 e seleção 2;
-- variáveis numéricas padronizadas;
-- MLP com LayerNorm, SiLU e Dropout;
-- saída com dois valores: saldo de gols e total de gols.
+- calendário e fase do jogo;
+- seleções envolvidas;
+- embeddings treináveis das seleções;
+- força do elenco;
+- desempenho agregado dos jogadores;
+- competitividade média dos campeonatos dos jogadores;
+- experiência, gols pela seleção e indicadores por setor;
+- resultados reais já registrados.
 
-## Variáveis consideradas
+## Saídas
 
-- força contextual da seleção;
-- competitividade média das ligas dos jogadores;
-- desempenho proxy dos jogadores;
-- intensidade, posse e pressão do técnico;
-- ataque, meio, defesa e goleiro;
-- experiência, caps e gols pela seleção;
-- momentum por data;
-- correções de aprendizado;
-- arbitragem simulada;
-- previsão contextual anterior.
+A rede prevê:
 
-## Limitações
-A base de resultados reais ainda é pequena para uma rede profunda. Por isso, a previsão final usa um blend entre a rede neural e o modelo contextual anterior, reduzindo overfit.
+- saldo de gols;
+- total de gols;
+- placar arredondado;
+- vencedor provável.
 
-## Como treinar
+## Observação
 
-```bash
-python scripts/treinar_rede_neural_copa.py
-```
-
-## Como aplicar inferência
-
-```bash
-python scripts/aplicar_rede_neural_copa.py
-```
+O front lê `src/rede-neural-data.js`, gerado a partir de `data/rede_neural/previsoes_rede_neural.csv`.

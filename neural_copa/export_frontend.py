@@ -1,10 +1,11 @@
-
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
 import pandas as pd
+
+from .data_utils import load_base_tables, build_team_feature_table
 
 
 def to_js_assignment(name: str, value) -> str:
@@ -24,11 +25,24 @@ def export_frontend(root: Path | None = None):
     hist = pd.read_csv(hist_path).tail(120).fillna("").to_dict(orient="records") if hist_path.exists() else []
     schema = pd.read_csv(schema_path).fillna("").head(80).to_dict(orient="records") if schema_path.exists() else []
 
+    try:
+        team_features = build_team_feature_table(load_base_tables(root))
+        keep = [c for c in [
+            "selecao", "codigo", "grupo", "forca_modelo_0_100", "ataque_score", "meio_score",
+            "defesa_score", "goleiro_score", "experiencia_score", "intensidade_valor", "posse_valor",
+            "pressao_valor", "player_proxy_mean", "player_proxy_top18", "league_score_mean",
+            "league_score_top11", "caps_mean", "goals_selection_total_players"
+        ] if c in team_features.columns]
+        teams = team_features[keep].fillna("").sort_values("forca_modelo_0_100", ascending=False).to_dict(orient="records")
+    except Exception:
+        teams = []
+
     js = "".join([
         to_js_assignment("WC2026_REDE_NEURAL_METRICAS", metrics),
         to_js_assignment("WC2026_REDE_NEURAL_PREVISOES", preds),
         to_js_assignment("WC2026_REDE_NEURAL_HISTORICO", hist),
         to_js_assignment("WC2026_REDE_NEURAL_SCHEMA", schema),
+        to_js_assignment("WC2026_REDE_NEURAL_TEAMS", teams),
     ])
     (root / "src" / "rede-neural-data.js").write_text(js, encoding="utf-8")
 

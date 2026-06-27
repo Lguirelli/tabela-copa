@@ -1430,7 +1430,7 @@ window.WC2026_DATA = {
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 74,
@@ -1448,7 +1448,7 @@ window.WC2026_DATA = {
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 75,
@@ -1466,7 +1466,7 @@ window.WC2026_DATA = {
       "estadio": "Estadio BBVA",
       "cidade": "Monterrey",
       "pais": "México",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 76,
@@ -1484,7 +1484,7 @@ window.WC2026_DATA = {
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 77,
@@ -1502,7 +1502,7 @@ window.WC2026_DATA = {
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 78,
@@ -1520,7 +1520,7 @@ window.WC2026_DATA = {
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 79,
@@ -1538,7 +1538,7 @@ window.WC2026_DATA = {
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 80,
@@ -1556,7 +1556,7 @@ window.WC2026_DATA = {
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 81,
@@ -1574,7 +1574,7 @@ window.WC2026_DATA = {
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 82,
@@ -1592,7 +1592,7 @@ window.WC2026_DATA = {
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 83,
@@ -1610,7 +1610,7 @@ window.WC2026_DATA = {
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 84,
@@ -1628,7 +1628,7 @@ window.WC2026_DATA = {
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 85,
@@ -1646,7 +1646,7 @@ window.WC2026_DATA = {
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 86,
@@ -1664,7 +1664,7 @@ window.WC2026_DATA = {
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 87,
@@ -1682,7 +1682,7 @@ window.WC2026_DATA = {
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 88,
@@ -1700,7 +1700,7 @@ window.WC2026_DATA = {
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 89,
@@ -1718,7 +1718,7 @@ window.WC2026_DATA = {
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 90,
@@ -1736,7 +1736,7 @@ window.WC2026_DATA = {
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 91,
@@ -1754,7 +1754,7 @@ window.WC2026_DATA = {
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 92,
@@ -1772,7 +1772,7 @@ window.WC2026_DATA = {
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 93,
@@ -1790,7 +1790,7 @@ window.WC2026_DATA = {
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 94,
@@ -1808,7 +1808,7 @@ window.WC2026_DATA = {
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 95,
@@ -1826,7 +1826,7 @@ window.WC2026_DATA = {
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 96,
@@ -1844,7 +1844,7 @@ window.WC2026_DATA = {
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 97,
@@ -1862,7 +1862,7 @@ window.WC2026_DATA = {
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 98,
@@ -1880,7 +1880,7 @@ window.WC2026_DATA = {
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 99,
@@ -1898,7 +1898,7 @@ window.WC2026_DATA = {
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 100,
@@ -1916,7 +1916,7 @@ window.WC2026_DATA = {
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 101,
@@ -1934,7 +1934,7 @@ window.WC2026_DATA = {
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 102,
@@ -1952,7 +1952,7 @@ window.WC2026_DATA = {
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 103,
@@ -1970,7 +1970,7 @@ window.WC2026_DATA = {
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     },
     {
       "jogo": 104,
@@ -1988,7 +1988,7 @@ window.WC2026_DATA = {
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Simulação"
+      "status": "Rede neural"
     }
   ]
 };

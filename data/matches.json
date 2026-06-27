@@ -1311,7 +1311,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 74,
@@ -1329,7 +1329,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 75,
@@ -1347,7 +1347,7 @@
     "estadio": "Estadio BBVA",
     "cidade": "Monterrey",
     "pais": "México",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 76,
@@ -1365,7 +1365,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 77,
@@ -1383,7 +1383,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 78,
@@ -1401,7 +1401,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 79,
@@ -1419,7 +1419,7 @@
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 80,
@@ -1437,7 +1437,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 81,
@@ -1455,7 +1455,7 @@
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 82,
@@ -1473,7 +1473,7 @@
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 83,
@@ -1491,7 +1491,7 @@
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 84,
@@ -1509,7 +1509,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 85,
@@ -1527,7 +1527,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 86,
@@ -1545,7 +1545,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 87,
@@ -1563,7 +1563,7 @@
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 88,
@@ -1581,7 +1581,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 89,
@@ -1599,7 +1599,7 @@
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 90,
@@ -1617,7 +1617,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 91,
@@ -1635,7 +1635,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 92,
@@ -1653,7 +1653,7 @@
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 93,
@@ -1671,7 +1671,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 94,
@@ -1689,7 +1689,7 @@
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 95,
@@ -1707,7 +1707,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 96,
@@ -1725,7 +1725,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 97,
@@ -1743,7 +1743,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 98,
@@ -1761,7 +1761,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 99,
@@ -1779,7 +1779,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 100,
@@ -1797,7 +1797,7 @@
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 101,
@@ -1815,7 +1815,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 102,
@@ -1833,7 +1833,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 103,
@@ -1851,7 +1851,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 104,
@@ -1869,6 +1869,6 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   }
 ]

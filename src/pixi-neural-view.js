@@ -21,9 +21,9 @@
     const train = metrics.treino || {};
     const schema = window.WC2026_REDE_NEURAL_SCHEMA || [];
     const predictions = window.WC2026_REDE_NEURAL_PREVISOES || [];
-    const teams = window.WC2026_MODELO_TIMES || [];
+    const teams = window.WC2026_REDE_NEURAL_TEAMS || [];
     const history = window.WC2026_REDE_NEURAL_HISTORICO || [];
-    const topTeam = [...teams].sort((a, b) => Number(b.forca_contextual_0_100 || 0) - Number(a.forca_contextual_0_100 || 0))[0] || {};
+    const topTeam = [...teams].sort((a, b) => Number(b.forca_modelo_0_100 || 0) - Number(a.forca_modelo_0_100 || 0))[0] || {};
     const latestPrediction = predictions.find((row) => row.possui_real !== 'Sim') || predictions[predictions.length - 1] || {};
     const latestEpoch = history[history.length - 1] || {};
     return {
@@ -50,7 +50,7 @@
       ['Embeddings', number(summary.metrics.times_com_embedding)],
       ['Validação', `${pct(summary.val.acuracia_vencedor)} vencedor · ${pct(summary.val.placar_exato)} placar`],
       ['Último treino', summary.latestEpoch.epoch ? `epoch ${summary.latestEpoch.epoch} · val_loss ${summary.latestEpoch.val_loss}` : '—'],
-      ['Time mais forte', summary.topTeam.selecao ? `${summary.topTeam.selecao} · ${summary.topTeam.forca_contextual_0_100}` : '—']
+      ['Time mais forte', summary.topTeam.selecao ? `${summary.topTeam.selecao} · ${summary.topTeam.forca_modelo_0_100}` : '—']
     ];
     target.innerHTML = rows.map(([label, value]) => `<div class="pixi-info-row"><span>${label}</span><b>${value}</b></div>`).join('');
   }
@@ -60,12 +60,10 @@
     const val = summary.val || {};
     const train = summary.train || {};
     const features = [
-      ['forca', 'Força contextual', `${number(summary.metrics.variaveis_numericas)} features`],
+      ['forca', 'Força do elenco', `${number(summary.metrics.variaveis_numericas)} features`],
       ['liga', 'Competitividade liga', 'peso inicial do elenco'],
       ['jogadores', 'Desempenho jogadores', 'proxy + destaques'],
-      ['data', 'Data e momentum', 'resultado anterior pesa mais'],
-      ['arbitragem', 'Arbitragem', 'rigor + fluidez'],
-      ['baseline', 'Baseline anterior', 'previsão contextual']
+      ['calendario', 'Calendário', 'fase + data']
     ];
     const nodes = [];
     const add = (id, label, subtitle, col, row, type) => nodes.push({ id, label, subtitle, col, row, type });
@@ -76,17 +74,17 @@
     add('dense1', 'Dense 65 → 128', 'LayerNorm + SiLU', 2, .8, 'hidden');
     add('dense2', 'Dense 128 → 64', 'Dropout anti-overfit', 2, 2.65, 'hidden');
     add('dense3', 'Dense 64 → 32', `val_loss ${number(summary.latestEpoch.val_loss)}`, 2, 4.5, 'hidden');
-    add('blend', 'Blend seguro', `${number(summary.metrics.blend_rede_neural, '0.45')} rede neural`, 3, 2.65, 'blend');
+    add('outputLayer', 'Saída neural', 'saída neural direta', 3, 2.65, 'blend');
     add('golsA', 'Gols time A', `treino ${pct(train.acuracia_vencedor)}`, 4, 1.2, 'output');
     add('golsB', 'Gols time B', `erro médio ${number(val.erro_medio_total_gols)}`, 4, 2.65, 'output');
     add('winner', 'Vencedor', `validação ${pct(val.acuracia_vencedor)}`, 4, 4.1, 'output');
 
     const edges = [];
-    const toTeam = ['forca', 'liga', 'jogadores', 'data', 'arbitragem'];
+    const toTeam = ['forca', 'liga', 'jogadores'];
     toTeam.forEach((id) => { edges.push([id, 'teamA']); edges.push([id, 'teamB']); });
-    ['teamA', 'teamB', 'baseline'].forEach((id) => edges.push([id, 'dense1']));
-    edges.push(['dense1', 'dense2'], ['dense2', 'dense3'], ['dense3', 'blend']);
-    edges.push(['blend', 'golsA'], ['blend', 'golsB'], ['blend', 'winner']);
+    ['teamA', 'teamB', 'calendario'].forEach((id) => edges.push([id, 'dense1']));
+    edges.push(['dense1', 'dense2'], ['dense2', 'dense3'], ['dense3', 'outputLayer']);
+    edges.push(['outputLayer', 'golsA'], ['outputLayer', 'golsB'], ['outputLayer', 'winner']);
     return { nodes, edges };
   }
 

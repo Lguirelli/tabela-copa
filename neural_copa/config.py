@@ -1,4 +1,3 @@
-
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -14,7 +13,6 @@ class NeuralCopaConfig:
     weight_decay: float = 0.0007
     epochs: int = 260
     patience: int = 35
-    blend_neural_weight: float = 0.42
     max_goals: int = 7
 
     @property

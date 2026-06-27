@@ -1,4 +1,3 @@
-
 from __future__ import annotations
 
 import json
@@ -31,7 +30,7 @@ def normalize_name(value: str) -> str:
 def read_csv_safe(path: Path) -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame()
-    return pd.read_csv(path)
+    return pd.read_csv(path, encoding="utf-8-sig")
 
 
 def pick_col(df: pd.DataFrame, options: List[str], default: str | None = None) -> str | None:
@@ -39,15 +38,6 @@ def pick_col(df: pd.DataFrame, options: List[str], default: str | None = None) -
         if col in df.columns:
             return col
     return default
-
-
-def numeric(value, default=0.0):
-    try:
-        if value is None or (isinstance(value, float) and math.isnan(value)):
-            return default
-        return float(value)
-    except Exception:
-        return default
 
 
 def winner_label(g1: int, g2: int) -> int:
@@ -58,11 +48,14 @@ def winner_label(g1: int, g2: int) -> int:
     return 1
 
 
-def winner_name(team1: str, team2: str, g1: int, g2: int) -> str:
+def winner_name(team1: str, team2: str, g1: int, g2: int, goal_diff_float: float | None = None) -> str:
     if g1 > g2:
         return team1
     if g2 > g1:
         return team2
+    # Em mata-mata a rede pode arredondar para empate; usa o sinal bruto como desempate técnico.
+    if goal_diff_float is not None and abs(float(goal_diff_float)) > 1e-6:
+        return team1 if goal_diff_float > 0 else team2
     return "Empate"
 
 
@@ -76,39 +69,23 @@ def load_base_tables(root: Path) -> Dict[str, pd.DataFrame]:
     data = root / "data"
     return {
         "matches": read_csv_safe(data / "matches.csv"),
-        "predictions": read_csv_safe(data / "previsoes_modelo.csv"),
         "real": read_csv_safe(data / "resultados_reais.csv"),
         "team_strengths": read_csv_safe(data / "database" / "team_strengths.csv"),
         "players": read_csv_safe(data / "database" / "players_database.csv"),
-        "modelo_times": read_csv_safe(data / "modelo" / "modelo_times.csv"),
-        "daily_features": read_csv_safe(data / "modelo_diario" / "features_times_iniciais.csv"),
-        "corrections": read_csv_safe(data / "neural" / "correcoes_modelo.csv"),
+        "tactical": read_csv_safe(data / "database" / "teams_tactical.csv"),
     }
 
 
 def build_team_feature_table(tables: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     strengths = tables["team_strengths"].copy()
-    modelo = tables["modelo_times"].copy()
     players = tables["players"].copy()
-    daily = tables["daily_features"].copy()
+    tactical = tables.get("tactical", pd.DataFrame()).copy()
 
     if strengths.empty:
         raise RuntimeError("data/database/team_strengths.csv não encontrado ou vazio.")
 
     team_col = pick_col(strengths, ["selecao", "Seleção"])
     strengths["team_key"] = strengths[team_col].map(normalize_name)
-
-    if not modelo.empty:
-        mteam_col = pick_col(modelo, ["selecao", "Seleção"])
-        modelo["team_key"] = modelo[mteam_col].map(normalize_name)
-    else:
-        modelo = pd.DataFrame({"team_key": strengths["team_key"]})
-
-    if not daily.empty:
-        dteam_col = pick_col(daily, ["selecao", "Seleção"])
-        daily["team_key"] = daily[dteam_col].map(normalize_name)
-    else:
-        daily = pd.DataFrame({"team_key": strengths["team_key"]})
 
     player_agg = pd.DataFrame({"team_key": strengths["team_key"]})
     if not players.empty:
@@ -120,10 +97,17 @@ def build_team_feature_table(tables: Dict[str, pd.DataFrame]) -> pd.DataFrame:
         gols_col = pick_col(players, ["Gols seleção", "Gols selecao"])
         pos_col = pick_col(players, ["Posição", "Posicao"])
         agg_spec = {}
-        if idx_col: agg_spec["player_proxy_mean"] = (idx_col, "mean"); agg_spec["player_proxy_top18"] = (idx_col, lambda s: s.nlargest(min(len(s),18)).mean())
-        if liga_col: agg_spec["league_score_mean"] = (liga_col, "mean"); agg_spec["league_score_top11"] = (liga_col, lambda s: s.nlargest(min(len(s),11)).mean())
-        if caps_col: agg_spec["caps_mean"] = (caps_col, "mean"); agg_spec["caps_total"] = (caps_col, "sum")
-        if gols_col: agg_spec["goals_selection_total"] = (gols_col, "sum")
+        if idx_col:
+            agg_spec["player_proxy_mean"] = (idx_col, "mean")
+            agg_spec["player_proxy_top18"] = (idx_col, lambda s: s.nlargest(min(len(s), 18)).mean())
+        if liga_col:
+            agg_spec["league_score_mean"] = (liga_col, "mean")
+            agg_spec["league_score_top11"] = (liga_col, lambda s: s.nlargest(min(len(s), 11)).mean())
+        if caps_col:
+            agg_spec["caps_mean"] = (caps_col, "mean")
+            agg_spec["caps_total_players"] = (caps_col, "sum")
+        if gols_col:
+            agg_spec["goals_selection_total_players"] = (gols_col, "sum")
         if agg_spec:
             player_agg = players.groupby("team_key").agg(**agg_spec).reset_index()
         if pos_col and idx_col:
@@ -139,57 +123,44 @@ def build_team_feature_table(tables: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     ]
     strengths_keep = strengths[[c for c in keep_strength_cols if c in strengths.columns]].copy()
 
-    keep_modelo_cols = [
-        "team_key", "liga_media", "liga_top11", "desempenho_proxy_medio", "desempenho_top18",
-        "impacto_jogadores_copa", "impacto_resultado_anterior", "ajuste_acumulado",
-        "competitividade_liga_0_100", "desempenho_jogadores_0_100", "momentum_data_0_100",
-        "ajuste_aprendizado_0_100", "forca_contextual_0_100"
-    ]
-    modelo_keep = modelo[[c for c in keep_modelo_cols if c in modelo.columns]].copy()
+    if not tactical.empty:
+        tteam_col = pick_col(tactical, ["Seleção", "selecao"])
+        if tteam_col:
+            tactical["team_key"] = tactical[tteam_col].map(normalize_name)
+            tactical_keep = tactical[[c for c in ["team_key", "Estilo técnico", "Sistema base", "Técnico"] if c in tactical.columns]].copy()
+        else:
+            tactical_keep = pd.DataFrame({"team_key": strengths["team_key"]})
+    else:
+        tactical_keep = pd.DataFrame({"team_key": strengths["team_key"]})
 
-    keep_daily_cols = [
-        "team_key", "rating_inicial_0_100", "qualidade_jogadores_0_100",
-        "equilibrio_setores_0_100", "arbitragem_rigor_medio_0_10",
-        "arbitragem_fluidez_media_0_10", "arbitragem_var_media_0_10", "arbitragem_penalti_media_0_10"
-    ]
-    daily_keep = daily[[c for c in keep_daily_cols if c in daily.columns]].copy()
+    team_features = strengths_keep.merge(player_agg, on="team_key", how="left").merge(tactical_keep, on="team_key", how="left")
 
-    team_features = strengths_keep.merge(modelo_keep, on="team_key", how="left").merge(player_agg, on="team_key", how="left").merge(daily_keep, on="team_key", how="left")
-
-    # Preenchimentos seguros para times que não tenham algum agregado.
     num_cols = team_features.select_dtypes(include=[np.number]).columns
     for col in num_cols:
         team_features[col] = pd.to_numeric(team_features[col], errors="coerce")
-        team_features[col] = team_features[col].fillna(team_features[col].median())
+        team_features[col] = team_features[col].fillna(team_features[col].median() if team_features[col].notna().any() else 0.0)
     return team_features
 
 
 def build_match_dataset(root: Path) -> Tuple[pd.DataFrame, Dict[str, int], List[str]]:
     tables = load_base_tables(root)
     matches = tables["matches"].copy()
-    predictions = tables["predictions"].copy()
     real = tables["real"].copy()
-    corrections = tables["corrections"].copy()
     team_features = build_team_feature_table(tables)
 
-    if matches.empty or predictions.empty:
-        raise RuntimeError("Arquivos data/matches.csv e data/previsoes_modelo.csv são obrigatórios.")
+    if matches.empty:
+        raise RuntimeError("Arquivo data/matches.csv é obrigatório.")
 
     matches["jogo"] = matches["jogo"].astype(int)
-    predictions["jogo"] = predictions["jogo"].astype(int)
-    base = matches.merge(predictions, on="jogo", how="left", suffixes=("", "_pred"))
+    base = matches.copy()
 
     if not real.empty:
         real["jogo"] = real["jogo"].astype(int)
-        base = base.merge(real[["jogo", "gols1_real", "gols2_real", "placar_real", "vencedor_real", "status_real"]], on="jogo", how="left")
+        keep_real = [c for c in ["jogo", "gols1_real", "gols2_real", "placar_real", "vencedor_real", "status_real"] if c in real.columns]
+        base = base.merge(real[keep_real], on="jogo", how="left")
     else:
         base["gols1_real"] = np.nan
         base["gols2_real"] = np.nan
-
-    if not corrections.empty:
-        corrections["jogo"] = corrections["jogo"].astype(int)
-        keep = [c for c in ["jogo", "erro_total_gols", "proximidade_0_100", "acertou_vencedor", "acertou_placar_exato"] if c in corrections.columns]
-        base = base.merge(corrections[keep], on="jogo", how="left")
 
     base["team1_key"] = base["equipe1"].map(normalize_name)
     base["team2_key"] = base["equipe2"].map(normalize_name)
@@ -208,19 +179,12 @@ def build_match_dataset(root: Path) -> Tuple[pd.DataFrame, Dict[str, int], List[
     base = base.merge(tf1, on="team1_key", how="left").merge(tf2, on="team2_key", how="left")
 
     candidate_team_metrics = [
-        "forca_modelo_0_100", "forca_contextual_0_100", "competitividade_liga_0_100",
-        "desempenho_jogadores_0_100", "momentum_data_0_100", "ajuste_aprendizado_0_100",
-        "ataque_score", "meio_score", "defesa_score", "goleiro_score", "experiencia_score",
-        "intensidade_valor", "posse_valor", "pressao_valor", "player_proxy_mean",
-        "player_proxy_top18", "league_score_mean", "league_score_top11", "caps_mean",
-        "caps_total", "goals_selection_total", "rating_inicial_0_100", "qualidade_jogadores_0_100",
-        "equilibrio_setores_0_100", "arbitragem_rigor_medio_0_10", "arbitragem_fluidez_media_0_10"
+        "forca_modelo_0_100", "ataque_score", "meio_score", "defesa_score", "goleiro_score",
+        "experiencia_score", "intensidade_valor", "posse_valor", "pressao_valor",
+        "player_proxy_mean", "player_proxy_top18", "league_score_mean", "league_score_top11",
+        "caps_mean", "caps_total", "caps_total_players", "goals_selection_total_players", "gols_selecao_total"
     ]
-    numeric_features = [
-        "days_from_start", "is_knockout", "grupo_num",
-        "gols1_previsto_atual", "gols2_previsto_atual", "gols1_previsto_original", "gols2_previsto_original",
-        "xg1_modelo", "xg2_modelo", "rigor_cartoes_simulado_0_10", "fluidez_jogo_simulada_0_10"
-    ]
+    numeric_features = ["days_from_start", "is_knockout", "grupo_num"]
 
     for metric in candidate_team_metrics:
         c1, c2 = f"t1_{metric}", f"t2_{metric}"
@@ -229,7 +193,6 @@ def build_match_dataset(root: Path) -> Tuple[pd.DataFrame, Dict[str, int], List[
             base[f"sum_{metric}"] = pd.to_numeric(base[c1], errors="coerce") + pd.to_numeric(base[c2], errors="coerce")
             numeric_features.extend([f"diff_{metric}", f"sum_{metric}"])
 
-    # Interações simples para capturar encaixe: ataque de um lado contra defesa/goleiro do outro.
     interaction_pairs = [
         ("t1_ataque_score", "t2_defesa_score", "attack_vs_def_1"),
         ("t2_ataque_score", "t1_defesa_score", "attack_vs_def_2"),
@@ -241,7 +204,6 @@ def build_match_dataset(root: Path) -> Tuple[pd.DataFrame, Dict[str, int], List[
             base[out] = pd.to_numeric(base[a], errors="coerce") - pd.to_numeric(base[b], errors="coerce")
             numeric_features.append(out)
 
-    # Alvos reais.
     base["has_real"] = base["gols1_real"].notna() & base["gols2_real"].notna()
     base["target_goal_diff"] = pd.to_numeric(base["gols1_real"], errors="coerce") - pd.to_numeric(base["gols2_real"], errors="coerce")
     base["target_total_goals"] = pd.to_numeric(base["gols1_real"], errors="coerce") + pd.to_numeric(base["gols2_real"], errors="coerce")

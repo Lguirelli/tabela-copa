@@ -156,17 +156,13 @@ def run_training(root: Path | None = None, config: NeuralCopaConfig | None = Non
     train_metrics = metrics_for(train_df, train_pred, config.max_goals)
     val_metrics = metrics_for(val_df, val_pred, config.max_goals)
 
-    # Gera previsão neural para todos os jogos, misturando rede + baseline para reduzir overfit.
+    # Gera previsão neural pura para todos os jogos.
     rows = []
     for (_, r), (diff_pred, total_pred) in zip(dataset.iterrows(), all_pred):
         g1_neural_float = (float(total_pred) + float(diff_pred)) / 2.0
         g2_neural_float = (float(total_pred) - float(diff_pred)) / 2.0
-        bg1 = float(r.get("gols1_previsto_atual", r.get("gols1_previsto_original", 1)) or 1)
-        bg2 = float(r.get("gols2_previsto_atual", r.get("gols2_previsto_original", 1)) or 1)
-        w = config.blend_neural_weight
-        g1_blend = (w * g1_neural_float) + ((1 - w) * bg1)
-        g2_blend = (w * g2_neural_float) + ((1 - w) * bg2)
-        pg1, pg2 = safe_round_goals(g1_blend, g2_blend, max_goals=config.max_goals)
+        pg1, pg2 = safe_round_goals(g1_neural_float, g2_neural_float, max_goals=config.max_goals)
+        win = winner_name(r.get("equipe1", ""), r.get("equipe2", ""), pg1, pg2, goal_diff_float=float(diff_pred))
         rows.append({
             "jogo": int(r["jogo"]),
             "fase": r.get("fase", ""),
@@ -176,13 +172,12 @@ def run_training(root: Path | None = None, config: NeuralCopaConfig | None = Non
             "equipe2": r.get("equipe2", ""),
             "gols1_neural_float": round(g1_neural_float, 4),
             "gols2_neural_float": round(g2_neural_float, 4),
-            "gols1_blend_float": round(g1_blend, 4),
-            "gols2_blend_float": round(g2_blend, 4),
+            "goal_diff_neural_float": round(float(diff_pred), 4),
+            "total_goals_neural_float": round(float(total_pred), 4),
             "placar_rede_neural": f"{pg1}-{pg2}",
             "gols1_rede_neural": pg1,
             "gols2_rede_neural": pg2,
-            "vencedor_rede_neural": winner_name(r.get("equipe1", ""), r.get("equipe2", ""), pg1, pg2),
-            "placar_base_anterior": f"{int(bg1)}-{int(bg2)}",
+            "vencedor_rede_neural": win,
             "possui_real": "Sim" if bool(r.get("has_real", False)) else "Não",
             "placar_real": r.get("placar_real", "") if bool(r.get("has_real", False)) else "",
         })
@@ -208,12 +203,11 @@ def run_training(root: Path | None = None, config: NeuralCopaConfig | None = Non
         "jogos_totais_inferidos": int(len(dataset)),
         "variaveis_numericas": int(len(numeric_features)),
         "times_com_embedding": int(len(team_map)),
-        "blend_rede_neural": config.blend_neural_weight,
         "treino": train_metrics,
         "validacao_cronologica": val_metrics,
         "epochs_executados": int(history[-1]["epoch"] if history else 0),
         "best_val_loss": round(float(best_val), 6),
-        "observacao": "A rede aprende incrementalmente com poucos jogos reais; por isso a saída final mistura rede neural e baseline contextual para reduzir overfit.",
+        "observacao": "A rede neural é a fonte única de previsão do repositório. Entradas auxiliares são dados de elenco, ligas, técnicos, calendário e resultados reais, usando somente a rede neural como fonte de previsão.",
     }
 
     torch.save({

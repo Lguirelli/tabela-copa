@@ -1,24 +1,23 @@
 const baseData = window.WC2026_DATA || { matches: [], groups: [] };
 const baseMatches = baseData.matches || [];
 const groups = baseData.groups || [];
-const predictions = window.WC2026_PREDICTIONS || [];
-const realResults = window.WC2026_REAL_RESULTS || [];
-const corrections = window.WC2026_CORRECTIONS || [];
-const modelMetrics = window.WC2026_MODEL_METRICS || {};
-const teamAssets = window.WC2026_TEAM_ASSETS || {};
-const modeloTimes = window.WC2026_MODELO_TIMES || [];
-const matrizVariaveis = window.WC2026_MATRIZ_VARIAVEIS || [];
-const modeloDiarioResumo = window.WC2026_MODELO_DIARIO_RESUMO || [];
-const modeloDiarioMetricas = window.WC2026_MODELO_DIARIO_METRICAS || {};
 const redeNeuralMetricas = window.WC2026_REDE_NEURAL_METRICAS || {};
 const redeNeuralPrevisoes = window.WC2026_REDE_NEURAL_PREVISOES || [];
 const redeNeuralHistorico = window.WC2026_REDE_NEURAL_HISTORICO || [];
 const redeNeuralSchema = window.WC2026_REDE_NEURAL_SCHEMA || [];
+const redeNeuralTeams = window.WC2026_REDE_NEURAL_TEAMS || [];
+const predictions = redeNeuralPrevisoes;
+let corrections = [];
+const modelMetrics = {
+  jogos_com_resultado_real: redeNeuralMetricas.amostras_reais || 0,
+  acuracia_vencedor_percentual: redeNeuralMetricas.validacao_cronologica?.acuracia_vencedor || 0,
+  placar_exato_percentual: redeNeuralMetricas.validacao_cronologica?.placar_exato || 0,
+  erro_medio_total_gols: redeNeuralMetricas.validacao_cronologica?.erro_medio_total_gols || 0
+};
+const teamAssets = window.WC2026_TEAM_ASSETS || {};
 
 const page = document.body.dataset.page;
 const predictionByGame = new Map(predictions.map((item) => [Number(item.jogo), item]));
-const realByGame = new Map(realResults.map((item) => [Number(item.jogo), item]));
-const correctionByGame = new Map(corrections.map((item) => [Number(item.jogo), item]));
 let matches = [];
 let groupPage = 0;
 let groupGamesPage = 0;
@@ -115,39 +114,65 @@ function parseScore(score) {
   return found ? [Number(found[1]), Number(found[2])] : null;
 }
 
+function scoreWinner(team1, team2, score, fallback = "Empate") {
+  const parsed = parseScore(score);
+  if (!parsed) return fallback;
+  if (parsed[0] > parsed[1]) return team1;
+  if (parsed[1] > parsed[0]) return team2;
+  return fallback;
+}
+
 function buildMatches() {
   matches = baseMatches.map((base) => {
-    const prediction = predictionByGame.get(Number(base.jogo));
-    const real = realByGame.get(Number(base.jogo));
-    const correction = correctionByGame.get(Number(base.jogo));
-    const hasReal = Boolean(real && real.placar_real);
-    const equipe1 = hasReal ? real.equipe1 : prediction?.equipe1_prevista || base.equipe1;
-    const equipe2 = hasReal ? real.equipe2 : prediction?.equipe2_prevista || base.equipe2;
-    const predictionScore = hasReal
-      ? prediction?.placar_previsto_original
-      : prediction?.placar_previsto_atual || prediction?.placar_previsto_original;
-    const predictionWinner = hasReal
-      ? prediction?.vencedor_previsto_original
-      : prediction?.vencedor_previsto_atual || prediction?.vencedor_previsto_original;
+    const prediction = predictionByGame.get(Number(base.jogo)) || {};
+    const hasReal = prediction.possui_real === "Sim" && Boolean(prediction.placar_real);
+    const equipe1 = prediction.equipe1 || base.equipe1;
+    const equipe2 = prediction.equipe2 || base.equipe2;
+    const predictionScore = prediction.placar_rede_neural || "";
+    const predictionWinner = prediction.vencedor_rede_neural || scoreWinner(equipe1, equipe2, predictionScore);
+    const realScore = hasReal ? prediction.placar_real : "";
+    const realWinner = hasReal ? scoreWinner(equipe1, equipe2, realScore) : "";
+
+    let correction = null;
+    if (hasReal && predictionScore && realScore) {
+      const ps = parseScore(predictionScore) || [0, 0];
+      const rs = parseScore(realScore) || [0, 0];
+      const error = Math.abs(ps[0] - rs[0]) + Math.abs(ps[1] - rs[1]);
+      const winnerOk = predictionWinner === realWinner;
+      const exact = predictionScore === realScore;
+      const proximity = Math.max(0, Math.round(100 - error * 18 - (winnerOk ? 0 : 28)));
+      correction = {
+        jogo: base.jogo,
+        equipe1,
+        equipe2,
+        previsao_antes: predictionScore,
+        resultado_real: realScore,
+        erro_total_gols: error,
+        proximidade_0_100: proximity,
+        acertou_vencedor: winnerOk ? "Sim" : "Não",
+        acertou_placar_exato: exact ? "Sim" : "Não",
+        correcao_registrada: exact ? "placar exato" : (winnerOk ? "vencedor correto" : "vencedor corrigido")
+      };
+    }
 
     return {
       ...base,
       equipe1,
       equipe2,
       prediction,
-      real,
+      real: hasReal ? { placar_real: realScore, vencedor_real: realWinner } : null,
       correction,
       hasReal,
-      predictionScore: predictionScore || "",
-      predictionWinner: predictionWinner || "",
-      realScore: hasReal ? real.placar_real : "",
-      realWinner: hasReal ? real.vencedor_real : "",
-      status: hasReal ? "Finalizado" : "Simulação",
-      scoreForTable: hasReal ? real.placar_real : (predictionScore || "")
+      predictionScore,
+      predictionWinner,
+      realScore,
+      realWinner,
+      status: hasReal ? "Finalizado" : "Rede neural",
+      scoreForTable: hasReal ? realScore : predictionScore
     };
   });
+  corrections = matches.filter((match) => match.correction).map((match) => match.correction);
 }
-
 function matchByGame(game) {
   return matches.find((item) => Number(item.jogo) === Number(game));
 }
@@ -214,7 +239,7 @@ function renderSummaryCards() {
   const data = [
     ["Jogos totais", matches.length],
     ["Finalizados", finished],
-    ["Simulação", matches.length - finished],
+    ["Rede neural", matches.length - finished],
     ["Acerto vencedor", `${modelMetrics.acuracia_vencedor_percentual ?? 0}%`],
     ["Placar exato", `${modelMetrics.placar_exato_percentual ?? 0}%`]
   ];
@@ -246,7 +271,7 @@ function renderStandingsPage() {
 }
 
 function renderStatus(match) {
-  return `<span class="status ${match.hasReal ? "status--done" : "status--sim"}">${match.hasReal ? "Finalizado" : "Simulação"}</span>`;
+  return `<span class="status ${match.hasReal ? "status--done" : "status--sim"}">${match.hasReal ? "Finalizado" : "Rede neural"}</span>`;
 }
 
 function renderScore(score, type = "prediction") {
@@ -350,7 +375,7 @@ function bracketCard(game, x, y, extra = "") {
   return `<article class="bracket-stage ${extra}" data-game="${game}" style="left:${x}px;top:${y}px">
     <div class="bracket-meta"><span>Jogo ${m.jogo}</span><span>${phaseLabels[m.fase] || m.fase}</span></div>
     <div class="bracket-teams"><span>${teamChip(m.equipe1)}</span><span class="bracket-score">${m.predictionScore || "—"}</span><span>${teamChip(m.equipe2, "right")}</span></div>
-    <div class="bracket-real"><span>Real <strong>${m.hasReal ? m.realScore : "—"}</strong></span><span>${m.hasReal ? "Finalizado" : "Simulação"}</span></div>
+    <div class="bracket-real"><span>Real <strong>${m.hasReal ? m.realScore : "—"}</strong></span><span>${m.hasReal ? "Finalizado" : "Rede neural"}</span></div>
     <div class="bracket-winner">${m.hasReal ? `Vencedor: ${m.realWinner}` : `Previsto: ${m.predictionWinner || "—"}`}</div>
   </article>`;
 }
@@ -422,18 +447,29 @@ function fitBracket() {
 function renderAnalysisPage() {
   const matrix = document.getElementById("influence-matrix");
   if (matrix) {
-    matrix.innerHTML = matrizVariaveis.slice(0, 7).map((row) => `<div class="matrix-row"><div><b>${row.variavel}</b><br><span>${row.como_interpreta}</span></div><span>${row.influencia}</span><span class="mini-chip">${row.peso_modelo}</span></div>`).join("");
+    const rows = [
+      ["Resultados reais", "Treino supervisionado", "Alvos de gols e vencedor usados para corrigir a rede"],
+      ["Elenco", "Features numéricas", "Qualidade média, top 18, experiência e gols pela seleção"],
+      ["Competitividade da liga", "Features numéricas", "Nível dos campeonatos dos jogadores convocados"],
+      ["Técnico e estilo", "Features de equipe", "Pressão, posse, intensidade e encaixe setorial"],
+      ["Calendário", "Feature temporal", "Data do jogo e fase ajudam a ordenar o aprendizado"],
+      ["Embeddings", "Camada treinável", "Representam padrões próprios de cada seleção"],
+      ["Rede MLP", "Saída final", "Prevê saldo de gols e total de gols saída neural direta"]
+    ];
+    matrix.innerHTML = rows.map((row) => `<div class="matrix-row"><div><b>${row[0]}</b><br><span>${row[2]}</span></div><span>${row[1]}</span><span class="mini-chip">NN</span></div>`).join("");
   }
   const rank = document.getElementById("context-strength");
   if (rank) {
-    rank.innerHTML = modeloTimes.slice(0, 10).map((row, i) => `<div class="rank-row"><b>${i + 1}</b><div>${teamChip(row.selecao)}<span> Liga ${row.competitividade_liga_0_100 || "—"} · Jogadores ${row.desempenho_jogadores_0_100 || "—"} · Momentum ${row.momentum_data_0_100 || "—"}</span><div class="rank-meter"><i style="width:${Math.max(0, Math.min(100, Number(row.forca_contextual_0_100 || 0)))}%"></i></div></div><b>${row.forca_contextual_0_100}</b></div>`).join("");
+    rank.innerHTML = redeNeuralTeams.slice(0, 10).map((row, i) => {
+      const strength = Number(row.forca_modelo_0_100 || 0);
+      return `<div class="rank-row"><b>${i + 1}</b><div>${teamChip(row.selecao)}<span>Liga ${Number(row.league_score_top11 || row.league_score_mean || 0).toFixed(1)} · Jogadores ${Number(row.player_proxy_top18 || row.player_proxy_mean || 0).toFixed(1)}</span><div class="rank-meter"><i style="width:${Math.max(0, Math.min(100, strength))}%"></i></div></div><b>${strength.toFixed(1)}</b></div>`;
+    }).join("");
   }
   const recent = document.getElementById("recent-corrections");
   if (recent) {
-    recent.innerHTML = corrections.slice(-7).reverse().map((c) => `<div class="correction-row"><b>Jogo ${c.jogo} · ${c.equipe1} x ${c.equipe2}</b><span>Prev. ${c.previsao_antes} → Real ${c.resultado_real}</span><div class="chipline"><span class="mini-chip">Prox. ${c.proximidade_0_100}%</span><span class="mini-chip">Erro ${c.erro_total_gols}</span><span class="mini-chip">${c.correcao_registrada}</span></div></div>`).join("");
+    recent.innerHTML = corrections.slice(-7).reverse().map((c) => `<div class="correction-row"><b>Jogo ${c.jogo} · ${c.equipe1} x ${c.equipe2}</b><span>Rede ${c.previsao_antes} → Real ${c.resultado_real}</span><div class="chipline"><span class="mini-chip">Prox. ${c.proximidade_0_100}%</span><span class="mini-chip">Erro ${c.erro_total_gols}</span><span class="mini-chip">${c.correcao_registrada}</span></div></div>`).join("");
   }
 }
-
 
 function setupBracketZoom() {
   const fit = document.getElementById("bracket-fit");
@@ -484,12 +520,12 @@ function renderNeuralPage() {
   const flow = document.getElementById("neural-flow");
   if (flow) {
     const steps = [
-      ["1", "Entradas do repositório", "Jogadores, técnico, liga, arbitragem simulada, resultados reais e previsões anteriores."],
-      ["2", "Features numéricas", "Força contextual, competitividade da liga, desempenho do jogador, momentum, correção e diferença entre equipes."],
+      ["1", "Entradas do repositório", "Jogadores, técnico, ligas, calendário e resultados reais."],
+      ["2", "Features numéricas", "Força do elenco, competitividade da liga, desempenho dos jogadores, calendário e diferença entre equipes."],
       ["3", "Embeddings de seleção", "Cada seleção recebe um vetor treinável para capturar padrões próprios que não aparecem só nas colunas numéricas."],
       ["4", "MLP PyTorch", "A rede prevê saldo de gols e total de gols usando camadas densas, LayerNorm, SiLU e Dropout."],
       ["5", "Validação cronológica", "O treino usa jogos antigos e valida em jogos posteriores para simular atualização por data."],
-      ["6", "Blend seguro", "Como a amostra ainda é pequena, a saída final mistura rede neural e baseline contextual para reduzir overfit."]
+      ["6", "Previsão neural", "A saída final vem diretamente da rede neural, com saída neural direta."]
     ];
     flow.innerHTML = steps.map(([n, title, body]) => `<div class="flow-step"><b>${n}</b><div><strong>${title}</strong><span>${body}</span></div></div>`).join("");
   }
@@ -508,7 +544,7 @@ function renderNeuralPage() {
       ["Placar exato validação", metricValue(val.placar_exato, "%")],
       ["Erro médio gols validação", metricValue(val.erro_medio_total_gols)],
       ["Acerto vencedor treino", metricValue(train.acuracia_vencedor, "%")],
-      ["Blend rede neural", metricValue(redeNeuralMetricas.blend_rede_neural)]
+      ["Fonte de previsão", "Rede neural"]
     ];
     metrics.innerHTML = rows.map(([label, value]) => `<div class="metric-row"><span>${label}</span><b>${value}</b></div>`).join("");
   }
@@ -516,14 +552,29 @@ function renderNeuralPage() {
   const weights = document.getElementById("neural-weights");
   if (weights) {
     const schemaPreview = redeNeuralSchema.slice(0, 16);
-    const rows = schemaPreview.length ? schemaPreview.map((row) => `<div class="weight-row"><div><b>${row.feature}</b><span>${row.uso || row.tipo}</span></div><strong>NN</strong></div>`) : matrizVariaveis.map((row) => `<div class="weight-row"><div><b>${row.variavel}</b><span>${row.influencia}</span></div><strong>${row.peso_modelo}</strong></div>`);
-    weights.innerHTML = rows.join("");
+    weights.innerHTML = schemaPreview.map((row) => `<div class="weight-row"><div><b>${row.feature}</b><span>${row.uso || row.tipo}</span></div><strong>NN</strong></div>`).join("");
   }
 
   const daily = document.getElementById("neural-daily-body");
   if (daily) {
-    const validRows = modeloDiarioResumo.filter((row) => Number(row.jogos_previstos || 0) > 0).slice(0, 22);
-    daily.innerHTML = validRows.map((row) => `<tr><td>${formatDate(row.data)}</td><td>${row.jogos_previstos}</td><td>${row.jogos_validados}</td><td>${metricValue(row["acuracia_vencedor_%"], "%")}</td><td>${metricValue(row["placar_exato_%"], "%")}</td><td>${metricValue(row.erro_medio_total_gols)}</td></tr>`).join("");
+    const byDate = new Map();
+    redeNeuralPrevisoes.forEach((row) => {
+      if (!byDate.has(row.data)) byDate.set(row.data, { data: row.data, previstos: 0, validados: 0, vencedor: 0, exato: 0, erro: 0 });
+      const item = byDate.get(row.data);
+      item.previstos += 1;
+      if (row.possui_real === "Sim" && row.placar_real) {
+        item.validados += 1;
+        const predWinner = row.vencedor_rede_neural || scoreWinner(row.equipe1, row.equipe2, row.placar_rede_neural);
+        const realWinner = scoreWinner(row.equipe1, row.equipe2, row.placar_real);
+        if (predWinner === realWinner) item.vencedor += 1;
+        if (row.placar_rede_neural === row.placar_real) item.exato += 1;
+        const ps = parseScore(row.placar_rede_neural) || [0,0];
+        const rs = parseScore(row.placar_real) || [0,0];
+        item.erro += Math.abs(ps[0] - rs[0]) + Math.abs(ps[1] - rs[1]);
+      }
+    });
+    const validRows = [...byDate.values()].slice(0, 22);
+    daily.innerHTML = validRows.map((row) => `<tr><td>${formatDate(row.data)}</td><td>${row.previstos}</td><td>${row.validados}</td><td>${row.validados ? Math.round(row.vencedor / row.validados * 100) + "%" : "—"}</td><td>${row.validados ? Math.round(row.exato / row.validados * 100) + "%" : "—"}</td><td>${row.validados ? (row.erro / row.validados).toFixed(2) : "—"}</td></tr>`).join("");
   }
 
   const predBody = document.getElementById("neural-predictions-body");
@@ -533,7 +584,6 @@ function renderNeuralPage() {
         <td>${row.jogo}</td>
         <td>${phaseLabels[row.fase] || row.fase}</td>
         <td>${teamChip(row.equipe1)} x ${teamChip(row.equipe2)}</td>
-        <td>${row.placar_base_anterior || "—"}</td>
         <td><b>${row.placar_rede_neural || "—"}</b></td>
         <td>${row.vencedor_rede_neural || "—"}</td>
         <td>${row.placar_real || "—"}</td>
@@ -543,9 +593,11 @@ function renderNeuralPage() {
 
   const teamGrid = document.getElementById("neural-team-grid");
   if (teamGrid) {
-    teamGrid.innerHTML = modeloTimes.slice(0, 12).map((row, index) => {
-      const strength = Number(row.forca_contextual_0_100 || 0);
-      return `<div class="neural-team"><b>${index + 1}</b><div>${teamChip(row.selecao)}<span>Base ${row.forca_modelo_0_100 || "—"} · Liga ${row.competitividade_liga_0_100 || "—"} · Jogadores ${row.desempenho_jogadores_0_100 || "—"} · Momentum ${row.momentum_data_0_100 || "—"}</span><i style="width:${Math.max(0, Math.min(100, strength))}%"></i></div><strong>${row.forca_contextual_0_100}</strong></div>`;
+    teamGrid.innerHTML = redeNeuralTeams.slice(0, 12).map((row, index) => {
+      const strength = Number(row.forca_modelo_0_100 || 0);
+      const league = Number(row.league_score_top11 || row.league_score_mean || 0).toFixed(1);
+      const players = Number(row.player_proxy_top18 || row.player_proxy_mean || 0).toFixed(1);
+      return `<div class="neural-team"><b>${index + 1}</b><div>${teamChip(row.selecao)}<span>Força ${strength.toFixed(1)} · Liga ${league} · Jogadores ${players}</span><i style="width:${Math.max(0, Math.min(100, strength))}%"></i></div><strong>${strength.toFixed(1)}</strong></div>`;
     }).join("");
   }
 }

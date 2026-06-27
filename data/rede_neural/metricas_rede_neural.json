@@ -5,26 +5,25 @@
   "amostras_treino": 49,
   "amostras_validacao_cronologica": 15,
   "jogos_totais_inferidos": 104,
-  "variaveis_numericas": 65,
+  "variaveis_numericas": 43,
   "times_com_embedding": 48,
-  "blend_rede_neural": 0.42,
   "treino": {
-    "mae_goal_diff": 0.5102,
-    "mae_total_goals": 0.551,
-    "erro_medio_total_gols": 0.6327,
-    "acuracia_vencedor": 87.76,
-    "placar_exato": 53.06,
+    "mae_goal_diff": 1.1429,
+    "mae_total_goals": 1.2653,
+    "erro_medio_total_gols": 1.4694,
+    "acuracia_vencedor": 71.43,
+    "placar_exato": 14.29,
     "amostras": 49
   },
   "validacao_cronologica": {
-    "mae_goal_diff": 0.6667,
-    "mae_total_goals": 1.6,
-    "erro_medio_total_gols": 1.7333,
-    "acuracia_vencedor": 66.67,
-    "placar_exato": 33.33,
+    "mae_goal_diff": 1.8,
+    "mae_total_goals": 1.5333,
+    "erro_medio_total_gols": 2.2,
+    "acuracia_vencedor": 33.33,
+    "placar_exato": 0.0,
     "amostras": 15
   },
-  "epochs_executados": 51,
-  "best_val_loss": 0.99324,
-  "observacao": "A rede aprende incrementalmente com poucos jogos reais; por isso a saída final mistura rede neural e baseline contextual para reduzir overfit."
+  "epochs_executados": 42,
+  "best_val_loss": 1.159124,
+  "observacao": "A rede neural é a fonte única de previsão do repositório. Entradas auxiliares são dados de elenco, ligas, técnicos, calendário e resultados reais, usando somente a rede neural como fonte de previsão."
 }

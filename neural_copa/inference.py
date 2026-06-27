@@ -57,7 +57,7 @@ def run_inference(root: Path | None = None) -> pd.DataFrame:
             "equipe1": r.get("equipe1", ""),
             "equipe2": r.get("equipe2", ""),
             "placar_rede_neural_puro": f"{g1}-{g2}",
-            "vencedor_rede_neural_puro": winner_name(r.get("equipe1", ""), r.get("equipe2", ""), g1, g2),
+            "vencedor_rede_neural_puro": winner_name(r.get("equipe1", ""), r.get("equipe2", ""), g1, g2, goal_diff_float=float(diff)),
         })
     out = pd.DataFrame(rows)
     out_path = root / "data" / "rede_neural" / "inferencia_rede_neural_pura.csv"
