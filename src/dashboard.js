@@ -10,6 +10,10 @@ const modeloTimes = window.WC2026_MODELO_TIMES || [];
 const matrizVariaveis = window.WC2026_MATRIZ_VARIAVEIS || [];
 const modeloDiarioResumo = window.WC2026_MODELO_DIARIO_RESUMO || [];
 const modeloDiarioMetricas = window.WC2026_MODELO_DIARIO_METRICAS || {};
+const redeNeuralMetricas = window.WC2026_REDE_NEURAL_METRICAS || {};
+const redeNeuralPrevisoes = window.WC2026_REDE_NEURAL_PREVISOES || [];
+const redeNeuralHistorico = window.WC2026_REDE_NEURAL_HISTORICO || [];
+const redeNeuralSchema = window.WC2026_REDE_NEURAL_SCHEMA || [];
 
 const page = document.body.dataset.page;
 const predictionByGame = new Map(predictions.map((item) => [Number(item.jogo), item]));
@@ -480,40 +484,61 @@ function renderNeuralPage() {
   const flow = document.getElementById("neural-flow");
   if (flow) {
     const steps = [
-      ["1", "Base do elenco", "Rating inicial, técnico, sistema, força por seleção e histórico da base."],
-      ["2", "Competitividade da liga", "Jogadores em ligas mais competitivas aumentam a confiança do time."],
-      ["3", "Desempenho dos jogadores", "Proxy individual, destaques por jogo e impacto de jogadores citados entram como reforço."],
-      ["4", "Data e momentum", "Resultados recentes pesam mais no próximo jogo do mesmo time."],
-      ["5", "Correção incremental", "Previsão anterior x resultado real gera erro, proximidade e ajuste acumulado."],
-      ["6", "Próxima simulação", "O modelo recalcula força contextual e atualiza placar previsto e chaveamento."]
+      ["1", "Entradas do repositório", "Jogadores, técnico, liga, arbitragem simulada, resultados reais e previsões anteriores."],
+      ["2", "Features numéricas", "Força contextual, competitividade da liga, desempenho do jogador, momentum, correção e diferença entre equipes."],
+      ["3", "Embeddings de seleção", "Cada seleção recebe um vetor treinável para capturar padrões próprios que não aparecem só nas colunas numéricas."],
+      ["4", "MLP PyTorch", "A rede prevê saldo de gols e total de gols usando camadas densas, LayerNorm, SiLU e Dropout."],
+      ["5", "Validação cronológica", "O treino usa jogos antigos e valida em jogos posteriores para simular atualização por data."],
+      ["6", "Blend seguro", "Como a amostra ainda é pequena, a saída final mistura rede neural e baseline contextual para reduzir overfit."]
     ];
     flow.innerHTML = steps.map(([n, title, body]) => `<div class="flow-step"><b>${n}</b><div><strong>${title}</strong><span>${body}</span></div></div>`).join("");
   }
 
   const metrics = document.getElementById("neural-metrics");
   if (metrics) {
+    const val = redeNeuralMetricas.validacao_cronologica || {};
+    const train = redeNeuralMetricas.treino || {};
     const rows = [
-      ["Modelo", modeloDiarioMetricas.modelo || "neural incremental"],
-      ["Jogos validados", metricValue(modeloDiarioMetricas.jogos_com_placar_real_validado)],
-      ["Acerto vencedor", metricValue(modeloDiarioMetricas.acuracia_vencedor_percentual, "%")],
-      ["Placar exato", metricValue(modeloDiarioMetricas.placar_exato_percentual, "%")],
-      ["Erro médio gols", metricValue(modeloDiarioMetricas.erro_medio_total_gols)],
-      ["Proximidade média", metricValue(modeloDiarioMetricas.proximidade_media_0_100, "%")],
-      ["Amostra mínima neural", metricValue(modeloDiarioMetricas.neural_min_samples)],
-      ["Simulações", metricValue(modeloDiarioMetricas.simulations_parameter)]
+      ["Modelo", redeNeuralMetricas.modelo || "CopaMatchNet PyTorch"],
+      ["Amostras reais", metricValue(redeNeuralMetricas.amostras_reais)],
+      ["Validação cronológica", metricValue(redeNeuralMetricas.amostras_validacao_cronologica)],
+      ["Variáveis numéricas", metricValue(redeNeuralMetricas.variaveis_numericas)],
+      ["Embeddings de times", metricValue(redeNeuralMetricas.times_com_embedding)],
+      ["Acerto vencedor validação", metricValue(val.acuracia_vencedor, "%")],
+      ["Placar exato validação", metricValue(val.placar_exato, "%")],
+      ["Erro médio gols validação", metricValue(val.erro_medio_total_gols)],
+      ["Acerto vencedor treino", metricValue(train.acuracia_vencedor, "%")],
+      ["Blend rede neural", metricValue(redeNeuralMetricas.blend_rede_neural)]
     ];
     metrics.innerHTML = rows.map(([label, value]) => `<div class="metric-row"><span>${label}</span><b>${value}</b></div>`).join("");
   }
 
   const weights = document.getElementById("neural-weights");
   if (weights) {
-    weights.innerHTML = matrizVariaveis.map((row) => `<div class="weight-row"><div><b>${row.variavel}</b><span>${row.influencia}</span></div><strong>${row.peso_modelo}</strong></div>`).join("");
+    const schemaPreview = redeNeuralSchema.slice(0, 16);
+    const rows = schemaPreview.length ? schemaPreview.map((row) => `<div class="weight-row"><div><b>${row.feature}</b><span>${row.uso || row.tipo}</span></div><strong>NN</strong></div>`) : matrizVariaveis.map((row) => `<div class="weight-row"><div><b>${row.variavel}</b><span>${row.influencia}</span></div><strong>${row.peso_modelo}</strong></div>`);
+    weights.innerHTML = rows.join("");
   }
 
   const daily = document.getElementById("neural-daily-body");
   if (daily) {
     const validRows = modeloDiarioResumo.filter((row) => Number(row.jogos_previstos || 0) > 0).slice(0, 22);
     daily.innerHTML = validRows.map((row) => `<tr><td>${formatDate(row.data)}</td><td>${row.jogos_previstos}</td><td>${row.jogos_validados}</td><td>${metricValue(row["acuracia_vencedor_%"], "%")}</td><td>${metricValue(row["placar_exato_%"], "%")}</td><td>${metricValue(row.erro_medio_total_gols)}</td></tr>`).join("");
+  }
+
+  const predBody = document.getElementById("neural-predictions-body");
+  if (predBody) {
+    predBody.innerHTML = redeNeuralPrevisoes.slice(0, 18).map((row) => `
+      <tr>
+        <td>${row.jogo}</td>
+        <td>${phaseLabels[row.fase] || row.fase}</td>
+        <td>${teamChip(row.equipe1)} x ${teamChip(row.equipe2)}</td>
+        <td>${row.placar_base_anterior || "—"}</td>
+        <td><b>${row.placar_rede_neural || "—"}</b></td>
+        <td>${row.vencedor_rede_neural || "—"}</td>
+        <td>${row.placar_real || "—"}</td>
+      </tr>
+    `).join("");
   }
 
   const teamGrid = document.getElementById("neural-team-grid");

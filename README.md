@@ -69,3 +69,36 @@ Depois acesse:
 ```txt
 http://localhost:8000/grupos-resultados.html
 ```
+
+## Rede neural da Copa
+
+Foi adicionada uma rede neural PyTorch inspirada na organização modular do repositório NVIDIA DeepLearningExamples, mas adaptada para a base da Copa 2026.
+
+Arquivos principais:
+
+```text
+neural_copa/config.py
+neural_copa/data_utils.py
+neural_copa/modeling.py
+neural_copa/train.py
+neural_copa/inference.py
+neural_copa/export_frontend.py
+scripts/treinar_rede_neural_copa.py
+scripts/aplicar_rede_neural_copa.py
+data/rede_neural/
+src/rede-neural-data.js
+```
+
+Para treinar e atualizar o front:
+
+```bash
+python scripts/treinar_rede_neural_copa.py
+```
+
+Para apenas reaplicar inferência a partir do checkpoint salvo:
+
+```bash
+python scripts/aplicar_rede_neural_copa.py
+```
+
+A rede `CopaMatchNet` usa embeddings de seleções e variáveis numéricas como força contextual, competitividade de ligas, desempenho de jogadores, momentum por data, técnico, arbitragem simulada e correções anteriores. Ela prevê saldo de gols e total de gols, depois converte isso em placar. Como ainda há poucos resultados reais, a saída final mistura rede neural e baseline contextual para reduzir overfit.

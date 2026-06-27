@@ -65,6 +65,17 @@
           </div>
         </article>
 
+
+        <article class="panel neural-panel neural-panel--wide">
+          <div class="panel-title"><h2>Previsões da rede neural</h2><span>rede + baseline</span></div>
+          <div class="neural-table-wrap">
+            <table class="neural-table">
+              <thead><tr><th>Jogo</th><th>Fase</th><th>Confronto</th><th>Base anterior</th><th>Rede neural</th><th>Vencedor</th><th>Real</th></tr></thead>
+              <tbody id="neural-predictions-body"></tbody>
+            </table>
+          </div>
+        </article>
+
         <article class="panel neural-panel neural-panel--wide">
           <div class="panel-title"><h2>Força contextual dos times</h2><span>top 12</span></div>
           <div id="neural-team-grid" class="neural-team-grid"></div>
@@ -79,6 +90,7 @@
   <script src="./src/team-assets.js"></script>
   <script src="./src/modelo-dados.js"></script>
   <script src="./src/modelo-diario-data.js"></script>
+  <script src="./src/rede-neural-data.js"></script>
   <script src="./src/dashboard.js"></script>
 </body>
 </html>
