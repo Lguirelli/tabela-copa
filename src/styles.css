@@ -159,3 +159,71 @@ body.dashboard[data-page="analysis"]{overflow-y:auto;overflow-x:hidden;}
   .sidebar{height:auto;}
   .main-view{height:auto;min-height:0;overflow:visible;}
 }
+
+
+/* Ajuste solicitado: páginas podem rolar para preservar formatação */
+html, body { height: auto !important; min-height: 100%; }
+body.dashboard {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+.app-frame {
+  height: auto !important;
+  min-height: 100svh !important;
+  overflow: visible !important;
+  align-items: stretch;
+}
+.main-view {
+  height: auto !important;
+  min-height: calc(100svh - 28px) !important;
+  overflow: visible !important;
+}
+.content-grid,
+.analysis-layout {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+.full-panel {
+  height: auto !important;
+  min-height: min(820px, calc(100svh - 170px));
+}
+.panel {
+  overflow: visible !important;
+}
+.table-shell {
+  overflow: auto !important;
+  min-height: 420px;
+}
+.standings-grid {
+  overflow: visible !important;
+  height: auto !important;
+  grid-auto-rows: auto !important;
+}
+
+/* Chaveamento: zoom no scroll do mouse e arraste para reposicionar */
+.panel--bracket { overflow: visible !important; }
+.bracket-fit {
+  height: min(78svh, 860px) !important;
+  min-height: 560px;
+  overflow: hidden !important;
+  cursor: grab;
+  touch-action: none;
+  overscroll-behavior: contain;
+  user-select: none;
+}
+.bracket-fit.is-panning { cursor: grabbing; }
+.bracket-board {
+  will-change: transform;
+  transition: transform .08s linear;
+}
+.dashboard[data-page="analysis"] .main-view,
+.dashboard[data-page="analysis"] .app-frame,
+.dashboard[data-page="analysis"] .analysis-layout {
+  overflow: visible !important;
+}
+@media (max-width:900px){
+  .app-frame{grid-template-columns:1fr!important;}
+  .sidebar{height:auto!important;}
+  .bracket-fit{height:70svh!important;min-height:520px;}
+}

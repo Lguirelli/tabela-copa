@@ -17,6 +17,13 @@ let matches = [];
 let groupPage = 0;
 let groupGamesPage = 0;
 let knockoutGamesPage = 0;
+let bracketAutoScale = 1;
+let bracketZoom = 1;
+let bracketPanX = 0;
+let bracketPanY = 0;
+let bracketDragging = false;
+let bracketDragLastX = 0;
+let bracketDragLastY = 0;
 
 const phaseLabels = {
   "16 avos de final": "16 avos",
@@ -391,13 +398,33 @@ function renderBracketPage() {
   fitBracket();
 }
 
+function applyBracketTransform() {
+  const board = document.getElementById("bracket-board");
+  if (!board) return;
+  const scale = bracketAutoScale * bracketZoom;
+  board.style.transform = `translate(calc(-50% + ${bracketPanX}px), calc(-50% + ${bracketPanY}px)) scale(${scale})`;
+}
+
 function fitBracket() {
   const fit = document.getElementById("bracket-fit");
   const board = document.getElementById("bracket-board");
   if (!fit || !board) return;
   const rect = fit.getBoundingClientRect();
-  const scale = Math.min(rect.width / 2380, rect.height / 1500, 1);
-  board.style.transform = `translate(-50%, -50%) scale(${scale})`;
+  bracketAutoScale = Math.min(rect.width / 2380, rect.height / 1500, 1);
+  applyBracketTransform();
+}
+
+function resetBracketView() {
+  bracketZoom = 1;
+  bracketPanX = 0;
+  bracketPanY = 0;
+  applyBracketTransform();
+}
+
+function zoomBracket(deltaY) {
+  const factor = deltaY < 0 ? 1.12 : 0.88;
+  bracketZoom = Math.max(0.55, Math.min(3.25, bracketZoom * factor));
+  applyBracketTransform();
 }
 
 function renderAnalysisPage() {
@@ -429,7 +456,35 @@ function bindEvents() {
   if (bracketFit) {
     bracketFit.addEventListener("wheel", (event) => {
       event.preventDefault();
+      zoomBracket(event.deltaY);
     }, { passive: false });
+
+    bracketFit.addEventListener("dblclick", resetBracketView);
+
+    bracketFit.addEventListener("pointerdown", (event) => {
+      bracketDragging = true;
+      bracketDragLastX = event.clientX;
+      bracketDragLastY = event.clientY;
+      bracketFit.classList.add("is-panning");
+      bracketFit.setPointerCapture?.(event.pointerId);
+    });
+
+    bracketFit.addEventListener("pointermove", (event) => {
+      if (!bracketDragging) return;
+      bracketPanX += event.clientX - bracketDragLastX;
+      bracketPanY += event.clientY - bracketDragLastY;
+      bracketDragLastX = event.clientX;
+      bracketDragLastY = event.clientY;
+      applyBracketTransform();
+    });
+
+    ["pointerup", "pointercancel", "pointerleave"].forEach((eventName) => {
+      bracketFit.addEventListener(eventName, (event) => {
+        bracketDragging = false;
+        bracketFit.classList.remove("is-panning");
+        try { bracketFit.releasePointerCapture?.(event.pointerId); } catch (error) {}
+      });
+    });
   }
   window.addEventListener("resize", () => {
     if (page === "groups-results") renderStandingsPage();
