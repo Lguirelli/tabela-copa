@@ -39,7 +39,16 @@
         </div>
       </header>
 
-      <section class="neural-layout">
+      <section class="neural-layout neural-layout--visual">
+        <article class="panel neural-panel neural-panel--wide neural-visual-panel">
+          <div class="panel-title"><h2>Mapa neural interativo</h2><span>PixiJS / canvas</span></div>
+          <div class="pixi-visual-grid">
+            <div id="pixi-neural-stage" class="pixi-stage" aria-label="Visualização interativa da rede neural"></div>
+            <aside id="pixi-neural-details" class="pixi-info" aria-label="Resumo do modelo neural"></aside>
+          </div>
+          <p class="pixi-help">Use o scroll para aproximar, arraste para mover e dê duplo clique para recentralizar. Quando o PixiJS externo não carregar, a página usa renderização Canvas local como fallback.</p>
+        </article>
+
         <article class="panel neural-panel neural-panel--wide">
           <div class="panel-title"><h2>Funcionamento do modelo</h2><span>pipeline</span></div>
           <div id="neural-flow" class="neural-flow"></div>
@@ -91,6 +100,8 @@
   <script src="./src/modelo-dados.js"></script>
   <script src="./src/modelo-diario-data.js"></script>
   <script src="./src/rede-neural-data.js"></script>
+  <script src="https://pixijs.download/release/pixi.min.js"></script>
+  <script src="./src/pixi-neural-view.js"></script>
   <script src="./src/dashboard.js"></script>
 </body>
 </html>
