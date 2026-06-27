@@ -425,6 +425,12 @@ function bindEvents() {
   document.getElementById("ko-games-prev")?.addEventListener("click", () => { knockoutGamesPage--; renderKnockoutGamesPage(); });
   document.getElementById("ko-games-next")?.addEventListener("click", () => { knockoutGamesPage++; renderKnockoutGamesPage(); });
   document.getElementById("ko-phase-filter")?.addEventListener("change", () => { knockoutGamesPage = 0; renderKnockoutGamesPage(); });
+  const bracketFit = document.getElementById("bracket-fit");
+  if (bracketFit) {
+    bracketFit.addEventListener("wheel", (event) => {
+      event.preventDefault();
+    }, { passive: false });
+  }
   window.addEventListener("resize", () => {
     if (page === "groups-results") renderStandingsPage();
     if (page === "groups-games") renderGroupGamesPage();
