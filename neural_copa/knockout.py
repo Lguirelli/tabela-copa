@@ -266,7 +266,32 @@ def predict_match(root: Path, ckpt: dict, model: CopaMatchNet, team_features: pd
 
 
 def make_js_data(root: Path, matches: pd.DataFrame):
-    group_rows = matches[matches["fase"] == "Fase de grupos"].copy()
+    """Exporta dados base para o frontend.
+
+    O visualizador é estático e não lê CSV diretamente no navegador. Por isso,
+    todo resultado manual registrado em data/resultados_reais.csv precisa ser
+    incorporado ao src/data.js. Este merge evita que jogos finalizados fiquem
+    aparecendo como "Rede neural" quando o CSV já foi atualizado, mas o JS ainda
+    não tinha os campos de resultado.
+    """
+    matches_for_js = matches.copy()
+
+    real = read_csv_safe(root / "data" / "resultados_reais.csv")
+    if not real.empty and "jogo" in real.columns:
+        real_cols = [
+            c for c in [
+                "jogo", "placar_real", "vencedor_real", "gols1_real", "gols2_real",
+                "status_real", "fonte", "placar_original"
+            ] if c in real.columns
+        ]
+        real_view = real[real_cols].copy()
+        real_view["jogo"] = pd.to_numeric(real_view["jogo"], errors="coerce").astype("Int64")
+        matches_for_js["jogo"] = pd.to_numeric(matches_for_js["jogo"], errors="coerce").astype("Int64")
+        matches_for_js = matches_for_js.merge(real_view, on="jogo", how="left")
+        has_real = matches_for_js["placar_real"].notna() & (matches_for_js["placar_real"].astype(str).str.strip() != "")
+        matches_for_js.loc[has_real, "status"] = "Finalizado"
+
+    group_rows = matches_for_js[matches_for_js["fase"] == "Fase de grupos"].copy()
     groups = []
     for group in sorted(group_rows["grupo"].dropna().unique()):
         teams = []
@@ -277,15 +302,16 @@ def make_js_data(root: Path, matches: pd.DataFrame):
         groups.append({"grupo": group, "equipes": teams})
     data = {
         "summary": {
-            "totalJogos": int(len(matches)),
-            "faseGrupos": int((matches["fase"] == "Fase de grupos").sum()),
-            "mataMata": int((matches["fase"] != "Fase de grupos").sum()),
+            "totalJogos": int(len(matches_for_js)),
+            "faseGrupos": int((matches_for_js["fase"] == "Fase de grupos").sum()),
+            "mataMata": int((matches_for_js["fase"] != "Fase de grupos").sum()),
             "grupos": int(group_rows["grupo"].nunique()),
             "selecoes": int(len({t for _, r in group_rows.iterrows() for t in [r["equipe1"], r["equipe2"]]})),
-            "periodo": f"{matches['data'].min()} a {matches['data'].max()}",
+            "periodo": f"{matches_for_js['data'].min()} a {matches_for_js['data'].max()}",
+            "resultadosReais": int((matches_for_js.get("placar_real", pd.Series(dtype=object)).notna()).sum()) if "placar_real" in matches_for_js.columns else 0,
         },
         "groups": groups,
-        "matches": matches.replace({np.nan: None}).to_dict(orient="records"),
+        "matches": matches_for_js.replace({np.nan: None}).to_dict(orient="records"),
     }
     (root / "src" / "data.js").write_text("window.WC2026_DATA = " + json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + ";\n", encoding="utf-8")
 

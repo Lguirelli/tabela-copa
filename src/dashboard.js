@@ -125,13 +125,15 @@ function scoreWinner(team1, team2, score, fallback = "Empate") {
 function buildMatches() {
   matches = baseMatches.map((base) => {
     const prediction = predictionByGame.get(Number(base.jogo)) || {};
-    const hasReal = prediction.possui_real === "Sim" && Boolean(prediction.placar_real);
+    const predictionHasReal = prediction.possui_real === "Sim" && Boolean(prediction.placar_real);
+    const baseHasReal = base.status === "Finalizado" && Boolean(base.placar_real);
+    const hasReal = predictionHasReal || baseHasReal;
     const equipe1 = prediction.equipe1 || base.equipe1;
     const equipe2 = prediction.equipe2 || base.equipe2;
     const predictionScore = prediction.placar_rede_neural || "";
     const predictionWinner = prediction.vencedor_rede_neural || scoreWinner(equipe1, equipe2, predictionScore);
-    const realScore = hasReal ? prediction.placar_real : "";
-    const realWinner = hasReal ? scoreWinner(equipe1, equipe2, realScore) : "";
+    const realScore = predictionHasReal ? prediction.placar_real : (baseHasReal ? base.placar_real : "");
+    const realWinner = hasReal ? (base.vencedor_real || scoreWinner(equipe1, equipe2, realScore)) : "";
 
     let correction = null;
     if (hasReal && predictionScore && realScore) {

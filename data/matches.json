@@ -15,7 +15,7 @@
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 2,
@@ -33,7 +33,7 @@
     "estadio": "Estadio Akron",
     "cidade": "Guadalajara",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 3,
@@ -51,7 +51,7 @@
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 4,
@@ -69,7 +69,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 5,
@@ -87,7 +87,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 6,
@@ -105,7 +105,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 7,
@@ -123,7 +123,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 8,
@@ -141,7 +141,7 @@
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 9,
@@ -159,7 +159,7 @@
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 10,
@@ -177,7 +177,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 11,
@@ -195,7 +195,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 12,
@@ -213,7 +213,7 @@
     "estadio": "Estadio BBVA",
     "cidade": "Monterrey",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 13,
@@ -231,7 +231,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 14,
@@ -249,7 +249,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 15,
@@ -267,7 +267,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 16,
@@ -285,7 +285,7 @@
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 17,
@@ -303,7 +303,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 18,
@@ -321,7 +321,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 19,
@@ -339,7 +339,7 @@
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 20,
@@ -357,7 +357,7 @@
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 21,
@@ -375,7 +375,7 @@
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 22,
@@ -393,7 +393,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 23,
@@ -411,7 +411,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 24,
@@ -429,7 +429,7 @@
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 25,
@@ -447,7 +447,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 26,
@@ -465,7 +465,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 27,
@@ -483,7 +483,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 28,
@@ -501,7 +501,7 @@
     "estadio": "Estadio Akron",
     "cidade": "Guadalajara",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 29,
@@ -519,7 +519,7 @@
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 30,
@@ -537,7 +537,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 31,
@@ -555,7 +555,7 @@
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 32,
@@ -573,7 +573,7 @@
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 33,
@@ -591,7 +591,7 @@
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 34,
@@ -609,7 +609,7 @@
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 35,
@@ -627,7 +627,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 36,
@@ -645,7 +645,7 @@
     "estadio": "Estadio BBVA",
     "cidade": "Monterrey",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 37,
@@ -663,7 +663,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 38,
@@ -681,7 +681,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 39,
@@ -699,7 +699,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 40,
@@ -717,7 +717,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 41,
@@ -735,7 +735,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 42,
@@ -753,7 +753,7 @@
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 43,
@@ -771,7 +771,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 44,
@@ -789,7 +789,7 @@
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 45,
@@ -807,7 +807,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 46,
@@ -825,7 +825,7 @@
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 47,
@@ -843,7 +843,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 48,
@@ -861,7 +861,7 @@
     "estadio": "Estadio Akron",
     "cidade": "Guadalajara",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 49,
@@ -879,7 +879,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 50,
@@ -897,7 +897,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 51,
@@ -915,7 +915,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 52,
@@ -933,7 +933,7 @@
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 53,
@@ -951,7 +951,7 @@
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 54,
@@ -969,7 +969,7 @@
     "estadio": "Estadio BBVA",
     "cidade": "Monterrey",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 55,
@@ -987,7 +987,7 @@
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 56,
@@ -1005,7 +1005,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 57,
@@ -1023,7 +1023,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 58,
@@ -1041,7 +1041,7 @@
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 59,
@@ -1059,7 +1059,7 @@
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 60,
@@ -1077,7 +1077,7 @@
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 61,
@@ -1095,7 +1095,7 @@
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 62,
@@ -1113,7 +1113,7 @@
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 63,
@@ -1131,7 +1131,7 @@
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 64,
@@ -1149,7 +1149,7 @@
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 65,
@@ -1167,7 +1167,7 @@
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 66,
@@ -1185,7 +1185,7 @@
     "estadio": "Estadio Akron",
     "cidade": "Guadalajara",
     "pais": "México",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 67,
@@ -1203,7 +1203,7 @@
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 68,
@@ -1221,7 +1221,7 @@
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 69,
@@ -1239,7 +1239,7 @@
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 70,
@@ -1257,7 +1257,7 @@
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 71,
@@ -1275,7 +1275,7 @@
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 72,
@@ -1293,7 +1293,7 @@
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Agendado"
+    "status": "Finalizado"
   },
   {
     "jogo": 73,
@@ -1304,14 +1304,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "África do Sul",
     "equipe2": "Canadá",
     "confronto": "África do Sul x Canadá",
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 74,
@@ -1322,14 +1322,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Alemanha",
-    "equipe2": "Suécia",
-    "confronto": "Alemanha x Suécia",
+    "equipe2": "Paraguai",
+    "confronto": "Alemanha x Paraguai",
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 75,
@@ -1340,14 +1340,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Países Baixos",
     "equipe2": "Marrocos",
     "confronto": "Países Baixos x Marrocos",
     "estadio": "Estadio BBVA",
     "cidade": "Monterrey",
     "pais": "México",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 76,
@@ -1358,14 +1358,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Brasil",
     "equipe2": "Japão",
     "confronto": "Brasil x Japão",
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 77,
@@ -1376,14 +1376,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "França",
-    "equipe2": "Paraguai",
-    "confronto": "França x Paraguai",
+    "equipe2": "Suécia",
+    "confronto": "França x Suécia",
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 78,
@@ -1394,14 +1394,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Costa do Marfim",
     "equipe2": "Noruega",
     "confronto": "Costa do Marfim x Noruega",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 79,
@@ -1412,14 +1412,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "México",
-    "equipe2": "Equador",
-    "confronto": "México x Equador",
+    "equipe2": "Senegal",
+    "confronto": "México x Senegal",
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 80,
@@ -1430,14 +1430,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Inglaterra",
-    "equipe2": "Argélia",
-    "confronto": "Inglaterra x Argélia",
+    "equipe2": "RD Congo",
+    "confronto": "Inglaterra x RD Congo",
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 81,
@@ -1448,14 +1448,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Estados Unidos",
     "equipe2": "Bósnia e Herzegovina",
     "confronto": "Estados Unidos x Bósnia e Herzegovina",
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 82,
@@ -1466,14 +1466,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "Irã",
-    "equipe2": "Senegal",
-    "confronto": "Irã x Senegal",
+    "rodadaGrupo": NaN,
+    "equipe1": "Bélgica",
+    "equipe2": "Argélia",
+    "confronto": "Bélgica x Argélia",
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 83,
@@ -1484,14 +1484,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Portugal",
-    "equipe2": "Gana",
-    "confronto": "Portugal x Gana",
+    "equipe2": "Croácia",
+    "confronto": "Portugal x Croácia",
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 84,
@@ -1502,14 +1502,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Espanha",
     "equipe2": "Áustria",
     "confronto": "Espanha x Áustria",
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 85,
@@ -1520,14 +1520,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Suíça",
-    "equipe2": "Egito",
-    "confronto": "Suíça x Egito",
+    "equipe2": "Equador",
+    "confronto": "Suíça x Equador",
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 86,
@@ -1538,14 +1538,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Argentina",
     "equipe2": "Cabo Verde",
     "confronto": "Argentina x Cabo Verde",
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 87,
@@ -1556,14 +1556,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Colômbia",
-    "equipe2": "Croácia",
-    "confronto": "Colômbia x Croácia",
+    "equipe2": "Gana",
+    "confronto": "Colômbia x Gana",
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 88,
@@ -1574,14 +1574,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Austrália",
-    "equipe2": "Bélgica",
-    "confronto": "Austrália x Bélgica",
+    "equipe2": "Egito",
+    "confronto": "Austrália x Egito",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 89,
@@ -1592,14 +1592,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "África do Sul",
+    "rodadaGrupo": NaN,
+    "equipe1": "Canadá",
     "equipe2": "Países Baixos",
-    "confronto": "África do Sul x Países Baixos",
+    "confronto": "Canadá x Países Baixos",
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 90,
@@ -1610,14 +1610,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Alemanha",
     "equipe2": "França",
     "confronto": "Alemanha x França",
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 91,
@@ -1628,14 +1628,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Brasil",
     "equipe2": "Costa do Marfim",
     "confronto": "Brasil x Costa do Marfim",
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 92,
@@ -1646,14 +1646,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "Equador",
+    "rodadaGrupo": NaN,
+    "equipe1": "México",
     "equipe2": "Inglaterra",
-    "confronto": "Equador x Inglaterra",
+    "confronto": "México x Inglaterra",
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 93,
@@ -1664,14 +1664,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Portugal",
     "equipe2": "Espanha",
     "confronto": "Portugal x Espanha",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 94,
@@ -1682,14 +1682,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Estados Unidos",
-    "equipe2": "Senegal",
-    "confronto": "Estados Unidos x Senegal",
+    "equipe2": "Bélgica",
+    "confronto": "Estados Unidos x Bélgica",
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 95,
@@ -1700,14 +1700,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Argentina",
-    "equipe2": "Bélgica",
-    "confronto": "Argentina x Bélgica",
+    "equipe2": "Austrália",
+    "confronto": "Argentina x Austrália",
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 96,
@@ -1718,14 +1718,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Suíça",
     "equipe2": "Colômbia",
     "confronto": "Suíça x Colômbia",
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 97,
@@ -1736,14 +1736,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Países Baixos",
     "equipe2": "Alemanha",
     "confronto": "Países Baixos x Alemanha",
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 98,
@@ -1754,14 +1754,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Portugal",
     "equipe2": "Estados Unidos",
     "confronto": "Portugal x Estados Unidos",
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 99,
@@ -1772,14 +1772,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Brasil",
-    "equipe2": "Equador",
-    "confronto": "Brasil x Equador",
+    "equipe2": "México",
+    "confronto": "Brasil x México",
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 100,
@@ -1790,14 +1790,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": null,
+    "rodadaGrupo": NaN,
     "equipe1": "Argentina",
-    "equipe2": "Colômbia",
-    "confronto": "Argentina x Colômbia",
+    "equipe2": "Suíça",
+    "confronto": "Argentina x Suíça",
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 101,
@@ -1808,14 +1808,14 @@
     "fase": "Semifinais",
     "ordemFase": 5,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "Países Baixos",
+    "rodadaGrupo": NaN,
+    "equipe1": "Alemanha",
     "equipe2": "Portugal",
-    "confronto": "Países Baixos x Portugal",
+    "confronto": "Alemanha x Portugal",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 102,
@@ -1826,14 +1826,14 @@
     "fase": "Semifinais",
     "ordemFase": 5,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "Brasil",
+    "rodadaGrupo": NaN,
+    "equipe1": "México",
     "equipe2": "Argentina",
-    "confronto": "Brasil x Argentina",
+    "confronto": "México x Argentina",
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 103,
@@ -1844,14 +1844,14 @@
     "fase": "Disputa de 3º lugar",
     "ordemFase": 6,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "Portugal",
-    "equipe2": "Argentina",
-    "confronto": "Portugal x Argentina",
+    "rodadaGrupo": NaN,
+    "equipe1": "Alemanha",
+    "equipe2": "México",
+    "confronto": "Alemanha x México",
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   },
   {
     "jogo": 104,
@@ -1862,13 +1862,13 @@
     "fase": "Final",
     "ordemFase": 7,
     "grupo": null,
-    "rodadaGrupo": null,
-    "equipe1": "Países Baixos",
-    "equipe2": "Brasil",
-    "confronto": "Países Baixos x Brasil",
+    "rodadaGrupo": NaN,
+    "equipe1": "Portugal",
+    "equipe2": "Argentina",
+    "confronto": "Portugal x Argentina",
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Rede neural"
+    "status": "Simulação"
   }
 ]

@@ -1,29 +1,29 @@
 {
   "modelo": "CopaMatchNet PyTorch MLP + embeddings",
   "base_referencia": "NVIDIA DeepLearningExamples: arquitetura modular PyTorch adaptada, sem copiar modelo pesado",
-  "amostras_reais": 64,
-  "amostras_treino": 49,
-  "amostras_validacao_cronologica": 15,
+  "amostras_reais": 72,
+  "amostras_treino": 56,
+  "amostras_validacao_cronologica": 16,
   "jogos_totais_inferidos": 104,
   "variaveis_numericas": 43,
   "times_com_embedding": 48,
   "treino": {
-    "mae_goal_diff": 1.1429,
-    "mae_total_goals": 1.2653,
-    "erro_medio_total_gols": 1.4694,
-    "acuracia_vencedor": 71.43,
-    "placar_exato": 14.29,
-    "amostras": 49
+    "mae_goal_diff": 0.6429,
+    "mae_total_goals": 0.7143,
+    "erro_medio_total_gols": 0.8214,
+    "acuracia_vencedor": 82.14,
+    "placar_exato": 48.21,
+    "amostras": 56
   },
   "validacao_cronologica": {
-    "mae_goal_diff": 1.8,
-    "mae_total_goals": 1.5333,
-    "erro_medio_total_gols": 2.2,
-    "acuracia_vencedor": 33.33,
+    "mae_goal_diff": 1.5625,
+    "mae_total_goals": 1.9375,
+    "erro_medio_total_gols": 2.1875,
+    "acuracia_vencedor": 50.0,
     "placar_exato": 0.0,
-    "amostras": 15
+    "amostras": 16
   },
-  "epochs_executados": 42,
-  "best_val_loss": 1.159124,
+  "epochs_executados": 45,
+  "best_val_loss": 1.3081,
   "observacao": "A rede neural é a fonte única de previsão do repositório. Entradas auxiliares são dados de elenco, ligas, técnicos, calendário e resultados reais, usando somente a rede neural como fonte de previsão."
 }

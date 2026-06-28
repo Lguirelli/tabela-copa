@@ -22,8 +22,8 @@
     },
     "77": {
       "equipe1": "França",
-      "equipe2": "Bélgica",
-      "vencedor_previsto": "Bélgica"
+      "equipe2": "Suécia",
+      "vencedor_previsto": "França"
     },
     "78": {
       "equipe1": "Costa do Marfim",
@@ -46,14 +46,14 @@
       "vencedor_previsto": "Estados Unidos"
     },
     "82": {
-      "equipe1": "Egito",
+      "equipe1": "Bélgica",
       "equipe2": "Argélia",
-      "vencedor_previsto": "Argélia"
+      "vencedor_previsto": "Bélgica"
     },
     "83": {
-      "equipe1": "Colômbia",
-      "equipe2": "Gana",
-      "vencedor_previsto": "Colômbia"
+      "equipe1": "Portugal",
+      "equipe2": "Croácia",
+      "vencedor_previsto": "Portugal"
     },
     "84": {
       "equipe1": "Espanha",
@@ -62,7 +62,7 @@
     },
     "85": {
       "equipe1": "Suíça",
-      "equipe2": "Suécia",
+      "equipe2": "Equador",
       "vencedor_previsto": "Suíça"
     },
     "86": {
@@ -71,14 +71,14 @@
       "vencedor_previsto": "Argentina"
     },
     "87": {
-      "equipe1": "Portugal",
-      "equipe2": "Equador",
-      "vencedor_previsto": "Portugal"
+      "equipe1": "Colômbia",
+      "equipe2": "Gana",
+      "vencedor_previsto": "Colômbia"
     },
     "88": {
       "equipe1": "Austrália",
-      "equipe2": "Irã",
-      "vencedor_previsto": "Irã"
+      "equipe2": "Egito",
+      "vencedor_previsto": "Austrália"
     }
   },
   "champion_projected": "Portugal"

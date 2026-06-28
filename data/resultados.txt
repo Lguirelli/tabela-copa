@@ -1,4 +1,4 @@
-﻿jogo;status;placar;equipe1;equipe2;vencedor
+jogo;status;placar;equipe1;equipe2;vencedor
 1;Finalizado;2-0;México;África do Sul;México
 2;Finalizado;2-1;Coreia do Sul;Tchéquia;Coreia do Sul
 3;Finalizado;1-1;Canadá;Bósnia e Herzegovina;Empate

@@ -1,105 +1,105 @@
 ﻿jogo,fase,grupo,data,equipe1,equipe2,gols1_neural_float,gols2_neural_float,goal_diff_neural_float,total_goals_neural_float,placar_rede_neural,gols1_rede_neural,gols2_rede_neural,vencedor_rede_neural,possui_real,placar_real
-1,Fase de grupos,A,2026-06-11,México,África do Sul,2.4928,0.7399,1.7529,3.2327,2-1,2,1,México,Sim,2-0
-2,Fase de grupos,A,2026-06-11,Coreia do Sul,Tchéquia,2.553,1.055,1.498,3.608,3-1,3,1,Coreia do Sul,Sim,2-1
-3,Fase de grupos,B,2026-06-12,Canadá,Bósnia e Herzegovina,2.799,0.7347,2.0644,3.5337,3-1,3,1,Canadá,Sim,1-1
-4,Fase de grupos,D,2026-06-12,Estados Unidos,Paraguai,3.2019,0.6411,2.5608,3.8429,3-1,3,1,Estados Unidos,Sim,4-1
-5,Fase de grupos,C,2026-06-13,Haiti,Escócia,0.9241,1.7571,-0.833,2.6812,1-2,1,2,Escócia,Sim,0-1
-6,Fase de grupos,D,2026-06-13,Austrália,Turquia,1.124,1.9142,-0.7902,3.0383,1-2,1,2,Turquia,Sim,2-0
-7,Fase de grupos,C,2026-06-13,Brasil,Marrocos,1.2791,1.2839,-0.0047,2.563,1-1,1,1,Marrocos,Sim,1-1
-8,Fase de grupos,B,2026-06-13,Catar,Suíça,1.4659,1.7348,-0.2689,3.2008,1-2,1,2,Suíça,Sim,1-1
-9,Fase de grupos,E,2026-06-14,Costa do Marfim,Equador,1.4971,1.2988,0.1983,2.7959,1-1,1,1,Costa do Marfim,Sim,1-0
-10,Fase de grupos,E,2026-06-14,Alemanha,Curaçao,2.8511,0.4553,2.3958,3.3065,3-0,3,0,Alemanha,Sim,7-1
-11,Fase de grupos,F,2026-06-14,Países Baixos,Japão,3.0462,0.771,2.2752,3.8172,3-1,3,1,Países Baixos,Sim,2-2
-12,Fase de grupos,F,2026-06-14,Suécia,Tunísia,2.9785,0.6168,2.3617,3.5953,3-1,3,1,Suécia,Sim,5-1
-13,Fase de grupos,H,2026-06-15,Arábia Saudita,Uruguai,1.5245,1.642,-0.1175,3.1665,2-2,2,2,Uruguai,Sim,1-1
-14,Fase de grupos,H,2026-06-15,Espanha,Cabo Verde,2.186,0.3711,1.815,2.5571,2-0,2,0,Espanha,Sim,0-0
-15,Fase de grupos,G,2026-06-15,Irã,Nova Zelândia,1.2926,1.9256,-0.633,3.2182,1-2,1,2,Nova Zelândia,Sim,2-2
-16,Fase de grupos,G,2026-06-15,Bélgica,Egito,1.9925,1.0303,0.9622,3.0228,2-1,2,1,Bélgica,Sim,1-1
-17,Fase de grupos,I,2026-06-16,França,Senegal,2.922,1.0516,1.8704,3.9736,3-1,3,1,França,Sim,3-1
-18,Fase de grupos,I,2026-06-16,Iraque,Noruega,1.0851,2.1422,-1.057,3.2273,1-2,1,2,Noruega,Sim,1-4
-19,Fase de grupos,J,2026-06-16,Argentina,Argélia,3.0773,0.7179,2.3594,3.7951,3-1,3,1,Argentina,Sim,3-0
-20,Fase de grupos,J,2026-06-16,Áustria,Jordânia,3.0711,0.5125,2.5586,3.5837,3-1,3,1,Áustria,Sim,3-1
-21,Fase de grupos,L,2026-06-17,Gana,Panamá,1.2848,0.7458,0.539,2.0307,1-1,1,1,Gana,Sim,1-0
-22,Fase de grupos,L,2026-06-17,Inglaterra,Croácia,2.8834,1.1075,1.7758,3.9909,3-1,3,1,Inglaterra,Sim,4-2
-23,Fase de grupos,K,2026-06-17,Portugal,RD Congo,3.004,0.5379,2.4662,3.5419,3-1,3,1,Portugal,Sim,1-1
-24,Fase de grupos,K,2026-06-17,Uzbequistão,Colômbia,0.7914,2.1268,-1.3354,2.9182,1-2,1,2,Colômbia,Sim,1-3
-25,Fase de grupos,A,2026-06-18,Tchéquia,África do Sul,1.1133,1.8057,-0.6924,2.9189,1-2,1,2,África do Sul,Sim,1-1
-26,Fase de grupos,B,2026-06-18,Suíça,Bósnia e Herzegovina,2.9301,0.8884,2.0416,3.8185,3-1,3,1,Suíça,Sim,4-1
-27,Fase de grupos,B,2026-06-18,Canadá,Catar,3.062,0.5629,2.4991,3.6249,3-1,3,1,Canadá,Sim,6-0
-28,Fase de grupos,A,2026-06-18,México,Coreia do Sul,1.5782,0.7581,0.82,2.3363,2-1,2,1,México,Sim,1-0
-29,Fase de grupos,C,2026-06-19,Brasil,Haiti,3.0573,0.5516,2.5057,3.6088,3-1,3,1,Brasil,Sim,3-0
-30,Fase de grupos,C,2026-06-19,Escócia,Marrocos,0.1617,1.6191,-1.4574,1.7808,0-2,0,2,Marrocos,Sim,0-1
-31,Fase de grupos,D,2026-06-19,Turquia,Paraguai,1.8121,1.1164,0.6957,2.9285,2-1,2,1,Turquia,Sim,0-1
-32,Fase de grupos,D,2026-06-19,Estados Unidos,Austrália,2.9389,0.4404,2.4985,3.3792,3-0,3,0,Estados Unidos,Sim,2-0
-33,Fase de grupos,E,2026-06-20,Alemanha,Costa do Marfim,2.2698,1.1084,1.1613,3.3782,2-1,2,1,Alemanha,Sim,2-1
-34,Fase de grupos,E,2026-06-20,Equador,Curaçao,1.8879,0.5109,1.377,2.3988,2-1,2,1,Equador,Sim,0-0
-35,Fase de grupos,F,2026-06-20,Países Baixos,Suécia,3.2351,0.5961,2.639,3.8312,3-1,3,1,Países Baixos,Sim,5-1
-36,Fase de grupos,F,2026-06-20,Tunísia,Japão,1.0602,2.0796,-1.0195,3.1398,1-2,1,2,Japão,Sim,0-4
-37,Fase de grupos,H,2026-06-21,Uruguai,Cabo Verde,1.7246,1.0912,0.6334,2.8158,2-1,2,1,Uruguai,Sim,2-2
-38,Fase de grupos,H,2026-06-21,Espanha,Arábia Saudita,3.1087,0.4197,2.689,3.5284,3-0,3,0,Espanha,Sim,4-0
-39,Fase de grupos,G,2026-06-21,Bélgica,Irã,-0.2159,0.2844,-0.5003,0.0685,0-0,0,0,Irã,Sim,0-0
-40,Fase de grupos,G,2026-06-21,Nova Zelândia,Egito,0.9927,2.0792,-1.0865,3.0719,1-2,1,2,Egito,Sim,1-3
-41,Fase de grupos,I,2026-06-22,Noruega,Senegal,2.5514,1.4199,1.1315,3.9713,3-1,3,1,Noruega,Sim,3-2
-42,Fase de grupos,I,2026-06-22,França,Iraque,2.579,1.1822,1.3968,3.7612,3-1,3,1,França,Sim,3-0
-43,Fase de grupos,J,2026-06-22,Argentina,Áustria,3.1335,0.6352,2.4982,3.7687,3-1,3,1,Argentina,Sim,2-0
-44,Fase de grupos,J,2026-06-22,Jordânia,Argélia,1.176,2.1214,-0.9454,3.2974,1-2,1,2,Argélia,Sim,1-2
-45,Fase de grupos,L,2026-06-23,Inglaterra,Gana,0.131,-0.0512,0.1821,0.0798,0-0,0,0,Inglaterra,Sim,0-0
-46,Fase de grupos,L,2026-06-23,Panamá,Croácia,0.197,1.6368,-1.4398,1.8337,0-2,0,2,Croácia,Sim,0-1
-47,Fase de grupos,K,2026-06-23,Portugal,Uzbequistão,3.1231,0.4826,2.6405,3.6057,3-0,3,0,Portugal,Sim,5-0
-48,Fase de grupos,K,2026-06-23,Colômbia,RD Congo,2.6846,0.5085,2.1762,3.1931,3-1,3,1,Colômbia,Sim,1-0
-49,Fase de grupos,C,2026-06-24,Escócia,Brasil,0.7186,1.7423,-1.0237,2.4609,1-2,1,2,Brasil,Sim,0-3
-50,Fase de grupos,C,2026-06-24,Marrocos,Haiti,1.9677,1.2502,0.7174,3.2179,2-1,2,1,Marrocos,Sim,4-2
-51,Fase de grupos,B,2026-06-24,Suíça,Canadá,1.3172,1.5728,-0.2557,2.89,1-2,1,2,Canadá,Sim,2-1
-52,Fase de grupos,B,2026-06-24,Bósnia e Herzegovina,Catar,1.492,1.8536,-0.3616,3.3455,1-2,1,2,Catar,Sim,3-1
-53,Fase de grupos,A,2026-06-24,Tchéquia,México,0.6266,1.4819,-0.8553,2.1085,1-1,1,1,México,Sim,0-3
-54,Fase de grupos,A,2026-06-24,África do Sul,Coreia do Sul,1.3659,1.4323,-0.0664,2.7982,1-1,1,1,Coreia do Sul,Sim,1-0
-55,Fase de grupos,E,2026-06-25,Curaçao,Costa do Marfim,0.7672,2.0652,-1.2981,2.8324,1-2,1,2,Costa do Marfim,Sim,0-2
-56,Fase de grupos,E,2026-06-25,Equador,Alemanha,0.9759,1.7898,-0.814,2.7657,1-2,1,2,Alemanha,Sim,2-1
-57,Fase de grupos,F,2026-06-25,Japão,Suécia,2.3535,0.855,1.4985,3.2085,2-1,2,1,Japão,Sim,1-1
-58,Fase de grupos,F,2026-06-25,Tunísia,Países Baixos,0.9859,2.149,-1.1631,3.1349,1-2,1,2,Países Baixos,Sim,1-3
-59,Fase de grupos,D,2026-06-25,Turquia,Estados Unidos,1.4344,1.5397,-0.1054,2.9741,1-2,1,2,Estados Unidos,Sim,3-2
-60,Fase de grupos,D,2026-06-25,Paraguai,Austrália,1.8106,1.2213,0.5894,3.0319,2-1,2,1,Paraguai,Sim,0-0
-61,Fase de grupos,I,2026-06-26,Noruega,França,1.2751,1.9278,-0.6527,3.2029,1-2,1,2,França,Sim,1-4
-62,Fase de grupos,I,2026-06-26,Senegal,Iraque,2.4834,1.0716,1.4117,3.555,2-1,2,1,Senegal,Sim,5-0
-63,Fase de grupos,G,2026-06-26,Egito,Irã,0.8858,1.679,-0.7931,2.5648,1-2,1,2,Irã,Não,
-64,Fase de grupos,G,2026-06-26,Nova Zelândia,Bélgica,0.8026,2.0733,-1.2707,2.8759,1-2,1,2,Bélgica,Não,
-65,Fase de grupos,H,2026-06-26,Cabo Verde,Arábia Saudita,0.66,2.0392,-1.3792,2.6991,1-2,1,2,Arábia Saudita,Sim,0-0
-66,Fase de grupos,H,2026-06-26,Uruguai,Espanha,1.9409,1.4496,0.4913,3.3905,2-1,2,1,Uruguai,Sim,0-1
-67,Fase de grupos,L,2026-06-27,Panamá,Inglaterra,0.4892,1.7111,-1.222,2.2003,0-2,0,2,Inglaterra,Não,
-68,Fase de grupos,L,2026-06-27,Croácia,Gana,0.3041,0.2995,0.0046,0.6036,0-0,0,0,Croácia,Não,
-69,Fase de grupos,J,2026-06-27,Argélia,Áustria,1.5223,1.8313,-0.309,3.3536,2-2,2,2,Áustria,Não,
-70,Fase de grupos,J,2026-06-27,Jordânia,Argentina,1.4382,1.9564,-0.5182,3.3947,1-2,1,2,Argentina,Não,
-71,Fase de grupos,K,2026-06-27,Colômbia,Portugal,2.2608,1.3288,0.932,3.5896,2-1,2,1,Colômbia,Não,
-72,Fase de grupos,K,2026-06-27,RD Congo,Uzbequistão,1.4055,1.38,0.0254,2.7855,1-1,1,1,RD Congo,Não,
-73,16 avos de final,,2026-06-28,África do Sul,Canadá,1.6992,1.3522,0.347,3.0513,2-1,2,1,África do Sul,Não,
-74,16 avos de final,,2026-06-29,Alemanha,Suécia,2.3033,0.8454,1.4579,3.1487,2-1,2,1,Alemanha,Não,
-75,16 avos de final,,2026-06-29,Países Baixos,Marrocos,2.1063,0.8035,1.3028,2.9098,2-1,2,1,Países Baixos,Não,
-76,16 avos de final,,2026-06-29,Brasil,Japão,2.3898,1.0412,1.3486,3.4311,2-1,2,1,Brasil,Não,
-77,16 avos de final,,2026-06-30,França,Paraguai,2.0188,1.2334,0.7854,3.2522,2-1,2,1,França,Não,
-78,16 avos de final,,2026-06-30,Costa do Marfim,Noruega,1.624,1.1382,0.4858,2.7623,2-1,2,1,Costa do Marfim,Não,
-79,16 avos de final,,2026-06-30,México,Equador,1.2822,1.3879,-0.1056,2.6701,1-1,1,1,Equador,Não,
-80,16 avos de final,,2026-07-01,Inglaterra,Argélia,1.7975,0.8714,0.9261,2.6689,2-1,2,1,Inglaterra,Não,
-81,16 avos de final,,2026-07-01,Estados Unidos,Bósnia e Herzegovina,2.4446,0.6579,1.7867,3.1025,2-1,2,1,Estados Unidos,Não,
-82,16 avos de final,,2026-07-01,Irã,Senegal,1.5315,1.6948,-0.1633,3.2263,2-2,2,2,Senegal,Não,
-83,16 avos de final,,2026-07-02,Portugal,Gana,2.1425,0.3823,1.7601,2.5248,2-0,2,0,Portugal,Não,
-84,16 avos de final,,2026-07-02,Espanha,Áustria,2.6419,0.7103,1.9316,3.3522,3-1,3,1,Espanha,Não,
-85,16 avos de final,,2026-07-02,Suíça,Egito,1.7508,0.907,0.8438,2.6579,2-1,2,1,Suíça,Não,
-86,16 avos de final,,2026-07-03,Argentina,Cabo Verde,2.2699,0.5935,1.6764,2.8634,2-1,2,1,Argentina,Não,
-87,16 avos de final,,2026-07-03,Colômbia,Croácia,2.098,1.1736,0.9244,3.2716,2-1,2,1,Colômbia,Não,
-88,16 avos de final,,2026-07-03,Austrália,Bélgica,1.3741,1.6512,-0.2771,3.0253,1-2,1,2,Bélgica,Não,
-89,Oitavas de final,,2026-07-04,África do Sul,Países Baixos,1.5867,1.7364,-0.1497,3.3232,2-2,2,2,Países Baixos,Não,
-90,Oitavas de final,,2026-07-04,Alemanha,França,1.9434,0.9568,0.9866,2.9002,2-1,2,1,Alemanha,Não,
-91,Oitavas de final,,2026-07-05,Brasil,Costa do Marfim,1.7005,0.9421,0.7584,2.6426,2-1,2,1,Brasil,Não,
-92,Oitavas de final,,2026-07-05,Equador,Inglaterra,1.7232,1.2773,0.4459,3.0005,2-1,2,1,Equador,Não,
-93,Oitavas de final,,2026-07-06,Portugal,Espanha,2.599,0.7306,1.8683,3.3296,3-1,3,1,Portugal,Não,
-94,Oitavas de final,,2026-07-06,Estados Unidos,Senegal,2.7307,0.7829,1.9478,3.5136,3-1,3,1,Estados Unidos,Não,
-95,Oitavas de final,,2026-07-07,Argentina,Bélgica,2.5646,0.8695,1.6951,3.4341,3-1,3,1,Argentina,Não,
-96,Oitavas de final,,2026-07-07,Suíça,Colômbia,1.0846,1.2384,-0.1538,2.323,1-1,1,1,Colômbia,Não,
-97,Quartas de final,,2026-07-09,Países Baixos,Alemanha,1.8573,1.0583,0.799,2.9156,2-1,2,1,Países Baixos,Não,
-98,Quartas de final,,2026-07-10,Portugal,Estados Unidos,2.6358,0.8499,1.7859,3.4857,3-1,3,1,Portugal,Não,
-99,Quartas de final,,2026-07-11,Brasil,Equador,1.4261,1.1635,0.2626,2.5895,1-1,1,1,Brasil,Não,
-100,Quartas de final,,2026-07-11,Argentina,Colômbia,2.13,0.9154,1.2147,3.0454,2-1,2,1,Argentina,Não,
-101,Semifinais,,2026-07-14,Países Baixos,Portugal,2.1947,1.0897,1.105,3.2844,2-1,2,1,Países Baixos,Não,
-102,Semifinais,,2026-07-15,Brasil,Argentina,2.0425,1.2432,0.7993,3.2857,2-1,2,1,Brasil,Não,
-103,Disputa de 3º lugar,,2026-07-18,Portugal,Argentina,2.5556,0.8683,1.6873,3.4239,3-1,3,1,Portugal,Não,
-104,Final,,2026-07-19,Países Baixos,Brasil,2.2105,0.9589,1.2517,3.1694,2-1,2,1,Países Baixos,Não,
+1,Fase de grupos,A,2026-06-11,México,África do Sul,1.514,0.0418,1.4722,1.5559,2-0,2,0,México,Sim,2-0
+2,Fase de grupos,A,2026-06-11,Coreia do Sul,Tchéquia,1.7918,1.4373,0.3545,3.2291,2-1,2,1,Coreia do Sul,Sim,2-1
+3,Fase de grupos,B,2026-06-12,Canadá,Bósnia e Herzegovina,2.893,0.5197,2.3732,3.4127,3-1,3,1,Canadá,Sim,1-1
+4,Fase de grupos,D,2026-06-12,Estados Unidos,Paraguai,2.7548,0.5223,2.2325,3.2771,3-1,3,1,Estados Unidos,Sim,4-1
+5,Fase de grupos,C,2026-06-13,Haiti,Escócia,0.3867,1.7155,-1.3288,2.1022,0-2,0,2,Escócia,Sim,0-1
+6,Fase de grupos,D,2026-06-13,Austrália,Turquia,1.0847,1.8726,-0.7879,2.9572,1-2,1,2,Turquia,Sim,2-0
+7,Fase de grupos,C,2026-06-13,Brasil,Marrocos,1.0007,1.2,-0.1993,2.2006,1-1,1,1,Marrocos,Sim,1-1
+8,Fase de grupos,B,2026-06-13,Catar,Suíça,0.733,1.2478,-0.5149,1.9808,1-1,1,1,Suíça,Sim,1-1
+9,Fase de grupos,E,2026-06-14,Costa do Marfim,Equador,1.4079,1.175,0.2329,2.5828,1-1,1,1,Costa do Marfim,Sim,1-0
+10,Fase de grupos,E,2026-06-14,Alemanha,Curaçao,3.353,0.3686,2.9843,3.7216,3-0,3,0,Alemanha,Sim,7-1
+11,Fase de grupos,F,2026-06-14,Países Baixos,Japão,3.2017,1.0574,2.1443,4.259,3-1,3,1,Países Baixos,Sim,2-2
+12,Fase de grupos,F,2026-06-14,Suécia,Tunísia,3.7987,0.6312,3.1675,4.4299,4-1,4,1,Suécia,Sim,5-1
+13,Fase de grupos,H,2026-06-15,Arábia Saudita,Uruguai,0.8973,1.4193,-0.522,2.3166,1-1,1,1,Uruguai,Sim,1-1
+14,Fase de grupos,H,2026-06-15,Espanha,Cabo Verde,0.2827,0.0338,0.2489,0.3165,0-0,0,0,Espanha,Sim,0-0
+15,Fase de grupos,G,2026-06-15,Irã,Nova Zelândia,1.9785,1.8834,0.0951,3.8619,2-2,2,2,Irã,Sim,2-2
+16,Fase de grupos,G,2026-06-15,Bélgica,Egito,1.7318,1.0561,0.6756,2.7879,2-1,2,1,Bélgica,Sim,1-1
+17,Fase de grupos,I,2026-06-16,França,Senegal,3.0433,1.213,1.8303,4.2563,3-1,3,1,França,Sim,3-1
+18,Fase de grupos,I,2026-06-16,Iraque,Noruega,1.0963,2.376,-1.2797,3.4723,1-2,1,2,Noruega,Sim,1-4
+19,Fase de grupos,J,2026-06-16,Argentina,Argélia,2.7191,0.1594,2.5597,2.8785,3-0,3,0,Argentina,Sim,3-0
+20,Fase de grupos,J,2026-06-16,Áustria,Jordânia,3.4807,0.8246,2.6561,4.3053,3-1,3,1,Áustria,Sim,3-1
+21,Fase de grupos,L,2026-06-17,Gana,Panamá,0.7917,0.2961,0.4955,1.0878,1-0,1,0,Gana,Sim,1-0
+22,Fase de grupos,L,2026-06-17,Inglaterra,Croácia,3.4547,1.1898,2.2649,4.6446,3-1,3,1,Inglaterra,Sim,4-2
+23,Fase de grupos,K,2026-06-17,Portugal,RD Congo,1.4077,0.0666,1.3411,1.4742,1-0,1,0,Portugal,Sim,1-1
+24,Fase de grupos,K,2026-06-17,Uzbequistão,Colômbia,0.6748,2.3679,-1.6931,3.0427,1-2,1,2,Colômbia,Sim,1-3
+25,Fase de grupos,A,2026-06-18,Tchéquia,África do Sul,1.2089,1.541,-0.3321,2.7499,1-2,1,2,África do Sul,Sim,1-1
+26,Fase de grupos,B,2026-06-18,Suíça,Bósnia e Herzegovina,3.9202,0.488,3.4322,4.4081,4-0,4,0,Suíça,Sim,4-1
+27,Fase de grupos,B,2026-06-18,Canadá,Catar,3.8853,0.4392,3.446,4.3245,4-0,4,0,Canadá,Sim,6-0
+28,Fase de grupos,A,2026-06-18,México,Coreia do Sul,0.4824,0.0941,0.3883,0.5765,0-0,0,0,México,Sim,1-0
+29,Fase de grupos,C,2026-06-19,Brasil,Haiti,3.3581,0.5264,2.8317,3.8845,3-1,3,1,Brasil,Sim,3-0
+30,Fase de grupos,C,2026-06-19,Escócia,Marrocos,-0.1302,1.5672,-1.6974,1.437,0-2,0,2,Marrocos,Sim,0-1
+31,Fase de grupos,D,2026-06-19,Turquia,Paraguai,0.3787,0.8631,-0.4844,1.2418,0-1,0,1,Paraguai,Sim,0-1
+32,Fase de grupos,D,2026-06-19,Estados Unidos,Austrália,2.088,0.052,2.0361,2.14,2-0,2,0,Estados Unidos,Sim,2-0
+33,Fase de grupos,E,2026-06-20,Alemanha,Costa do Marfim,2.007,0.6459,1.3611,2.653,2-1,2,1,Alemanha,Sim,2-1
+34,Fase de grupos,E,2026-06-20,Equador,Curaçao,1.4678,0.2409,1.2269,1.7087,1-0,1,0,Equador,Sim,0-0
+35,Fase de grupos,F,2026-06-20,Países Baixos,Suécia,3.9931,0.3339,3.6592,4.327,4-0,4,0,Países Baixos,Sim,5-1
+36,Fase de grupos,F,2026-06-20,Tunísia,Japão,0.9548,2.2652,-1.3103,3.22,1-2,1,2,Japão,Sim,0-4
+37,Fase de grupos,H,2026-06-21,Uruguai,Cabo Verde,0.9129,1.0136,-0.1008,1.9265,1-1,1,1,Cabo Verde,Sim,2-2
+38,Fase de grupos,H,2026-06-21,Espanha,Arábia Saudita,3.7329,0.2509,3.482,3.9838,4-0,4,0,Espanha,Sim,4-0
+39,Fase de grupos,G,2026-06-21,Bélgica,Irã,0.3871,-0.0235,0.4106,0.3637,0-0,0,0,Bélgica,Sim,0-0
+40,Fase de grupos,G,2026-06-21,Nova Zelândia,Egito,1.0808,2.3298,-1.249,3.4107,1-2,1,2,Egito,Sim,1-3
+41,Fase de grupos,I,2026-06-22,Noruega,Senegal,2.6442,1.6283,1.0158,4.2725,3-2,3,2,Noruega,Sim,3-2
+42,Fase de grupos,I,2026-06-22,França,Iraque,3.3102,0.3152,2.9951,3.6254,3-0,3,0,França,Sim,3-0
+43,Fase de grupos,J,2026-06-22,Argentina,Áustria,1.9775,0.4535,1.524,2.431,2-0,2,0,Argentina,Sim,2-0
+44,Fase de grupos,J,2026-06-22,Jordânia,Argélia,1.0004,2.2702,-1.2698,3.2706,1-2,1,2,Argélia,Sim,1-2
+45,Fase de grupos,L,2026-06-23,Inglaterra,Gana,0.1895,-0.1721,0.3615,0.0174,0-0,0,0,Inglaterra,Sim,0-0
+46,Fase de grupos,L,2026-06-23,Panamá,Croácia,-0.2525,1.1377,-1.3902,0.8852,0-1,0,1,Croácia,Sim,0-1
+47,Fase de grupos,K,2026-06-23,Portugal,Uzbequistão,3.3297,0.0591,3.2706,3.3888,3-0,3,0,Portugal,Sim,5-0
+48,Fase de grupos,K,2026-06-23,Colômbia,RD Congo,0.7408,0.1887,0.552,0.9295,1-0,1,0,Colômbia,Sim,1-0
+49,Fase de grupos,C,2026-06-24,Escócia,Brasil,0.1442,2.035,-1.8907,2.1792,0-2,0,2,Brasil,Sim,0-3
+50,Fase de grupos,C,2026-06-24,Marrocos,Haiti,2.6627,1.4586,1.2041,4.1214,3-1,3,1,Marrocos,Sim,4-2
+51,Fase de grupos,B,2026-06-24,Suíça,Canadá,1.6536,1.5654,0.0881,3.219,2-2,2,2,Suíça,Sim,2-1
+52,Fase de grupos,B,2026-06-24,Bósnia e Herzegovina,Catar,3.2863,1.0989,2.1875,4.3852,3-1,3,1,Bósnia e Herzegovina,Sim,3-1
+53,Fase de grupos,A,2026-06-24,Tchéquia,México,0.3672,2.0908,-1.7235,2.458,0-2,0,2,México,Sim,0-3
+54,Fase de grupos,A,2026-06-24,África do Sul,Coreia do Sul,0.8138,0.2484,0.5655,1.0622,1-0,1,0,África do Sul,Sim,1-0
+55,Fase de grupos,E,2026-06-25,Curaçao,Costa do Marfim,0.0892,2.0676,-1.9784,2.1568,0-2,0,2,Costa do Marfim,Sim,0-2
+56,Fase de grupos,E,2026-06-25,Equador,Alemanha,1.5645,1.2038,0.3607,2.7683,2-1,2,1,Equador,Sim,2-1
+57,Fase de grupos,F,2026-06-25,Japão,Suécia,3.4628,0.3221,3.1407,3.7849,3-0,3,0,Japão,Sim,1-1
+58,Fase de grupos,F,2026-06-25,Tunísia,Países Baixos,1.1247,2.3446,-1.2198,3.4693,1-2,1,2,Países Baixos,Sim,1-3
+59,Fase de grupos,D,2026-06-25,Turquia,Estados Unidos,0.8375,1.4472,-0.6097,2.2847,1-1,1,1,Estados Unidos,Sim,3-2
+60,Fase de grupos,D,2026-06-25,Paraguai,Austrália,2.7996,0.9741,1.8256,3.7737,3-1,3,1,Paraguai,Sim,0-0
+61,Fase de grupos,I,2026-06-26,Noruega,França,0.5129,2.0308,-1.518,2.5437,1-2,1,2,França,Sim,1-4
+62,Fase de grupos,I,2026-06-26,Senegal,Iraque,3.3095,0.492,2.8175,3.8015,3-0,3,0,Senegal,Sim,5-0
+63,Fase de grupos,G,2026-06-26,Egito,Irã,1.8628,0.8308,1.032,2.6936,2-1,2,1,Egito,Sim,1-1
+64,Fase de grupos,G,2026-06-26,Nova Zelândia,Bélgica,1.0979,2.2251,-1.1272,3.323,1-2,1,2,Bélgica,Sim,1-5
+65,Fase de grupos,H,2026-06-26,Cabo Verde,Arábia Saudita,0.2404,2.0554,-1.8151,2.2958,0-2,0,2,Arábia Saudita,Sim,0-0
+66,Fase de grupos,H,2026-06-26,Uruguai,Espanha,1.5435,1.4574,0.086,3.0009,2-1,2,1,Uruguai,Sim,0-1
+67,Fase de grupos,L,2026-06-27,Panamá,Inglaterra,-0.1784,1.1798,-1.3582,1.0014,0-1,0,1,Inglaterra,Sim,0-2
+68,Fase de grupos,L,2026-06-27,Croácia,Gana,0.6062,0.1152,0.491,0.7214,1-0,1,0,Croácia,Sim,2-1
+69,Fase de grupos,J,2026-06-27,Argélia,Áustria,2.0243,1.6959,0.3284,3.7202,2-2,2,2,Argélia,Sim,3-3
+70,Fase de grupos,J,2026-06-27,Jordânia,Argentina,1.6161,1.9748,-0.3587,3.5909,2-2,2,2,Argentina,Sim,1-3
+71,Fase de grupos,K,2026-06-27,Colômbia,Portugal,2.771,1.2197,1.5512,3.9907,3-1,3,1,Colômbia,Sim,0-0
+72,Fase de grupos,K,2026-06-27,RD Congo,Uzbequistão,2.1393,1.0152,1.124,3.1545,2-1,2,1,RD Congo,Sim,3-1
+73,16 avos de final,,2026-06-28,África do Sul,Canadá,1.3901,1.7658,-0.3757,3.1559,1-2,1,2,Canadá,Não,
+74,16 avos de final,,2026-06-29,Alemanha,Suécia,2.1941,0.8645,1.3296,3.0586,2-1,2,1,Alemanha,Não,
+75,16 avos de final,,2026-06-29,Países Baixos,Marrocos,2.084,0.8739,1.21,2.9579,2-1,2,1,Países Baixos,Não,
+76,16 avos de final,,2026-06-29,Brasil,Japão,1.7947,1.3602,0.4346,3.1549,2-1,2,1,Brasil,Não,
+77,16 avos de final,,2026-06-30,França,Paraguai,1.1554,1.3033,-0.1478,2.4587,1-1,1,1,Paraguai,Não,
+78,16 avos de final,,2026-06-30,Costa do Marfim,Noruega,1.2285,1.3764,-0.1479,2.6049,1-1,1,1,Noruega,Não,
+79,16 avos de final,,2026-06-30,México,Equador,0.5322,1.2309,-0.6988,1.7631,1-1,1,1,Equador,Não,
+80,16 avos de final,,2026-07-01,Inglaterra,RD Congo,0.4578,0.4216,0.0361,0.8794,0-0,0,0,Inglaterra,Não,
+81,16 avos de final,,2026-07-01,Estados Unidos,Bósnia e Herzegovina,1.9783,0.4721,1.5062,2.4505,2-0,2,0,Estados Unidos,Não,
+82,16 avos de final,,2026-07-01,Bélgica,Argélia,0.4812,0.7154,-0.2342,1.1966,0-1,0,1,Argélia,Não,
+83,16 avos de final,,2026-07-02,Portugal,Croácia,2.12,0.568,1.552,2.688,2-1,2,1,Portugal,Não,
+84,16 avos de final,,2026-07-02,Espanha,Áustria,2.2872,0.9401,1.3471,3.2273,2-1,2,1,Espanha,Não,
+85,16 avos de final,,2026-07-02,Suíça,Senegal,2.0795,1.2853,0.7942,3.3648,2-1,2,1,Suíça,Não,
+86,16 avos de final,,2026-07-03,Argentina,Cabo Verde,0.5151,0.2916,0.2234,0.8067,1-0,1,0,Argentina,Não,
+87,16 avos de final,,2026-07-03,Colômbia,Gana,0.1896,0.3741,-0.1845,0.5637,0-0,0,0,Gana,Não,
+88,16 avos de final,,2026-07-03,Austrália,Egito,1.1018,1.7685,-0.6667,2.8703,1-2,1,2,Egito,Não,
+89,Oitavas de final,,2026-07-04,Canadá,Países Baixos,2.0186,1.3351,0.6835,3.3537,2-1,2,1,Canadá,Não,
+90,Oitavas de final,,2026-07-04,Alemanha,Paraguai,1.0648,1.0017,0.063,2.0665,1-1,1,1,Alemanha,Não,
+91,Oitavas de final,,2026-07-05,Brasil,Noruega,1.0989,0.967,0.1318,2.0659,1-1,1,1,Brasil,Não,
+92,Oitavas de final,,2026-07-05,Equador,Inglaterra,1.6022,1.2643,0.3378,2.8665,2-1,2,1,Equador,Não,
+93,Oitavas de final,,2026-07-06,Portugal,Espanha,1.8946,0.6368,1.2578,2.5314,2-1,2,1,Portugal,Não,
+94,Oitavas de final,,2026-07-06,Estados Unidos,Argélia,1.13,0.5472,0.5828,1.6772,1-1,1,1,Estados Unidos,Não,
+95,Oitavas de final,,2026-07-07,Argentina,Egito,1.8909,0.5061,1.3849,2.397,2-1,2,1,Argentina,Não,
+96,Oitavas de final,,2026-07-07,Suíça,Gana,0.3455,0.4292,-0.0838,0.7747,0-0,0,0,Gana,Não,
+97,Quartas de final,,2026-07-09,Canadá,Alemanha,1.1051,1.1975,-0.0923,2.3026,1-1,1,1,Alemanha,Não,
+98,Quartas de final,,2026-07-10,Portugal,Estados Unidos,1.6239,0.6207,1.0032,2.2447,2-1,2,1,Portugal,Não,
+99,Quartas de final,,2026-07-11,Brasil,Equador,0.5196,1.1378,-0.6182,1.6574,1-1,1,1,Equador,Não,
+100,Quartas de final,,2026-07-11,Argentina,Gana,0.7877,0.1558,0.6319,0.9435,1-0,1,0,Argentina,Não,
+101,Semifinais,,2026-07-14,Alemanha,Portugal,2.042,1.3147,0.7273,3.3567,2-1,2,1,Alemanha,Não,
+102,Semifinais,,2026-07-15,Equador,Argentina,2.0896,1.4323,0.6574,3.5219,2-1,2,1,Equador,Não,
+103,Disputa de 3º lugar,,2026-07-18,Portugal,Argentina,2.4234,0.7949,1.6285,3.2183,2-1,2,1,Portugal,Não,
+104,Final,,2026-07-19,Alemanha,Equador,0.6093,1.2221,-0.6128,1.8314,1-1,1,1,Equador,Não,
