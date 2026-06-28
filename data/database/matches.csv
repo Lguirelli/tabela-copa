@@ -61,16 +61,16 @@ jogo,data,diaSemana,horaET,horaLocal,fase,ordemFase,grupo,rodadaGrupo,equipe1,eq
 60,2026-06-25,Quinta-feira,22:00,19:00,Fase de grupos,1,D,3.0,Paraguai,Austrália,Paraguai x Austrália,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Finalizado
 61,2026-06-26,Sexta-feira,15:00,15:00,Fase de grupos,1,I,3.0,Noruega,França,Noruega x França,Gillette Stadium,Boston,Estados Unidos,Finalizado
 62,2026-06-26,Sexta-feira,15:00,15:00,Fase de grupos,1,I,3.0,Senegal,Iraque,Senegal x Iraque,BMO Field,Toronto,Canadá,Finalizado
-63,2026-06-26,Sexta-feira,23:00,20:00,Fase de grupos,1,G,3.0,Egito,Irã,Egito x Irã,Lumen Field,Seattle,Estados Unidos,Agendado
-64,2026-06-26,Sexta-feira,23:00,20:00,Fase de grupos,1,G,3.0,Nova Zelândia,Bélgica,Nova Zelândia x Bélgica,BC Place,Vancouver,Canadá,Agendado
+63,2026-06-26,Sexta-feira,23:00,20:00,Fase de grupos,1,G,3.0,Egito,Irã,Egito x Irã,Lumen Field,Seattle,Estados Unidos,Finalizado
+64,2026-06-26,Sexta-feira,23:00,20:00,Fase de grupos,1,G,3.0,Nova Zelândia,Bélgica,Nova Zelândia x Bélgica,BC Place,Vancouver,Canadá,Finalizado
 65,2026-06-26,Sexta-feira,20:00,19:00,Fase de grupos,1,H,3.0,Cabo Verde,Arábia Saudita,Cabo Verde x Arábia Saudita,NRG Stadium,Houston,Estados Unidos,Finalizado
 66,2026-06-26,Sexta-feira,20:00,18:00,Fase de grupos,1,H,3.0,Uruguai,Espanha,Uruguai x Espanha,Estadio Akron,Guadalajara,México,Finalizado
-67,2026-06-27,Sábado,17:00,17:00,Fase de grupos,1,L,3.0,Panamá,Inglaterra,Panamá x Inglaterra,MetLife Stadium,New York/New Jersey,Estados Unidos,Agendado
-68,2026-06-27,Sábado,17:00,17:00,Fase de grupos,1,L,3.0,Croácia,Gana,Croácia x Gana,Lincoln Financial Field,Philadelphia,Estados Unidos,Agendado
-69,2026-06-27,Sábado,22:00,21:00,Fase de grupos,1,J,3.0,Argélia,Áustria,Argélia x Áustria,Arrowhead Stadium,Kansas City,Estados Unidos,Agendado
-70,2026-06-27,Sábado,22:00,21:00,Fase de grupos,1,J,3.0,Jordânia,Argentina,Jordânia x Argentina,AT&T Stadium,Dallas,Estados Unidos,Agendado
-71,2026-06-27,Sábado,19:30,19:30,Fase de grupos,1,K,3.0,Colômbia,Portugal,Colômbia x Portugal,Hard Rock Stadium,Miami,Estados Unidos,Agendado
-72,2026-06-27,Sábado,19:30,19:30,Fase de grupos,1,K,3.0,RD Congo,Uzbequistão,RD Congo x Uzbequistão,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Agendado
+67,2026-06-27,Sábado,17:00,17:00,Fase de grupos,1,L,3.0,Panamá,Inglaterra,Panamá x Inglaterra,MetLife Stadium,New York/New Jersey,Estados Unidos,Finalizado
+68,2026-06-27,Sábado,17:00,17:00,Fase de grupos,1,L,3.0,Croácia,Gana,Croácia x Gana,Lincoln Financial Field,Philadelphia,Estados Unidos,Finalizado
+69,2026-06-27,Sábado,22:00,21:00,Fase de grupos,1,J,3.0,Argélia,Áustria,Argélia x Áustria,Arrowhead Stadium,Kansas City,Estados Unidos,Finalizado
+70,2026-06-27,Sábado,22:00,21:00,Fase de grupos,1,J,3.0,Jordânia,Argentina,Jordânia x Argentina,AT&T Stadium,Dallas,Estados Unidos,Finalizado
+71,2026-06-27,Sábado,19:30,19:30,Fase de grupos,1,K,3.0,Colômbia,Portugal,Colômbia x Portugal,Hard Rock Stadium,Miami,Estados Unidos,Finalizado
+72,2026-06-27,Sábado,19:30,19:30,Fase de grupos,1,K,3.0,RD Congo,Uzbequistão,RD Congo x Uzbequistão,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Finalizado
 73,2026-06-28,Domingo,15:00,12:00,16 avos de final,2,,,África do Sul,Canadá,África do Sul x Canadá,SoFi Stadium,Los Angeles,Estados Unidos,Simulação
 74,2026-06-29,Segunda-feira,16:30,16:30,16 avos de final,2,,,Alemanha,Paraguai,Alemanha x Paraguai,Gillette Stadium,Boston,Estados Unidos,Simulação
 75,2026-06-29,Segunda-feira,21:00,19:00,16 avos de final,2,,,Países Baixos,Marrocos,Países Baixos x Marrocos,Estadio BBVA,Monterrey,México,Simulação
