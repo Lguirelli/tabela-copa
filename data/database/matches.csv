@@ -1,70 +1,70 @@
-﻿jogo,data,diaSemana,horaET,horaLocal,fase,ordemFase,grupo,rodadaGrupo,equipe1,equipe2,confronto,estadio,cidade,pais,status
-1,2026-06-11,Quinta-feira,15:00,13:00,Fase de grupos,1,A,1.0,México,África do Sul,México x África do Sul,Estadio Azteca,Mexico City,México,Agendado
-2,2026-06-11,Quinta-feira,22:00,20:00,Fase de grupos,1,A,1.0,Coreia do Sul,Tchéquia,Coreia do Sul x Tchéquia,Estadio Akron,Guadalajara,México,Agendado
-3,2026-06-12,Sexta-feira,15:00,15:00,Fase de grupos,1,B,1.0,Canadá,Bósnia e Herzegovina,Canadá x Bósnia e Herzegovina,BMO Field,Toronto,Canadá,Agendado
-4,2026-06-12,Sexta-feira,21:00,18:00,Fase de grupos,1,D,1.0,Estados Unidos,Paraguai,Estados Unidos x Paraguai,SoFi Stadium,Los Angeles,Estados Unidos,Agendado
-5,2026-06-13,Sábado,21:00,21:00,Fase de grupos,1,C,1.0,Haiti,Escócia,Haiti x Escócia,Gillette Stadium,Boston,Estados Unidos,Agendado
+jogo,data,diaSemana,horaET,horaLocal,fase,ordemFase,grupo,rodadaGrupo,equipe1,equipe2,confronto,estadio,cidade,pais,status
+1,2026-06-11,Quinta-feira,15:00,13:00,Fase de grupos,1,A,1.0,México,África do Sul,México x África do Sul,Estadio Azteca,Mexico City,México,Finalizado
+2,2026-06-11,Quinta-feira,22:00,20:00,Fase de grupos,1,A,1.0,Coreia do Sul,Tchéquia,Coreia do Sul x Tchéquia,Estadio Akron,Guadalajara,México,Finalizado
+3,2026-06-12,Sexta-feira,15:00,15:00,Fase de grupos,1,B,1.0,Canadá,Bósnia e Herzegovina,Canadá x Bósnia e Herzegovina,BMO Field,Toronto,Canadá,Finalizado
+4,2026-06-12,Sexta-feira,21:00,18:00,Fase de grupos,1,D,1.0,Estados Unidos,Paraguai,Estados Unidos x Paraguai,SoFi Stadium,Los Angeles,Estados Unidos,Finalizado
+5,2026-06-13,Sábado,21:00,21:00,Fase de grupos,1,C,1.0,Haiti,Escócia,Haiti x Escócia,Gillette Stadium,Boston,Estados Unidos,Finalizado
 6,2026-06-13,Sábado,24:00,21:00,Fase de grupos,1,D,1.0,Austrália,Turquia,Austrália x Turquia,BC Place,Vancouver,Canadá,Agendado
-7,2026-06-13,Sábado,18:00,18:00,Fase de grupos,1,C,1.0,Brasil,Marrocos,Brasil x Marrocos,MetLife Stadium,New York/New Jersey,Estados Unidos,Agendado
-8,2026-06-13,Sábado,15:00,12:00,Fase de grupos,1,B,1.0,Catar,Suíça,Catar x Suíça,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Agendado
-9,2026-06-14,Domingo,19:00,19:00,Fase de grupos,1,E,1.0,Costa do Marfim,Equador,Costa do Marfim x Equador,Lincoln Financial Field,Philadelphia,Estados Unidos,Agendado
-10,2026-06-14,Domingo,13:00,12:00,Fase de grupos,1,E,1.0,Alemanha,Curaçao,Alemanha x Curaçao,NRG Stadium,Houston,Estados Unidos,Agendado
-11,2026-06-14,Domingo,16:00,15:00,Fase de grupos,1,F,1.0,Países Baixos,Japão,Países Baixos x Japão,AT&T Stadium,Dallas,Estados Unidos,Agendado
-12,2026-06-14,Domingo,22:00,20:00,Fase de grupos,1,F,1.0,Suécia,Tunísia,Suécia x Tunísia,Estadio BBVA,Monterrey,México,Agendado
-13,2026-06-15,Segunda-feira,18:00,18:00,Fase de grupos,1,H,1.0,Arábia Saudita,Uruguai,Arábia Saudita x Uruguai,Hard Rock Stadium,Miami,Estados Unidos,Agendado
-14,2026-06-15,Segunda-feira,12:00,12:00,Fase de grupos,1,H,1.0,Espanha,Cabo Verde,Espanha x Cabo Verde,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Agendado
-15,2026-06-15,Segunda-feira,21:00,18:00,Fase de grupos,1,G,1.0,Irã,Nova Zelândia,Irã x Nova Zelândia,SoFi Stadium,Los Angeles,Estados Unidos,Agendado
-16,2026-06-15,Segunda-feira,15:00,12:00,Fase de grupos,1,G,1.0,Bélgica,Egito,Bélgica x Egito,Lumen Field,Seattle,Estados Unidos,Agendado
-17,2026-06-16,Terça-feira,15:00,15:00,Fase de grupos,1,I,1.0,França,Senegal,França x Senegal,MetLife Stadium,New York/New Jersey,Estados Unidos,Agendado
-18,2026-06-16,Terça-feira,18:00,18:00,Fase de grupos,1,I,1.0,Iraque,Noruega,Iraque x Noruega,Gillette Stadium,Boston,Estados Unidos,Agendado
-19,2026-06-16,Terça-feira,21:00,20:00,Fase de grupos,1,J,1.0,Argentina,Argélia,Argentina x Argélia,Arrowhead Stadium,Kansas City,Estados Unidos,Agendado
+7,2026-06-13,Sábado,18:00,18:00,Fase de grupos,1,C,1.0,Brasil,Marrocos,Brasil x Marrocos,MetLife Stadium,New York/New Jersey,Estados Unidos,Finalizado
+8,2026-06-13,Sábado,15:00,12:00,Fase de grupos,1,B,1.0,Catar,Suíça,Catar x Suíça,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Finalizado
+9,2026-06-14,Domingo,19:00,19:00,Fase de grupos,1,E,1.0,Costa do Marfim,Equador,Costa do Marfim x Equador,Lincoln Financial Field,Philadelphia,Estados Unidos,Finalizado
+10,2026-06-14,Domingo,13:00,12:00,Fase de grupos,1,E,1.0,Alemanha,Curaçao,Alemanha x Curaçao,NRG Stadium,Houston,Estados Unidos,Finalizado
+11,2026-06-14,Domingo,16:00,15:00,Fase de grupos,1,F,1.0,Países Baixos,Japão,Países Baixos x Japão,AT&T Stadium,Dallas,Estados Unidos,Finalizado
+12,2026-06-14,Domingo,22:00,20:00,Fase de grupos,1,F,1.0,Suécia,Tunísia,Suécia x Tunísia,Estadio BBVA,Monterrey,México,Finalizado
+13,2026-06-15,Segunda-feira,18:00,18:00,Fase de grupos,1,H,1.0,Arábia Saudita,Uruguai,Arábia Saudita x Uruguai,Hard Rock Stadium,Miami,Estados Unidos,Finalizado
+14,2026-06-15,Segunda-feira,12:00,12:00,Fase de grupos,1,H,1.0,Espanha,Cabo Verde,Espanha x Cabo Verde,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Finalizado
+15,2026-06-15,Segunda-feira,21:00,18:00,Fase de grupos,1,G,1.0,Irã,Nova Zelândia,Irã x Nova Zelândia,SoFi Stadium,Los Angeles,Estados Unidos,Finalizado
+16,2026-06-15,Segunda-feira,15:00,12:00,Fase de grupos,1,G,1.0,Bélgica,Egito,Bélgica x Egito,Lumen Field,Seattle,Estados Unidos,Finalizado
+17,2026-06-16,Terça-feira,15:00,15:00,Fase de grupos,1,I,1.0,França,Senegal,França x Senegal,MetLife Stadium,New York/New Jersey,Estados Unidos,Finalizado
+18,2026-06-16,Terça-feira,18:00,18:00,Fase de grupos,1,I,1.0,Iraque,Noruega,Iraque x Noruega,Gillette Stadium,Boston,Estados Unidos,Finalizado
+19,2026-06-16,Terça-feira,21:00,20:00,Fase de grupos,1,J,1.0,Argentina,Argélia,Argentina x Argélia,Arrowhead Stadium,Kansas City,Estados Unidos,Finalizado
 20,2026-06-16,Terça-feira,24:00,21:00,Fase de grupos,1,J,1.0,Áustria,Jordânia,Áustria x Jordânia,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Agendado
-21,2026-06-17,Quarta-feira,19:00,19:00,Fase de grupos,1,L,1.0,Gana,Panamá,Gana x Panamá,BMO Field,Toronto,Canadá,Agendado
-22,2026-06-17,Quarta-feira,16:00,15:00,Fase de grupos,1,L,1.0,Inglaterra,Croácia,Inglaterra x Croácia,AT&T Stadium,Dallas,Estados Unidos,Agendado
-23,2026-06-17,Quarta-feira,13:00,12:00,Fase de grupos,1,K,1.0,Portugal,RD Congo,Portugal x RD Congo,NRG Stadium,Houston,Estados Unidos,Agendado
-24,2026-06-17,Quarta-feira,22:00,20:00,Fase de grupos,1,K,1.0,Uzbequistão,Colômbia,Uzbequistão x Colômbia,Estadio Azteca,Mexico City,México,Agendado
-25,2026-06-18,Quinta-feira,12:00,12:00,Fase de grupos,1,A,2.0,Tchéquia,África do Sul,Tchéquia x África do Sul,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Agendado
-26,2026-06-18,Quinta-feira,15:00,12:00,Fase de grupos,1,B,2.0,Suíça,Bósnia e Herzegovina,Suíça x Bósnia e Herzegovina,SoFi Stadium,Los Angeles,Estados Unidos,Agendado
-27,2026-06-18,Quinta-feira,18:00,15:00,Fase de grupos,1,B,2.0,Canadá,Catar,Canadá x Catar,BC Place,Vancouver,Canadá,Agendado
-28,2026-06-18,Quinta-feira,21:00,19:00,Fase de grupos,1,A,2.0,México,Coreia do Sul,México x Coreia do Sul,Estadio Akron,Guadalajara,México,Agendado
-29,2026-06-19,Sexta-feira,21:00,21:00,Fase de grupos,1,C,2.0,Brasil,Haiti,Brasil x Haiti,Lincoln Financial Field,Philadelphia,Estados Unidos,Agendado
-30,2026-06-19,Sexta-feira,18:00,18:00,Fase de grupos,1,C,2.0,Escócia,Marrocos,Escócia x Marrocos,Gillette Stadium,Boston,Estados Unidos,Agendado
+21,2026-06-17,Quarta-feira,19:00,19:00,Fase de grupos,1,L,1.0,Gana,Panamá,Gana x Panamá,BMO Field,Toronto,Canadá,Finalizado
+22,2026-06-17,Quarta-feira,16:00,15:00,Fase de grupos,1,L,1.0,Inglaterra,Croácia,Inglaterra x Croácia,AT&T Stadium,Dallas,Estados Unidos,Finalizado
+23,2026-06-17,Quarta-feira,13:00,12:00,Fase de grupos,1,K,1.0,Portugal,RD Congo,Portugal x RD Congo,NRG Stadium,Houston,Estados Unidos,Finalizado
+24,2026-06-17,Quarta-feira,22:00,20:00,Fase de grupos,1,K,1.0,Uzbequistão,Colômbia,Uzbequistão x Colômbia,Estadio Azteca,Mexico City,México,Finalizado
+25,2026-06-18,Quinta-feira,12:00,12:00,Fase de grupos,1,A,2.0,Tchéquia,África do Sul,Tchéquia x África do Sul,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Finalizado
+26,2026-06-18,Quinta-feira,15:00,12:00,Fase de grupos,1,B,2.0,Suíça,Bósnia e Herzegovina,Suíça x Bósnia e Herzegovina,SoFi Stadium,Los Angeles,Estados Unidos,Finalizado
+27,2026-06-18,Quinta-feira,18:00,15:00,Fase de grupos,1,B,2.0,Canadá,Catar,Canadá x Catar,BC Place,Vancouver,Canadá,Finalizado
+28,2026-06-18,Quinta-feira,21:00,19:00,Fase de grupos,1,A,2.0,México,Coreia do Sul,México x Coreia do Sul,Estadio Akron,Guadalajara,México,Finalizado
+29,2026-06-19,Sexta-feira,21:00,21:00,Fase de grupos,1,C,2.0,Brasil,Haiti,Brasil x Haiti,Lincoln Financial Field,Philadelphia,Estados Unidos,Finalizado
+30,2026-06-19,Sexta-feira,18:00,18:00,Fase de grupos,1,C,2.0,Escócia,Marrocos,Escócia x Marrocos,Gillette Stadium,Boston,Estados Unidos,Finalizado
 31,2026-06-19,Sexta-feira,23:00,20:00,Fase de grupos,1,D,2.0,Turquia,Paraguai,Turquia x Paraguai,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Agendado
-32,2026-06-19,Sexta-feira,15:00,12:00,Fase de grupos,1,D,2.0,Estados Unidos,Austrália,Estados Unidos x Austrália,Lumen Field,Seattle,Estados Unidos,Agendado
-33,2026-06-20,Sábado,16:00,16:00,Fase de grupos,1,E,2.0,Alemanha,Costa do Marfim,Alemanha x Costa do Marfim,BMO Field,Toronto,Canadá,Agendado
-34,2026-06-20,Sábado,20:00,19:00,Fase de grupos,1,E,2.0,Equador,Curaçao,Equador x Curaçao,Arrowhead Stadium,Kansas City,Estados Unidos,Agendado
-35,2026-06-20,Sábado,13:00,12:00,Fase de grupos,1,F,2.0,Países Baixos,Suécia,Países Baixos x Suécia,NRG Stadium,Houston,Estados Unidos,Agendado
+32,2026-06-19,Sexta-feira,15:00,12:00,Fase de grupos,1,D,2.0,Estados Unidos,Austrália,Estados Unidos x Austrália,Lumen Field,Seattle,Estados Unidos,Finalizado
+33,2026-06-20,Sábado,16:00,16:00,Fase de grupos,1,E,2.0,Alemanha,Costa do Marfim,Alemanha x Costa do Marfim,BMO Field,Toronto,Canadá,Finalizado
+34,2026-06-20,Sábado,20:00,19:00,Fase de grupos,1,E,2.0,Equador,Curaçao,Equador x Curaçao,Arrowhead Stadium,Kansas City,Estados Unidos,Finalizado
+35,2026-06-20,Sábado,13:00,12:00,Fase de grupos,1,F,2.0,Países Baixos,Suécia,Países Baixos x Suécia,NRG Stadium,Houston,Estados Unidos,Finalizado
 36,2026-06-20,Sábado,24:00,22:00,Fase de grupos,1,F,2.0,Tunísia,Japão,Tunísia x Japão,Estadio BBVA,Monterrey,México,Agendado
-37,2026-06-21,Domingo,18:00,18:00,Fase de grupos,1,H,2.0,Uruguai,Cabo Verde,Uruguai x Cabo Verde,Hard Rock Stadium,Miami,Estados Unidos,Agendado
-38,2026-06-21,Domingo,12:00,12:00,Fase de grupos,1,H,2.0,Espanha,Arábia Saudita,Espanha x Arábia Saudita,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Agendado
-39,2026-06-21,Domingo,15:00,12:00,Fase de grupos,1,G,2.0,Bélgica,Irã,Bélgica x Irã,SoFi Stadium,Los Angeles,Estados Unidos,Agendado
-40,2026-06-21,Domingo,21:00,18:00,Fase de grupos,1,G,2.0,Nova Zelândia,Egito,Nova Zelândia x Egito,BC Place,Vancouver,Canadá,Agendado
-41,2026-06-22,Segunda-feira,20:00,20:00,Fase de grupos,1,I,2.0,Noruega,Senegal,Noruega x Senegal,MetLife Stadium,New York/New Jersey,Estados Unidos,Agendado
-42,2026-06-22,Segunda-feira,17:00,17:00,Fase de grupos,1,I,2.0,França,Iraque,França x Iraque,Lincoln Financial Field,Philadelphia,Estados Unidos,Agendado
-43,2026-06-22,Segunda-feira,13:00,12:00,Fase de grupos,1,J,2.0,Argentina,Áustria,Argentina x Áustria,AT&T Stadium,Dallas,Estados Unidos,Agendado
+37,2026-06-21,Domingo,18:00,18:00,Fase de grupos,1,H,2.0,Uruguai,Cabo Verde,Uruguai x Cabo Verde,Hard Rock Stadium,Miami,Estados Unidos,Finalizado
+38,2026-06-21,Domingo,12:00,12:00,Fase de grupos,1,H,2.0,Espanha,Arábia Saudita,Espanha x Arábia Saudita,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Finalizado
+39,2026-06-21,Domingo,15:00,12:00,Fase de grupos,1,G,2.0,Bélgica,Irã,Bélgica x Irã,SoFi Stadium,Los Angeles,Estados Unidos,Finalizado
+40,2026-06-21,Domingo,21:00,18:00,Fase de grupos,1,G,2.0,Nova Zelândia,Egito,Nova Zelândia x Egito,BC Place,Vancouver,Canadá,Finalizado
+41,2026-06-22,Segunda-feira,20:00,20:00,Fase de grupos,1,I,2.0,Noruega,Senegal,Noruega x Senegal,MetLife Stadium,New York/New Jersey,Estados Unidos,Finalizado
+42,2026-06-22,Segunda-feira,17:00,17:00,Fase de grupos,1,I,2.0,França,Iraque,França x Iraque,Lincoln Financial Field,Philadelphia,Estados Unidos,Finalizado
+43,2026-06-22,Segunda-feira,13:00,12:00,Fase de grupos,1,J,2.0,Argentina,Áustria,Argentina x Áustria,AT&T Stadium,Dallas,Estados Unidos,Finalizado
 44,2026-06-22,Segunda-feira,23:00,20:00,Fase de grupos,1,J,2.0,Jordânia,Argélia,Jordânia x Argélia,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Agendado
-45,2026-06-23,Terça-feira,16:00,16:00,Fase de grupos,1,L,2.0,Inglaterra,Gana,Inglaterra x Gana,Gillette Stadium,Boston,Estados Unidos,Agendado
-46,2026-06-23,Terça-feira,19:00,19:00,Fase de grupos,1,L,2.0,Panamá,Croácia,Panamá x Croácia,BMO Field,Toronto,Canadá,Agendado
-47,2026-06-23,Terça-feira,13:00,12:00,Fase de grupos,1,K,2.0,Portugal,Uzbequistão,Portugal x Uzbequistão,NRG Stadium,Houston,Estados Unidos,Agendado
-48,2026-06-23,Terça-feira,22:00,20:00,Fase de grupos,1,K,2.0,Colômbia,RD Congo,Colômbia x RD Congo,Estadio Akron,Guadalajara,México,Agendado
-49,2026-06-24,Quarta-feira,18:00,18:00,Fase de grupos,1,C,3.0,Escócia,Brasil,Escócia x Brasil,Hard Rock Stadium,Miami,Estados Unidos,Agendado
-50,2026-06-24,Quarta-feira,18:00,18:00,Fase de grupos,1,C,3.0,Marrocos,Haiti,Marrocos x Haiti,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Agendado
-51,2026-06-24,Quarta-feira,15:00,12:00,Fase de grupos,1,B,3.0,Suíça,Canadá,Suíça x Canadá,BC Place,Vancouver,Canadá,Agendado
-52,2026-06-24,Quarta-feira,15:00,12:00,Fase de grupos,1,B,3.0,Bósnia e Herzegovina,Catar,Bósnia e Herzegovina x Catar,Lumen Field,Seattle,Estados Unidos,Agendado
-53,2026-06-24,Quarta-feira,21:00,19:00,Fase de grupos,1,A,3.0,Tchéquia,México,Tchéquia x México,Estadio Azteca,Mexico City,México,Agendado
-54,2026-06-24,Quarta-feira,21:00,19:00,Fase de grupos,1,A,3.0,África do Sul,Coreia do Sul,África do Sul x Coreia do Sul,Estadio BBVA,Monterrey,México,Agendado
-55,2026-06-25,Quinta-feira,16:00,16:00,Fase de grupos,1,E,3.0,Curaçao,Costa do Marfim,Curaçao x Costa do Marfim,Lincoln Financial Field,Philadelphia,Estados Unidos,Agendado
-56,2026-06-25,Quinta-feira,16:00,16:00,Fase de grupos,1,E,3.0,Equador,Alemanha,Equador x Alemanha,MetLife Stadium,New York/New Jersey,Estados Unidos,Agendado
-57,2026-06-25,Quinta-feira,19:00,18:00,Fase de grupos,1,F,3.0,Japão,Suécia,Japão x Suécia,AT&T Stadium,Dallas,Estados Unidos,Agendado
-58,2026-06-25,Quinta-feira,19:00,18:00,Fase de grupos,1,F,3.0,Tunísia,Países Baixos,Tunísia x Países Baixos,Arrowhead Stadium,Kansas City,Estados Unidos,Agendado
-59,2026-06-25,Quinta-feira,22:00,19:00,Fase de grupos,1,D,3.0,Turquia,Estados Unidos,Turquia x Estados Unidos,SoFi Stadium,Los Angeles,Estados Unidos,Agendado
-60,2026-06-25,Quinta-feira,22:00,19:00,Fase de grupos,1,D,3.0,Paraguai,Austrália,Paraguai x Austrália,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Agendado
-61,2026-06-26,Sexta-feira,15:00,15:00,Fase de grupos,1,I,3.0,Noruega,França,Noruega x França,Gillette Stadium,Boston,Estados Unidos,Agendado
-62,2026-06-26,Sexta-feira,15:00,15:00,Fase de grupos,1,I,3.0,Senegal,Iraque,Senegal x Iraque,BMO Field,Toronto,Canadá,Agendado
+45,2026-06-23,Terça-feira,16:00,16:00,Fase de grupos,1,L,2.0,Inglaterra,Gana,Inglaterra x Gana,Gillette Stadium,Boston,Estados Unidos,Finalizado
+46,2026-06-23,Terça-feira,19:00,19:00,Fase de grupos,1,L,2.0,Panamá,Croácia,Panamá x Croácia,BMO Field,Toronto,Canadá,Finalizado
+47,2026-06-23,Terça-feira,13:00,12:00,Fase de grupos,1,K,2.0,Portugal,Uzbequistão,Portugal x Uzbequistão,NRG Stadium,Houston,Estados Unidos,Finalizado
+48,2026-06-23,Terça-feira,22:00,20:00,Fase de grupos,1,K,2.0,Colômbia,RD Congo,Colômbia x RD Congo,Estadio Akron,Guadalajara,México,Finalizado
+49,2026-06-24,Quarta-feira,18:00,18:00,Fase de grupos,1,C,3.0,Escócia,Brasil,Escócia x Brasil,Hard Rock Stadium,Miami,Estados Unidos,Finalizado
+50,2026-06-24,Quarta-feira,18:00,18:00,Fase de grupos,1,C,3.0,Marrocos,Haiti,Marrocos x Haiti,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Finalizado
+51,2026-06-24,Quarta-feira,15:00,12:00,Fase de grupos,1,B,3.0,Suíça,Canadá,Suíça x Canadá,BC Place,Vancouver,Canadá,Finalizado
+52,2026-06-24,Quarta-feira,15:00,12:00,Fase de grupos,1,B,3.0,Bósnia e Herzegovina,Catar,Bósnia e Herzegovina x Catar,Lumen Field,Seattle,Estados Unidos,Finalizado
+53,2026-06-24,Quarta-feira,21:00,19:00,Fase de grupos,1,A,3.0,Tchéquia,México,Tchéquia x México,Estadio Azteca,Mexico City,México,Finalizado
+54,2026-06-24,Quarta-feira,21:00,19:00,Fase de grupos,1,A,3.0,África do Sul,Coreia do Sul,África do Sul x Coreia do Sul,Estadio BBVA,Monterrey,México,Finalizado
+55,2026-06-25,Quinta-feira,16:00,16:00,Fase de grupos,1,E,3.0,Curaçao,Costa do Marfim,Curaçao x Costa do Marfim,Lincoln Financial Field,Philadelphia,Estados Unidos,Finalizado
+56,2026-06-25,Quinta-feira,16:00,16:00,Fase de grupos,1,E,3.0,Equador,Alemanha,Equador x Alemanha,MetLife Stadium,New York/New Jersey,Estados Unidos,Finalizado
+57,2026-06-25,Quinta-feira,19:00,18:00,Fase de grupos,1,F,3.0,Japão,Suécia,Japão x Suécia,AT&T Stadium,Dallas,Estados Unidos,Finalizado
+58,2026-06-25,Quinta-feira,19:00,18:00,Fase de grupos,1,F,3.0,Tunísia,Países Baixos,Tunísia x Países Baixos,Arrowhead Stadium,Kansas City,Estados Unidos,Finalizado
+59,2026-06-25,Quinta-feira,22:00,19:00,Fase de grupos,1,D,3.0,Turquia,Estados Unidos,Turquia x Estados Unidos,SoFi Stadium,Los Angeles,Estados Unidos,Finalizado
+60,2026-06-25,Quinta-feira,22:00,19:00,Fase de grupos,1,D,3.0,Paraguai,Austrália,Paraguai x Austrália,Levi's Stadium,San Francisco Bay Area,Estados Unidos,Finalizado
+61,2026-06-26,Sexta-feira,15:00,15:00,Fase de grupos,1,I,3.0,Noruega,França,Noruega x França,Gillette Stadium,Boston,Estados Unidos,Finalizado
+62,2026-06-26,Sexta-feira,15:00,15:00,Fase de grupos,1,I,3.0,Senegal,Iraque,Senegal x Iraque,BMO Field,Toronto,Canadá,Finalizado
 63,2026-06-26,Sexta-feira,23:00,20:00,Fase de grupos,1,G,3.0,Egito,Irã,Egito x Irã,Lumen Field,Seattle,Estados Unidos,Agendado
 64,2026-06-26,Sexta-feira,23:00,20:00,Fase de grupos,1,G,3.0,Nova Zelândia,Bélgica,Nova Zelândia x Bélgica,BC Place,Vancouver,Canadá,Agendado
-65,2026-06-26,Sexta-feira,20:00,19:00,Fase de grupos,1,H,3.0,Cabo Verde,Arábia Saudita,Cabo Verde x Arábia Saudita,NRG Stadium,Houston,Estados Unidos,Agendado
-66,2026-06-26,Sexta-feira,20:00,18:00,Fase de grupos,1,H,3.0,Uruguai,Espanha,Uruguai x Espanha,Estadio Akron,Guadalajara,México,Agendado
+65,2026-06-26,Sexta-feira,20:00,19:00,Fase de grupos,1,H,3.0,Cabo Verde,Arábia Saudita,Cabo Verde x Arábia Saudita,NRG Stadium,Houston,Estados Unidos,Finalizado
+66,2026-06-26,Sexta-feira,20:00,18:00,Fase de grupos,1,H,3.0,Uruguai,Espanha,Uruguai x Espanha,Estadio Akron,Guadalajara,México,Finalizado
 67,2026-06-27,Sábado,17:00,17:00,Fase de grupos,1,L,3.0,Panamá,Inglaterra,Panamá x Inglaterra,MetLife Stadium,New York/New Jersey,Estados Unidos,Agendado
 68,2026-06-27,Sábado,17:00,17:00,Fase de grupos,1,L,3.0,Croácia,Gana,Croácia x Gana,Lincoln Financial Field,Philadelphia,Estados Unidos,Agendado
 69,2026-06-27,Sábado,22:00,21:00,Fase de grupos,1,J,3.0,Argélia,Áustria,Argélia x Áustria,Arrowhead Stadium,Kansas City,Estados Unidos,Agendado

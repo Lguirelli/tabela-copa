@@ -58,3 +58,27 @@ data/rede_neural/       dataset, métricas, checkpoint e previsões da rede
 src/rede-neural-data.js export JS consumido pelo front
 assets/teams/           bandeiras e ícones das seleções
 ```
+
+---
+
+## Atualização diária sem API key e sem proxy
+
+Este repositório inclui uma rotina automática para coletar **jogos finalizados** e atualizar os CSVs de resultados sem usar API key e sem criar proxies.
+
+Arquivos principais:
+
+- `scripts/daily_extract_finished_matches.py`
+- `.github/workflows/daily-data-update.yml`
+- `notebooks/daily_update_finished_matches.ipynb`
+- `notebooks/extracao_copa_2026_sem_key_repo_incremental.ipynb`
+- `DAILY_UPDATE_NO_KEY.md`
+
+A rotina roda diariamente no GitHub Actions e atualiza:
+
+- `data/resultados_reais.csv`
+- `data/resultados.csv`
+- `data/database/matches.csv`
+- `data/daily_updates/finished_matches_espn.csv`
+- `data/daily_updates/sources_used_daily.csv`
+
+Regra aplicada: **sem proxy, sem estimativa e sem API key**. Quando uma informação não vem diretamente da fonte pública, permanece `NA`.
