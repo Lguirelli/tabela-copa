@@ -1,4 +1,4 @@
-jogo;status;placar;equipe1;equipe2;vencedor
+﻿jogo;status;placar;equipe1;equipe2;vencedor
 1;Finalizado;2-0;México;África do Sul;México
 2;Finalizado;2-1;Coreia do Sul;Tchéquia;Coreia do Sul
 3;Finalizado;1-1;Canadá;Bósnia e Herzegovina;Empate
@@ -61,5 +61,13 @@ jogo;status;placar;equipe1;equipe2;vencedor
 60;Finalizado;0-0;Paraguai;Austrália;Empate
 61;Finalizado;1-4;Noruega;França;França
 62;Finalizado;5-0;Senegal;Iraque;Senegal
+63;Finalizado;1-1;Egito;Irã;Empate
+64;Finalizado;1-5;Nova Zelândia;Bélgica;Bélgica
 65;Finalizado;0-0;Cabo Verde;Arábia Saudita;Empate
 66;Finalizado;0-1;Uruguai;Espanha;Espanha
+67;Finalizado;0-2;Panamá;Inglaterra;Inglaterra
+68;Finalizado;2-1;Croácia;Gana;Croácia
+69;Finalizado;3-3;Argélia;Áustria;Empate
+70;Finalizado;1-3;Jordânia;Argentina;Argentina
+71;Finalizado;0-0;Colômbia;Portugal;Empate
+72;Finalizado;3-1;RD Congo;Uzbequistão;RD Congo
