@@ -1,89 +1,60 @@
-# Copa 2026 — Visualizador de resultados com correção incremental
+# Copa 2026 — Visualizador com rede neural
 
-Repositório estático para visualizar jogos da Copa 2026 com **previsão ao lado do resultado real**.
+Visualizador estático para acompanhar a Copa 2026 com resultados reais e previsões geradas pela rede neural `CopaMatchNet`.
 
-Quando o resultado real existe, o site mostra:
+## Páginas
 
-- placar previsto;
-- placar real;
-- status **Finalizado**;
-- erro de previsão;
-- proximidade do modelo.
+- `grupos-resultados.html` — classificação geral dos grupos.
+- `grupos-jogos.html` — lista de jogos da fase de grupos.
+- `mata-mata-chave.html` — chaveamento do mata-mata.
+- `mata-mata-jogos.html` — lista dos jogos eliminatórios.
+- `rede-neural.html` — arquitetura, métricas, treino, desempenho, erros e visualização da rede.
 
-Quando o resultado real ainda não existe, o site mostra:
+## Fonte de previsão
 
-- placar previsto atualizado;
-- status **Simulação**.
+A previsão exibida no front vem apenas da rede neural:
 
-## Como abrir
-
-Abra `index.html` no navegador.
-
-Também pode rodar localmente:
-
-```bash
-python -m http.server 8000
+```txt
+data/rede_neural/previsoes_rede_neural.csv
+src/rede-neural-data.js
 ```
 
-Depois acesse `http://localhost:8000`.
+A previsão do front é gerada somente pela rede neural.
 
-## Como registrar novos resultados
+## Atualização
 
-1. Edite o arquivo:
+1. Coloque novas linhas em:
 
-```text
+```txt
 data/entrada/novos_resultados.csv
 ```
 
-2. Adicione as novas linhas no mesmo formato:
-
-```csv
-data;dia_semana;fase;time_1;gols_time_1;gols_time_2;time_2;placar;status;fonte
-2026-06-26;Sexta-feira;Fase de grupos;Noruega;0;0;França;Noruega 0 x 0 França;Finalizado;
-```
-
-3. Rode:
+2. Rode:
 
 ```bash
 python scripts/atualizar_modelo.py
 ```
 
-O script compara a previsão anterior com o resultado real, registra o erro e atualiza a próxima simulação.
+Esse script atualiza os resultados reais, reexecuta o treino da rede neural e exporta os dados para o front.
 
-## Arquivos principais
+## Treinar manualmente
 
-```text
-index.html
-src/app.js
-src/data.js
-src/model-data.js
-data/matches.csv
-data/previsoes_modelo.csv
-data/resultados_reais.csv
-data/neural/correcoes_modelo.csv
-data/neural/estado_times.csv
-data/neural/model_state.json
-data/desempenho/jogos_finalizados_copa_2026_ate_25-06.csv
-data/desempenho/jogadores_citados_desempenho_copa_2026.csv
-data/desempenho/resumo_desempenho_por_jogo_copa_2026.csv
-scripts/atualizar_modelo.py
+```bash
+python scripts/treinar_rede_neural_copa.py
 ```
 
-## Estado inicial
+## Reaplicar a rede treinada
 
-- Resultados reais carregados: **60**
-- Correções registradas: **60**
-- Proximidade média inicial: **24.7%**
-- Última data real na base: **2026-06-25**
+```bash
+python scripts/aplicar_rede_neural_copa.py
+```
 
+## Estrutura principal
 
-
-## Atualização aplicada
-
-- `data/team_colors.csv` e `src/team-colors.js` guardam as cores por seleção.
-- O front usa essas cores apenas como identidade visual dos cards e chips, sem exibir a base CSV.
-- O mata-mata foi recalculado com a classificação projetada dos grupos, usando resultado real quando existe e simulação quando ainda não existe resultado.
-- Arquivos auxiliares do recálculo:
-  - `data/neural/classificacao_projetada_grupos.csv`
-  - `data/neural/melhores_terceiros_projetados.csv`
-  - `data/neural/terceiros_colocados_mata_mata.csv`
+```txt
+neural_copa/            código PyTorch da rede
+scripts/                automações de atualização e treino
+data/rede_neural/       dataset, métricas, checkpoint e previsões da rede
+src/rede-neural-data.js export JS consumido pelo front
+assets/teams/           bandeiras e ícones das seleções
+```
