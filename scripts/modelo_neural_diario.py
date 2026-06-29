@@ -17,7 +17,7 @@ Entradas usadas:
 - data/database/matches.csv
 - data/database/referees_fifa.csv apenas como perfil agregado, sem assignments simulados
 - data/resultados_reais.csv para validação pós-previsão
-- data/desempenho/*.csv para ajuste pós-jogo, somente depois do jogo validado
+- data/entrada/desempenho_manual.csv para ajuste pós-jogo, somente depois do jogo validado
 
 Entradas propositalmente ignoradas:
 - data/previsoes_modelo.csv
@@ -26,6 +26,7 @@ Entradas propositalmente ignoradas:
 - data/database/simulated_referee_assignments.csv
 - data/neural/* como fonte de previsão
 - data/modelo/modelo_times.csv anterior
+- data/desempenho/* gerado/duplicado como fonte de entrada
 """
 from __future__ import annotations
 
@@ -415,15 +416,74 @@ class DailyWorldCupModel:
         return score
 
     def load_performance_impacts(self) -> Dict[Tuple[int, str], float]:
+        """Lê somente a entrada manual auditável de desempenho.
+
+        Fonte única versionada:
+        - data/entrada/desempenho_manual.csv
+
+        Bases consolidadas antigas em data/desempenho/* não são mais usadas como entrada,
+        porque geravam duplicação e conflitos no repositório. O impacto só é aplicado
+        depois que o jogo possui resultado real validado pelo fluxo diário.
+        """
         impacts: Dict[Tuple[int, str], float] = {}
-        perf_path = self.root / "data/desempenho/jogadores_citados_desempenho_copa_2026.csv"
-        if perf_path.exists():
-            perf = pd.read_csv(perf_path, sep=";", encoding="utf-8-sig")
-            for _, r in perf.iterrows():
-                game = int(safe_float(r.get("ID jogo"), 0))
-                team = self.canonical_team(r.get("Seleção", ""))
-                impact = self.performance_text_score(r.get("Tipo de desempenho", ""), r.get("Detalhe pesquisado", ""))
-                impacts[(game, team)] = impacts.get((game, team), 0.0) + impact
+        manual_path = self.root / "data" / "entrada" / "desempenho_manual.csv"
+        if not manual_path.exists() or manual_path.stat().st_size < 10:
+            return impacts
+
+        manual = pd.DataFrame()
+        for kwargs in ({"sep": None, "engine": "python"}, {"sep": ";"}, {"sep": ","}):
+            try:
+                manual = pd.read_csv(manual_path, encoding="utf-8-sig", **kwargs)
+                if len(manual.columns) > 1:
+                    break
+            except Exception:
+                manual = pd.DataFrame()
+        if manual.empty:
+            return impacts
+
+        def col(row, *names, default=""):
+            for name in names:
+                if name in row and not pd.isna(row.get(name)):
+                    return row.get(name)
+            return default
+
+        for _, r in manual.iterrows():
+            game_val = col(r, "jogo", "ID jogo", default="")
+            if pd.isna(game_val) or str(game_val).strip().upper() in {"", "NA"}:
+                continue
+            game = int(safe_float(game_val, 0))
+            if game <= 0:
+                continue
+
+            team = self.canonical_team(col(r, "selecao", "Seleção", "time", "equipe", default=""))
+            if not team:
+                continue
+
+            impact = safe_float(col(r, "impacto_modelo_jogador", "impacto_modelo", default=0), 0)
+            if impact == 0:
+                impact += self.performance_text_score(
+                    col(r, "tipo_desempenho", "Tipo de desempenho", default=""),
+                    col(r, "detalhe_pesquisado", "Detalhe pesquisado", default=""),
+                )
+
+            # Impacto leve por métricas de equipe, sempre vindo da linha manual auditável.
+            xg_diff = safe_float(col(r, "xg_pro", default=0), 0) - safe_float(col(r, "xg_contra", default=0), 0)
+            shots_on_diff = safe_float(col(r, "finalizacoes_alvo", default=0), 0) - safe_float(col(r, "finalizacoes_alvo_contra", default=0), 0)
+            big_chance_diff = safe_float(col(r, "grandes_chances", default=0), 0) - safe_float(col(r, "grandes_chances_contra", default=0), 0)
+            box_touch_diff = safe_float(col(r, "toques_area", default=0), 0) - safe_float(col(r, "toques_area_contra", default=0), 0)
+            errors = safe_float(col(r, "erros_gol", default=0), 0)
+
+            metric_impact = 0.0
+            metric_impact += max(-2.0, min(2.0, xg_diff)) * 0.35
+            metric_impact += max(-6.0, min(6.0, shots_on_diff)) * 0.035
+            metric_impact += max(-4.0, min(4.0, big_chance_diff)) * 0.08
+            metric_impact += max(-30.0, min(30.0, box_touch_diff)) * 0.006
+            metric_impact -= min(3.0, max(0.0, errors)) * 0.35
+
+            total = impact + metric_impact
+            if total != 0:
+                impacts[(game, team)] = impacts.get((game, team), 0.0) + total
+
         return impacts
 
     def rest_days(self, team: str, current_date: pd.Timestamp) -> float:

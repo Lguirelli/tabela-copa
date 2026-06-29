@@ -7,7 +7,8 @@ Fluxo atual:
 2. Atualizar data/resultados_reais.csv, data/resultados.txt e campos reais do frontend.
 3. Recriar a rede neural de referência em data/rede_neural/ e src/rede-neural-data.js.
 4. Recalcular o modelo diário em data/modelo_diario/ e src/modelo-diario-data.js.
-5. O front prioriza: placar real > modelo diário > rede neural pura.
+5. Recalcular o modelo diário lendo data/entrada/desempenho_manual.csv como única entrada manual de desempenho.
+6. O front prioriza: placar real > modelo diário > rede neural pura.
 
 O modelo diário não usa previsões antigas como entrada e atualiza rating, momentum e desempenho somente após jogos validados.
 """
@@ -167,7 +168,7 @@ def main():
     subprocess.run([sys.executable, str(ROOT / "scripts" / "modelo_neural_diario.py")], check=True)
     real_df = read_csv(REAL_CSV)
     validate_frontend_sync(real_df)
-    print("Rede neural de referência, modelo diário ativo e visualizador atualizados.")
+    print("Rede neural de referência, modelo diário ativo e visualizador atualizados com entrada manual única.")
 
 
 if __name__ == "__main__":

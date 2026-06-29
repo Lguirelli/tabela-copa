@@ -104,3 +104,21 @@ src/prediction-source.js         adaptador de prioridade: real > diário > rede
 src/rede-neural-data.js          export JS da rede de referência
 assets/teams/                    bandeiras e ícones das seleções
 ```
+
+
+## Entrada manual de resultados e desempenho
+
+Para evitar conflitos no Git, o repositório agora mantém apenas as entradas manuais versionadas em `data/entrada/`:
+
+- `data/entrada/novos_resultados.csv` — inserir jogos finalizados.
+- `data/entrada/desempenho_manual.csv` — inserir estatísticas confiáveis de time/jogador, sempre com fonte.
+
+As bases consolidadas antigas em `data/desempenho/` foram removidas do versionamento. O modelo diário lê `desempenho_manual.csv` diretamente, então não há mais necessidade de comitar snapshots intermediários, relatórios por data ou exports duplicados.
+
+Para atualizar após novos jogos, preencha os CSVs manuais e rode:
+
+```bash
+python scripts/atualizar_modelo.py
+```
+
+O GitHub Actions de atualização automática de desempenho também foi removido para impedir commits conflitantes.
