@@ -1,37 +1,24 @@
-# Entrada manual de dados da Copa 2026
+﻿# Entrada manual de dados da Copa 2026
 
-Esta pasta é a única fonte versionada para novos dados da Copa.
+Esta pasta é a única fonte versionada para novos dados pesquisados da Copa.
 
-## Arquivos que devem ser editados manualmente
+## Arquivos ativos
 
-### `novos_resultados.csv`
-Use para inserir jogos finalizados.
+- `novos_resultados.csv`: resultados finalizados ainda não processados. Aceita `vencedor_real`, `placar_penaltis_real` e `vencedor_penaltis_real` para mata-mata decidido nos pênaltis.
+- `desempenho_manual.csv`: base manual usada pelo modelo diário. Inclui linhas por jogo e agregados de fase de grupos.
+- `desempenho_times_fase_grupos.csv`: snapshot de estudo com desempenho geral das 48 seleções na fase de grupos.
+- `desempenho_jogadores_destaques.csv`: jogadores e sinais individuais relevantes para estudo pós-Copa.
 
-Colunas esperadas:
+## Regra de uso
 
-```csv
-data;dia_semana;fase;time_1;gols_time_1;gols_time_2;time_2;placar;status;fonte
-```
+1. Resultado real nunca é sobrescrito.
+2. Dados de desempenho entram somente depois do jogo/fase estar finalizado.
+3. Quando houver pênaltis, mantenha o placar do jogo em `gols_time_1` e `gols_time_2`, e coloque a decisão em `placar_penaltis_real` e `vencedor_penaltis_real`.
+4. Quando uma estatística não estiver disponível em fonte confiável, use `NA`.
 
-Exemplo:
+## Fontes principais desta versão
 
-```csv
-2026-06-29;segunda-feira;16 avos de final;Brasil;2;1;Japão;2-1;Finalizado;https://fonte-confiavel
-```
-
-Após rodar `python scripts/atualizar_modelo.py`, as entradas processadas são incorporadas em `data/resultados_reais.csv` e o arquivo volta a ficar apenas com o cabeçalho.
-
-### `desempenho_manual.csv`
-Use para inserir estatísticas e observações auditáveis de desempenho por seleção/jogo.
-
-Regras:
-
-- Não inventar valores.
-- Quando uma estatística não estiver disponível em fonte confiável, deixar vazio ou `NA`.
-- Cada linha deve trazer uma fonte.
-- Pode haver uma linha por seleção no jogo, ou linhas extras para jogadores relevantes.
-- O modelo diário lê diretamente este arquivo, sem depender de bases duplicadas em `data/desempenho/`.
-
-## Arquivos removidos do versionamento
-
-As bases consolidadas/geradas de desempenho foram removidas para evitar conflito no Git. Elas não devem ser editadas nem comitadas. A entrada manual fica centralizada aqui.
+- FOX Sports Team Stats: https://www.foxsports.com/soccer/fifa-world-cup/team-stats?category=standard&groupId=12&season=2026&sort=t_xg&sortOrder=desc
+- FOX Sports Player/Team leaders: https://www.foxsports.com/soccer/fifa-world-cup/stats
+- Reuters Technical Study Group: https://www.reuters.com/sports/soccer/substitutes-shine-world-cup-group-stage-delivers-goal-feast-2026-06-29/
+- Guardian live Germany x Paraguay: https://www.theguardian.com/football/live/2026/jun/29/germany-v-paraguay-world-cup-2026-last-32-live

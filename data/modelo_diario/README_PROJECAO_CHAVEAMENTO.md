@@ -6,8 +6,8 @@
 - Em mata-mata, placar empatado gera decisão por pênaltis e vencedor projetado.
 - Variáveis de desempenho da Copa entram via rating dinâmico, momentum, memória de desempenho e `data/entrada/desempenho_manual.csv`.
 
-Jogos reais preservados: 74
+Jogos reais preservados: 75
 
-Jogos projetados: 30
+Jogos projetados: 29
 
 Decisões por pênaltis na projeção: 4

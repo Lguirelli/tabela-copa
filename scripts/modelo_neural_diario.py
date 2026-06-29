@@ -467,18 +467,33 @@ class DailyWorldCupModel:
                 )
 
             # Impacto leve por métricas de equipe, sempre vindo da linha manual auditável.
-            xg_diff = safe_float(col(r, "xg_pro", default=0), 0) - safe_float(col(r, "xg_contra", default=0), 0)
-            shots_on_diff = safe_float(col(r, "finalizacoes_alvo", default=0), 0) - safe_float(col(r, "finalizacoes_alvo_contra", default=0), 0)
-            big_chance_diff = safe_float(col(r, "grandes_chances", default=0), 0) - safe_float(col(r, "grandes_chances_contra", default=0), 0)
-            box_touch_diff = safe_float(col(r, "toques_area", default=0), 0) - safe_float(col(r, "toques_area_contra", default=0), 0)
-            errors = safe_float(col(r, "erros_gol", default=0), 0)
+            def num_or_none(value):
+                try:
+                    text = str(value).strip().upper()
+                    if text in {"", "NA", "NAN", "NONE"}:
+                        return None
+                    if pd.isna(value):
+                        return None
+                    return float(value)
+                except Exception:
+                    return None
 
             metric_impact = 0.0
-            metric_impact += max(-2.0, min(2.0, xg_diff)) * 0.35
-            metric_impact += max(-6.0, min(6.0, shots_on_diff)) * 0.035
-            metric_impact += max(-4.0, min(4.0, big_chance_diff)) * 0.08
-            metric_impact += max(-30.0, min(30.0, box_touch_diff)) * 0.006
-            metric_impact -= min(3.0, max(0.0, errors)) * 0.35
+            xg_pro, xg_against = num_or_none(col(r, "xg_pro", default="NA")), num_or_none(col(r, "xg_contra", default="NA"))
+            if xg_pro is not None and xg_against is not None:
+                metric_impact += max(-2.0, min(2.0, xg_pro - xg_against)) * 0.35
+            shots_on, shots_on_against = num_or_none(col(r, "finalizacoes_alvo", default="NA")), num_or_none(col(r, "finalizacoes_alvo_contra", default="NA"))
+            if shots_on is not None and shots_on_against is not None:
+                metric_impact += max(-6.0, min(6.0, shots_on - shots_on_against)) * 0.035
+            big_chance, big_chance_against = num_or_none(col(r, "grandes_chances", default="NA")), num_or_none(col(r, "grandes_chances_contra", default="NA"))
+            if big_chance is not None and big_chance_against is not None:
+                metric_impact += max(-4.0, min(4.0, big_chance - big_chance_against)) * 0.08
+            box_touches, box_touches_against = num_or_none(col(r, "toques_area", default="NA")), num_or_none(col(r, "toques_area_contra", default="NA"))
+            if box_touches is not None and box_touches_against is not None:
+                metric_impact += max(-30.0, min(30.0, box_touches - box_touches_against)) * 0.006
+            errors = num_or_none(col(r, "erros_gol", default="NA"))
+            if errors is not None:
+                metric_impact -= min(3.0, max(0.0, errors)) * 0.35
 
             total = impact + metric_impact
             if total != 0:
@@ -667,6 +682,15 @@ class DailyWorldCupModel:
         xg1, xg2 = float(prediction["xg1_modelo"]), float(prediction["xg2_modelo"])
         pred_out = outcome_from_goals(p1, p2)
         real_out = outcome_from_goals(a1, a2)
+        real_winner_manual = str(real_row.get("vencedor_real", "") or "").strip()
+        penalty_score_real = str(real_row.get("placar_penaltis_real", "") or "").strip()
+        knockout_real_penalty = (
+            str(match.get("fase", "")).strip() != "Fase de grupos"
+            and a1 == a2
+            and real_winner_manual in {t1, t2}
+        )
+        if knockout_real_penalty:
+            real_out = "1" if real_winner_manual == t1 else "2"
         exact = (p1 == a1 and p2 == a2)
         winner_ok = pred_out == real_out
         err_goals = abs(a1 - p1) + abs(a2 - p2)
@@ -676,8 +700,12 @@ class DailyWorldCupModel:
 
         perf1 = self.performance_by_match_team.get((int(match["jogo"]), t1), 0.0)
         perf2 = self.performance_by_match_team.get((int(match["jogo"]), t2), 0.0)
-        result_points1 = 3 if a1 > a2 else 1 if a1 == a2 else 0
-        result_points2 = 3 if a2 > a1 else 1 if a1 == a2 else 0
+        if knockout_real_penalty:
+            result_points1 = 2 if real_winner_manual == t1 else 1
+            result_points2 = 2 if real_winner_manual == t2 else 1
+        else:
+            result_points1 = 3 if a1 > a2 else 1 if a1 == a2 else 0
+            result_points2 = 3 if a2 > a1 else 1 if a1 == a2 else 0
         expected_margin = xg1 - xg2
         real_margin = a1 - a2
         surprise = real_margin - expected_margin
@@ -725,9 +753,9 @@ class DailyWorldCupModel:
             "equipe1": t1,
             "equipe2": t2,
             "placar_previsto": prediction["placar_previsto"],
-            "placar_real": f"{a1}-{a2}",
+            "placar_real": f"{a1}-{a2}" + (f" (pên. {penalty_score_real})" if penalty_score_real else ""),
             "vencedor_previsto": prediction["vencedor_previsto"],
-            "vencedor_real": winner_name(t1, a1, t2, a2),
+            "vencedor_real": real_winner_manual if knockout_real_penalty else winner_name(t1, a1, t2, a2),
             "acertou_vencedor": "Sim" if winner_ok else "Não",
             "acertou_placar_exato": "Sim" if exact else "Não",
             "erro_total_gols": round(float(err_goals), 3),

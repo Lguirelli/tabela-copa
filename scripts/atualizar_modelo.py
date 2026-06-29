@@ -116,8 +116,9 @@ def load_new_results(matches):
             "equipe1": b["t1"], "equipe2": b["t2"],
             "gols1_real": g1, "gols2_real": g2,
             "placar_real": f"{g1}-{g2}",
-            "vencedor_real": winner(b["t1"], g1, b["t2"], g2),
-            "status_real": "Finalizado", "fonte": r.get("fonte", ""), "placar_original": r.get("placar", "")
+            "vencedor_real": str(r.get("vencedor_penaltis_real", r.get("vencedor_real", ""))).strip() or winner(b["t1"], g1, b["t2"], g2),
+            "status_real": "Finalizado", "fonte": r.get("fonte", ""), "placar_original": r.get("placar", ""),
+            "placar_penaltis_real": r.get("placar_penaltis_real", ""), "vencedor_penaltis_real": r.get("vencedor_penaltis_real", "")
         })
     return pd.DataFrame(rows)
 

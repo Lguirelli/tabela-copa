@@ -23,12 +23,12 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **usa_simulacoes_anteriores_como_entrada**: False
 - **validacao_sem_vazamento**: True
 - **jogos_previstos**: 104
-- **jogos_com_placar_real_validado**: 74
-- **acuracia_vencedor_percentual**: 51.35
-- **placar_exato_percentual**: 6.76
-- **erro_medio_total_gols**: 2.324
-- **erro_medio_xg_total**: 2.018
-- **proximidade_media_0_100**: 40.43
+- **jogos_com_placar_real_validado**: 75
+- **acuracia_vencedor_percentual**: 46.67
+- **placar_exato_percentual**: 5.33
+- **erro_medio_total_gols**: 2.333
+- **erro_medio_xg_total**: 2.002
+- **proximidade_media_0_100**: 38.8
 - **dias_validados**: 19
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
@@ -38,32 +38,32 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **simulations_parameter**: 8000
 
 ## Times com maior rating atualizado
-- Argentina: 78.517 | momentum 2.314 | jogos 3 | saldo 7
-- Suíça: 76.837 | momentum 1.76 | jogos 3 | saldo 4
-- Portugal: 76.729 | momentum 0.858 | jogos 3 | saldo 5
-- Países Baixos: 76.326 | momentum 1.913 | jogos 3 | saldo 6
-- Bélgica: 76.289 | momentum 1.717 | jogos 3 | saldo 4
-- Brasil: 75.941 | momentum 2.435 | jogos 4 | saldo 7
-- Estados Unidos: 75.678 | momentum 0.58 | jogos 3 | saldo 4
-- Espanha: 75.461 | momentum 1.926 | jogos 3 | saldo 5
-- Alemanha: 75.427 | momentum 0.528 | jogos 3 | saldo 6
-- Inglaterra: 74.726 | momentum 1.706 | jogos 3 | saldo 4
-- França: 74.001 | momentum 2.5 | jogos 3 | saldo 8
-- Colômbia: 73.964 | momentum 1.278 | jogos 3 | saldo 3
+- Argentina: 78.073 | momentum 2.009 | jogos 3 | saldo 7
+- Portugal: 76.907 | momentum 0.761 | jogos 3 | saldo 5
+- Suíça: 76.349 | momentum 1.607 | jogos 3 | saldo 4
+- Países Baixos: 75.946 | momentum 1.769 | jogos 3 | saldo 6
+- Bélgica: 75.934 | momentum 1.266 | jogos 3 | saldo 4
+- Estados Unidos: 75.551 | momentum 0.428 | jogos 3 | saldo 4
+- Brasil: 75.533 | momentum 2.005 | jogos 4 | saldo 7
+- Espanha: 75.397 | momentum 1.659 | jogos 3 | saldo 5
+- Alemanha: 75.385 | momentum 0.25 | jogos 4 | saldo 6
+- Inglaterra: 74.419 | momentum 1.393 | jogos 3 | saldo 4
+- Croácia: 73.322 | momentum 1.284 | jogos 3 | saldo 0
+- Canadá: 73.272 | momentum 1.178 | jogos 4 | saldo 6
 
 ## Últimas previsões processadas
 - Jogo 93 (2026-07-06): Portugal x Espanha → 1-2 / Espanha (alta)
-- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 1-0 / Estados Unidos (alta)
-- Jogo 95 (2026-07-07): Argentina x Egito → 1-0 / Argentina (alta)
-- Jogo 96 (2026-07-07): Suíça x Gana → 1-0 / Suíça (alta)
-- Jogo 97 (2026-07-09): Canadá x Alemanha → 1-2 / Alemanha (média)
-- Jogo 98 (2026-07-10): Portugal x Estados Unidos → 2-1 / Portugal (média)
-- Jogo 99 (2026-07-11): Brasil x Equador → 1-0 / Brasil (alta)
-- Jogo 100 (2026-07-11): Argentina x Gana → 1-0 / Argentina (alta)
-- Jogo 101 (2026-07-14): Alemanha x Portugal → 0-1 / Portugal (baixa)
-- Jogo 102 (2026-07-15): Equador x Argentina → 2-1 / Equador (baixa)
-- Jogo 103 (2026-07-18): Portugal x Argentina → 2-1 / Portugal (média)
-- Jogo 104 (2026-07-19): Alemanha x Equador → 1-0 / Alemanha (alta)
+- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 1-0 / Estados Unidos (média)
+- Jogo 95 (2026-07-07): Argentina x Austrália → 1-2 / Austrália (baixa)
+- Jogo 96 (2026-07-07): Suíça x Colômbia → 1-0 / Suíça (média)
+- Jogo 97 (2026-07-09): Canadá x Paraguai → 1-2 / Paraguai (baixa)
+- Jogo 98 (2026-07-10): Portugal x Estados Unidos → 0-0 / Empate (média)
+- Jogo 99 (2026-07-11): Brasil x México → 0-1 / México (média)
+- Jogo 100 (2026-07-11): Suíça x Argentina → 0-1 / Argentina (média)
+- Jogo 101 (2026-07-14): Canadá x Portugal → 1-2 / Portugal (média)
+- Jogo 102 (2026-07-15): Brasil x Suíça → 1-2 / Suíça (média)
+- Jogo 103 (2026-07-18): Portugal x Suíça → 2-1 / Portugal (média)
+- Jogo 104 (2026-07-19): Canadá x Brasil → 1-2 / Brasil (média)
 
 ## Observação importante
 Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.
