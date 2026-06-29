@@ -32,7 +32,7 @@
     },
     "79": {
       "equipe1": "México",
-      "equipe2": "Senegal",
+      "equipe2": "Equador",
       "vencedor_previsto": "México"
     },
     "80": {
@@ -47,7 +47,7 @@
     },
     "82": {
       "equipe1": "Bélgica",
-      "equipe2": "Argélia",
+      "equipe2": "Senegal",
       "vencedor_previsto": "Bélgica"
     },
     "83": {
@@ -62,7 +62,7 @@
     },
     "85": {
       "equipe1": "Suíça",
-      "equipe2": "Equador",
+      "equipe2": "Argélia",
       "vencedor_previsto": "Suíça"
     },
     "86": {
@@ -81,5 +81,6 @@
       "vencedor_previsto": "Austrália"
     }
   },
-  "champion_projected": "Portugal"
+  "champion_projected": "Portugal",
+  "source_note": "16 avos sincronizados com fixtures oficiais; arquivo mantido apenas para auditoria do modelo contextual."
 }

@@ -6,7 +6,7 @@
     ],
     "74": [
       "Alemanha",
-      "Suécia"
+      "Paraguai"
     ],
     "75": [
       "Países Baixos",
@@ -18,7 +18,7 @@
     ],
     "77": [
       "França",
-      "Paraguai"
+      "Suécia"
     ],
     "78": [
       "Costa do Marfim",
@@ -38,7 +38,7 @@
     ],
     "82": [
       "Bélgica",
-      "Argélia"
+      "Senegal"
     ],
     "83": [
       "Portugal",
@@ -50,7 +50,7 @@
     ],
     "85": [
       "Suíça",
-      "Senegal"
+      "Argélia"
     ],
     "86": [
       "Argentina",
@@ -191,10 +191,10 @@
     },
     "74": {
       "team1": "Alemanha",
-      "team2": "Suécia",
+      "team2": "Paraguai",
       "winner": "Alemanha",
-      "loser": "Suécia",
-      "score": "2-1"
+      "loser": "Paraguai",
+      "score": "1-1"
     },
     "75": {
       "team1": "Países Baixos",
@@ -212,10 +212,10 @@
     },
     "77": {
       "team1": "França",
-      "team2": "Paraguai",
-      "winner": "Paraguai",
-      "loser": "França",
-      "score": "1-1"
+      "team2": "Suécia",
+      "winner": "França",
+      "loser": "Suécia",
+      "score": "2-1"
     },
     "78": {
       "team1": "Costa do Marfim",
@@ -247,10 +247,10 @@
     },
     "82": {
       "team1": "Bélgica",
-      "team2": "Argélia",
-      "winner": "Argélia",
-      "loser": "Bélgica",
-      "score": "0-1"
+      "team2": "Senegal",
+      "winner": "Bélgica",
+      "loser": "Senegal",
+      "score": "1-1"
     },
     "83": {
       "team1": "Portugal",
@@ -268,10 +268,10 @@
     },
     "85": {
       "team1": "Suíça",
-      "team2": "Senegal",
+      "team2": "Argélia",
       "winner": "Suíça",
-      "loser": "Senegal",
-      "score": "2-1"
+      "loser": "Argélia",
+      "score": "1-1"
     },
     "86": {
       "team1": "Argentina",
@@ -303,9 +303,9 @@
     },
     "90": {
       "team1": "Alemanha",
-      "team2": "Paraguai",
+      "team2": "França",
       "winner": "Alemanha",
-      "loser": "Paraguai",
+      "loser": "França",
       "score": "1-1"
     },
     "91": {
@@ -331,10 +331,10 @@
     },
     "94": {
       "team1": "Estados Unidos",
-      "team2": "Argélia",
+      "team2": "Bélgica",
       "winner": "Estados Unidos",
-      "loser": "Argélia",
-      "score": "1-1"
+      "loser": "Bélgica",
+      "score": "2-1"
     },
     "95": {
       "team1": "Argentina",
@@ -406,5 +406,6 @@
       "loser": "Argentina",
       "score": "2-1"
     }
-  }
+  },
+  "source_note": "16 avos sincronizados com fixtures oficiais; rodadas futuras simuladas pela rede neural e sobrescritas por resultado real quando disponível."
 }

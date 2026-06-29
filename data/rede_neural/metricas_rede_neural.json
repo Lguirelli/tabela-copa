@@ -1,9 +1,9 @@
 {
   "modelo": "CopaMatchNet PyTorch MLP + embeddings",
   "base_referencia": "NVIDIA DeepLearningExamples: arquitetura modular PyTorch adaptada, sem copiar modelo pesado",
-  "amostras_reais": 72,
+  "amostras_reais": 73,
   "amostras_treino": 56,
-  "amostras_validacao_cronologica": 16,
+  "amostras_validacao_cronologica": 17,
   "jogos_totais_inferidos": 104,
   "variaveis_numericas": 43,
   "times_com_embedding": 48,
@@ -16,14 +16,14 @@
     "amostras": 56
   },
   "validacao_cronologica": {
-    "mae_goal_diff": 1.5625,
-    "mae_total_goals": 1.9375,
-    "erro_medio_total_gols": 2.1875,
-    "acuracia_vencedor": 50.0,
+    "mae_goal_diff": 1.5294,
+    "mae_total_goals": 1.8824,
+    "erro_medio_total_gols": 2.1176,
+    "acuracia_vencedor": 47.06,
     "placar_exato": 0.0,
-    "amostras": 16
+    "amostras": 17
   },
   "epochs_executados": 45,
-  "best_val_loss": 1.3081,
+  "best_val_loss": 1.281847,
   "observacao": "A rede neural é a fonte única de previsão do repositório. Entradas auxiliares são dados de elenco, ligas, técnicos, calendário e resultados reais, usando somente a rede neural como fonte de previsão."
 }

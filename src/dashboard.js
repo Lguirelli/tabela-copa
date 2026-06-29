@@ -373,11 +373,14 @@ function renderKnockoutGamesPage() {
 function bracketCard(game, x, y, extra = "") {
   const m = matchByGame(game);
   if (!m) return "";
+  const displayScore = m.hasReal ? m.realScore : m.predictionScore;
+  const secondaryLabel = m.hasReal ? "Rede neural" : "Real";
+  const secondaryScore = m.hasReal ? (m.predictionScore || "—") : "—";
   cardPositions.set(game, { x, y, w: extra.includes("final") ? 260 : extra.includes("third") ? 240 : 220, h: 92 });
-  return `<article class="bracket-stage ${extra}" data-game="${game}" style="left:${x}px;top:${y}px">
+  return `<article class="bracket-stage ${extra} ${m.hasReal ? "is-real" : "is-neural"}" data-game="${game}" style="left:${x}px;top:${y}px">
     <div class="bracket-meta"><span>Jogo ${m.jogo}</span><span>${phaseLabels[m.fase] || m.fase}</span></div>
-    <div class="bracket-teams"><span>${teamChip(m.equipe1)}</span><span class="bracket-score">${m.predictionScore || "—"}</span><span>${teamChip(m.equipe2, "right")}</span></div>
-    <div class="bracket-real"><span>Real <strong>${m.hasReal ? m.realScore : "—"}</strong></span><span>${m.hasReal ? "Finalizado" : "Rede neural"}</span></div>
+    <div class="bracket-teams"><span>${teamChip(m.equipe1)}</span><span class="bracket-score ${m.hasReal ? "score--real" : "score--prediction"}">${displayScore || "—"}</span><span>${teamChip(m.equipe2, "right")}</span></div>
+    <div class="bracket-real"><span>${secondaryLabel} <strong>${secondaryScore}</strong></span><span>${m.hasReal ? "Finalizado" : "Rede neural"}</span></div>
     <div class="bracket-winner">${m.hasReal ? `Vencedor: ${m.realWinner}` : `Previsto: ${m.predictionWinner || "—"}`}</div>
   </article>`;
 }

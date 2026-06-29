@@ -45,6 +45,29 @@ PROGRESSION = {
 }
 THIRD_PLACE = 103
 
+# Fonte de verdade para a primeira rodada do mata-mata.
+# A rede neural continua simulando placares e rodadas futuras, mas os confrontos
+# oficiais de 16 avos não devem ser recalculados a partir de terceiros colocados
+# depois que a tabela real já foi publicada.
+OFFICIAL_R32_FIXTURES = {
+    73: ("África do Sul", "Canadá"),
+    74: ("Alemanha", "Paraguai"),
+    75: ("Países Baixos", "Marrocos"),
+    76: ("Brasil", "Japão"),
+    77: ("França", "Suécia"),
+    78: ("Costa do Marfim", "Noruega"),
+    79: ("México", "Equador"),
+    80: ("Inglaterra", "RD Congo"),
+    81: ("Estados Unidos", "Bósnia e Herzegovina"),
+    82: ("Bélgica", "Senegal"),
+    83: ("Portugal", "Croácia"),
+    84: ("Espanha", "Áustria"),
+    85: ("Suíça", "Argélia"),
+    86: ("Argentina", "Cabo Verde"),
+    87: ("Colômbia", "Gana"),
+    88: ("Austrália", "Egito"),
+}
+
 TEAM_METRICS = [
     "forca_modelo_0_100", "ataque_score", "meio_score", "defesa_score", "goleiro_score",
     "experiencia_score", "intensidade_valor", "posse_valor", "pressao_valor",
@@ -339,24 +362,10 @@ def rebuild_knockout_from_neural(root: Path | None = None) -> pd.DataFrame:
     def pos(group: str, idx: int) -> str:
         return standings[group][idx]["team"]
 
-    r32 = {
-        73: (pos("A", 1), pos("B", 1)),
-        74: (pos("E", 0), third_assignment.get(74, "TBD")),
-        75: (pos("F", 0), pos("C", 1)),
-        76: (pos("C", 0), pos("F", 1)),
-        77: (pos("I", 0), third_assignment.get(77, "TBD")),
-        78: (pos("E", 1), pos("I", 1)),
-        79: (pos("A", 0), third_assignment.get(79, "TBD")),
-        80: (pos("L", 0), third_assignment.get(80, "TBD")),
-        81: (pos("D", 0), third_assignment.get(81, "TBD")),
-        82: (pos("G", 0), third_assignment.get(82, "TBD")),
-        83: (pos("K", 1), pos("L", 1)),
-        84: (pos("H", 0), pos("J", 1)),
-        85: (pos("B", 0), third_assignment.get(85, "TBD")),
-        86: (pos("J", 0), pos("H", 1)),
-        87: (pos("K", 0), third_assignment.get(87, "TBD")),
-        88: (pos("D", 1), pos("G", 1)),
-    }
+    # Depois que os 16 avos oficiais são conhecidos, eles passam a ser
+    # fonte de verdade. As classificações projetadas continuam úteis para
+    # auditoria, mas não devem sobrescrever a tabela real do mata-mata.
+    r32 = OFFICIAL_R32_FIXTURES.copy()
 
     pred_rows = {int(r["jogo"]): r.to_dict() for _, r in preds.iterrows()}
     resolved: Dict[int, dict] = {}

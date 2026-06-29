@@ -353,6 +353,10 @@ function renderGroupGames() {
 
 function renderBracketCard(match, extraClass = "") {
   if (!match) return "";
+  const displayScore = match.hasReal ? match.realScore : match.predictionScore;
+  const displayType = match.hasReal ? "real" : "prediction";
+  const secondaryLabel = match.hasReal ? "Rede neural" : "Real";
+  const secondaryValue = match.hasReal ? (match.predictionScore || "—") : "—";
   return `
     <article class="bracket-card ${match.hasReal ? "bracket-card--done" : ""} ${extraClass}" data-game="${match.jogo}">
       <div class="bracket-card__meta">
@@ -361,12 +365,12 @@ function renderBracketCard(match, extraClass = "") {
       </div>
       <div class="bracket-card__teams">
         <div class="bracket-team">${teamChip(match.equipe1, "left")}</div>
-        <div class="bracket-card__score">${renderScore(match.predictionScore, "prediction")}</div>
+        <div class="bracket-card__score">${renderScore(displayScore, displayType)}</div>
         <div class="bracket-team bracket-team--right">${teamChip(match.equipe2, "right")}</div>
       </div>
       <div class="bracket-card__resultline">
-        <span class="label">Real</span>
-        <span class="value">${match.hasReal ? match.realScore : "—"}</span>
+        <span class="label">${secondaryLabel}</span>
+        <span class="value">${secondaryValue}</span>
         <span class="bracket-card__status ${match.hasReal ? "is-real" : "is-sim"}">${match.hasReal ? "Finalizado" : "Simulação"}</span>
       </div>
       <div class="bracket-card__winner">${match.hasReal ? `Vencedor real: ${match.realWinner}` : `Previsto: ${match.predictionWinner || "—"}`}</div>
