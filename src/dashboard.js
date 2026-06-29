@@ -70,6 +70,19 @@ const bracketConnections = [
   [101, 104], [102, 104], [101, 103], [102, 103]
 ];
 
+const bracketParents = bracketConnections.reduce((acc, [from, to]) => {
+  if (!acc[to]) acc[to] = [];
+  acc[to].push(from);
+  return acc;
+}, {});
+
+const bracketResolutionOrder = [
+  89, 90, 93, 94, 91, 92, 96, 95,
+  97, 98, 99, 100,
+  101, 102,
+  104, 103
+];
+
 function normalize(value) {
   return String(value || "")
     .normalize("NFD")
@@ -134,17 +147,103 @@ function firstValue(...values) {
   return values.find((value) => value !== undefined && value !== null && String(value).trim() !== "") || "";
 }
 
+function sameTeam(a, b) {
+  return colorKey(a) === colorKey(b);
+}
+
+function isPlaceholderTeam(team) {
+  return /^([123]º|Vencedor|Perdedor|TBD|Aguardando)/i.test(String(team || ""));
+}
+
+function isPredictionCompatible(match, team1 = match.equipe1, team2 = match.equipe2) {
+  const predictionTeam1 = firstValue(match.prediction?.equipe1, match.prediction?.equipe1_prevista);
+  const predictionTeam2 = firstValue(match.prediction?.equipe2, match.prediction?.equipe2_prevista);
+
+  if (!predictionTeam1 || !predictionTeam2 || isPlaceholderTeam(predictionTeam1) || isPlaceholderTeam(predictionTeam2)) {
+    return true;
+  }
+
+  return sameTeam(predictionTeam1, team1) && sameTeam(predictionTeam2, team2);
+}
+
+function winnerFromMatch(match) {
+  if (!match) return "";
+  if (match.hasReal && match.realWinner) return match.realWinner;
+
+  const winner = firstValue(match.predictionWinner, scoreWinner(match.equipe1, match.equipe2, match.predictionScore, ""));
+  if (!winner || winner === "Empate") return "";
+  if (sameTeam(winner, match.equipe1)) return match.equipe1;
+  if (sameTeam(winner, match.equipe2)) return match.equipe2;
+  return "";
+}
+
+function loserFromMatch(match) {
+  if (!match) return "";
+  const winner = winnerFromMatch(match);
+  if (!winner) return "";
+  if (sameTeam(winner, match.equipe1)) return match.equipe2;
+  if (sameTeam(winner, match.equipe2)) return match.equipe1;
+  return "";
+}
+
+function pendingSlot(game, type = "winner") {
+  return `${type === "loser" ? "Perdedor" : "Vencedor"} jogo ${game}`;
+}
+
+function resetPredictionForRecalculation(match, reason) {
+  match.predictionScore = "";
+  match.predictionWinner = "";
+  match.predictionSource = "Aguardando recálculo";
+  match.status = "Aguardando recálculo";
+  match.scoreForTable = "";
+  match.needsRecalculation = true;
+  match.recalculationReason = reason || "Confronto atualizado pelo chaveamento real/projetado.";
+}
+
+function applyKnockoutProgression() {
+  const byGame = new Map(matches.map((match) => [Number(match.jogo), match]));
+
+  bracketResolutionOrder.forEach((game) => {
+    const match = byGame.get(Number(game));
+    const parents = bracketParents[game] || [];
+    if (!match || !parents.length || match.hasReal) return;
+
+    const isThirdPlace = Number(game) === 103;
+    const firstParent = byGame.get(Number(parents[0]));
+    const secondParent = byGame.get(Number(parents[1]));
+    const derived1 = isThirdPlace ? loserFromMatch(firstParent) : winnerFromMatch(firstParent);
+    const derived2 = isThirdPlace ? loserFromMatch(secondParent) : winnerFromMatch(secondParent);
+    const nextTeam1 = derived1 || pendingSlot(parents[0], isThirdPlace ? "loser" : "winner");
+    const nextTeam2 = derived2 || pendingSlot(parents[1], isThirdPlace ? "loser" : "winner");
+
+    const changed = !sameTeam(match.equipe1, nextTeam1) || !sameTeam(match.equipe2, nextTeam2);
+    match.equipe1 = nextTeam1;
+    match.equipe2 = nextTeam2;
+    match.confronto = `${nextTeam1} x ${nextTeam2}`;
+    match.derivedFromBracket = true;
+
+    if (changed || !isPredictionCompatible(match, nextTeam1, nextTeam2)) {
+      resetPredictionForRecalculation(
+        match,
+        `Confronto derivado dos jogos ${parents.join(" e ")}; previsão antiga não corresponde mais aos classificados exibidos.`
+      );
+    }
+  });
+}
+
 function buildMatches() {
   matches = baseMatches.map((base) => {
     const prediction = predictionByGame.get(Number(base.jogo)) || {};
     const predictionHasReal = prediction.possui_real === "Sim" && Boolean(prediction.placar_real);
     const baseHasReal = base.status === "Finalizado" && Boolean(base.placar_real);
     const hasReal = predictionHasReal || baseHasReal;
-    // O confronto oficial vem de data/matches.csv para evitar conflito com previsões antigas.
     const equipe1 = firstValue(base.equipe1, prediction.equipe1);
     const equipe2 = firstValue(base.equipe2, prediction.equipe2);
     const predictionScore = firstValue(prediction.placar_previsto, prediction.placar_modelo_diario, prediction.placar_rede_neural);
-    const predictionWinner = firstValue(prediction.vencedor_previsto, prediction.vencedor_modelo_diario, prediction.vencedor_rede_neural, scoreWinner(equipe1, equipe2, predictionScore));
+    const rawPredictionWinner = firstValue(prediction.vencedor_previsto, prediction.vencedor_modelo_diario, prediction.vencedor_rede_neural, scoreWinner(equipe1, equipe2, predictionScore));
+    const predictionWinner = (sameTeam(rawPredictionWinner, equipe1) || sameTeam(rawPredictionWinner, equipe2) || rawPredictionWinner === "Empate")
+      ? rawPredictionWinner
+      : "";
     const predictionSource = firstValue(prediction.fonte_previsao, prediction.placar_modelo_diario ? "Modelo diário" : "Rede neural");
     const neuralScore = firstValue(prediction.placar_rede_neural_original, prediction.placar_rede_neural);
     const realScore = predictionHasReal ? prediction.placar_real : (baseHasReal ? base.placar_real : "");
@@ -184,12 +283,18 @@ function buildMatches() {
       predictionWinner,
       predictionSource,
       neuralScore,
+      penaltyScore: firstValue(prediction.placar_penaltis),
+      decisaoPenaltis: firstValue(prediction.decisao_penaltis),
+      winnerCriteria: firstValue(prediction.criterio_vencedor),
       realScore,
       realWinner,
       status: hasReal ? "Finalizado" : predictionSource,
-      scoreForTable: hasReal ? realScore : predictionScore
+      scoreForTable: hasReal ? realScore : predictionScore,
+      needsRecalculation: false,
+      recalculationReason: ""
     };
   });
+  applyKnockoutProgression();
   corrections = matches.filter((match) => match.correction).map((match) => match.correction);
 }
 function matchByGame(game) {
@@ -290,6 +395,9 @@ function renderStandingsPage() {
 }
 
 function renderStatus(match) {
+  if (match.needsRecalculation) {
+    return `<span class="status status--pending">Recalcular</span>`;
+  }
   return `<span class="status ${match.hasReal ? "status--done" : "status--sim"}">${match.hasReal ? "Finalizado" : (match.predictionSource || "Modelo diário")}</span>`;
 }
 
@@ -391,14 +499,21 @@ function bracketCard(game, x, y, extra = "") {
   const m = matchByGame(game);
   if (!m) return "";
   const displayScore = m.hasReal ? m.realScore : m.predictionScore;
-  const secondaryLabel = m.hasReal ? (m.predictionSource || "Modelo diário") : "Real";
-  const secondaryScore = m.hasReal ? (m.predictionScore || "—") : "—";
+  const penaltyInfo = !m.hasReal && m.decisaoPenaltis === "Sim" && m.penaltyScore ? ` · Pên. ${m.penaltyScore}` : "";
+  const secondaryLabel = m.hasReal ? (m.predictionSource || "Modelo diário") : (m.needsRecalculation ? "Modelo" : "Real");
+  const secondaryScore = m.hasReal ? (m.predictionScore || "—") : (m.needsRecalculation ? "recalcular" : (penaltyInfo ? `Pên. ${m.penaltyScore}` : "—"));
+  const cardState = m.hasReal ? "is-real" : (m.needsRecalculation ? "is-pending" : "is-neural");
+  const statusText = m.hasReal ? "Finalizado" : (m.needsRecalculation ? "Aguardando recálculo" : (m.predictionSource || "Modelo diário"));
+  const winnerText = m.hasReal
+    ? `Vencedor: ${m.realWinner}`
+    : (m.needsRecalculation ? "Previsto: aguardando recálculo" : `Previsto: ${m.predictionWinner || "—"}${penaltyInfo}`);
+
   cardPositions.set(game, { x, y, w: extra.includes("final") ? 260 : extra.includes("third") ? 240 : 220, h: 92 });
-  return `<article class="bracket-stage ${extra} ${m.hasReal ? "is-real" : "is-neural"}" data-game="${game}" style="left:${x}px;top:${y}px">
+  return `<article class="bracket-stage ${extra} ${cardState}" data-game="${game}" title="${safeAttr(m.recalculationReason || "")}" style="left:${x}px;top:${y}px">
     <div class="bracket-meta"><span>Jogo ${m.jogo}</span><span>${phaseLabels[m.fase] || m.fase}</span></div>
     <div class="bracket-teams"><span>${teamChip(m.equipe1)}</span><span class="bracket-score ${m.hasReal ? "score--real" : "score--prediction"}">${displayScore || "—"}</span><span>${teamChip(m.equipe2, "right")}</span></div>
-    <div class="bracket-real"><span>${secondaryLabel} <strong>${secondaryScore}</strong></span><span>${m.hasReal ? "Finalizado" : (m.predictionSource || "Modelo diário")}</span></div>
-    <div class="bracket-winner">${m.hasReal ? `Vencedor: ${m.realWinner}` : `Previsto: ${m.predictionWinner || "—"}`}</div>
+    <div class="bracket-real"><span>${secondaryLabel} <strong>${secondaryScore}</strong></span><span>${statusText}</span></div>
+    <div class="bracket-winner">${winnerText}</div>
   </article>`;
 }
 

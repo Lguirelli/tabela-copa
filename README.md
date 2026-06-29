@@ -122,3 +122,34 @@ python scripts/atualizar_modelo.py
 ```
 
 O GitHub Actions de atualização automática de desempenho também foi removido para impedir commits conflitantes.
+
+## Chaveamento completo com entrada manual
+
+O fluxo atual preserva resultados reais e recalcula apenas jogos sem resultado real.
+
+Entradas manuais versionadas:
+
+```txt
+data/entrada/novos_resultados.csv
+data/entrada/desempenho_manual.csv
+```
+
+Para atualizar a tabela completa depois de adicionar novos resultados ou desempenho:
+
+```bash
+python scripts/atualizar_modelo.py
+```
+
+Esse comando atualiza a rede neural de referência, recalcula o modelo diário e depois executa:
+
+```bash
+python scripts/recalcular_chaveamento_completo.py
+```
+
+Regras do chaveamento:
+
+1. placar real nunca é sobrescrito;
+2. jogos sem resultado real são simulados pelo modelo diário incremental;
+3. vencedores reais/projetados alimentam as fases seguintes;
+4. em mata-mata, empate é resolvido por pênaltis;
+5. a tabela completa fica sempre preenchida, sem “Aguardando recálculo” quando o jogo ainda não tem resultado real.

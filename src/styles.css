@@ -493,3 +493,8 @@ body.dashboard { overflow: auto !important; }
   .error-row em { grid-column: 1 / -1; }
   .viz-canvas-wrap, .viz-canvas-wrap--large { height: 250px; }
 }
+
+/* Estado usado quando o chaveamento muda por resultado real/projeção e o confronto ainda precisa ser recalculado pelo modelo. */
+.status--pending{color:#fde68a;background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3)}
+.bracket-stage.is-pending{border-color:rgba(245,158,11,.32);background:linear-gradient(180deg,#17161e,#101116)}
+.bracket-stage.is-pending .bracket-score{color:#fde68a}

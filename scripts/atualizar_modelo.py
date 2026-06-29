@@ -8,9 +8,10 @@ Fluxo atual:
 3. Recriar a rede neural de referência em data/rede_neural/ e src/rede-neural-data.js.
 4. Recalcular o modelo diário em data/modelo_diario/ e src/modelo-diario-data.js.
 5. Recalcular o modelo diário lendo data/entrada/desempenho_manual.csv como única entrada manual de desempenho.
-6. O front prioriza: placar real > modelo diário > rede neural pura.
+6. Recalcular a projeção completa do chaveamento, usando vencedor real quando houver e vencedor provável quando o resultado estiver vazio.
+7. O front prioriza: placar real > modelo diário/projeção completa > rede neural pura.
 
-O modelo diário não usa previsões antigas como entrada e atualiza rating, momentum e desempenho somente após jogos validados.
+O modelo diário não sobrescreve resultados reais. Jogos vazios são simulados para completar a tabela, e empates no mata-mata são decididos por pênaltis.
 """
 from pathlib import Path
 import json
@@ -166,9 +167,10 @@ def main():
     write_results_txt(real_df)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "treinar_rede_neural_copa.py")], check=True)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "modelo_neural_diario.py")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "recalcular_chaveamento_completo.py")], check=True)
     real_df = read_csv(REAL_CSV)
     validate_frontend_sync(real_df)
-    print("Rede neural de referência, modelo diário ativo e visualizador atualizados com entrada manual única.")
+    print("Rede neural de referência, modelo diário ativo, chaveamento completo e visualizador atualizados com entrada manual única.")
 
 
 if __name__ == "__main__":
