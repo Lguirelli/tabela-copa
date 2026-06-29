@@ -23,13 +23,13 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **usa_simulacoes_anteriores_como_entrada**: False
 - **validacao_sem_vazamento**: True
 - **jogos_previstos**: 104
-- **jogos_com_placar_real_validado**: 64
-- **acuracia_vencedor_percentual**: 50.0
-- **placar_exato_percentual**: 6.25
-- **erro_medio_total_gols**: 2.312
-- **erro_medio_xg_total**: 2.055
-- **proximidade_media_0_100**: 39.16
-- **dias_validados**: 16
+- **jogos_com_placar_real_validado**: 74
+- **acuracia_vencedor_percentual**: 52.7
+- **placar_exato_percentual**: 6.76
+- **erro_medio_total_gols**: 2.297
+- **erro_medio_xg_total**: 2.02
+- **proximidade_media_0_100**: 40.78
+- **dias_validados**: 19
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
 - **rede_neural**: MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual
@@ -38,32 +38,32 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **simulations_parameter**: 8000
 
 ## Times com maior rating atualizado
-- Argentina: 77.857 | momentum 1.717 | jogos 2 | saldo 5
-- Portugal: 76.993 | momentum 1.34 | jogos 2 | saldo 5
+- Argentina: 78.086 | momentum 2.095 | jogos 3 | saldo 7
+- Portugal: 76.743 | momentum 0.772 | jogos 3 | saldo 5
 - Suíça: 76.549 | momentum 1.631 | jogos 3 | saldo 4
+- Bélgica: 76.077 | momentum 1.422 | jogos 3 | saldo 4
 - Países Baixos: 75.952 | momentum 1.776 | jogos 3 | saldo 6
 - Alemanha: 75.508 | momentum 0.461 | jogos 3 | saldo 6
 - Estados Unidos: 75.495 | momentum 0.469 | jogos 3 | saldo 4
+- Brasil: 75.42 | momentum 2.029 | jogos 4 | saldo 7
 - Espanha: 75.296 | momentum 1.741 | jogos 3 | saldo 5
-- Brasil: 75.048 | momentum 1.767 | jogos 3 | saldo 6
-- Bélgica: 74.708 | momentum 0.0 | jogos 2 | saldo 0
-- Inglaterra: 73.801 | momentum 0.62 | jogos 2 | saldo 2
+- Inglaterra: 74.426 | momentum 1.5 | jogos 3 | saldo 4
+- Colômbia: 73.463 | momentum 1.041 | jogos 3 | saldo 3
 - França: 73.296 | momentum 2.474 | jogos 3 | saldo 8
-- Japão: 73.252 | momentum 0.828 | jogos 3 | saldo 4
 
 ## Últimas previsões processadas
-- Jogo 93 (2026-07-06): Colômbia x Espanha → 2-1 / Colômbia (média)
-- Jogo 94 (2026-07-06): Estados Unidos x Argélia → 0-0 / Empate (média)
-- Jogo 95 (2026-07-07): Argentina x Irã → 1-0 / Argentina (alta)
-- Jogo 96 (2026-07-07): Suíça x Portugal → 2-1 / Suíça (baixa)
-- Jogo 97 (2026-07-09): Países Baixos x Alemanha → 0-0 / Empate (média)
-- Jogo 98 (2026-07-10): Espanha x Estados Unidos → 2-1 / Espanha (baixa)
-- Jogo 99 (2026-07-11): Brasil x México → 2-1 / Brasil (baixa)
-- Jogo 100 (2026-07-11): Argentina x Portugal → 2-1 / Argentina (baixa)
-- Jogo 101 (2026-07-14): Alemanha x Estados Unidos → 2-1 / Alemanha (baixa)
-- Jogo 102 (2026-07-15): México x Portugal → 1-2 / Portugal (média)
-- Jogo 103 (2026-07-18): Alemanha x México → 2-1 / Alemanha (baixa)
-- Jogo 104 (2026-07-19): Estados Unidos x Portugal → 2-1 / Estados Unidos (média)
+- Jogo 93 (2026-07-06): Portugal x Espanha → 1-2 / Espanha (alta)
+- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 1-0 / Estados Unidos (alta)
+- Jogo 95 (2026-07-07): Argentina x Egito → 1-0 / Argentina (alta)
+- Jogo 96 (2026-07-07): Suíça x Gana → 1-0 / Suíça (alta)
+- Jogo 97 (2026-07-09): Canadá x Alemanha → 1-2 / Alemanha (média)
+- Jogo 98 (2026-07-10): Portugal x Estados Unidos → 2-1 / Portugal (média)
+- Jogo 99 (2026-07-11): Brasil x Equador → 0-0 / Empate (baixa)
+- Jogo 100 (2026-07-11): Argentina x Gana → 1-0 / Argentina (baixa)
+- Jogo 101 (2026-07-14): Alemanha x Portugal → 2-1 / Alemanha (baixa)
+- Jogo 102 (2026-07-15): Equador x Argentina → 2-1 / Equador (baixa)
+- Jogo 103 (2026-07-18): Portugal x Argentina → 2-1 / Portugal (média)
+- Jogo 104 (2026-07-19): Alemanha x Equador → 1-0 / Alemanha (alta)
 
 ## Observação importante
 Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.

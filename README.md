@@ -1,6 +1,6 @@
-# Copa 2026 — Visualizador com rede neural
+# Copa 2026 — Visualizador com modelo diário
 
-Visualizador estático para acompanhar a Copa 2026 com resultados reais e previsões geradas pela rede neural `CopaMatchNet`.
+Visualizador estático para acompanhar a Copa 2026 com resultados reais, chaveamento e previsões do modelo diário incremental.
 
 ## Páginas
 
@@ -8,18 +8,62 @@ Visualizador estático para acompanhar a Copa 2026 com resultados reais e previs
 - `grupos-jogos.html` — lista de jogos da fase de grupos.
 - `mata-mata-chave.html` — chaveamento do mata-mata.
 - `mata-mata-jogos.html` — lista dos jogos eliminatórios.
-- `rede-neural.html` — arquitetura, métricas, treino, desempenho, erros e visualização da rede.
+- `rede-neural.html` — painel do modelo ativo, métricas, desempenho, erros e visualizações.
 
-## Fonte de previsão
+## Fonte ativa de placar no front
 
-A previsão exibida no front vem apenas da rede neural:
+A prioridade do front agora é:
 
 ```txt
+1. placar real, quando disponível
+2. previsão do modelo diário incremental
+3. rede neural pura como fallback/referência secundária
+```
+
+Arquivos principais consumidos pelo front:
+
+```txt
+data/matches.csv
+src/data.js
+
+data/modelo_diario/previsoes_dia_a_dia.csv
+src/modelo-diario-data.js
+src/prediction-source.js
+
 data/rede_neural/previsoes_rede_neural.csv
 src/rede-neural-data.js
 ```
 
-A previsão do front é gerada somente pela rede neural.
+O chaveamento usa `src/prediction-source.js` para unificar as fontes e evitar conflito entre placar real, previsão diária e previsão neural antiga.
+
+## Modelo diário
+
+O modelo diário usa desempenho dentro da Copa como variável, sem vazar informação futura. Ele atualiza por seleção:
+
+```txt
+rating_atual_0_100
+momentum_resultado_anterior
+memoria_desempenho
+jogos_validados
+gols_pro
+gols_contra
+saldo
+pontos
+```
+
+As principais features expostas no front são:
+
+```txt
+feature_rating_diff
+feature_momentum_diff
+feature_performance_memory_diff
+feature_attack_vs_defense
+feature_defense_vs_attack
+feature_player_quality_diff
+feature_league_diff
+feature_rest_diff
+feature_knockout
+```
 
 ## Atualização
 
@@ -35,26 +79,28 @@ data/entrada/novos_resultados.csv
 python scripts/atualizar_modelo.py
 ```
 
-Esse script atualiza os resultados reais, reexecuta o treino da rede neural e exporta os dados para o front.
+Esse script atualiza os resultados reais, reexecuta a rede neural de referência, recalcula o modelo diário e exporta os dados para o front.
 
-## Treinar manualmente
+## Recalcular apenas o modelo diário
+
+```bash
+python scripts/modelo_neural_diario.py
+```
+
+## Treinar manualmente a rede neural de referência
 
 ```bash
 python scripts/treinar_rede_neural_copa.py
 ```
 
-## Reaplicar a rede treinada
-
-```bash
-python scripts/aplicar_rede_neural_copa.py
-```
-
 ## Estrutura principal
 
 ```txt
-neural_copa/            código PyTorch da rede
-scripts/                automações de atualização e treino
-data/rede_neural/       dataset, métricas, checkpoint e previsões da rede
-src/rede-neural-data.js export JS consumido pelo front
-assets/teams/           bandeiras e ícones das seleções
+scripts/                         automações de atualização e treino
+data/modelo_diario/              previsões, estado dos times e métricas do modelo ativo
+data/rede_neural/                dataset, métricas, checkpoint e previsões da rede de referência
+src/modelo-diario-data.js        export JS do modelo diário
+src/prediction-source.js         adaptador de prioridade: real > diário > rede
+src/rede-neural-data.js          export JS da rede de referência
+assets/teams/                    bandeiras e ícones das seleções
 ```

@@ -1304,14 +1304,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "África do Sul",
     "equipe2": "Canadá",
     "confronto": "África do Sul x Canadá",
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 74,
@@ -1322,14 +1322,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Alemanha",
     "equipe2": "Paraguai",
     "confronto": "Alemanha x Paraguai",
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 75,
@@ -1340,14 +1340,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Países Baixos",
     "equipe2": "Marrocos",
     "confronto": "Países Baixos x Marrocos",
     "estadio": "Estadio BBVA",
     "cidade": "Monterrey",
     "pais": "México",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 76,
@@ -1358,14 +1358,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Brasil",
     "equipe2": "Japão",
     "confronto": "Brasil x Japão",
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Finalizado"
   },
   {
     "jogo": 77,
@@ -1376,14 +1376,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "França",
     "equipe2": "Suécia",
     "confronto": "França x Suécia",
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 78,
@@ -1394,14 +1394,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Costa do Marfim",
     "equipe2": "Noruega",
     "confronto": "Costa do Marfim x Noruega",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 79,
@@ -1412,14 +1412,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "México",
-    "equipe2": "Senegal",
-    "confronto": "México x Senegal",
+    "equipe2": "Equador",
+    "confronto": "México x Equador",
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 80,
@@ -1430,14 +1430,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Inglaterra",
     "equipe2": "RD Congo",
     "confronto": "Inglaterra x RD Congo",
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 81,
@@ -1448,14 +1448,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Estados Unidos",
     "equipe2": "Bósnia e Herzegovina",
     "confronto": "Estados Unidos x Bósnia e Herzegovina",
     "estadio": "Levi's Stadium",
     "cidade": "San Francisco Bay Area",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 82,
@@ -1466,14 +1466,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Bélgica",
-    "equipe2": "Argélia",
-    "confronto": "Bélgica x Argélia",
+    "equipe2": "Senegal",
+    "confronto": "Bélgica x Senegal",
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 83,
@@ -1484,14 +1484,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Portugal",
     "equipe2": "Croácia",
     "confronto": "Portugal x Croácia",
     "estadio": "BMO Field",
     "cidade": "Toronto",
     "pais": "Canadá",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 84,
@@ -1502,14 +1502,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Espanha",
     "equipe2": "Áustria",
     "confronto": "Espanha x Áustria",
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 85,
@@ -1520,14 +1520,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Suíça",
-    "equipe2": "Equador",
-    "confronto": "Suíça x Equador",
+    "equipe2": "Argélia",
+    "confronto": "Suíça x Argélia",
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 86,
@@ -1538,14 +1538,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Argentina",
     "equipe2": "Cabo Verde",
     "confronto": "Argentina x Cabo Verde",
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 87,
@@ -1556,14 +1556,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Colômbia",
     "equipe2": "Gana",
     "confronto": "Colômbia x Gana",
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 88,
@@ -1574,14 +1574,14 @@
     "fase": "16 avos de final",
     "ordemFase": 2,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Austrália",
     "equipe2": "Egito",
     "confronto": "Austrália x Egito",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 89,
@@ -1592,14 +1592,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Canadá",
     "equipe2": "Países Baixos",
     "confronto": "Canadá x Países Baixos",
     "estadio": "Lincoln Financial Field",
     "cidade": "Philadelphia",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 90,
@@ -1610,14 +1610,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "Alemanha",
+    "rodadaGrupo": null,
+    "equipe1": "Paraguai",
     "equipe2": "França",
-    "confronto": "Alemanha x França",
+    "confronto": "Paraguai x França",
     "estadio": "NRG Stadium",
     "cidade": "Houston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 91,
@@ -1628,14 +1628,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Brasil",
-    "equipe2": "Costa do Marfim",
-    "confronto": "Brasil x Costa do Marfim",
+    "equipe2": "Noruega",
+    "confronto": "Brasil x Noruega",
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 92,
@@ -1646,14 +1646,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "México",
-    "equipe2": "Inglaterra",
-    "confronto": "México x Inglaterra",
+    "rodadaGrupo": null,
+    "equipe1": "Equador",
+    "equipe2": "RD Congo",
+    "confronto": "Equador x RD Congo",
     "estadio": "Estadio Azteca",
     "cidade": "Mexico City",
     "pais": "México",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 93,
@@ -1664,14 +1664,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Portugal",
     "equipe2": "Espanha",
     "confronto": "Portugal x Espanha",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 94,
@@ -1682,14 +1682,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Estados Unidos",
     "equipe2": "Bélgica",
     "confronto": "Estados Unidos x Bélgica",
     "estadio": "Lumen Field",
     "cidade": "Seattle",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 95,
@@ -1700,14 +1700,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Argentina",
-    "equipe2": "Austrália",
-    "confronto": "Argentina x Austrália",
+    "equipe2": "Egito",
+    "confronto": "Argentina x Egito",
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 96,
@@ -1718,14 +1718,14 @@
     "fase": "Oitavas de final",
     "ordemFase": 3,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Suíça",
     "equipe2": "Colômbia",
     "confronto": "Suíça x Colômbia",
     "estadio": "BC Place",
     "cidade": "Vancouver",
     "pais": "Canadá",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 97,
@@ -1736,14 +1736,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "Países Baixos",
-    "equipe2": "Alemanha",
-    "confronto": "Países Baixos x Alemanha",
+    "rodadaGrupo": null,
+    "equipe1": "Canadá",
+    "equipe2": "França",
+    "confronto": "Canadá x França",
     "estadio": "Gillette Stadium",
     "cidade": "Boston",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 98,
@@ -1754,14 +1754,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Portugal",
     "equipe2": "Estados Unidos",
     "confronto": "Portugal x Estados Unidos",
     "estadio": "SoFi Stadium",
     "cidade": "Los Angeles",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 99,
@@ -1772,14 +1772,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "Brasil",
-    "equipe2": "México",
-    "confronto": "Brasil x México",
+    "rodadaGrupo": null,
+    "equipe1": "Noruega",
+    "equipe2": "RD Congo",
+    "confronto": "Noruega x RD Congo",
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 100,
@@ -1790,14 +1790,14 @@
     "fase": "Quartas de final",
     "ordemFase": 4,
     "grupo": null,
-    "rodadaGrupo": NaN,
+    "rodadaGrupo": null,
     "equipe1": "Argentina",
-    "equipe2": "Suíça",
-    "confronto": "Argentina x Suíça",
+    "equipe2": "Colômbia",
+    "confronto": "Argentina x Colômbia",
     "estadio": "Arrowhead Stadium",
     "cidade": "Kansas City",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 101,
@@ -1808,14 +1808,14 @@
     "fase": "Semifinais",
     "ordemFase": 5,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "Alemanha",
+    "rodadaGrupo": null,
+    "equipe1": "Canadá",
     "equipe2": "Portugal",
-    "confronto": "Alemanha x Portugal",
+    "confronto": "Canadá x Portugal",
     "estadio": "AT&T Stadium",
     "cidade": "Dallas",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 102,
@@ -1826,14 +1826,14 @@
     "fase": "Semifinais",
     "ordemFase": 5,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "México",
+    "rodadaGrupo": null,
+    "equipe1": "RD Congo",
     "equipe2": "Argentina",
-    "confronto": "México x Argentina",
+    "confronto": "RD Congo x Argentina",
     "estadio": "Mercedes-Benz Stadium",
     "cidade": "Atlanta",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 103,
@@ -1844,14 +1844,14 @@
     "fase": "Disputa de 3º lugar",
     "ordemFase": 6,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "Alemanha",
-    "equipe2": "México",
-    "confronto": "Alemanha x México",
+    "rodadaGrupo": null,
+    "equipe1": "Portugal",
+    "equipe2": "RD Congo",
+    "confronto": "Portugal x RD Congo",
     "estadio": "Hard Rock Stadium",
     "cidade": "Miami",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   },
   {
     "jogo": 104,
@@ -1862,13 +1862,13 @@
     "fase": "Final",
     "ordemFase": 7,
     "grupo": null,
-    "rodadaGrupo": NaN,
-    "equipe1": "Portugal",
+    "rodadaGrupo": null,
+    "equipe1": "Canadá",
     "equipe2": "Argentina",
-    "confronto": "Portugal x Argentina",
+    "confronto": "Canadá x Argentina",
     "estadio": "MetLife Stadium",
     "cidade": "New York/New Jersey",
     "pais": "Estados Unidos",
-    "status": "Simulação"
+    "status": "Rede neural"
   }
 ]

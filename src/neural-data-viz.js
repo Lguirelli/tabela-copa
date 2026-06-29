@@ -1,10 +1,11 @@
 (function () {
   if (document.body?.dataset?.page !== 'neural-network') return;
 
-  const metrics = window.WC2026_REDE_NEURAL_METRICAS || {};
+  const metrics = window.WC2026_ACTIVE_METRICAS || window.WC2026_MODELO_DIARIO_METRICAS || window.WC2026_REDE_NEURAL_METRICAS || {};
   const history = window.WC2026_REDE_NEURAL_HISTORICO || [];
-  const predictions = window.WC2026_REDE_NEURAL_PREVISOES || [];
-  const teams = window.WC2026_REDE_NEURAL_TEAMS || [];
+  const predictions = window.WC2026_ACTIVE_PREVISOES || window.WC2026_MODELO_DIARIO_PREVISOES || window.WC2026_REDE_NEURAL_PREVISOES || [];
+  const dailySummary = window.WC2026_MODELO_DIARIO_RESUMO || [];
+  const teams = window.WC2026_MODELO_DIARIO_ESTADO_TIMES || window.WC2026_REDE_NEURAL_TEAMS || [];
 
   const COLORS = {
     text: '#f8fafc',
@@ -163,14 +164,26 @@
   function renderFeatureBars() {
     const target = document.getElementById('feature-impact-bars');
     if (!target) return;
-    const rows = (window.WC2026_REDE_NEURAL_SCHEMA || []).slice(0, 10).map((row, index) => ({
-      label: row.feature || `feature_${index}`,
-      influence: row.uso || row.tipo || 'entrada da rede neural',
+    const activeFeatures = [
+      ['feature_momentum_diff', 'momentum acumulado dentro da Copa'],
+      ['feature_performance_memory_diff', 'memória de desempenho pós-jogo'],
+      ['feature_rating_diff', 'rating atual após resultados reais'],
+      ['feature_base_rating_diff', 'força base pré-Copa'],
+      ['feature_attack_vs_defense', 'ataque contra defesa'],
+      ['feature_player_quality_diff', 'qualidade dos jogadores'],
+      ['feature_league_diff', 'competitividade da liga'],
+      ['feature_rest_diff', 'descanso entre jogos'],
+      ['feature_knockout', 'peso de mata-mata'],
+      ['feature_round_group', 'rodada/fase']
+    ];
+    const rows = activeFeatures.map(([label, influence], index) => ({
+      label,
+      influence,
       pct: Math.max(8, 100 - index * 8)
     }));
     target.innerHTML = rows.map(row => `<div class="feature-bar-row">
       <div><b>${row.label}</b><span>${row.influence}</span></div>
-      <strong>NN</strong>
+      <strong>DIÁRIO</strong>
       <i><em style="width:${Math.max(4, Math.min(100, row.pct))}%"></em></i>
     </div>`).join('');
   }
@@ -182,9 +195,9 @@
     const pad = { left: 52, right: 24, top: 28, bottom: 42 };
     const chartW = width - pad.left - pad.right;
     const chartH = height - pad.top - pad.bottom;
-    const xs = rows.map(r => toNum((r.league_score_top11 || r.league_score_mean)));
-    const ys = rows.map(r => toNum((r.player_proxy_top18 || r.player_proxy_mean)));
-    const ss = rows.map(r => toNum(r.forca_modelo_0_100));
+    const xs = rows.map(r => toNum((r.saldo ?? r.league_score_top11 ?? r.league_score_mean)));
+    const ys = rows.map(r => toNum((r.memoria_desempenho ?? r.player_proxy_top18 ?? r.player_proxy_mean)));
+    const ss = rows.map(r => toNum(r.rating_atual_0_100 ?? r.forca_modelo_0_100));
     const minX = Math.min(...xs) - 2;
     const maxX = Math.max(...xs) + 2;
     const minY = Math.min(...ys) - 2;
@@ -200,13 +213,13 @@
       ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(width - pad.right, y); ctx.stroke();
       ctx.beginPath(); ctx.moveTo(x, pad.top); ctx.lineTo(x, height - pad.bottom); ctx.stroke();
     }
-    drawAxes(ctx, width, height, pad, 'Competitividade da liga', 'Desempenho jogadores');
+    drawAxes(ctx, width, height, pad, 'Saldo na Copa', 'Memória desempenho');
 
-    const sorted = [...rows].sort((a,b) => toNum(a.forca_modelo_0_100) - toNum(b.forca_modelo_0_100));
+    const sorted = [...rows].sort((a,b) => toNum(a.rating_atual_0_100 ?? a.forca_modelo_0_100) - toNum(b.rating_atual_0_100 ?? b.forca_modelo_0_100));
     sorted.forEach(row => {
-      const xVal = toNum((row.league_score_top11 || row.league_score_mean));
-      const yVal = toNum((row.player_proxy_top18 || row.player_proxy_mean));
-      const sVal = toNum(row.forca_modelo_0_100);
+      const xVal = toNum((row.saldo ?? row.league_score_top11 ?? row.league_score_mean));
+      const yVal = toNum((row.memoria_desempenho ?? row.player_proxy_top18 ?? row.player_proxy_mean));
+      const sVal = toNum(row.rating_atual_0_100 ?? row.forca_modelo_0_100);
       const x = pad.left + ((xVal - minX) / Math.max(.0001, maxX - minX)) * chartW;
       const y = pad.top + (1 - ((yVal - minY) / Math.max(.0001, maxY - minY))) * chartH;
       const r = 4 + 8 * ((sVal - minS) / Math.max(.0001, maxS - minS));
@@ -225,19 +238,20 @@
   function renderPredictionErrors() {
     const target = document.getElementById('prediction-error-board');
     if (!target) return;
-    const finished = predictions.filter(row => row.possui_real === 'Sim' && row.placar_real && row.placar_rede_neural);
+    const finished = predictions.filter(row => row.possui_real === 'Sim' && row.placar_real && (row.placar_previsto || row.placar_modelo_diario || row.placar_rede_neural));
     const rows = finished.map(row => {
-      const p = parseScore(row.placar_rede_neural) || [0, 0];
+      const predScore = row.placar_previsto || row.placar_modelo_diario || row.placar_rede_neural;
+      const p = parseScore(predScore) || [0, 0];
       const r = parseScore(row.placar_real) || [0, 0];
       const err = Math.abs(p[0] - r[0]) + Math.abs(p[1] - r[1]);
-      const winPred = winner(row.equipe1, row.equipe2, row.placar_rede_neural);
+      const winPred = row.vencedor_previsto || row.vencedor_modelo_diario || row.vencedor_rede_neural || winner(row.equipe1, row.equipe2, predScore);
       const winReal = winner(row.equipe1, row.equipe2, row.placar_real);
-      const exact = row.placar_rede_neural === row.placar_real;
-      return { ...row, err, winPred, winReal, exact, okWinner: winPred === winReal };
+      const exact = predScore === row.placar_real;
+      return { ...row, predScore, err, winPred, winReal, exact, okWinner: winPred === winReal };
     }).sort((a, b) => b.err - a.err || Number(b.jogo) - Number(a.jogo)).slice(0, 10);
 
-    const exactCount = finished.filter(row => row.placar_rede_neural === row.placar_real).length;
-    const winnerCount = finished.filter(row => winner(row.equipe1, row.equipe2, row.placar_rede_neural) === winner(row.equipe1, row.equipe2, row.placar_real)).length;
+    const exactCount = finished.filter(row => (row.placar_previsto || row.placar_modelo_diario || row.placar_rede_neural) === row.placar_real).length;
+    const winnerCount = finished.filter(row => (row.vencedor_previsto || row.vencedor_modelo_diario || row.vencedor_rede_neural || winner(row.equipe1, row.equipe2, row.placar_previsto || row.placar_modelo_diario || row.placar_rede_neural)) === winner(row.equipe1, row.equipe2, row.placar_real)).length;
 
     target.innerHTML = `
       <div class="error-summary-strip">
@@ -249,7 +263,7 @@
         ${rows.map(row => `<div class="error-row ${row.okWinner ? 'is-ok' : 'is-miss'}">
           <b>Jogo ${row.jogo}</b>
           <span>${row.equipe1} x ${row.equipe2}</span>
-          <strong>${row.placar_rede_neural} → ${row.placar_real}</strong>
+          <strong>${row.predScore || row.placar_previsto || row.placar_modelo_diario || row.placar_rede_neural} → ${row.placar_real}</strong>
           <em>erro ${row.err} · ${row.okWinner ? 'vencedor certo' : 'corrigir vencedor'}</em>
         </div>`).join('')}
       </div>`;
@@ -257,6 +271,7 @@
 
 
   function buildDailyRows() {
+    if (dailySummary.length) return dailySummary;
     const byDate = new Map();
     predictions.forEach(row => {
       if (!byDate.has(row.data)) byDate.set(row.data, { data: row.data, jogos_previstos: 0, jogos_validados: 0, 'acuracia_vencedor_%': '', 'placar_exato_%': '', erro_medio_total_gols: '' });
@@ -264,11 +279,12 @@
       item.jogos_previstos += 1;
       if (row.possui_real === 'Sim' && row.placar_real) {
         item.jogos_validados += 1;
-        const predWinner = row.vencedor_rede_neural || winner(row.equipe1, row.equipe2, row.placar_rede_neural);
+        const predScore = row.placar_previsto || row.placar_modelo_diario || row.placar_rede_neural;
+        const predWinner = row.vencedor_previsto || row.vencedor_modelo_diario || row.vencedor_rede_neural || winner(row.equipe1, row.equipe2, predScore);
         const realWinner = winner(row.equipe1, row.equipe2, row.placar_real);
         item._winnerOk = (item._winnerOk || 0) + (predWinner === realWinner ? 1 : 0);
-        item._exact = (item._exact || 0) + (row.placar_rede_neural === row.placar_real ? 1 : 0);
-        const p = parseScore(row.placar_rede_neural) || [0, 0];
+        item._exact = (item._exact || 0) + (predScore === row.placar_real ? 1 : 0);
+        const p = parseScore(predScore) || [0, 0];
         const r = parseScore(row.placar_real) || [0, 0];
         item._err = (item._err || 0) + Math.abs(p[0] - r[0]) + Math.abs(p[1] - r[1]);
       }
