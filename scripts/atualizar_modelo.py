@@ -29,6 +29,11 @@ NEW_CSV = ROOT / "data" / "entrada" / "novos_resultados.csv"
 MATCHES_CSV = ROOT / "data" / "matches.csv"
 OUT_TXT = ROOT / "data" / "resultados.txt"
 
+NEW_RESULTS_COLUMNS = [
+    "data", "dia_semana", "fase", "time_1", "gols_time_1", "gols_time_2", "time_2",
+    "placar", "status", "vencedor_real", "placar_penaltis_real", "vencedor_penaltis_real", "fonte"
+]
+
 ALIASES = {
     "republica da coreia": "coreia do sul", "coreia republica": "coreia do sul",
     "holanda": "paises baixos", "paises baixos": "paises baixos",
@@ -162,7 +167,7 @@ def main():
         real_df = pd.concat([real_df, new_df], ignore_index=True)
         real_df = real_df.sort_values("jogo").drop_duplicates("jogo", keep="last")
         real_df.to_csv(REAL_CSV, index=False, encoding="utf-8-sig")
-        pd.DataFrame(columns=["data", "dia_semana", "fase", "time_1", "gols_time_1", "gols_time_2", "time_2", "placar", "status", "fonte"]).to_csv(NEW_CSV, index=False, sep=";", encoding="utf-8-sig")
+        pd.DataFrame(columns=NEW_RESULTS_COLUMNS).to_csv(NEW_CSV, index=False, sep=";", encoding="utf-8-sig")
         print(f"{len(new_df)} nova(s) entrada(s) processada(s).")
     else:
         print("Nenhuma nova entrada encontrada. Recalculando rede neural atual.")

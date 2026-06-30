@@ -1,0 +1,75 @@
+name: Atualizar modelo da Copa
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/entrada/**'
+      - 'data/resultados_reais.csv'
+      - 'data/desempenho_*.csv'
+      - 'data/matches.csv'
+      - 'data/database/**'
+      - 'scripts/**'
+      - 'neural_copa/**'
+      - 'requirements.txt'
+      - '.github/workflows/atualizar-modelo.yml'
+  schedule:
+    # Roda diariamente às 09:00 no horário de Brasília (12:00 UTC).
+    # Este agendamento recalcula com os dados já versionados no repositório.
+    - cron: '0 12 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-modelo-copa
+  cancel-in-progress: true
+
+jobs:
+  recalcular:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install "pandas>=2.0,<3" "numpy>=1.24,<3"
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Recalcular resultados, rede neural e probabilidades
+        run: python scripts/atualizar_modelo.py
+
+      - name: Validar recálculo
+        run: python scripts/validar_recalculo_probabilidades.py
+
+      - name: Verificar arquivos alterados
+        id: diff
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git status --short
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nenhuma alteração gerada pelo recálculo."
+          fi
+
+      - name: Commitar arquivos recalculados
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data src scripts neural_copa docs requirements.txt .github/workflows/atualizar-modelo.yml *.json *.md
+          git commit -m "chore: recalcula modelo e probabilidades da Copa"
+          git push
