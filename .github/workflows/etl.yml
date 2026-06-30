@@ -7,6 +7,9 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=." >> $GITHUB_ENV
+
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:

@@ -30,6 +30,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set PYTHONPATH
+        run: echo "PYTHONPATH=." >> $GITHUB_ENV
+
       - name: Checkout do repositório
         uses: actions/checkout@v4
         with:
@@ -51,7 +54,7 @@ jobs:
         run: python scripts/testes/test_integridade_dados.py
 
       - name: Recalcular resultados, rede neural e probabilidades
-        run: python scripts/atualizar_modelo.py
+        run: python -m worldcup.pipeline
 
       - name: Validar recálculo
         run: python scripts/validar_recalculo_probabilidades.py
