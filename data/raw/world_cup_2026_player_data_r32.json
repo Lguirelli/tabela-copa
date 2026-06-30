@@ -1,0 +1,620 @@
+{
+  "metadata": {
+    "dataset_name": "FIFA World Cup 2026 - Player Performance Data (Round of 32, jogos finalizados)",
+    "scope": "Jogadores que atuaram nas 4 partidas do Round of 32 já concluídas até 2026-06-30",
+    "snapshot_date": "2026-06-30",
+    "sources_used": [
+      "FIFA.com (match centre)",
+      "Opta Analyst / StatsPerform (theanalyst.com)",
+      "ESPN (player-stats pages)"
+    ],
+    "note": "Dados de eventos (gols, cartões, substituições, escalações titulares) têm confiança alta por cruzamento entre 3 fontes. Estatísticas individuais avançadas (xG por jogador, passes%, finalizações por jogador) NÃO foram totalmente extraídas — apenas xG/posse agregados por equipe estão disponíveis nesta passagem. Minutos jogados exatos só são conhecidos para jogadores substituídos (minuto registrado); titulares não substituídos ficam como NA explícito (presume-se 90'/120' mas não foi confirmado campo-a-campo)."
+  },
+  "matches": [
+    {
+      "match_id": "WC26-R32-01",
+      "teams": "Canada 1-0 South Africa",
+      "date": "2026-06-28",
+      "venue": "Los Angeles Stadium (Inglewood)",
+      "team_stats": {
+        "Canada": {
+          "shots": 12,
+          "shots_on_target": 7,
+          "xG": 1.32,
+          "possession_pct": "NA"
+        },
+        "South Africa": {
+          "shots": 6,
+          "shots_on_target": 1,
+          "xG": "CONFLICTING_DATA: 0.13 (Opta Analyst/NBC) vs 0.09 (NBC Sports, artigo separado)",
+          "possession_pct": 60
+        }
+      },
+      "goals": [
+        {
+          "player": "Stephen Eustáquio",
+          "team": "Canada",
+          "minute": "90+2",
+          "assist": "NA",
+          "type": "open play",
+          "source": "Opta Analyst / ESPN / FIFA"
+        }
+      ],
+      "cards": "NA — não extraído nesta passagem",
+      "starting_xi": {
+        "Canada": [
+          "Crépeau",
+          "Johnston",
+          "Bombito",
+          "Cornelius",
+          "Laryea",
+          "Buchanan",
+          "Saliba",
+          "Eustáquio",
+          "Millar",
+          "Oluwaseyi",
+          "J. David"
+        ],
+        "South Africa": [
+          "Williams",
+          "Mudau",
+          "Okon",
+          "Mbokazi",
+          "Modiba",
+          "Mokoena",
+          "Sithole",
+          "Maseko",
+          "Mofokeng",
+          "Appollis",
+          "Makgopa"
+        ]
+      },
+      "substitutions": [
+        {
+          "team": "Canada",
+          "out": "Saliba",
+          "in": "Sigur",
+          "minute": 59
+        },
+        {
+          "team": "Canada",
+          "out": "Bombito",
+          "in": "de Fougerolles",
+          "minute": 59
+        },
+        {
+          "team": "Canada",
+          "out": "NA",
+          "in": "Alphonso Davies",
+          "minute": 75
+        },
+        {
+          "team": "South Africa",
+          "out": "Maseko",
+          "in": "Moremi",
+          "minute": 45,
+          "note": "ESPN lista substituições parciais, ordem exata de entrada/saída não confirmada para todos"
+        }
+      ],
+      "player_data": [
+        {
+          "player": "Stephen Eustáquio",
+          "team": "Canada",
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "minutes_played": "NA (titular, não consta substituído)",
+          "shots": "NA",
+          "xG_individual": "NA",
+          "pass_accuracy_pct": "NA",
+          "source": "Opta Analyst/ESPN",
+          "confidence": "alta (evento), média (demais campos NA)"
+        },
+        {
+          "player": "Ronwen Williams",
+          "team": "South Africa",
+          "goals": 0,
+          "assists": 0,
+          "saves": "NA",
+          "passes_completed": 77,
+          "note": "recorde de passes certos por goleiro em jogo de Copa do Mundo desde 1966, segundo Opta Analyst",
+          "source": "Opta Analyst",
+          "confidence": "alta"
+        }
+      ]
+    },
+    {
+      "match_id": "WC26-R32-02",
+      "teams": "Brazil 2-1 Japan",
+      "date": "2026-06-29",
+      "venue": "Houston Stadium (NRG Stadium)",
+      "team_stats": {
+        "Brazil": {
+          "shots": 19,
+          "shots_on_target": "NA",
+          "xG": 1.72,
+          "possession_pct": "NA (>80% citado em trecho de jogo, não final)"
+        },
+        "Japan": {
+          "shots": 5,
+          "shots_on_target": "NA",
+          "xG": 0.23,
+          "possession_pct": "NA"
+        }
+      },
+      "goals": [
+        {
+          "player": "Kaishu Sano",
+          "team": "Japan",
+          "minute": 29,
+          "assist": "NA",
+          "type": "counter-attack finish",
+          "source": "Opta Analyst / ESPN / FIFA"
+        },
+        {
+          "player": "Casemiro",
+          "team": "Brazil",
+          "minute": 56,
+          "assist": "Gabriel Magalhães",
+          "type": "header",
+          "source": "Yahoo Sports / Opta Analyst"
+        },
+        {
+          "player": "Gabriel Martinelli",
+          "team": "Brazil",
+          "minute": "90+5",
+          "assist": "Bruno Guimarães",
+          "type": "open play",
+          "source": "NBC Sports / ESPN"
+        }
+      ],
+      "cards": [
+        {
+          "player": "Casemiro",
+          "team": "Brazil",
+          "card": "yellow",
+          "minute": 14
+        },
+        {
+          "player": "Daichi Kamada",
+          "team": "Japan",
+          "card": "yellow",
+          "minute": 45
+        },
+        {
+          "player": "Danilo",
+          "team": "Brazil",
+          "card": "yellow",
+          "minute": 48
+        }
+      ],
+      "starting_xi": {
+        "Brazil": [
+          "Alisson",
+          "Danilo",
+          "Marquinhos",
+          "Gabriel Magalhães",
+          "Douglas Santos",
+          "Casemiro",
+          "Bruno Guimarães",
+          "Lucas Paquetá",
+          "Rayan",
+          "Matheus Cunha",
+          "Vinícius Júnior"
+        ],
+        "Japan": [
+          "Zion Suzuki",
+          "Tomiyasu",
+          "Taniguchi",
+          "H. Ito",
+          "Doan",
+          "Sano",
+          "Kamada",
+          "Nakamura",
+          "Maeda",
+          "J. Ito",
+          "Ueda"
+        ]
+      },
+      "substitutions": [
+        {
+          "team": "Brazil",
+          "out": "Lucas Paquetá",
+          "in": "Endrick",
+          "minute": 46
+        },
+        {
+          "team": "Brazil",
+          "out": "NA",
+          "in": "Gabriel Martinelli",
+          "minute": 45,
+          "note": "Fonte ESPN indica entrada por volta do intervalo; minuto exato de saída do substituído não confirmado"
+        }
+      ],
+      "player_data": [
+        {
+          "player": "Bruno Guimarães",
+          "team": "Brazil",
+          "goals": 0,
+          "assists": 1,
+          "assists_tournament_total_derived": 4,
+          "note": "derived — líder isolado de assistências do torneio até este ponto, segundo Opta Analyst",
+          "minutes_played": "NA",
+          "source": "Opta Analyst/NBC Sports",
+          "confidence": "alta"
+        },
+        {
+          "player": "Casemiro",
+          "team": "Brazil",
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "minutes_played": "NA (saiu por lesão na compensação, minuto exato não confirmado)",
+          "source": "Opta Analyst/NBC Sports",
+          "confidence": "média"
+        },
+        {
+          "player": "Gabriel Martinelli",
+          "team": "Brazil",
+          "goals": 1,
+          "assists": 0,
+          "minutes_played": "~45 (entrou no intervalo, conforme ESPN)",
+          "source": "ESPN/NBC Sports",
+          "confidence": "média"
+        },
+        {
+          "player": "Kaishu Sano",
+          "team": "Japan",
+          "goals": 1,
+          "assists": 0,
+          "note": "primeiro gol da carreira pela seleção, segundo NBC Sports",
+          "source": "NBC Sports/Opta Analyst",
+          "confidence": "alta"
+        }
+      ]
+    },
+    {
+      "match_id": "WC26-R32-03",
+      "teams": "Germany 1-1 Paraguay (Paraguay venceu 4-3 nos pênaltis)",
+      "date": "2026-06-29",
+      "venue": "Boston Stadium (Foxborough, MA)",
+      "team_stats": {
+        "Germany": {
+          "shots": "NA",
+          "shots_on_target": "1 no 1º tempo (parcial, Bleacher Report)",
+          "xG": "NA",
+          "possession_pct": "78% (1º tempo, Bleacher Report)"
+        },
+        "Paraguay": {
+          "shots": "NA",
+          "shots_on_target": "NA",
+          "xG": "NA",
+          "possession_pct": "NA"
+        }
+      },
+      "goals": [
+        {
+          "player": "Julio Enciso",
+          "team": "Paraguay",
+          "minute": 42,
+          "assist": "Matías Galarza",
+          "type": "header",
+          "source": "Opta Analyst / ESPN / FIFA"
+        },
+        {
+          "player": "Kai Havertz",
+          "team": "Germany",
+          "minute": 54,
+          "assist": "Florian Wirtz",
+          "type": "header",
+          "source": "Opta Analyst / Bleacher Report"
+        }
+      ],
+      "penalty_shootout": {
+        "result": "Paraguay 4-3 Germany",
+        "sequence_status": "CONFLICTING_DATA",
+        "conflict_detail": "Bleacher Report relata sequência: Havertz (perdeu) - Mauricio (marcou) - Kimmich (marcou) - Gomez (marcou) - Musiala (marcou) - Galarza (marcou, 3-2) - Amiri (marcou) - Balbuena (perdeu, 3-3) - Tah (perdeu, morte súbita) - Canale (marcou, vencedor). Football Park (fonte distinta) menciona 'Woltemade' cobrando e tendo pênalti defendido, jogador que não aparece na sequência do Bleacher Report. Não resolvido por falta de fonte FIFA oficial com a ficha completa de pênaltis.",
+        "confirmed_decisive_moments": {
+          "missed_by_Germany_sudden_death": "Jonathan Tah (over the bar)",
+          "winning_penalty": "Jose Canale (Paraguay)"
+        }
+      },
+      "cards": "NA — não extraído nesta passagem (fonte menciona 'múltiplos cartões amarelos' sem ficha completa)",
+      "starting_xi": {
+        "Germany": [
+          "Neuer",
+          "Tah",
+          "Rüdiger",
+          "Kimmich",
+          "Brown",
+          "Pavlovic",
+          "Sané",
+          "Wirtz",
+          "Havertz",
+          "Undav"
+        ],
+        "Paraguay": [
+          "Orlando Gill",
+          "NA — escalação completa do Paraguai não extraída nesta passagem"
+        ]
+      },
+      "substitutions": [
+        {
+          "team": "Germany",
+          "out": "Jamal Musiala",
+          "in": "NA",
+          "minute": "NA",
+          "note": "Musiala iniciou no banco e entrou em algum momento antes da prorrogação, segundo Bleacher Report; minuto exato não confirmado"
+        },
+        {
+          "team": "Germany",
+          "out": "NA",
+          "in": "L. Goretzka",
+          "minute": "NA"
+        },
+        {
+          "team": "Germany",
+          "out": "NA",
+          "in": "F. Nmecha",
+          "minute": "NA"
+        }
+      ],
+      "player_data": [
+        {
+          "player": "Kai Havertz",
+          "team": "Germany",
+          "goals": 1,
+          "assists": 0,
+          "note": "25º gol internacional, 12º sob o técnico Nagelsmann (derived/contextual via Opta Analyst)",
+          "penalty_shootout": "cobrou e teve pênalti defendido por Orlando Gill",
+          "source": "Opta Analyst",
+          "confidence": "alta"
+        },
+        {
+          "player": "Julio Enciso",
+          "team": "Paraguay",
+          "goals": 1,
+          "assists": 0,
+          "note": "primeiro gol do Paraguai em fase eliminatória de Copa do Mundo, segundo Opta Analyst; saiu lesionado antes dos 60 minutos",
+          "source": "Opta Analyst/Bleacher Report",
+          "confidence": "alta"
+        },
+        {
+          "player": "Manuel Neuer",
+          "team": "Germany",
+          "saves": "NA",
+          "note": "23ª partida como titular em Copas do Mundo (recorde histórico, atrás apenas de Messi com 26), segundo Opta Analyst",
+          "source": "Opta Analyst",
+          "confidence": "alta"
+        },
+        {
+          "player": "Orlando Gill",
+          "team": "Paraguay",
+          "penalty_saves": 1,
+          "note": "defendeu o pênalti de Havertz",
+          "source": "Bleacher Report/Football Park",
+          "confidence": "média"
+        },
+        {
+          "player": "Jonathan Tah",
+          "team": "Germany",
+          "goals_disallowed": 1,
+          "note": "gol anulado no VAR na prorrogação; perdeu o pênalti decisivo na morte súbita",
+          "source": "Opta Analyst/Bleacher Report",
+          "confidence": "alta"
+        }
+      ]
+    },
+    {
+      "match_id": "WC26-R32-04",
+      "teams": "Netherlands 1-1 Morocco (Morocco venceu 3-2 nos pênaltis)",
+      "date_conflict": {
+        "value_FIFA_official": "2026-06-30",
+        "value_Opta_Analyst": "2026-06-30",
+        "value_ESPN_Yahoo_NBC_SBS_AlJazeera": "2026-06-29",
+        "resolution": "Resolvido a favor de 2026-06-30 por hierarquia de fonte (FIFA > Opta > ESPN/demais, conforme regra de prioridade definida). Divergência provavelmente de fuso horário (jogo iniciado à noite de 29/06 horário local terminando já em 30/06 UTC), não confirmado."
+      },
+      "date": "2026-06-30",
+      "venue": "Estadio Monterrey, Guadalupe (México)",
+      "team_stats": {
+        "Netherlands": {
+          "shots": 6,
+          "shots_on_target": 2,
+          "xG": 0.23,
+          "possession_pct": 29.9
+        },
+        "Morocco": {
+          "shots": 11,
+          "shots_on_target": 5,
+          "xG": 1.4,
+          "possession_pct": 70.1,
+          "big_chances": 5
+        }
+      },
+      "goals": [
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "minute": 72,
+          "assist": "Crysencio Summerville",
+          "type": "open play (assistido após cabeceio de Wout Weghorst)",
+          "source": "Opta Analyst / ESPN / FIFA"
+        },
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "minute": "90+1",
+          "assist": "NA (cruzamento, origem não identificada na fonte)",
+          "type": "header",
+          "source": "Opta Analyst / FIFA / ESPN"
+        }
+      ],
+      "penalty_shootout": {
+        "result": "Morocco 3-2 Netherlands",
+        "sequence": [
+          {
+            "order": 1,
+            "team": "Morocco",
+            "player": "Chemsdine Talbi",
+            "result": "scored"
+          },
+          {
+            "order": 2,
+            "team": "Netherlands",
+            "player": "Quinten Timber",
+            "result": "missed"
+          },
+          {
+            "order": 3,
+            "team": "Morocco",
+            "player": "NA",
+            "result": "NA"
+          },
+          {
+            "order": 4,
+            "team": "Netherlands",
+            "player": "Teun Koopmeiners",
+            "result": "scored"
+          },
+          {
+            "order": "decisive",
+            "team": "Netherlands",
+            "player": "Crysencio Summerville",
+            "result": "missed (saved by Bounou)"
+          },
+          {
+            "order": "decisive",
+            "team": "Morocco",
+            "player": "Ismael Saibari",
+            "result": "scored (penalty winner)"
+          }
+        ],
+        "note": "Sequência parcial reconstruída via live blog Al Jazeera; faltam 2-3 cobranças intermediárias não capturadas nesta passagem.",
+        "source": "Al Jazeera / FIFA / Opta Analyst"
+      },
+      "cards": "NA — não extraído nesta passagem",
+      "starting_xi": {
+        "Netherlands": [
+          "Verbruggen",
+          "van Hecke",
+          "van Dijk",
+          "Aké",
+          "Dumfries",
+          "Gravenberch",
+          "de Jong",
+          "van de Ven",
+          "Summerville",
+          "Gakpo",
+          "Brobbey"
+        ],
+        "Morocco": [
+          "Bounou",
+          "NA — escalação completa do Marrocos não extraída nesta passagem (sabe-se que Hakimi, El Aynaoui, Saibari e Rahimi atuaram)"
+        ]
+      },
+      "substitutions": [
+        {
+          "team": "Netherlands",
+          "out": "NA",
+          "in": "Teun Koopmeiners",
+          "minute": "NA"
+        },
+        {
+          "team": "Netherlands",
+          "out": "NA",
+          "in": "Wout Weghorst",
+          "minute": "NA (já em campo antes do gol de Gakpo aos 72')"
+        }
+      ],
+      "player_data": [
+        {
+          "player": "Cody Gakpo",
+          "team": "Netherlands",
+          "goals": 1,
+          "assists": 0,
+          "note": "6º gol em Copas do Mundo, 2º maior artilheiro holandês na história da competição atrás de Johnny Rep (7), segundo Opta Analyst",
+          "source": "Opta Analyst",
+          "confidence": "alta"
+        },
+        {
+          "player": "Issa Diop",
+          "team": "Morocco",
+          "goals": 1,
+          "assists": 0,
+          "note": "gol mais tardio do Marrocos em Copas (90+1'), atrás apenas do gol de Aboukhlal contra a Bélgica em 2022 (91+1')",
+          "source": "Opta Analyst",
+          "confidence": "alta"
+        },
+        {
+          "player": "Yassine Bounou",
+          "team": "Morocco",
+          "saves": 5,
+          "penalty_saves": 1,
+          "note": "defendeu pênalti decisivo de Summerville",
+          "source": "Opta Analyst/Sky Sports",
+          "confidence": "alta"
+        },
+        {
+          "player": "Achraf Hakimi",
+          "team": "Morocco",
+          "touches_in_box": 5,
+          "note": "empatado com Saibari no jogo; acertou a trave aos 52'",
+          "source": "Opta Analyst/ESPN",
+          "confidence": "alta"
+        },
+        {
+          "player": "Neil El Aynaoui",
+          "team": "Morocco",
+          "passes_completed": 134,
+          "note": "2º maior total de passes certos em uma partida na Copa 2026, atrás de Leandro Paredes (153 vs Jordânia)",
+          "source": "Opta Analyst",
+          "confidence": "alta"
+        },
+        {
+          "player": "Ismael Saibari",
+          "team": "Morocco",
+          "penalty_scored_decisive": true,
+          "touches_in_box": 5,
+          "source": "Opta Analyst/Al Jazeera",
+          "confidence": "alta"
+        }
+      ]
+    }
+  ],
+  "gaps_identified": {
+    "alta_prioridade": [
+      "Escalações completas do Paraguai e do Marrocos (apenas parcialmente extraídas)",
+      "Cartões amarelos/vermelhos em 3 das 4 partidas",
+      "Minutos exatos jogados por titulares não substituídos"
+    ],
+    "media_prioridade": [
+      "xG individual por jogador (apenas agregado por equipe disponível)",
+      "Passes certos % por jogador (apenas 1 registro pontual obtido)",
+      "Sequência completa de pênaltis em Alemanha x Paraguai e parte de Holanda x Marrocos"
+    ],
+    "baixa_prioridade": [
+      "Faltas e escanteios por partida",
+      "Grandes chances criadas por jogador individual"
+    ]
+  },
+  "conflicts_summary": [
+    {
+      "campo": "xG do 1º tempo / total de South Africa",
+      "fonte_A": "Opta Analyst / NBC Sports (0.13)",
+      "fonte_B": "NBC Sports, artigo separado (0.09)",
+      "status": "CONFLICTING_DATA, não resolvido — mesma organização (NBC) com dois valores diferentes, possivelmente momentos distintos da partida"
+    },
+    {
+      "campo": "Data da partida Holanda x Marrocos",
+      "fonte_A": "FIFA.com + Opta Analyst (30/06)",
+      "fonte_B": "ESPN, Yahoo, NBC, SBS, Al Jazeera (29/06)",
+      "status": "Resolvido a favor de 30/06 por hierarquia FIFA > Opta > ESPN/demais"
+    },
+    {
+      "campo": "Sequência de cobranças de pênalti Alemanha x Paraguai",
+      "fonte_A": "Bleacher Report",
+      "fonte_B": "Football Park",
+      "status": "CONFLICTING_DATA, não resolvido — fontes secundárias sem hierarquia definida entre si, nenhuma é FIFA/Opta/ESPN oficial"
+    }
+  ]
+}
