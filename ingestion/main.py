@@ -20,3 +20,7 @@ def run_pipeline():
     save_state(state)
     print("Incremental ETL updated:", len(updated))
     return updated
+
+
+if __name__ == '__main__':
+    run_pipeline()
