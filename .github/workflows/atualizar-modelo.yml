@@ -47,22 +47,45 @@ jobs:
           pip install "pandas>=2.0,<3" "numpy>=1.24,<3"
           pip install torch --index-url https://download.pytorch.org/whl/cpu
 
+      - name: Validar integridade antes do recálculo
+        run: python scripts/testes/test_integridade_dados.py
+
       - name: Recalcular resultados, rede neural e probabilidades
         run: python scripts/atualizar_modelo.py
 
       - name: Validar recálculo
         run: python scripts/validar_recalculo_probabilidades.py
 
-      - name: Verificar arquivos alterados
+      - name: Validar integridade após o recálculo
+        run: python scripts/testes/test_integridade_dados.py
+
+      - name: Verificar arquivos derivados alterados
         id: diff
         shell: bash
         run: |
-          if [[ -n "$(git status --porcelain)" ]]; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            git status --short
-          else
+          # O commit automático deve ser restrito a artefatos derivados.
+          # Mudanças de código, docs, workflow ou dependências devem entrar apenas via commit manual.
+          git add \
+            data/entrada/novos_resultados.csv \
+            data/resultados_reais.csv \
+            data/resultados.csv \
+            data/resultados.txt \
+            data/matches.csv \
+            data/database/matches.csv \
+            data/matches.json \
+            data/modelo_diario/ \
+            data/rede_neural/ \
+            src/data.js \
+            src/modelo-diario-data.js \
+            src/rede-neural-data.js \
+            VALIDACAO_RECALCULO_PROBABILIDADES_*.json
+
+          if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Nenhuma alteração gerada pelo recálculo."
+            echo "Nenhuma alteração derivada gerada pelo recálculo."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --stat
           fi
 
       - name: Commitar arquivos recalculados
@@ -70,6 +93,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data src scripts neural_copa docs requirements.txt .github/workflows/atualizar-modelo.yml *.json *.md
-          git commit -m "chore: recalcula modelo e probabilidades da Copa"
+          git commit -m "chore: recalcula modelo e probabilidades da Copa [skip ci]"
           git push

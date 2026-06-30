@@ -934,8 +934,13 @@ class DailyWorldCupModel:
         xg1, xg2 = float(prediction["xg1_modelo"]), float(prediction["xg2_modelo"])
         pred_out = outcome_from_goals(p1, p2)
         real_out = outcome_from_goals(a1, a2)
-        real_winner_manual = str(real_row.get("vencedor_real", "") or "").strip()
-        penalty_score_real = str(real_row.get("placar_penaltis_real", "") or "").strip()
+        real_winner_manual_raw = real_row.get("vencedor_real", "")
+        real_winner_manual = "" if pd.isna(real_winner_manual_raw) else str(real_winner_manual_raw).strip()
+        penalty_score_raw = real_row.get("placar_penaltis_real", "")
+        penalty_score_real = "" if pd.isna(penalty_score_raw) else str(penalty_score_raw).strip()
+        # Evita sufixos inválidos como "(pên. nan)" nos artefatos de validação/front.
+        if penalty_score_real.lower() in {"nan", "none", "null", "na"}:
+            penalty_score_real = ""
         knockout_real_penalty = (
             str(match.get("fase", "")).strip() != "Fase de grupos"
             and a1 == a2
