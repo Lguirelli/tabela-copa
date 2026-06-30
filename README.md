@@ -1,9 +1,8 @@
 
-WORLD CUP REBUILD FINAL
+STABLE V7
 
-Run pipeline:
-python pipeline.py
-
-Then open index.html or deploy via GitHub Pages.
-
-No packages, no imports issues, fully static frontend + single pipeline.
+- No ingestion module
+- Single pipeline
+- No broken imports
+- Dataset flexible (no strict 104 validation)
+- GitHub Pages compatible

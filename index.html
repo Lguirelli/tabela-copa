@@ -1,35 +1,22 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8"/>
-  <title>World Cup Dashboard</title>
-  <style>
-    body { font-family: Arial; background:#0b0f14; color:#fff; padding:20px; }
-    .card { background:#151b22; padding:12px; margin:10px 0; border-radius:8px; }
-  </style>
-</head>
+<head><title>World Cup</title></head>
 <body>
-  <h1>World Cup Probabilities</h1>
-  <div id="app"></div>
+<h1>World Cup Dashboard</h1>
+<div id="app"></div>
 
 <script>
-async function load(){
-  const res = await fetch('data/predictions.json');
-  const data = await res.json();
-
-  document.getElementById('app').innerHTML =
-    data.predictions.map(p =>
-      `<div class='card'>
-        <b>${p.team1} vs ${p.team2}</b><br/>
-        Team1: ${p.p_team1} <br/>
-        Draw: ${p.draw} <br/>
-        Team2: ${p.p_team2}
-      </div>`
-    ).join('');
-}
-
-load();
+fetch('data/predictions.json')
+.then(r=>r.json())
+.then(d=>{
+ document.getElementById('app').innerHTML =
+ d.map(x=>`
+  <div>
+    ${x.team1} vs ${x.team2} - ${x.p_team1} / ${x.p_team2}
+  </div>
+ `).join('')
+})
 </script>
 
 </body>
