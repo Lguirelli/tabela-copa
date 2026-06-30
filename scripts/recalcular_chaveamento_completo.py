@@ -89,7 +89,7 @@ def decide_penalties(match: pd.Series, pred: dict) -> Tuple[str, str, float]:
     exp_diff = safe_float(pred.get("feature_experience_diff", 0), 0)
     momentum_diff = safe_float(pred.get("feature_momentum_diff", 0), 0)
     perf_diff = safe_float(pred.get("feature_performance_memory_diff", 0), 0)
-    host_diff = safe_float(pred.get("feature_host_diff", 0), 0)
+    # Sem bônus de mandante/sede em pênaltis. Mantemos feature_host_diff apenas como dado histórico zerado.
 
     # Pênalti depende mais de goleiro/experiência/estado emocional do que de volume ofensivo.
     logit = (
@@ -98,7 +98,6 @@ def decide_penalties(match: pd.Series, pred: dict) -> Tuple[str, str, float]:
         + exp_diff * 0.120
         + momentum_diff * 0.460
         + perf_diff * 0.260
-        + host_diff * 0.160
     )
     p_team1 = float(np.clip(sigmoid(logit), 0.34, 0.66))
     winner = team1 if p_team1 >= 0.50 else team2

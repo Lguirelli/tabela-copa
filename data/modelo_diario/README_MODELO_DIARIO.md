@@ -26,9 +26,9 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **jogos_com_placar_real_validado**: 75
 - **acuracia_vencedor_percentual**: 58.67
 - **placar_exato_percentual**: 8.0
-- **erro_medio_total_gols**: 2.24
-- **erro_medio_xg_total**: 2.011
-- **proximidade_media_0_100**: 43.73
+- **erro_medio_total_gols**: 2.213
+- **erro_medio_xg_total**: 2.018
+- **proximidade_media_0_100**: 44.11
 - **dias_validados**: 19
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
@@ -41,32 +41,32 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **simulations_parameter**: 8000
 
 ## Times com maior rating atualizado
-- Argentina: 77.865 | momentum 1.317 | jogos 3 | saldo 7
-- Suíça: 76.294 | momentum 1.148 | jogos 3 | saldo 4
-- Portugal: 76.279 | momentum 0.359 | jogos 3 | saldo 5
-- Estados Unidos: 75.431 | momentum 0.174 | jogos 3 | saldo 4
+- Argentina: 77.862 | momentum 1.317 | jogos 3 | saldo 7
+- Portugal: 76.253 | momentum 0.347 | jogos 3 | saldo 5
+- Suíça: 76.201 | momentum 1.135 | jogos 3 | saldo 4
+- Estados Unidos: 75.646 | momentum 0.201 | jogos 3 | saldo 4
 - Brasil: 75.286 | momentum 1.387 | jogos 4 | saldo 7
 - Bélgica: 75.252 | momentum 0.644 | jogos 3 | saldo 4
-- Países Baixos: 75.225 | momentum 1.066 | jogos 3 | saldo 6
-- Espanha: 75.092 | momentum 1.1 | jogos 3 | saldo 5
-- Alemanha: 74.337 | momentum 0.071 | jogos 4 | saldo 6
-- Inglaterra: 74.115 | momentum 0.926 | jogos 3 | saldo 4
-- Croácia: 73.853 | momentum 0.981 | jogos 3 | saldo 0
+- Países Baixos: 75.223 | momentum 1.065 | jogos 3 | saldo 6
+- Espanha: 75.089 | momentum 1.099 | jogos 3 | saldo 5
+- Alemanha: 74.315 | momentum 0.062 | jogos 4 | saldo 6
+- Inglaterra: 74.117 | momentum 0.927 | jogos 3 | saldo 4
+- Croácia: 73.839 | momentum 0.977 | jogos 3 | saldo 0
 - Escócia: 73.261 | momentum -0.404 | jogos 3 | saldo -3
 
 ## Últimas previsões processadas
-- Jogo 93 (2026-07-06): Portugal x Espanha → 1-2 / Espanha (baixa)
-- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 1-0 / Estados Unidos (média)
-- Jogo 95 (2026-07-07): Argentina x Austrália → 1-0 / Argentina (média)
+- Jogo 93 (2026-07-06): Portugal x Espanha → 2-1 / Portugal (baixa)
+- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 2-1 / Estados Unidos (baixa)
+- Jogo 95 (2026-07-07): Argentina x Austrália → 1-0 / Argentina (alta)
 - Jogo 96 (2026-07-07): Suíça x Colômbia → 1-0 / Suíça (baixa)
 - Jogo 97 (2026-07-09): Canadá x França → 1-2 / França (baixa)
-- Jogo 98 (2026-07-10): Espanha x Estados Unidos → 1-2 / Estados Unidos (baixa)
-- Jogo 99 (2026-07-11): Brasil x México → 0-1 / México (baixa)
+- Jogo 98 (2026-07-10): Espanha x Estados Unidos → 2-1 / Espanha (baixa)
+- Jogo 99 (2026-07-11): Brasil x México → 2-1 / Brasil (baixa)
 - Jogo 100 (2026-07-11): Suíça x Argentina → 1-2 / Argentina (baixa)
 - Jogo 101 (2026-07-14): Canadá x Estados Unidos → 1-2 / Estados Unidos (baixa)
-- Jogo 102 (2026-07-15): México x Argentina → 1-0 / México (baixa)
-- Jogo 103 (2026-07-18): Canadá x Argentina → 1-2 / Argentina (baixa)
-- Jogo 104 (2026-07-19): Estados Unidos x México → 0-1 / México (baixa)
+- Jogo 102 (2026-07-15): México x Argentina → 0-1 / Argentina (baixa)
+- Jogo 103 (2026-07-18): Canadá x Argentina → 0-1 / Argentina (baixa)
+- Jogo 104 (2026-07-19): Estados Unidos x México → 1-2 / México (baixa)
 
 ## Observação importante
 Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.

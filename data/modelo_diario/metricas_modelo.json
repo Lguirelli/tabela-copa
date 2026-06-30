@@ -21,7 +21,7 @@
   "gols_sofridos_ajustados_por_forca_adversario": true,
   "rede_neural_peso_maximo": 0.08,
   "acuracia_vencedor_percentual": 58.67,
-  "placar_exato_percentual": 10.67,
-  "erro_medio_total_gols": 2.213,
-  "proximidade_media_0_100": 44.11
+  "placar_exato_percentual": 9.33,
+  "erro_medio_total_gols": 2.24,
+  "proximidade_media_0_100": 43.73
 }

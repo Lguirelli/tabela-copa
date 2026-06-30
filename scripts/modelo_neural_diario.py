@@ -97,7 +97,7 @@ LEAGUE_STRENGTH = {
     "JOR": 5.5, "HTI": 5.4, "CUW": 5.4,
 }
 
-HOST_NAMES = {"mexico", "canada", "estados unidos"}
+HOST_NAMES = set()  # bônus de mandante removido: país-sede não altera a previsão
 
 
 def norm(value: object) -> str:
@@ -623,8 +623,10 @@ class DailyWorldCupModel:
         s2 = self.states.get(t2, TeamState(t2, 60.0, 60.0))
         date = match.get("data_dt")
         rest1, rest2 = self.rest_days(t1, date), self.rest_days(t2, date)
-        host1 = 1.0 if norm(t1) in HOST_NAMES and norm(match.get("pais", "")) in HOST_NAMES else 0.0
-        host2 = 1.0 if norm(t2) in HOST_NAMES and norm(match.get("pais", "")) in HOST_NAMES else 0.0
+        # Sem bônus de mandante/sede: a Copa é multi-país e o modelo não deve inflar anfitriões
+        # nem equipes que jogam em outro país-sede. Mantemos a coluna para compatibilidade, mas zerada.
+        host1 = 0.0
+        host2 = 0.0
         knockout = 0.0 if str(match.get("fase", "")).lower().startswith("fase de grupos") else 1.0
 
         games1 = max(1.0, float(s1.games_validated or 0) or 1.0)
@@ -719,7 +721,6 @@ class DailyWorldCupModel:
             + f["performance_memory_diff"] * 0.030
             + form1 + schedule_adj + points_adj
             + attack_rate1 + defensive_vulnerability2
-            + f["host_diff"] * 0.15
         )
         xg2 = (
             base + atk2 - def1
@@ -728,7 +729,6 @@ class DailyWorldCupModel:
             - f["performance_memory_diff"] * 0.030
             + form2 - schedule_adj - points_adj
             + attack_rate2 + defensive_vulnerability1
-            - f["host_diff"] * 0.15
         )
         # Jogo de mata-mata tende a maior cautela.
         if f["knockout"]:
