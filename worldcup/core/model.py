@@ -1,15 +1,14 @@
 
-def predict_match(match):
-    a = match["team1"]
-    b = match["team2"]
-
+def predict_match(m):
     base = {"A":70,"B":60,"C":65,"D":55}
+    a = base.get(m["team1"],60)
+    b = base.get(m["team2"],60)
 
-    pa = base.get(a,60) / (base.get(a,60)+base.get(b,60))
+    pa = a/(a+b)
     return {
-        "match_id": match["match_id"],
-        "team1": a,
-        "team2": b,
+        "match_id": m["match_id"],
+        "team1": m["team1"],
+        "team2": m["team2"],
         "p_team1": round(pa,3),
         "p_team2": round(1-pa,3)
     }

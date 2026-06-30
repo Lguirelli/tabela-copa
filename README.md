@@ -1,8 +1,8 @@
 
-STABLE V7
+WORLD CUP FINAL CLEAN SYSTEM
 
-- No ingestion module
-- Single pipeline
-- No broken imports
-- Dataset flexible (no strict 104 validation)
-- GitHub Pages compatible
+Run:
+python -m worldcup.core.pipeline
+
+Open:
+index.html

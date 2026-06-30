@@ -1,7 +1,10 @@
 
 <!DOCTYPE html>
 <html>
-<head><title>World Cup</title></head>
+<head>
+<meta charset="utf-8">
+<title>World Cup</title>
+</head>
 <body>
 <h1>World Cup Dashboard</h1>
 <div id="app"></div>
@@ -10,12 +13,12 @@
 fetch('data/predictions.json')
 .then(r=>r.json())
 .then(d=>{
- document.getElementById('app').innerHTML =
- d.map(x=>`
-  <div>
-    ${x.team1} vs ${x.team2} - ${x.p_team1} / ${x.p_team2}
-  </div>
- `).join('')
+  document.getElementById('app').innerHTML =
+    d.map(x=>`
+      <div>
+        ${x.team1} vs ${x.team2} | ${x.p_team1} - ${x.p_team2}
+      </div>
+    `).join('')
 })
 </script>
 
