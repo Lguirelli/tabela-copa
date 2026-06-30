@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista de jogos | Mata-mata</title>
+  <meta name="description" content="Visualizador responsivo de resultados e simulações da Copa do Mundo 2026." />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body class="dashboard" data-page="knockout-games">
+  <div class="app-frame">
+    <aside class="sidebar" aria-label="Menu lateral">
+      <div class="brand"><span class="brand-mark">✦</span><strong>Copa 2026</strong></div>
+      <nav class="side-nav">
+        <p>Fase de grupos</p>
+        <a class="side-link" href="grupos-resultados.html"><span>▦</span><b>Resultados gerais</b></a>
+        <a class="side-link" href="grupos-jogos.html"><span>☷</span><b>Tabela de jogos</b></a>
+        <p>Mata-mata</p>
+        <a class="side-link" href="mata-mata-chave.html"><span>⌁</span><b>Chaveamento</b></a>
+        <a class="side-link is-active" href="mata-mata-jogos.html"><span>☰</span><b>Lista de jogos</b></a>
+        <p>Modelo</p>
+        <a class="side-link" href="rede-neural.html"><span>⎇</span><b>Rede neural</b></a>
+      </nav>
+</aside>
+
+    <main class="main-view">
+      <header class="topbar">
+        <div>
+          <span class="breadcrumb">Copa 2026 / Mata-mata</span>
+          <h1>Lista de jogos</h1>
+          <p>Tabela paginada dos jogos eliminatórios, separada do chaveamento para manter a visualização limpa.</p>
+        </div>
+        <div class="top-actions">
+          <span class="mini-stat"><small>Jogos</small><b id="stat-total">104</b></span>
+          <span class="mini-stat"><small>Reais</small><b id="stat-finished">—</b></span>
+          <span class="mini-stat"><small>Rede</small><b id="stat-simulated">—</b></span>
+        </div>
+      </header>
+      
+      <section class="panel panel--table full-panel">
+        <div class="panel-title panel-title--filters">
+          <h2>Jogos do mata-mata</h2>
+          <div class="filters"><label>Fase <select id="ko-phase-filter"><option value="all">Todas</option></select></label></div>
+        </div>
+        <div class="table-shell">
+          <table class="data-table">
+            <thead><tr><th>Jogo</th><th>Fase</th><th>Data</th><th>Confronto</th><th>Previsão</th><th>Real</th><th>Status</th><th>Vencedor</th><th>Correção</th></tr></thead>
+            <tbody id="ko-games-body"></tbody>
+          </table>
+        </div>
+        <div class="table-footer"><span id="ko-games-label">—</span><div class="pager"><button id="ko-games-prev">‹</button><button id="ko-games-next">›</button></div></div>
+      </section>
+    
+    </main>
+  </div>
+
+  <script src="./src/data.js"></script>
+  <script src="./src/team-colors.js"></script>
+  <script src="./src/team-assets.js"></script>
+  <script src="./src/rede-neural-data.js"></script>
+  <script src="./src/modelo-diario-data.js"></script>
+  <script src="./src/prediction-source.js"></script>
+  <script src="./src/dashboard.js"></script>
+
+</body>
+</html>

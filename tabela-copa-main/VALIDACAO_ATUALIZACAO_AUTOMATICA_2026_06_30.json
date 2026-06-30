@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "workflow_adicionado": ".github/workflows/atualizar-modelo.yml",
+  "gatilhos": [
+    "workflow_dispatch",
+    "push em data/entrada, resultados, desempenho, scripts e neural_copa",
+    "schedule diario 12:00 UTC / 09:00 America/Sao_Paulo"
+  ],
+  "script_principal": "scripts/atualizar_modelo.py",
+  "validacao": "scripts/validar_recalculo_probabilidades.py",
+  "recalculo_local_testado": true,
+  "jogos_total": 104,
+  "jogos_reais_preservados": 76,
+  "jogos_projetados": 28,
+  "precisa_recalculo": 0,
+  "observacao": "GitHub Actions recalcula e commita automaticamente os CSVs/JS gerados quando houver alteracoes."
+}

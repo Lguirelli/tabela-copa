@@ -1,0 +1,56 @@
+{
+  "resultados_reais_rows": 76,
+  "resultados_reais_jogos_unicos": 76,
+  "jogo_75_resultado": [
+    {
+      "jogo": 75,
+      "data": "2026-06-29",
+      "fase": "16 avos de final",
+      "equipe1": "Países Baixos",
+      "equipe2": "Marrocos",
+      "gols1_real": 1,
+      "gols2_real": 1,
+      "placar_real": "1-1",
+      "vencedor_real": "Marrocos",
+      "status_real": "Finalizado",
+      "fonte": "https://www.reuters.com/sports/soccer/morocco-advance-world-cup-after-penalty-shootout-win-over-netherlands-2026-06-30/ | https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
+      "placar_original": "Países Baixos 1 (2 pen) x 1 (3 pen) Marrocos",
+      "placar_penaltis_real": "2-3",
+      "vencedor_penaltis_real": "Marrocos"
+    }
+  ],
+  "jogo_75_status_matches": "Finalizado",
+  "src_js_sem_nan_infinity": true,
+  "src/data.js_sem_nan_infinity": true,
+  "src/results.js_sem_nan_infinity": true,
+  "src/modelo-diario-data.js_sem_nan_infinity": true,
+  "src/rede-neural-data.js_sem_nan_infinity": true,
+  "desempenho_jogo_a_jogo.csv": {
+    "rows": 32,
+    "cols": 52
+  },
+  "desempenho_fase_grupos_selecoes.csv": {
+    "rows": 48,
+    "cols": 61
+  },
+  "desempenho_jogadores_destaques.csv": {
+    "rows": 20,
+    "cols": 42
+  },
+  "desempenho_penaltis.csv": {
+    "rows": 4,
+    "cols": 22
+  },
+  "fontes_dados.csv": {
+    "rows": 8,
+    "cols": 10
+  },
+  "pendencias_dados.csv": {
+    "rows": 10,
+    "cols": 10
+  },
+  "auditoria_dados.csv": {
+    "rows": 10,
+    "cols": 8
+  }
+}

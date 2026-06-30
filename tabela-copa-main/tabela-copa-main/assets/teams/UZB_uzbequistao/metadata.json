@@ -1,0 +1,27 @@
+{
+  "country_pt": "Uzbequistão",
+  "country_en": "Uzbekistan",
+  "iso2": "uz",
+  "iso3": "UZB",
+  "slug": "uzbequistao",
+  "federation_name": "Uzbekistan Football Association",
+  "official_site": "https://ufa.uz",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/uz.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#FFFFFF",
+    "#308738",
+    "#3081F7",
+    "#8E448C",
+    "#FA4F5D"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

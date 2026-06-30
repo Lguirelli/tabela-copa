@@ -1,0 +1,27 @@
+{
+  "country_pt": "Equador",
+  "country_en": "Ecuador",
+  "iso2": "ec",
+  "iso3": "ECU",
+  "slug": "equador",
+  "federation_name": "Ecuadorian Football Federation",
+  "official_site": "https://www.fef.ec",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/ec.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#FFDD00",
+    "#ED1C24",
+    "#034EA2",
+    "#F01B22",
+    "#DA202E"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

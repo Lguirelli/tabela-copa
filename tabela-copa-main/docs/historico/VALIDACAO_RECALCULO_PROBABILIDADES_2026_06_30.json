@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "jogos_total": 104,
+  "jogos_reais": 76,
+  "jogos_projetados": 28,
+  "missing_scores": [],
+  "missing_probs": [],
+  "recalc_flags": [],
+  "real_without_model_probability": [],
+  "bracket_mismatches": [],
+  "observacao": "Resultado real preservado; probabilidades recalculadas e chaveamento propagado por vencedor real/projetado."
+}
