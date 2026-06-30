@@ -73,4 +73,5 @@ jogo;status;placar;equipe1;equipe2;vencedor
 72;Finalizado;3-1;RD Congo;Uzbequistão;RD Congo
 73;Finalizado;0-1;África do Sul;Canadá;Canadá
 74;Finalizado;1-1;Alemanha;Paraguai;Paraguai
+75;Finalizado;1-1;Países Baixos;Marrocos;Marrocos
 76;Finalizado;2-1;Brasil;Japão;Brasil

@@ -199,8 +199,8 @@
     "75": {
       "team1": "Países Baixos",
       "team2": "Marrocos",
-      "winner": "Países Baixos",
-      "loser": "Marrocos",
+      "winner": "Marrocos",
+      "loser": "Países Baixos",
       "score": "2-1"
     },
     "76": {
@@ -213,15 +213,15 @@
     "77": {
       "team1": "França",
       "team2": "Suécia",
-      "winner": "França",
-      "loser": "Suécia",
+      "winner": "Suécia",
+      "loser": "França",
       "score": "2-2"
     },
     "78": {
       "team1": "Costa do Marfim",
       "team2": "Noruega",
-      "winner": "Noruega",
-      "loser": "Costa do Marfim",
+      "winner": "Costa do Marfim",
+      "loser": "Noruega",
       "score": "2-2"
     },
     "79": {
@@ -257,7 +257,7 @@
       "team2": "Croácia",
       "winner": "Portugal",
       "loser": "Croácia",
-      "score": "2-1"
+      "score": "3-1"
     },
     "84": {
       "team1": "Espanha",
@@ -285,7 +285,7 @@
       "team2": "Gana",
       "winner": "Gana",
       "loser": "Colômbia",
-      "score": "0-1"
+      "score": "0-0"
     },
     "88": {
       "team1": "Austrália",
@@ -296,31 +296,31 @@
     },
     "89": {
       "team1": "Canadá",
-      "team2": "Países Baixos",
+      "team2": "Marrocos",
       "winner": "Canadá",
-      "loser": "Países Baixos",
-      "score": "2-1"
+      "loser": "Marrocos",
+      "score": "1-1"
     },
     "90": {
       "team1": "Paraguai",
-      "team2": "França",
-      "winner": "França",
+      "team2": "Suécia",
+      "winner": "Suécia",
       "loser": "Paraguai",
-      "score": "2-2"
+      "score": "1-2"
     },
     "91": {
       "team1": "Brasil",
-      "team2": "Noruega",
+      "team2": "Costa do Marfim",
       "winner": "Brasil",
-      "loser": "Noruega",
-      "score": "2-1"
+      "loser": "Costa do Marfim",
+      "score": "1-1"
     },
     "92": {
       "team1": "Equador",
       "team2": "Inglaterra",
       "winner": "Equador",
       "loser": "Inglaterra",
-      "score": "2-1"
+      "score": "2-2"
     },
     "93": {
       "team1": "Portugal",
@@ -334,7 +334,7 @@
       "team2": "Bélgica",
       "winner": "Estados Unidos",
       "loser": "Bélgica",
-      "score": "3-1"
+      "score": "2-1"
     },
     "95": {
       "team1": "Argentina",
@@ -352,9 +352,9 @@
     },
     "97": {
       "team1": "Canadá",
-      "team2": "França",
+      "team2": "Suécia",
       "winner": "Canadá",
-      "loser": "França",
+      "loser": "Suécia",
       "score": "2-1"
     },
     "98": {
@@ -362,7 +362,7 @@
       "team2": "Estados Unidos",
       "winner": "Portugal",
       "loser": "Estados Unidos",
-      "score": "2-1"
+      "score": "3-1"
     },
     "99": {
       "team1": "Brasil",

@@ -196,6 +196,16 @@ def confidence_label(p1: float, px: float, p2: float) -> str:
     return "baixa"
 
 
+def classification_confidence_label(p1: float, p2: float) -> str:
+    top = max(p1, p2)
+    margin = abs(p1 - p2)
+    if top >= 0.62 and margin >= 0.18:
+        return "alta"
+    if top >= 0.55 and margin >= 0.10:
+        return "média"
+    return "baixa"
+
+
 def safe_float(v: object, default: float = 0.0) -> float:
     try:
         if pd.isna(v):
@@ -238,6 +248,38 @@ def defensive_gap_adjusted_signal(xga_minus_goals_against: float, opp_quality: f
     else:
         multiplier = goal_conceded_damage_multiplier(opp_quality)
     return gap * multiplier
+
+
+def penalty_probability_from_features(f: dict) -> float:
+    """Probabilidade determinística da equipe1 vencer uma eventual disputa de pênaltis.
+
+    A disputa não deve copiar o favoritismo de 90 minutos. Ela dá mais peso a goleiro,
+    experiência, momentum e robustez do caminho no torneio.
+    """
+    logit = (
+        safe_float(f.get("rating_diff", 0.0), 0.0) * 0.025
+        + safe_float(f.get("goalkeeper_diff", 0.0), 0.0) * 0.240
+        + safe_float(f.get("experience_diff", 0.0), 0.0) * 0.100
+        + safe_float(f.get("momentum_diff", 0.0), 0.0) * 0.420
+        + safe_float(f.get("performance_memory_diff", 0.0), 0.0) * 0.220
+        + safe_float(f.get("schedule_strength_diff", 0.0), 0.0) * 0.015
+    )
+    return float(np.clip(1 / (1 + math.exp(-max(-8.0, min(8.0, logit)))), 0.34, 0.66))
+
+
+def advancement_probabilities(f: dict, p1: float, px: float, p2: float) -> Tuple[float, float, float]:
+    """Retorna probabilidade de classificação no mata-mata.
+
+    p1/px/p2 continuam representando o tempo regulamentar. A classificação adiciona
+    a parcela do empate multiplicada pela probabilidade de pênaltis.
+    """
+    pen1 = penalty_probability_from_features(f)
+    class1 = float(np.clip(p1 + px * pen1, 0.0, 1.0))
+    class2 = float(np.clip(p2 + px * (1.0 - pen1), 0.0, 1.0))
+    total = class1 + class2
+    if total <= 0:
+        return 0.5, 0.5, pen1
+    return class1 / total, class2 / total, pen1
 
 
 @dataclass
@@ -704,15 +746,22 @@ class DailyWorldCupModel:
         # O peso do resultado anterior existe, mas não pode virar atalho para inflar mata-mata.
         form1 = f.get("offensive_form_equipe1", 0.0) * 0.085 - f.get("defensive_form_equipe2", 0.0) * 0.095
         form2 = f.get("offensive_form_equipe2", 0.0) * 0.085 - f.get("defensive_form_equipe1", 0.0) * 0.095
-        schedule_adj = max(-0.10, min(0.10, f.get("schedule_strength_diff", 0.0) * 0.006))
-        points_adj = max(-0.08, min(0.08, f.get("opponent_adjusted_points_diff", 0.0) * 0.010))
-        # Produção ofensiva e vulnerabilidade defensiva ajustadas pela força dos adversários já enfrentados.
-        # adjusted_goals_against_rate alto indica dano defensivo real, principalmente por gols sofridos
-        # contra adversários fracos. Contra adversários fortes, o dano entra amortecido.
-        attack_rate1 = max(-0.10, min(0.10, (f.get("weighted_goals_for_rate_equipe1", 0.0) - 1.20) * 0.045))
-        attack_rate2 = max(-0.10, min(0.10, (f.get("weighted_goals_for_rate_equipe2", 0.0) - 1.20) * 0.045))
-        defensive_vulnerability1 = max(-0.12, min(0.14, (f.get("adjusted_goals_against_rate_equipe1", 0.0) - 1.05) * 0.060))
-        defensive_vulnerability2 = max(-0.12, min(0.14, (f.get("adjusted_goals_against_rate_equipe2", 0.0) - 1.05) * 0.060))
+        # Recalibração 2026-06-30:
+        # - aumenta o peso da força do caminho recente;
+        # - reduz o efeito de goleadas contra adversários mais fracos;
+        # - mantém gols marcados/sofridos separados para evitar atalho por saldo simples.
+        schedule_adj = max(-0.22, min(0.22, f.get("schedule_strength_diff", 0.0) * 0.018))
+        points_adj = max(-0.18, min(0.18, f.get("opponent_adjusted_points_diff", 0.0) * 0.018))
+
+        strength1 = f.get("schedule_strength_diff", 0.0)
+        strength2 = -strength1
+        credibility1 = float(np.clip(1.0 + strength1 * 0.018, 0.82, 1.18))
+        credibility2 = float(np.clip(1.0 + strength2 * 0.018, 0.82, 1.18))
+
+        attack_rate1 = max(-0.10, min(0.10, ((f.get("weighted_goals_for_rate_equipe1", 0.0) - 1.20) * 0.038) * credibility1))
+        attack_rate2 = max(-0.10, min(0.10, ((f.get("weighted_goals_for_rate_equipe2", 0.0) - 1.20) * 0.038) * credibility2))
+        defensive_vulnerability1 = max(-0.12, min(0.14, (f.get("adjusted_goals_against_rate_equipe1", 0.0) - 1.05) * 0.072))
+        defensive_vulnerability2 = max(-0.12, min(0.14, (f.get("adjusted_goals_against_rate_equipe2", 0.0) - 1.05) * 0.072))
 
         xg1 = (
             base + atk1 - def2
@@ -734,9 +783,12 @@ class DailyWorldCupModel:
         if f["knockout"]:
             xg1 *= 0.92
             xg2 *= 0.92
-        # Descanso maior reduz risco de queda física.
-        xg1 += max(-0.12, min(0.12, f["rest_diff"] * 0.025))
-        xg2 -= max(-0.12, min(0.12, f["rest_diff"] * 0.025))
+        # Descanso maior ajuda, mas no mata-mata não deve superar qualidade do caminho.
+        rest_coef = 0.012 if f["knockout"] else 0.020
+        rest_cap = 0.07 if f["knockout"] else 0.10
+        rest_adj = max(-rest_cap, min(rest_cap, f["rest_diff"] * rest_coef))
+        xg1 += rest_adj
+        xg2 -= rest_adj
         return float(np.clip(xg1, 0.25, 3.9)), float(np.clip(xg2, 0.25, 3.9))
 
     def neural_probabilities(self, features: List[float]) -> Optional[Tuple[float, float, float, float]]:
@@ -772,7 +824,9 @@ class DailyWorldCupModel:
                 return None
             # Peso da rede é apenas calibrador. Com poucos jogos validados, ela não deve inverter
             # favoritos quando xG/rating/desempenho apontam o contrário.
-            blend = min(0.08, 0.025 + len(self.history_labels) / 1600.0)
+            # A rede neural é calibradora, não decisora. Depois da fase de grupos,
+            # a amostra ainda é pequena para deixar a MLP sobrepor xG/caminho/desempenho.
+            blend = min(0.035, 0.012 + len(self.history_labels) / 3600.0)
             return p1 / total, px / total, p2 / total, blend
         except Exception:
             return None
@@ -814,9 +868,24 @@ class DailyWorldCupModel:
         total = p1 + px + p2
         p1, px, p2 = p1 / total, px / total, p2 / total
 
+        knockout_match = bool(details.get("knockout", 0.0))
+        prob_class1 = p1
+        prob_class2 = p2
+        prob_pen1 = ""
+        classification_winner = ""
+        if knockout_match:
+            prob_class1, prob_class2, pen1 = advancement_probabilities(details, p1, px, p2)
+            prob_pen1 = round(pen1, 4)
+            classification_winner = str(match["equipe1"]) if prob_class1 >= prob_class2 else str(match["equipe2"])
+
         # Placar previsto pelo resultado modal das interações Monte Carlo.
-        # A rede calibra o vencedor provável, mas não força um placar irreal.
-        predicted_outcome = ["1", "X", "2"][[p1, px, p2].index(max(p1, px, p2))]
+        # Em mata-mata, o vencedor exibido passa a ser o favorito de classificação,
+        # não apenas o favorito dos 90 minutos.
+        if knockout_match:
+            predicted_outcome = "1" if prob_class1 >= prob_class2 else "2"
+        else:
+            predicted_outcome = ["1", "X", "2"][[p1, px, p2].index(max(p1, px, p2))]
+
         if predicted_outcome == "1" and g1 <= g2:
             g1 = g2 + 1
         elif predicted_outcome == "2" and g2 <= g1:
@@ -824,6 +893,10 @@ class DailyWorldCupModel:
         elif predicted_outcome == "X":
             avg = int(round((g1 + g2) / 2))
             g1 = g2 = max(0, avg)
+
+        predicted_winner = winner_name(str(match["equipe1"]), g1, str(match["equipe2"]), g2)
+        if knockout_match and classification_winner:
+            predicted_winner = classification_winner
 
         row = {
             "jogo": int(match["jogo"]),
@@ -838,11 +911,15 @@ class DailyWorldCupModel:
             "placar_previsto": f"{g1}-{g2}",
             "gols1_previsto": int(g1),
             "gols2_previsto": int(g2),
-            "vencedor_previsto": winner_name(str(match["equipe1"]), g1, str(match["equipe2"]), g2),
+            "vencedor_previsto": predicted_winner,
             "prob_vitoria_equipe1": round(p1, 4),
             "prob_empate": round(px, 4),
             "prob_vitoria_equipe2": round(p2, 4),
-            "confianca_modelo": confidence_label(p1, px, p2),
+            "prob_classificacao_equipe1": round(prob_class1, 4) if knockout_match else "",
+            "prob_classificacao_equipe2": round(prob_class2, 4) if knockout_match else "",
+            "prob_penaltis_equipe1_modelo": prob_pen1,
+            "vencedor_classificacao_previsto": classification_winner,
+            "confianca_modelo": classification_confidence_label(prob_class1, prob_class2) if knockout_match else confidence_label(p1, px, p2),
             "peso_rede_neural": round(neural_weight, 3),
             "validacoes_anteriores_usadas": len(self.history_labels),
             "interacoes_monte_carlo": int(self.simulations),
@@ -1120,7 +1197,9 @@ class DailyWorldCupModel:
                 "peso_desempenho": "menções de jogadores/desempenho entram somente após o jogo validado",
                 "gols_separados": "gols marcados atualizam forma ofensiva; gols sofridos atualizam forma defensiva com dano ajustado pela força ofensiva/rating do adversário; saldo não é usado como atalho principal",
                 "peso_adversario": "resultado e gols marcados são valorizados contra adversários fortes; gols sofridos contra adversários fortes têm punição reduzida e contra fracos têm punição maior",
-                "rede_neural_como_calibrador": "rede neural tem peso máximo de 8% e não pode inverter favorito quando xG/rating dão vantagem clara ao outro lado",
+                "recalibracao_forca_caminho": "a força média dos adversários e os pontos ajustados por adversário têm peso maior no mata-mata; goleadas contra adversários fracos são amortecidas",
+                "probabilidade_classificacao": "em mata-mata, o modelo calcula chance de avançar separada da chance de vitória no tempo regulamentar",
+                "rede_neural_como_calibrador": "rede neural tem peso máximo de 3,5% e não pode sobrepor xG, força do caminho e desempenho recente",
                 "rede_neural": "MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual",
                 "sklearn_disponivel": SKLEARN_AVAILABLE,
                 "neural_min_samples": self.neural_min_samples,

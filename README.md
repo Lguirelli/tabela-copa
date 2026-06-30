@@ -160,3 +160,12 @@ Regras do chaveamento:
 Foi adicionada uma camada complementar em CSV para análise/modelagem, baseada na pesquisa aprofundada com corte em 2026-06-30. A base oficial de placares continua em `data/resultados_reais.csv`; a camada nova fica nos arquivos `data/desempenho_*.csv`, `data/fontes_dados.csv`, `data/pendencias_dados.csv` e `data/auditoria_dados.csv`.
 
 Correção aplicada: jogo 75 atualizado como `Países Baixos 1-1 Marrocos`, com Marrocos avançando por 3-2 nos pênaltis. Campos avançados sem verificação homogênea permanecem como `NA`.
+
+## Atualização 2026-06-30 — recalibração de probabilidades
+
+O repositório agora recalcula todos os jogos com resultado e desempenho disponível, preservando placares oficiais e atualizando probabilidades. Em mata-mata, o modelo exporta chance de vitória em 90 minutos e chance de classificação separadamente. A força do caminho recente passou a ter peso maior, goleadas contra adversários mais fracos foram amortecidas e a rede neural passou a atuar apenas como calibrador de até 3,5%.
+
+Exemplo: no jogo 89, Canadá x Marrocos, a previsão atualizada considera Marrocos levemente favorito para classificação: 50,59% contra 49,41%.
+
+Relatório técnico: `docs/RELATORIO_RECALIBRACAO_PROBABILIDADES_2026_06_30.md`.
+

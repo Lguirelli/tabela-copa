@@ -244,7 +244,10 @@ function buildMatches() {
     const predictionWinner = (sameTeam(rawPredictionWinner, equipe1) || sameTeam(rawPredictionWinner, equipe2) || rawPredictionWinner === "Empate")
       ? rawPredictionWinner
       : "";
-    const predictionSource = firstValue(prediction.fonte_previsao, prediction.placar_modelo_diario ? "Modelo diário" : "Rede neural");
+    const predictionSource = firstValue(
+      prediction.fonte_previsao,
+      prediction.usa_desempenho_copa ? "Modelo diário recalibrado" : (prediction.placar_modelo_diario ? "Modelo diário" : "Rede neural")
+    );
     const neuralScore = firstValue(prediction.placar_rede_neural_original, prediction.placar_rede_neural);
     const realScore = predictionHasReal ? prediction.placar_real : (baseHasReal ? base.placar_real : "");
     const realWinner = hasReal ? firstValue(base.vencedor_real, prediction.vencedor_real, scoreWinner(equipe1, equipe2, realScore)) : "";
@@ -500,13 +503,18 @@ function bracketCard(game, x, y, extra = "") {
   if (!m) return "";
   const displayScore = m.hasReal ? m.realScore : m.predictionScore;
   const penaltyInfo = !m.hasReal && m.decisaoPenaltis === "Sim" && m.penaltyScore ? ` · Pên. ${m.penaltyScore}` : "";
+  const class1 = Number(m.prediction?.prob_classificacao_equipe1);
+  const class2 = Number(m.prediction?.prob_classificacao_equipe2);
+  const classInfo = !m.hasReal && Number.isFinite(class1) && Number.isFinite(class2)
+    ? ` · Class.: ${(class1 * 100).toFixed(1)}% x ${(class2 * 100).toFixed(1)}%`
+    : "";
   const secondaryLabel = m.hasReal ? (m.predictionSource || "Modelo diário") : (m.needsRecalculation ? "Modelo" : "Real");
   const secondaryScore = m.hasReal ? (m.predictionScore || "—") : (m.needsRecalculation ? "recalcular" : (penaltyInfo ? `Pên. ${m.penaltyScore}` : "—"));
   const cardState = m.hasReal ? "is-real" : (m.needsRecalculation ? "is-pending" : "is-neural");
   const statusText = m.hasReal ? "Finalizado" : (m.needsRecalculation ? "Aguardando recálculo" : (m.predictionSource || "Modelo diário"));
   const winnerText = m.hasReal
     ? `Vencedor: ${m.realWinner}`
-    : (m.needsRecalculation ? "Previsto: aguardando recálculo" : `Previsto: ${m.predictionWinner || "—"}${penaltyInfo}`);
+    : (m.needsRecalculation ? "Previsto: aguardando recálculo" : `Previsto: ${m.predictionWinner || "—"}${penaltyInfo}${classInfo}`);
 
   cardPositions.set(game, { x, y, w: extra.includes("final") ? 260 : extra.includes("third") ? 240 : 220, h: 92 });
   return `<article class="bracket-stage ${extra} ${cardState}" data-game="${game}" title="${safeAttr(m.recalculationReason || "")}" style="left:${x}px;top:${y}px">
