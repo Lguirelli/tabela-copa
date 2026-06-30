@@ -12,4 +12,4 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install numpy pandas
-      - run: python pipeline_full.py
+      - run: python -m worldcup.pipeline
