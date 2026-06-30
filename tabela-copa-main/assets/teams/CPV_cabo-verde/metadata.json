@@ -1,0 +1,27 @@
+{
+  "country_pt": "Cabo Verde",
+  "country_en": "Cape Verde",
+  "iso2": "cv",
+  "iso3": "CPV",
+  "slug": "cabo-verde",
+  "federation_name": "Cape Verdean Football Federation",
+  "official_site": "https://www.fcf.cv",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/cv.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#003893",
+    "#FFFFFF",
+    "#CF2027",
+    "#003592",
+    "#DF686D"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}
