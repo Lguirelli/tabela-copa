@@ -9,10 +9,9 @@ Fluxo atual:
 4. Recalcular o modelo diário em data/modelo_diario/ e src/modelo-diario-data.js.
 5. Recalcular o modelo diário lendo data/entrada/desempenho_manual.csv como única entrada manual de desempenho.
 6. Recalcular a projeção completa do chaveamento, usando vencedor real quando houver e vencedor provável quando o resultado estiver vazio.
-7. Atualizar probabilidades de todos os jogos, inclusive finalizados, preservando placares reais.
-8. O front prioriza: placar real > modelo diário/projeção completa > rede neural pura.
+7. O front prioriza: placar real > modelo diário/projeção completa > rede neural pura.
 
-O modelo diário não sobrescreve resultados reais. Ele recalcula probabilidades em toda execução, propaga vencedores reais no chaveamento, simula jogos vazios e decide empates de mata-mata por pênaltis.
+O modelo diário não sobrescreve resultados reais. Jogos vazios são simulados para completar a tabela, e empates no mata-mata são decididos por pênaltis.
 """
 from pathlib import Path
 import json
@@ -28,11 +27,6 @@ REAL_CSV = ROOT / "data" / "resultados_reais.csv"
 NEW_CSV = ROOT / "data" / "entrada" / "novos_resultados.csv"
 MATCHES_CSV = ROOT / "data" / "matches.csv"
 OUT_TXT = ROOT / "data" / "resultados.txt"
-
-NEW_RESULTS_COLUMNS = [
-    "data", "dia_semana", "fase", "time_1", "gols_time_1", "gols_time_2", "time_2",
-    "placar", "status", "vencedor_real", "placar_penaltis_real", "vencedor_penaltis_real", "fonte"
-]
 
 ALIASES = {
     "republica da coreia": "coreia do sul", "coreia republica": "coreia do sul",
@@ -167,7 +161,7 @@ def main():
         real_df = pd.concat([real_df, new_df], ignore_index=True)
         real_df = real_df.sort_values("jogo").drop_duplicates("jogo", keep="last")
         real_df.to_csv(REAL_CSV, index=False, encoding="utf-8-sig")
-        pd.DataFrame(columns=NEW_RESULTS_COLUMNS).to_csv(NEW_CSV, index=False, sep=";", encoding="utf-8-sig")
+        pd.DataFrame(columns=["data", "dia_semana", "fase", "time_1", "gols_time_1", "gols_time_2", "time_2", "placar", "status", "fonte"]).to_csv(NEW_CSV, index=False, sep=";", encoding="utf-8-sig")
         print(f"{len(new_df)} nova(s) entrada(s) processada(s).")
     else:
         print("Nenhuma nova entrada encontrada. Recalculando rede neural atual.")
@@ -177,7 +171,7 @@ def main():
     subprocess.run([sys.executable, str(ROOT / "scripts" / "recalcular_chaveamento_completo.py")], check=True)
     real_df = read_csv(REAL_CSV)
     validate_frontend_sync(real_df)
-    print("Rede neural de referência, modelo diário ativo, chaveamento completo, probabilidades e visualizador atualizados com entrada manual única.")
+    print("Rede neural de referência, modelo diário ativo, chaveamento completo e visualizador atualizados com entrada manual única.")
 
 
 if __name__ == "__main__":

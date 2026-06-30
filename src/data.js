@@ -6,8 +6,8 @@ window.WC2026_DATA = {
     "grupos": 12,
     "selecoes": 48,
     "periodo": "2026-06-11 a 2026-07-19",
-    "resultadosReais": 76,
-    "simulados": 28
+    "resultadosReais": 77,
+    "simulados": 27
   },
   "groups": [
     {
@@ -2067,7 +2067,7 @@ window.WC2026_DATA = {
       "gols1_real": 1.0,
       "gols2_real": 1.0,
       "status_real": "Finalizado",
-      "fonte": "https://www.reuters.com/sports/soccer/morocco-advance-world-cup-after-penalty-shootout-win-over-netherlands-2026-06-30/ | https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
+      "fonte": "https://www.theguardian.com/football/live/2026/jun/29/netherlands-v-morocco-world-cup-2026-live",
       "placar_original": "Países Baixos 1 (2 pen) x 1 (3 pen) Marrocos"
     },
     {
@@ -2138,15 +2138,15 @@ window.WC2026_DATA = {
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Modelo diário",
+      "status": "Finalizado",
       "data_dt": "2026-06-30",
-      "placar_real": null,
-      "vencedor_real": null,
-      "gols1_real": null,
-      "gols2_real": null,
-      "status_real": null,
-      "fonte": null,
-      "placar_original": null
+      "placar_real": "1-2",
+      "vencedor_real": "Noruega",
+      "gols1_real": 1.0,
+      "gols2_real": 2.0,
+      "status_real": "Finalizado",
+      "fonte": "https://www.reuters.com/sports/soccer/haaland-hero-again-norway-edge-ivory-coast-advance-world-cup-2026-06-30/ | https://www.aljazeera.com/amp/sports/liveblog/2026/6/30/ivory-coast-vs-norway-live-fifa-world-cup-2026",
+      "placar_original": "Costa do Marfim 1 x 2 Noruega"
     },
     {
       "jogo": 79,
@@ -2471,8 +2471,8 @@ window.WC2026_DATA = {
       "grupo": null,
       "rodadaGrupo": 0.0,
       "equipe1": "Brasil",
-      "equipe2": "Costa do Marfim",
-      "confronto": "Brasil x Costa do Marfim",
+      "equipe2": "Noruega",
+      "confronto": "Brasil x Noruega",
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
@@ -2626,9 +2626,9 @@ window.WC2026_DATA = {
       "ordemFase": 4,
       "grupo": null,
       "rodadaGrupo": 0.0,
-      "equipe1": "Marrocos",
+      "equipe1": "Canadá",
       "equipe2": "França",
-      "confronto": "Marrocos x França",
+      "confronto": "Canadá x França",
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",

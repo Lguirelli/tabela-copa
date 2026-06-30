@@ -396,6 +396,7 @@ def rebuild_knockout_from_neural(root: Path | None = None) -> pd.DataFrame:
             **prediction,
             "possui_real": "Sim" if has_real else "Não",
             "placar_real": real_score,
+            "vencedor_real": real_winner if has_real else "",
         }
         resolved[int(game)] = {"team1": team1, "team2": team2, "winner": winner, "loser": loser, "score": prediction["placar_rede_neural"]}
 

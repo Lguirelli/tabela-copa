@@ -180,6 +180,7 @@ def run_training(root: Path | None = None, config: NeuralCopaConfig | None = Non
             "vencedor_rede_neural": win,
             "possui_real": "Sim" if bool(r.get("has_real", False)) else "Não",
             "placar_real": r.get("placar_real", "") if bool(r.get("has_real", False)) else "",
+            "vencedor_real": r.get("vencedor_real", "") if bool(r.get("has_real", False)) else "",
         })
     pred_df = pd.DataFrame(rows)
 
@@ -207,7 +208,7 @@ def run_training(root: Path | None = None, config: NeuralCopaConfig | None = Non
         "validacao_cronologica": val_metrics,
         "epochs_executados": int(history[-1]["epoch"] if history else 0),
         "best_val_loss": round(float(best_val), 6),
-        "observacao": "A rede neural é a fonte única de previsão do repositório. Entradas auxiliares são dados de elenco, ligas, técnicos, calendário e resultados reais, usando somente a rede neural como fonte de previsão.",
+        "observacao": "A rede neural é uma referência secundária. O front e o chaveamento priorizam: resultado real > modelo diário incremental > rede neural.",
     }
 
     torch.save({

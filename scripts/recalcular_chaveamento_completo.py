@@ -4,8 +4,7 @@
 
 Regra operacional:
 - Resultado real nunca é sobrescrito.
-- As probabilidades são recalculadas para TODOS os jogos a cada execução, inclusive jogos já finalizados.
-- Em jogos finalizados, o placar real é preservado e a previsão recalculada fica como leitura do modelo pré-validação.
+- Jogos sem resultado real são recalculados pelo modelo diário incremental.
 - Confrontos de fases futuras são derivados dos vencedores reais ou projetados.
 - Em mata-mata, empate não pode avançar: o script decide por pênaltis.
 - As variáveis de desempenho dentro da Copa entram via estado acumulado do modelo
@@ -39,7 +38,6 @@ from scripts.modelo_neural_diario import (  # noqa: E402
     goal_scored_multiplier,
     goal_conceded_damage_multiplier,
     defensive_gap_adjusted_signal,
-    penalty_probability_from_features,
 )
 
 BRACKET_PARENTS = {
@@ -86,19 +84,22 @@ def sigmoid(x: float) -> float:
 def decide_penalties(match: pd.Series, pred: dict) -> Tuple[str, str, float]:
     """Decisão determinística por pênaltis para não deixar Empate em mata-mata."""
     team1, team2 = str(match["equipe1"]), str(match["equipe2"])
-    f = {
-        "rating_diff": safe_float(pred.get("feature_rating_diff", 0), 0),
-        "goalkeeper_diff": safe_float(pred.get("feature_goalkeeper_diff", 0), 0),
-        "experience_diff": safe_float(pred.get("feature_experience_diff", 0), 0),
-        "momentum_diff": safe_float(pred.get("feature_momentum_diff", 0), 0),
-        "performance_memory_diff": safe_float(pred.get("feature_performance_memory_diff", 0), 0),
-        "schedule_strength_diff": safe_float(pred.get("feature_schedule_strength_diff", 0), 0),
-    }
-    # Usa a mesma lógica do modelo diário: pênaltis dependem mais de goleiro,
-    # experiência, momentum e força do caminho do que de volume ofensivo em 90 minutos.
-    p_team1 = safe_float(pred.get("prob_penaltis_equipe1_modelo", ""), None)
-    if p_team1 is None:
-        p_team1 = penalty_probability_from_features(f)
+    rating_diff = safe_float(pred.get("feature_rating_diff", 0), 0)
+    gk_diff = safe_float(pred.get("feature_goalkeeper_diff", 0), 0)
+    exp_diff = safe_float(pred.get("feature_experience_diff", 0), 0)
+    momentum_diff = safe_float(pred.get("feature_momentum_diff", 0), 0)
+    perf_diff = safe_float(pred.get("feature_performance_memory_diff", 0), 0)
+    host_diff = 0.0  # bônus de mandante/sede removido do modelo
+
+    # Pênalti depende mais de goleiro/experiência/estado emocional do que de volume ofensivo.
+    logit = (
+        rating_diff * 0.030
+        + gk_diff * 0.260
+        + exp_diff * 0.120
+        + momentum_diff * 0.460
+        + perf_diff * 0.260
+    )
+    p_team1 = float(np.clip(sigmoid(logit), 0.34, 0.66))
     winner = team1 if p_team1 >= 0.50 else team2
 
     # Placar sintético de pênaltis, sem aleatoriedade, mas variando por jogo/probabilidade.
@@ -286,7 +287,6 @@ def main() -> None:
         pred["vencedor_pos_penaltis"] = ""
         pred["criterio_vencedor"] = "Tempo regulamentar/modelado"
         pred["status_previsao"] = "Projetado"
-        pred["fonte_previsao"] = "Modelo diário recalibrado"
         pred["usa_desempenho_copa"] = "Sim"
         pred["origem_confronto"] = "Derivado do chaveamento" if game in BRACKET_PARENTS else "Tabela base"
         pred["precisa_recalculo"] = "Não"
@@ -308,21 +308,16 @@ def main() -> None:
             pred["possui_real"] = "Não"
             pred["placar_real"] = ""
             pred["vencedor_real"] = ""
-            if is_knockout(match.get("fase")):
-                class_winner = str(pred.get("vencedor_classificacao_previsto", "") or pred.get("vencedor_previsto", ""))
-                pred["criterio_vencedor"] = "Classificação modelada"
-                if score and score[0] == score[1]:
-                    pen_winner, pen_score, p_team1 = decide_penalties(match, pred)
-                    pred["decisao_penaltis"] = "Sim"
-                    pred["placar_penaltis"] = pen_score
-                    pred["prob_penaltis_equipe1"] = round(p_team1, 4)
-                    pred["vencedor_pos_penaltis"] = pen_winner
-                    pred["criterio_vencedor"] = "Pênaltis"
-                    pred["vencedor_previsto"] = pen_winner
-                    winner = pen_winner
-                else:
-                    pred["vencedor_previsto"] = class_winner
-                    winner = class_winner
+            if is_knockout(match.get("fase")) and score and score[0] == score[1]:
+                pen_winner, pen_score, p_team1 = decide_penalties(match, pred)
+                pred["decisao_penaltis"] = "Sim"
+                pred["placar_penaltis"] = pen_score
+                pred["prob_penaltis_equipe1"] = round(p_team1, 4)
+                pred["vencedor_pos_penaltis"] = pen_winner
+                pred["criterio_vencedor"] = "Pênaltis"
+                pred["vencedor_previsto"] = pen_winner
+                pred["confianca_modelo"] = "baixa"
+                winner = pen_winner
             else:
                 winner = str(pred.get("vencedor_previsto", ""))
             projected_update(model, match, pred)
@@ -388,10 +383,7 @@ def main() -> None:
         "usa_desempenho_copa": True,
         "usa_placar_real_quando_disponivel": True,
         "sobrescreve_resultado_real": False,
-        "recalcula_apenas_jogos_sem_resultado_real": False,
-        "recalcula_probabilidades_todos_jogos": True,
-        "preserva_placar_real_e_recalcula_probabilidades": True,
-        "propaga_vencedor_real_no_chaveamento": True,
+        "recalcula_apenas_jogos_sem_resultado_real": True,
         "simula_chaveamento_completo": True,
         "inclui_decisao_por_penaltis": True,
         "jogos_previstos": int(len(pred_df)),
@@ -402,13 +394,11 @@ def main() -> None:
         "ultima_entrada_real": str(model.real_results["data"].max()) if not model.real_results.empty else "",
         "fonte_desempenho_manual": "data/entrada/desempenho_manual.csv",
         "fonte_resultados_manuais": "data/entrada/novos_resultados.csv",
-        "observacao": "Resultados reais são preservados, mas as probabilidades e o placar previsto são recalculados em toda execução. Jogos reais atualizam o estado de desempenho e propagam vencedores reais no chaveamento; jogos sem real são projetados a partir desse estado atualizado. Gols marcados, gols sofridos e peso dos adversários são avaliados separadamente; força do caminho pesa mais no mata-mata; probabilidades de classificação são calculadas separadamente das probabilidades em 90 minutos.",
-        "probabilidade_classificacao_mata_mata": True,
-        "recalibracao_forca_caminho": True,
+        "observacao": "Resultados reais são preservados. Jogos sem real são recalculados e propagam classificados projetados. Gols marcados, gols sofridos e peso dos adversários são avaliados separadamente; gols sofridos contra adversários fortes têm dano defensivo amortecido.",
         "gols_separados": True,
         "usa_peso_adversario": True,
         "gols_sofridos_ajustados_por_forca_adversario": True,
-        "rede_neural_peso_maximo": 0.035,
+        "rede_neural_peso_maximo": 0.08,
     }
     if not val_df.empty:
         metrics.update({
@@ -443,9 +433,8 @@ def main() -> None:
     readme.write_text(
         "# Projeção completa do chaveamento\n\n"
         "- Resultado real é prioridade e nunca é sobrescrito.\n"
-        "- As probabilidades são recalculadas para todos os jogos a cada execução, inclusive os já finalizados.\n"
-        "- Jogos finalizados preservam o placar real, mas atualizam a leitura do modelo e alimentam o estado de desempenho.\n"
-        "- O classificado real ou projetado alimenta a próxima fase para manter a tabela completa.\n"
+        "- Jogos sem resultado real são recalculados pelo modelo diário incremental.\n"
+        "- O classificado projetado alimenta a próxima fase para manter a tabela completa.\n"
         "- Em mata-mata, placar empatado gera decisão por pênaltis e vencedor projetado.\n"
         "- Variáveis de desempenho da Copa entram via rating dinâmico, forma ofensiva, forma defensiva, força dos adversários, momentum, memória de desempenho e `data/entrada/desempenho_manual.csv`.\n\n"
         f"Jogos reais preservados: {real_count}\n\n"
