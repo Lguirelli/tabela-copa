@@ -1,16 +1,22 @@
-from extractor import extract_fixtures
-from worker import process_match
-from normalizer import normalize_match
-from storage import save_raw, save_silver
 
-def run():
-    result = extract_fixtures()
-    save_raw(result)
+from ingestion.cache_store import load_state, save_state, is_new_or_updated, mark_processed
+import json
 
-    matches = normalize_match(result)
+def load_data():
+    with open("data/processed/matches_enriched.json", "r") as f:
+        return json.load(f)
 
-    for m in matches:
-        process_match(m)
+def run_pipeline():
+    data = load_data()
+    state = load_state()
 
-if __name__ == "__main__":
-    run()
+    updated = []
+
+    for match in data:
+        if is_new_or_updated(match, state):
+            updated.append(match)
+            mark_processed(match, state)
+
+    save_state(state)
+    print("Incremental ETL updated:", len(updated))
+    return updated
