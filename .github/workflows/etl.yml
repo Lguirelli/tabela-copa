@@ -1,18 +1,27 @@
 
-name: ETL
+name: ETL Pipeline
+
 on:
   push:
-    paths: ['**']
+    paths:
+      - 'ingestion/**'
+      - 'data/**'
+  schedule:
+    - cron: '0 6 * * *'
+
 jobs:
-  run:
+  run-etl:
     runs-on: ubuntu-latest
     steps:
-      - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=." >> $GITHUB_ENV
-
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-      - run: pip install numpy pandas
-      - run: python -m worldcup.pipeline
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python -m ingestion.main
