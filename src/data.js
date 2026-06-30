@@ -6,7 +6,8 @@ window.WC2026_DATA = {
     "grupos": 12,
     "selecoes": 48,
     "periodo": "2026-06-11 a 2026-07-19",
-    "resultadosReais": 73
+    "resultadosReais": 76,
+    "simulados": 28
   },
   "groups": [
     {
@@ -142,7 +143,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "México 2 x 0 África do Sul"
+      "placar_original": "México 2 x 0 África do Sul",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781136000000
     },
     {
       "jogo": 2,
@@ -167,7 +171,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "República da Coreia 2 x 1 Tchéquia"
+      "placar_original": "República da Coreia 2 x 1 Tchéquia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781136000000
     },
     {
       "jogo": 3,
@@ -192,7 +199,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Canadá 1 x 1 Bósnia e Herzegovina"
+      "placar_original": "Canadá 1 x 1 Bósnia e Herzegovina",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781222400000
     },
     {
       "jogo": 4,
@@ -217,7 +227,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Estados Unidos 4 x 1 Paraguai"
+      "placar_original": "Estados Unidos 4 x 1 Paraguai",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781222400000
     },
     {
       "jogo": 5,
@@ -242,7 +255,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Haiti 0 x 1 Escócia"
+      "placar_original": "Haiti 0 x 1 Escócia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781308800000
     },
     {
       "jogo": 6,
@@ -267,7 +283,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Austrália 2 x 0 Turquia"
+      "placar_original": "Austrália 2 x 0 Turquia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781308800000
     },
     {
       "jogo": 7,
@@ -292,7 +311,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Brasil 1 x 1 Marrocos"
+      "placar_original": "Brasil 1 x 1 Marrocos",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781308800000
     },
     {
       "jogo": 8,
@@ -317,7 +339,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Catar 1 x 1 Suíça"
+      "placar_original": "Catar 1 x 1 Suíça",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781308800000
     },
     {
       "jogo": 9,
@@ -342,7 +367,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Costa do Marfim 1 x 0 Equador"
+      "placar_original": "Costa do Marfim 1 x 0 Equador",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781395200000
     },
     {
       "jogo": 10,
@@ -367,7 +395,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Alemanha 7 x 1 Curaçao"
+      "placar_original": "Alemanha 7 x 1 Curaçao",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781395200000
     },
     {
       "jogo": 11,
@@ -392,7 +423,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Holanda 2 x 2 Japão"
+      "placar_original": "Holanda 2 x 2 Japão",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781395200000
     },
     {
       "jogo": 12,
@@ -417,7 +451,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Suécia 5 x 1 Tunísia"
+      "placar_original": "Suécia 5 x 1 Tunísia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781395200000
     },
     {
       "jogo": 13,
@@ -442,7 +479,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Arábia Saudita 1 x 1 Uruguai"
+      "placar_original": "Arábia Saudita 1 x 1 Uruguai",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781481600000
     },
     {
       "jogo": 14,
@@ -467,7 +507,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Espanha 0 x 0 Cabo Verde"
+      "placar_original": "Espanha 0 x 0 Cabo Verde",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781481600000
     },
     {
       "jogo": 15,
@@ -492,7 +535,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Irã 2 x 2 Nova Zelândia"
+      "placar_original": "Irã 2 x 2 Nova Zelândia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781481600000
     },
     {
       "jogo": 16,
@@ -517,7 +563,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Bélgica 1 x 1 Egito"
+      "placar_original": "Bélgica 1 x 1 Egito",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781481600000
     },
     {
       "jogo": 17,
@@ -542,7 +591,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "França 3 x 1 Senegal"
+      "placar_original": "França 3 x 1 Senegal",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781568000000
     },
     {
       "jogo": 18,
@@ -567,7 +619,10 @@ window.WC2026_DATA = {
       "gols2_real": 4.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Iraque 1 x 4 Noruega"
+      "placar_original": "Iraque 1 x 4 Noruega",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781568000000
     },
     {
       "jogo": 19,
@@ -592,7 +647,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Argentina 3 x 0 Argélia"
+      "placar_original": "Argentina 3 x 0 Argélia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781568000000
     },
     {
       "jogo": 20,
@@ -617,7 +675,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Áustria 3 x 1 Jordânia"
+      "placar_original": "Áustria 3 x 1 Jordânia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781568000000
     },
     {
       "jogo": 21,
@@ -642,7 +703,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Gana 1 x 0 Panamá"
+      "placar_original": "Gana 1 x 0 Panamá",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781654400000
     },
     {
       "jogo": 22,
@@ -667,7 +731,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Inglaterra 4 x 2 Croácia"
+      "placar_original": "Inglaterra 4 x 2 Croácia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781654400000
     },
     {
       "jogo": 23,
@@ -692,7 +759,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Portugal 1 x 1 RD do Congo"
+      "placar_original": "Portugal 1 x 1 RD do Congo",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781654400000
     },
     {
       "jogo": 24,
@@ -717,7 +787,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Uzbequistão 1 x 3 Colômbia"
+      "placar_original": "Uzbequistão 1 x 3 Colômbia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781654400000
     },
     {
       "jogo": 25,
@@ -742,7 +815,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Tchéquia 1 x 1 África do Sul"
+      "placar_original": "Tchéquia 1 x 1 África do Sul",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781740800000
     },
     {
       "jogo": 26,
@@ -767,7 +843,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Suíça 4 x 1 Bósnia e Herzegovina"
+      "placar_original": "Suíça 4 x 1 Bósnia e Herzegovina",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781740800000
     },
     {
       "jogo": 27,
@@ -792,7 +871,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Canadá 6 x 0 Catar"
+      "placar_original": "Canadá 6 x 0 Catar",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781740800000
     },
     {
       "jogo": 28,
@@ -817,7 +899,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "México 1 x 0 República da Coreia"
+      "placar_original": "México 1 x 0 República da Coreia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781740800000
     },
     {
       "jogo": 29,
@@ -842,7 +927,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Brasil 3 x 0 Haiti"
+      "placar_original": "Brasil 3 x 0 Haiti",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781827200000
     },
     {
       "jogo": 30,
@@ -867,7 +955,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Escócia 0 x 1 Marrocos"
+      "placar_original": "Escócia 0 x 1 Marrocos",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781827200000
     },
     {
       "jogo": 31,
@@ -892,7 +983,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Turquia 0 x 1 Paraguai"
+      "placar_original": "Turquia 0 x 1 Paraguai",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781827200000
     },
     {
       "jogo": 32,
@@ -917,7 +1011,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Estados Unidos 2 x 0 Austrália"
+      "placar_original": "Estados Unidos 2 x 0 Austrália",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781827200000
     },
     {
       "jogo": 33,
@@ -942,7 +1039,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Alemanha 2 x 1 Costa do Marfim"
+      "placar_original": "Alemanha 2 x 1 Costa do Marfim",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781913600000
     },
     {
       "jogo": 34,
@@ -967,7 +1067,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Equador 0 x 0 Curaçao"
+      "placar_original": "Equador 0 x 0 Curaçao",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781913600000
     },
     {
       "jogo": 35,
@@ -992,7 +1095,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Holanda 5 x 1 Suécia"
+      "placar_original": "Holanda 5 x 1 Suécia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781913600000
     },
     {
       "jogo": 36,
@@ -1017,7 +1123,10 @@ window.WC2026_DATA = {
       "gols2_real": 4.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Tunísia 0 x 4 Japão"
+      "placar_original": "Tunísia 0 x 4 Japão",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1781913600000
     },
     {
       "jogo": 37,
@@ -1042,7 +1151,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Uruguai 2 x 2 Cabo Verde"
+      "placar_original": "Uruguai 2 x 2 Cabo Verde",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782000000000
     },
     {
       "jogo": 38,
@@ -1067,7 +1179,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Espanha 4 x 0 Arábia Saudita"
+      "placar_original": "Espanha 4 x 0 Arábia Saudita",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782000000000
     },
     {
       "jogo": 39,
@@ -1092,7 +1207,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Bélgica 0 x 0 Irã"
+      "placar_original": "Bélgica 0 x 0 Irã",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782000000000
     },
     {
       "jogo": 40,
@@ -1117,7 +1235,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Nova Zelândia 1 x 3 Egito"
+      "placar_original": "Nova Zelândia 1 x 3 Egito",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782000000000
     },
     {
       "jogo": 41,
@@ -1142,7 +1263,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Noruega 3 x 2 Senegal"
+      "placar_original": "Noruega 3 x 2 Senegal",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782086400000
     },
     {
       "jogo": 42,
@@ -1167,7 +1291,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "França 3 x 0 Iraque"
+      "placar_original": "França 3 x 0 Iraque",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782086400000
     },
     {
       "jogo": 43,
@@ -1192,7 +1319,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Argentina 2 x 0 Áustria"
+      "placar_original": "Argentina 2 x 0 Áustria",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782086400000
     },
     {
       "jogo": 44,
@@ -1217,7 +1347,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Jordânia 1 x 2 Argélia"
+      "placar_original": "Jordânia 1 x 2 Argélia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782086400000
     },
     {
       "jogo": 45,
@@ -1242,7 +1375,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Inglaterra 0 x 0 Gana"
+      "placar_original": "Inglaterra 0 x 0 Gana",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782172800000
     },
     {
       "jogo": 46,
@@ -1267,7 +1403,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Panamá 0 x 1 Croácia"
+      "placar_original": "Panamá 0 x 1 Croácia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782172800000
     },
     {
       "jogo": 47,
@@ -1292,7 +1431,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Portugal 5 x 0 Uzbequistão"
+      "placar_original": "Portugal 5 x 0 Uzbequistão",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782172800000
     },
     {
       "jogo": 48,
@@ -1317,7 +1459,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Colômbia 1 x 0 RD do Congo"
+      "placar_original": "Colômbia 1 x 0 RD do Congo",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782172800000
     },
     {
       "jogo": 49,
@@ -1342,7 +1487,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Escócia 0 x 3 Brasil"
+      "placar_original": "Escócia 0 x 3 Brasil",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782259200000
     },
     {
       "jogo": 50,
@@ -1367,7 +1515,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Marrocos 4 x 2 Haiti"
+      "placar_original": "Marrocos 4 x 2 Haiti",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782259200000
     },
     {
       "jogo": 51,
@@ -1392,7 +1543,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Suíça 2 x 1 Canadá"
+      "placar_original": "Suíça 2 x 1 Canadá",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782259200000
     },
     {
       "jogo": 52,
@@ -1417,7 +1571,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Bósnia e Herzegovina 3 x 1 Catar"
+      "placar_original": "Bósnia e Herzegovina 3 x 1 Catar",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782259200000
     },
     {
       "jogo": 53,
@@ -1442,7 +1599,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "República Tcheca 0 x 3 México"
+      "placar_original": "República Tcheca 0 x 3 México",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782259200000
     },
     {
       "jogo": 54,
@@ -1467,7 +1627,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "África do Sul 1 x 0 República da Coreia"
+      "placar_original": "África do Sul 1 x 0 República da Coreia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782259200000
     },
     {
       "jogo": 55,
@@ -1492,7 +1655,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Curaçao 0 x 2 Costa do Marfim"
+      "placar_original": "Curaçao 0 x 2 Costa do Marfim",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782345600000
     },
     {
       "jogo": 56,
@@ -1517,7 +1683,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Equador 2 x 1 Alemanha"
+      "placar_original": "Equador 2 x 1 Alemanha",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782345600000
     },
     {
       "jogo": 57,
@@ -1542,7 +1711,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Japão 1 x 1 Suécia"
+      "placar_original": "Japão 1 x 1 Suécia",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782345600000
     },
     {
       "jogo": 58,
@@ -1567,7 +1739,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Tunísia 1 x 3 Holanda"
+      "placar_original": "Tunísia 1 x 3 Holanda",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782345600000
     },
     {
       "jogo": 59,
@@ -1592,7 +1767,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Turquia 3 x 2 Estados Unidos"
+      "placar_original": "Turquia 3 x 2 Estados Unidos",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782345600000
     },
     {
       "jogo": 60,
@@ -1617,7 +1795,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://exame.com/esporte/copa-do-mundo-2026-veja-os-resultados-de-todos-jogos-ate-aqui-dia-a-dia/",
-      "placar_original": "Paraguai 0 x 0 Austrália"
+      "placar_original": "Paraguai 0 x 0 Austrália",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782345600000
     },
     {
       "jogo": 61,
@@ -1642,7 +1823,10 @@ window.WC2026_DATA = {
       "gols2_real": 4.0,
       "status_real": "Finalizado",
       "fonte": "https://www.foxsports.com/soccer/fifa-world-cup-men-norway-vs-france-jun-26-2026-game-boxscore-647676 | https://www.reuters.com/sports/soccer/dembele-hat-trick-helps-france-beat-second-string-norway-4-1-top-group-2026-06-26/",
-      "placar_original": "Noruega 1 x 4 França"
+      "placar_original": "Noruega 1 x 4 França",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782432000000
     },
     {
       "jogo": 62,
@@ -1667,7 +1851,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://theanalyst.com/articles/senegal-vs-iraq-stats-world-cup-2026 | https://www.reuters.com/sports/soccer/senegal-rout-10-man-iraq-stay-world-cup-hunt-2026-06-26/",
-      "placar_original": "Senegal 5 x 0 Iraque"
+      "placar_original": "Senegal 5 x 0 Iraque",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782432000000
     },
     {
       "jogo": 63,
@@ -1692,7 +1879,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://www.theguardian.com/football/live/2026/jun/27/fifa-world-cup-2026-live-egypt-v-iran-updates-egy-vs-irn-group-g-match-score-latest | https://www.reuters.com/sports/soccer/irans-taremi-criticises-logistical-issues-suggests-side-not-welcome-us-2026-06-27/",
-      "placar_original": "Egito 1 x 1 Irã"
+      "placar_original": "Egito 1 x 1 Irã",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782432000000
     },
     {
       "jogo": 64,
@@ -1717,7 +1907,10 @@ window.WC2026_DATA = {
       "gols2_real": 5.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/belgium-beat-new-zealand-5-1-advance-world-cup-knockout-stage-2026-06-27/",
-      "placar_original": "Nova Zelândia 1 x 5 Bélgica"
+      "placar_original": "Nova Zelândia 1 x 5 Bélgica",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782432000000
     },
     {
       "jogo": 65,
@@ -1742,7 +1935,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://www.theguardian.com/football/live/2026/jun/26/cape-verde-v-saudi-arabia-world-cup-2026-live",
-      "placar_original": "Cabo Verde 0 x 0 Arábia Saudita"
+      "placar_original": "Cabo Verde 0 x 0 Arábia Saudita",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782432000000
     },
     {
       "jogo": 66,
@@ -1767,7 +1963,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://english.ahram.org.eg/WorldCup2026/Article/571662 | https://www.theguardian.com/football/live/2026/jun/26/uruguay-v-spain-world-cup-2026-live",
-      "placar_original": "Uruguai 0 x 1 Espanha"
+      "placar_original": "Uruguai 0 x 1 Espanha",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782432000000
     },
     {
       "jogo": 67,
@@ -1792,7 +1991,10 @@ window.WC2026_DATA = {
       "gols2_real": 2.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/england-beat-panama-2-0-win-group-l-2026-06-27/",
-      "placar_original": "Panamá 0 x 2 Inglaterra"
+      "placar_original": "Panamá 0 x 2 Inglaterra",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782518400000
     },
     {
       "jogo": 68,
@@ -1817,7 +2019,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/vlasic-header-sends-croatia-into-world-cup-knockouts-with-2-1-win-over-ghana-2026-06-27/",
-      "placar_original": "Croácia 2 x 1 Gana"
+      "placar_original": "Croácia 2 x 1 Gana",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782518400000
     },
     {
       "jogo": 69,
@@ -1842,7 +2047,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/austria-draw-with-algeria-thriller-reach-knockout-stage-iran-out-2026-06-28/",
-      "placar_original": "Argélia 3 x 3 Áustria"
+      "placar_original": "Argélia 3 x 3 Áustria",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782518400000
     },
     {
       "jogo": 70,
@@ -1867,7 +2075,10 @@ window.WC2026_DATA = {
       "gols2_real": 3.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/seventh-heaven-messi-argentina-beat-jordan-3-1-2026-06-28/",
-      "placar_original": "Jordânia 1 x 3 Argentina"
+      "placar_original": "Jordânia 1 x 3 Argentina",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782518400000
     },
     {
       "jogo": 71,
@@ -1892,7 +2103,10 @@ window.WC2026_DATA = {
       "gols2_real": 0.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/colombia-portugal-advance-after-no-bore-draw-miami-2026-06-28/ | https://elpais.com/america-colombia/2026-06-27/colombia-portugal-en-vivo-el-partido-del-grupo-k-del-mundial-2026.html",
-      "placar_original": "Colômbia 0 x 0 Portugal"
+      "placar_original": "Colômbia 0 x 0 Portugal",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782518400000
     },
     {
       "jogo": 72,
@@ -1917,7 +2131,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/dr-congo-seal-place-world-cup-knockouts-with-comeback-win-over-uzbekistan-2026-06-28/ | https://www.theguardian.com/football/live/2026/jun/27/dr-congo-v-uzbekistan-world-cup-2026-live",
-      "placar_original": "RD Congo 3 x 1 Uzbequistão"
+      "placar_original": "RD Congo 3 x 1 Uzbequistão",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782518400000
     },
     {
       "jogo": 73,
@@ -1928,7 +2145,7 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "África do Sul",
       "equipe2": "Canadá",
       "confronto": "África do Sul x Canadá",
@@ -1942,7 +2159,10 @@ window.WC2026_DATA = {
       "gols2_real": 1.0,
       "status_real": "Finalizado",
       "fonte": "https://www.reuters.com/sports/soccer/canada-score-late-winner-advance-last-16-world-cup-2026-06-28/",
-      "placar_original": "África do Sul 0 x 1 Canadá"
+      "placar_original": "África do Sul 0 x 1 Canadá",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782604800000
     },
     {
       "jogo": 74,
@@ -1953,21 +2173,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Alemanha",
       "equipe2": "Paraguai",
       "confronto": "Alemanha x Paraguai",
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
-      "placar_real": null,
-      "vencedor_real": null,
-      "gols1_real": null,
-      "gols2_real": null,
-      "status_real": null,
-      "fonte": null,
-      "placar_original": null
+      "status": "Finalizado",
+      "placar_real": "1-1",
+      "vencedor_real": "Paraguai",
+      "gols1_real": 1.0,
+      "gols2_real": 1.0,
+      "status_real": "Finalizado",
+      "fonte": "https://www.theguardian.com/football/live/2026/jun/29/germany-v-paraguay-world-cup-2026-last-32-live | score-feed-worldcup-2026-06-29T23:36Z",
+      "placar_original": "Alemanha 1 (3 pen) x 1 (4 pen) Paraguai",
+      "placar_penaltis_real": "3-4",
+      "vencedor_penaltis_real": "Paraguai",
+      "data_dt": 1782691200000
     },
     {
       "jogo": 75,
@@ -1978,21 +2201,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Países Baixos",
       "equipe2": "Marrocos",
       "confronto": "Países Baixos x Marrocos",
       "estadio": "Estadio BBVA",
       "cidade": "Monterrey",
       "pais": "México",
-      "status": "Rede neural",
-      "placar_real": null,
-      "vencedor_real": null,
-      "gols1_real": null,
-      "gols2_real": null,
-      "status_real": null,
-      "fonte": null,
-      "placar_original": null
+      "status": "Finalizado",
+      "placar_real": "1-1",
+      "vencedor_real": "Marrocos",
+      "gols1_real": 1.0,
+      "gols2_real": 1.0,
+      "status_real": "Finalizado",
+      "fonte": "https://www.reuters.com/sports/soccer/morocco-advance-world-cup-after-penalty-shootout-win-over-netherlands-2026-06-30/ | https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
+      "placar_original": "Países Baixos 1 (2 pen) x 1 (3 pen) Marrocos",
+      "placar_penaltis_real": "2-3",
+      "vencedor_penaltis_real": "Marrocos",
+      "data_dt": 1782691200000
     },
     {
       "jogo": 76,
@@ -2003,21 +2229,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Brasil",
       "equipe2": "Japão",
       "confronto": "Brasil x Japão",
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
-      "placar_real": null,
-      "vencedor_real": null,
-      "gols1_real": null,
-      "gols2_real": null,
-      "status_real": null,
-      "fonte": null,
-      "placar_original": null
+      "status": "Finalizado",
+      "placar_real": "2-1",
+      "vencedor_real": "Brasil",
+      "gols1_real": 2.0,
+      "gols2_real": 1.0,
+      "status_real": "Finalizado",
+      "fonte": "https://www.reuters.com/sports/soccer/martinelli-rescue-brazil-edge-japan-2-1-last-32-2026-06-29/ | https://www.sofascore.com/news/brazil-2-1-japan-casemiro-leads-late-turnaround | https://www.sofascore.com/football/match/japan-brazil/YUbsvVb",
+      "placar_original": "Brasil 2 x 1 Japão",
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782691200000
     },
     {
       "jogo": 77,
@@ -2028,21 +2257,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "França",
       "equipe2": "Suécia",
       "confronto": "França x Suécia",
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782777600000
     },
     {
       "jogo": 78,
@@ -2053,21 +2285,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Costa do Marfim",
       "equipe2": "Noruega",
       "confronto": "Costa do Marfim x Noruega",
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782777600000
     },
     {
       "jogo": 79,
@@ -2078,21 +2313,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "México",
       "equipe2": "Equador",
       "confronto": "México x Equador",
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782777600000
     },
     {
       "jogo": 80,
@@ -2103,21 +2341,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Inglaterra",
       "equipe2": "RD Congo",
       "confronto": "Inglaterra x RD Congo",
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782864000000
     },
     {
       "jogo": 81,
@@ -2128,21 +2369,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Estados Unidos",
       "equipe2": "Bósnia e Herzegovina",
       "confronto": "Estados Unidos x Bósnia e Herzegovina",
       "estadio": "Levi's Stadium",
       "cidade": "San Francisco Bay Area",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782864000000
     },
     {
       "jogo": 82,
@@ -2153,21 +2397,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Bélgica",
       "equipe2": "Senegal",
       "confronto": "Bélgica x Senegal",
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782864000000
     },
     {
       "jogo": 83,
@@ -2178,21 +2425,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Portugal",
       "equipe2": "Croácia",
       "confronto": "Portugal x Croácia",
       "estadio": "BMO Field",
       "cidade": "Toronto",
       "pais": "Canadá",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782950400000
     },
     {
       "jogo": 84,
@@ -2203,21 +2453,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Espanha",
       "equipe2": "Áustria",
       "confronto": "Espanha x Áustria",
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782950400000
     },
     {
       "jogo": 85,
@@ -2228,21 +2481,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Suíça",
       "equipe2": "Argélia",
       "confronto": "Suíça x Argélia",
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1782950400000
     },
     {
       "jogo": 86,
@@ -2253,21 +2509,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Argentina",
       "equipe2": "Cabo Verde",
       "confronto": "Argentina x Cabo Verde",
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783036800000
     },
     {
       "jogo": 87,
@@ -2278,21 +2537,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Colômbia",
       "equipe2": "Gana",
       "confronto": "Colômbia x Gana",
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783036800000
     },
     {
       "jogo": 88,
@@ -2303,21 +2565,24 @@ window.WC2026_DATA = {
       "fase": "16 avos de final",
       "ordemFase": 2,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Austrália",
       "equipe2": "Egito",
       "confronto": "Austrália x Egito",
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783036800000
     },
     {
       "jogo": 89,
@@ -2328,21 +2593,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Canadá",
       "equipe2": "Países Baixos",
       "confronto": "Canadá x Países Baixos",
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783123200000
     },
     {
       "jogo": 90,
@@ -2353,21 +2621,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Alemanha",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Paraguai",
       "equipe2": "França",
-      "confronto": "Alemanha x França",
+      "confronto": "Paraguai x França",
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783123200000
     },
     {
       "jogo": 91,
@@ -2378,21 +2649,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Brasil",
-      "equipe2": "Noruega",
-      "confronto": "Brasil x Noruega",
+      "equipe2": "Costa do Marfim",
+      "confronto": "Brasil x Costa do Marfim",
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783209600000
     },
     {
       "jogo": 92,
@@ -2403,21 +2677,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Equador",
+      "rodadaGrupo": 0.0,
+      "equipe1": "México",
       "equipe2": "Inglaterra",
-      "confronto": "Equador x Inglaterra",
+      "confronto": "México x Inglaterra",
       "estadio": "Estadio Azteca",
       "cidade": "Mexico City",
       "pais": "México",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783209600000
     },
     {
       "jogo": 93,
@@ -2428,21 +2705,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Portugal",
       "equipe2": "Espanha",
       "confronto": "Portugal x Espanha",
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783296000000
     },
     {
       "jogo": 94,
@@ -2453,21 +2733,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Estados Unidos",
       "equipe2": "Bélgica",
       "confronto": "Estados Unidos x Bélgica",
       "estadio": "Lumen Field",
       "cidade": "Seattle",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783296000000
     },
     {
       "jogo": 95,
@@ -2478,21 +2761,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Argentina",
-      "equipe2": "Egito",
-      "confronto": "Argentina x Egito",
+      "equipe2": "Austrália",
+      "confronto": "Argentina x Austrália",
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783382400000
     },
     {
       "jogo": 96,
@@ -2503,21 +2789,24 @@ window.WC2026_DATA = {
       "fase": "Oitavas de final",
       "ordemFase": 3,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Suíça",
-      "equipe2": "Gana",
-      "confronto": "Suíça x Gana",
+      "equipe2": "Colômbia",
+      "confronto": "Suíça x Colômbia",
       "estadio": "BC Place",
       "cidade": "Vancouver",
       "pais": "Canadá",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783382400000
     },
     {
       "jogo": 97,
@@ -2528,21 +2817,24 @@ window.WC2026_DATA = {
       "fase": "Quartas de final",
       "ordemFase": 4,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Canadá",
-      "equipe2": "Alemanha",
-      "confronto": "Canadá x Alemanha",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Países Baixos",
+      "equipe2": "França",
+      "confronto": "Países Baixos x França",
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783555200000
     },
     {
       "jogo": 98,
@@ -2553,21 +2845,24 @@ window.WC2026_DATA = {
       "fase": "Quartas de final",
       "ordemFase": 4,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Portugal",
       "equipe2": "Estados Unidos",
       "confronto": "Portugal x Estados Unidos",
       "estadio": "SoFi Stadium",
       "cidade": "Los Angeles",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783641600000
     },
     {
       "jogo": 99,
@@ -2578,21 +2873,24 @@ window.WC2026_DATA = {
       "fase": "Quartas de final",
       "ordemFase": 4,
       "grupo": null,
-      "rodadaGrupo": null,
+      "rodadaGrupo": 0.0,
       "equipe1": "Brasil",
-      "equipe2": "Equador",
-      "confronto": "Brasil x Equador",
+      "equipe2": "México",
+      "confronto": "Brasil x México",
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783728000000
     },
     {
       "jogo": 100,
@@ -2603,21 +2901,24 @@ window.WC2026_DATA = {
       "fase": "Quartas de final",
       "ordemFase": 4,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Argentina",
-      "equipe2": "Gana",
-      "confronto": "Argentina x Gana",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Suíça",
+      "equipe2": "Argentina",
+      "confronto": "Suíça x Argentina",
       "estadio": "Arrowhead Stadium",
       "cidade": "Kansas City",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783728000000
     },
     {
       "jogo": 101,
@@ -2628,21 +2929,24 @@ window.WC2026_DATA = {
       "fase": "Semifinais",
       "ordemFase": 5,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Alemanha",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Países Baixos",
       "equipe2": "Portugal",
-      "confronto": "Alemanha x Portugal",
+      "confronto": "Países Baixos x Portugal",
       "estadio": "AT&T Stadium",
       "cidade": "Dallas",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1783987200000
     },
     {
       "jogo": 102,
@@ -2653,21 +2957,24 @@ window.WC2026_DATA = {
       "fase": "Semifinais",
       "ordemFase": 5,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Equador",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Brasil",
       "equipe2": "Argentina",
-      "confronto": "Equador x Argentina",
+      "confronto": "Brasil x Argentina",
       "estadio": "Mercedes-Benz Stadium",
       "cidade": "Atlanta",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1784073600000
     },
     {
       "jogo": 103,
@@ -2678,21 +2985,24 @@ window.WC2026_DATA = {
       "fase": "Disputa de 3º lugar",
       "ordemFase": 6,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Portugal",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Países Baixos",
       "equipe2": "Argentina",
-      "confronto": "Portugal x Argentina",
+      "confronto": "Países Baixos x Argentina",
       "estadio": "Hard Rock Stadium",
       "cidade": "Miami",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1784332800000
     },
     {
       "jogo": 104,
@@ -2703,21 +3013,24 @@ window.WC2026_DATA = {
       "fase": "Final",
       "ordemFase": 7,
       "grupo": null,
-      "rodadaGrupo": null,
-      "equipe1": "Alemanha",
-      "equipe2": "Equador",
-      "confronto": "Alemanha x Equador",
+      "rodadaGrupo": 0.0,
+      "equipe1": "Portugal",
+      "equipe2": "Brasil",
+      "confronto": "Portugal x Brasil",
       "estadio": "MetLife Stadium",
       "cidade": "New York/New Jersey",
       "pais": "Estados Unidos",
-      "status": "Rede neural",
+      "status": "Modelo diário",
       "placar_real": null,
       "vencedor_real": null,
       "gols1_real": null,
       "gols2_real": null,
       "status_real": null,
       "fonte": null,
-      "placar_original": null
+      "placar_original": null,
+      "placar_penaltis_real": null,
+      "vencedor_penaltis_real": null,
+      "data_dt": 1784419200000
     }
   ]
 };

@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-Atualiza resultados reais e treina novamente a rede neural da Copa.
+Atualiza resultados reais, rede neural de referência e modelo diário ativo da Copa.
 
-Fluxo único atual:
+Fluxo atual:
 1. Ler novas entradas em data/entrada/novos_resultados.csv, se existir.
-2. Atualizar data/resultados_reais.csv e data/resultados.txt.
-3. Recriar a rede neural em data/rede_neural/ e src/rede-neural-data.js.
+2. Atualizar data/resultados_reais.csv, data/resultados.txt e campos reais do frontend.
+3. Recriar a rede neural de referência em data/rede_neural/ e src/rede-neural-data.js.
+4. Recalcular o modelo diário em data/modelo_diario/ e src/modelo-diario-data.js.
+5. Recalcular o modelo diário lendo data/entrada/desempenho_manual.csv como única entrada manual de desempenho.
+6. Recalcular a projeção completa do chaveamento, usando vencedor real quando houver e vencedor provável quando o resultado estiver vazio.
+7. O front prioriza: placar real > modelo diário/projeção completa > rede neural pura.
 
-Não usa previsões antigas, modelo auxiliar ou bases auxiliares antigas como fonte de previsão.
+O modelo diário não sobrescreve resultados reais. Jogos vazios são simulados para completar a tabela, e empates no mata-mata são decididos por pênaltis.
 """
 from pathlib import Path
 import json
@@ -112,8 +116,9 @@ def load_new_results(matches):
             "equipe1": b["t1"], "equipe2": b["t2"],
             "gols1_real": g1, "gols2_real": g2,
             "placar_real": f"{g1}-{g2}",
-            "vencedor_real": winner(b["t1"], g1, b["t2"], g2),
-            "status_real": "Finalizado", "fonte": r.get("fonte", ""), "placar_original": r.get("placar", "")
+            "vencedor_real": str(r.get("vencedor_penaltis_real", r.get("vencedor_real", ""))).strip() or winner(b["t1"], g1, b["t2"], g2),
+            "status_real": "Finalizado", "fonte": r.get("fonte", ""), "placar_original": r.get("placar", ""),
+            "placar_penaltis_real": r.get("placar_penaltis_real", ""), "vencedor_penaltis_real": r.get("vencedor_penaltis_real", "")
         })
     return pd.DataFrame(rows)
 
@@ -162,9 +167,11 @@ def main():
         print("Nenhuma nova entrada encontrada. Recalculando rede neural atual.")
     write_results_txt(real_df)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "treinar_rede_neural_copa.py")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "modelo_neural_diario.py")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "recalcular_chaveamento_completo.py")], check=True)
     real_df = read_csv(REAL_CSV)
     validate_frontend_sync(real_df)
-    print("Rede neural retreinada e visualizador atualizado.")
+    print("Rede neural de referência, modelo diário ativo, chaveamento completo e visualizador atualizados com entrada manual única.")
 
 
 if __name__ == "__main__":

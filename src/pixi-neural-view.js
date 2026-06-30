@@ -16,14 +16,14 @@
   function number(value, fallback = '—') { return value === undefined || value === null || value === '' ? fallback : value; }
 
   function getModelSummary() {
-    const metrics = window.WC2026_REDE_NEURAL_METRICAS || {};
+    const metrics = window.WC2026_ACTIVE_METRICAS || window.WC2026_MODELO_DIARIO_METRICAS || window.WC2026_REDE_NEURAL_METRICAS || {};
     const val = metrics.validacao_cronologica || {};
     const train = metrics.treino || {};
     const schema = window.WC2026_REDE_NEURAL_SCHEMA || [];
-    const predictions = window.WC2026_REDE_NEURAL_PREVISOES || [];
-    const teams = window.WC2026_REDE_NEURAL_TEAMS || [];
+    const predictions = window.WC2026_ACTIVE_PREVISOES || window.WC2026_MODELO_DIARIO_PREVISOES || window.WC2026_REDE_NEURAL_PREVISOES || [];
+    const teams = window.WC2026_MODELO_DIARIO_ESTADO_TIMES || window.WC2026_REDE_NEURAL_TEAMS || [];
     const history = window.WC2026_REDE_NEURAL_HISTORICO || [];
-    const topTeam = [...teams].sort((a, b) => Number(b.forca_modelo_0_100 || 0) - Number(a.forca_modelo_0_100 || 0))[0] || {};
+    const topTeam = [...teams].sort((a, b) => Number((b.rating_atual_0_100 ?? b.forca_modelo_0_100) || 0) - Number((a.rating_atual_0_100 ?? a.forca_modelo_0_100) || 0))[0] || {};
     const latestPrediction = predictions.find((row) => row.possui_real !== 'Sim') || predictions[predictions.length - 1] || {};
     const latestEpoch = history[history.length - 1] || {};
     return {
@@ -45,12 +45,12 @@
     if (!target) return;
     const summary = getModelSummary();
     const rows = [
-      ['Modelo', summary.metrics.modelo || 'CopaMatchNet'],
-      ['Features', number(summary.metrics.variaveis_numericas)],
-      ['Embeddings', number(summary.metrics.times_com_embedding)],
-      ['Validação', `${pct(summary.val.acuracia_vencedor)} vencedor · ${pct(summary.val.placar_exato)} placar`],
-      ['Último treino', summary.latestEpoch.epoch ? `epoch ${summary.latestEpoch.epoch} · val_loss ${summary.latestEpoch.val_loss}` : '—'],
-      ['Time mais forte', summary.topTeam.selecao ? `${summary.topTeam.selecao} · ${summary.topTeam.forca_modelo_0_100}` : '—']
+      ['Modelo ativo', summary.metrics.modelo_ativo || summary.metrics.modelo || 'Modelo diário incremental'],
+      ['Fonte', summary.metrics.fonte_previsao || 'modelo_diario'],
+      ['Usa desempenho Copa', summary.metrics.usa_desempenho_copa ? 'Sim' : '—'],
+      ['Validação', `${pct(summary.metrics.acuracia_vencedor_percentual || summary.val.acuracia_vencedor)} vencedor · ${pct(summary.metrics.placar_exato_percentual || summary.val.placar_exato)} placar`],
+      ['Sem vazamento', summary.metrics.validacao_sem_vazamento ? 'Sim' : '—'],
+      ['Time mais forte', summary.topTeam.selecao ? `${summary.topTeam.selecao} · ${summary.topTeam.rating_atual_0_100 || summary.topTeam.forca_modelo_0_100}` : '—']
     ];
     target.innerHTML = rows.map(([label, value]) => `<div class="pixi-info-row"><span>${label}</span><b>${value}</b></div>`).join('');
   }

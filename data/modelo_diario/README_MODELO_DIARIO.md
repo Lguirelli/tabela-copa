@@ -23,47 +23,50 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **usa_simulacoes_anteriores_como_entrada**: False
 - **validacao_sem_vazamento**: True
 - **jogos_previstos**: 104
-- **jogos_com_placar_real_validado**: 73
-- **acuracia_vencedor_percentual**: 52.05
-- **placar_exato_percentual**: 6.85
-- **erro_medio_total_gols**: 2.301
-- **erro_medio_xg_total**: 2.036
-- **proximidade_media_0_100**: 40.36
-- **dias_validados**: 18
+- **jogos_com_placar_real_validado**: 75
+- **acuracia_vencedor_percentual**: 58.67
+- **placar_exato_percentual**: 8.0
+- **erro_medio_total_gols**: 2.213
+- **erro_medio_xg_total**: 2.018
+- **proximidade_media_0_100**: 44.11
+- **dias_validados**: 19
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
+- **gols_separados**: gols marcados atualizam forma ofensiva; gols sofridos atualizam forma defensiva com dano ajustado pela força ofensiva/rating do adversário; saldo não é usado como atalho principal
+- **peso_adversario**: resultado e gols marcados são valorizados contra adversários fortes; gols sofridos contra adversários fortes têm punição reduzida e contra fracos têm punição maior
+- **rede_neural_como_calibrador**: rede neural tem peso máximo de 8% e não pode inverter favorito quando xG/rating dão vantagem clara ao outro lado
 - **rede_neural**: MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual
 - **sklearn_disponivel**: True
 - **neural_min_samples**: 16
 - **simulations_parameter**: 8000
 
 ## Times com maior rating atualizado
-- Argentina: 78.086 | momentum 2.095 | jogos 3 | saldo 7
-- Portugal: 76.743 | momentum 0.772 | jogos 3 | saldo 5
-- Suíça: 76.549 | momentum 1.631 | jogos 3 | saldo 4
-- Bélgica: 76.077 | momentum 1.422 | jogos 3 | saldo 4
-- Países Baixos: 75.952 | momentum 1.776 | jogos 3 | saldo 6
-- Alemanha: 75.508 | momentum 0.461 | jogos 3 | saldo 6
-- Estados Unidos: 75.495 | momentum 0.469 | jogos 3 | saldo 4
-- Espanha: 75.296 | momentum 1.741 | jogos 3 | saldo 5
-- Brasil: 75.048 | momentum 1.767 | jogos 3 | saldo 6
-- Inglaterra: 74.426 | momentum 1.5 | jogos 3 | saldo 4
-- Colômbia: 73.463 | momentum 1.041 | jogos 3 | saldo 3
-- França: 73.296 | momentum 2.474 | jogos 3 | saldo 8
+- Argentina: 77.862 | momentum 1.317 | jogos 3 | saldo 7
+- Portugal: 76.253 | momentum 0.347 | jogos 3 | saldo 5
+- Suíça: 76.201 | momentum 1.135 | jogos 3 | saldo 4
+- Estados Unidos: 75.646 | momentum 0.201 | jogos 3 | saldo 4
+- Brasil: 75.286 | momentum 1.387 | jogos 4 | saldo 7
+- Bélgica: 75.252 | momentum 0.644 | jogos 3 | saldo 4
+- Países Baixos: 75.223 | momentum 1.065 | jogos 3 | saldo 6
+- Espanha: 75.089 | momentum 1.099 | jogos 3 | saldo 5
+- Alemanha: 74.315 | momentum 0.062 | jogos 4 | saldo 6
+- Inglaterra: 74.117 | momentum 0.927 | jogos 3 | saldo 4
+- Croácia: 73.839 | momentum 0.977 | jogos 3 | saldo 0
+- Escócia: 73.261 | momentum -0.404 | jogos 3 | saldo -3
 
 ## Últimas previsões processadas
-- Jogo 93 (2026-07-06): Colômbia x Espanha → 0-1 / Espanha (alta)
-- Jogo 94 (2026-07-06): Estados Unidos x Argélia → 1-0 / Estados Unidos (alta)
-- Jogo 95 (2026-07-07): Argentina x Irã → 1-0 / Argentina (alta)
-- Jogo 96 (2026-07-07): Suíça x Portugal → 1-0 / Suíça (baixa)
-- Jogo 97 (2026-07-09): Países Baixos x Alemanha → 0-0 / Empate (média)
+- Jogo 93 (2026-07-06): Portugal x Espanha → 2-1 / Portugal (baixa)
+- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 2-1 / Estados Unidos (baixa)
+- Jogo 95 (2026-07-07): Argentina x Austrália → 1-0 / Argentina (alta)
+- Jogo 96 (2026-07-07): Suíça x Colômbia → 1-0 / Suíça (baixa)
+- Jogo 97 (2026-07-09): Canadá x França → 1-2 / França (baixa)
 - Jogo 98 (2026-07-10): Espanha x Estados Unidos → 2-1 / Espanha (baixa)
 - Jogo 99 (2026-07-11): Brasil x México → 2-1 / Brasil (baixa)
-- Jogo 100 (2026-07-11): Argentina x Portugal → 0-0 / Empate (média)
-- Jogo 101 (2026-07-14): Alemanha x Estados Unidos → 2-1 / Alemanha (baixa)
-- Jogo 102 (2026-07-15): México x Portugal → 1-2 / Portugal (média)
-- Jogo 103 (2026-07-18): Alemanha x México → 2-1 / Alemanha (baixa)
-- Jogo 104 (2026-07-19): Estados Unidos x Portugal → 1-2 / Portugal (média)
+- Jogo 100 (2026-07-11): Suíça x Argentina → 1-2 / Argentina (baixa)
+- Jogo 101 (2026-07-14): Canadá x Estados Unidos → 1-2 / Estados Unidos (baixa)
+- Jogo 102 (2026-07-15): México x Argentina → 0-1 / Argentina (baixa)
+- Jogo 103 (2026-07-18): Canadá x Argentina → 0-1 / Argentina (baixa)
+- Jogo 104 (2026-07-19): Estados Unidos x México → 1-2 / México (baixa)
 
 ## Observação importante
 Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.

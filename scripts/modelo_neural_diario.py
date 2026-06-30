@@ -17,7 +17,7 @@ Entradas usadas:
 - data/database/matches.csv
 - data/database/referees_fifa.csv apenas como perfil agregado, sem assignments simulados
 - data/resultados_reais.csv para validação pós-previsão
-- data/desempenho/*.csv para ajuste pós-jogo, somente depois do jogo validado
+- data/entrada/desempenho_manual.csv para ajuste pós-jogo, somente depois do jogo validado
 
 Entradas propositalmente ignoradas:
 - data/previsoes_modelo.csv
@@ -26,6 +26,7 @@ Entradas propositalmente ignoradas:
 - data/database/simulated_referee_assignments.csv
 - data/neural/* como fonte de previsão
 - data/modelo/modelo_times.csv anterior
+- data/desempenho/* gerado/duplicado como fonte de entrada
 """
 from __future__ import annotations
 
@@ -96,7 +97,7 @@ LEAGUE_STRENGTH = {
     "JOR": 5.5, "HTI": 5.4, "CUW": 5.4,
 }
 
-HOST_NAMES = {"mexico", "canada", "estados unidos"}
+HOST_NAMES = set()  # bônus de mandante removido: país-sede não altera a previsão
 
 
 def norm(value: object) -> str:
@@ -204,6 +205,41 @@ def safe_float(v: object, default: float = 0.0) -> float:
         return default
 
 
+def opponent_quality_factor(opp_rating: float, opp_attack_score: float = 5.5) -> float:
+    """Fator de qualidade do adversário para ajustar gols e resultados.
+
+    > 1.0 = adversário forte/ofensivamente perigoso
+    < 1.0 = adversário mais fraco
+    """
+    rating_component = float(opp_rating) / 60.0
+    attack_component = float(opp_attack_score) / 5.5
+    return float(np.clip(rating_component * 0.68 + attack_component * 0.32, 0.70, 1.35))
+
+
+def goal_scored_multiplier(opp_quality: float) -> float:
+    """Gol marcado contra adversário forte vale mais para a forma ofensiva."""
+    return float(np.clip(opp_quality, 0.72, 1.32))
+
+
+def goal_conceded_damage_multiplier(opp_quality: float) -> float:
+    """Gol sofrido contra adversário forte gera dano menor; contra fraco gera dano maior."""
+    return float(np.clip(1.0 / max(0.70, opp_quality), 0.72, 1.35))
+
+
+def defensive_gap_adjusted_signal(xga_minus_goals_against: float, opp_quality: float) -> float:
+    """Ajusta defesa pelo adversário.
+
+    Se o time sofre menos gols que o xG contra adversário forte, recebe recompensa maior.
+    Se sofre mais gols que o xG contra adversário fraco, recebe punição maior.
+    """
+    gap = float(xga_minus_goals_against)
+    if gap >= 0:
+        multiplier = float(np.clip(opp_quality, 0.82, 1.28))
+    else:
+        multiplier = goal_conceded_damage_multiplier(opp_quality)
+    return gap * multiplier
+
+
 @dataclass
 class TeamState:
     team: str
@@ -211,6 +247,12 @@ class TeamState:
     rating_dynamic: float
     momentum: float = 0.0
     performance_memory: float = 0.0
+    offensive_form: float = 0.0
+    defensive_form: float = 0.0
+    schedule_strength: float = 60.0
+    opponent_adjusted_points: float = 0.0
+    opponent_weighted_goals_for: float = 0.0
+    opponent_weighted_goals_against: float = 0.0
     games_validated: int = 0
     last_match_date: Optional[pd.Timestamp] = None
     goals_for: int = 0
@@ -228,6 +270,7 @@ class DailyWorldCupModel:
         self.matches = pd.DataFrame()
         self.real_results = pd.DataFrame()
         self.performance_by_match_team: Dict[Tuple[int, str], float] = {}
+        self.performance_components_by_match_team: Dict[Tuple[int, str], Dict[str, float]] = {}
         self.states: Dict[str, TeamState] = {}
         self.history_features: List[List[float]] = []
         self.history_labels: List[int] = []
@@ -415,15 +458,136 @@ class DailyWorldCupModel:
         return score
 
     def load_performance_impacts(self) -> Dict[Tuple[int, str], float]:
+        """Lê somente a entrada manual auditável de desempenho.
+
+        Fonte única versionada:
+        - data/entrada/desempenho_manual.csv
+
+        Bases consolidadas antigas em data/desempenho/* não são mais usadas como entrada,
+        porque geravam duplicação e conflitos no repositório. O impacto só é aplicado
+        depois que o jogo possui resultado real validado pelo fluxo diário.
+        """
         impacts: Dict[Tuple[int, str], float] = {}
-        perf_path = self.root / "data/desempenho/jogadores_citados_desempenho_copa_2026.csv"
-        if perf_path.exists():
-            perf = pd.read_csv(perf_path, sep=";", encoding="utf-8-sig")
-            for _, r in perf.iterrows():
-                game = int(safe_float(r.get("ID jogo"), 0))
-                team = self.canonical_team(r.get("Seleção", ""))
-                impact = self.performance_text_score(r.get("Tipo de desempenho", ""), r.get("Detalhe pesquisado", ""))
-                impacts[(game, team)] = impacts.get((game, team), 0.0) + impact
+        manual_path = self.root / "data" / "entrada" / "desempenho_manual.csv"
+        if not manual_path.exists() or manual_path.stat().st_size < 10:
+            return impacts
+
+        manual = pd.DataFrame()
+        for kwargs in ({"sep": None, "engine": "python"}, {"sep": ";"}, {"sep": ","}):
+            try:
+                manual = pd.read_csv(manual_path, encoding="utf-8-sig", **kwargs)
+                if len(manual.columns) > 1:
+                    break
+            except Exception:
+                manual = pd.DataFrame()
+        if manual.empty:
+            return impacts
+        manual.columns = [str(c).replace("\ufeff", "").strip() for c in manual.columns]
+
+        def col(row, *names, default=""):
+            for name in names:
+                if name in row and not pd.isna(row.get(name)):
+                    return row.get(name)
+            return default
+
+        for _, r in manual.iterrows():
+            game_val = col(r, "jogo", "ID jogo", default="")
+            if pd.isna(game_val) or str(game_val).strip().upper() in {"", "NA"}:
+                continue
+            game = int(safe_float(game_val, 0))
+            if game <= 0:
+                continue
+
+            team = self.canonical_team(col(r, "selecao", "Seleção", "time", "equipe", default=""))
+            if not team:
+                continue
+
+            impact = safe_float(col(r, "impacto_modelo_jogador", "impacto_modelo", default=0), 0)
+            if impact == 0:
+                impact += self.performance_text_score(
+                    col(r, "tipo_desempenho", "Tipo de desempenho", default=""),
+                    col(r, "detalhe_pesquisado", "Detalhe pesquisado", default=""),
+                )
+
+            # Impacto leve por métricas de equipe, sempre vindo da linha manual auditável.
+            def num_or_none(value):
+                try:
+                    text = str(value).strip().upper()
+                    if text in {"", "NA", "NAN", "NONE"}:
+                        return None
+                    if pd.isna(value):
+                        return None
+                    return float(value)
+                except Exception:
+                    return None
+
+            metric_impact = 0.0
+            attack_component = 0.0
+            defense_component = 0.0
+            chance_quality_component = 0.0
+
+            xg_pro, xg_against = num_or_none(col(r, "xg_pro", default="NA")), num_or_none(col(r, "xg_contra", default="NA"))
+            if xg_pro is not None and xg_against is not None:
+                xg_diff = max(-2.0, min(2.0, xg_pro - xg_against))
+                metric_impact += xg_diff * 0.22
+                attack_component += max(-1.5, min(1.5, xg_pro - 1.20)) * 0.42
+                defense_component += max(-1.5, min(1.5, 1.20 - xg_against)) * 0.42
+                chance_quality_component += xg_diff * 0.18
+
+            # Agregado da fase de grupos: separa volume ofensivo de solidez defensiva.
+            gp = num_or_none(col(r, "gp", "jogos", default="NA"))
+            gf = num_or_none(col(r, "gf", "gols_pro", default="NA"))
+            ga = num_or_none(col(r, "ga", "gols_contra", default="NA"))
+            xg_total = num_or_none(col(r, "xg_total", "xg_pro_fase_grupos", default="NA"))
+            if gp is not None and gp > 0:
+                if gf is not None:
+                    gf_pg = gf / gp
+                    attack_component += max(-1.6, min(1.6, gf_pg - 1.35)) * 0.30
+                if ga is not None:
+                    ga_pg = ga / gp
+                    defense_component += max(-1.6, min(1.6, 1.15 - ga_pg)) * 0.34
+                if xg_total is not None:
+                    xg_pg = xg_total / gp
+                    attack_component += max(-1.4, min(1.4, xg_pg - 1.25)) * 0.26
+
+            shots_on, shots_on_against = num_or_none(col(r, "finalizacoes_alvo", default="NA")), num_or_none(col(r, "finalizacoes_alvo_contra", default="NA"))
+            if shots_on is not None and shots_on_against is not None:
+                shots_diff = max(-6.0, min(6.0, shots_on - shots_on_against))
+                metric_impact += shots_diff * 0.022
+                attack_component += max(-5.0, min(5.0, shots_on - 4.0)) * 0.035
+                defense_component += max(-5.0, min(5.0, 4.0 - shots_on_against)) * 0.035
+            big_chance, big_chance_against = num_or_none(col(r, "grandes_chances", default="NA")), num_or_none(col(r, "grandes_chances_contra", default="NA"))
+            if big_chance is not None and big_chance_against is not None:
+                chance_diff = max(-4.0, min(4.0, big_chance - big_chance_against))
+                metric_impact += chance_diff * 0.055
+                chance_quality_component += chance_diff * 0.08
+            box_touches, box_touches_against = num_or_none(col(r, "toques_area", default="NA")), num_or_none(col(r, "toques_area_contra", default="NA"))
+            if box_touches is not None and box_touches_against is not None:
+                touch_diff = max(-30.0, min(30.0, box_touches - box_touches_against))
+                metric_impact += touch_diff * 0.0035
+                attack_component += max(-25.0, min(25.0, box_touches - 18.0)) * 0.004
+                defense_component += max(-25.0, min(25.0, 18.0 - box_touches_against)) * 0.004
+            errors = num_or_none(col(r, "erros_gol", default="NA"))
+            if errors is not None:
+                metric_impact -= min(3.0, max(0.0, errors)) * 0.25
+                defense_component -= min(3.0, max(0.0, errors)) * 0.28
+
+            # impacto_modelo manual continua aceito, mas com teto conservador para não inflar seleções
+            # apenas por saldo/defesa da fase de grupos.
+            total = max(-1.25, min(1.25, impact * 0.55 + metric_impact))
+            attack_component = max(-1.6, min(1.6, attack_component))
+            defense_component = max(-1.6, min(1.6, defense_component))
+            chance_quality_component = max(-1.2, min(1.2, chance_quality_component))
+            key = (game, team)
+            if total != 0:
+                impacts[key] = impacts.get(key, 0.0) + total
+            prev = self.performance_components_by_match_team.get(key, {"attack": 0.0, "defense": 0.0, "chance_quality": 0.0})
+            self.performance_components_by_match_team[key] = {
+                "attack": prev.get("attack", 0.0) + attack_component,
+                "defense": prev.get("defense", 0.0) + defense_component,
+                "chance_quality": prev.get("chance_quality", 0.0) + chance_quality_component,
+            }
+
         return impacts
 
     def rest_days(self, team: str, current_date: pd.Timestamp) -> float:
@@ -459,11 +623,23 @@ class DailyWorldCupModel:
         s2 = self.states.get(t2, TeamState(t2, 60.0, 60.0))
         date = match.get("data_dt")
         rest1, rest2 = self.rest_days(t1, date), self.rest_days(t2, date)
-        host1 = 1.0 if norm(t1) in HOST_NAMES and norm(match.get("pais", "")) in HOST_NAMES else 0.0
-        host2 = 1.0 if norm(t2) in HOST_NAMES and norm(match.get("pais", "")) in HOST_NAMES else 0.0
+        # Sem bônus de mandante/sede: a Copa é multi-país e o modelo não deve inflar anfitriões
+        # nem equipes que jogam em outro país-sede. Mantemos a coluna para compatibilidade, mas zerada.
+        host1 = 0.0
+        host2 = 0.0
         knockout = 0.0 if str(match.get("fase", "")).lower().startswith("fase de grupos") else 1.0
 
+        games1 = max(1.0, float(s1.games_validated or 0) or 1.0)
+        games2 = max(1.0, float(s2.games_validated or 0) or 1.0)
+        gf_rate1, gf_rate2 = s1.goals_for / games1, s2.goals_for / games2
+        ga_rate1, ga_rate2 = s1.goals_against / games1, s2.goals_against / games2
+        weighted_gf_rate1 = s1.opponent_weighted_goals_for / games1
+        weighted_gf_rate2 = s2.opponent_weighted_goals_for / games2
+        adjusted_ga_rate1 = s1.opponent_weighted_goals_against / games1
+        adjusted_ga_rate2 = s2.opponent_weighted_goals_against / games2
+
         # Diferenças sempre na perspectiva da equipe1.
+        # Gols marcados e sofridos ficam separados para evitar que um saldo simples infle o modelo.
         f = {
             "rating_diff": s1.rating_dynamic - s2.rating_dynamic,
             "base_rating_diff": float(r1["rating_inicial_0_100"]) - float(r2["rating_inicial_0_100"]),
@@ -479,6 +655,24 @@ class DailyWorldCupModel:
             "pressing_diff": float(r1["pressao_valor"]) - float(r2["pressao_valor"]),
             "momentum_diff": s1.momentum - s2.momentum,
             "performance_memory_diff": s1.performance_memory - s2.performance_memory,
+            "offensive_form_diff": s1.offensive_form - s2.offensive_form,
+            "defensive_form_diff": s1.defensive_form - s2.defensive_form,
+            "offensive_form_equipe1": s1.offensive_form,
+            "offensive_form_equipe2": s2.offensive_form,
+            "defensive_form_equipe1": s1.defensive_form,
+            "defensive_form_equipe2": s2.defensive_form,
+            "schedule_strength_diff": s1.schedule_strength - s2.schedule_strength,
+            "opponent_adjusted_points_diff": s1.opponent_adjusted_points - s2.opponent_adjusted_points,
+            "goals_for_rate_diff": gf_rate1 - gf_rate2,
+            "goals_against_rate_diff": ga_rate1 - ga_rate2,
+            "opponent_weighted_goals_for_diff": s1.opponent_weighted_goals_for - s2.opponent_weighted_goals_for,
+            "opponent_weighted_goals_against_diff": s1.opponent_weighted_goals_against - s2.opponent_weighted_goals_against,
+            "weighted_goals_for_rate_diff": weighted_gf_rate1 - weighted_gf_rate2,
+            "adjusted_goals_against_rate_diff": adjusted_ga_rate1 - adjusted_ga_rate2,
+            "weighted_goals_for_rate_equipe1": weighted_gf_rate1,
+            "weighted_goals_for_rate_equipe2": weighted_gf_rate2,
+            "adjusted_goals_against_rate_equipe1": adjusted_ga_rate1,
+            "adjusted_goals_against_rate_equipe2": adjusted_ga_rate2,
             "rest_diff": rest1 - rest2,
             "host_diff": host1 - host2,
             "knockout": knockout,
@@ -488,8 +682,11 @@ class DailyWorldCupModel:
             f["rating_diff"], f["base_rating_diff"], f["attack_vs_defense"], f["defense_vs_attack"],
             f["midfield_diff"], f["goalkeeper_diff"], f["experience_diff"], f["league_diff"],
             f["player_quality_diff"], f["intensity_diff"], f["possession_diff"], f["pressing_diff"],
-            f["momentum_diff"], f["performance_memory_diff"], f["rest_diff"], f["host_diff"],
-            f["knockout"], f["round_group"],
+            f["momentum_diff"], f["performance_memory_diff"], f["offensive_form_diff"], f["defensive_form_diff"],
+            f["schedule_strength_diff"], f["opponent_adjusted_points_diff"], f["goals_for_rate_diff"], f["goals_against_rate_diff"],
+            f["opponent_weighted_goals_for_diff"], f["opponent_weighted_goals_against_diff"],
+            f["weighted_goals_for_rate_diff"], f["adjusted_goals_against_rate_diff"],
+            f["rest_diff"], f["host_diff"], f["knockout"], f["round_group"],
         ]
         return vector, f
 
@@ -498,12 +695,41 @@ class DailyWorldCupModel:
         r1, r2 = self.team_row(t1), self.team_row(t2)
         # Base calibrada para Copa: média levemente acima de 1.2 por equipe, ajustada por força/setor.
         base = 1.18
-        atk1 = (float(r1["ataque_score"]) - 5.5) * 0.15
-        atk2 = (float(r2["ataque_score"]) - 5.5) * 0.15
-        def1 = (float(r1["defesa_score"]) - 5.5) * 0.11
-        def2 = (float(r2["defesa_score"]) - 5.5) * 0.11
-        xg1 = base + atk1 - def2 + f["rating_diff"] * 0.018 + f["momentum_diff"] * 0.10 + f["host_diff"] * 0.15
-        xg2 = base + atk2 - def1 - f["rating_diff"] * 0.018 - f["momentum_diff"] * 0.10 - f["host_diff"] * 0.15
+        atk1 = (float(r1["ataque_score"]) - 5.5) * 0.145
+        atk2 = (float(r2["ataque_score"]) - 5.5) * 0.145
+        def1 = (float(r1["defesa_score"]) - 5.5) * 0.120
+        def2 = (float(r2["defesa_score"]) - 5.5) * 0.120
+
+        # Separação real: gol marcado aumenta a forma ofensiva; gol sofrido afeta a forma defensiva.
+        # O peso do resultado anterior existe, mas não pode virar atalho para inflar mata-mata.
+        form1 = f.get("offensive_form_equipe1", 0.0) * 0.085 - f.get("defensive_form_equipe2", 0.0) * 0.095
+        form2 = f.get("offensive_form_equipe2", 0.0) * 0.085 - f.get("defensive_form_equipe1", 0.0) * 0.095
+        schedule_adj = max(-0.10, min(0.10, f.get("schedule_strength_diff", 0.0) * 0.006))
+        points_adj = max(-0.08, min(0.08, f.get("opponent_adjusted_points_diff", 0.0) * 0.010))
+        # Produção ofensiva e vulnerabilidade defensiva ajustadas pela força dos adversários já enfrentados.
+        # adjusted_goals_against_rate alto indica dano defensivo real, principalmente por gols sofridos
+        # contra adversários fracos. Contra adversários fortes, o dano entra amortecido.
+        attack_rate1 = max(-0.10, min(0.10, (f.get("weighted_goals_for_rate_equipe1", 0.0) - 1.20) * 0.045))
+        attack_rate2 = max(-0.10, min(0.10, (f.get("weighted_goals_for_rate_equipe2", 0.0) - 1.20) * 0.045))
+        defensive_vulnerability1 = max(-0.12, min(0.14, (f.get("adjusted_goals_against_rate_equipe1", 0.0) - 1.05) * 0.060))
+        defensive_vulnerability2 = max(-0.12, min(0.14, (f.get("adjusted_goals_against_rate_equipe2", 0.0) - 1.05) * 0.060))
+
+        xg1 = (
+            base + atk1 - def2
+            + f["rating_diff"] * 0.014
+            + f["momentum_diff"] * 0.055
+            + f["performance_memory_diff"] * 0.030
+            + form1 + schedule_adj + points_adj
+            + attack_rate1 + defensive_vulnerability2
+        )
+        xg2 = (
+            base + atk2 - def1
+            - f["rating_diff"] * 0.014
+            - f["momentum_diff"] * 0.055
+            - f["performance_memory_diff"] * 0.030
+            + form2 - schedule_adj - points_adj
+            + attack_rate2 + defensive_vulnerability1
+        )
         # Jogo de mata-mata tende a maior cautela.
         if f["knockout"]:
             xg1 *= 0.92
@@ -544,8 +770,9 @@ class DailyWorldCupModel:
             total = p1 + px + p2
             if total <= 0:
                 return None
-            # Peso da rede cresce devagar conforme há validações reais.
-            blend = min(0.35, 0.08 + len(self.history_labels) / 220.0)
+            # Peso da rede é apenas calibrador. Com poucos jogos validados, ela não deve inverter
+            # favoritos quando xG/rating/desempenho apontam o contrário.
+            blend = min(0.08, 0.025 + len(self.history_labels) / 1600.0)
             return p1 / total, px / total, p2 / total, blend
         except Exception:
             return None
@@ -563,6 +790,29 @@ class DailyWorldCupModel:
             p2 = (1 - neural_weight) * p2 + neural_weight * np2
             total = p1 + px + p2
             p1, px, p2 = p1 / total, px / total, p2 / total
+
+        # Guarda de veracidade: a rede neural não pode virar o favorito quando o xG
+        # e o rating dão vantagem clara ao outro lado, salvo margem probabilística muito forte.
+        xg_margin = xg1 - xg2
+        if xg_margin > 0.28 and p2 > p1 and (p2 - p1) < 0.16:
+            excess = (p2 - p1) + 0.025
+            p2 -= excess / 2
+            p1 += excess / 2
+        elif xg_margin < -0.28 and p1 > p2 and (p1 - p2) < 0.16:
+            excess = (p1 - p2) + 0.025
+            p1 -= excess / 2
+            p2 += excess / 2
+        # Em margem estatística muito apertada, desempata pelo xG, não por ruído da rede.
+        if xg_margin > 0.08 and p2 > p1 and (p2 - p1) < 0.06:
+            excess = (p2 - p1) + 0.012
+            p2 -= excess / 2
+            p1 += excess / 2
+        elif xg_margin < -0.08 and p1 > p2 and (p1 - p2) < 0.06:
+            excess = (p1 - p2) + 0.012
+            p1 -= excess / 2
+            p2 += excess / 2
+        total = p1 + px + p2
+        p1, px, p2 = p1 / total, px / total, p2 / total
 
         # Placar previsto pelo resultado modal das interações Monte Carlo.
         # A rede calibra o vencedor provável, mas não força um placar irreal.
@@ -607,6 +857,15 @@ class DailyWorldCupModel:
         xg1, xg2 = float(prediction["xg1_modelo"]), float(prediction["xg2_modelo"])
         pred_out = outcome_from_goals(p1, p2)
         real_out = outcome_from_goals(a1, a2)
+        real_winner_manual = str(real_row.get("vencedor_real", "") or "").strip()
+        penalty_score_real = str(real_row.get("placar_penaltis_real", "") or "").strip()
+        knockout_real_penalty = (
+            str(match.get("fase", "")).strip() != "Fase de grupos"
+            and a1 == a2
+            and real_winner_manual in {t1, t2}
+        )
+        if knockout_real_penalty:
+            real_out = "1" if real_winner_manual == t1 else "2"
         exact = (p1 == a1 and p2 == a2)
         winner_ok = pred_out == real_out
         err_goals = abs(a1 - p1) + abs(a2 - p2)
@@ -616,32 +875,89 @@ class DailyWorldCupModel:
 
         perf1 = self.performance_by_match_team.get((int(match["jogo"]), t1), 0.0)
         perf2 = self.performance_by_match_team.get((int(match["jogo"]), t2), 0.0)
-        result_points1 = 3 if a1 > a2 else 1 if a1 == a2 else 0
-        result_points2 = 3 if a2 > a1 else 1 if a1 == a2 else 0
+        if knockout_real_penalty:
+            result_points1 = 2 if real_winner_manual == t1 else 1
+            result_points2 = 2 if real_winner_manual == t2 else 1
+        else:
+            result_points1 = 3 if a1 > a2 else 1 if a1 == a2 else 0
+            result_points2 = 3 if a2 > a1 else 1 if a1 == a2 else 0
         expected_margin = xg1 - xg2
         real_margin = a1 - a2
         surprise = real_margin - expected_margin
 
-        # Peso do resultado anterior: afeta o próximo jogo do mesmo time.
-        # Resultado pesa mais do que menção individual, mas desempenho ajuda a separar placar enganoso de atuação forte/fraca.
-        perf_delta = np.clip((perf1 - perf2) * 0.055, -0.45, 0.45)
-        rating_shift = np.clip(0.34 * surprise + perf_delta, -1.8, 1.8)
-
         s1 = self.states.setdefault(t1, TeamState(t1, 60.0, 60.0))
         s2 = self.states.setdefault(t2, TeamState(t2, 60.0, 60.0))
-        s1.rating_dynamic = float(np.clip(s1.rating_dynamic + rating_shift, 25, 95))
-        s2.rating_dynamic = float(np.clip(s2.rating_dynamic - rating_shift, 25, 95))
-        # Momentum com decaimento jogo a jogo.
-        s1.momentum = float(np.clip(s1.momentum * 0.55 + (result_points1 - 1) * 0.42 + (a1 - a2) * 0.10 + perf1 * 0.035, -2.5, 2.5))
-        s2.momentum = float(np.clip(s2.momentum * 0.55 + (result_points2 - 1) * 0.42 + (a2 - a1) * 0.10 + perf2 * 0.035, -2.5, 2.5))
-        s1.performance_memory = float(np.clip(s1.performance_memory * 0.60 + perf1 * 0.08, -2.0, 2.0))
-        s2.performance_memory = float(np.clip(s2.performance_memory * 0.60 + perf2 * 0.08, -2.0, 2.0))
-        for st, gf, ga, points in [(s1, a1, a2, result_points1), (s2, a2, a1, result_points2)]:
+
+        # Peso do adversário: resultado contra time forte vale mais; tropeço contra time fraco pesa mais.
+        # Gols sofridos também são ajustados: sofrer de ataque forte pesa menos negativamente;
+        # sofrer de ataque fraco pesa mais negativamente.
+        rating1_pre, rating2_pre = float(s1.rating_dynamic), float(s2.rating_dynamic)
+        opp_attack_t1 = safe_float(self.team_row(t1).get("ataque_score", 5.5), 5.5)
+        opp_attack_t2 = safe_float(self.team_row(t2).get("ataque_score", 5.5), 5.5)
+        opp_quality_for_t1 = opponent_quality_factor(rating2_pre, opp_attack_t2)
+        opp_quality_for_t2 = opponent_quality_factor(rating1_pre, opp_attack_t1)
+        opp_factor_for_t1 = goal_scored_multiplier(opp_quality_for_t1)
+        opp_factor_for_t2 = goal_scored_multiplier(opp_quality_for_t2)
+        ga_penalty_t1 = goal_conceded_damage_multiplier(opp_quality_for_t1)
+        ga_penalty_t2 = goal_conceded_damage_multiplier(opp_quality_for_t2)
+
+        expected_points1 = safe_float(prediction.get("prob_vitoria_equipe1", 0), 0) * 3 + safe_float(prediction.get("prob_empate", 0), 0)
+        expected_points2 = safe_float(prediction.get("prob_vitoria_equipe2", 0), 0) * 3 + safe_float(prediction.get("prob_empate", 0), 0)
+        result_surprise1 = float(np.clip((result_points1 - expected_points1) / 3.0, -1.0, 1.0))
+        result_surprise2 = float(np.clip((result_points2 - expected_points2) / 3.0, -1.0, 1.0))
+
+        comp1 = self.performance_components_by_match_team.get((int(match["jogo"]), t1), {})
+        comp2 = self.performance_components_by_match_team.get((int(match["jogo"]), t2), {})
+        attack_perf1, defense_perf1 = safe_float(comp1.get("attack", 0), 0), safe_float(comp1.get("defense", 0), 0)
+        attack_perf2, defense_perf2 = safe_float(comp2.get("attack", 0), 0), safe_float(comp2.get("defense", 0), 0)
+
+        # Gols marcados: avalia produção ofensiva contra a força do adversário.
+        offense_signal1 = float(np.clip((a1 - xg1) * opp_factor_for_t1 + attack_perf1 * 0.35, -2.0, 2.0))
+        offense_signal2 = float(np.clip((a2 - xg2) * opp_factor_for_t2 + attack_perf2 * 0.35, -2.0, 2.0))
+        # Gols sofridos: avalia defesa separadamente com qualidade do adversário.
+        # Sofrer contra adversário forte reduz a punição; segurar adversário forte aumenta o mérito.
+        defense_signal1 = float(np.clip(defensive_gap_adjusted_signal(xg2 - a2, opp_quality_for_t1) + defense_perf1 * 0.35, -2.0, 2.0))
+        defense_signal2 = float(np.clip(defensive_gap_adjusted_signal(xg1 - a1, opp_quality_for_t2) + defense_perf2 * 0.35, -2.0, 2.0))
+
+        perf_total1 = float(np.clip(perf1 * 0.035, -0.12, 0.12))
+        perf_total2 = float(np.clip(perf2 * 0.035, -0.12, 0.12))
+        update1 = float(np.clip(
+            0.85 * (0.52 * result_surprise1 + 0.24 * offense_signal1 + 0.24 * defense_signal1) + perf_total1,
+            -1.55, 1.55
+        ))
+        update2 = float(np.clip(
+            0.85 * (0.52 * result_surprise2 + 0.24 * offense_signal2 + 0.24 * defense_signal2) + perf_total2,
+            -1.55, 1.55
+        ))
+
+        s1.rating_dynamic = float(np.clip(s1.rating_dynamic + update1, 25, 95))
+        s2.rating_dynamic = float(np.clip(s2.rating_dynamic + update2, 25, 95))
+        # Momentum com decaimento jogo a jogo, sem misturar saldo bruto com desempenho.
+        s1.momentum = float(np.clip(s1.momentum * 0.58 + (result_points1 - 1) * 0.30 + result_surprise1 * 0.22 + perf_total1, -2.5, 2.5))
+        s2.momentum = float(np.clip(s2.momentum * 0.58 + (result_points2 - 1) * 0.30 + result_surprise2 * 0.22 + perf_total2, -2.5, 2.5))
+        s1.performance_memory = float(np.clip(s1.performance_memory * 0.64 + perf1 * 0.045 + (attack_perf1 + defense_perf1) * 0.035, -2.0, 2.0))
+        s2.performance_memory = float(np.clip(s2.performance_memory * 0.64 + perf2 * 0.045 + (attack_perf2 + defense_perf2) * 0.035, -2.0, 2.0))
+        s1.offensive_form = float(np.clip(s1.offensive_form * 0.66 + offense_signal1 * 0.28, -2.4, 2.4))
+        s2.offensive_form = float(np.clip(s2.offensive_form * 0.66 + offense_signal2 * 0.28, -2.4, 2.4))
+        s1.defensive_form = float(np.clip(s1.defensive_form * 0.66 + defense_signal1 * 0.28, -2.4, 2.4))
+        s2.defensive_form = float(np.clip(s2.defensive_form * 0.66 + defense_signal2 * 0.28, -2.4, 2.4))
+
+        for st, gf, ga, points, opp_rating, opp_for, opp_ga_penalty in [
+            (s1, a1, a2, result_points1, rating2_pre, opp_factor_for_t1, ga_penalty_t1),
+            (s2, a2, a1, result_points2, rating1_pre, opp_factor_for_t2, ga_penalty_t2),
+        ]:
+            prev_games = st.games_validated
             st.games_validated += 1
             st.last_match_date = match.get("data_dt")
             st.goals_for += int(gf)
             st.goals_against += int(ga)
             st.points += int(points)
+            st.schedule_strength = float(((st.schedule_strength * prev_games) + opp_rating) / max(1, st.games_validated))
+            st.opponent_adjusted_points += float(points) * float(np.clip(opp_rating / 60.0, 0.72, 1.32))
+            st.opponent_weighted_goals_for += float(gf) * opp_for
+            st.opponent_weighted_goals_against += float(ga) * opp_ga_penalty
+
+        rating_shift = update1 - update2
 
         # Registra este jogo como treino para a rede somente depois da validação.
         # Importante: usa as features capturadas na previsão pré-jogo, não o estado pós-jogo.
@@ -649,8 +965,11 @@ class DailyWorldCupModel:
             "rating_diff", "base_rating_diff", "attack_vs_defense", "defense_vs_attack",
             "midfield_diff", "goalkeeper_diff", "experience_diff", "league_diff",
             "player_quality_diff", "intensity_diff", "possession_diff", "pressing_diff",
-            "momentum_diff", "performance_memory_diff", "rest_diff", "host_diff",
-            "knockout", "round_group",
+            "momentum_diff", "performance_memory_diff", "offensive_form_diff", "defensive_form_diff",
+            "schedule_strength_diff", "opponent_adjusted_points_diff", "goals_for_rate_diff", "goals_against_rate_diff",
+            "opponent_weighted_goals_for_diff", "opponent_weighted_goals_against_diff",
+            "weighted_goals_for_rate_diff", "adjusted_goals_against_rate_diff",
+            "rest_diff", "host_diff", "knockout", "round_group",
         ]
         features = [float(prediction.get(f"feature_{name}", 0.0)) for name in feature_order]
         label = 0 if real_out == "1" else 1 if real_out == "X" else 2
@@ -665,9 +984,9 @@ class DailyWorldCupModel:
             "equipe1": t1,
             "equipe2": t2,
             "placar_previsto": prediction["placar_previsto"],
-            "placar_real": f"{a1}-{a2}",
+            "placar_real": f"{a1}-{a2}" + (f" (pên. {penalty_score_real})" if penalty_score_real else ""),
             "vencedor_previsto": prediction["vencedor_previsto"],
-            "vencedor_real": winner_name(t1, a1, t2, a2),
+            "vencedor_real": real_winner_manual if knockout_real_penalty else winner_name(t1, a1, t2, a2),
             "acertou_vencedor": "Sim" if winner_ok else "Não",
             "acertou_placar_exato": "Sim" if exact else "Não",
             "erro_total_gols": round(float(err_goals), 3),
@@ -678,8 +997,19 @@ class DailyWorldCupModel:
             "impacto_desempenho_equipe2": round(float(perf2), 3),
             "peso_resultado_anterior_aplicado_equipe1": round(float(s1.momentum), 3),
             "peso_resultado_anterior_aplicado_equipe2": round(float(s2.momentum), 3),
-            "ajuste_rating_equipe1": round(float(rating_shift), 3),
-            "ajuste_rating_equipe2": round(float(-rating_shift), 3),
+            "ajuste_rating_equipe1": round(float(update1), 3),
+            "ajuste_rating_equipe2": round(float(update2), 3),
+            "ajuste_relativo_rating": round(float(rating_shift), 3),
+            "ajuste_ofensivo_equipe1": round(float(offense_signal1), 3),
+            "ajuste_ofensivo_equipe2": round(float(offense_signal2), 3),
+            "ajuste_defensivo_equipe1": round(float(defense_signal1), 3),
+            "ajuste_defensivo_equipe2": round(float(defense_signal2), 3),
+            "peso_adversario_ofensivo_equipe1": round(float(opp_factor_for_t1), 3),
+            "peso_adversario_ofensivo_equipe2": round(float(opp_factor_for_t2), 3),
+            "peso_gol_sofrido_equipe1": round(float(ga_penalty_t1), 3),
+            "peso_gol_sofrido_equipe2": round(float(ga_penalty_t2), 3),
+            "qualidade_adversario_equipe1": round(float(opp_quality_for_t1), 3),
+            "qualidade_adversario_equipe2": round(float(opp_quality_for_t2), 3),
             "rating_pos_jogo_equipe1": round(float(s1.rating_dynamic), 3),
             "rating_pos_jogo_equipe2": round(float(s2.rating_dynamic), 3),
             "fonte_resultado": real_row.get("fonte", ""),
@@ -749,6 +1079,14 @@ class DailyWorldCupModel:
                 "ajuste_total_rating": round(st.rating_dynamic - st.rating_base, 3),
                 "momentum_resultado_anterior": round(st.momentum, 3),
                 "memoria_desempenho": round(st.performance_memory, 3),
+                "forma_ofensiva": round(st.offensive_form, 3),
+                "forma_defensiva": round(st.defensive_form, 3),
+                "forca_media_adversarios": round(st.schedule_strength, 3),
+                "pontos_ajustados_por_adversario": round(st.opponent_adjusted_points, 3),
+                "gols_marcados_ajustados_por_adversario": round(st.opponent_weighted_goals_for, 3),
+                "gols_sofridos_ajustados_por_adversario": round(st.opponent_weighted_goals_against, 3),
+                "gols_marcados_ajustados_por_jogo": round(st.opponent_weighted_goals_for / max(1, st.games_validated), 3),
+                "gols_sofridos_ajustados_por_jogo": round(st.opponent_weighted_goals_against / max(1, st.games_validated), 3),
                 "jogos_validados": st.games_validated,
                 "gols_pro": st.goals_for,
                 "gols_contra": st.goals_against,
@@ -780,6 +1118,9 @@ class DailyWorldCupModel:
                 "dias_validados": int((pd.to_numeric(day_df.get("jogos_validados", pd.Series(dtype=int)), errors="coerce").fillna(0) > 0).sum()),
                 "peso_resultado_anterior": "momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time",
                 "peso_desempenho": "menções de jogadores/desempenho entram somente após o jogo validado",
+                "gols_separados": "gols marcados atualizam forma ofensiva; gols sofridos atualizam forma defensiva com dano ajustado pela força ofensiva/rating do adversário; saldo não é usado como atalho principal",
+                "peso_adversario": "resultado e gols marcados são valorizados contra adversários fortes; gols sofridos contra adversários fortes têm punição reduzida e contra fracos têm punição maior",
+                "rede_neural_como_calibrador": "rede neural tem peso máximo de 8% e não pode inverter favorito quando xG/rating dão vantagem clara ao outro lado",
                 "rede_neural": "MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual",
                 "sklearn_disponivel": SKLEARN_AVAILABLE,
                 "neural_min_samples": self.neural_min_samples,

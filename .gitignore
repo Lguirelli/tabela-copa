@@ -1,0 +1,14 @@
+# Saídas locais/temporárias
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# Bases de desempenho geradas localmente. A fonte versionada é data/entrada/desempenho_manual.csv
+data/desempenho/
+src/desempenho-data.js
+
+# Artefatos de execução local
+.cache/
+*.log

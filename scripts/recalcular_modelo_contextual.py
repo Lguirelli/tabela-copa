@@ -27,7 +27,7 @@ def norm(value):
     return re.sub(r'[^a-z0-9]+', ' ', value.lower()).strip()
 
 def mention_score(row):
-    text = norm(str(row.get('Tipo de desempenho','')) + ' ' + str(row.get('Detalhe pesquisado','')))
+    text = norm(str(row.get('tipo_desempenho', row.get('Tipo de desempenho',''))) + ' ' + str(row.get('detalhe_pesquisado', row.get('Detalhe pesquisado',''))))
     score = 1.0
     if any(x in text for x in ['2 gols','gol destaque','gol decisivo','mvp','destaque','assistencia','lideranca']):
         score += 0.6
@@ -74,12 +74,17 @@ def main():
         desempenho_top18=('player_weight', lambda s: s.sort_values(ascending=False).head(18).mean())
     ).reset_index()
 
-    perf_path = ROOT / 'data/desempenho/jogadores_citados_desempenho_copa_2026.csv'
-    if perf_path.exists():
-        perf = pd.read_csv(perf_path, sep=';', encoding='utf-8-sig')
-        perf['selecao'] = perf['Seleção'].map(team)
+    perf_path = ROOT / 'data/entrada/desempenho_manual.csv'
+    if perf_path.exists() and perf_path.stat().st_size > 10:
+        perf = pd.read_csv(perf_path, sep=None, engine='python', encoding='utf-8-sig')
+        selecao_col = 'selecao' if 'selecao' in perf.columns else 'Seleção'
+        jogador_col = 'jogador_destaque' if 'jogador_destaque' in perf.columns else ('Jogador' if 'Jogador' in perf.columns else None)
+        perf['selecao'] = perf[selecao_col].map(team)
         perf['impacto'] = perf.apply(mention_score, axis=1)
-        perf_team = perf.groupby('selecao').agg(citacoes_jogadores=('Jogador','count'), impacto_jogadores_copa=('impacto','sum')).reset_index()
+        if 'impacto_modelo_jogador' in perf.columns:
+            perf['impacto'] = pd.to_numeric(perf['impacto_modelo_jogador'], errors='coerce').fillna(perf['impacto'])
+        perf['jogador_ref'] = perf[jogador_col].fillna('') if jogador_col else ''
+        perf_team = perf.groupby('selecao').agg(citacoes_jogadores=('jogador_ref','count'), impacto_jogadores_copa=('impacto','sum')).reset_index()
     else:
         perf_team = pd.DataFrame(columns=['selecao','citacoes_jogadores','impacto_jogadores_copa'])
 
@@ -120,7 +125,7 @@ def main():
 
     matrix = pd.DataFrame([
         ['Competitividade do campeonato dos jogadores','forca_contextual_0_100','Quanto mais atletas em ligas fortes, maior a confiança no nível competitivo do elenco','20%','players_database.csv'],
-        ['Desempenho dos jogadores','forca_contextual_0_100','Proxy individual e destaques reais ajustam a força do time','18%','players_database.csv + desempenho'],
+        ['Desempenho dos jogadores','forca_contextual_0_100','Proxy individual e destaques reais ajustam a força do time','18%','players_database.csv + data/entrada/desempenho_manual.csv'],
         ['Força base do elenco','forca_contextual_0_100','Estrutura anterior por elenco, setores, caps e técnico','42%','team_strengths.csv'],
         ['Resultado anterior por data','momentum_data_0_100','Resultados recentes interferem mais na próxima previsão','12%','resultados_reais.csv'],
         ['Correção do modelo','ajuste_aprendizado_0_100','Erro registrado ajusta rating acumulado','8%','correcoes_modelo.csv'],

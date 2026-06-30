@@ -1,105 +1,105 @@
 ﻿jogo,fase,grupo,data,equipe1_prevista,equipe2_prevista,placar_previsto_original,gols1_previsto_original,gols2_previsto_original,placar_previsto_atual,gols1_previsto_atual,gols2_previsto_atual,vencedor_previsto_original,vencedor_previsto_atual,tipo_previsao,confianca_modelo,xg1_modelo,xg2_modelo,arbitro_principal,rigor_cartoes_simulado_0_10,fluidez_jogo_simulada_0_10
-1,Fase de grupos,A,2026-06-11,México,África do Sul,2-1,2,1,2-1,2,1,México,México,Previsão registrada antes do resultado,alta,1.46,0.95,AL JASSIM Abdulrahman,7.9,6.7
-2,Fase de grupos,A,2026-06-11,Coreia do Sul,Tchéquia,2-1,2,1,2-1,2,1,Coreia do Sul,Coreia do Sul,Previsão registrada antes do resultado,média,1.23,1.05,AL TURAIS Khalid,4.8,6.1
-3,Fase de grupos,B,2026-06-12,Canadá,Bósnia e Herzegovina,3-1,3,1,3-1,3,1,Canadá,Canadá,Previsão registrada antes do resultado,alta,1.55,0.89,ARAKI Yusuke,5.8,5.0
-4,Fase de grupos,D,2026-06-12,Estados Unidos,Paraguai,2-0,2,0,2-0,2,0,Estados Unidos,Estados Unidos,Previsão registrada antes do resultado,alta,1.53,0.87,ARTAN Omar Abdulkadir,6.5,5.8
-5,Fase de grupos,C,2026-06-13,Haiti,Escócia,2-2,2,2,2-2,2,2,Empate,Empate,Previsão registrada antes do resultado,alta,0.92,1.34,ATCHO Pierre,7.6,7.7
-6,Fase de grupos,D,2026-06-13,Austrália,Turquia,1-3,1,3,1-3,1,3,Turquia,Turquia,Previsão registrada antes do resultado,alta,0.9,1.3,BARTON Ivan,5.8,4.5
-7,Fase de grupos,C,2026-06-13,Brasil,Marrocos,1-0,1,0,1-0,1,0,Brasil,Brasil,Previsão registrada antes do resultado,média,1.25,1.01,BEIDA Dahane,6.9,5.9
-8,Fase de grupos,B,2026-06-13,Catar,Suíça,0-2,0,2,0-2,0,2,Suíça,Suíça,Previsão registrada antes do resultado,baixa,1.06,1.19,BENITEZ Juan Gabriel,6.5,5.3
-9,Fase de grupos,E,2026-06-14,Costa do Marfim,Equador,1-2,1,2,1-2,1,2,Equador,Equador,Previsão registrada antes do resultado,baixa,1.13,1.11,CALDERON Juan,6.2,7.5
-10,Fase de grupos,E,2026-06-14,Alemanha,Curaçao,0-2,0,2,0-2,0,2,Curaçao,Curaçao,Previsão registrada antes do resultado,alta,1.31,0.93,CLAUS Raphael,8.2,4.9
-11,Fase de grupos,F,2026-06-14,Países Baixos,Japão,0-2,0,2,0-2,0,2,Japão,Japão,Previsão registrada antes do resultado,baixa,1.14,1.07,ELFATH Ismail,8.0,7.7
-12,Fase de grupos,F,2026-06-14,Suécia,Tunísia,2-1,2,1,2-1,2,1,Suécia,Suécia,Previsão registrada antes do resultado,baixa,1.2,1.06,ESKAS Espen,6.4,6.6
-13,Fase de grupos,H,2026-06-15,Arábia Saudita,Uruguai,1-0,1,0,1-0,1,0,Arábia Saudita,Arábia Saudita,Previsão registrada antes do resultado,baixa,1.08,1.21,FAGHANI Alireza,6.6,7.8
-14,Fase de grupos,H,2026-06-15,Espanha,Cabo Verde,1-0,1,0,1-0,1,0,Espanha,Espanha,Previsão registrada antes do resultado,alta,1.39,0.95,FALCON PEREZ Yael,4.7,6.3
-15,Fase de grupos,G,2026-06-15,Irã,Nova Zelândia,2-1,2,1,2-1,2,1,Irã,Irã,Previsão registrada antes do resultado,baixa,1.14,1.01,FISCHER Drew,5.4,7.9
-16,Fase de grupos,G,2026-06-15,Bélgica,Egito,0-1,0,1,0-1,0,1,Egito,Egito,Previsão registrada antes do resultado,alta,1.32,0.93,GARAY Cristian,7.8,7.6
-17,Fase de grupos,I,2026-06-16,França,Senegal,1-1,1,1,1-1,1,1,Empate,Empate,Previsão registrada antes do resultado,baixa,1.12,1.2,GARCIA Katia,6.7,7.9
-18,Fase de grupos,I,2026-06-16,Iraque,Noruega,0-2,0,2,0-2,0,2,Noruega,Noruega,Previsão registrada antes do resultado,média,0.99,1.25,GHORBAL Mustapha,6.3,6.3
-19,Fase de grupos,J,2026-06-16,Argentina,Argélia,2-0,2,0,2-0,2,0,Argentina,Argentina,Previsão registrada antes do resultado,média,1.21,0.99,HERNANDEZ Alejandro,8.0,5.4
-20,Fase de grupos,J,2026-06-16,Áustria,Jordânia,0-1,0,1,0-1,0,1,Jordânia,Jordânia,Previsão registrada antes do resultado,média,1.3,0.95,HERRERA Dario,6.8,5.0
-21,Fase de grupos,L,2026-06-17,Gana,Panamá,0-1,0,1,0-1,0,1,Panamá,Panamá,Previsão registrada antes do resultado,alta,0.87,1.34,JAYED Jalal,6.4,5.9
-22,Fase de grupos,L,2026-06-17,Inglaterra,Croácia,2-4,2,4,2-4,2,4,Croácia,Croácia,Previsão registrada antes do resultado,baixa,1.12,1.15,KAWANA-WAUGH Campbell-Kirk,5.9,7.7
-23,Fase de grupos,K,2026-06-17,Portugal,RD Congo,1-1,1,1,1-1,1,1,Empate,Empate,Previsão registrada antes do resultado,alta,1.36,0.91,KOVACS Istvan,6.2,6.3
-24,Fase de grupos,K,2026-06-17,Uzbequistão,Colômbia,2-1,2,1,2-1,2,1,Uzbequistão,Uzbequistão,Previsão registrada antes do resultado,alta,0.94,1.31,LETEXIER Francois,4.9,7.2
-25,Fase de grupos,A,2026-06-18,Tchéquia,África do Sul,0-2,0,2,0-2,0,2,África do Sul,África do Sul,Previsão registrada antes do resultado,baixa,1.18,1.1,MA Ning,7.2,5.1
-26,Fase de grupos,B,2026-06-18,Suíça,Bósnia e Herzegovina,1-0,1,0,1-0,1,0,Suíça,Suíça,Previsão registrada antes do resultado,alta,1.39,0.82,MAKHADMEH Adham,4.2,6.3
-27,Fase de grupos,B,2026-06-18,Canadá,Catar,0-1,0,1,0-1,0,1,Catar,Catar,Previsão registrada antes do resultado,baixa,1.32,1.11,MAKKELIE Danny,7.3,7.2
-28,Fase de grupos,A,2026-06-18,México,Coreia do Sul,0-2,0,2,0-2,0,2,Coreia do Sul,Coreia do Sul,Previsão registrada antes do resultado,média,1.33,1.07,MARCINIAK Szymon,8.0,7.0
-29,Fase de grupos,C,2026-06-19,Brasil,Haiti,3-0,3,0,3-0,3,0,Brasil,Brasil,Previsão registrada antes do resultado,alta,1.38,0.96,MARIANI Maurizio,7.2,6.5
-30,Fase de grupos,C,2026-06-19,Escócia,Marrocos,3-1,3,1,3-1,3,1,Escócia,Escócia,Previsão registrada antes do resultado,média,1.22,0.99,MARTINEZ Hector Said,8.2,7.7
-31,Fase de grupos,D,2026-06-19,Turquia,Paraguai,2-0,2,0,2-0,2,0,Turquia,Turquia,Previsão registrada antes do resultado,alta,1.3,0.87,MOHAMED Amin,4.2,5.7
-32,Fase de grupos,D,2026-06-19,Estados Unidos,Austrália,0-0,0,0,0-0,0,0,Empate,Empate,Previsão registrada antes do resultado,alta,1.56,0.92,NATION Oshane,5.5,7.7
-33,Fase de grupos,E,2026-06-20,Alemanha,Costa do Marfim,3-2,3,2,3-2,3,2,Alemanha,Alemanha,Previsão registrada antes do resultado,média,1.18,0.98,NYBERG Glenn,8.2,4.6
-34,Fase de grupos,E,2026-06-20,Equador,Curaçao,5-0,5,0,5-0,5,0,Equador,Equador,Previsão registrada antes do resultado,baixa,1.23,1.06,OLIVER Michael,4.3,6.9
-35,Fase de grupos,F,2026-06-20,Países Baixos,Suécia,2-0,2,0,2-0,2,0,Países Baixos,Países Baixos,Previsão registrada antes do resultado,alta,1.31,0.91,OMAR AL ALI,7.7,4.7
-36,Fase de grupos,F,2026-06-20,Tunísia,Japão,1-1,1,1,1-1,1,1,Empate,Empate,Previsão registrada antes do resultado,alta,0.9,1.39,ORTEGA Kevin,7.4,7.9
-37,Fase de grupos,H,2026-06-21,Uruguai,Cabo Verde,2-0,2,0,2-0,2,0,Uruguai,Uruguai,Previsão registrada antes do resultado,média,1.24,0.94,PENSO Tori,7.1,5.5
-38,Fase de grupos,H,2026-06-21,Espanha,Arábia Saudita,2-0,2,0,2-0,2,0,Espanha,Espanha,Previsão registrada antes do resultado,média,1.31,1.04,PINHEIRO Joao,4.5,4.5
-39,Fase de grupos,G,2026-06-21,Bélgica,Irã,0-0,0,0,0-0,0,0,Empate,Empate,Previsão registrada antes do resultado,média,1.24,0.98,RAMON ABATTI,8.2,7.0
-40,Fase de grupos,G,2026-06-21,Nova Zelândia,Egito,0-2,0,2,0-2,0,2,Egito,Egito,Previsão registrada antes do resultado,baixa,1.12,1.13,RAMOS Cesar,5.9,7.9
-41,Fase de grupos,I,2026-06-22,Noruega,Senegal,1-2,1,2,1-2,1,2,Senegal,Senegal,Previsão registrada antes do resultado,baixa,1.09,1.18,ROJAS Andres,7.6,6.3
-42,Fase de grupos,I,2026-06-22,França,Iraque,1-1,1,1,1-1,1,1,Empate,Empate,Previsão registrada antes do resultado,média,1.28,1.0,SCHAERER Sandro,5.1,7.4
-43,Fase de grupos,J,2026-06-22,Argentina,Áustria,0-1,0,1,0-1,0,1,Áustria,Áustria,Previsão registrada antes do resultado,baixa,1.18,1.03,TANTASHEV Ilgiz,5.5,7.3
-44,Fase de grupos,J,2026-06-22,Jordânia,Argélia,0-2,0,2,0-2,0,2,Argélia,Argélia,Previsão registrada antes do resultado,média,0.98,1.24,TAYLOR Anthony,6.3,6.4
-45,Fase de grupos,L,2026-06-23,Inglaterra,Gana,2-0,2,0,2-0,2,0,Inglaterra,Inglaterra,Previsão registrada antes do resultado,alta,1.38,0.96,TEJERA Gustavo,5.1,5.1
-46,Fase de grupos,L,2026-06-23,Panamá,Croácia,0-2,0,2,0-2,0,2,Croácia,Croácia,Previsão registrada antes do resultado,baixa,1.11,1.1,TELLO Facundo,5.3,5.7
-47,Fase de grupos,K,2026-06-23,Portugal,Uzbequistão,1-1,1,1,1-1,1,1,Empate,Empate,Previsão registrada antes do resultado,alta,1.4,0.89,TOM Abongile,5.0,4.5
-48,Fase de grupos,K,2026-06-23,Colômbia,RD Congo,3-0,3,0,3-0,3,0,Colômbia,Colômbia,Previsão registrada antes do resultado,média,1.25,0.96,TURPIN Clement,4.9,6.7
-49,Fase de grupos,C,2026-06-24,Escócia,Brasil,1-2,1,2,1-2,1,2,Brasil,Brasil,Previsão registrada antes do resultado,baixa,1.15,1.15,VALENZUELA Jesus,6.5,7.9
-50,Fase de grupos,C,2026-06-24,Marrocos,Haiti,0-0,0,0,0-0,0,0,Empate,Empate,Previsão registrada antes do resultado,média,1.21,1.03,VINCIC Slavko,5.0,5.1
-51,Fase de grupos,B,2026-06-24,Suíça,Canadá,2-0,2,0,2-0,2,0,Suíça,Suíça,Previsão registrada antes do resultado,baixa,1.17,1.28,WILTON SAMPAIO,4.9,5.1
-52,Fase de grupos,B,2026-06-24,Bósnia e Herzegovina,Catar,2-2,2,2,2-2,2,2,Empate,Empate,Previsão registrada antes do resultado,alta,0.91,1.34,ZWAYER Felix,8.2,6.4
-53,Fase de grupos,A,2026-06-24,Tchéquia,México,0-1,0,1,0-1,0,1,México,México,Previsão registrada antes do resultado,alta,0.96,1.39,AL JASSIM Abdulrahman,7.9,6.7
-54,Fase de grupos,A,2026-06-24,África do Sul,Coreia do Sul,1-0,1,0,1-0,1,0,África do Sul,África do Sul,Previsão registrada antes do resultado,média,1.04,1.3,AL TURAIS Khalid,4.8,6.1
-55,Fase de grupos,E,2026-06-25,Curaçao,Costa do Marfim,1-0,1,0,1-0,1,0,Curaçao,Curaçao,Previsão registrada antes do resultado,média,1.05,1.24,ARAKI Yusuke,5.8,5.0
-56,Fase de grupos,E,2026-06-25,Equador,Alemanha,1-1,1,1,1-1,1,1,Empate,Empate,Previsão registrada antes do resultado,média,0.93,1.2,ARTAN Omar Abdulkadir,6.5,5.8
-57,Fase de grupos,F,2026-06-25,Japão,Suécia,2-0,2,0,2-0,2,0,Japão,Japão,Previsão registrada antes do resultado,alta,1.3,0.96,ATCHO Pierre,7.6,7.7
-58,Fase de grupos,F,2026-06-25,Tunísia,Países Baixos,0-1,0,1,0-1,0,1,Países Baixos,Países Baixos,Previsão registrada antes do resultado,alta,0.83,1.4,BARTON Ivan,5.8,4.5
-59,Fase de grupos,D,2026-06-25,Turquia,Estados Unidos,0-0,0,0,0-0,0,0,Empate,Empate,Previsão registrada antes do resultado,média,1.05,1.28,BEIDA Dahane,6.9,5.9
-60,Fase de grupos,D,2026-06-25,Paraguai,Austrália,1-4,1,4,1-4,1,4,Austrália,Austrália,Previsão registrada antes do resultado,baixa,1.09,1.11,BENITEZ Juan Gabriel,6.5,5.3
-61,Fase de grupos,I,2026-06-26,Noruega,França,0-0,0,0,0-0,0,0,Empate,Empate,Previsão registrada antes do resultado,baixa,1.12,1.14,CALDERON Juan,6.2,7.5
-62,Fase de grupos,I,2026-06-26,Senegal,Iraque,1-3,1,3,1-3,1,3,Iraque,Iraque,Previsão registrada antes do resultado,alta,1.31,0.96,CLAUS Raphael,8.2,4.9
-63,Fase de grupos,G,2026-06-26,Egito,Irã,2-1,2,1,1-1,1,1,Egito,Empate,Simulação atualizada pelo aprendizado,média,1.04,1.18,ELFATH Ismail,8.0,7.7
-64,Fase de grupos,G,2026-06-26,Nova Zelândia,Bélgica,0-3,0,3,1-1,1,1,Bélgica,Empate,Simulação atualizada pelo aprendizado,alta,0.93,1.32,ESKAS Espen,6.4,6.6
-65,Fase de grupos,H,2026-06-26,Cabo Verde,Arábia Saudita,1-2,1,2,1-2,1,2,Arábia Saudita,Arábia Saudita,Previsão registrada antes do resultado,média,1.04,1.23,FAGHANI Alireza,6.6,7.8
-66,Fase de grupos,H,2026-06-26,Uruguai,Espanha,1-0,1,0,1-0,1,0,Uruguai,Uruguai,Previsão registrada antes do resultado,baixa,1.08,1.23,FALCON PEREZ Yael,4.7,6.3
-67,Fase de grupos,L,2026-06-27,Panamá,Inglaterra,1-2,1,2,1-2,1,2,Inglaterra,Inglaterra,Simulação atualizada pelo aprendizado,baixa,1.19,1.14,FISCHER Drew,5.4,7.9
-68,Fase de grupos,L,2026-06-27,Croácia,Gana,3-3,3,3,0-2,0,2,Empate,Gana,Simulação atualizada pelo aprendizado,alta,1.35,0.9,GARAY Cristian,7.8,7.6
-69,Fase de grupos,J,2026-06-27,Argélia,Áustria,0-0,0,0,1-1,1,1,Empate,Empate,Simulação atualizada pelo aprendizado,baixa,1.07,1.17,GARCIA Katia,6.7,7.9
-70,Fase de grupos,J,2026-06-27,Jordânia,Argentina,0-1,0,1,0-2,0,2,Argentina,Argentina,Simulação atualizada pelo aprendizado,alta,0.89,1.37,GHORBAL Mustapha,6.3,6.3
-71,Fase de grupos,K,2026-06-27,Colômbia,Portugal,3-3,3,3,1-2,1,2,Empate,Portugal,Simulação atualizada pelo aprendizado,baixa,1.0,1.17,HERNANDEZ Alejandro,8.0,5.4
-72,Fase de grupos,K,2026-06-27,RD Congo,Uzbequistão,3-1,3,1,3-0,3,0,RD Congo,RD Congo,Simulação atualizada pelo aprendizado,baixa,1.15,1.07,HERRERA Dario,6.8,5.0
-73,16 avos de final,,2026-06-28,África do Sul,Canadá,0-3,0,3,0-3,0,3,Canadá,Canadá,Mata-mata recalculado pela classificação atual + aprendizado,alta,0.8,1.5,JAYED Jalal,6.4,5.9
-74,16 avos de final,,2026-06-29,Alemanha,Paraguai,3-0,3,0,3-0,3,0,Alemanha,Alemanha,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.5,0.8,KAWANA-WAUGH Campbell-Kirk,5.9,7.7
-75,16 avos de final,,2026-06-29,Países Baixos,Marrocos,2-0,2,0,2-0,2,0,Países Baixos,Países Baixos,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.33,0.97,KOVACS Istvan,6.2,6.3
-76,16 avos de final,,2026-06-29,Brasil,Japão,1-1 (p),1,1,1-1 (p),1,1,Brasil,Brasil,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.17,1.13,LETEXIER Francois,4.9,7.2
-77,16 avos de final,,2026-06-30,França,Suécia,2-0,2,0,2-0,2,0,França,França,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.37,0.93,MA Ning,7.2,5.1
-78,16 avos de final,,2026-06-30,Costa do Marfim,Noruega,1-1 (p),1,1,1-1 (p),1,1,Costa do Marfim,Costa do Marfim,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.16,1.14,MAKHADMEH Adham,4.2,6.3
-79,16 avos de final,,2026-06-30,México,Equador,2-1,2,1,2-1,2,1,México,México,Mata-mata recalculado pela classificação atual + aprendizado,média,1.25,1.05,MAKKELIE Danny,7.3,7.2
-80,16 avos de final,,2026-07-01,Inglaterra,RD Congo,2-0,2,0,2-0,2,0,Inglaterra,Inglaterra,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.37,0.93,MARCINIAK Szymon,8.0,7.0
-81,16 avos de final,,2026-07-01,Estados Unidos,Bósnia e Herzegovina,3-0,3,0,3-0,3,0,Estados Unidos,Estados Unidos,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.7,0.6,MARIANI Maurizio,7.2,6.5
-82,16 avos de final,,2026-07-01,Bélgica,Senegal,2-0,2,0,2-0,2,0,Bélgica,Bélgica,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.35,0.95,MARTINEZ Hector Said,8.2,7.7
-83,16 avos de final,,2026-07-02,Portugal,Croácia,2-0,2,0,2-0,2,0,Portugal,Portugal,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.34,0.96,MOHAMED Amin,4.2,5.7
-84,16 avos de final,,2026-07-02,Espanha,Áustria,2-1,2,1,2-1,2,1,Espanha,Espanha,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.22,1.08,NATION Oshane,5.5,7.7
-85,16 avos de final,,2026-07-02,Suíça,Argélia,3-0,3,0,3-0,3,0,Suíça,Suíça,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.48,0.82,NYBERG Glenn,8.2,4.6
-86,16 avos de final,,2026-07-03,Argentina,Cabo Verde,3-0,3,0,3-0,3,0,Argentina,Argentina,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.55,0.75,OLIVER Michael,4.3,6.9
-87,16 avos de final,,2026-07-03,Colômbia,Gana,3-0,3,0,3-0,3,0,Colômbia,Colômbia,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.53,0.77,OMAR AL ALI,7.7,4.7
-88,16 avos de final,,2026-07-03,Austrália,Egito,2-1,2,1,2-1,2,1,Austrália,Austrália,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.2,1.1,ORTEGA Kevin,7.4,7.9
-89,Oitavas de final,,2026-07-04,Canadá,Países Baixos,1-2,1,2,1-2,1,2,Países Baixos,Países Baixos,Mata-mata recalculado pela classificação atual + aprendizado,média,1.08,1.22,PENSO Tori,7.1,5.5
-90,Oitavas de final,,2026-07-04,Alemanha,França,2-0,2,0,2-0,2,0,Alemanha,Alemanha,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.33,0.97,PINHEIRO Joao,4.5,4.5
-91,Oitavas de final,,2026-07-05,Brasil,Costa do Marfim,2-0,2,0,2-0,2,0,Brasil,Brasil,Mata-mata recalculado pela classificação atual + aprendizado,média,1.27,1.03,RAMON ABATTI,8.2,7.0
-92,Oitavas de final,,2026-07-05,México,Inglaterra,2-1,2,1,2-1,2,1,México,México,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.21,1.09,RAMOS Cesar,5.9,7.9
-93,Oitavas de final,,2026-07-06,Portugal,Espanha,2-1,2,1,2-1,2,1,Portugal,Portugal,Mata-mata recalculado pela classificação atual + aprendizado,média,1.25,1.05,ROJAS Andres,7.6,6.3
-94,Oitavas de final,,2026-07-06,Estados Unidos,Bélgica,2-1,2,1,2-1,2,1,Estados Unidos,Estados Unidos,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.2,1.1,SCHAERER Sandro,5.1,7.4
-95,Oitavas de final,,2026-07-07,Argentina,Austrália,3-0,3,0,3-0,3,0,Argentina,Argentina,Mata-mata recalculado pela classificação atual + aprendizado,alta,1.55,0.75,TANTASHEV Ilgiz,5.5,7.3
-96,Oitavas de final,,2026-07-07,Suíça,Colômbia,2-1,2,1,2-1,2,1,Suíça,Suíça,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.21,1.09,TAYLOR Anthony,6.3,6.4
-97,Quartas de final,,2026-07-09,Países Baixos,Alemanha,1-1 (p),1,1,1-1 (p),1,1,Alemanha,Alemanha,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.12,1.18,TEJERA Gustavo,5.1,5.1
-98,Quartas de final,,2026-07-10,Portugal,Estados Unidos,2-1,2,1,2-1,2,1,Portugal,Portugal,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.18,1.12,TELLO Facundo,5.3,5.7
-99,Quartas de final,,2026-07-11,Brasil,México,1-2,1,2,1-2,1,2,México,México,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.1,1.2,TOM Abongile,5.0,4.5
-100,Quartas de final,,2026-07-11,Argentina,Suíça,2-1,2,1,2-1,2,1,Argentina,Argentina,Mata-mata recalculado pela classificação atual + aprendizado,média,1.23,1.07,TURPIN Clement,4.9,6.7
-101,Semifinais,,2026-07-14,Alemanha,Portugal,1-2,1,2,1-2,1,2,Portugal,Portugal,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.11,1.19,VALENZUELA Jesus,6.5,7.9
-102,Semifinais,,2026-07-15,México,Argentina,1-2,1,2,1-2,1,2,Argentina,Argentina,Mata-mata recalculado pela classificação atual + aprendizado,média,1.06,1.24,VINCIC Slavko,5.0,5.1
-103,Disputa de 3º lugar,,2026-07-18,Alemanha,México,2-1,2,1,2-1,2,1,Alemanha,Alemanha,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.21,1.09,WILTON SAMPAIO,4.9,5.1
-104,Final,,2026-07-19,Portugal,Argentina,1-1 (p),1,1,1-1 (p),1,1,Portugal,Portugal,Mata-mata recalculado pela classificação atual + aprendizado,baixa,1.16,1.14,ZWAYER Felix,8.2,6.4
+1,Fase de grupos,A,2026-06-11,México,África do Sul,1-0,1,0,1-0,1,0,México,México,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.562,0.635,AL JASSIM Abdulrahman,7.9,6.7
+2,Fase de grupos,A,2026-06-11,Coreia do Sul,Tchéquia,2-1,2,1,2-1,2,1,Coreia do Sul,Coreia do Sul,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.218,1.088,AL TURAIS Khalid,4.8,6.1
+3,Fase de grupos,B,2026-06-12,Canadá,Bósnia e Herzegovina,1-0,1,0,1-0,1,0,Canadá,Canadá,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.579,0.695,ARAKI Yusuke,5.8,5.0
+4,Fase de grupos,D,2026-06-12,Estados Unidos,Paraguai,1-0,1,0,1-0,1,0,Estados Unidos,Estados Unidos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.61,0.591,ARTAN Omar Abdulkadir,6.5,5.8
+5,Fase de grupos,C,2026-06-13,Haiti,Escócia,0-1,0,1,0-1,0,1,Escócia,Escócia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,0.873,1.351,ATCHO Pierre,7.6,7.7
+6,Fase de grupos,D,2026-06-13,Austrália,Turquia,0-1,0,1,0-1,0,1,Turquia,Turquia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.882,1.317,BARTON Ivan,5.8,4.5
+7,Fase de grupos,C,2026-06-13,Brasil,Marrocos,1-0,1,0,1-0,1,0,Brasil,Brasil,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.293,0.977,BEIDA Dahane,6.9,5.9
+8,Fase de grupos,B,2026-06-13,Catar,Suíça,1-2,1,2,1-2,1,2,Suíça,Suíça,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.993,1.353,BENITEZ Juan Gabriel,6.5,5.3
+9,Fase de grupos,E,2026-06-14,Costa do Marfim,Equador,1-0,1,0,1-0,1,0,Costa do Marfim,Costa do Marfim,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.124,1.041,CALDERON Juan,6.2,7.5
+10,Fase de grupos,E,2026-06-14,Alemanha,Curaçao,1-0,1,0,1-0,1,0,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.354,0.842,CLAUS Raphael,8.2,4.9
+11,Fase de grupos,F,2026-06-14,Países Baixos,Japão,2-1,2,1,2-1,2,1,Países Baixos,Países Baixos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.251,0.998,ELFATH Ismail,8.0,7.7
+12,Fase de grupos,F,2026-06-14,Suécia,Tunísia,2-1,2,1,2-1,2,1,Suécia,Suécia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.232,0.992,ESKAS Espen,6.4,6.6
+13,Fase de grupos,H,2026-06-15,Arábia Saudita,Uruguai,1-2,1,2,1-2,1,2,Uruguai,Uruguai,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.998,1.219,FAGHANI Alireza,6.6,7.8
+14,Fase de grupos,H,2026-06-15,Espanha,Cabo Verde,1-0,1,0,1-0,1,0,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.454,0.879,FALCON PEREZ Yael,4.7,6.3
+15,Fase de grupos,G,2026-06-15,Irã,Nova Zelândia,1-2,1,2,1-2,1,2,Nova Zelândia,Nova Zelândia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.065,1.064,FISCHER Drew,5.4,7.9
+16,Fase de grupos,G,2026-06-15,Bélgica,Egito,1-0,1,0,1-0,1,0,Bélgica,Bélgica,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.468,0.835,GARAY Cristian,7.8,7.6
+17,Fase de grupos,I,2026-06-16,França,Senegal,1-1,1,1,1-1,1,1,Empate,Empate,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.167,1.218,GARCIA Katia,6.7,7.9
+18,Fase de grupos,I,2026-06-16,Iraque,Noruega,0-1,0,1,0-1,0,1,Noruega,Noruega,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.866,1.39,GHORBAL Mustapha,6.3,6.3
+19,Fase de grupos,J,2026-06-16,Argentina,Argélia,1-0,1,0,1-0,1,0,Argentina,Argentina,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.275,0.985,HERNANDEZ Alejandro,8.0,5.4
+20,Fase de grupos,J,2026-06-16,Áustria,Jordânia,1-0,1,0,1-0,1,0,Áustria,Áustria,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.369,0.832,HERRERA Dario,6.8,5.0
+21,Fase de grupos,L,2026-06-17,Gana,Panamá,0-1,0,1,0-1,0,1,Panamá,Panamá,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.853,1.351,JAYED Jalal,6.4,5.9
+22,Fase de grupos,L,2026-06-17,Inglaterra,Croácia,2-1,2,1,2-1,2,1,Inglaterra,Inglaterra,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.147,1.181,KAWANA-WAUGH Campbell-Kirk,5.9,7.7
+23,Fase de grupos,K,2026-06-17,Portugal,RD Congo,1-0,1,0,1-0,1,0,Portugal,Portugal,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.412,0.864,KOVACS Istvan,6.2,6.3
+24,Fase de grupos,K,2026-06-17,Uzbequistão,Colômbia,0-1,0,1,0-1,0,1,Colômbia,Colômbia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,0.792,1.405,LETEXIER Francois,4.9,7.2
+25,Fase de grupos,A,2026-06-18,Tchéquia,África do Sul,1-0,1,0,1-0,1,0,Tchéquia,Tchéquia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.339,0.995,MA Ning,7.2,5.1
+26,Fase de grupos,B,2026-06-18,Suíça,Bósnia e Herzegovina,1-0,1,0,1-0,1,0,Suíça,Suíça,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.452,0.761,MAKHADMEH Adham,4.2,6.3
+27,Fase de grupos,B,2026-06-18,Canadá,Catar,1-0,1,0,1-0,1,0,Canadá,Canadá,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.465,0.941,MAKKELIE Danny,7.3,7.2
+28,Fase de grupos,A,2026-06-18,México,Coreia do Sul,0-0,0,0,0-0,0,0,Empate,Empate,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.333,0.836,MARCINIAK Szymon,8.0,7.0
+29,Fase de grupos,C,2026-06-19,Brasil,Haiti,0-0,0,0,0-0,0,0,Empate,Empate,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.44,0.888,MARIANI Maurizio,7.2,6.5
+30,Fase de grupos,C,2026-06-19,Escócia,Marrocos,1-0,1,0,1-0,1,0,Escócia,Escócia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.352,0.814,MARTINEZ Hector Said,8.2,7.7
+31,Fase de grupos,D,2026-06-19,Turquia,Paraguai,1-0,1,0,1-0,1,0,Turquia,Turquia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.304,0.774,MOHAMED Amin,4.2,5.7
+32,Fase de grupos,D,2026-06-19,Estados Unidos,Austrália,1-0,1,0,1-0,1,0,Estados Unidos,Estados Unidos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.638,0.684,NATION Oshane,5.5,7.7
+33,Fase de grupos,E,2026-06-20,Alemanha,Costa do Marfim,1-2,1,2,1-2,1,2,Costa do Marfim,Costa do Marfim,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.291,0.875,NYBERG Glenn,8.2,4.6
+34,Fase de grupos,E,2026-06-20,Equador,Curaçao,1-0,1,0,1-0,1,0,Equador,Equador,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.257,0.938,OLIVER Michael,4.3,6.9
+35,Fase de grupos,F,2026-06-20,Países Baixos,Suécia,1-1,1,1,1-1,1,1,Empate,Empate,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.276,1.0,OMAR AL ALI,7.7,4.7
+36,Fase de grupos,F,2026-06-20,Tunísia,Japão,0-1,0,1,0-1,0,1,Japão,Japão,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.712,1.485,ORTEGA Kevin,7.4,7.9
+37,Fase de grupos,H,2026-06-21,Uruguai,Cabo Verde,1-0,1,0,1-0,1,0,Uruguai,Uruguai,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.237,0.855,PENSO Tori,7.1,5.5
+38,Fase de grupos,H,2026-06-21,Espanha,Arábia Saudita,2-1,2,1,2-1,2,1,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.427,1.032,PINHEIRO Joao,4.5,4.5
+39,Fase de grupos,G,2026-06-21,Bélgica,Irã,1-0,1,0,1-0,1,0,Bélgica,Bélgica,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.362,0.841,RAMON ABATTI,8.2,7.0
+40,Fase de grupos,G,2026-06-21,Nova Zelândia,Egito,2-1,2,1,2-1,2,1,Nova Zelândia,Nova Zelândia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.162,1.068,RAMOS Cesar,5.9,7.9
+41,Fase de grupos,I,2026-06-22,Noruega,Senegal,2-1,2,1,2-1,2,1,Noruega,Noruega,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.329,0.998,ROJAS Andres,7.6,6.3
+42,Fase de grupos,I,2026-06-22,França,Iraque,1-0,1,0,1-0,1,0,França,França,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.634,0.678,SCHAERER Sandro,5.1,7.4
+43,Fase de grupos,J,2026-06-22,Argentina,Áustria,1-0,1,0,1-0,1,0,Argentina,Argentina,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.274,0.972,TANTASHEV Ilgiz,5.5,7.3
+44,Fase de grupos,J,2026-06-22,Jordânia,Argélia,0-1,0,1,0-1,0,1,Argélia,Argélia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.869,1.346,TAYLOR Anthony,6.3,6.4
+45,Fase de grupos,L,2026-06-23,Inglaterra,Gana,1-0,1,0,1-0,1,0,Inglaterra,Inglaterra,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.471,0.904,TEJERA Gustavo,5.1,5.1
+46,Fase de grupos,L,2026-06-23,Panamá,Croácia,1-2,1,2,1-2,1,2,Croácia,Croácia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.054,1.103,TELLO Facundo,5.3,5.7
+47,Fase de grupos,K,2026-06-23,Portugal,Uzbequistão,1-0,1,0,1-0,1,0,Portugal,Portugal,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.661,0.666,TOM Abongile,5.0,4.5
+48,Fase de grupos,K,2026-06-23,Colômbia,RD Congo,1-0,1,0,1-0,1,0,Colômbia,Colômbia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.333,0.813,TURPIN Clement,4.9,6.7
+49,Fase de grupos,C,2026-06-24,Escócia,Brasil,0-1,0,1,0-1,0,1,Brasil,Brasil,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.019,1.253,VALENZUELA Jesus,6.5,7.9
+50,Fase de grupos,C,2026-06-24,Marrocos,Haiti,1-0,1,0,1-0,1,0,Marrocos,Marrocos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.4,0.822,VINCIC Slavko,5.0,5.1
+51,Fase de grupos,B,2026-06-24,Suíça,Canadá,1-2,1,2,1-2,1,2,Canadá,Canadá,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.082,1.301,WILTON SAMPAIO,4.9,5.1
+52,Fase de grupos,B,2026-06-24,Bósnia e Herzegovina,Catar,0-1,0,1,0-1,0,1,Catar,Catar,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.972,1.265,ZWAYER Felix,8.2,6.4
+53,Fase de grupos,A,2026-06-24,Tchéquia,México,0-1,0,1,0-1,0,1,México,México,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.553,1.552,AL JASSIM Abdulrahman,7.9,6.7
+54,Fase de grupos,A,2026-06-24,África do Sul,Coreia do Sul,0-1,0,1,0-1,0,1,Coreia do Sul,Coreia do Sul,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.932,1.465,AL TURAIS Khalid,4.8,6.1
+55,Fase de grupos,E,2026-06-25,Curaçao,Costa do Marfim,0-1,0,1,0-1,0,1,Costa do Marfim,Costa do Marfim,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.934,1.359,ARAKI Yusuke,5.8,5.0
+56,Fase de grupos,E,2026-06-25,Equador,Alemanha,0-1,0,1,0-1,0,1,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.616,1.452,ARTAN Omar Abdulkadir,6.5,5.8
+57,Fase de grupos,F,2026-06-25,Japão,Suécia,1-0,1,0,1-0,1,0,Japão,Japão,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.476,0.838,ATCHO Pierre,7.6,7.7
+58,Fase de grupos,F,2026-06-25,Tunísia,Países Baixos,0-1,0,1,0-1,0,1,Países Baixos,Países Baixos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.358,1.801,BARTON Ivan,5.8,4.5
+59,Fase de grupos,D,2026-06-25,Turquia,Estados Unidos,0-1,0,1,0-1,0,1,Estados Unidos,Estados Unidos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.593,1.638,BEIDA Dahane,6.9,5.9
+60,Fase de grupos,D,2026-06-25,Paraguai,Austrália,2-1,2,1,2-1,2,1,Paraguai,Paraguai,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.068,1.102,BENITEZ Juan Gabriel,6.5,5.3
+61,Fase de grupos,I,2026-06-26,Noruega,França,2-1,2,1,2-1,2,1,Noruega,Noruega,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.129,1.195,CALDERON Juan,6.2,7.5
+62,Fase de grupos,I,2026-06-26,Senegal,Iraque,1-0,1,0,1-0,1,0,Senegal,Senegal,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.495,0.822,CLAUS Raphael,8.2,4.9
+63,Fase de grupos,G,2026-06-26,Egito,Irã,2-1,2,1,2-1,2,1,Egito,Egito,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.163,1.031,ELFATH Ismail,8.0,7.7
+64,Fase de grupos,G,2026-06-26,Nova Zelândia,Bélgica,0-1,0,1,0-1,0,1,Bélgica,Bélgica,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.786,1.452,ESKAS Espen,6.4,6.6
+65,Fase de grupos,H,2026-06-26,Cabo Verde,Arábia Saudita,2-1,2,1,2-1,2,1,Cabo Verde,Cabo Verde,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.133,1.086,FAGHANI Alireza,6.6,7.8
+66,Fase de grupos,H,2026-06-26,Uruguai,Espanha,0-1,0,1,0-1,0,1,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.928,1.404,FALCON PEREZ Yael,4.7,6.3
+67,Fase de grupos,L,2026-06-27,Panamá,Inglaterra,0-1,0,1,0-1,0,1,Inglaterra,Inglaterra,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.958,1.325,FISCHER Drew,5.4,7.9
+68,Fase de grupos,L,2026-06-27,Croácia,Gana,1-0,1,0,1-0,1,0,Croácia,Croácia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.401,0.848,GARAY Cristian,7.8,7.6
+69,Fase de grupos,J,2026-06-27,Argélia,Áustria,1-2,1,2,1-2,1,2,Áustria,Áustria,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.144,1.074,GARCIA Katia,6.7,7.9
+70,Fase de grupos,J,2026-06-27,Jordânia,Argentina,0-1,0,1,0-1,0,1,Argentina,Argentina,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,0.428,1.815,GHORBAL Mustapha,6.3,6.3
+71,Fase de grupos,K,2026-06-27,Colômbia,Portugal,0-1,0,1,0-1,0,1,Portugal,Portugal,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.004,1.236,HERNANDEZ Alejandro,8.0,5.4
+72,Fase de grupos,K,2026-06-27,RD Congo,Uzbequistão,0-0,0,0,0-0,0,0,Empate,Empate,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.38,0.853,HERRERA Dario,6.8,5.0
+73,16 avos de final,,2026-06-28,África do Sul,Canadá,2-1,2,1,2-1,2,1,África do Sul,África do Sul,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,0.73,1.51,JAYED Jalal,6.4,5.9
+74,16 avos de final,,2026-06-29,Alemanha,Paraguai,1-0,1,0,1-0,1,0,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.22,0.674,KAWANA-WAUGH Campbell-Kirk,5.9,7.7
+75,16 avos de final,,2026-06-29,Países Baixos,Marrocos,0-0 (p 5-4),0,0,0-0 (p 5-4),0,0,Países Baixos,Países Baixos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.201,0.811,KOVACS Istvan,6.2,6.3
+76,16 avos de final,,2026-06-29,Brasil,Japão,1-0,1,0,1-0,1,0,Brasil,Brasil,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.27,0.875,LETEXIER Francois,4.9,7.2
+77,16 avos de final,,2026-06-30,França,Suécia,1-2,1,2,1-2,1,2,Suécia,Suécia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.437,0.735,MA Ning,7.2,5.1
+78,16 avos de final,,2026-06-30,Costa do Marfim,Noruega,1-0,1,0,1-0,1,0,Costa do Marfim,Costa do Marfim,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.119,0.965,MAKHADMEH Adham,4.2,6.3
+79,16 avos de final,,2026-06-30,México,Equador,0-0 (p 4-3),0,0,0-0 (p 4-3),0,0,México,México,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.356,0.5,MAKKELIE Danny,7.3,7.2
+80,16 avos de final,,2026-07-01,Inglaterra,RD Congo,1-0,1,0,1-0,1,0,Inglaterra,Inglaterra,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.268,0.864,MARCINIAK Szymon,8.0,7.0
+81,16 avos de final,,2026-07-01,Estados Unidos,Bósnia e Herzegovina,1-0,1,0,1-0,1,0,Estados Unidos,Estados Unidos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.506,0.544,MARIANI Maurizio,7.2,6.5
+82,16 avos de final,,2026-07-01,Bélgica,Senegal,1-0,1,0,1-0,1,0,Bélgica,Bélgica,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.192,0.97,MARTINEZ Hector Said,8.2,7.7
+83,16 avos de final,,2026-07-02,Portugal,Croácia,1-0,1,0,1-0,1,0,Portugal,Portugal,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.123,0.98,MOHAMED Amin,4.2,5.7
+84,16 avos de final,,2026-07-02,Espanha,Áustria,1-0,1,0,1-0,1,0,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.35,0.847,NATION Oshane,5.5,7.7
+85,16 avos de final,,2026-07-02,Suíça,Argélia,1-0,1,0,1-0,1,0,Suíça,Suíça,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.385,0.71,NYBERG Glenn,8.2,4.6
+86,16 avos de final,,2026-07-03,Argentina,Cabo Verde,1-0,1,0,1-0,1,0,Argentina,Argentina,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.519,0.497,OLIVER Michael,4.3,6.9
+87,16 avos de final,,2026-07-03,Colômbia,Gana,0-0 (p 5-4),0,0,0-0 (p 5-4),0,0,Colômbia,Colômbia,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.364,0.662,OMAR AL ALI,7.7,4.7
+88,16 avos de final,,2026-07-03,Austrália,Egito,1-0,1,0,1-0,1,0,Austrália,Austrália,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.105,1.005,ORTEGA Kevin,7.4,7.9
+89,Oitavas de final,,2026-07-04,Canadá,Países Baixos,2-1,2,1,2-1,2,1,Canadá,Canadá,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.117,1.023,PENSO Tori,7.1,5.5
+90,Oitavas de final,,2026-07-04,Alemanha,Suécia,1-0,1,0,1-0,1,0,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.294,0.734,PINHEIRO Joao,4.5,4.5
+91,Oitavas de final,,2026-07-05,Brasil,Costa do Marfim,1-0,1,0,1-0,1,0,Brasil,Brasil,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.286,0.848,RAMON ABATTI,8.2,7.0
+92,Oitavas de final,,2026-07-05,México,Inglaterra,1-2,1,2,1-2,1,2,Inglaterra,Inglaterra,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.199,0.836,RAMOS Cesar,5.9,7.9
+93,Oitavas de final,,2026-07-06,Portugal,Espanha,1-2,1,2,1-2,1,2,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.171,1.102,ROJAS Andres,7.6,6.3
+94,Oitavas de final,,2026-07-06,Estados Unidos,Bélgica,1-0,1,0,1-0,1,0,Estados Unidos,Estados Unidos,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.221,0.925,SCHAERER Sandro,5.1,7.4
+95,Oitavas de final,,2026-07-07,Argentina,Austrália,1-0,1,0,1-0,1,0,Argentina,Argentina,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.431,0.675,TANTASHEV Ilgiz,5.5,7.3
+96,Oitavas de final,,2026-07-07,Suíça,Colômbia,0-0 (p 5-4),0,0,0-0 (p 5-4),0,0,Suíça,Suíça,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,baixa,1.193,0.845,TAYLOR Anthony,6.3,6.4
+97,Quartas de final,,2026-07-09,Canadá,Alemanha,1-2,1,2,1-2,1,2,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.158,0.918,TEJERA Gustavo,5.1,5.1
+98,Quartas de final,,2026-07-10,Espanha,Estados Unidos,2-1,2,1,2-1,2,1,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,0.963,1.303,TELLO Facundo,5.3,5.7
+99,Quartas de final,,2026-07-11,Brasil,Inglaterra,2-1,2,1,2-1,2,1,Brasil,Brasil,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.168,1.053,TOM Abongile,5.0,4.5
+100,Quartas de final,,2026-07-11,Suíça,Argentina,2-1,2,1,2-1,2,1,Suíça,Suíça,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,0.996,1.124,TURPIN Clement,4.9,6.7
+101,Semifinais,,2026-07-14,Alemanha,Espanha,2-1,2,1,2-1,2,1,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,alta,1.064,1.071,VALENZUELA Jesus,6.5,7.9
+102,Semifinais,,2026-07-15,Brasil,Suíça,2-1,2,1,2-1,2,1,Brasil,Brasil,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.06,1.101,VINCIC Slavko,5.0,5.1
+103,Disputa de 3º lugar,,2026-07-18,Espanha,Suíça,2-1,2,1,2-1,2,1,Espanha,Espanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.113,1.138,WILTON SAMPAIO,4.9,5.1
+104,Final,,2026-07-19,Alemanha,Brasil,2-1,2,1,2-1,2,1,Alemanha,Alemanha,Modelo diário incremental com desempenho da Copa; reais preservados; vazios recalculados,média,1.022,1.023,ZWAYER Felix,8.2,6.4

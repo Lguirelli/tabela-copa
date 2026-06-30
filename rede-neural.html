@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rede neural | Modelo Copa 2026</title>
-  <meta name="description" content="Visualização do funcionamento, desempenho e atualização do modelo neural da Copa 2026." />
+  <title>Modelo diário | Copa 2026</title>
+  <meta name="description" content="Visualização do funcionamento, desempenho e atualização do modelo diário incremental da Copa 2026." />
   <link rel="stylesheet" href="./src/styles.css" />
 </head>
 <body class="dashboard" data-page="neural-network">
@@ -28,22 +28,22 @@
       <header class="topbar">
         <div>
           <span class="breadcrumb">Copa 2026 / Modelo</span>
-          <h1>Rede neural</h1>
-          <p>Visualização do funcionamento do modelo: entradas, pesos, desempenho diário, aprendizado incremental e impacto dos resultados anteriores.</p>
+          <h1>Modelo diário incremental</h1>
+          <p>Visualização do modelo ativo: placar real quando disponível, previsão diária para jogos pendentes e impacto acumulado de resultado, momentum e desempenho dentro da Copa.</p>
         </div>
         <div class="top-actions">
           <span class="mini-stat"><small>Jogos</small><b id="stat-total">104</b></span>
           <span class="mini-stat"><small>Reais</small><b id="stat-finished">—</b></span>
-          <span class="mini-stat"><small>Rede</small><b id="stat-simulated">—</b></span>
+          <span class="mini-stat"><small>Modelo</small><b id="stat-simulated">—</b></span>
         </div>
       </header>
 
       <section class="neural-layout neural-layout--visual">
         <article class="panel neural-panel neural-panel--wide neural-visual-panel">
-          <div class="panel-title"><h2>Mapa neural interativo</h2><span>PixiJS / canvas</span></div>
+          <div class="panel-title"><h2>Mapa do modelo interativo</h2><span>PixiJS / canvas</span></div>
           <div class="pixi-visual-grid">
-            <div id="pixi-neural-stage" class="pixi-stage" aria-label="Visualização interativa da rede neural"></div>
-            <aside id="pixi-neural-details" class="pixi-info" aria-label="Resumo do modelo neural"></aside>
+            <div id="pixi-neural-stage" class="pixi-stage" aria-label="Visualização interativa do modelo"></div>
+            <aside id="pixi-neural-details" class="pixi-info" aria-label="Resumo do modelo diário"></aside>
           </div>
           <p class="pixi-help">Use o scroll para aproximar, arraste para mover e dê duplo clique para recentralizar. Quando o PixiJS externo não carregar, a página usa renderização Canvas local como fallback.</p>
         </article>
@@ -84,7 +84,7 @@
         </article>
 
         <article class="panel neural-panel neural-panel--wide neural-data-panel">
-          <div class="panel-title"><h2>Erro da rede</h2><span>previsão x real</span></div>
+          <div class="panel-title"><h2>Erro do modelo ativo</h2><span>previsão x real</span></div>
           <div id="prediction-error-board" class="prediction-error-board" aria-label="Distribuição de erros por jogo"></div>
         </article>
 
@@ -99,10 +99,10 @@
         </article>
 
         <article class="panel neural-panel neural-panel--wide">
-          <div class="panel-title"><h2>Previsões da rede neural</h2><span>saída final</span></div>
+          <div class="panel-title"><h2>Previsões do modelo diário</h2><span>saída ativa</span></div>
           <div class="neural-table-wrap">
             <table class="neural-table">
-              <thead><tr><th>Jogo</th><th>Fase</th><th>Confronto</th><th>Rede neural</th><th>Vencedor</th><th>Real</th></tr></thead>
+              <thead><tr><th>Jogo</th><th>Fase</th><th>Confronto</th><th>Modelo diário</th><th>Vencedor</th><th>Real</th></tr></thead>
               <tbody id="neural-predictions-body"></tbody>
             </table>
           </div>
@@ -120,6 +120,8 @@
   <script src="./src/team-colors.js"></script>
   <script src="./src/team-assets.js"></script>
   <script src="./src/rede-neural-data.js"></script>
+  <script src="./src/modelo-diario-data.js"></script>
+  <script src="./src/prediction-source.js"></script>
   <script src="https://pixijs.download/release/pixi.min.js"></script>
   <script src="./src/pixi-neural-view.js"></script>
   <script src="./src/dashboard.js"></script>

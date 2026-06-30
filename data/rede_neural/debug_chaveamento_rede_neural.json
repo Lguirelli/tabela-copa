@@ -187,13 +187,13 @@
       "team2": "Canadá",
       "winner": "Canadá",
       "loser": "África do Sul",
-      "score": "1-2"
+      "score": "2-2"
     },
     "74": {
       "team1": "Alemanha",
       "team2": "Paraguai",
-      "winner": "Alemanha",
-      "loser": "Paraguai",
+      "winner": "Paraguai",
+      "loser": "Alemanha",
       "score": "1-1"
     },
     "75": {
@@ -215,14 +215,14 @@
       "team2": "Suécia",
       "winner": "França",
       "loser": "Suécia",
-      "score": "2-1"
+      "score": "2-2"
     },
     "78": {
       "team1": "Costa do Marfim",
       "team2": "Noruega",
       "winner": "Noruega",
       "loser": "Costa do Marfim",
-      "score": "1-1"
+      "score": "2-2"
     },
     "79": {
       "team1": "México",
@@ -236,21 +236,21 @@
       "team2": "RD Congo",
       "winner": "Inglaterra",
       "loser": "RD Congo",
-      "score": "0-0"
+      "score": "1-1"
     },
     "81": {
       "team1": "Estados Unidos",
       "team2": "Bósnia e Herzegovina",
       "winner": "Estados Unidos",
       "loser": "Bósnia e Herzegovina",
-      "score": "2-0"
+      "score": "2-1"
     },
     "82": {
       "team1": "Bélgica",
       "team2": "Senegal",
       "winner": "Bélgica",
       "loser": "Senegal",
-      "score": "1-1"
+      "score": "2-1"
     },
     "83": {
       "team1": "Portugal",
@@ -264,28 +264,28 @@
       "team2": "Áustria",
       "winner": "Espanha",
       "loser": "Áustria",
-      "score": "2-1"
+      "score": "3-1"
     },
     "85": {
       "team1": "Suíça",
       "team2": "Argélia",
       "winner": "Suíça",
       "loser": "Argélia",
-      "score": "1-1"
+      "score": "2-1"
     },
     "86": {
       "team1": "Argentina",
       "team2": "Cabo Verde",
       "winner": "Argentina",
       "loser": "Cabo Verde",
-      "score": "1-0"
+      "score": "1-1"
     },
     "87": {
       "team1": "Colômbia",
       "team2": "Gana",
       "winner": "Gana",
       "loser": "Colômbia",
-      "score": "0-0"
+      "score": "0-1"
     },
     "88": {
       "team1": "Austrália",
@@ -302,18 +302,18 @@
       "score": "2-1"
     },
     "90": {
-      "team1": "Alemanha",
+      "team1": "Paraguai",
       "team2": "França",
-      "winner": "Alemanha",
-      "loser": "França",
-      "score": "1-1"
+      "winner": "França",
+      "loser": "Paraguai",
+      "score": "2-2"
     },
     "91": {
       "team1": "Brasil",
       "team2": "Noruega",
       "winner": "Brasil",
       "loser": "Noruega",
-      "score": "1-1"
+      "score": "2-1"
     },
     "92": {
       "team1": "Equador",
@@ -334,7 +334,7 @@
       "team2": "Bélgica",
       "winner": "Estados Unidos",
       "loser": "Bélgica",
-      "score": "2-1"
+      "score": "3-1"
     },
     "95": {
       "team1": "Argentina",
@@ -348,14 +348,14 @@
       "team2": "Gana",
       "winner": "Gana",
       "loser": "Suíça",
-      "score": "0-0"
+      "score": "0-1"
     },
     "97": {
       "team1": "Canadá",
-      "team2": "Alemanha",
-      "winner": "Alemanha",
-      "loser": "Canadá",
-      "score": "1-1"
+      "team2": "França",
+      "winner": "Canadá",
+      "loser": "França",
+      "score": "2-1"
     },
     "98": {
       "team1": "Portugal",
@@ -379,9 +379,9 @@
       "score": "1-0"
     },
     "101": {
-      "team1": "Alemanha",
+      "team1": "Canadá",
       "team2": "Portugal",
-      "winner": "Alemanha",
+      "winner": "Canadá",
       "loser": "Portugal",
       "score": "2-1"
     },
@@ -390,13 +390,13 @@
       "team2": "Argentina",
       "winner": "Equador",
       "loser": "Argentina",
-      "score": "2-1"
+      "score": "2-2"
     },
     "104": {
-      "team1": "Alemanha",
+      "team1": "Canadá",
       "team2": "Equador",
       "winner": "Equador",
-      "loser": "Alemanha",
+      "loser": "Canadá",
       "score": "1-1"
     },
     "103": {
@@ -404,8 +404,7 @@
       "team2": "Argentina",
       "winner": "Portugal",
       "loser": "Argentina",
-      "score": "2-1"
+      "score": "3-1"
     }
-  },
-  "source_note": "16 avos sincronizados com fixtures oficiais; rodadas futuras simuladas pela rede neural e sobrescritas por resultado real quando disponível."
+  }
 }
