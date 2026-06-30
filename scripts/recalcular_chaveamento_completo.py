@@ -34,6 +34,10 @@ from scripts.modelo_neural_diario import (  # noqa: E402
     TeamState,
     safe_float,
     winner_name,
+    opponent_quality_factor,
+    goal_scored_multiplier,
+    goal_conceded_damage_multiplier,
+    defensive_gap_adjusted_signal,
 )
 
 BRACKET_PARENTS = {
@@ -134,25 +138,49 @@ def projected_update(model: DailyWorldCupModel, match: pd.Series, pred: dict) ->
         if knockout and penalty_winner:
             result_points1 = 2 if penalty_winner == t1 else 1
             result_points2 = 2 if penalty_winner == t2 else 1
-            winner_boost = 0.32 if penalty_winner == t1 else -0.32
+            winner_boost = 0.18 if penalty_winner == t1 else -0.18
         else:
             result_points1 = result_points2 = 1
             winner_boost = 0.0
 
     # Projeção tem peso menor que resultado real para não exagerar caminho futuro.
-    rating_shift = float(np.clip(0.18 * (projected_margin - expected_margin) + winner_boost, -1.05, 1.05))
-    s1.rating_dynamic = float(np.clip(s1.rating_dynamic + rating_shift, 25, 95))
-    s2.rating_dynamic = float(np.clip(s2.rating_dynamic - rating_shift, 25, 95))
+    # Gols marcados e sofridos são separados também na simulação, mas com atualização fraca.
+    rating1_pre, rating2_pre = float(s1.rating_dynamic), float(s2.rating_dynamic)
+    opp_attack_t1 = safe_float(model.team_row(t1).get("ataque_score", 5.5), 5.5)
+    opp_attack_t2 = safe_float(model.team_row(t2).get("ataque_score", 5.5), 5.5)
+    opp_quality_for_t1 = opponent_quality_factor(rating2_pre, opp_attack_t2)
+    opp_quality_for_t2 = opponent_quality_factor(rating1_pre, opp_attack_t1)
+    opp_factor_for_t1 = goal_scored_multiplier(opp_quality_for_t1)
+    opp_factor_for_t2 = goal_scored_multiplier(opp_quality_for_t2)
+    ga_penalty_t1 = goal_conceded_damage_multiplier(opp_quality_for_t1)
+    ga_penalty_t2 = goal_conceded_damage_multiplier(opp_quality_for_t2)
 
-    s1.momentum = float(np.clip(s1.momentum * 0.62 + (result_points1 - 1) * 0.28 + projected_margin * 0.07 + winner_boost * 0.22, -2.5, 2.5))
-    s2.momentum = float(np.clip(s2.momentum * 0.62 + (result_points2 - 1) * 0.28 - projected_margin * 0.07 - winner_boost * 0.22, -2.5, 2.5))
-    s1.performance_memory = float(np.clip(s1.performance_memory * 0.72 + rating_shift * 0.10, -2.0, 2.0))
-    s2.performance_memory = float(np.clip(s2.performance_memory * 0.72 - rating_shift * 0.10, -2.0, 2.0))
+    offense_signal1 = float(np.clip((g1 - xg1) * opp_factor_for_t1, -1.6, 1.6))
+    offense_signal2 = float(np.clip((g2 - xg2) * opp_factor_for_t2, -1.6, 1.6))
+    defense_signal1 = float(np.clip(defensive_gap_adjusted_signal(xg2 - g2, opp_quality_for_t1), -1.6, 1.6))
+    defense_signal2 = float(np.clip(defensive_gap_adjusted_signal(xg1 - g1, opp_quality_for_t2), -1.6, 1.6))
 
-    for st, gf, ga, pts in [(s1, g1, g2, result_points1), (s2, g2, g1, result_points2)]:
-        st.games_validated += 0  # mantém apenas jogos reais em jogos_validados.
+    # Pênaltis não devem gerar salto grande de rating: classificação nos pênaltis é baixa confiança.
+    penalty_boost = winner_boost * 0.42
+    update1 = float(np.clip(0.16 * (projected_margin - expected_margin) + 0.08 * offense_signal1 + 0.08 * defense_signal1 + penalty_boost, -0.75, 0.75))
+    update2 = float(np.clip(-0.16 * (projected_margin - expected_margin) + 0.08 * offense_signal2 + 0.08 * defense_signal2 - penalty_boost, -0.75, 0.75))
+    s1.rating_dynamic = float(np.clip(s1.rating_dynamic + update1, 25, 95))
+    s2.rating_dynamic = float(np.clip(s2.rating_dynamic + update2, 25, 95))
+
+    s1.momentum = float(np.clip(s1.momentum * 0.70 + (result_points1 - 1) * 0.18 + update1 * 0.18, -2.5, 2.5))
+    s2.momentum = float(np.clip(s2.momentum * 0.70 + (result_points2 - 1) * 0.18 + update2 * 0.18, -2.5, 2.5))
+    s1.performance_memory = float(np.clip(s1.performance_memory * 0.78 + (update1 + offense_signal1 + defense_signal1) * 0.025, -2.0, 2.0))
+    s2.performance_memory = float(np.clip(s2.performance_memory * 0.78 + (update2 + offense_signal2 + defense_signal2) * 0.025, -2.0, 2.0))
+    s1.offensive_form = float(np.clip(s1.offensive_form * 0.78 + offense_signal1 * 0.12, -2.4, 2.4))
+    s2.offensive_form = float(np.clip(s2.offensive_form * 0.78 + offense_signal2 * 0.12, -2.4, 2.4))
+    s1.defensive_form = float(np.clip(s1.defensive_form * 0.78 + defense_signal1 * 0.12, -2.4, 2.4))
+    s2.defensive_form = float(np.clip(s2.defensive_form * 0.78 + defense_signal2 * 0.12, -2.4, 2.4))
+
+    for st, opp_rating in [(s1, rating2_pre), (s2, rating1_pre)]:
         st.last_match_date = match.get("data_dt")
-        # Gols/pontos projetados não entram em estado_times_dia_a_dia real.
+        # Gols/pontos projetados não entram como jogo validado real.
+        # A força média de adversários projetados entra só como contexto fraco para a sequência.
+        st.schedule_strength = float(np.clip(st.schedule_strength * 0.92 + opp_rating * 0.08, 42, 90))
 
 
 def row_to_real_series(real_row: pd.Series) -> pd.Series:
@@ -289,6 +317,7 @@ def main() -> None:
                 pred["vencedor_pos_penaltis"] = pen_winner
                 pred["criterio_vencedor"] = "Pênaltis"
                 pred["vencedor_previsto"] = pen_winner
+                pred["confianca_modelo"] = "baixa"
                 winner = pen_winner
             else:
                 winner = str(pred.get("vencedor_previsto", ""))
@@ -330,6 +359,14 @@ def main() -> None:
             "ajuste_total_rating": round(st.rating_dynamic - st.rating_base, 3),
             "momentum_resultado_anterior": round(st.momentum, 3),
             "memoria_desempenho": round(st.performance_memory, 3),
+            "forma_ofensiva": round(st.offensive_form, 3),
+            "forma_defensiva": round(st.defensive_form, 3),
+            "forca_media_adversarios": round(st.schedule_strength, 3),
+            "pontos_ajustados_por_adversario": round(st.opponent_adjusted_points, 3),
+            "gols_marcados_ajustados_por_adversario": round(st.opponent_weighted_goals_for, 3),
+            "gols_sofridos_ajustados_por_adversario": round(st.opponent_weighted_goals_against, 3),
+            "gols_marcados_ajustados_por_jogo": round(st.opponent_weighted_goals_for / max(1, st.games_validated), 3),
+            "gols_sofridos_ajustados_por_jogo": round(st.opponent_weighted_goals_against / max(1, st.games_validated), 3),
             "jogos_validados": st.games_validated,
             "gols_pro": st.goals_for,
             "gols_contra": st.goals_against,
@@ -358,7 +395,11 @@ def main() -> None:
         "ultima_entrada_real": str(model.real_results["data"].max()) if not model.real_results.empty else "",
         "fonte_desempenho_manual": "data/entrada/desempenho_manual.csv",
         "fonte_resultados_manuais": "data/entrada/novos_resultados.csv",
-        "observacao": "Resultados reais são preservados. Jogos sem real são recalculados e propagam classificados projetados para completar a tabela.",
+        "observacao": "Resultados reais são preservados. Jogos sem real são recalculados e propagam classificados projetados. Gols marcados, gols sofridos e peso dos adversários são avaliados separadamente; gols sofridos contra adversários fortes têm dano defensivo amortecido.",
+        "gols_separados": True,
+        "usa_peso_adversario": True,
+        "gols_sofridos_ajustados_por_forca_adversario": True,
+        "rede_neural_peso_maximo": 0.08,
     }
     if not val_df.empty:
         metrics.update({
@@ -396,7 +437,7 @@ def main() -> None:
         "- Jogos sem resultado real são recalculados pelo modelo diário incremental.\n"
         "- O classificado projetado alimenta a próxima fase para manter a tabela completa.\n"
         "- Em mata-mata, placar empatado gera decisão por pênaltis e vencedor projetado.\n"
-        "- Variáveis de desempenho da Copa entram via rating dinâmico, momentum, memória de desempenho e `data/entrada/desempenho_manual.csv`.\n\n"
+        "- Variáveis de desempenho da Copa entram via rating dinâmico, forma ofensiva, forma defensiva, força dos adversários, momentum, memória de desempenho e `data/entrada/desempenho_manual.csv`.\n\n"
         f"Jogos reais preservados: {real_count}\n\n"
         f"Jogos projetados: {len(pred_df) - real_count}\n\n"
         f"Decisões por pênaltis na projeção: {pen_count}\n",
