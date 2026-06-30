@@ -67,8 +67,8 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - Jogo 100 (2026-07-11): Suíça x Argentina → 0-1 / Argentina (média)
 - Jogo 101 (2026-07-14): França x Espanha → 2-1 / França (baixa)
 - Jogo 102 (2026-07-15): Brasil x Argentina → 2-1 / Brasil (baixa)
-- Jogo 103 (2026-07-18): França x Brasil → 1-2 / Brasil (média)
-- Jogo 104 (2026-07-19): Espanha x Argentina → 1-2 / Argentina (média)
+- Jogo 103 (2026-07-18): França x Argentina → 1-2 / Argentina (média)
+- Jogo 104 (2026-07-19): Espanha x Brasil → 0-1 / Brasil (média)
 
 ## Observação importante
 Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.
