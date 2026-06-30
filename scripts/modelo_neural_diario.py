@@ -19,13 +19,11 @@ Entradas usadas:
 - data/resultados_reais.csv para validação pós-previsão
 - data/entrada/desempenho_manual.csv para ajuste pós-jogo, somente depois do jogo validado
 
-Entradas propositalmente ignoradas:
-- data/previsoes_modelo.csv
-- data/resultados.csv
-- data/database/simulated_matches.csv
-- data/database/simulated_referee_assignments.csv
-- data/neural/* como fonte de previsão
-- data/modelo/modelo_times.csv anterior
+Entradas legadas removidas ou propositalmente ignoradas:
+- previsões/simulações antigas fora de data/modelo_diario/ e data/rede_neural/
+- resultados duplicados como fonte de previsão
+- assignments simulados de arbitragem
+- estados antigos de data/neural/ ou data/modelo/
 - data/desempenho/* gerado/duplicado como fonte de entrada
 """
 from __future__ import annotations
@@ -1258,7 +1256,7 @@ class DailyWorldCupModel:
         for row in last_predictions:
             lines.append(f"- Jogo {row['jogo']} ({row['data']}): {row['equipe1']} x {row['equipe2']} → {row['placar_previsto']} / {row['vencedor_previsto']} ({row['confianca_modelo']})\n")
         lines.append("\n## Observação importante\n")
-        lines.append("Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.\n")
+        lines.append("Arquivos legados de previsão/simulação foram removidos no Patch 2 e não são usados como entrada deste modelo. A previsão ativa usa `data/modelo_diario/`, `data/rede_neural/` e os arquivos de entrada declarados no pipeline.\n")
         (OUT_DIR / "README_MODELO_DIARIO.md").write_text("".join(lines), encoding="utf-8")
 
 

@@ -258,11 +258,39 @@ def validate_model_outputs() -> None:
         fail(f"src/rede-neural-data.js: previsões deveriam ter {EXPECTED_MATCHES} jogos, encontrou {len(rede_js)}")
 
 
+def validate_legacy_orphans_removed() -> None:
+    """Garante que arquivos legados removidos no Patch 2 não voltem em recálculos futuros."""
+    legacy_paths = [
+        "src/analysis.js",
+        "src/app.js",
+        "src/results.js",
+        "src/model-data.js",
+        "src/modelo-dados.js",
+        "scripts/recalcular_mata_mata.py",
+        "scripts/recalcular_modelo_contextual.py",
+        "data/previsoes_modelo.csv",
+        "data/database/simulated_matches.csv",
+        "data/database/simulated_referee_assignments.csv",
+        "data/atualizacoes_entrada_26-06.csv",
+        "data/atualizacoes_entrada_26-06_resultados_desempenho.csv",
+        "data/neural",
+        "data/modelo",
+    ]
+    for rel in legacy_paths:
+        if (ROOT / rel).exists():
+            fail(f"Arquivo/pasta legado reapareceu após limpeza do Patch 2: {rel}")
+    pycache = [p for p in (ROOT).rglob("__pycache__") if p.is_dir()]
+    pyc = [p for p in (ROOT).rglob("*.pyc") if p.is_file()]
+    if pycache or pyc:
+        fail("Artefatos Python locais não devem ser versionados: " + ", ".join(str(x.relative_to(ROOT)) for x in (pycache + pyc)[:20]))
+
+
 def main() -> int:
     validate_generated_text_tokens()
     validate_matches_and_frontend()
     validate_results_sync()
     validate_model_outputs()
+    validate_legacy_orphans_removed()
 
     print("\n=== Validação de integridade dos dados ===")
     if warnings:

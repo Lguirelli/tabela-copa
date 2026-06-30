@@ -24,11 +24,11 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **validacao_sem_vazamento**: True
 - **jogos_previstos**: 104
 - **jogos_com_placar_real_validado**: 76
-- **acuracia_vencedor_percentual**: 56.58
-- **placar_exato_percentual**: 9.21
-- **erro_medio_total_gols**: 2.303
+- **acuracia_vencedor_percentual**: 53.95
+- **placar_exato_percentual**: 7.89
+- **erro_medio_total_gols**: 2.316
 - **erro_medio_xg_total**: 1.989
-- **proximidade_media_0_100**: 43.18
+- **proximidade_media_0_100**: 41.95
 - **dias_validados**: 19
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
@@ -38,37 +38,37 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **probabilidade_classificacao**: em mata-mata, o modelo calcula chance de avançar separada da chance de vitória no tempo regulamentar
 - **rede_neural_como_calibrador**: rede neural tem peso máximo de 3,5% e não pode sobrepor xG, força do caminho e desempenho recente
 - **rede_neural**: MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual
-- **sklearn_disponivel**: False
+- **sklearn_disponivel**: True
 - **neural_min_samples**: 16
 - **simulations_parameter**: 8000
 
 ## Times com maior rating atualizado
 - Argentina: 77.74 | momentum 1.304 | jogos 3 | saldo 7
-- Portugal: 76.297 | momentum 0.356 | jogos 3 | saldo 5
-- Suíça: 76.206 | momentum 1.13 | jogos 3 | saldo 4
-- Estados Unidos: 75.703 | momentum 0.206 | jogos 3 | saldo 4
+- Portugal: 76.298 | momentum 0.357 | jogos 3 | saldo 5
+- Suíça: 76.213 | momentum 1.133 | jogos 3 | saldo 4
+- Estados Unidos: 75.7 | momentum 0.204 | jogos 3 | saldo 4
 - Brasil: 75.299 | momentum 1.385 | jogos 4 | saldo 7
-- Bélgica: 75.276 | momentum 0.651 | jogos 3 | saldo 4
-- Espanha: 75.13 | momentum 1.11 | jogos 3 | saldo 5
-- Países Baixos: 75.054 | momentum 0.576 | jogos 4 | saldo 6
-- Alemanha: 74.37 | momentum 0.076 | jogos 4 | saldo 6
-- Inglaterra: 74.094 | momentum 0.927 | jogos 3 | saldo 4
-- Croácia: 73.807 | momentum 0.981 | jogos 3 | saldo 0
-- Escócia: 73.309 | momentum -0.401 | jogos 3 | saldo -3
+- Bélgica: 75.268 | momentum 0.647 | jogos 3 | saldo 4
+- Espanha: 75.12 | momentum 1.106 | jogos 3 | saldo 5
+- Países Baixos: 75.058 | momentum 0.578 | jogos 4 | saldo 6
+- Alemanha: 74.364 | momentum 0.075 | jogos 4 | saldo 6
+- Inglaterra: 74.086 | momentum 0.925 | jogos 3 | saldo 4
+- Croácia: 73.8 | momentum 0.978 | jogos 3 | saldo 0
+- Escócia: 73.309 | momentum -0.4 | jogos 3 | saldo -3
 
 ## Últimas previsões processadas
-- Jogo 93 (2026-07-06): Portugal x Espanha → 1-2 / Espanha (baixa)
-- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 1-0 / Estados Unidos (média)
+- Jogo 93 (2026-07-06): Portugal x Espanha → 0-1 / Espanha (média)
+- Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 2-1 / Estados Unidos (baixa)
 - Jogo 95 (2026-07-07): Argentina x Austrália → 1-0 / Argentina (alta)
 - Jogo 96 (2026-07-07): Suíça x Colômbia → 1-0 / Suíça (média)
 - Jogo 97 (2026-07-09): Marrocos x França → 0-1 / França (média)
 - Jogo 98 (2026-07-10): Espanha x Estados Unidos → 2-1 / Espanha (baixa)
-- Jogo 99 (2026-07-11): Brasil x México → 1-0 / Brasil (média)
+- Jogo 99 (2026-07-11): Brasil x México → 1-0 / Brasil (baixa)
 - Jogo 100 (2026-07-11): Suíça x Argentina → 0-1 / Argentina (média)
-- Jogo 101 (2026-07-14): França x Espanha → 2-1 / França (baixa)
-- Jogo 102 (2026-07-15): Brasil x Argentina → 2-1 / Brasil (baixa)
+- Jogo 101 (2026-07-14): França x Espanha → 1-2 / Espanha (baixa)
+- Jogo 102 (2026-07-15): Brasil x Argentina → 1-2 / Argentina (baixa)
 - Jogo 103 (2026-07-18): França x Brasil → 1-2 / Brasil (média)
 - Jogo 104 (2026-07-19): Espanha x Argentina → 1-2 / Argentina (média)
 
 ## Observação importante
-Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.
+Arquivos legados de previsão/simulação foram removidos no Patch 2 e não são usados como entrada deste modelo. A previsão ativa usa `data/modelo_diario/`, `data/rede_neural/` e os arquivos de entrada declarados no pipeline.

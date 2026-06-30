@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "patch": "Patch 2 - limpeza segura de órfãos e legados",
+  "data": "2026-06-30",
+  "arquivos_removidos": [
+    "src/analysis.js",
+    "src/app.js",
+    "src/results.js",
+    "src/model-data.js",
+    "src/modelo-dados.js",
+    "scripts/recalcular_mata_mata.py",
+    "scripts/recalcular_modelo_contextual.py",
+    "data/previsoes_modelo.csv",
+    "data/database/simulated_matches.csv",
+    "data/database/simulated_referee_assignments.csv",
+    "data/atualizacoes_entrada_26-06.csv",
+    "data/atualizacoes_entrada_26-06_resultados_desempenho.csv"
+  ],
+  "pastas_removidas": [
+    "data/neural/",
+    "data/modelo/",
+    "neural_copa/__pycache__/",
+    "scripts/__pycache__/"
+  ],
+  "documentacao_historica_preservada": true,
+  "arquitetura_nao_reorganizada": true,
+  "validacoes_executadas": [
+    "python scripts/atualizar_modelo.py",
+    "python scripts/validar_recalculo_probabilidades.py",
+    "python scripts/testes/test_integridade_dados.py"
+  ],
+  "resultado_validacao": {
+    "jogos_total": 104,
+    "jogos_reais": 76,
+    "jogos_projetados": 28,
+    "precisa_recalculo": 0,
+    "csv_json_js_sincronizados": true,
+    "legacy_paths_ausentes": true,
+    "pycache_ausente": true
+  }
+}
