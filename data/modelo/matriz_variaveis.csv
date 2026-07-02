@@ -1,6 +1,0 @@
-﻿variavel,influencia,como_interpreta,peso_modelo,fonte_base
-Competitividade do campeonato dos jogadores,forca_contextual_0_100,"Quanto mais atletas em ligas fortes, maior a confiança no nível competitivo do elenco",20%,players_database.csv
-Desempenho dos jogadores,forca_contextual_0_100,Proxy individual e destaques reais ajustam a força do time,18%,players_database.csv + desempenho
-Força base do elenco,forca_contextual_0_100,"Estrutura anterior por elenco, setores, caps e técnico",42%,team_strengths.csv
-Resultado anterior por data,momentum_data_0_100,Resultados recentes interferem mais na próxima previsão,12%,resultados_reais.csv
-Correção do modelo,ajuste_aprendizado_0_100,Erro registrado ajusta rating acumulado,8%,correcoes_modelo.csv
