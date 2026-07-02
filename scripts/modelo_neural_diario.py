@@ -97,7 +97,7 @@ LEAGUE_STRENGTH = {
     "JOR": 5.5, "HTI": 5.4, "CUW": 5.4,
 }
 
-HOST_NAMES = set()  # bônus de mandante removido: país-sede não altera a previsão
+HOST_NAMES = {"mexico", "canada", "estados unidos"}
 
 
 def norm(value: object) -> str:
@@ -623,8 +623,9 @@ class DailyWorldCupModel:
         s2 = self.states.get(t2, TeamState(t2, 60.0, 60.0))
         date = match.get("data_dt")
         rest1, rest2 = self.rest_days(t1, date), self.rest_days(t2, date)
-        # Sem bônus de mandante/sede: a Copa é multi-país e o modelo não deve inflar anfitriões
-        # nem equipes que jogam em outro país-sede. Mantemos a coluna para compatibilidade, mas zerada.
+        # Modelo sem bônus de mandante/sede: a Copa 2026 é multi-país e o bônus
+        # estava inflando seleções anfitriãs fora do próprio contexto real.
+        # Mantemos host_diff para compatibilidade de schema, sempre zerado.
         host1 = 0.0
         host2 = 0.0
         knockout = 0.0 if str(match.get("fase", "")).lower().startswith("fase de grupos") else 1.0

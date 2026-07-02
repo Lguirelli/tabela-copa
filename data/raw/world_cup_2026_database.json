@@ -1,0 +1,915 @@
+{
+  "metadata": {
+    "dataset_name": "FIFA World Cup 2026 - Structured Database",
+    "competition": "FIFA World Cup 2026",
+    "scope": "Todos os jogos e jogadores presentes na Copa do Mundo 2026 (EUA/Canadá/México)",
+    "snapshot_date": "2026-06-30",
+    "tournament_status": "Fase de grupos concluída (11-27/06). Round of 32 em andamento (28/06-03/07).",
+    "total_matches_scheduled": 104,
+    "total_teams": 48,
+    "data_integrity_policy": {
+      "no_simulated_data": true,
+      "missing_value": "NA",
+      "derived_value_flag": "derived",
+      "conflict_flag": "CONFLICTING_DATA",
+      "source_priority": [
+        "FIFA",
+        "Opta/StatsPerform",
+        "ESPN",
+        "FBref",
+        "Transfermarkt",
+        "Reuters/AP",
+        "outras (baixa confiança)"
+      ]
+    }
+  },
+  "raw_data": {
+    "description": "Registros brutos coletados de fontes secundárias, ainda não totalmente cruzados com fonte oficial FIFA.com",
+    "round_of_32_bracket": [
+      {
+        "match_id": "WC26-R32-01",
+        "home": "Canada",
+        "away": "South Africa",
+        "date": "2026-06-28",
+        "venue": "Los Angeles",
+        "status": "FINISHED",
+        "source": "Yahoo Sports",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-02",
+        "home": "Brazil",
+        "away": "Japan",
+        "date": "2026-06-29",
+        "venue": "NA",
+        "status": "FINISHED",
+        "source": "Yahoo Sports",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-03",
+        "home": "Germany",
+        "away": "Paraguay",
+        "date": "2026-06-29",
+        "venue": "NA",
+        "status": "FINISHED",
+        "source": "Yahoo Sports / SBS News",
+        "confidence": "média-alta"
+      },
+      {
+        "match_id": "WC26-R32-04",
+        "home": "Netherlands",
+        "away": "Morocco",
+        "date": "2026-06-29",
+        "venue": "Monterrey",
+        "status": "FINISHED",
+        "source": "SBS News",
+        "confidence": "média-alta"
+      },
+      {
+        "match_id": "WC26-R32-05",
+        "home": "Ivory Coast",
+        "away": "Norway",
+        "date": "2026-06-30",
+        "venue": "Dallas (AT&T Stadium)",
+        "status": "SCHEDULED_OR_IN_PROGRESS",
+        "result": "NA",
+        "source": "Yahoo Sports / Olympics.com",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-06",
+        "home": "France",
+        "away": "Sweden",
+        "date": "2026-06-30",
+        "venue": "East Rutherford (MetLife)",
+        "status": "SCHEDULED_OR_IN_PROGRESS",
+        "result": "NA",
+        "source": "Yahoo Sports",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-07",
+        "home": "Mexico",
+        "away": "Ecuador",
+        "date": "2026-06-30",
+        "venue": "Mexico City (Azteca)",
+        "status": "SCHEDULED_OR_IN_PROGRESS",
+        "result": "NA",
+        "source": "Yahoo Sports / Olympics.com",
+        "confidence": "CONFLICTING_DATA — ver lista de conflitos"
+      },
+      {
+        "match_id": "WC26-R32-08",
+        "home": "England",
+        "away": "Congo DR",
+        "date": "2026-07-01",
+        "venue": "Atlanta",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-09",
+        "home": "Belgium",
+        "away": "Senegal",
+        "date": "2026-07-01",
+        "venue": "Seattle",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-10",
+        "home": "United States",
+        "away": "Bosnia and Herzegovina",
+        "date": "2026-07-01",
+        "venue": "Santa Clara / San Francisco Bay",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN / Yahoo Sports",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-11",
+        "home": "Spain",
+        "away": "Austria",
+        "date": "2026-07-02",
+        "venue": "Inglewood (SoFi)",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-12",
+        "home": "Portugal",
+        "away": "Croatia",
+        "date": "2026-07-02",
+        "venue": "Toronto",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-13",
+        "home": "Switzerland",
+        "away": "Algeria",
+        "date": "2026-07-02",
+        "venue": "Vancouver",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-14",
+        "home": "Australia",
+        "away": "Egypt",
+        "date": "2026-07-03",
+        "venue": "Arlington",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "CONFLICTING_DATA — ver lista de conflitos"
+      },
+      {
+        "match_id": "WC26-R32-15",
+        "home": "Argentina",
+        "away": "Cape Verde",
+        "date": "2026-07-03",
+        "venue": "Miami Gardens",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      },
+      {
+        "match_id": "WC26-R32-16",
+        "home": "Colombia",
+        "away": "Ghana",
+        "date": "2026-07-03",
+        "venue": "Kansas City",
+        "status": "SCHEDULED",
+        "result": "NA",
+        "source": "ESPN",
+        "confidence": "média"
+      }
+    ],
+    "group_stage_individual_matches": "NA — apenas 8 dos 72 jogos da fase de grupos foram capturados individualmente nesta coleta (grupos A, D, E e F parcialmente). Os demais 64 jogos estão pendentes de extração jogo-a-jogo; ver plano de coleta."
+  },
+  "validated_data": {
+    "description": "Tabelas finais de grupo (agregadas), cruzadas entre múltiplas fontes secundárias (Yahoo Sports, NBC Sports, World Cup Wiki). NÃO confirmadas ainda contra FIFA.com oficial — tratar como confiança média até validação cruzada com fonte tier-1.",
+    "round_of_32_completed_results": [
+      {
+        "match_id": "WC26-R32-01",
+        "result": "Canada 1-0 South Africa",
+        "winner": "Canada",
+        "extra_time": false,
+        "penalties": false
+      },
+      {
+        "match_id": "WC26-R32-02",
+        "result": "Brazil 2-1 Japan",
+        "winner": "Brazil",
+        "extra_time": "NA",
+        "penalties": false
+      },
+      {
+        "match_id": "WC26-R32-03",
+        "result": "Germany 1-1 Paraguay",
+        "winner": "Paraguay",
+        "extra_time": true,
+        "penalties": true,
+        "penalty_score": "4-3"
+      },
+      {
+        "match_id": "WC26-R32-04",
+        "result": "Netherlands 1-1 Morocco",
+        "winner": "Morocco",
+        "extra_time": true,
+        "penalties": true,
+        "penalty_score": "3-2"
+      }
+    ],
+    "group_stage_final_standings": [
+      {
+        "group": "A",
+        "winner": "Mexico",
+        "runner_up": "South Africa",
+        "eliminated_3rd": "South Korea",
+        "eliminated_4th": "Czechia",
+        "table": [
+          {
+            "team": "Mexico",
+            "GP": 3,
+            "W": 3,
+            "D": 0,
+            "L": 0,
+            "GF": 6,
+            "GA": 0,
+            "GD": 6,
+            "Pts": 9
+          },
+          {
+            "team": "South Africa",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 2,
+            "GA": 3,
+            "GD": -1,
+            "Pts": 4
+          },
+          {
+            "team": "South Korea",
+            "GP": 3,
+            "W": 1,
+            "D": 0,
+            "L": 2,
+            "GF": 2,
+            "GA": 3,
+            "GD": -1,
+            "Pts": 3
+          },
+          {
+            "team": "Czechia",
+            "GP": 3,
+            "W": 0,
+            "D": 1,
+            "L": 2,
+            "GF": 2,
+            "GA": 6,
+            "GD": -4,
+            "Pts": 1
+          }
+        ]
+      },
+      {
+        "group": "B",
+        "winner": "Switzerland",
+        "runner_up": "Canada",
+        "qualified_3rd_place": "Bosnia and Herzegovina",
+        "eliminated": "Qatar",
+        "table": [
+          {
+            "team": "Switzerland",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 7,
+            "GA": 3,
+            "GD": 4,
+            "Pts": 7
+          },
+          {
+            "team": "Canada",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 8,
+            "GA": 3,
+            "GD": 5,
+            "Pts": 4
+          },
+          {
+            "team": "Bosnia and Herzegovina",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 5,
+            "GA": 6,
+            "GD": -1,
+            "Pts": 4
+          },
+          {
+            "team": "Qatar",
+            "GP": 3,
+            "W": 0,
+            "D": 1,
+            "L": 2,
+            "GF": 2,
+            "GA": 10,
+            "GD": -8,
+            "Pts": 1
+          }
+        ]
+      },
+      {
+        "group": "C",
+        "winner": "Brazil",
+        "runner_up": "Morocco",
+        "eliminated_3rd": "Scotland",
+        "eliminated_4th": "Haiti",
+        "table": [
+          {
+            "team": "Brazil",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 7,
+            "GA": 1,
+            "GD": 6,
+            "Pts": 7
+          },
+          {
+            "team": "Morocco",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 6,
+            "GA": 3,
+            "GD": 3,
+            "Pts": 7
+          },
+          {
+            "team": "Scotland",
+            "GP": 3,
+            "W": 1,
+            "D": 0,
+            "L": 2,
+            "GF": 1,
+            "GA": 4,
+            "GD": -3,
+            "Pts": 3
+          },
+          {
+            "team": "Haiti",
+            "GP": 3,
+            "W": 0,
+            "D": 0,
+            "L": 3,
+            "GF": 2,
+            "GA": 8,
+            "GD": -6,
+            "Pts": 0
+          }
+        ]
+      },
+      {
+        "group": "D",
+        "winner": "United States",
+        "runner_up": "Australia",
+        "qualified_3rd_place": "Paraguay",
+        "eliminated": "Turkey",
+        "table": [
+          {
+            "team": "United States",
+            "GP": 3,
+            "W": 2,
+            "D": 0,
+            "L": 1,
+            "GF": 8,
+            "GA": 4,
+            "GD": 4,
+            "Pts": 6
+          },
+          {
+            "team": "Australia",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "Pts": 4
+          },
+          {
+            "team": "Paraguay",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 2,
+            "GA": 4,
+            "GD": -2,
+            "Pts": 4
+          },
+          {
+            "team": "Turkey",
+            "GP": 3,
+            "W": 1,
+            "D": 0,
+            "L": 2,
+            "GF": 3,
+            "GA": 5,
+            "GD": -2,
+            "Pts": 3
+          }
+        ]
+      },
+      {
+        "group": "E",
+        "winner": "Germany",
+        "runner_up": "Ivory Coast",
+        "qualified_3rd_place": "Ecuador",
+        "eliminated": "Curaçao",
+        "table": [
+          {
+            "team": "Germany",
+            "GP": 3,
+            "W": 2,
+            "D": 0,
+            "L": 1,
+            "GF": 10,
+            "GA": 4,
+            "GD": 6,
+            "Pts": 6
+          },
+          {
+            "team": "Ivory Coast",
+            "GP": 3,
+            "W": 2,
+            "D": 0,
+            "L": 1,
+            "GF": 4,
+            "GA": 2,
+            "GD": 2,
+            "Pts": 6
+          },
+          {
+            "team": "Ecuador",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "Pts": 4
+          },
+          {
+            "team": "Curaçao",
+            "GP": 3,
+            "W": 0,
+            "D": 1,
+            "L": 2,
+            "GF": 1,
+            "GA": 9,
+            "GD": -8,
+            "Pts": 1
+          }
+        ]
+      },
+      {
+        "group": "F",
+        "winner": "Netherlands",
+        "runner_up": "Japan",
+        "qualified_3rd_place": "Sweden",
+        "eliminated": "Tunisia",
+        "table": [
+          {
+            "team": "Netherlands",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 10,
+            "GA": 4,
+            "GD": 6,
+            "Pts": 7
+          },
+          {
+            "team": "Japan",
+            "GP": 3,
+            "W": 1,
+            "D": 2,
+            "L": 0,
+            "GF": 7,
+            "GA": 3,
+            "GD": 4,
+            "Pts": 5
+          },
+          {
+            "team": "Sweden",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 7,
+            "GA": 7,
+            "GD": 0,
+            "Pts": 4
+          },
+          {
+            "team": "Tunisia",
+            "GP": 3,
+            "W": 0,
+            "D": 0,
+            "L": 3,
+            "GF": 2,
+            "GA": 12,
+            "GD": -10,
+            "Pts": 0
+          }
+        ]
+      },
+      {
+        "group": "G",
+        "winner": "Belgium",
+        "runner_up": "Egypt",
+        "eliminated_3rd": "Iran",
+        "eliminated_4th": "New Zealand",
+        "table": [
+          {
+            "team": "Belgium",
+            "GP": 3,
+            "W": 1,
+            "D": 2,
+            "L": 0,
+            "GF": 6,
+            "GA": 2,
+            "GD": 4,
+            "Pts": 5
+          },
+          {
+            "team": "Egypt",
+            "GP": 3,
+            "W": 1,
+            "D": 2,
+            "L": 0,
+            "GF": 5,
+            "GA": 3,
+            "GD": 2,
+            "Pts": 5
+          },
+          {
+            "team": "Iran",
+            "GP": 3,
+            "W": 0,
+            "D": 3,
+            "L": 0,
+            "GF": 3,
+            "GA": 3,
+            "GD": 0,
+            "Pts": 3
+          },
+          {
+            "team": "New Zealand",
+            "GP": 3,
+            "W": 0,
+            "D": 1,
+            "L": 2,
+            "GF": 4,
+            "GA": 10,
+            "GD": -6,
+            "Pts": 1
+          }
+        ]
+      },
+      {
+        "group": "H",
+        "winner": "Spain",
+        "runner_up": "Cape Verde",
+        "eliminated_3rd": "Uruguay",
+        "eliminated_4th": "Saudi Arabia",
+        "table": [
+          {
+            "team": "Spain",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 5,
+            "GA": 0,
+            "GD": 5,
+            "Pts": 7
+          },
+          {
+            "team": "Cape Verde",
+            "GP": 3,
+            "W": 0,
+            "D": 3,
+            "L": 0,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "Pts": 3
+          },
+          {
+            "team": "Uruguay",
+            "GP": 3,
+            "W": 0,
+            "D": 2,
+            "L": 1,
+            "GF": 3,
+            "GA": 4,
+            "GD": -1,
+            "Pts": 2
+          },
+          {
+            "team": "Saudi Arabia",
+            "GP": 3,
+            "W": 0,
+            "D": 2,
+            "L": 1,
+            "GF": 1,
+            "GA": 5,
+            "GD": -4,
+            "Pts": 2
+          }
+        ]
+      },
+      {
+        "group": "I",
+        "winner": "France",
+        "runner_up": "Norway",
+        "qualified_3rd_place": "Senegal",
+        "eliminated": "Iraq",
+        "table": [
+          {
+            "team": "France",
+            "GP": 3,
+            "W": 3,
+            "D": 0,
+            "L": 0,
+            "GF": 10,
+            "GA": 2,
+            "GD": 8,
+            "Pts": 9
+          },
+          {
+            "team": "Norway",
+            "GP": 3,
+            "W": 2,
+            "D": 0,
+            "L": 1,
+            "GF": 8,
+            "GA": 7,
+            "GD": 1,
+            "Pts": 6
+          },
+          {
+            "team": "Senegal",
+            "GP": 3,
+            "W": 1,
+            "D": 0,
+            "L": 2,
+            "GF": 8,
+            "GA": 6,
+            "GD": 2,
+            "Pts": 3
+          },
+          {
+            "team": "Iraq",
+            "GP": 3,
+            "W": 0,
+            "D": 0,
+            "L": 3,
+            "GF": 1,
+            "GA": 12,
+            "GD": -11,
+            "Pts": 0
+          }
+        ]
+      },
+      {
+        "group": "J",
+        "winner": "Argentina",
+        "runner_up": "Austria",
+        "qualified_3rd_place": "Algeria",
+        "eliminated": "Jordan",
+        "table": [
+          {
+            "team": "Argentina",
+            "GP": 3,
+            "W": 3,
+            "D": 0,
+            "L": 0,
+            "GF": 8,
+            "GA": 1,
+            "GD": 7,
+            "Pts": 9
+          },
+          {
+            "team": "Austria",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 6,
+            "GA": 6,
+            "GD": 0,
+            "Pts": 4
+          },
+          {
+            "team": "Algeria",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 5,
+            "GA": 7,
+            "GD": -2,
+            "Pts": 4
+          },
+          {
+            "team": "Jordan",
+            "GP": 3,
+            "W": 0,
+            "D": 0,
+            "L": 3,
+            "GF": 3,
+            "GA": 8,
+            "GD": -5,
+            "Pts": 0
+          }
+        ]
+      },
+      {
+        "group": "K",
+        "winner": "Colombia",
+        "runner_up": "Portugal",
+        "qualified_3rd_place": "DR Congo",
+        "eliminated": "Uzbekistan",
+        "table": [
+          {
+            "team": "Colombia",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 4,
+            "GA": 1,
+            "GD": 3,
+            "Pts": 7
+          },
+          {
+            "team": "Portugal",
+            "GP": 3,
+            "W": 1,
+            "D": 2,
+            "L": 0,
+            "GF": 6,
+            "GA": 1,
+            "GD": 5,
+            "Pts": 5
+          },
+          {
+            "team": "DR Congo",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 4,
+            "GA": 3,
+            "GD": 1,
+            "Pts": 4
+          },
+          {
+            "team": "Uzbekistan",
+            "GP": 3,
+            "W": 0,
+            "D": 0,
+            "L": 3,
+            "GF": 2,
+            "GA": 11,
+            "GD": -9,
+            "Pts": 0
+          }
+        ]
+      },
+      {
+        "group": "L",
+        "winner": "England",
+        "runner_up": "Croatia",
+        "qualified_3rd_place": "Ghana",
+        "eliminated": "Panama",
+        "table": [
+          {
+            "team": "England",
+            "GP": 3,
+            "W": 2,
+            "D": 1,
+            "L": 0,
+            "GF": 6,
+            "GA": 2,
+            "GD": 4,
+            "Pts": 7
+          },
+          {
+            "team": "Croatia",
+            "GP": 3,
+            "W": 2,
+            "D": 0,
+            "L": 1,
+            "GF": 5,
+            "GA": 5,
+            "GD": 0,
+            "Pts": 6
+          },
+          {
+            "team": "Ghana",
+            "GP": 3,
+            "W": 1,
+            "D": 1,
+            "L": 1,
+            "GF": 2,
+            "GA": 2,
+            "GD": 0,
+            "Pts": 4
+          },
+          {
+            "team": "Panama",
+            "GP": 3,
+            "W": 0,
+            "D": 0,
+            "L": 3,
+            "GF": 0,
+            "GA": 4,
+            "GD": -4,
+            "Pts": 0
+          }
+        ]
+      }
+    ],
+    "best_third_place_ranking_derived": {
+      "note": "derived — ranking calculado a partir das tabelas de grupo acima, não extraído diretamente de uma única fonte primária",
+      "qualified_top8": [
+        "DR Congo",
+        "Sweden",
+        "Ecuador",
+        "Ghana",
+        "Bosnia and Herzegovina",
+        "Algeria",
+        "Paraguay",
+        "Senegal"
+      ],
+      "eliminated_3rd_place": [
+        "Iran",
+        "South Korea",
+        "Scotland",
+        "Uruguay"
+      ]
+    }
+  },
+  "enriched_data": {
+    "description": "Estatísticas avançadas (xG, posse, finalizações, grandes chances, etc.) — NÃO coletadas nesta passagem.",
+    "status": "UNAVAILABLE — pendente de coleta via Opta/FBref/ESPN para cada partida individual"
+  },
+  "player_data": {
+    "description": "Dados por jogador (minutos, gols, assistências, escalações, cartões) — NÃO coletados nesta passagem.",
+    "status": "UNAVAILABLE — escopo de ~1248 jogadores (48 seleções x ~26) requer extração estruturada por fonte (Transfermarkt/FBref squads) em ciclo dedicado",
+    "records": []
+  },
+  "team_data": {
+    "description": "Metadados de seleção (ranking FIFA/Elo, forma recente) — não coletados nesta passagem além das tabelas de grupo.",
+    "fifa_elo_ranking": "NA — não coletado",
+    "records": "ver group_stage_final_standings em validated_data para desempenho no torneio"
+  },
+  "match_events": {
+    "description": "Minuto dos gols, assistências, substituições, pênaltis detalhados, melhor jogador da partida, goleiro destaque.",
+    "status": "UNAVAILABLE para todos os 76 jogos já disputados (72 fase de grupos + 4 Round of 32 concluídos)",
+    "records": []
+  }
+}

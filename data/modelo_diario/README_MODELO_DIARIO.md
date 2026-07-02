@@ -23,13 +23,13 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **usa_simulacoes_anteriores_como_entrada**: False
 - **validacao_sem_vazamento**: True
 - **jogos_previstos**: 104
-- **jogos_com_placar_real_validado**: 75
-- **acuracia_vencedor_percentual**: 58.67
-- **placar_exato_percentual**: 8.0
-- **erro_medio_total_gols**: 2.213
-- **erro_medio_xg_total**: 2.018
-- **proximidade_media_0_100**: 44.11
-- **dias_validados**: 19
+- **jogos_com_placar_real_validado**: 77
+- **acuracia_vencedor_percentual**: 57.14
+- **placar_exato_percentual**: 7.79
+- **erro_medio_total_gols**: 2.195
+- **erro_medio_xg_total**: 1.984
+- **proximidade_media_0_100**: 43.97
+- **dias_validados**: 20
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
 - **gols_separados**: gols marcados atualizam forma ofensiva; gols sofridos atualizam forma defensiva com dano ajustado pela força ofensiva/rating do adversário; saldo não é usado como atalho principal
@@ -47,26 +47,26 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - Estados Unidos: 75.646 | momentum 0.201 | jogos 3 | saldo 4
 - Brasil: 75.286 | momentum 1.387 | jogos 4 | saldo 7
 - Bélgica: 75.252 | momentum 0.644 | jogos 3 | saldo 4
-- Países Baixos: 75.223 | momentum 1.065 | jogos 3 | saldo 6
 - Espanha: 75.089 | momentum 1.099 | jogos 3 | saldo 5
+- Países Baixos: 75.062 | momentum 0.569 | jogos 4 | saldo 6
 - Alemanha: 74.315 | momentum 0.062 | jogos 4 | saldo 6
 - Inglaterra: 74.117 | momentum 0.927 | jogos 3 | saldo 4
 - Croácia: 73.839 | momentum 0.977 | jogos 3 | saldo 0
 - Escócia: 73.261 | momentum -0.404 | jogos 3 | saldo -3
 
 ## Últimas previsões processadas
-- Jogo 93 (2026-07-06): Portugal x Espanha → 2-1 / Portugal (baixa)
+- Jogo 93 (2026-07-06): Portugal x Espanha → 1-2 / Espanha (baixa)
 - Jogo 94 (2026-07-06): Estados Unidos x Bélgica → 2-1 / Estados Unidos (baixa)
-- Jogo 95 (2026-07-07): Argentina x Austrália → 1-0 / Argentina (alta)
+- Jogo 95 (2026-07-07): Argentina x Austrália → 1-0 / Argentina (média)
 - Jogo 96 (2026-07-07): Suíça x Colômbia → 1-0 / Suíça (baixa)
 - Jogo 97 (2026-07-09): Canadá x França → 1-2 / França (baixa)
 - Jogo 98 (2026-07-10): Espanha x Estados Unidos → 2-1 / Espanha (baixa)
 - Jogo 99 (2026-07-11): Brasil x México → 2-1 / Brasil (baixa)
 - Jogo 100 (2026-07-11): Suíça x Argentina → 1-2 / Argentina (baixa)
-- Jogo 101 (2026-07-14): Canadá x Estados Unidos → 1-2 / Estados Unidos (baixa)
-- Jogo 102 (2026-07-15): México x Argentina → 0-1 / Argentina (baixa)
-- Jogo 103 (2026-07-18): Canadá x Argentina → 0-1 / Argentina (baixa)
-- Jogo 104 (2026-07-19): Estados Unidos x México → 1-2 / México (baixa)
+- Jogo 101 (2026-07-14): França x Espanha → 1-2 / Espanha (baixa)
+- Jogo 102 (2026-07-15): Brasil x Argentina → 1-2 / Argentina (baixa)
+- Jogo 103 (2026-07-18): França x Brasil → 1-2 / Brasil (baixa)
+- Jogo 104 (2026-07-19): Espanha x Argentina → 0-1 / Argentina (baixa)
 
 ## Observação importante
 Os arquivos `data/previsoes_modelo.csv`, `data/database/simulated_matches.csv`, `data/database/simulated_referee_assignments.csv` e `data/neural/*` não são usados como entrada deste modelo.

@@ -1,76 +1,81 @@
-jogo;status;placar;equipe1;equipe2;vencedor
-1;Finalizado;2-0;México;África do Sul;México
-2;Finalizado;2-1;Coreia do Sul;Tchéquia;Coreia do Sul
-3;Finalizado;1-1;Canadá;Bósnia e Herzegovina;Empate
-4;Finalizado;4-1;Estados Unidos;Paraguai;Estados Unidos
-5;Finalizado;0-1;Haiti;Escócia;Escócia
-6;Finalizado;2-0;Austrália;Turquia;Austrália
-7;Finalizado;1-1;Brasil;Marrocos;Empate
-8;Finalizado;1-1;Catar;Suíça;Empate
-9;Finalizado;1-0;Costa do Marfim;Equador;Costa do Marfim
-10;Finalizado;7-1;Alemanha;Curaçao;Alemanha
-11;Finalizado;2-2;Países Baixos;Japão;Empate
-12;Finalizado;5-1;Suécia;Tunísia;Suécia
-13;Finalizado;1-1;Arábia Saudita;Uruguai;Empate
-14;Finalizado;0-0;Espanha;Cabo Verde;Empate
-15;Finalizado;2-2;Irã;Nova Zelândia;Empate
-16;Finalizado;1-1;Bélgica;Egito;Empate
-17;Finalizado;3-1;França;Senegal;França
-18;Finalizado;1-4;Iraque;Noruega;Noruega
-19;Finalizado;3-0;Argentina;Argélia;Argentina
-20;Finalizado;3-1;Áustria;Jordânia;Áustria
-21;Finalizado;1-0;Gana;Panamá;Gana
-22;Finalizado;4-2;Inglaterra;Croácia;Inglaterra
-23;Finalizado;1-1;Portugal;RD Congo;Empate
-24;Finalizado;1-3;Uzbequistão;Colômbia;Colômbia
-25;Finalizado;1-1;Tchéquia;África do Sul;Empate
-26;Finalizado;4-1;Suíça;Bósnia e Herzegovina;Suíça
-27;Finalizado;6-0;Canadá;Catar;Canadá
-28;Finalizado;1-0;México;Coreia do Sul;México
-29;Finalizado;3-0;Brasil;Haiti;Brasil
-30;Finalizado;0-1;Escócia;Marrocos;Marrocos
-31;Finalizado;0-1;Turquia;Paraguai;Paraguai
-32;Finalizado;2-0;Estados Unidos;Austrália;Estados Unidos
-33;Finalizado;2-1;Alemanha;Costa do Marfim;Alemanha
-34;Finalizado;0-0;Equador;Curaçao;Empate
-35;Finalizado;5-1;Países Baixos;Suécia;Países Baixos
-36;Finalizado;0-4;Tunísia;Japão;Japão
-37;Finalizado;2-2;Uruguai;Cabo Verde;Empate
-38;Finalizado;4-0;Espanha;Arábia Saudita;Espanha
-39;Finalizado;0-0;Bélgica;Irã;Empate
-40;Finalizado;1-3;Nova Zelândia;Egito;Egito
-41;Finalizado;3-2;Noruega;Senegal;Noruega
-42;Finalizado;3-0;França;Iraque;França
-43;Finalizado;2-0;Argentina;Áustria;Argentina
-44;Finalizado;1-2;Jordânia;Argélia;Argélia
-45;Finalizado;0-0;Inglaterra;Gana;Empate
-46;Finalizado;0-1;Panamá;Croácia;Croácia
-47;Finalizado;5-0;Portugal;Uzbequistão;Portugal
-48;Finalizado;1-0;Colômbia;RD Congo;Colômbia
-49;Finalizado;0-3;Escócia;Brasil;Brasil
-50;Finalizado;4-2;Marrocos;Haiti;Marrocos
-51;Finalizado;2-1;Suíça;Canadá;Suíça
-52;Finalizado;3-1;Bósnia e Herzegovina;Catar;Bósnia e Herzegovina
-53;Finalizado;0-3;Tchéquia;México;México
-54;Finalizado;1-0;África do Sul;Coreia do Sul;África do Sul
-55;Finalizado;0-2;Curaçao;Costa do Marfim;Costa do Marfim
-56;Finalizado;2-1;Equador;Alemanha;Equador
-57;Finalizado;1-1;Japão;Suécia;Empate
-58;Finalizado;1-3;Tunísia;Países Baixos;Países Baixos
-59;Finalizado;3-2;Turquia;Estados Unidos;Turquia
-60;Finalizado;0-0;Paraguai;Austrália;Empate
-61;Finalizado;1-4;Noruega;França;França
-62;Finalizado;5-0;Senegal;Iraque;Senegal
-63;Finalizado;1-1;Egito;Irã;Empate
-64;Finalizado;1-5;Nova Zelândia;Bélgica;Bélgica
-65;Finalizado;0-0;Cabo Verde;Arábia Saudita;Empate
-66;Finalizado;0-1;Uruguai;Espanha;Espanha
-67;Finalizado;0-2;Panamá;Inglaterra;Inglaterra
-68;Finalizado;2-1;Croácia;Gana;Croácia
-69;Finalizado;3-3;Argélia;Áustria;Empate
-70;Finalizado;1-3;Jordânia;Argentina;Argentina
-71;Finalizado;0-0;Colômbia;Portugal;Empate
-72;Finalizado;3-1;RD Congo;Uzbequistão;RD Congo
-73;Finalizado;0-1;África do Sul;Canadá;Canadá
-74;Finalizado;1-1;Alemanha;Paraguai;Paraguai
-76;Finalizado;2-1;Brasil;Japão;Brasil
+Jogo 1 | 2026-06-11 | Fase de grupos | México 2 x 0 África do Sul | Vencedor: México
+Jogo 2 | 2026-06-11 | Fase de grupos | República da Coreia 2 x 1 Tchéquia | Vencedor: Coreia do Sul
+Jogo 3 | 2026-06-12 | Fase de grupos | Canadá 1 x 1 Bósnia e Herzegovina | Vencedor: Empate
+Jogo 4 | 2026-06-12 | Fase de grupos | Estados Unidos 4 x 1 Paraguai | Vencedor: Estados Unidos
+Jogo 5 | 2026-06-13 | Fase de grupos | Haiti 0 x 1 Escócia | Vencedor: Escócia
+Jogo 6 | 2026-06-14 | Fase de grupos | Austrália 2 x 0 Turquia | Vencedor: Austrália
+Jogo 7 | 2026-06-13 | Fase de grupos | Brasil 1 x 1 Marrocos | Vencedor: Empate
+Jogo 8 | 2026-06-13 | Fase de grupos | Catar 1 x 1 Suíça | Vencedor: Empate
+Jogo 9 | 2026-06-14 | Fase de grupos | Costa do Marfim 1 x 0 Equador | Vencedor: Costa do Marfim
+Jogo 10 | 2026-06-14 | Fase de grupos | Alemanha 7 x 1 Curaçao | Vencedor: Alemanha
+Jogo 11 | 2026-06-14 | Fase de grupos | Holanda 2 x 2 Japão | Vencedor: Empate
+Jogo 12 | 2026-06-14 | Fase de grupos | Suécia 5 x 1 Tunísia | Vencedor: Suécia
+Jogo 13 | 2026-06-15 | Fase de grupos | Arábia Saudita 1 x 1 Uruguai | Vencedor: Empate
+Jogo 14 | 2026-06-15 | Fase de grupos | Espanha 0 x 0 Cabo Verde | Vencedor: Empate
+Jogo 15 | 2026-06-15 | Fase de grupos | Irã 2 x 2 Nova Zelândia | Vencedor: Empate
+Jogo 16 | 2026-06-15 | Fase de grupos | Bélgica 1 x 1 Egito | Vencedor: Empate
+Jogo 17 | 2026-06-16 | Fase de grupos | França 3 x 1 Senegal | Vencedor: França
+Jogo 18 | 2026-06-16 | Fase de grupos | Iraque 1 x 4 Noruega | Vencedor: Noruega
+Jogo 19 | 2026-06-16 | Fase de grupos | Argentina 3 x 0 Argélia | Vencedor: Argentina
+Jogo 20 | 2026-06-17 | Fase de grupos | Áustria 3 x 1 Jordânia | Vencedor: Áustria
+Jogo 21 | 2026-06-17 | Fase de grupos | Gana 1 x 0 Panamá | Vencedor: Gana
+Jogo 22 | 2026-06-17 | Fase de grupos | Inglaterra 4 x 2 Croácia | Vencedor: Inglaterra
+Jogo 23 | 2026-06-17 | Fase de grupos | Portugal 1 x 1 RD do Congo | Vencedor: Empate
+Jogo 24 | 2026-06-17 | Fase de grupos | Uzbequistão 1 x 3 Colômbia | Vencedor: Colômbia
+Jogo 25 | 2026-06-18 | Fase de grupos | Tchéquia 1 x 1 África do Sul | Vencedor: Empate
+Jogo 26 | 2026-06-18 | Fase de grupos | Suíça 4 x 1 Bósnia e Herzegovina | Vencedor: Suíça
+Jogo 27 | 2026-06-18 | Fase de grupos | Canadá 6 x 0 Catar | Vencedor: Canadá
+Jogo 28 | 2026-06-18 | Fase de grupos | México 1 x 0 República da Coreia | Vencedor: México
+Jogo 29 | 2026-06-19 | Fase de grupos | Brasil 3 x 0 Haiti | Vencedor: Brasil
+Jogo 30 | 2026-06-19 | Fase de grupos | Escócia 0 x 1 Marrocos | Vencedor: Marrocos
+Jogo 31 | 2026-06-20 | Fase de grupos | Turquia 0 x 1 Paraguai | Vencedor: Paraguai
+Jogo 32 | 2026-06-19 | Fase de grupos | Estados Unidos 2 x 0 Austrália | Vencedor: Estados Unidos
+Jogo 33 | 2026-06-20 | Fase de grupos | Alemanha 2 x 1 Costa do Marfim | Vencedor: Alemanha
+Jogo 34 | 2026-06-20 | Fase de grupos | Equador 0 x 0 Curaçao | Vencedor: Empate
+Jogo 35 | 2026-06-20 | Fase de grupos | Holanda 5 x 1 Suécia | Vencedor: Países Baixos
+Jogo 36 | 2026-06-21 | Fase de grupos | Tunísia 0 x 4 Japão | Vencedor: Japão
+Jogo 37 | 2026-06-21 | Fase de grupos | Uruguai 2 x 2 Cabo Verde | Vencedor: Empate
+Jogo 38 | 2026-06-21 | Fase de grupos | Espanha 4 x 0 Arábia Saudita | Vencedor: Espanha
+Jogo 39 | 2026-06-21 | Fase de grupos | Bélgica 0 x 0 Irã | Vencedor: Empate
+Jogo 40 | 2026-06-21 | Fase de grupos | Nova Zelândia 1 x 3 Egito | Vencedor: Egito
+Jogo 41 | 2026-06-22 | Fase de grupos | Noruega 3 x 2 Senegal | Vencedor: Noruega
+Jogo 42 | 2026-06-22 | Fase de grupos | França 3 x 0 Iraque | Vencedor: França
+Jogo 43 | 2026-06-22 | Fase de grupos | Argentina 2 x 0 Áustria | Vencedor: Argentina
+Jogo 44 | 2026-06-23 | Fase de grupos | Jordânia 1 x 2 Argélia | Vencedor: Argélia
+Jogo 45 | 2026-06-23 | Fase de grupos | Inglaterra 0 x 0 Gana | Vencedor: Empate
+Jogo 46 | 2026-06-23 | Fase de grupos | Panamá 0 x 1 Croácia | Vencedor: Croácia
+Jogo 47 | 2026-06-23 | Fase de grupos | Portugal 5 x 0 Uzbequistão | Vencedor: Portugal
+Jogo 48 | 2026-06-23 | Fase de grupos | Colômbia 1 x 0 RD do Congo | Vencedor: Colômbia
+Jogo 49 | 2026-06-24 | Fase de grupos | Escócia 0 x 3 Brasil | Vencedor: Brasil
+Jogo 50 | 2026-06-24 | Fase de grupos | Marrocos 4 x 2 Haiti | Vencedor: Marrocos
+Jogo 51 | 2026-06-24 | Fase de grupos | Suíça 2 x 1 Canadá | Vencedor: Suíça
+Jogo 52 | 2026-06-24 | Fase de grupos | Bósnia e Herzegovina 3 x 1 Catar | Vencedor: Bósnia e Herzegovina
+Jogo 53 | 2026-06-24 | Fase de grupos | República Tcheca 0 x 3 México | Vencedor: México
+Jogo 54 | 2026-06-24 | Fase de grupos | África do Sul 1 x 0 República da Coreia | Vencedor: África do Sul
+Jogo 55 | 2026-06-25 | Fase de grupos | Curaçao 0 x 2 Costa do Marfim | Vencedor: Costa do Marfim
+Jogo 56 | 2026-06-25 | Fase de grupos | Equador 2 x 1 Alemanha | Vencedor: Equador
+Jogo 57 | 2026-06-25 | Fase de grupos | Japão 1 x 1 Suécia | Vencedor: Empate
+Jogo 58 | 2026-06-25 | Fase de grupos | Tunísia 1 x 3 Holanda | Vencedor: Países Baixos
+Jogo 59 | 2026-06-25 | Fase de grupos | Turquia 3 x 2 Estados Unidos | Vencedor: Turquia
+Jogo 60 | 2026-06-25 | Fase de grupos | Paraguai 0 x 0 Austrália | Vencedor: Empate
+Jogo 61 | 2026-06-26 | Fase de grupos | Noruega 1 x 4 França | Vencedor: França
+Jogo 62 | 2026-06-26 | Fase de grupos | Senegal 5 x 0 Iraque | Vencedor: Senegal
+Jogo 63 | 2026-06-26 | Fase de grupos | Egito 1 x 1 Irã | Vencedor: Empate
+Jogo 64 | 2026-06-26 | Fase de grupos | Nova Zelândia 1 x 5 Bélgica | Vencedor: Bélgica
+Jogo 65 | 2026-06-26 | Fase de grupos | Cabo Verde 0 x 0 Arábia Saudita | Vencedor: Empate
+Jogo 66 | 2026-06-26 | Fase de grupos | Uruguai 0 x 1 Espanha | Vencedor: Espanha
+Jogo 67 | 2026-06-27 | Fase de grupos | Panamá 0 x 2 Inglaterra | Vencedor: Inglaterra
+Jogo 68 | 2026-06-27 | Fase de grupos | Croácia 2 x 1 Gana | Vencedor: Croácia
+Jogo 69 | 2026-06-27 | Fase de grupos | Argélia 3 x 3 Áustria | Vencedor: Empate
+Jogo 70 | 2026-06-27 | Fase de grupos | Jordânia 1 x 3 Argentina | Vencedor: Argentina
+Jogo 71 | 2026-06-27 | Fase de grupos | Colômbia 0 x 0 Portugal | Vencedor: Empate
+Jogo 72 | 2026-06-27 | Fase de grupos | RD Congo 3 x 1 Uzbequistão | Vencedor: RD Congo
+Jogo 73 | 2026-06-28 | 16 avos de final | África do Sul 0 x 1 Canadá | Vencedor: Canadá
+Jogo 74 | 2026-06-29 | 16 avos de final | Alemanha 1 (3 pen) x 1 (4 pen) Paraguai | Vencedor: Paraguai
+Jogo 75 | 2026-06-29 | 16 avos de final | Países Baixos 1 (2 pen) x 1 (3 pen) Marrocos | Vencedor: Marrocos
+Jogo 76 | 2026-06-29 | 16 avos de final | Brasil 2 x 1 Japão | Vencedor: Brasil
+Jogo 77 | 2026-06-30 | 16 avos de final | França 3 x 0 Suécia | Vencedor: França
+Jogo 78 | 2026-06-30 | 16 avos de final | Costa do Marfim 1 x 2 Noruega | Vencedor: Noruega
+Jogo 79 | 2026-06-30 | 16 avos de final | México 2 x 0 Equador | Vencedor: México
+Jogo 80 | 2026-07-01 | 16 avos de final | Inglaterra 2 x 1 RD Congo | Vencedor: Inglaterra
+Jogo 82 | 2026-07-01 | 16 avos de final | Bélgica 3 x 2 Senegal (após prorrogação) | Vencedor: Bélgica

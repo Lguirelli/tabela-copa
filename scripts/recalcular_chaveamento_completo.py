@@ -89,7 +89,7 @@ def decide_penalties(match: pd.Series, pred: dict) -> Tuple[str, str, float]:
     exp_diff = safe_float(pred.get("feature_experience_diff", 0), 0)
     momentum_diff = safe_float(pred.get("feature_momentum_diff", 0), 0)
     perf_diff = safe_float(pred.get("feature_performance_memory_diff", 0), 0)
-    # Sem bônus de mandante/sede em pênaltis. Mantemos feature_host_diff apenas como dado histórico zerado.
+    host_diff = 0.0  # bônus de mandante/sede removido do modelo
 
     # Pênalti depende mais de goleiro/experiência/estado emocional do que de volume ofensivo.
     logit = (

@@ -1,0 +1,5 @@
+﻿jogo_id;jogo;data;fase;selecao;adversario;placar_tempo_normal;placar_prorrogacao;penaltis_selecao;penaltis_adversario;classificado;cobrancas_convertidas;cobrancas_perdidas;cobrancas_defendidas;goleiro_destaque;defesas_penaltis;batedor_decisivo;observacao;fonte_principal;fonte_secundaria;nivel_confianca;data_acesso
+R32_74;74;2026-06-29;Round of 32;Alemanha;Paraguai;1-1;1-1;3;4;Nao;NA;NA;NA;NA;NA;NA;Paraguai venceu por 4-3 na disputa após empate em 1-1.;FIFA/Reuters;data/resultados_reais.csv;Alta;2026-06-30
+R32_74;74;2026-06-29;Round of 32;Paraguai;Alemanha;1-1;1-1;4;3;Sim;NA;NA;NA;NA;NA;Orlando Gill;Paraguai venceu por 4-3 na disputa após empate em 1-1.;FIFA/Reuters;data/resultados_reais.csv;Alta;2026-06-30
+R32_75;75;2026-06-29;Round of 32;Países Baixos;Marrocos;1-1;1-1;2;3;Nao;NA;NA;NA;Bart Verbruggen;NA;NA;Marrocos venceu por 3-2 na disputa após empate em 1-1.;Reuters/ESPN;data/resultados_reais.csv;Alta;2026-06-30
+R32_75;75;2026-06-29;Round of 32;Marrocos;Países Baixos;1-1;1-1;3;2;Sim;NA;NA;NA;Bono;NA;Ismael Saibari;Marrocos venceu por 3-2 na disputa após empate em 1-1.;Reuters/ESPN;data/resultados_reais.csv;Alta;2026-06-30
