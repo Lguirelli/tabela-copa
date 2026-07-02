@@ -1,4 +1,4 @@
-jogo,data,diaSemana,horaET,horaLocal,fase,ordemFase,grupo,rodadaGrupo,equipe1,equipe2,confronto,estadio,cidade,pais,status
+﻿jogo,data,diaSemana,horaET,horaLocal,fase,ordemFase,grupo,rodadaGrupo,equipe1,equipe2,confronto,estadio,cidade,pais,status
 1,2026-06-11,Quinta-feira,15:00,13:00,Fase de grupos,1,A,1.0,México,África do Sul,México x África do Sul,Estadio Azteca,Mexico City,México,Finalizado
 2,2026-06-11,Quinta-feira,22:00,20:00,Fase de grupos,1,A,1.0,Coreia do Sul,Tchéquia,Coreia do Sul x Tchéquia,Estadio Akron,Guadalajara,México,Finalizado
 3,2026-06-12,Sexta-feira,15:00,15:00,Fase de grupos,1,B,1.0,Canadá,Bósnia e Herzegovina,Canadá x Bósnia e Herzegovina,BMO Field,Toronto,Canadá,Finalizado
@@ -96,10 +96,10 @@ jogo,data,diaSemana,horaET,horaLocal,fase,ordemFase,grupo,rodadaGrupo,equipe1,eq
 95,2026-07-07,Terça-feira,12:00,12:00,Oitavas de final,3,,0.0,Argentina,Austrália,Argentina x Austrália,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Modelo diário
 96,2026-07-07,Terça-feira,16:00,13:00,Oitavas de final,3,,0.0,Suíça,Colômbia,Suíça x Colômbia,BC Place,Vancouver,Canadá,Modelo diário
 97,2026-07-09,Quinta-feira,16:00,16:00,Quartas de final,4,,0.0,Canadá,França,Canadá x França,Gillette Stadium,Boston,Estados Unidos,Modelo diário
-98,2026-07-10,Sexta-feira,15:00,12:00,Quartas de final,4,,0.0,Espanha,Estados Unidos,Espanha x Estados Unidos,SoFi Stadium,Los Angeles,Estados Unidos,Modelo diário
+98,2026-07-10,Sexta-feira,15:00,12:00,Quartas de final,4,,0.0,Portugal,Estados Unidos,Portugal x Estados Unidos,SoFi Stadium,Los Angeles,Estados Unidos,Modelo diário
 99,2026-07-11,Sábado,17:00,17:00,Quartas de final,4,,0.0,Brasil,México,Brasil x México,Hard Rock Stadium,Miami,Estados Unidos,Modelo diário
 100,2026-07-11,Sábado,21:00,20:00,Quartas de final,4,,0.0,Suíça,Argentina,Suíça x Argentina,Arrowhead Stadium,Kansas City,Estados Unidos,Modelo diário
-101,2026-07-14,Terça-feira,15:00,14:00,Semifinais,5,,0.0,França,Espanha,França x Espanha,AT&T Stadium,Dallas,Estados Unidos,Modelo diário
+101,2026-07-14,Terça-feira,15:00,14:00,Semifinais,5,,0.0,França,Portugal,França x Portugal,AT&T Stadium,Dallas,Estados Unidos,Modelo diário
 102,2026-07-15,Quarta-feira,15:00,15:00,Semifinais,5,,0.0,Brasil,Argentina,Brasil x Argentina,Mercedes-Benz Stadium,Atlanta,Estados Unidos,Modelo diário
-103,2026-07-18,Sábado,17:00,17:00,Disputa de 3º lugar,6,,0.0,França,Brasil,França x Brasil,Hard Rock Stadium,Miami,Estados Unidos,Modelo diário
-104,2026-07-19,Domingo,15:00,15:00,Final,7,,0.0,Espanha,Argentina,Espanha x Argentina,MetLife Stadium,New York/New Jersey,Estados Unidos,Modelo diário
+103,2026-07-18,Sábado,17:00,17:00,Disputa de 3º lugar,6,,0.0,França,Argentina,França x Argentina,Hard Rock Stadium,Miami,Estados Unidos,Modelo diário
+104,2026-07-19,Domingo,15:00,15:00,Final,7,,0.0,Portugal,Brasil,Portugal x Brasil,MetLife Stadium,New York/New Jersey,Estados Unidos,Modelo diário

@@ -156,18 +156,89 @@ def poisson_probs(xg1: float, xg2: float, max_goals: int = 8) -> Tuple[float, fl
     return p1 / total, px / total, p2 / total
 
 
-def modal_score(xg1: float, xg2: float, max_goals: int = 7) -> Tuple[int, int]:
-    best = (0, 0, -1.0)
+def score_grid(xg1: float, xg2: float, max_goals: int = 7) -> List[Tuple[int, int, float]]:
+    rows: List[Tuple[int, int, float]] = []
     for i in range(max_goals + 1):
         pi = math.exp(-xg1) * (xg1 ** i) / math.factorial(i)
         for j in range(max_goals + 1):
             pj = math.exp(-xg2) * (xg2 ** j) / math.factorial(j)
-            p = pi * pj
-            if p > best[2]:
-                best = (i, j, p)
+            rows.append((i, j, pi * pj))
+    total = sum(p for _, _, p in rows) or 1.0
+    return [(i, j, p / total) for i, j, p in rows]
+
+
+def modal_score(xg1: float, xg2: float, max_goals: int = 7) -> Tuple[int, int]:
+    best = max(score_grid(xg1, xg2, max_goals), key=lambda row: row[2])
     return int(best[0]), int(best[1])
 
 
+def representative_score(
+    xg1: float,
+    xg2: float,
+    outcome: str,
+    game: int,
+    team1: str = "",
+    team2: str = "",
+    max_goals: int = 7,
+) -> Tuple[int, int, str]:
+    """Escolhe um placar plausível sem repetir sempre o placar modal 1-0/0-1.
+
+    O placar modal de uma distribuição Poisson independente costuma ser muito
+    conservador. Para a tela principal, usamos um placar representativo dentro
+    do resultado mais provável, combinando probabilidade com aderência ao xG e
+    uma pequena variação determinística por jogo.
+    """
+    rows = score_grid(xg1, xg2, max_goals)
+    if outcome == "1":
+        candidates = [(i, j, p) for i, j, p in rows if i > j]
+    elif outcome == "2":
+        candidates = [(i, j, p) for i, j, p in rows if j > i]
+    else:
+        candidates = [(i, j, p) for i, j, p in rows if i == j]
+    if not candidates:
+        g1, g2 = modal_score(xg1, xg2, max_goals)
+        return g1, g2, "modal_fallback"
+
+    total_goals_target = xg1 + xg2
+    margin_target = xg1 - xg2
+
+    def score_candidate(row: Tuple[int, int, float]) -> float:
+        i, j, p = row
+        prob_component = math.log(max(p, 1e-12))
+        total_penalty = abs((i + j) - total_goals_target) * 0.34
+        margin_penalty = abs((i - j) - margin_target) * 0.26
+        # Penaliza levemente o 1-0/0-1 quando o jogo tem volume para 2+ gols.
+        low_score_penalty = 0.0
+        if (i + j) <= 1 and total_goals_target >= 2.15:
+            low_score_penalty = 0.55 + min(0.35, (total_goals_target - 2.15) * 0.30)
+        # Evita placares muito abertos sem xG suficiente.
+        blowout_penalty = 0.22 * max(0, abs(i - j) - max(1.0, abs(margin_target) + 0.8))
+        return prob_component - total_penalty - margin_penalty - low_score_penalty - blowout_penalty
+
+    ranked = sorted(candidates, key=score_candidate, reverse=True)
+    # Entre candidatos quase equivalentes, alterna de forma determinística para
+    # não transformar todo favoritismo moderado em 1-0.
+    best_value = score_candidate(ranked[0])
+    pool = [r for r in ranked[:8] if score_candidate(r) >= best_value - 0.32]
+    if len(pool) > 1:
+        key = f"{game}|{team1}|{team2}|{round(xg1, 2)}|{round(xg2, 2)}"
+        idx = sum(ord(c) for c in key) % len(pool)
+        chosen = pool[idx]
+        method = "representativo_condicional"
+    else:
+        chosen = ranked[0]
+        method = "representativo_probabilistico"
+    return int(chosen[0]), int(chosen[1]), method
+
+
+def penalty_shootout_probability(xg1: float, xg2: float, prob_draw_90: float) -> float:
+    """Aproxima P(pênaltis) = P(empate em 90') * P(empate na prorrogação).
+
+    A prorrogação é modelada com cerca de 1/3 do volume de xG de 90 minutos,
+    mantendo a assimetria entre as equipes.
+    """
+    _, draw_extra, _ = poisson_probs(max(0.05, xg1 / 3.0), max(0.05, xg2 / 3.0), max_goals=5)
+    return float(np.clip(prob_draw_90 * draw_extra, 0.0, 0.65))
 
 
 def monte_carlo_probs_and_score(xg1: float, xg2: float, simulations: int, seed_extra: int = 0) -> Tuple[float, float, float, int, int]:
@@ -815,16 +886,27 @@ class DailyWorldCupModel:
         total = p1 + px + p2
         p1, px, p2 = p1 / total, px / total, p2 / total
 
-        # Placar previsto pelo resultado modal das interações Monte Carlo.
-        # A rede calibra o vencedor provável, mas não força um placar irreal.
+        # Placar principal: não usa apenas o placar modal bruto, porque isso
+        # repete 1-0/0-1 em excesso quando o xG fica próximo de 1 por equipe.
         predicted_outcome = ["1", "X", "2"][[p1, px, p2].index(max(p1, px, p2))]
-        if predicted_outcome == "1" and g1 <= g2:
-            g1 = g2 + 1
-        elif predicted_outcome == "2" and g2 <= g1:
-            g2 = g1 + 1
-        elif predicted_outcome == "X":
-            avg = int(round((g1 + g2) / 2))
-            g1 = g2 = max(0, avg)
+        criterion_outcome = "maior_probabilidade"
+        prob_penaltis = penalty_shootout_probability(xg1, xg2, px) if bool(details.get("knockout", 0.0)) else 0.0
+        # Em mata-mata, uma vitória estreita não deve apagar o risco real de
+        # empate e pênaltis. Se o empate estiver perto da maior probabilidade,
+        # modela o tempo de jogo como empate e deixa o classificado vir da
+        # rotina de pênaltis.
+        if bool(details.get("knockout", 0.0)):
+            top_non_draw = max(p1, p2)
+            close_to_draw = (top_non_draw - px) <= 0.085
+            enough_penalty_risk = prob_penaltis >= 0.145 or px >= 0.285
+            if close_to_draw and enough_penalty_risk:
+                predicted_outcome = "X"
+                criterion_outcome = "risco_penaltis_considerado"
+
+        modal_g1, modal_g2 = int(g1), int(g2)
+        g1, g2, score_method = representative_score(
+            xg1, xg2, predicted_outcome, int(match["jogo"]), str(match["equipe1"]), str(match["equipe2"])
+        )
 
         row = {
             "jogo": int(match["jogo"]),
@@ -837,12 +919,16 @@ class DailyWorldCupModel:
             "xg1_modelo": round(xg1, 3),
             "xg2_modelo": round(xg2, 3),
             "placar_previsto": f"{g1}-{g2}",
+            "placar_modal_bruto": f"{modal_g1}-{modal_g2}",
+            "metodo_placar": score_method,
+            "criterio_resultado_modelado": criterion_outcome,
             "gols1_previsto": int(g1),
             "gols2_previsto": int(g2),
             "vencedor_previsto": winner_name(str(match["equipe1"]), g1, str(match["equipe2"]), g2),
             "prob_vitoria_equipe1": round(p1, 4),
             "prob_empate": round(px, 4),
             "prob_vitoria_equipe2": round(p2, 4),
+            "prob_decisao_penaltis": round(prob_penaltis, 4),
             "confianca_modelo": confidence_label(p1, px, p2),
             "peso_rede_neural": round(neural_weight, 3),
             "validacoes_anteriores_usadas": len(self.history_labels),
@@ -1122,6 +1208,8 @@ class DailyWorldCupModel:
                 "gols_separados": "gols marcados atualizam forma ofensiva; gols sofridos atualizam forma defensiva com dano ajustado pela força ofensiva/rating do adversário; saldo não é usado como atalho principal",
                 "peso_adversario": "resultado e gols marcados são valorizados contra adversários fortes; gols sofridos contra adversários fortes têm punição reduzida e contra fracos têm punição maior",
                 "rede_neural_como_calibrador": "rede neural tem peso máximo de 8% e não pode inverter favorito quando xG/rating dão vantagem clara ao outro lado",
+                "placar_representativo": "placar exibido é escolhido dentro do resultado mais provável, considerando probabilidade, xG, margem e variação determinística; o placar modal bruto é preservado em placar_modal_bruto",
+                "probabilidade_penaltis": "em mata-mata calcula P(pênaltis) como P(empate em 90 minutos) vezes P(empate na prorrogação aproximada por xG/3)",
                 "rede_neural": "MLPClassifier sequencial quando há amostra real mínima; antes disso usa prior contextual",
                 "sklearn_disponivel": SKLEARN_AVAILABLE,
                 "neural_min_samples": self.neural_min_samples,
