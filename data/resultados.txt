@@ -71,11 +71,18 @@ Jogo 70 | 2026-06-27 | Fase de grupos | Jordânia 1 x 3 Argentina | Vencedor: Ar
 Jogo 71 | 2026-06-27 | Fase de grupos | Colômbia 0 x 0 Portugal | Vencedor: Empate
 Jogo 72 | 2026-06-27 | Fase de grupos | RD Congo 3 x 1 Uzbequistão | Vencedor: RD Congo
 Jogo 73 | 2026-06-28 | 16 avos de final | África do Sul 0 x 1 Canadá | Vencedor: Canadá
-Jogo 74 | 2026-06-29 | 16 avos de final | Alemanha 1 (3 pen) x 1 (4 pen) Paraguai | Vencedor: Paraguai
-Jogo 75 | 2026-06-29 | 16 avos de final | Países Baixos 1 (2 pen) x 1 (3 pen) Marrocos | Vencedor: Marrocos
+Jogo 74 | 2026-06-29 | 16 avos de final | Alemanha 1 (3 pen) x 1 (4 pen) Paraguai | Vencedor: Paraguai | Pênaltis: 3-4
+Jogo 75 | 2026-06-29 | 16 avos de final | Países Baixos 1 (2 pen) x 1 (3 pen) Marrocos | Vencedor: Marrocos | Pênaltis: 2-3
 Jogo 76 | 2026-06-29 | 16 avos de final | Brasil 2 x 1 Japão | Vencedor: Brasil
 Jogo 77 | 2026-06-30 | 16 avos de final | França 3 x 0 Suécia | Vencedor: França
 Jogo 78 | 2026-06-30 | 16 avos de final | Costa do Marfim 1 x 2 Noruega | Vencedor: Noruega
 Jogo 79 | 2026-06-30 | 16 avos de final | México 2 x 0 Equador | Vencedor: México
 Jogo 80 | 2026-07-01 | 16 avos de final | Inglaterra 2 x 1 RD Congo | Vencedor: Inglaterra
+Jogo 81 | 2026-07-01 | 16 avos de final | Estados Unidos 2 x 0 Bósnia e Herzegovina | Vencedor: Estados Unidos
 Jogo 82 | 2026-07-01 | 16 avos de final | Bélgica 3 x 2 Senegal (após prorrogação) | Vencedor: Bélgica
+Jogo 83 | 2026-07-02 | 16 avos de final | Portugal 2 x 1 Croácia | Vencedor: Portugal
+Jogo 84 | 2026-07-02 | 16 avos de final | Espanha 3 x 0 Áustria | Vencedor: Espanha
+Jogo 85 | 2026-07-02 | 16 avos de final | Suíça 2 x 0 Argélia | Vencedor: Suíça
+Jogo 86 | 2026-07-03 | 16 avos de final | Argentina 3 x 2 Cabo Verde (após prorrogação) | Vencedor: Argentina
+Jogo 87 | 2026-07-03 | 16 avos de final | Colômbia 3 x 0 Gana | Vencedor: Colômbia
+Jogo 88 | 2026-07-03 | 16 avos de final | Austrália 1 (2 pen) x 1 (4 pen) Egito | Vencedor: Egito | Pênaltis: 2-4
