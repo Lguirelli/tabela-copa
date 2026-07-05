@@ -6,8 +6,8 @@ window.WC2026_DATA = {
     "grupos": 12,
     "selecoes": 48,
     "periodo": "2026-06-11 a 2026-07-19",
-    "resultadosReais": 88,
-    "simulados": 16
+    "resultadosReais": 90,
+    "simulados": 14
   },
   "groups": [
     {
@@ -2424,15 +2424,15 @@ window.WC2026_DATA = {
       "estadio": "Lincoln Financial Field",
       "cidade": "Philadelphia",
       "pais": "Estados Unidos",
-      "status": "Modelo diário",
+      "status": "Finalizado",
       "data_dt": "2026-07-04",
-      "placar_real": null,
-      "vencedor_real": null,
-      "gols1_real": null,
-      "gols2_real": null,
-      "status_real": null,
-      "fonte": null,
-      "placar_original": null
+      "placar_real": "0-3",
+      "vencedor_real": "Marrocos",
+      "gols1_real": 0.0,
+      "gols2_real": 3.0,
+      "status_real": "Finalizado",
+      "fonte": "Reuters | ESPN gameId 760502",
+      "placar_original": "Canadá 0 x 3 Marrocos"
     },
     {
       "jogo": 90,
@@ -2450,15 +2450,15 @@ window.WC2026_DATA = {
       "estadio": "NRG Stadium",
       "cidade": "Houston",
       "pais": "Estados Unidos",
-      "status": "Modelo diário",
+      "status": "Finalizado",
       "data_dt": "2026-07-04",
-      "placar_real": null,
-      "vencedor_real": null,
-      "gols1_real": null,
-      "gols2_real": null,
-      "status_real": null,
-      "fonte": null,
-      "placar_original": null
+      "placar_real": "0-1",
+      "vencedor_real": "França",
+      "gols1_real": 0.0,
+      "gols2_real": 1.0,
+      "status_real": "Finalizado",
+      "fonte": "Guardian live report | ESPN gameId 760503",
+      "placar_original": "Paraguai 0 x 1 França"
     },
     {
       "jogo": 91,
@@ -2626,9 +2626,9 @@ window.WC2026_DATA = {
       "ordemFase": 4,
       "grupo": null,
       "rodadaGrupo": 0.0,
-      "equipe1": "Canadá",
+      "equipe1": "Marrocos",
       "equipe2": "França",
-      "confronto": "Canadá x França",
+      "confronto": "Marrocos x França",
       "estadio": "Gillette Stadium",
       "cidade": "Boston",
       "pais": "Estados Unidos",

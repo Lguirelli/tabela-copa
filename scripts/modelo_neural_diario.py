@@ -945,7 +945,8 @@ class DailyWorldCupModel:
         pred_out = outcome_from_goals(p1, p2)
         real_out = outcome_from_goals(a1, a2)
         real_winner_manual = str(real_row.get("vencedor_real", "") or "").strip()
-        penalty_score_real = str(real_row.get("placar_penaltis_real", "") or "").strip()
+        penalty_value = real_row.get("placar_penaltis_real", "")
+        penalty_score_real = "" if pd.isna(penalty_value) else str(penalty_value).strip()
         knockout_real_penalty = (
             str(match.get("fase", "")).strip() != "Fase de grupos"
             and a1 == a2

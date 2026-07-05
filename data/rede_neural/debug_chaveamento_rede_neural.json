@@ -187,14 +187,14 @@
       "team2": "Canadá",
       "winner": "Canadá",
       "loser": "África do Sul",
-      "score": "2-2"
+      "score": "1-1"
     },
     "74": {
       "team1": "Alemanha",
       "team2": "Paraguai",
       "winner": "Paraguai",
       "loser": "Alemanha",
-      "score": "1-1"
+      "score": "2-1"
     },
     "75": {
       "team1": "Países Baixos",
@@ -208,27 +208,27 @@
       "team2": "Japão",
       "winner": "Brasil",
       "loser": "Japão",
-      "score": "2-2"
+      "score": "2-1"
     },
     "77": {
       "team1": "França",
       "team2": "Suécia",
       "winner": "França",
       "loser": "Suécia",
-      "score": "2-1"
+      "score": "1-1"
     },
     "78": {
       "team1": "Costa do Marfim",
       "team2": "Noruega",
       "winner": "Noruega",
       "loser": "Costa do Marfim",
-      "score": "2-2"
+      "score": "1-1"
     },
     "79": {
       "team1": "México",
       "team2": "Equador",
-      "winner": "Equador",
-      "loser": "México",
+      "winner": "México",
+      "loser": "Equador",
       "score": "1-1"
     },
     "80": {
@@ -236,7 +236,7 @@
       "team2": "RD Congo",
       "winner": "Inglaterra",
       "loser": "RD Congo",
-      "score": "1-1"
+      "score": "2-1"
     },
     "81": {
       "team1": "Estados Unidos",
@@ -248,9 +248,9 @@
     "82": {
       "team1": "Bélgica",
       "team2": "Senegal",
-      "winner": "Senegal",
-      "loser": "Bélgica",
-      "score": "1-1"
+      "winner": "Bélgica",
+      "loser": "Senegal",
+      "score": "2-1"
     },
     "83": {
       "team1": "Portugal",
@@ -264,61 +264,61 @@
       "team2": "Áustria",
       "winner": "Espanha",
       "loser": "Áustria",
-      "score": "3-1"
+      "score": "2-1"
     },
     "85": {
       "team1": "Suíça",
       "team2": "Argélia",
       "winner": "Suíça",
       "loser": "Argélia",
-      "score": "2-1"
+      "score": "1-1"
     },
     "86": {
       "team1": "Argentina",
       "team2": "Cabo Verde",
       "winner": "Argentina",
       "loser": "Cabo Verde",
-      "score": "1-0"
+      "score": "2-1"
     },
     "87": {
       "team1": "Colômbia",
       "team2": "Gana",
       "winner": "Colômbia",
       "loser": "Gana",
-      "score": "1-0"
+      "score": "1-1"
     },
     "88": {
       "team1": "Austrália",
       "team2": "Egito",
       "winner": "Egito",
       "loser": "Austrália",
-      "score": "2-2"
+      "score": "1-1"
     },
     "89": {
       "team1": "Canadá",
       "team2": "Marrocos",
-      "winner": "Canadá",
-      "loser": "Marrocos",
-      "score": "1-1"
+      "winner": "Marrocos",
+      "loser": "Canadá",
+      "score": "2-1"
     },
     "90": {
       "team1": "Paraguai",
       "team2": "França",
       "winner": "França",
       "loser": "Paraguai",
-      "score": "2-2"
+      "score": "1-1"
     },
     "91": {
       "team1": "Brasil",
       "team2": "Noruega",
       "winner": "Brasil",
       "loser": "Noruega",
-      "score": "1-1"
+      "score": "2-1"
     },
     "92": {
-      "team1": "Equador",
+      "team1": "México",
       "team2": "Inglaterra",
-      "winner": "Equador",
+      "winner": "México",
       "loser": "Inglaterra",
       "score": "1-1"
     },
@@ -331,10 +331,10 @@
     },
     "94": {
       "team1": "Estados Unidos",
-      "team2": "Senegal",
+      "team2": "Bélgica",
       "winner": "Estados Unidos",
-      "loser": "Senegal",
-      "score": "3-1"
+      "loser": "Bélgica",
+      "score": "2-1"
     },
     "95": {
       "team1": "Argentina",
@@ -346,14 +346,14 @@
     "96": {
       "team1": "Suíça",
       "team2": "Colômbia",
-      "winner": "Colômbia",
-      "loser": "Suíça",
+      "winner": "Suíça",
+      "loser": "Colômbia",
       "score": "1-1"
     },
     "97": {
-      "team1": "Canadá",
+      "team1": "Marrocos",
       "team2": "França",
-      "winner": "Canadá",
+      "winner": "Marrocos",
       "loser": "França",
       "score": "1-1"
     },
@@ -366,45 +366,45 @@
     },
     "99": {
       "team1": "Brasil",
-      "team2": "Equador",
-      "winner": "Equador",
-      "loser": "Brasil",
+      "team2": "México",
+      "winner": "Brasil",
+      "loser": "México",
       "score": "1-1"
     },
     "100": {
       "team1": "Argentina",
-      "team2": "Colômbia",
+      "team2": "Suíça",
       "winner": "Argentina",
-      "loser": "Colômbia",
-      "score": "1-1"
+      "loser": "Suíça",
+      "score": "2-1"
     },
     "101": {
-      "team1": "Canadá",
+      "team1": "Marrocos",
       "team2": "Portugal",
-      "winner": "Canadá",
-      "loser": "Portugal",
-      "score": "2-2"
-    },
-    "102": {
-      "team1": "Equador",
-      "team2": "Argentina",
-      "winner": "Equador",
-      "loser": "Argentina",
-      "score": "2-2"
-    },
-    "104": {
-      "team1": "Canadá",
-      "team2": "Equador",
-      "winner": "Equador",
-      "loser": "Canadá",
+      "winner": "Portugal",
+      "loser": "Marrocos",
       "score": "1-1"
     },
-    "103": {
-      "team1": "Portugal",
+    "102": {
+      "team1": "Brasil",
       "team2": "Argentina",
-      "winner": "Portugal",
+      "winner": "Brasil",
       "loser": "Argentina",
-      "score": "3-1"
+      "score": "1-1"
+    },
+    "104": {
+      "team1": "Portugal",
+      "team2": "Brasil",
+      "winner": "Portugal",
+      "loser": "Brasil",
+      "score": "2-1"
+    },
+    "103": {
+      "team1": "Marrocos",
+      "team2": "Argentina",
+      "winner": "Argentina",
+      "loser": "Marrocos",
+      "score": "1-1"
     }
   }
 }

@@ -87,3 +87,5 @@ jogo;status;placar;equipe1;equipe2;vencedor
 86;Finalizado;3-2;Argentina;Cabo Verde;Argentina
 87;Finalizado;3-0;Colômbia;Gana;Colômbia
 88;Finalizado;1-1;Austrália;Egito;Egito
+89;Finalizado;0-3;Canadá;Marrocos;Marrocos
+90;Finalizado;0-1;Paraguai;França;França
