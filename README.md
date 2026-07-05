@@ -153,3 +153,7 @@ Regras do chaveamento:
 3. vencedores reais/projetados alimentam as fases seguintes;
 4. em mata-mata, empate é resolvido por pênaltis;
 5. a tabela completa fica sempre preenchida, sem “Aguardando recálculo” quando o jogo ainda não tem resultado real.
+
+## GitHub Pages deployment
+
+O repositório inclui `.github/workflows/static.yml` para publicar o site estático via GitHub Actions. Em **Settings → Pages → Build and deployment**, mantenha **Source: GitHub Actions**. O workflow valida `index.html`, cria o artifact do Pages e só inicia o deploy após o build concluir.
