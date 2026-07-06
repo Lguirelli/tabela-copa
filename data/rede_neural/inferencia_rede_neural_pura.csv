@@ -1,49 +1,49 @@
 ﻿jogo,data,fase,equipe1,equipe2,placar_rede_neural_puro,vencedor_rede_neural_puro
-1,2026-06-11,Fase de grupos,México,África do Sul,2-0,México
+1,2026-06-11,Fase de grupos,México,África do Sul,2-1,México
 2,2026-06-11,Fase de grupos,Coreia do Sul,Tchéquia,2-1,Coreia do Sul
 3,2026-06-12,Fase de grupos,Canadá,Bósnia e Herzegovina,2-1,Canadá
 4,2026-06-12,Fase de grupos,Estados Unidos,Paraguai,2-1,Estados Unidos
 5,2026-06-13,Fase de grupos,Haiti,Escócia,1-1,Escócia
 6,2026-06-13,Fase de grupos,Austrália,Turquia,1-1,Turquia
 7,2026-06-13,Fase de grupos,Brasil,Marrocos,2-1,Brasil
-8,2026-06-13,Fase de grupos,Catar,Suíça,2-1,Catar
+8,2026-06-13,Fase de grupos,Catar,Suíça,1-1,Catar
 9,2026-06-14,Fase de grupos,Costa do Marfim,Equador,1-1,Costa do Marfim
-10,2026-06-14,Fase de grupos,Alemanha,Curaçao,2-1,Alemanha
+10,2026-06-14,Fase de grupos,Alemanha,Curaçao,2-0,Alemanha
 11,2026-06-14,Fase de grupos,Países Baixos,Japão,2-1,Países Baixos
-12,2026-06-14,Fase de grupos,Suécia,Tunísia,2-1,Suécia
+12,2026-06-14,Fase de grupos,Suécia,Tunísia,2-0,Suécia
 13,2026-06-15,Fase de grupos,Arábia Saudita,Uruguai,2-1,Arábia Saudita
-14,2026-06-15,Fase de grupos,Espanha,Cabo Verde,2-1,Espanha
+14,2026-06-15,Fase de grupos,Espanha,Cabo Verde,2-0,Espanha
 15,2026-06-15,Fase de grupos,Irã,Nova Zelândia,1-1,Irã
 16,2026-06-15,Fase de grupos,Bélgica,Egito,2-1,Bélgica
 17,2026-06-16,Fase de grupos,França,Senegal,2-1,França
 18,2026-06-16,Fase de grupos,Iraque,Noruega,1-1,Noruega
 19,2026-06-16,Fase de grupos,Argentina,Argélia,2-1,Argentina
-20,2026-06-16,Fase de grupos,Áustria,Jordânia,2-1,Áustria
+20,2026-06-16,Fase de grupos,Áustria,Jordânia,2-0,Áustria
 21,2026-06-17,Fase de grupos,Gana,Panamá,1-1,Gana
 22,2026-06-17,Fase de grupos,Inglaterra,Croácia,2-1,Inglaterra
 23,2026-06-17,Fase de grupos,Portugal,RD Congo,2-1,Portugal
 24,2026-06-17,Fase de grupos,Uzbequistão,Colômbia,1-1,Colômbia
 25,2026-06-18,Fase de grupos,Tchéquia,África do Sul,1-1,Tchéquia
 26,2026-06-18,Fase de grupos,Suíça,Bósnia e Herzegovina,2-1,Suíça
-27,2026-06-18,Fase de grupos,Canadá,Catar,2-1,Canadá
+27,2026-06-18,Fase de grupos,Canadá,Catar,2-0,Canadá
 28,2026-06-18,Fase de grupos,México,Coreia do Sul,2-0,México
-29,2026-06-19,Fase de grupos,Brasil,Haiti,2-1,Brasil
+29,2026-06-19,Fase de grupos,Brasil,Haiti,2-0,Brasil
 30,2026-06-19,Fase de grupos,Escócia,Marrocos,1-1,Marrocos
 31,2026-06-19,Fase de grupos,Turquia,Paraguai,2-1,Turquia
-32,2026-06-19,Fase de grupos,Estados Unidos,Austrália,2-1,Estados Unidos
+32,2026-06-19,Fase de grupos,Estados Unidos,Austrália,2-0,Estados Unidos
 33,2026-06-20,Fase de grupos,Alemanha,Costa do Marfim,2-1,Alemanha
-34,2026-06-20,Fase de grupos,Equador,Curaçao,2-1,Equador
-35,2026-06-20,Fase de grupos,Países Baixos,Suécia,2-1,Países Baixos
+34,2026-06-20,Fase de grupos,Equador,Curaçao,2-0,Equador
+35,2026-06-20,Fase de grupos,Países Baixos,Suécia,2-0,Países Baixos
 36,2026-06-20,Fase de grupos,Tunísia,Japão,1-1,Japão
 37,2026-06-21,Fase de grupos,Uruguai,Cabo Verde,2-1,Uruguai
-38,2026-06-21,Fase de grupos,Espanha,Arábia Saudita,2-1,Espanha
+38,2026-06-21,Fase de grupos,Espanha,Arábia Saudita,2-0,Espanha
 39,2026-06-21,Fase de grupos,Bélgica,Irã,1-1,Bélgica
 40,2026-06-21,Fase de grupos,Nova Zelândia,Egito,1-1,Egito
-41,2026-06-22,Fase de grupos,Noruega,Senegal,2-1,Noruega
+41,2026-06-22,Fase de grupos,Noruega,Senegal,1-1,Noruega
 42,2026-06-22,Fase de grupos,França,Iraque,2-1,França
 43,2026-06-22,Fase de grupos,Argentina,Áustria,2-1,Argentina
 44,2026-06-22,Fase de grupos,Jordânia,Argélia,1-1,Argélia
-45,2026-06-23,Fase de grupos,Inglaterra,Gana,2-1,Inglaterra
+45,2026-06-23,Fase de grupos,Inglaterra,Gana,2-0,Inglaterra
 46,2026-06-23,Fase de grupos,Panamá,Croácia,1-1,Croácia
 47,2026-06-23,Fase de grupos,Portugal,Uzbequistão,2-1,Portugal
 48,2026-06-23,Fase de grupos,Colômbia,RD Congo,2-1,Colômbia
@@ -56,50 +56,50 @@
 55,2026-06-25,Fase de grupos,Curaçao,Costa do Marfim,1-1,Costa do Marfim
 56,2026-06-25,Fase de grupos,Equador,Alemanha,1-1,Equador
 57,2026-06-25,Fase de grupos,Japão,Suécia,2-1,Japão
-58,2026-06-25,Fase de grupos,Tunísia,Países Baixos,1-1,Países Baixos
+58,2026-06-25,Fase de grupos,Tunísia,Países Baixos,1-2,Países Baixos
 59,2026-06-25,Fase de grupos,Turquia,Estados Unidos,2-1,Turquia
-60,2026-06-25,Fase de grupos,Paraguai,Austrália,2-1,Paraguai
+60,2026-06-25,Fase de grupos,Paraguai,Austrália,1-1,Paraguai
 61,2026-06-26,Fase de grupos,Noruega,França,1-1,França
 62,2026-06-26,Fase de grupos,Senegal,Iraque,2-1,Senegal
-63,2026-06-26,Fase de grupos,Egito,Irã,1-1,Egito
+63,2026-06-26,Fase de grupos,Egito,Irã,1-1,Irã
 64,2026-06-26,Fase de grupos,Nova Zelândia,Bélgica,1-1,Bélgica
 65,2026-06-26,Fase de grupos,Cabo Verde,Arábia Saudita,1-1,Arábia Saudita
 66,2026-06-26,Fase de grupos,Uruguai,Espanha,1-1,Uruguai
-67,2026-06-27,Fase de grupos,Panamá,Inglaterra,1-1,Panamá
+67,2026-06-27,Fase de grupos,Panamá,Inglaterra,1-1,Inglaterra
 68,2026-06-27,Fase de grupos,Croácia,Gana,2-1,Croácia
-69,2026-06-27,Fase de grupos,Argélia,Áustria,2-1,Argélia
+69,2026-06-27,Fase de grupos,Argélia,Áustria,1-1,Argélia
 70,2026-06-27,Fase de grupos,Jordânia,Argentina,1-1,Argentina
-71,2026-06-27,Fase de grupos,Colômbia,Portugal,2-1,Colômbia
-72,2026-06-27,Fase de grupos,RD Congo,Uzbequistão,1-1,RD Congo
-73,2026-06-28,16 avos de final,África do Sul,Canadá,1-1,África do Sul
+71,2026-06-27,Fase de grupos,Colômbia,Portugal,1-1,Colômbia
+72,2026-06-27,Fase de grupos,RD Congo,Uzbequistão,1-1,Uzbequistão
+73,2026-06-28,16 avos de final,África do Sul,Canadá,1-1,Canadá
 74,2026-06-29,16 avos de final,Alemanha,Paraguai,2-1,Alemanha
 75,2026-06-29,16 avos de final,Países Baixos,Marrocos,2-1,Países Baixos
-76,2026-06-29,16 avos de final,Brasil,Japão,2-1,Brasil
+76,2026-06-29,16 avos de final,Brasil,Japão,1-1,Brasil
 77,2026-06-30,16 avos de final,França,Suécia,1-1,França
 78,2026-06-30,16 avos de final,Costa do Marfim,Noruega,1-1,Costa do Marfim
 79,2026-06-30,16 avos de final,México,Equador,1-1,México
 80,2026-07-01,16 avos de final,Inglaterra,RD Congo,2-1,Inglaterra
 81,2026-07-01,16 avos de final,Estados Unidos,Bósnia e Herzegovina,2-1,Estados Unidos
-82,2026-07-01,16 avos de final,Bélgica,Senegal,2-1,Bélgica
+82,2026-07-01,16 avos de final,Bélgica,Senegal,1-1,Bélgica
 83,2026-07-02,16 avos de final,Portugal,Croácia,2-1,Portugal
 84,2026-07-02,16 avos de final,Espanha,Áustria,2-1,Espanha
 85,2026-07-02,16 avos de final,Suíça,Argélia,1-1,Suíça
 86,2026-07-03,16 avos de final,Argentina,Cabo Verde,2-1,Argentina
 87,2026-07-03,16 avos de final,Colômbia,Gana,1-1,Colômbia
-88,2026-07-03,16 avos de final,Austrália,Egito,1-1,Austrália
-89,2026-07-04,Oitavas de final,Canadá,Marrocos,2-1,Canadá
+88,2026-07-03,16 avos de final,Austrália,Egito,1-1,Egito
+89,2026-07-04,Oitavas de final,Canadá,Marrocos,1-1,Canadá
 90,2026-07-04,Oitavas de final,Paraguai,França,1-1,França
-91,2026-07-05,Oitavas de final,Brasil,Noruega,2-1,Brasil
+91,2026-07-05,Oitavas de final,Brasil,Noruega,1-1,Brasil
 92,2026-07-05,Oitavas de final,México,Inglaterra,1-1,México
 93,2026-07-06,Oitavas de final,Portugal,Espanha,2-1,Portugal
 94,2026-07-06,Oitavas de final,Estados Unidos,Bélgica,2-1,Estados Unidos
 95,2026-07-07,Oitavas de final,Argentina,Egito,2-1,Argentina
 96,2026-07-07,Oitavas de final,Suíça,Colômbia,1-1,Suíça
-97,2026-07-09,Quartas de final,Marrocos,França,1-1,Marrocos
+97,2026-07-09,Quartas de final,Marrocos,França,1-1,França
 98,2026-07-10,Quartas de final,Portugal,Estados Unidos,2-1,Portugal
-99,2026-07-11,Quartas de final,Brasil,México,1-1,Brasil
+99,2026-07-11,Quartas de final,Noruega,Inglaterra,1-1,Inglaterra
 100,2026-07-11,Quartas de final,Argentina,Suíça,2-1,Argentina
-101,2026-07-14,Semifinais,Marrocos,Portugal,1-1,Portugal
-102,2026-07-15,Semifinais,Brasil,Argentina,1-1,Brasil
-103,2026-07-18,Disputa de 3º lugar,Marrocos,Argentina,1-1,Argentina
-104,2026-07-19,Final,Portugal,Brasil,2-1,Portugal
+101,2026-07-14,Semifinais,França,Portugal,1-1,Portugal
+102,2026-07-15,Semifinais,Inglaterra,Argentina,1-1,Inglaterra
+103,2026-07-18,Disputa de 3º lugar,França,Argentina,1-1,Argentina
+104,2026-07-19,Final,Portugal,Inglaterra,2-1,Portugal

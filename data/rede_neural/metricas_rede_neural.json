@@ -1,29 +1,29 @@
 {
   "modelo": "CopaMatchNet PyTorch MLP + embeddings",
   "base_referencia": "NVIDIA DeepLearningExamples: arquitetura modular PyTorch adaptada, sem copiar modelo pesado",
-  "amostras_reais": 90,
-  "amostras_treino": 70,
-  "amostras_validacao_cronologica": 20,
+  "amostras_reais": 92,
+  "amostras_treino": 71,
+  "amostras_validacao_cronologica": 21,
   "jogos_totais_inferidos": 104,
   "variaveis_numericas": 43,
   "times_com_embedding": 48,
   "treino": {
-    "mae_goal_diff": 1.5,
-    "mae_total_goals": 1.5,
-    "erro_medio_total_gols": 1.8714,
-    "acuracia_vencedor": 45.71,
-    "placar_exato": 10.0,
-    "amostras": 70
+    "mae_goal_diff": 1.3803,
+    "mae_total_goals": 1.5493,
+    "erro_medio_total_gols": 1.831,
+    "acuracia_vencedor": 50.7,
+    "placar_exato": 11.27,
+    "amostras": 71
   },
   "validacao_cronologica": {
-    "mae_goal_diff": 1.15,
-    "mae_total_goals": 0.85,
-    "erro_medio_total_gols": 1.45,
-    "acuracia_vencedor": 55.0,
-    "placar_exato": 15.0,
-    "amostras": 20
+    "mae_goal_diff": 1.3333,
+    "mae_total_goals": 0.8571,
+    "erro_medio_total_gols": 1.5238,
+    "acuracia_vencedor": 57.14,
+    "placar_exato": 14.29,
+    "amostras": 21
   },
   "epochs_executados": 38,
-  "best_val_loss": 0.687909,
+  "best_val_loss": 0.763731,
   "observacao": "A rede neural é uma referência secundária. O front e o chaveamento priorizam: resultado real > modelo diário incremental > rede neural."
 }

@@ -89,3 +89,5 @@ jogo;status;placar;equipe1;equipe2;vencedor
 88;Finalizado;1-1;Austrália;Egito;Egito
 89;Finalizado;0-3;Canadá;Marrocos;Marrocos
 90;Finalizado;0-1;Paraguai;França;França
+91;Finalizado;1-2;Brasil;Noruega;Noruega
+92;Finalizado;2-3;México;Inglaterra;Inglaterra

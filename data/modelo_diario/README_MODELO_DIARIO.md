@@ -23,13 +23,13 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - **usa_simulacoes_anteriores_como_entrada**: False
 - **validacao_sem_vazamento**: True
 - **jogos_previstos**: 104
-- **jogos_com_placar_real_validado**: 90
-- **acuracia_vencedor_percentual**: 61.11
-- **placar_exato_percentual**: 11.11
-- **erro_medio_total_gols**: 2.122
-- **erro_medio_xg_total**: 1.953
-- **proximidade_media_0_100**: 47.56
-- **dias_validados**: 24
+- **jogos_com_placar_real_validado**: 92
+- **acuracia_vencedor_percentual**: 59.78
+- **placar_exato_percentual**: 10.87
+- **erro_medio_total_gols**: 2.141
+- **erro_medio_xg_total**: 1.959
+- **proximidade_media_0_100**: 46.8
+- **dias_validados**: 25
 - **peso_resultado_anterior**: momentum por seleção atualizado após cada placar real e usado no próximo jogo do mesmo time
 - **peso_desempenho**: menções de jogadores/desempenho entram somente após o jogo validado
 - **gols_separados**: gols marcados atualizam forma ofensiva; gols sofridos atualizam forma defensiva com dano ajustado pela força ofensiva/rating do adversário; saldo não é usado como atalho principal
@@ -49,9 +49,9 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - Estados Unidos: 76.094 | momentum 0.805 | jogos 4 | saldo 6
 - Espanha: 75.932 | momentum 1.357 | jogos 4 | saldo 8
 - Bélgica: 75.762 | momentum 1.111 | jogos 4 | saldo 5
-- Brasil: 75.34 | momentum 1.411 | jogos 4 | saldo 7
 - Países Baixos: 75.104 | momentum 0.588 | jogos 4 | saldo 6
-- Inglaterra: 74.513 | momentum 1.262 | jogos 4 | saldo 5
+- Inglaterra: 75.022 | momentum 1.462 | jogos 5 | saldo 6
+- Brasil: 74.779 | momentum 0.384 | jogos 5 | saldo 6
 - Alemanha: 74.41 | momentum 0.09 | jogos 4 | saldo 6
 - Colômbia: 73.896 | momentum 1.056 | jogos 4 | saldo 6
 - Croácia: 73.552 | momentum 0.182 | jogos 4 | saldo -1
@@ -66,7 +66,7 @@ Este modelo foi gerado para prever jogo a jogo sem usar previsões ou simulaçõ
 - Jogo 99 (2026-07-11): Brasil x México → 0-1 / México (baixa)
 - Jogo 100 (2026-07-11): Suíça x Argentina → 1-2 / Argentina (baixa)
 - Jogo 101 (2026-07-14): França x Espanha → 1-2 / Espanha (baixa)
-- Jogo 102 (2026-07-15): México x Suíça → 1-1 / Empate (baixa)
+- Jogo 102 (2026-07-15): México x Suíça → 0-1 / Suíça (baixa)
 - Jogo 103 (2026-07-18): França x Suíça → 1-0 / França (baixa)
 - Jogo 104 (2026-07-19): Espanha x México → 1-0 / Espanha (baixa)
 

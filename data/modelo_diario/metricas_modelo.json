@@ -8,11 +8,11 @@
   "simula_chaveamento_completo": true,
   "inclui_decisao_por_penaltis": true,
   "jogos_previstos": 104,
-  "jogos_com_placar_real_validado": 90,
-  "jogos_projetados": 14,
-  "jogos_decididos_por_penaltis_na_projecao": 1,
+  "jogos_com_placar_real_validado": 92,
+  "jogos_projetados": 12,
+  "jogos_decididos_por_penaltis_na_projecao": 0,
   "interacoes_monte_carlo": 12000,
-  "ultima_entrada_real": "2026-07-04",
+  "ultima_entrada_real": "2026-07-05",
   "fonte_desempenho_manual": "data/entrada/desempenho_manual.csv",
   "fonte_resultados_manuais": "data/entrada/novos_resultados.csv",
   "observacao": "Resultados reais são preservados. Jogos sem real são recalculados e propagam classificados projetados. Gols marcados, gols sofridos e peso dos adversários são avaliados separadamente; gols sofridos contra adversários fortes têm dano defensivo amortecido.",
@@ -20,8 +20,8 @@
   "usa_peso_adversario": true,
   "gols_sofridos_ajustados_por_forca_adversario": true,
   "rede_neural_peso_maximo": 0.08,
-  "acuracia_vencedor_percentual": 61.11,
-  "placar_exato_percentual": 10.0,
-  "erro_medio_total_gols": 2.144,
-  "proximidade_media_0_100": 46.98
+  "acuracia_vencedor_percentual": 59.78,
+  "placar_exato_percentual": 9.78,
+  "erro_medio_total_gols": 2.163,
+  "proximidade_media_0_100": 46.24
 }
