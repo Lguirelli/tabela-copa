@@ -296,7 +296,7 @@ PYTHONDONTWRITEBYTECODE=1 python scripts/validate_repository.py
 python scripts/testes/test_integridade_dados.py
 ```
 
-Os testes verificam configuração, YAML dos workflows, geração da fila, merge incremental idempotente, integridade dos datasets, aliases controlados, exclusão de campos simulados, execução dos loops e sincronização do visualizador legado. O validador estrutural grava `reports/repository_integrity_report.json`.
+Os testes verificam configuração, YAML dos workflows, geração da fila, merge incremental idempotente, integridade dos datasets, aliases controlados, exclusão de campos simulados, execução dos loops, sincronização do visualizador legado e integridade das seis páginas analíticas do modelo. O validador estrutural grava `reports/repository_integrity_report.json`.
 
 ## Arquivos de auditoria e status
 
@@ -369,3 +369,32 @@ python -m worldcup_brain.cli validate
 ```
 
 Consulte [`docs/WC2026_COMPLETE_DATA_INTEGRATION.md`](docs/WC2026_COMPLETE_DATA_INTEGRATION.md) e `reports/wc2026_complete_data_integration.json`.
+
+## Visualização expandida do modelo
+
+A antiga página única de rede neural foi reorganizada em seis páginas estáticas, todas compatíveis com GitHub Pages:
+
+```text
+rede-neural.html             visão geral, métricas finais e segurança temporal
+modelo-evolucao.html         evolução diária de acurácia, perdas e calibração
+modelo-previsoes.html        explorador das 104 previsões pré-jogo
+modelo-aprendizado.html      acertos, erros, fatores observados e ajustes
+modelo-simulacoes.html       evolução das hipóteses de classificação e título
+modelo-versoes.html          versões temporais, checkpoints e parâmetros
+```
+
+O frontend não consulta APIs durante a navegação. O script abaixo compacta os artefatos existentes em um bundle JavaScript rastreável:
+
+```bash
+python scripts/export_model_dashboard.py
+# ou
+make export-dashboard
+```
+
+Saída:
+
+```text
+src/model-analytics-data.js
+```
+
+O exportador não cria novas métricas nem estima valores ausentes. Ele utiliza somente previsões, relatórios, simulações, versões e análises já produzidos pelo pipeline. Os workflows temporais e multicampeonato executam o exportador após cada atualização para manter o GitHub Pages sincronizado.

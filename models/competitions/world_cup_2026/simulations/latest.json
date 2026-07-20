@@ -1,7 +1,7 @@
 {
   "loop": "07_simulation_update",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-07-20T18:16:48.863210+00:00",
+  "generated_at": "2026-07-20T18:49:52.875902+00:00",
   "inputs": [
     {
       "path": "data/modelo_diario/previsoes_dia_a_dia.csv",

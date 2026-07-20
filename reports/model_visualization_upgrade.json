@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-20T18:49:39.063669+00:00",
+  "status": "VALID",
+  "objective": "Expand the predictive-model frontend into focused analytical pages without changing canonical results or creating new statistical facts.",
+  "pages": [
+    {
+      "file": "rede-neural.html",
+      "purpose": "Visão geral e métricas consolidadas"
+    },
+    {
+      "file": "modelo-evolucao.html",
+      "purpose": "Evolução temporal, perdas e recalibração"
+    },
+    {
+      "file": "modelo-previsoes.html",
+      "purpose": "Explorador das 104 previsões pré-jogo"
+    },
+    {
+      "file": "modelo-aprendizado.html",
+      "purpose": "Acertos, erros, fatores e ajustes pós-jogo"
+    },
+    {
+      "file": "modelo-simulacoes.html",
+      "purpose": "Hipóteses de campeão e classificação por data"
+    },
+    {
+      "file": "modelo-versoes.html",
+      "purpose": "Versões, checkpoints e parâmetros"
+    }
+  ],
+  "data_export": {
+    "generator": "scripts/export_model_dashboard.py",
+    "output": "src/model-analytics-data.js",
+    "bytes": 678217,
+    "sha256": "ea96893e354ae1d9e49f52e632a7b25dc7d1759722823afeb82283029896a831",
+    "policy": "Static compact projection of existing traceable artifacts; no invented values."
+  },
+  "coverage": {
+    "predictions": 104,
+    "daily_snapshots": 35,
+    "model_versions": 36,
+    "semantic_checkpoints": 6,
+    "accepted_features": 7,
+    "simulation_snapshots": 35
+  },
+  "automation": {
+    "workflows_updated": 7,
+    "dashboard_export_runs_after_model_updates": true,
+    "github_pages_validation_includes_new_pages": true
+  },
+  "validation": {
+    "pytest_passed": 21,
+    "repository_integrity": "VALID",
+    "legacy_data_integrity": "VALID",
+    "javascript_syntax": "VALID",
+    "html_internal_links": "VALID",
+    "duplicate_html_ids": 0
+  },
+  "files_added": [
+    "modelo-evolucao.html",
+    "modelo-previsoes.html",
+    "modelo-aprendizado.html",
+    "modelo-simulacoes.html",
+    "modelo-versoes.html",
+    "src/model-pages.js",
+    "src/model-analytics-data.js",
+    "scripts/export_model_dashboard.py",
+    "tests/test_model_dashboard.py"
+  ],
+  "files_updated": [
+    "rede-neural.html",
+    "grupos-jogos.html",
+    "grupos-resultados.html",
+    "mata-mata-chave.html",
+    "mata-mata-jogos.html",
+    "src/styles.css",
+    "README.md",
+    "Makefile",
+    ".github/workflows/01_pre_worldcup_training.yml",
+    ".github/workflows/02_daily_tournament_simulation.yml",
+    ".github/workflows/03_post_match_learning.yml",
+    ".github/workflows/daily_update.yml",
+    ".github/workflows/post_match_update.yml",
+    ".github/workflows/model_training.yml",
+    ".github/workflows/static.yml",
+    "tests/test_wc2026_complete_data.py"
+  ]
+}

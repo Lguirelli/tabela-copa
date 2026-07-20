@@ -35,6 +35,8 @@ jobs:
         run: |
           python -m worldcup_brain.cli prepare
           python -m worldcup_brain.cli replay --as-of "2026-06-10T23:59:59-04:00"
+      - name: Export model dashboard
+        run: python scripts/export_model_dashboard.py
       - name: Validate initial artifacts
         run: |
           python -m worldcup_brain.cli validate --as-of "2026-06-10T23:59:59-04:00"
@@ -44,6 +46,6 @@ jobs:
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pre_worldcup_state data/temporal predictions models/versions reports
+          git add data/pre_worldcup_state data/temporal predictions models/versions reports src/model-analytics-data.js
           git commit -m "chore(worldcup): rebuild pre-tournament temporal state"
           git push

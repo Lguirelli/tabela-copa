@@ -1,7 +1,7 @@
 PYTHON ?= python
 COMPETITION ?= world_cup_2026
 
-.PHONY: install test integrity audit completeness update validate analyze train simulate all all-competitions clean-cache
+.PHONY: install test integrity audit completeness update validate analyze train simulate all all-competitions export-dashboard clean-cache
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
@@ -43,6 +43,9 @@ all:
 
 all-competitions:
 	$(PYTHON) -m sports_engine.cli run-registry
+
+export-dashboard:
+	$(PYTHON) scripts/export_model_dashboard.py
 
 clean-cache:
 	find . -type d -name __pycache__ -prune -exec rm -rf {} +

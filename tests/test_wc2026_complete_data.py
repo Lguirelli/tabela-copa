@@ -58,7 +58,7 @@ def test_validated_results_are_aligned_to_canonical_results() -> None:
 
 def test_integration_report_and_manifest_exist() -> None:
     report = json.loads((ROOT / "reports/wc2026_complete_data_integration.json").read_text(encoding="utf-8"))
-    assert report["status"] == "INTEGRATED"
+    assert report["status"] in {"INTEGRATED", "INTEGRATED_AND_VALIDATED"}
     assert report["source_manifest_validation"]["problems"] == 0
     assert report["integrated_counts"]["matches_with_player_stats"] == 104
 

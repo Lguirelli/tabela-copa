@@ -33,7 +33,12 @@ jobs:
         run: |
           set -euo pipefail
           test -f index.html
-          echo "index.html found"
+          for page in rede-neural.html modelo-evolucao.html modelo-previsoes.html modelo-aprendizado.html modelo-simulacoes.html modelo-versoes.html; do
+            test -f "$page"
+          done
+          test -f src/model-analytics-data.js
+          test -f src/model-pages.js
+          echo "Static model pages found"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -50,6 +50,8 @@ jobs:
           else
             python -m sports_engine.cli run-all --competition "$COMPETITION"
           fi
+      - name: Export World Cup model dashboard
+        run: python scripts/export_model_dashboard.py
       - name: Validate outputs
         env:
           COMPETITION: ${{ inputs.competition || 'all' }}
@@ -64,7 +66,7 @@ jobs:
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for path in data logs models reports; do
+          for path in data logs models reports src/model-analytics-data.js; do
             [ -e "$path" ] && git add -A "$path"
           done
           git commit -m "chore(model): post-match update"

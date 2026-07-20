@@ -1,7 +1,7 @@
 {
   "loop": "01_data_completeness",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-07-20T18:16:48.227393+00:00",
+  "generated_at": "2026-07-20T18:49:52.134481+00:00",
   "inputs": [
     {
       "path": "data/matches.csv",
