@@ -1,0 +1,218 @@
+{
+  "match_id": 56,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Germany",
+    "clock": "2'",
+    "player": "Leroy Sané",
+    "text": "Goal! Ecuador 0, Germany 1. Leroy Sané (Germany) left footed shot from the centre of the box to the bottom left corner. Assisted by Florian Wirtz."
+  },
+  "red_cards": {
+    "Equador": 0,
+    "Alemanha": 0
+  },
+  "substitutions_detected": {
+    "Equador": 5,
+    "Alemanha": 5
+  },
+  "team_stats": {
+    "Equador": {
+      "stat_possessionPct": 38.9,
+      "stat_totalShots": 7.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 2.0
+    },
+    "Alemanha": {
+      "stat_possessionPct": 61.1,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 1.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Alemanha",
+      "player_id": "espn:202641",
+      "player": "Leroy Sané",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Equador",
+      "player_id": "espn:277352",
+      "player": "Gonzalo Plata",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Equador",
+      "player_id": "espn:318090",
+      "player": "Nilson Angulo",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:303748",
+      "player": "Florian Wirtz",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Equador",
+      "player_id": "espn:281316",
+      "player": "Kevin Rodríguez",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Equador",
+      "player_id": "espn:297150",
+      "player": "Pedro Vite",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Equador",
+      "player_id": "espn:207921",
+      "player": "Hernán Galíndez",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:84774",
+      "player": "Manuel Neuer",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Equador",
+      "player_id": "espn:171771",
+      "player": "Enner Valencia",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:231182",
+      "player": "Kai Havertz",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:281122",
+      "player": "Felix Nmecha",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:303821",
+      "player": "Jamal Musiala",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760468"
+    }
+  ],
+  "efficiency": {
+    "Equador": 0.285714,
+    "Alemanha": 0.090909
+  },
+  "important_factors": [
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Equador",
+      "evidence": {
+        "Equador": 0.2857,
+        "Alemanha": 0.0909
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Germany",
+      "evidence": {
+        "team": "Germany",
+        "clock": "2'",
+        "player": "Leroy Sané",
+        "text": "Goal! Ecuador 0, Germany 1. Leroy Sané (Germany) left footed shot from the centre of the box to the bottom left corner. Assisted by Florian Wirtz."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Equador",
+    "evidence": {
+      "Equador": 0.2857,
+      "Alemanha": 0.0909
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

@@ -1,0 +1,42 @@
+{
+  "match_id": 61,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "França",
+  "actual_outcome": "França",
+  "brier_score": 0.18836525,
+  "log_loss": 0.94692779,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": -0.0325
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.0264
+    },
+    {
+      "factor": "goalkeeper",
+      "contribution": 0.0125
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "França",
+    "evidence": {
+      "Noruega": 4.0,
+      "França": 9.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1584.50232,
+    "team2_rating_before": 1584.422147,
+    "team1_rating_after": 1555.86018,
+    "team2_rating_after": 1613.064287,
+    "rating_delta_team1": -28.64214,
+    "rating_delta_team2": 28.64214
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

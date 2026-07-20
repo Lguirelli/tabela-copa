@@ -1,0 +1,42 @@
+{
+  "match_id": 44,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Argélia",
+  "actual_outcome": "Argélia",
+  "brier_score": 0.16163546,
+  "log_loss": 0.83968624,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "attack_team1",
+      "contribution": -0.1512
+    },
+    {
+      "factor": "rating",
+      "contribution": -0.101377
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.065
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Argélia",
+    "evidence": {
+      "Jordânia": 4.0,
+      "Argélia": 8.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1482.100769,
+    "team2_rating_before": 1524.341038,
+    "team1_rating_after": 1464.241082,
+    "team2_rating_after": 1542.200725,
+    "rating_delta_team1": -17.859687,
+    "rating_delta_team2": 17.859687
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

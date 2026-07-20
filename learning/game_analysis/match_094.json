@@ -1,0 +1,42 @@
+{
+  "match_id": 94,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Estados Unidos",
+  "actual_outcome": "Bélgica",
+  "brier_score": 0.24042792,
+  "log_loss": 1.16277648,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "attack_team2",
+      "contribution": -0.09
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0432
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Bélgica",
+    "evidence": {
+      "Estados Unidos": 2.0,
+      "Bélgica": 7.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1636.437825,
+    "team2_rating_before": 1629.829928,
+    "team1_rating_after": 1607.257737,
+    "team2_rating_after": 1659.010015,
+    "rating_delta_team1": -29.180088,
+    "rating_delta_team2": 29.180088
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

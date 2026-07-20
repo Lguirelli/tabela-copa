@@ -1,0 +1,865 @@
+entity_type,entity_id,field,value_status,available_at,temporal_status,source_path
+team,Argélia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argélia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argélia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argélia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argélia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argélia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argélia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argentina,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argentina,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argentina,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argentina,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Argentina,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Argentina,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Austrália,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Austrália,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Austrália,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Austrália,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Austrália,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Austrália,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Áustria,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Áustria,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Áustria,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Áustria,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Áustria,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Áustria,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bélgica,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bélgica,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bélgica,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bélgica,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bélgica,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bélgica,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bósnia e Herzegovina,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bósnia e Herzegovina,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bósnia e Herzegovina,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bósnia e Herzegovina,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Bósnia e Herzegovina,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Bósnia e Herzegovina,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Brasil,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Brasil,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Brasil,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Brasil,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Brasil,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Brasil,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Canadá,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Canadá,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Canadá,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Canadá,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Canadá,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Canadá,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Costa do Marfim,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Costa do Marfim,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Costa do Marfim,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Costa do Marfim,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Costa do Marfim,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Costa do Marfim,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,RD Congo,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,RD Congo,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,RD Congo,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,RD Congo,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,RD Congo,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,RD Congo,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Colômbia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Colômbia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Colômbia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Colômbia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Colômbia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Colômbia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Cabo Verde,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Cabo Verde,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Cabo Verde,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Cabo Verde,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Cabo Verde,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Cabo Verde,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Croácia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Croácia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Croácia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Croácia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Croácia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Croácia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Curaçao,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Curaçao,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Curaçao,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Curaçao,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Curaçao,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Curaçao,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tchéquia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tchéquia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tchéquia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tchéquia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tchéquia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tchéquia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Equador,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Equador,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Equador,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Equador,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Equador,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Equador,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Egito,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Egito,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Egito,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Egito,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Egito,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Egito,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Inglaterra,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Inglaterra,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Inglaterra,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Inglaterra,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Inglaterra,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Inglaterra,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Espanha,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Espanha,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Espanha,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Espanha,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Espanha,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Espanha,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,França,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,França,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,França,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,França,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,França,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,França,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Alemanha,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Alemanha,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Alemanha,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Alemanha,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Alemanha,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Alemanha,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Gana,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Gana,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Gana,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Gana,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Gana,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Gana,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Haiti,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Haiti,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Haiti,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Haiti,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Haiti,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Haiti,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Irã,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Irã,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Irã,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Irã,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Irã,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Irã,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Iraque,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Iraque,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Iraque,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Iraque,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Iraque,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Iraque,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Jordânia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Jordânia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Jordânia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Jordânia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Jordânia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Jordânia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Japão,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Japão,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Japão,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Japão,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Japão,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Japão,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Coreia do Sul,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Coreia do Sul,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Coreia do Sul,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Coreia do Sul,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Coreia do Sul,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Coreia do Sul,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Arábia Saudita,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Arábia Saudita,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Arábia Saudita,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Arábia Saudita,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Arábia Saudita,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Arábia Saudita,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Marrocos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Marrocos,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Marrocos,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Marrocos,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Marrocos,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Marrocos,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,México,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,México,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,México,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,México,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,México,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,México,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Países Baixos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Países Baixos,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Países Baixos,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Países Baixos,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Países Baixos,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Países Baixos,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Noruega,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Noruega,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Noruega,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Noruega,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Noruega,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Noruega,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Nova Zelândia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Nova Zelândia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Nova Zelândia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Nova Zelândia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Nova Zelândia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Nova Zelândia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Panamá,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Panamá,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Panamá,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Panamá,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Panamá,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Panamá,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Paraguai,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Paraguai,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Paraguai,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Paraguai,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Paraguai,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Paraguai,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Portugal,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Portugal,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Portugal,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Portugal,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Portugal,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Portugal,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Catar,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Catar,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Catar,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Catar,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Catar,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Catar,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,África do Sul,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,África do Sul,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,África do Sul,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,África do Sul,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,África do Sul,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,África do Sul,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Escócia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Escócia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Escócia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Escócia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Escócia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Escócia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Senegal,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Senegal,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Senegal,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Senegal,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Senegal,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Senegal,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suíça,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suíça,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suíça,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suíça,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suíça,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suíça,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suécia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suécia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suécia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suécia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Suécia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Suécia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tunísia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tunísia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tunísia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tunísia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Tunísia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Tunísia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Turquia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Turquia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Turquia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Turquia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Turquia,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Turquia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uruguai,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uruguai,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uruguai,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uruguai,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uruguai,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uruguai,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Estados Unidos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Estados Unidos,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Estados Unidos,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Estados Unidos,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Estados Unidos,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Estados Unidos,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uzbequistão,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uzbequistão,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uzbequistão,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uzbequistão,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
+team,Uzbequistão,coach,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,tactical_style,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,base_system,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,initial_strength_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,attack_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,midfield_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,defense_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,goalkeeper_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,experience_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,possession_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
+team,Uzbequistão,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv

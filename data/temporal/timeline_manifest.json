@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-20T18:16:49.240707+00:00",
+  "competition_id": "world_cup_2026",
+  "temporal_rules": {
+    "prediction_lead_minutes": 120,
+    "regular_result_delay_minutes": 210,
+    "knockout_result_delay_minutes": 270,
+    "round_of_32_fixture_visibility": "after_match_72_result_available",
+    "later_knockout_visibility": "after_parent_results_available"
+  },
+  "inputs": [
+    {
+      "path": "data/matches.csv",
+      "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b",
+      "size_bytes": 15867
+    },
+    {
+      "path": "data/resultados_reais.csv",
+      "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101",
+      "size_bytes": 35210
+    }
+  ],
+  "rows": 104
+}

@@ -85,9 +85,21 @@ jogo;status;placar;equipe1;equipe2;vencedor
 84;Finalizado;3-0;Espanha;Áustria;Espanha
 85;Finalizado;2-0;Suíça;Argélia;Suíça
 86;Finalizado;3-2;Argentina;Cabo Verde;Argentina
-87;Finalizado;3-0;Colômbia;Gana;Colômbia
+87;Finalizado;1-0;Colômbia;Gana;Colômbia
 88;Finalizado;1-1;Austrália;Egito;Egito
-89;Finalizado;0-3;Canadá;Marrocos;Marrocos
-90;Finalizado;0-1;Paraguai;França;França
+89;Finalizado;0-1;Paraguai;França;França
+90;Finalizado;0-3;Canadá;Marrocos;Marrocos
 91;Finalizado;1-2;Brasil;Noruega;Noruega
 92;Finalizado;2-3;México;Inglaterra;Inglaterra
+93;Finalizado;0-1;Portugal;Espanha;Espanha
+94;Finalizado;1-4;Estados Unidos;Bélgica;Bélgica
+95;Finalizado;3-2;Argentina;Egito;Argentina
+96;Finalizado;0-0;Suíça;Colômbia;Suíça
+97;Finalizado;2-0;França;Marrocos;França
+98;Finalizado;2-1;Espanha;Bélgica;Espanha
+99;Finalizado;1-2;Noruega;Inglaterra;Inglaterra
+100;Finalizado;3-1;Argentina;Suíça;Argentina
+101;Finalizado;0-2;França;Espanha;Espanha
+102;Finalizado;1-2;Inglaterra;Argentina;Argentina
+103;Finalizado;4-6;França;Inglaterra;Inglaterra
+104;Finalizado;1-0;Espanha;Argentina;Espanha

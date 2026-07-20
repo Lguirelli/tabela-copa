@@ -1,0 +1,54 @@
+name: 02 Daily World Cup temporal simulation
+
+on:
+  schedule:
+    - cron: "15 6 * * *"
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: Optional timezone-aware historical cutoff
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: worldcup-temporal-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  daily-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .[test]
+      - name: Enrich configured public datasets
+        env:
+          SPORTS_ENGINE_NETWORK: "1"
+        run: python -m worldcup_brain.cli collect --allow-network
+      - name: Replay tournament up to current cutoff
+        env:
+          INPUT_AS_OF: ${{ inputs.as_of }}
+        run: |
+          CUTOFF="${INPUT_AS_OF:-$(date -u +%Y-%m-%dT%H:%M:%SZ)}"
+          python -m worldcup_brain.cli daily --as-of "$CUTOFF"
+          python -m worldcup_brain.cli validate --as-of "$CUTOFF"
+      - name: Test repository
+        run: pytest -q
+      - name: Commit daily state
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/pre_worldcup_state data/temporal predictions learning models simulations reports logs
+          git commit -m "chore(worldcup): daily temporal simulation"
+          git push

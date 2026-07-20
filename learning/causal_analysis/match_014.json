@@ -1,0 +1,200 @@
+{
+  "match_id": 14,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": "NA",
+  "red_cards": {
+    "Espanha": 0,
+    "Cabo Verde": 0
+  },
+  "substitutions_detected": {
+    "Espanha": 4,
+    "Cabo Verde": 5
+  },
+  "team_stats": {
+    "Espanha": {
+      "stat_possessionPct": 74.3,
+      "stat_totalShots": 27.0,
+      "stat_shotsOnTarget": 7.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 1.0
+    },
+    "Cabo Verde": {
+      "stat_possessionPct": 25.7,
+      "stat_totalShots": 6.0,
+      "stat_shotsOnTarget": 1.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 7.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:181330",
+      "player": "Vozinha",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 7
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:222375",
+      "player": "Unai Simón",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:214596",
+      "player": "Fabián Ruiz",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:229018",
+      "player": "Mikel Oyarzabal",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:265869",
+      "player": "Ferran Torres",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:159317",
+      "player": "Aymeric Laporte",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:250465",
+      "player": "Pedri",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:259910",
+      "player": "Marc Cucurella",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:214683",
+      "player": "Diney Borges",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:209581",
+      "player": "Mikel Merino",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:231828",
+      "player": "Rodri",
+      "position": "CM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:362150",
+      "player": "Lamine Yamal",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760428"
+    }
+  ],
+  "efficiency": {
+    "Espanha": 0.0,
+    "Cabo Verde": 0.0
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Espanha",
+      "evidence": {
+        "Espanha": 7.0,
+        "Cabo Verde": 1.0
+      },
+      "strength": "medium"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Espanha",
+    "evidence": {
+      "Espanha": 7.0,
+      "Cabo Verde": 1.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

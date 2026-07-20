@@ -1,159 +1,371 @@
-# Copa 2026 — Visualizador com modelo diário
+# Plataforma preditiva esportiva multicampeonato
 
-Visualizador estático para acompanhar a Copa 2026 com resultados reais, chaveamento e previsões do modelo diário incremental.
+Este repositório preserva o visualizador final da Copa do Mundo 2026 e adiciona uma **engine replicável de engenharia de dados, análise estatística, feedback preditivo, simulação e recalibração de modelos**.
 
-## Páginas
+A arquitetura é composta somente por código, scripts, módulos e GitHub Actions versionados. Não existe agente autônomo, sistema conversacional ou processo externo oculto.
 
-- `grupos-resultados.html` — classificação geral dos grupos.
-- `grupos-jogos.html` — lista de jogos da fase de grupos.
-- `mata-mata-chave.html` — chaveamento do mata-mata.
-- `mata-mata-jogos.html` — lista dos jogos eliminatórios.
-- `rede-neural.html` — painel do modelo ativo, métricas, desempenho, erros e visualizações.
+## Status atual
 
-## Fonte ativa de placar no front
+- Copa do Mundo 2026: **104 partidas finalizadas** e preservadas como dados observados.
+- Validação estrutural: **VALID**, sem placares impossíveis, IDs duplicados ou conflitos entre calendário e resultados.
+- Dados completos de escalação, minutos, participação e disponibilidade ainda não estão disponíveis para todas as partidas; esses campos permanecem `NA` e estão registrados na fila de pendências.
+- O modelo recalibrado mais recente foi mantido como candidato rejeitado porque não superou o baseline no holdout cronológico. A simulação continua usando os xG configurados, evitando promoção automática de um modelo pior.
 
-A prioridade do front agora é:
+## Arquitetura
 
-```txt
-1. placar real, quando disponível
-2. previsão do modelo diário incremental
-3. rede neural pura como fallback/referência secundária
+```text
+config/
+  competitions.yaml              configuração por campeonato e temporada
+  data_contracts.yaml            contratos e aliases de dados
+
+sports_engine/
+  config.py                      seleção do campeonato
+  io.py                          leitura, escrita atômica, NA e hashes
+  lineage.py                     manifesto de entradas
+  sources.py                     adaptadores de coleta e merge seguro
+  analytics.py                   preparação analítica
+  modeling.py                    recalibração ridge
+  pipeline.py                    execução ordenada dos loops
+  cli.py                         comandos locais e de CI
+  loops/
+    completeness.py              Loop 01
+    enrichment.py                Loop 02
+    validation.py                Loop 03
+    patterns.py                  Loop 04
+    feedback.py                  Loop 05
+    features.py                  Loop 06
+    simulation.py                Loop 07
+    recalibration.py             Loop 08
+
+data/
+  queues/missing_data.json       fila consolidada de dados ausentes
+  platform/                      schemas canônicos ainda não preenchidos
+  raw/                           respostas brutas coletadas, quando houver
+  staging/                       dados coletados antes da validação/merge
+
+logs/enrichment_log.json         histórico de tentativas de enriquecimento
+models/competitions/<id>/        artefatos analíticos isolados por campeonato
+models/patterns.json             alias do último campeonato processado
+models/error_learning.json       alias do último feedback processado
+models/features_registry.json    alias do último registro de features
+models/model_versions/<id>/      versões candidatas e promovidas por competição
+models/simulations/              aliases de compatibilidade da última simulação
+reports/competitions/<id>/       relatórios isolados por campeonato
+reports/                         aliases e auditoria global
 ```
 
-Arquivos principais consumidos pelo front:
+A descrição completa está em [`docs/PLATFORM_ARCHITECTURE.md`](docs/PLATFORM_ARCHITECTURE.md).
 
-```txt
-data/matches.csv
-src/data.js
+## Os oito loops analíticos
 
-data/modelo_diario/previsoes_dia_a_dia.csv
-src/modelo-diario-data.js
-src/prediction-source.js
+### 01 — Data completeness check
 
-data/rede_neural/previsoes_rede_neural.csv
-src/rede-neural-data.js
+Verifica cobertura por partida para resultados, datas, competição, eventos, estatísticas, escalações e dados individuais. Gera:
+
+```text
+data/queues/missing_data.json
+reports/data_completeness_report.json
 ```
 
-O chaveamento usa `src/prediction-source.js` para unificar as fontes e evitar conflito entre placar real, previsão diária e previsão neural antiga.
+A fila agrupa entidades afetadas, prioridade, campo ausente e IDs de partidas. Ela não cria valores substitutos.
 
-## Modelo diário
+### 02 — Data enrichment
 
-O modelo diário usa desempenho dentro da Copa como variável, sem vazar informação futura. Ele atualiza por seleção:
+Lê a fila, ordena fontes por prioridade e executa somente adaptadores configurados. A implementação atual suporta:
 
-```txt
-rating_atual_0_100
-momentum_resultado_anterior
-memoria_desempenho
-jogos_validados
-gols_pro
-gols_contra
-saldo
-pontos
+- datasets locais já coletados;
+- scoreboard público ESPN para resultados ausentes;
+- summary público ESPN para eventos, estatísticas, escalações e desempenho individual quando o endpoint fornecer esses campos;
+- armazenamento bruto com SHA-256;
+- staging antes do merge;
+- inserção apenas de registros ausentes.
+
+Dados observados existentes não são sobrescritos. Em execução local, a rede fica desativada por padrão; os workflows definem `SPORTS_ENGINE_NETWORK=1` e limitam a coleta a 12 partidas por execução para reduzir carga e respeitar a fonte. O script `scripts/cleanup_external_mappings.py` documenta a migração dos registros ESPN legados: somente mapeamentos determinísticos foram aplicados, e 18 registros antigos sem vínculo validável foram preservados em `data/conflicts/` como `CONFLICTING_DATA`. Falhas e fontes insuficientes ficam registradas em:
+
+```text
+logs/enrichment_log.json
+reports/enrichment_report.json
 ```
 
-As principais features expostas no front são:
+### 03 — Data validation
 
-```txt
-feature_rating_diff
-feature_momentum_diff
-feature_performance_memory_diff
-feature_attack_vs_defense
-feature_defense_vs_attack
-feature_player_quality_diff
-feature_league_diff
-feature_rest_diff
-feature_knockout
+Valida duplicidades, IDs, placares, fontes, probabilidades e conflitos entre datasets. Os status possíveis são:
+
+```text
+VALID
+INVALID
+CONFLICTING_DATA
 ```
 
-## Atualização
+Campos legados explicitamente marcados como simulados são reportados como aviso e excluídos da descoberta automática de features.
 
-1. Coloque novas linhas em:
+### 04 — Pattern discovery
 
-```txt
-data/entrada/novos_resultados.csv
+Monta uma visão time-partida e mede associações entre resultado e fatores como:
+
+- primeiro gol;
+- posse;
+- finalizações;
+- finalizações no alvo;
+- xG, quando disponível;
+- cartões;
+- escanteios;
+- passes;
+- desarmes e interceptações.
+
+O arquivo `models/patterns.json` registra amostra, impacto, confiança, método e ressalva de que associação não implica causalidade.
+
+### 05 — Prediction feedback
+
+Compara previsão anterior e resultado real, calculando:
+
+- acurácia do desfecho;
+- acerto exato do placar;
+- erro absoluto de gols;
+- Brier score multiclasse;
+- maior sinal padronizado por partida como diagnóstico, sem atribuição causal.
+
+Saída:
+
+```text
+models/error_learning.json
 ```
 
-2. Rode:
+### 06 — Feature discovery
+
+Avalia variáveis de viagem, descanso, idade, experiência, estilo, arbitragem, calendário, desgaste, qualidade de liga, qualidade dos jogadores e forma recente.
+
+Uma feature só é aceita quando:
+
+1. possui amostra mínima configurada;
+2. ultrapassa o limiar de correlação absoluta;
+3. mantém a mesma direção nas duas metades cronológicas da amostra;
+4. não é sintética/simulada.
+
+Saída:
+
+```text
+models/features_registry.json
+```
+
+### 07 — Simulation update
+
+Executa Monte Carlo com seed reprodutível e produz:
+
+- vitória, empate e derrota;
+- média de gols;
+- top 10 placares;
+- probabilidade de prorrogação;
+- probabilidade de o empate persistir após uma prorrogação simulada de 30 minutos e exigir pênaltis;
+- probabilidade do vencedor dos pênaltis somente quando existe evidência/modelo configurado — caso contrário, `NA`.
+
+Saídas:
+
+```text
+models/simulations/latest.csv
+models/simulations/latest.json
+```
+
+### 08 — Model recalibration
+
+Treina regressões ridge para diferença de gols e total de gols com divisão cronológica 80/20. Cada execução gera uma versão auditável e isolada por competição em:
+
+```text
+models/model_versions/<competition_id>/<content_hash>.json
+```
+
+A versão só é copiada para `models/model_versions/<competition_id>/latest.json` quando reduz o MAE médio no holdout. Candidatos piores são preservados, mas não promovidos.
+
+## Instalação
+
+Requer Python 3.11 ou superior.
 
 ```bash
-python scripts/atualizar_modelo.py
+python -m pip install -r requirements.txt
+python -m pip install -e .
 ```
 
-Esse script atualiza os resultados reais, reexecuta a rede neural de referência, recalcula o modelo diário e exporta os dados para o front.
-
-## Recalcular apenas o modelo diário
+A rede neural legada da Copa usa PyTorch e permanece opcional:
 
 ```bash
-python scripts/modelo_neural_diario.py
+python -m pip install -r requirements-legacy-ml.txt
 ```
 
-## Treinar manualmente a rede neural de referência
+## Execução
+
+Pipeline completo de uma competição:
 
 ```bash
-python scripts/treinar_rede_neural_copa.py
+python -m sports_engine.cli run-all --competition world_cup_2026
 ```
 
-## Estrutura principal
-
-```txt
-scripts/                         automações de atualização e treino
-data/modelo_diario/              previsões, estado dos times e métricas do modelo ativo
-data/rede_neural/                dataset, métricas, checkpoint e previsões da rede de referência
-src/modelo-diario-data.js        export JS do modelo diário
-src/prediction-source.js         adaptador de prioridade: real > diário > rede
-src/rede-neural-data.js          export JS da rede de referência
-assets/teams/                    bandeiras e ícones das seleções
-```
-
-
-## Entrada manual de resultados e desempenho
-
-Para evitar conflitos no Git, o repositório agora mantém apenas as entradas manuais versionadas em `data/entrada/`:
-
-- `data/entrada/novos_resultados.csv` — inserir jogos finalizados.
-- `data/entrada/desempenho_manual.csv` — inserir estatísticas confiáveis de time/jogador, sempre com fonte.
-
-As bases consolidadas antigas em `data/desempenho/` foram removidas do versionamento. O modelo diário lê `desempenho_manual.csv` diretamente, então não há mais necessidade de comitar snapshots intermediários, relatórios por data ou exports duplicados.
-
-Para atualizar após novos jogos, preencha os CSVs manuais e rode:
+Todos os campeonatos executáveis configurados, ignorando templates:
 
 ```bash
-python scripts/atualizar_modelo.py
+python -m sports_engine.cli run-registry
 ```
 
-O GitHub Actions de atualização automática de desempenho também foi removido para impedir commits conflitantes.
-
-## Chaveamento completo com entrada manual
-
-O fluxo atual preserva resultados reais e recalcula apenas jogos sem resultado real.
-
-Entradas manuais versionadas:
-
-```txt
-data/entrada/novos_resultados.csv
-data/entrada/desempenho_manual.csv
-```
-
-Para atualizar a tabela completa depois de adicionar novos resultados ou desempenho:
+Loops individuais:
 
 ```bash
-python scripts/atualizar_modelo.py
+python -m sports_engine.cli completeness --competition world_cup_2026
+python -m sports_engine.cli enrich --competition world_cup_2026
+python -m sports_engine.cli validate --competition world_cup_2026
+python -m sports_engine.cli patterns --competition world_cup_2026
+python -m sports_engine.cli feedback --competition world_cup_2026
+python -m sports_engine.cli features --competition world_cup_2026
+python -m sports_engine.cli recalibrate --competition world_cup_2026
+python -m sports_engine.cli simulate --competition world_cup_2026
 ```
 
-Esse comando atualiza a rede neural de referência, recalcula o modelo diário e depois executa:
+Também é possível usar:
 
 ```bash
-python scripts/recalcular_chaveamento_completo.py
+make all COMPETITION=world_cup_2026
+make all-competitions
+make test
 ```
 
-Regras do chaveamento:
+## GitHub Actions
 
-1. placar real nunca é sobrescrito;
-2. jogos sem resultado real são simulados pelo modelo diário incremental;
-3. vencedores reais/projetados alimentam as fases seguintes;
-4. em mata-mata, empate é resolvido por pênaltis;
-5. a tabela completa fica sempre preenchida, sem “Aguardando recálculo” quando o jogo ainda não tem resultado real.
+### `daily_update.yml`
 
-## GitHub Pages deployment
+Executa diariamente todos os campeonatos não marcados como `template`, ou somente o ID escolhido manualmente:
 
-O repositório inclui `.github/workflows/static.yml` para publicar o site estático via GitHub Actions. Em **Settings → Pages → Build and deployment**, mantenha **Source: GitHub Actions**. O workflow valida `index.html`, cria o artifact do Pages e só inicia o deploy após o build concluir.
+1. verificação de completude;
+2. enriquecimento seguro;
+3. validação;
+4. padrões e feedback;
+5. descoberta de features;
+6. recalibração;
+7. simulações;
+8. testes e commit dos artefatos gerados.
+
+### `post_match_update.yml`
+
+É acionado quando calendários, resultados, previsões, estatísticas ou entradas manuais mudam. Em eventos `push`, processa o registro completo para não associar um caminho novo ao campeonato errado; em execução manual, aceita um ID específico.
+
+### `model_training.yml`
+
+Executa após o workflow pós-jogo, por disparo manual ou quando a configuração de campeonatos muda. Processa todos os campeonatos configurados por padrão e verifica a amostra mínima antes de recalibrar.
+
+### `static.yml`
+
+Mantém a publicação do visualizador estático existente.
+
+## Como adicionar outro campeonato
+
+Use o template em `config/competitions.yaml` e crie os datasets da temporada. O código não precisa ser alterado.
+
+Exemplo:
+
+```yaml
+competitions:
+  brasileirao_2027:
+    name: Brasileirão
+    season: 2027
+    country: Brasil
+    format: league
+    datasets:
+      matches: data/competitions/brasileirao/2027/matches.csv
+      results: data/competitions/brasileirao/2027/results.csv
+      predictions: data/competitions/brasileirao/2027/predictions.csv
+      team_match_stats: data/competitions/brasileirao/2027/team_match_stats.csv
+      events: data/competitions/brasileirao/2027/events.csv
+      lineups: data/competitions/brasileirao/2027/lineups.csv
+      player_match_stats: data/competitions/brasileirao/2027/player_match_stats.csv
+      player_availability: data/competitions/brasileirao/2027/player_availability.csv
+```
+
+Depois:
+
+```bash
+python -m sports_engine.cli run-all --competition brasileirao_2027
+# ou processe todos os campeonatos configurados
+python -m sports_engine.cli run-registry
+```
+
+Artefatos persistentes ficam separados em `models/competitions/brasileirao_2027/`, `reports/competitions/brasileirao_2027/`, `logs/competitions/brasileirao_2027/` e `data/competitions/brasileirao_2027/queues/`. Os arquivos de nível superior continuam como aliases de compatibilidade do último campeonato processado.
+Consulte [`docs/ADDING_A_COMPETITION.md`](docs/ADDING_A_COMPETITION.md).
+
+## Testes e validação
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python -m pytest -p no:cacheprovider
+PYTHONDONTWRITEBYTECODE=1 python scripts/validate_repository.py
+python scripts/testes/test_integridade_dados.py
+```
+
+Os testes verificam configuração, YAML dos workflows, geração da fila, merge incremental idempotente, integridade dos datasets, aliases controlados, exclusão de campos simulados, execução dos loops e sincronização do visualizador legado. O validador estrutural grava `reports/repository_integrity_report.json`.
+
+## Arquivos de auditoria e status
+
+```text
+reports/repository_audit.json
+reports/validation_report.json
+reports/final_system_status.json
+```
+
+`repository_audit.json` descreve o estado do repositório antes da transformação. `final_system_status.json` registra o resultado dos loops, limitações conhecidas e situação dos testes.
+
+## Compatibilidade com o projeto Copa 2026
+
+As páginas HTML, `src/`, `neural_copa/`, dados finais e scripts de atualização existentes foram preservados. A nova plataforma funciona como uma camada adicional e não altera os 104 resultados reais nem promove automaticamente modelos que não superem o baseline.
+
+---
+
+## Cérebro preditivo temporal — Copa 2026
+
+O repositório também contém uma reconstrução walk-forward completa da Copa do Mundo FIFA 2026. Essa camada prevê cada partida antes do início, libera resultados somente após o encerramento estimado, aprende com o erro e salva uma versão diária do modelo.
+
+### Execução
+
+```bash
+python -m worldcup_brain.cli prepare
+python -m worldcup_brain.cli replay
+python -m worldcup_brain.cli validate
+```
+
+Para reconstruir apenas até uma data histórica:
+
+```bash
+python -m worldcup_brain.cli replay --as-of "2026-07-05T23:59:59-04:00"
+```
+
+A coleta complementar usa:
+
+```bash
+python -m worldcup_brain.cli collect --allow-network
+```
+
+Registros coletados posteriormente não podem resolver uma lacuna pré-jogo antiga sem `published_at` ou `available_at` compatível. Consulte [`docs/TEMPORAL_WORLD_CUP_BRAIN.md`](docs/TEMPORAL_WORLD_CUP_BRAIN.md) para arquitetura, artefatos e limitações.
+
+## Integração do pacote completo de dados — 20/07/2026
+
+O pacote auditado `wc2026_pacote_completo_final` foi integrado sem substituir cegamente os IDs ou resultados canônicos do repositório.
+
+Cobertura adicionada:
+
+- 4.248 eventos estruturados em 104 partidas;
+- 11.815 linhas de narração;
+- 208 registros de estatísticas por equipe, exatamente dois por partida;
+- 5.323 registros individuais de jogadores;
+- 5.323 registros de escalações observadas;
+- árbitro principal das 104 partidas;
+- 40 cobranças individuais em quatro disputas de pênaltis;
+- respostas brutas ESPN/FIFA, manifesto SHA-256 e dicionário de dados.
+
+A integração usa a dupla de seleções como chave canônica. Isso evita conflitos causados pelos IDs 89 e 90, que aparecem invertidos no pacote de origem. As cinco diferenças de data por conversão de fuso permanecem documentadas em `data/mappings/incoming_game_id_mapping_20260720.csv`.
+
+Os dados individuais são fatos pós-jogo retroativamente coletados. O campo `source_collected_at` não é alterado, portanto escalações e arbitragem não são inseridas em previsões históricas anteriores à coleta. Minutos, xG, xA e rating permanecem `NA`.
+
+Para reproduzir a integração a partir do pacote extraído:
+
+```bash
+python scripts/integrate_wc2026_complete_package.py /caminho/wc2026_pacote_completo_final
+python -m sports_engine.cli run-all --competition world_cup_2026
+python -m worldcup_brain.cli replay
+python -m worldcup_brain.cli validate
+```
+
+Consulte [`docs/WC2026_COMPLETE_DATA_INTEGRATION.md`](docs/WC2026_COMPLETE_DATA_INTEGRATION.md) e `reports/wc2026_complete_data_integration.json`.

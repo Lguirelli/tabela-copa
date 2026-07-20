@@ -1,0 +1,39 @@
+{
+  "match_id": 96,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Suíça",
+  "actual_outcome": "Empate",
+  "brier_score": 0.27091409,
+  "log_loss": 1.31264621,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "attack_team2",
+      "contribution": -0.0936
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "rating",
+      "contribution": 0.069004
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "penalty_shootout",
+    "direction": "Suíça",
+    "evidence": "4-3",
+    "strength": "decisive"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1655.064318,
+    "team2_rating_before": 1626.31251,
+    "team1_rating_after": 1654.073527,
+    "team2_rating_after": 1627.303302,
+    "rating_delta_team1": -0.990792,
+    "rating_delta_team2": 0.990792
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

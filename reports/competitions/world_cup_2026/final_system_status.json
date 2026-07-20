@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-07-20T18:16:15.133786+00:00",
+  "competition_id": "world_cup_2026",
+  "project_status": "READY_WITH_LIMITATIONS",
+  "improvements_realized": [
+    "competition-driven configuration",
+    "eight executable analytical loops",
+    "missing-data queue and enrichment lineage",
+    "quality validation",
+    "pattern and feature evidence registry",
+    "prediction feedback",
+    "Monte Carlo simulation with separate extra-time and penalty states",
+    "versioned model recalibration",
+    "competition-isolated artifacts",
+    "incremental composite-key enrichment merges",
+    "GitHub Actions registry orchestration"
+  ],
+  "steps": [
+    {
+      "step": "01_data_completeness",
+      "status": "SUCCESS",
+      "summary": {
+        "matches_evaluated": 104,
+        "requirements_evaluated": 14,
+        "open_queue_items": 2,
+        "missing_records_aggregated": 208,
+        "priority_counts": {
+          "high": 1,
+          "medium": 1
+        }
+      }
+    },
+    {
+      "step": "02_data_enrichment",
+      "status": "SUCCESS",
+      "summary": {
+        "queue_items": 2,
+        "resolved_this_run": 0,
+        "remaining_open": 2
+      }
+    },
+    {
+      "step": "01_data_completeness_after_enrichment",
+      "status": "SUCCESS",
+      "summary": {
+        "matches_evaluated": 104,
+        "requirements_evaluated": 14,
+        "open_queue_items": 2,
+        "missing_records_aggregated": 208,
+        "priority_counts": {
+          "high": 1,
+          "medium": 1
+        }
+      }
+    },
+    {
+      "step": "03_data_validation",
+      "status": "SUCCESS",
+      "summary": {
+        "datasets_checked": 13,
+        "invalid_issues": 0,
+        "conflicts": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "step": "04_pattern_discovery",
+      "status": "SUCCESS",
+      "summary": {
+        "team_match_rows": 208,
+        "patterns_found": 11,
+        "unavailable_factors": 0
+      }
+    },
+    {
+      "step": "05_prediction_feedback",
+      "status": "SUCCESS",
+      "summary": {
+        "matches_compared": 104,
+        "outcome_accuracy": 0.615385,
+        "exact_score_accuracy": 0.134615,
+        "mean_absolute_goal_error": 1.038462,
+        "multiclass_brier_score": 0.186988
+      }
+    },
+    {
+      "step": "06_feature_discovery",
+      "status": "SUCCESS",
+      "summary": "completed"
+    },
+    {
+      "step": "08_model_recalibration",
+      "status": "SUCCESS",
+      "summary": "CANDIDATE_REJECTED"
+    },
+    {
+      "step": "07_simulation_update",
+      "status": "SUCCESS",
+      "summary": {
+        "matches_simulated": 104,
+        "iterations_per_match": 12000,
+        "recalibrated_model_used": false
+      }
+    }
+  ],
+  "limitations": [
+    "2 aggregated missing-data requirements remain open; unavailable values stay NA.",
+    "18 legacy external statistic rows remain quarantined as CONFLICTING_DATA and are excluded from analysis."
+  ],
+  "next_steps": [
+    "Configure reliable player-minutes and historical availability providers; observed lineups already cover all matches.",
+    "Add a new competition block and canonical datasets to reuse the engine without code changes.",
+    "Review promoted model versions before using them for high-stakes decisions."
+  ]
+}

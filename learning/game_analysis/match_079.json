@@ -1,0 +1,42 @@
+{
+  "match_id": 79,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "México",
+  "actual_outcome": "México",
+  "brier_score": 0.06474308,
+  "log_loss": 0.44009693,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.265995
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.2364
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.188333
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "México",
+    "evidence": {
+      "México": 0,
+      "Equador": 1
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1637.250962,
+    "team2_rating_before": 1526.41985,
+    "team1_rating_after": 1654.662722,
+    "team2_rating_after": 1509.00809,
+    "rating_delta_team1": 17.41176,
+    "rating_delta_team2": -17.41176
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

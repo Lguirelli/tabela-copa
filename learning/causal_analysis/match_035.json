@@ -1,0 +1,223 @@
+{
+  "match_id": 35,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Netherlands",
+    "clock": "5'",
+    "player": "Brian Brobbey",
+    "text": "Goal! Netherlands 1, Sweden 0. Brian Brobbey (Netherlands) right footed shot from very close range to the centre of the goal. Assisted by Cody Gakpo with a cross."
+  },
+  "red_cards": {
+    "Países Baixos": 0,
+    "Suécia": 0
+  },
+  "substitutions_detected": {
+    "Países Baixos": 5,
+    "Suécia": 5
+  },
+  "team_stats": {
+    "Países Baixos": {
+      "stat_possessionPct": 50.9,
+      "stat_totalShots": 10.0,
+      "stat_shotsOnTarget": 7.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 7.0
+    },
+    "Suécia": {
+      "stat_possessionPct": 49.1,
+      "stat_totalShots": 16.0,
+      "stat_shotsOnTarget": 8.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 2.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:249524",
+      "player": "Cody Gakpo",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "assists": 1,
+        "shots": 5,
+        "shots_on_target": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:282229",
+      "player": "Brian Brobbey",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:284792",
+      "player": "Crysencio Summerville",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:296622",
+      "player": "Anthony Elanga",
+      "position": "NA",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:213248",
+      "player": "Denzel Dumfries",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:235662",
+      "player": "Alexander Isak",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:159255",
+      "player": "Memphis Depay",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:291609",
+      "player": "Bart Verbruggen",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 7
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:133993",
+      "player": "Kristoffer Nordfeldt",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:258906",
+      "player": "Viktor Gyökeres",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5,
+        "shots_on_target": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:304242",
+      "player": "Yasin Ayari",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:324930",
+      "player": "Gustaf Lagerbielke",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760447"
+    }
+  ],
+  "efficiency": {
+    "Países Baixos": 0.5,
+    "Suécia": 0.0625
+  },
+  "important_factors": [
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Países Baixos",
+      "evidence": {
+        "Países Baixos": 0.5,
+        "Suécia": 0.0625
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Netherlands",
+      "evidence": {
+        "team": "Netherlands",
+        "clock": "5'",
+        "player": "Brian Brobbey",
+        "text": "Goal! Netherlands 1, Sweden 0. Brian Brobbey (Netherlands) right footed shot from very close range to the centre of the goal. Assisted by Cody Gakpo with a cross."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Países Baixos",
+    "evidence": {
+      "Países Baixos": 0.5,
+      "Suécia": 0.0625
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

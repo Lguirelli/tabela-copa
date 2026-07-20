@@ -1,0 +1,170 @@
+{
+  "loop": "01_data_completeness",
+  "competition_id": "world_cup_2026",
+  "generated_at": "2026-07-20T18:16:48.227393+00:00",
+  "inputs": [
+    {
+      "path": "data/matches.csv",
+      "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b",
+      "size_bytes": 15867
+    },
+    {
+      "path": "data/resultados_reais.csv",
+      "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101",
+      "size_bytes": 35210
+    }
+  ],
+  "summary": {
+    "matches_evaluated": 104,
+    "requirements_evaluated": 14,
+    "open_queue_items": 2,
+    "missing_records_aggregated": 208,
+    "priority_counts": {
+      "high": 1,
+      "medium": 1
+    }
+  },
+  "coverage": [
+    {
+      "entity": "match",
+      "missing_field": "result",
+      "priority": "high",
+      "provider_dataset": "results",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "validated final scores"
+    },
+    {
+      "entity": "match",
+      "missing_field": "date",
+      "priority": "high",
+      "provider_dataset": "matches",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "match",
+      "missing_field": "competition",
+      "priority": "high",
+      "provider_dataset": "configuration",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "competition metadata is configured"
+    },
+    {
+      "entity": "match",
+      "missing_field": "lineup",
+      "priority": "medium",
+      "provider_dataset": "lineups",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "match",
+      "missing_field": "events",
+      "priority": "medium",
+      "provider_dataset": "events",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "match",
+      "missing_field": "statistics",
+      "priority": "high",
+      "provider_dataset": "team_match_stats",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "team",
+      "missing_field": "recent_form",
+      "priority": "high",
+      "provider_dataset": "results",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "derivable from historical results"
+    },
+    {
+      "entity": "team",
+      "missing_field": "offensive_strength",
+      "priority": "high",
+      "provider_dataset": "results",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "derivable from historical results"
+    },
+    {
+      "entity": "team",
+      "missing_field": "defensive_strength",
+      "priority": "high",
+      "provider_dataset": "results",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "derivable from historical results"
+    },
+    {
+      "entity": "team",
+      "missing_field": "history",
+      "priority": "medium",
+      "provider_dataset": "results",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "derivable from historical results"
+    },
+    {
+      "entity": "player",
+      "missing_field": "minutes",
+      "priority": "high",
+      "provider_dataset": "player_match_stats",
+      "total_matches": 104,
+      "covered_matches": 0,
+      "coverage_ratio": 0.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "player",
+      "missing_field": "performance",
+      "priority": "high",
+      "provider_dataset": "player_match_stats",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "player",
+      "missing_field": "participation",
+      "priority": "high",
+      "provider_dataset": "lineups",
+      "total_matches": 104,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
+    },
+    {
+      "entity": "player",
+      "missing_field": "availability",
+      "priority": "medium",
+      "provider_dataset": "player_availability",
+      "total_matches": 104,
+      "covered_matches": 0,
+      "coverage_ratio": 0.0,
+      "note": "dataset is empty: data/platform/player_availability.csv"
+    }
+  ],
+  "queue_path": "data/competitions/world_cup_2026/queues/missing_data.json"
+}

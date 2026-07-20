@@ -1,0 +1,42 @@
+{
+  "match_id": 68,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Croácia",
+  "actual_outcome": "Croácia",
+  "brier_score": 0.12858069,
+  "log_loss": 0.7073455,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.20305
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1416
+    },
+    {
+      "factor": "recent_form",
+      "contribution": -0.0825
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Croácia",
+    "evidence": {
+      "Croácia": 4.0,
+      "Gana": 1.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1576.893488,
+    "team2_rating_before": 1492.289478,
+    "team1_rating_after": 1592.359204,
+    "team2_rating_after": 1476.823762,
+    "rating_delta_team1": 15.465716,
+    "rating_delta_team2": -15.465716
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

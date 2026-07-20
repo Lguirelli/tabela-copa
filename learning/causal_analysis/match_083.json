@@ -1,0 +1,219 @@
+{
+  "match_id": 83,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Croatia",
+    "clock": "53'",
+    "player": "Ivan Perisic",
+    "text": "Goal! Portugal 0, Croatia 1. Ivan Perisic (Croatia) left footed shot from the left side of the box to the centre of the goal."
+  },
+  "red_cards": {
+    "Portugal": 0,
+    "Croácia": 0
+  },
+  "substitutions_detected": {
+    "Portugal": 5,
+    "Croácia": 4
+  },
+  "team_stats": {
+    "Portugal": {
+      "stat_possessionPct": 60.4,
+      "stat_totalShots": 15.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 5.0
+    },
+    "Croácia": {
+      "stat_possessionPct": 39.6,
+      "stat_totalShots": 13.0,
+      "stat_shotsOnTarget": 6.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 2.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Portugal",
+      "player_id": "espn:22774",
+      "player": "Cristiano Ronaldo",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Portugal",
+      "player_id": "espn:288896",
+      "player": "Gonçalo Ramos",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Croácia",
+      "player_id": "espn:103485",
+      "player": "Ivan Perisic",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Portugal",
+      "player_id": "espn:258917",
+      "player": "Rafael Leão",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Portugal",
+      "player_id": "espn:238903",
+      "player": "Diogo Costa",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Croácia",
+      "player_id": "espn:187946",
+      "player": "Dominik Livakovic",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Croácia",
+      "player_id": "espn:154595",
+      "player": "Mateo Kovacic",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Croácia",
+      "player_id": "espn:310883",
+      "player": "Igor Matanovic",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Portugal",
+      "player_id": "espn:124091",
+      "player": "Bruno Fernandes",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Croácia",
+      "player_id": "espn:341494",
+      "player": "Petar Sucic",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Croácia",
+      "player_id": "espn:207288",
+      "player": "Ante Budimir",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    },
+    {
+      "team": "Portugal",
+      "player_id": "espn:337011",
+      "player": "Renato Veiga",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760496"
+    }
+  ],
+  "efficiency": {
+    "Portugal": 0.133333,
+    "Croácia": 0.076923
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Croácia",
+      "evidence": {
+        "Portugal": 3.0,
+        "Croácia": 6.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Croatia",
+      "evidence": {
+        "team": "Croatia",
+        "clock": "53'",
+        "player": "Ivan Perisic",
+        "text": "Goal! Portugal 0, Croatia 1. Ivan Perisic (Croatia) left footed shot from the left side of the box to the centre of the goal."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Croácia",
+    "evidence": {
+      "Portugal": 3.0,
+      "Croácia": 6.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

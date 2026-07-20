@@ -1,0 +1,49 @@
+name: 01 Pre-World Cup temporal training
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/worldcup_temporal.yaml"
+      - "data/database/team_strengths.csv"
+      - "data/database/teams_tactical.csv"
+      - "data/database/players_database.csv"
+      - "worldcup_brain/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: worldcup-temporal-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-pre-worldcup-state:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .[test]
+      - name: Build leakage-safe initial state
+        run: |
+          python -m worldcup_brain.cli prepare
+          python -m worldcup_brain.cli replay --as-of "2026-06-10T23:59:59-04:00"
+      - name: Validate initial artifacts
+        run: |
+          python -m worldcup_brain.cli validate --as-of "2026-06-10T23:59:59-04:00"
+          pytest -q
+      - name: Commit generated temporal artifacts
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/pre_worldcup_state data/temporal predictions models/versions reports
+          git commit -m "chore(worldcup): rebuild pre-tournament temporal state"
+          git push

@@ -1,0 +1,95 @@
+competition_id: world_cup_2026
+competition_name: Copa do Mundo FIFA 2026
+pre_tournament_cutoff: '2026-06-10T23:59:59-04:00'
+first_match_date: '2026-06-11'
+prediction_lead_minutes: 120
+regular_match_result_delay_minutes: 210
+knockout_match_result_delay_minutes: 270
+post_match_statistics_delay_minutes: 30
+schedule_timezone: America/New_York
+random_seed: 2026
+simulation_iterations: 4000
+minimum_matches_for_feature_discovery: 24
+feature_correlation_threshold: 0.12
+feature_permutation_pvalue: 0.05
+allow_na_after_source_exhaustion: true
+strict_temporal_mode: true
+reconstruction_mode: backfilled_pre_tournament_facts
+
+paths:
+  matches: data/matches.csv
+  results: data/resultados_reais.csv
+  team_strengths: data/database/team_strengths.csv
+  team_tactics: data/database/teams_tactical.csv
+  players: data/database/players_database.csv
+  events: data/normalized/espn_match_events.csv
+  commentary: data/normalized/espn_match_commentary.csv
+  team_match_stats: data/normalized/espn_team_match_stats.csv
+  validated_results: data/normalized/results_validated.csv
+  lineups: data/platform/lineups.csv
+  player_match_stats: data/platform/player_match_stats.csv
+  player_availability: data/platform/player_availability.csv
+  match_officials: data/platform/match_officials.csv
+  archived_news: data/temporal/archived_news.csv
+
+pre_worldcup_field_policy:
+  verified_static:
+    - team
+    - coach
+    - tactical_style
+    - base_system
+    - player_age
+    - club
+    - club_country
+    - national_team_caps
+    - national_team_goals
+  backfilled_pre_tournament_fact:
+    - initial_strength_proxy
+    - attack_proxy
+    - midfield_proxy
+    - defense_proxy
+    - goalkeeper_proxy
+    - experience_proxy
+    - league_strength_proxy
+  unavailable_without_archived_source:
+    - fifa_ranking
+    - recent_matches
+    - recent_minutes
+    - recent_assists
+    - injuries
+    - physical_condition
+    - qualifying_performance
+    - weather_forecast
+    - travel_distance
+    - psychological_moment
+
+blocking_pre_match_fields:
+  - team_identity
+  - kickoff_time
+  - initial_team_profile
+
+non_blocking_pre_match_fields:
+  - confirmed_lineup
+  - player_availability
+  - archived_news
+  - weather
+  - travel
+  - referee
+
+bracket_parents:
+  '89': [74, 77]
+  '90': [73, 75]
+  '91': [76, 78]
+  '92': [79, 80]
+  '93': [83, 84]
+  '94': [81, 82]
+  '95': [86, 88]
+  '96': [85, 87]
+  '97': [89, 90]
+  '98': [93, 94]
+  '99': [91, 92]
+  '100': [95, 96]
+  '101': [97, 98]
+  '102': [99, 100]
+  '103': [101, 102]
+  '104': [101, 102]

@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-07-20T14:46:47.529593+00:00",
+  "project": "replicable-sports-engine",
+  "competition": "world_cup_2026",
+  "summary": {
+    "core_files_manifested": 36,
+    "analytical_loops": 8,
+    "operational_workflows": 3,
+    "tests_passed": 8,
+    "validation_status": "VALID",
+    "repository_integrity_status": "VALID"
+  },
+  "files": [
+    {
+      "path": "config/competitions.yaml",
+      "size_bytes": 5653,
+      "sha256": "a064666b99be478c8a90cbe78db223a468c52c4e3549ffc14a579fa4da914687"
+    },
+    {
+      "path": "config/data_contracts.yaml",
+      "size_bytes": 990,
+      "sha256": "e77dc611f4ea49b6a1f519c15603b2075d46348cef9b6f34fe55589e3e30817b"
+    },
+    {
+      "path": "data/catalog.json",
+      "size_bytes": 875,
+      "sha256": "eac624e5fd700257350b862fe2fe99c9bea47499787184e724da29ac780e9d2e"
+    },
+    {
+      "path": "sports_engine/config.py",
+      "size_bytes": 3804,
+      "sha256": "fa3420761e66b7b47aa556bb60c23dde3ddeead8653afae90599befd96feba1f"
+    },
+    {
+      "path": "sports_engine/io.py",
+      "size_bytes": 4070,
+      "sha256": "03667eefe30f4a7f8d3dfa26efccd28983ffe60b19dd2a41ced91ea14ca0a28e"
+    },
+    {
+      "path": "sports_engine/lineage.py",
+      "size_bytes": 518,
+      "sha256": "7afac5a9e415e20da073bbf14748af40300f271a736bf393f4294eb9b988072a"
+    },
+    {
+      "path": "sports_engine/audit.py",
+      "size_bytes": 2342,
+      "sha256": "1ccbec5a468bbe02a38c7065c44e99d509855f59e7dadb49e33cf577f51bfa36"
+    },
+    {
+      "path": "sports_engine/analytics.py",
+      "size_bytes": 4557,
+      "sha256": "e94e3a7406851ccbd36e57f371611769a0261652d5d333964a7d2c01169131dc"
+    },
+    {
+      "path": "sports_engine/modeling.py",
+      "size_bytes": 1562,
+      "sha256": "204633f3c6d3174f727b88784c4fab55c02b3e13febcb1dbd670dcbc5b704532"
+    },
+    {
+      "path": "sports_engine/sources.py",
+      "size_bytes": 22405,
+      "sha256": "470ff1d0095e1e6c761a07e41f6e818b2dbde6cf619e1efafe3bf73fef5937ab"
+    },
+    {
+      "path": "sports_engine/pipeline.py",
+      "size_bytes": 3420,
+      "sha256": "da7435794a005445a488d8d51f9b9b49397c597433f957dad3bbb4ab0b8233fc"
+    },
+    {
+      "path": "sports_engine/cli.py",
+      "size_bytes": 2169,
+      "sha256": "498fd8a63e614ef0546e6407d2137c86a6b2f3eb1d289ed82cac835aa6f1ba10"
+    },
+    {
+      "path": "sports_engine/loops/completeness.py",
+      "size_bytes": 6892,
+      "sha256": "c75cb4b420e468220dfd26db6b2bfd3722537304c5426811c558925465e8e08c"
+    },
+    {
+      "path": "sports_engine/loops/enrichment.py",
+      "size_bytes": 6503,
+      "sha256": "46283f0a8b5cd8f1fc27edbbb20814461ea8f3304e5f9ef103bea850aedaa2ac"
+    },
+    {
+      "path": "sports_engine/loops/validation.py",
+      "size_bytes": 11558,
+      "sha256": "f2381542f3a9c8aaf99c9e566ae40009d34a001406ea8d298a87af8d3320ce72"
+    },
+    {
+      "path": "sports_engine/loops/patterns.py",
+      "size_bytes": 3303,
+      "sha256": "b991f8c96995e743fe08a31cf673205c6119eb520f723dd168885d8c37ed7917"
+    },
+    {
+      "path": "sports_engine/loops/feedback.py",
+      "size_bytes": 4292,
+      "sha256": "592db6792e4d8ea1c8e5497e87030bf01eb02e3b28b046d695a6f0f6e44372e3"
+    },
+    {
+      "path": "sports_engine/loops/features.py",
+      "size_bytes": 4147,
+      "sha256": "2420dae15884803482967b28cf8c247a950ca3baaac21ef68ccf5a69d21e3cf5"
+    },
+    {
+      "path": "sports_engine/loops/simulation.py",
+      "size_bytes": 5143,
+      "sha256": "c57b448bd6a222fe64dba0fbf6d66534ddf2fadde042a1c3980f3a4b477a6394"
+    },
+    {
+      "path": "sports_engine/loops/recalibration.py",
+      "size_bytes": 5763,
+      "sha256": "03b44c1151582ceea09bb0f1b8e3c4273c5db3e1d791751c00725799762b9e58"
+    },
+    {
+      "path": ".github/workflows/daily_update.yml",
+      "size_bytes": 2020,
+      "sha256": "2a15f5ac1eaffa361cd5960b076748b29d793daa0289b8612b3f3f812c67adde"
+    },
+    {
+      "path": ".github/workflows/post_match_update.yml",
+      "size_bytes": 2266,
+      "sha256": "b09cbaf0d9a815366c71ed36c28f6771fbe4df301e04004f85d6a69d602a2aa2"
+    },
+    {
+      "path": ".github/workflows/model_training.yml",
+      "size_bytes": 2121,
+      "sha256": "2cb1acad827bf70a80fd31db05f5a217225b8a3d630e3ef8cc36f5c8e250a307"
+    },
+    {
+      "path": "scripts/run_analytical_loops.py",
+      "size_bytes": 170,
+      "sha256": "5bf59ca599999c673baf530e329cdb37b6847597b9e0309ef3955c3c99d9f634"
+    },
+    {
+      "path": "scripts/validate_repository.py",
+      "size_bytes": 5004,
+      "sha256": "6057476e2d6daab181f12d8308415c67ce49d8b305e437a339f619b317fdbc6f"
+    },
+    {
+      "path": "scripts/cleanup_external_mappings.py",
+      "size_bytes": 3526,
+      "sha256": "cf17ce8cd6e9c53d0eb0015e486ff14924343ef33beb3286f6f65fa2c66ab2d2"
+    },
+    {
+      "path": "tests/test_engine.py",
+      "size_bytes": 2413,
+      "sha256": "ff6af9769c0dfc068cbe77cdc81d0ae115486e93d8ed78e4799dab6439f7961d"
+    },
+    {
+      "path": "tests/test_sources.py",
+      "size_bytes": 2672,
+      "sha256": "d5f35551dcd8560acb227daf1d8e50af57d4607c7e827eac225b94ad6eb9fe53"
+    },
+    {
+      "path": "tests/test_no_synthetic_leakage.py",
+      "size_bytes": 440,
+      "sha256": "cd30415efdd35f5bf6c5c17bef34e90cfdbc9ce4d45e1930ff30b4d9d54a6c6d"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 11934,
+      "sha256": "bf2fdd3d9d5b8ae5350e404e87e5e97fe2887383128e766cb4d31cb2b46a2b97"
+    },
+    {
+      "path": "docs/PLATFORM_ARCHITECTURE.md",
+      "size_bytes": 3628,
+      "sha256": "7f60183fe6fa0aab178f36e7241158c91df59ad960c4af6c8702c971450c2b5f"
+    },
+    {
+      "path": "docs/ADDING_A_COMPETITION.md",
+      "size_bytes": 1372,
+      "sha256": "fffcda44cd573549fc177e5c2f72ba1c4f3f36d969f0e89cba508f63e530c300"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 76,
+      "sha256": "45c8465a7ca9905ad017297679db533fe0fcd1e164b76a5439600fcd5af7e1bc"
+    },
+    {
+      "path": "requirements-legacy-ml.txt",
+      "size_bytes": 34,
+      "sha256": "3393bed0efa2cc30106e4981e3ded6ef6c8d9294f84eb87fa45bf28a63252dca"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 538,
+      "sha256": "0584feb5ed096282a240472d5fde87b0f71180be0599c3dfe9f4a3268dde8183"
+    },
+    {
+      "path": "Makefile",
+      "size_bytes": 1440,
+      "sha256": "64e2561cd91be405a538b17d958e5169d2f104970f81d0ecca1bb7c6410ce49c"
+    }
+  ],
+  "compatibility": {
+    "legacy_visualizer_preserved": true,
+    "legacy_neural_pipeline_preserved": true,
+    "canonical_mirrors": "declared in data/catalog.json and checked byte-for-byte"
+  }
+}

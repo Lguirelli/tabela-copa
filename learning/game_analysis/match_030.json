@@ -1,0 +1,44 @@
+{
+  "match_id": 30,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Escócia",
+  "actual_outcome": "Marrocos",
+  "brier_score": 0.31662883,
+  "log_loss": 1.52279702,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.161464
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1572
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.135
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "Morocco",
+    "evidence": {
+      "team": "Morocco",
+      "clock": "2'",
+      "player": "Ismael Saibari",
+      "text": "Goal! Scotland 0, Morocco 1. Ismael Saibari (Morocco) right footed shot from the right side of the box to the high centre of the goal. Assisted by Brahim Díaz with a through ball."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1603.788209,
+    "team2_rating_before": 1536.511633,
+    "team1_rating_after": 1579.584606,
+    "team2_rating_after": 1560.715236,
+    "rating_delta_team1": -24.203602,
+    "rating_delta_team2": 24.203602
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

@@ -1,0 +1,156 @@
+{
+  "loop": "04_pattern_discovery",
+  "competition_id": "world_cup_2026",
+  "generated_at": "2026-07-20T18:16:48.585023+00:00",
+  "inputs": [
+    {
+      "path": "data/resultados_reais.csv",
+      "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101",
+      "size_bytes": 35210
+    },
+    {
+      "path": "data/normalized/espn_team_match_stats.csv",
+      "sha256": "7e4ae352e2b590d9bc2c5357b4c3ce8cecf5e9cc7b4790252fca7feeb72c0694",
+      "size_bytes": 74940
+    },
+    {
+      "path": "data/normalized/espn_match_events.csv",
+      "sha256": "60ac4e961f1d2a05c9ee7381d8bba8a26139146bfad475889b9a1a65215c2ccd",
+      "size_bytes": 1866089
+    },
+    {
+      "path": "data/entrada/desempenho_manual.csv",
+      "sha256": "4ecc4e85758a686f77635d259280cb9d91df8a85bb43faf076ac7d98320656c8",
+      "size_bytes": 107346
+    }
+  ],
+  "summary": {
+    "team_match_rows": 208,
+    "patterns_found": 11,
+    "unavailable_factors": 0
+  },
+  "patterns": [
+    {
+      "factor": "first_goal",
+      "source_column": "first_goal",
+      "impact": 0.565334,
+      "standardized_winner_difference": 1.071429,
+      "confidence": 0.99,
+      "sample_size": 192,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "shots_on_target",
+      "source_column": "stat_shotsOnTarget",
+      "impact": 0.517541,
+      "standardized_winner_difference": 1.00829,
+      "confidence": 0.99,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "possession",
+      "source_column": "stat_possessionPct",
+      "impact": 0.406134,
+      "standardized_winner_difference": 0.762064,
+      "confidence": 0.99,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "xg",
+      "source_column": "xg_pro",
+      "impact": 0.38269,
+      "standardized_winner_difference": 0.763428,
+      "confidence": 0.936684,
+      "sample_size": 52,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "shots",
+      "source_column": "stat_totalShots",
+      "impact": 0.360869,
+      "standardized_winner_difference": 0.635921,
+      "confidence": 0.99,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "pass_accuracy",
+      "source_column": "stat_passPct",
+      "impact": 0.307023,
+      "standardized_winner_difference": 0.657119,
+      "confidence": 0.988061,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "yellow_cards",
+      "source_column": "stat_yellowCards",
+      "impact": -0.195036,
+      "standardized_winner_difference": -0.428581,
+      "confidence": 0.939966,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "corners",
+      "source_column": "stat_wonCorners",
+      "impact": 0.163517,
+      "standardized_winner_difference": 0.25787,
+      "confidence": 0.905416,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "red_cards",
+      "source_column": "stat_redCards",
+      "impact": -0.095517,
+      "standardized_winner_difference": -0.122442,
+      "confidence": 0.747809,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "interceptions",
+      "source_column": "stat_interceptions",
+      "impact": -0.052634,
+      "standardized_winner_difference": -0.110661,
+      "confidence": 0.531913,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    },
+    {
+      "factor": "tackles",
+      "source_column": "stat_totalTackles",
+      "impact": -0.049148,
+      "standardized_winner_difference": -0.093123,
+      "confidence": 0.507779,
+      "sample_size": 208,
+      "target": "match_points",
+      "method": "pearson_correlation_and_standardized_group_difference",
+      "interpretation": "association, not causal attribution"
+    }
+  ],
+  "unavailable": []
+}

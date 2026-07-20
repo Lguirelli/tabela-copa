@@ -1,0 +1,42 @@
+{
+  "match_id": 92,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "México",
+  "actual_outcome": "Inglaterra",
+  "brier_score": 0.28607135,
+  "log_loss": 1.36827371,
+  "goal_absolute_error": 4,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1344
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.06625
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "México",
+    "evidence": {
+      "México": 0,
+      "Inglaterra": 1
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1654.662722,
+    "team2_rating_before": 1630.652748,
+    "team1_rating_after": 1632.943102,
+    "team2_rating_after": 1652.372368,
+    "rating_delta_team1": -21.71962,
+    "rating_delta_team2": 21.71962
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

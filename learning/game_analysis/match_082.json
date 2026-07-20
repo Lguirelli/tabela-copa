@@ -1,0 +1,44 @@
+{
+  "match_id": 82,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Bélgica",
+  "actual_outcome": "Bélgica",
+  "brier_score": 0.12383633,
+  "log_loss": 0.68829099,
+  "goal_absolute_error": 4,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.175734
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.066667
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "Senegal",
+    "evidence": {
+      "team": "Senegal",
+      "clock": "24'",
+      "player": "Habib Diarra",
+      "text": "Goal! Belgium 0, Senegal 1. Habib Diarra (Senegal) right footed shot from very close range to the centre of the goal."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1613.731879,
+    "team2_rating_before": 1540.509173,
+    "team1_rating_after": 1629.829928,
+    "team2_rating_after": 1524.411124,
+    "rating_delta_team1": 16.098049,
+    "rating_delta_team2": -16.098049
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

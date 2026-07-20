@@ -1,0 +1,224 @@
+{
+  "match_id": 84,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Spain",
+    "clock": "36'",
+    "player": "Mikel Oyarzabal",
+    "text": "Goal! Spain 1, Austria 0. Mikel Oyarzabal (Spain) left footed shot from the centre of the box to the centre of the goal. Assisted by Marc Cucurella with a cross."
+  },
+  "red_cards": {
+    "Espanha": 0,
+    "Áustria": 0
+  },
+  "substitutions_detected": {
+    "Espanha": 5,
+    "Áustria": 5
+  },
+  "team_stats": {
+    "Espanha": {
+      "stat_possessionPct": 64.4,
+      "stat_totalShots": 23.0,
+      "stat_shotsOnTarget": 10.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 0.0
+    },
+    "Áustria": {
+      "stat_possessionPct": 35.6,
+      "stat_totalShots": 5.0,
+      "stat_shotsOnTarget": 0.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 6.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Espanha",
+      "player_id": "espn:229018",
+      "player": "Mikel Oyarzabal",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 6,
+        "shots_on_target": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:268533",
+      "player": "Pedro Porro",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:259910",
+      "player": "Marc Cucurella",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:297373",
+      "player": "Álex Baena",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:195082",
+      "player": "Alexander Schlager",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 6
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:362150",
+      "player": "Lamine Yamal",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 6,
+        "shots_on_target": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:227765",
+      "player": "Dani Olmo",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:159317",
+      "player": "Aymeric Laporte",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:265869",
+      "player": "Ferran Torres",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:231828",
+      "player": "Rodri",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:238906",
+      "player": "Stefan Posch",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:305956",
+      "player": "Nicolas Seiwald",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497"
+    }
+  ],
+  "efficiency": {
+    "Espanha": 0.130435,
+    "Áustria": 0.0
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Espanha",
+      "evidence": {
+        "Espanha": 10.0,
+        "Áustria": 0.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Espanha",
+      "evidence": {
+        "Espanha": 0.1304,
+        "Áustria": 0.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Spain",
+      "evidence": {
+        "team": "Spain",
+        "clock": "36'",
+        "player": "Mikel Oyarzabal",
+        "text": "Goal! Spain 1, Austria 0. Mikel Oyarzabal (Spain) left footed shot from the centre of the box to the centre of the goal. Assisted by Marc Cucurella with a cross."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Espanha",
+    "evidence": {
+      "Espanha": 10.0,
+      "Áustria": 0.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

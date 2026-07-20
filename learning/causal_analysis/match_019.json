@@ -1,0 +1,220 @@
+{
+  "match_id": 19,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Argentina",
+    "clock": "17'",
+    "player": "Lionel Messi",
+    "text": "Goal! Argentina 1, Algeria 0. Lionel Messi (Argentina) left footed shot from outside the box to the top right corner. Assisted by Rodrigo De Paul."
+  },
+  "red_cards": {
+    "Argentina": 0,
+    "Argélia": 0
+  },
+  "substitutions_detected": {
+    "Argentina": 5,
+    "Argélia": 5
+  },
+  "team_stats": {
+    "Argentina": {
+      "stat_possessionPct": 47.8,
+      "stat_totalShots": 10.0,
+      "stat_shotsOnTarget": 6.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 0.0
+    },
+    "Argélia": {
+      "stat_possessionPct": 52.2,
+      "stat_totalShots": 7.0,
+      "stat_shotsOnTarget": 1.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 3.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Argentina",
+      "player_id": "espn:45843",
+      "player": "Lionel Messi",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 3,
+        "shots": 6,
+        "shots_on_target": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:174466",
+      "player": "Rodrigo De Paul",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:76017",
+      "player": "Nico González",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:225561",
+      "player": "Luca Zidane",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:249299",
+      "player": "Alexis Mac Allister",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:219713",
+      "player": "Lautaro Martínez",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:337306",
+      "player": "Farès Chaïbi",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:277208",
+      "player": "Thiago Almada",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:341711",
+      "player": "Anis Hadj Moussa",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:361212",
+      "player": "Ibrahim Maza",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:163940",
+      "player": "Riyad Mahrez",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:241116",
+      "player": "Houssem Aouar",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760433"
+    }
+  ],
+  "efficiency": {
+    "Argentina": 0.3,
+    "Argélia": 0.0
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Argentina",
+      "evidence": {
+        "Argentina": 6.0,
+        "Argélia": 1.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Argentina",
+      "evidence": {
+        "Argentina": 0.3,
+        "Argélia": 0.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Argentina",
+      "evidence": {
+        "team": "Argentina",
+        "clock": "17'",
+        "player": "Lionel Messi",
+        "text": "Goal! Argentina 1, Algeria 0. Lionel Messi (Argentina) left footed shot from outside the box to the top right corner. Assisted by Rodrigo De Paul."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Argentina",
+    "evidence": {
+      "Argentina": 6.0,
+      "Argélia": 1.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

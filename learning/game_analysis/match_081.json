@@ -1,0 +1,42 @@
+{
+  "match_id": 81,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "Estados Unidos",
+  "actual_outcome": "Estados Unidos",
+  "brier_score": 0.04202483,
+  "log_loss": 0.33721972,
+  "goal_absolute_error": 0,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.367366
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.2292
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.131667
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Bósnia e Herzegovina",
+    "evidence": {
+      "Estados Unidos": 1,
+      "Bósnia e Herzegovina": 0
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1621.683282,
+    "team2_rating_before": 1468.614299,
+    "team1_rating_after": 1636.437825,
+    "team2_rating_after": 1453.859756,
+    "rating_delta_team1": 14.754543,
+    "rating_delta_team2": -14.754543
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

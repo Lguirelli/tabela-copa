@@ -1,0 +1,226 @@
+{
+  "match_id": 50,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Haiti",
+    "clock": "10'",
+    "player": "Yassine Bounou",
+    "text": "Own Goal by Yassine Bounou, Morocco. Morocco 0, Haiti 1."
+  },
+  "red_cards": {
+    "Marrocos": 0,
+    "Haiti": 0
+  },
+  "substitutions_detected": {
+    "Marrocos": 5,
+    "Haiti": 5
+  },
+  "team_stats": {
+    "Marrocos": {
+      "stat_possessionPct": 69.1,
+      "stat_totalShots": 22.0,
+      "stat_shotsOnTarget": 11.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 1.0
+    },
+    "Haiti": {
+      "stat_possessionPct": 30.9,
+      "stat_totalShots": 9.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 8.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Marrocos",
+      "player_id": "espn:240233",
+      "player": "Achraf Hakimi",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 5,
+        "shots_on_target": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:276139",
+      "player": "Soufiane Rahimi",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:304572",
+      "player": "Ismael Saibari",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 5,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:265915",
+      "player": "Wilson Isidor",
+      "position": "RCF",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:379012",
+      "player": "Gessime Yassine",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:307870",
+      "player": "Chadi Riad",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:241032",
+      "player": "Jean-Kévin Duverne",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:89090",
+      "player": "Johny Placide",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 8,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:175149",
+      "player": "Yassine Bounou",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1,
+        "own_goals": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:269562",
+      "player": "Ayoub El Kaabi",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Marrocos",
+      "player_id": "espn:336595",
+      "player": "Bilal El Khannouss",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:210778",
+      "player": "Duckens Nazon",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760464"
+    }
+  ],
+  "efficiency": {
+    "Marrocos": 0.181818,
+    "Haiti": 0.222222
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Marrocos",
+      "evidence": {
+        "Marrocos": 11.0,
+        "Haiti": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Haiti",
+      "evidence": {
+        "team": "Haiti",
+        "clock": "10'",
+        "player": "Yassine Bounou",
+        "text": "Own Goal by Yassine Bounou, Morocco. Morocco 0, Haiti 1."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Marrocos",
+    "evidence": {
+      "Marrocos": 11.0,
+      "Haiti": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}
