@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -10,6 +11,23 @@ import requests
 
 from .config import CompetitionConfig, ROOT
 from .io import find_column, is_missing, normalize_text, read_table, utc_now, write_table
+
+
+def _network_int(config: CompetitionConfig, key: str, env_name: str, default: int) -> int:
+    raw = os.getenv(env_name, config.engine.get(key, default))
+    try:
+        value = int(raw)
+    except (TypeError, ValueError):
+        value = default
+    return max(1, value)
+
+
+def _network_timeout(config: CompetitionConfig) -> int:
+    return _network_int(config, "network_timeout_seconds", "SPORTS_ENGINE_NETWORK_TIMEOUT", 8)
+
+
+def _network_retries(config: CompetitionConfig) -> int:
+    return _network_int(config, "network_retries", "SPORTS_ENGINE_NETWORK_RETRIES", 1)
 
 
 def _scoreboard_rows(payload: dict[str, Any], source_url: str) -> list[dict[str, Any]]:
@@ -44,8 +62,8 @@ def fetch_espn_scoreboard(source: dict[str, Any], config: CompetitionConfig) -> 
         return {"success": False, "reason": "source URL is empty"}
     payload = _request_json(
         url,
-        timeout=int(config.engine.get("network_timeout_seconds", 45)),
-        retries=3,
+        timeout=_network_timeout(config),
+        retries=_network_retries(config),
     )
     raw = json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
     sha = hashlib.sha256(raw).hexdigest()
@@ -147,14 +165,14 @@ def merge_scoreboard_results(config: CompetitionConfig, staging_path: Path) -> d
     return {"inserted": len(additions), "synced_mirrors": sorted(set(synced_mirrors))}
 
 
-def _request_json(url: str, timeout: int, retries: int = 3) -> dict[str, Any]:
+def _request_json(url: str, timeout: int, retries: int = 1) -> dict[str, Any]:
     import time
     last_error: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
             response = requests.get(
                 url,
-                timeout=timeout,
+                timeout=(min(5, timeout), timeout),
                 headers={"User-Agent": "sports-engine-repository/1.0"},
             )
             response.raise_for_status()
@@ -162,7 +180,7 @@ def _request_json(url: str, timeout: int, retries: int = 3) -> dict[str, Any]:
         except Exception as exc:  # network errors are recorded by the caller
             last_error = exc
             if attempt < retries:
-                time.sleep(min(2 ** (attempt - 1), 4))
+                time.sleep(min(2 ** (attempt - 1), 2))
     assert last_error is not None
     raise last_error
 
@@ -420,7 +438,8 @@ def fetch_espn_summaries(source: dict[str, Any], config: CompetitionConfig, matc
     if not template:
         return {"success": False, "reason": "summary_url_template is empty"}
     event_map = _event_id_map(config, source)
-    timeout = int(config.engine.get("network_timeout_seconds", 45))
+    timeout = _network_timeout(config)
+    retries = _network_retries(config)
     parsed = {"events": [], "team_stats": [], "lineups": [], "player_stats": []}
     fetched_matches: list[int] = []
     failures: list[dict[str, Any]] = []
@@ -433,7 +452,7 @@ def fetch_espn_summaries(source: dict[str, Any], config: CompetitionConfig, matc
             continue
         url = template.format(event_id=event_id)
         try:
-            payload = _request_json(url, timeout=timeout, retries=3)
+            payload = _request_json(url, timeout=timeout, retries=retries)
             raw = json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
             sha = hashlib.sha256(raw).hexdigest()
             filename = f"match_{match_id}_event_{event_id}_{sha[:12]}.json"

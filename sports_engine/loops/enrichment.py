@@ -67,7 +67,14 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
                         needed_ids: list[int] = []
                         seen_ids: set[int] = set()
                         for queued in relevant:
-                            for value in queued.get("entity_ids", []):
+                            all_ids = {int(value) for value in queued.get("entity_ids", [])}
+                            covered, _ = _coverage_for_dataset(
+                                config,
+                                queued.get("provider_dataset", ""),
+                                str(queued.get("missing_field", "")),
+                                all_ids,
+                            )
+                            for value in sorted(all_ids - covered):
                                 match_id = int(value)
                                 if match_id not in seen_ids:
                                     seen_ids.add(match_id)
