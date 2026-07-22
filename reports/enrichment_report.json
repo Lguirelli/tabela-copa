@@ -1,11 +1,11 @@
 {
   "loop": "02_data_enrichment",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-07-20T18:16:14.082536+00:00",
+  "generated_at": "2026-07-22T17:26:48.650716+00:00",
   "inputs": [
     {
       "path": "data/competitions/world_cup_2026/queues/missing_data.json",
-      "sha256": "4de55d381c05ae9d6c04a1e96952f17542364029ecec4b274ca404db97179b39",
+      "sha256": "d3b86aca36887d53d8c4b6a9fa083e4c5faa7658a251b0d8f5b0eca21a8d42f6",
       "size_bytes": 3445
     }
   ],

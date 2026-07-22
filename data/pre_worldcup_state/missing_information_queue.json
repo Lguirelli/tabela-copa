@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T17:17:43.385795+00:00",
+  "generated_at": "2026-07-22T17:26:52.854424+00:00",
   "snapshot_at": "2026-06-11T03:59:59+00:00",
   "mode": "backfilled_pre_tournament_facts",
   "strict_temporal_warning": "Backfilled facts are allowed only when they describe pre-tournament attributes and never include tournament outcomes.",
