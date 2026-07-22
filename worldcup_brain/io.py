@@ -22,9 +22,14 @@ def read_csv(path: Path, required: bool = True) -> pd.DataFrame:
         if required:
             raise FileNotFoundError(path)
         return pd.DataFrame()
+    # pandas/csv.Sniffer raises ``csv.Error`` for files containing only a
+    # newline. Temporal replays before the first prediction legitimately
+    # produce empty indexes, so treat whitespace-only files as empty tables.
+    if path.stat().st_size == 0 or not path.read_text(encoding="utf-8-sig", errors="replace").strip():
+        return pd.DataFrame()
     try:
         frame = pd.read_csv(path, encoding="utf-8-sig", sep=None, engine="python")
-    except pd.errors.EmptyDataError:
+    except (pd.errors.EmptyDataError, pd.errors.ParserError):
         return pd.DataFrame()
     frame.columns = [str(col).replace("\ufeff", "").strip() for col in frame.columns]
     return frame

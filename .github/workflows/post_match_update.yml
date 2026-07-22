@@ -24,7 +24,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: sports-pipeline-${{ github.ref }}
+  group: repository-write-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:

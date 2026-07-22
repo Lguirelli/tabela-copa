@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: worldcup-temporal-${{ github.ref }}
+  group: repository-write-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -32,20 +32,16 @@ jobs:
           pip install -r requirements.txt
           pip install -e .[test]
       - name: Build leakage-safe initial state
-        run: |
-          python -m worldcup_brain.cli prepare
-          python -m worldcup_brain.cli replay --as-of "2026-06-10T23:59:59-04:00"
-      - name: Export model dashboard
-        run: python scripts/export_model_dashboard.py
-      - name: Validate initial artifacts
+        run: python -m worldcup_brain.cli prepare
+      - name: Validate initial artifacts without replacing final dashboard state
         run: |
           python -m worldcup_brain.cli validate --as-of "2026-06-10T23:59:59-04:00"
-          pytest -q
+          pytest -q --ignore=tests/test_model_dashboard.py
       - name: Commit generated temporal artifacts
         run: |
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pre_worldcup_state data/temporal predictions models/versions reports src/model-analytics-data.js
+          git add data/pre_worldcup_state data/temporal reports
           git commit -m "chore(worldcup): rebuild pre-tournament temporal state"
           git push

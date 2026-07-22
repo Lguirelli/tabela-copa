@@ -1,0 +1,282 @@
+{
+  "generated_at": "2026-07-22T01:40:38.252574+00:00",
+  "repository": "/mnt/data/tabela_copa_analysis/tabela-copa-main",
+  "iterations": 2,
+  "selected_scenarios": [
+    "repository_quality",
+    "temporal_boundary_replay"
+  ],
+  "network_enabled": false,
+  "status": "NO_FAILURE_REPRODUCED",
+  "summary": {
+    "steps_executed": 12,
+    "steps_succeeded": 12,
+    "steps_failed": 0,
+    "workflow_findings": 7
+  },
+  "recurring_failures": [],
+  "workflow_findings": [
+    {
+      "severity": "INFO",
+      "workflow": "01_pre_worldcup_training.yml",
+      "check": "push_without_rebase",
+      "message": "git push has no rebase retry; global writer concurrency must remain shared."
+    },
+    {
+      "severity": "INFO",
+      "workflow": "02_daily_tournament_simulation.yml",
+      "check": "push_without_rebase",
+      "message": "git push has no rebase retry; global writer concurrency must remain shared."
+    },
+    {
+      "severity": "INFO",
+      "workflow": "03_post_match_learning.yml",
+      "check": "push_without_rebase",
+      "message": "git push has no rebase retry; global writer concurrency must remain shared."
+    },
+    {
+      "severity": "INFO",
+      "workflow": "daily_update.yml",
+      "check": "push_without_rebase",
+      "message": "git push has no rebase retry; global writer concurrency must remain shared."
+    },
+    {
+      "severity": "INFO",
+      "workflow": "model_training.yml",
+      "check": "push_without_rebase",
+      "message": "git push has no rebase retry; global writer concurrency must remain shared."
+    },
+    {
+      "severity": "INFO",
+      "workflow": "post_match_update.yml",
+      "check": "push_without_rebase",
+      "message": "git push has no rebase retry; global writer concurrency must remain shared."
+    },
+    {
+      "severity": "PASS",
+      "workflow": "MULTIPLE",
+      "check": "writer_concurrency",
+      "message": "All 6 write workflows are serialized by repository-write-${{ github.ref }}."
+    }
+  ],
+  "steps": [
+    {
+      "scenario": "repository_quality",
+      "iteration": 1,
+      "step": "pytest",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 3.9,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/repository_quality__iteration_1__pytest.log",
+      "tail": "......................                                                   [100%]"
+    },
+    {
+      "scenario": "repository_quality",
+      "iteration": 1,
+      "step": "validate_repository",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/validate_repository.py"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 1.332,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/repository_quality__iteration_1__validate_repository.log",
+      "tail": "{\n  \"parsed_files\": {\n    \"python\": 64,\n    \"yaml\": 11,\n    \"json\": 703,\n    \"csv\": 78\n  },\n  \"controlled_mirrors_checked\": 3,\n  \"issues\": 0,\n  \"required_artifacts_checked\": 11,\n  \"status\": \"VALID\"\n}"
+    },
+    {
+      "scenario": "repository_quality",
+      "iteration": 1,
+      "step": "integrity",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/testes/test_integridade_dados.py"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.57,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/repository_quality__iteration_1__integrity.log",
+      "tail": "\n=== Validação de integridade dos dados ===\nOK: CSV, JSON, JS, probabilidades e IDs principais estão sincronizados."
+    },
+    {
+      "scenario": "temporal_boundary_replay",
+      "iteration": 1,
+      "step": "replay_at_pre_worldcup_cutoff",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "replay",
+        "--as-of",
+        "2026-06-10T23:59:59-04:00"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.931,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/temporal_boundary_replay__iteration_1__replay_at_pre_worldcup_cutoff.log",
+      "tail": "      },\n      {\n        \"team\": \"Bósnia e Herzegovina\",\n        \"final_rating\": 1450.0,\n        \"games_observed\": 0,\n        \"points\": 0,\n        \"goals_for\": 0,\n        \"goals_against\": 0,\n        \"form_points\": 1.0\n      }\n    ],\n    \"final_model_parameters\": {\n      \"base_goals\": 1.22,\n      \"rating_weight\": 0.24,\n      \"attack_weight\": 0.12,\n      \"defense_weight\": 0.11,\n      \"form_weight\": 0.1,\n      \"schedule_weight\": 0.04,\n      \"rest_weight\": 0.015,\n      \"experience_weight\": 0.02,\n      \"goalkeeper_weight\": 0.025,\n      \"probability_temperature\": 1.0,\n      \"elo_k\": 24.0,\n      \"learning_rate\": 0.03\n    },\n    \"temporal_safety\": {\n      \"current_match_result_in_prediction\": false,\n      \"future_knockout_teams_hidden\": true,\n      \"results_visible_only_after_result_available_at\": true,\n      \"backfilled_data_policy\": \"Pre-tournament facts and post-match facts are explicitly labeled; no tournament outcome is backdated.\"\n    },\n    \"limitations\": [\n      \"Pre-Cup FIFA ranking, recent national-team matches, injuries and player minutes were not present with archived timestamps and remain NA.\",\n      \"Post-match causal outputs are evidence-based associations, not causal identification from a randomized design.\",\n      \"Champion probabilities are intentionally unavailable before the round-of-32 teams become historically known; group qualification is simulated instead.\",\n      \"Player-level post-match evidence covers all matches, but minutes, xG, xA and player ratings remain unavailable and stay NA.\"\n    ],\n    \"semantic_model_versions\": {}\n  }\n}"
+    },
+    {
+      "scenario": "temporal_boundary_replay",
+      "iteration": 1,
+      "step": "validate_empty_boundary_indexes",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "validate",
+        "--as-of",
+        "2026-06-10T23:59:59-04:00"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.605,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/temporal_boundary_replay__iteration_1__validate_empty_boundary_indexes.log",
+      "tail": "{\n  \"generated_at\": \"2026-07-22T01:40:29.869495+00:00\",\n  \"status\": \"VALID\",\n  \"summary\": {\n    \"timeline_matches\": 104,\n    \"predictions\": 0,\n    \"learning_analyses\": 0,\n    \"knowledge_records\": 0,\n    \"model_versions\": 1,\n    \"issues\": 0\n  },\n  \"checks\": {\n    \"no_future_records_in_predictions\": true,\n    \"current_match_result_never_used\": true,\n    \"knockout_fixture_visibility_valid\": true,\n    \"workflows_present_and_valid_yaml\": true\n  },\n  \"issues\": []\n}"
+    },
+    {
+      "scenario": "temporal_boundary_replay",
+      "iteration": 1,
+      "step": "check_empty_indexes_have_headers",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-c",
+        "from pathlib import Path; paths=[Path('predictions/pre_match/index.csv'),Path('learning/game_analysis/index.csv')]; assert all(p.read_text(encoding='utf-8').strip() for p in paths), paths; print('Boundary indexes contain stable headers')"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.51,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/temporal_boundary_replay__iteration_1__check_empty_indexes_have_headers.log",
+      "tail": "Boundary indexes contain stable headers"
+    },
+    {
+      "scenario": "repository_quality",
+      "iteration": 2,
+      "step": "pytest",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-q"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 3.696,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/repository_quality__iteration_2__pytest.log",
+      "tail": "......................                                                   [100%]"
+    },
+    {
+      "scenario": "repository_quality",
+      "iteration": 2,
+      "step": "validate_repository",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/validate_repository.py"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 1.298,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/repository_quality__iteration_2__validate_repository.log",
+      "tail": "{\n  \"parsed_files\": {\n    \"python\": 64,\n    \"yaml\": 11,\n    \"json\": 703,\n    \"csv\": 78\n  },\n  \"controlled_mirrors_checked\": 3,\n  \"issues\": 0,\n  \"required_artifacts_checked\": 11,\n  \"status\": \"VALID\"\n}"
+    },
+    {
+      "scenario": "repository_quality",
+      "iteration": 2,
+      "step": "integrity",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/testes/test_integridade_dados.py"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.549,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/repository_quality__iteration_2__integrity.log",
+      "tail": "\n=== Validação de integridade dos dados ===\nOK: CSV, JSON, JS, probabilidades e IDs principais estão sincronizados."
+    },
+    {
+      "scenario": "temporal_boundary_replay",
+      "iteration": 2,
+      "step": "replay_at_pre_worldcup_cutoff",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "replay",
+        "--as-of",
+        "2026-06-10T23:59:59-04:00"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.919,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/temporal_boundary_replay__iteration_2__replay_at_pre_worldcup_cutoff.log",
+      "tail": "      },\n      {\n        \"team\": \"Bósnia e Herzegovina\",\n        \"final_rating\": 1450.0,\n        \"games_observed\": 0,\n        \"points\": 0,\n        \"goals_for\": 0,\n        \"goals_against\": 0,\n        \"form_points\": 1.0\n      }\n    ],\n    \"final_model_parameters\": {\n      \"base_goals\": 1.22,\n      \"rating_weight\": 0.24,\n      \"attack_weight\": 0.12,\n      \"defense_weight\": 0.11,\n      \"form_weight\": 0.1,\n      \"schedule_weight\": 0.04,\n      \"rest_weight\": 0.015,\n      \"experience_weight\": 0.02,\n      \"goalkeeper_weight\": 0.025,\n      \"probability_temperature\": 1.0,\n      \"elo_k\": 24.0,\n      \"learning_rate\": 0.03\n    },\n    \"temporal_safety\": {\n      \"current_match_result_in_prediction\": false,\n      \"future_knockout_teams_hidden\": true,\n      \"results_visible_only_after_result_available_at\": true,\n      \"backfilled_data_policy\": \"Pre-tournament facts and post-match facts are explicitly labeled; no tournament outcome is backdated.\"\n    },\n    \"limitations\": [\n      \"Pre-Cup FIFA ranking, recent national-team matches, injuries and player minutes were not present with archived timestamps and remain NA.\",\n      \"Post-match causal outputs are evidence-based associations, not causal identification from a randomized design.\",\n      \"Champion probabilities are intentionally unavailable before the round-of-32 teams become historically known; group qualification is simulated instead.\",\n      \"Player-level post-match evidence covers all matches, but minutes, xG, xA and player ratings remain unavailable and stay NA.\"\n    ],\n    \"semantic_model_versions\": {}\n  }\n}"
+    },
+    {
+      "scenario": "temporal_boundary_replay",
+      "iteration": 2,
+      "step": "validate_empty_boundary_indexes",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "validate",
+        "--as-of",
+        "2026-06-10T23:59:59-04:00"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.547,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/temporal_boundary_replay__iteration_2__validate_empty_boundary_indexes.log",
+      "tail": "{\n  \"generated_at\": \"2026-07-22T01:40:37.507637+00:00\",\n  \"status\": \"VALID\",\n  \"summary\": {\n    \"timeline_matches\": 104,\n    \"predictions\": 0,\n    \"learning_analyses\": 0,\n    \"knowledge_records\": 0,\n    \"model_versions\": 1,\n    \"issues\": 0\n  },\n  \"checks\": {\n    \"no_future_records_in_predictions\": true,\n    \"current_match_result_never_used\": true,\n    \"knockout_fixture_visibility_valid\": true,\n    \"workflows_present_and_valid_yaml\": true\n  },\n  \"issues\": []\n}"
+    },
+    {
+      "scenario": "temporal_boundary_replay",
+      "iteration": 2,
+      "step": "check_empty_indexes_have_headers",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-c",
+        "from pathlib import Path; paths=[Path('predictions/pre_match/index.csv'),Path('learning/game_analysis/index.csv')]; assert all(p.read_text(encoding='utf-8').strip() for p in paths), paths; print('Boundary indexes contain stable headers')"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.558,
+      "classification": "NONE",
+      "probable_cause": "Etapa concluída.",
+      "log_path": "/mnt/data/diag_loop2/logs/temporal_boundary_replay__iteration_2__check_empty_indexes_have_headers.log",
+      "tail": "Boundary indexes contain stable headers"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import yaml
 
 from worldcup_brain.config import load_config
 from worldcup_brain.preworldcup import build_pre_worldcup_state
+from worldcup_brain.io import read_csv
 from worldcup_brain.temporal import build_timeline, parse_timestamp, visible_results
 
 
@@ -68,3 +69,10 @@ def test_generated_knowledge_ledger_has_no_future_records_when_present():
         assert parse_timestamp(row["available_at"]) <= parse_timestamp(row["prediction_cutoff"])
         if row["record_type"] == "official_result":
             assert int(float(row["record_id"])) != int(row["prediction_match_id"])
+
+
+def test_whitespace_only_temporal_index_is_read_as_empty(tmp_path):
+    path = tmp_path / "index.csv"
+    path.write_text("\n", encoding="utf-8")
+    frame = read_csv(path, required=False)
+    assert frame.empty

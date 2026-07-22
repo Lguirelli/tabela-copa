@@ -1,0 +1,67 @@
+name: 00 Diagnose failing runs
+
+on:
+  workflow_dispatch:
+    inputs:
+      iterations:
+        description: Number of isolated repetitions per scenario
+        required: false
+        default: "2"
+      allow_network:
+        description: Enable configured public network sources
+        required: false
+        type: boolean
+        default: false
+  workflow_run:
+    workflows:
+      - "01 Pre-World Cup temporal training"
+      - "02 Daily World Cup temporal simulation"
+      - "03 Post-match World Cup learning"
+      - "Daily sports data update"
+      - "Model training and recalibration"
+      - "Post-match analytical update"
+      - "Deploy static content to Pages"
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: run-diagnostics-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  diagnose:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install diagnostic dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install -e .[test]
+      - name: Reproduce runs in isolated loops
+        env:
+          ITERATIONS: ${{ github.event.inputs.iterations || '2' }}
+          ALLOW_NETWORK: ${{ github.event.inputs.allow_network || 'false' }}
+        run: |
+          args=(--iterations "$ITERATIONS")
+          if [ "$ALLOW_NETWORK" = "true" ]; then
+            args+=(--allow-network)
+          fi
+          python scripts/diagnose_github_actions.py "${args[@]}"
+      - name: Upload complete diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-diagnostics-${{ github.run_id }}
+          path: reports/run_diagnostics
+          if-no-files-found: error
+          retention-days: 14

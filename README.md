@@ -398,3 +398,21 @@ src/model-analytics-data.js
 ```
 
 O exportador não cria novas métricas nem estima valores ausentes. Ele utiliza somente previsões, relatórios, simulações, versões e análises já produzidos pelo pipeline. Os workflows temporais e multicampeonato executam o exportador após cada atualização para manter o GitHub Pages sincronizado.
+
+## Diagnóstico em loop das runs
+
+Para reproduzir as etapas dos workflows em cópias isoladas do repositório, repetir as execuções e classificar falhas recorrentes:
+
+```bash
+python scripts/diagnose_github_actions.py --iterations 2
+```
+
+Os relatórios completos são gravados em:
+
+```text
+reports/run_diagnostics/run_diagnostics.md
+reports/run_diagnostics/run_diagnostics.json
+reports/run_diagnostics/logs/
+```
+
+O workflow `00_run_diagnostics.yml` também é executado automaticamente quando uma das principais GitHub Actions termina com falha. Ele não faz commit: publica os relatórios e logs como artefato da run.

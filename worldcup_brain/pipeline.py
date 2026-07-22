@@ -22,6 +22,28 @@ from .state import TournamentState
 from .temporal import assert_temporal_integrity, build_timeline, parse_timestamp, visible_results
 
 
+PREDICTION_INDEX_COLUMNS = [
+    "match_id", "date", "phase", "team1", "team2", "prediction_at",
+    "predicted_outcome", "predicted_score", "probability_team1_win",
+    "probability_draw", "probability_team2_win", "predicted_advancer",
+    "confidence", "readiness_score", "prior_results_used", "temporal_status",
+]
+LEARNING_INDEX_COLUMNS = [
+    "match_id", "date", "team1", "team2", "outcome_correct", "score_correct",
+    "qualification_correct", "brier_score", "log_loss", "goal_absolute_error",
+    "primary_factor", "significance",
+]
+KNOWLEDGE_LEDGER_COLUMNS = [
+    "prediction_match_id", "prediction_cutoff", "record_type", "record_id",
+    "available_at", "source",
+]
+DAILY_EVOLUTION_COLUMNS = [
+    "date", "cutoff", "results_observed", "outcome_accuracy", "mean_log_loss",
+    "mean_brier_score", "probability_temperature", "base_goals",
+    "recalibration_accepted", "simulation_file",
+]
+
+
 def prepare(config: TemporalConfig) -> dict[str, Any]:
     pre = build_pre_worldcup_state(config)
     timeline = build_timeline(config)
@@ -335,10 +357,14 @@ def replay(config: TemporalConfig, as_of: Any | None = None, clean: bool = True)
                 "simulation_file": f"simulations/daily/simulation_after_{day}.json",
             })
 
-    prediction_index = pd.DataFrame(prediction_index_rows).sort_values("match_id") if prediction_index_rows else pd.DataFrame()
-    learning_index = pd.DataFrame(learning_index_rows).sort_values("match_id") if learning_index_rows else pd.DataFrame()
-    knowledge_frame = pd.DataFrame(knowledge_ledger)
-    evolution_frame = pd.DataFrame(daily_evolution)
+    prediction_index = pd.DataFrame(prediction_index_rows, columns=PREDICTION_INDEX_COLUMNS)
+    learning_index = pd.DataFrame(learning_index_rows, columns=LEARNING_INDEX_COLUMNS)
+    knowledge_frame = pd.DataFrame(knowledge_ledger, columns=KNOWLEDGE_LEDGER_COLUMNS)
+    evolution_frame = pd.DataFrame(daily_evolution, columns=DAILY_EVOLUTION_COLUMNS)
+    if not prediction_index.empty:
+        prediction_index = prediction_index.sort_values("match_id")
+    if not learning_index.empty:
+        learning_index = learning_index.sort_values("match_id")
     atomic_write_csv(prediction_index, config.output("predictions", "pre_match", "index.csv"))
     atomic_write_csv(learning_index, config.output("learning", "game_analysis", "index.csv"))
     atomic_write_csv(knowledge_frame, config.output("data", "temporal", "prediction_knowledge_ledger.csv"))
