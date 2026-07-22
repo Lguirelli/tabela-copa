@@ -1,7 +1,7 @@
 {
   "loop": "08_model_recalibration",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-07-22T01:41:56.752950+00:00",
+  "generated_at": "2026-07-22T17:17:42.644937+00:00",
   "inputs": [
     {
       "path": "data/modelo_diario/previsoes_dia_a_dia.csv",

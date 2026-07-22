@@ -1,0 +1,21 @@
+{
+  "status": "CLEANED",
+  "forbidden_paths": [
+    "data/atualizacoes_entrada_26-06.csv",
+    "data/atualizacoes_entrada_26-06_resultados_desempenho.csv"
+  ],
+  "actions": [
+    {
+      "source": "data/atualizacoes_entrada_26-06.csv",
+      "archive": "data/archive/legacy_inputs/atualizacoes_entrada_26-06.csv",
+      "sha256": "b29dd896b1de92f101b12b5223207e17d2f9fec1bdd47991cea6a6f40d90383a",
+      "action": "removed_duplicate"
+    },
+    {
+      "source": "data/atualizacoes_entrada_26-06_resultados_desempenho.csv",
+      "archive": "data/archive/legacy_inputs/atualizacoes_entrada_26-06_resultados_desempenho.csv",
+      "sha256": "3be0347cd30ae49d0218c1f266e89c10db10a483f2917d6ed20b23cdeb76ee29",
+      "action": "removed_duplicate"
+    }
+  ]
+}

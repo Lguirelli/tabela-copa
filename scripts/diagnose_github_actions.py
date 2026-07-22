@@ -163,6 +163,7 @@ def classify_failure(output: str, exit_code: int | None, timed_out: bool) -> tup
     if timed_out:
         return "TIMEOUT", "A etapa excedeu o limite; verifique espera de rede, retry excessivo ou processamento bloqueado."
     rules = [
+        (("artefatos python locais", "__pycache__", ".pyc"), "PYTHON_CACHE", "O próprio job gerou bytecode/cache Python antes da validação de integridade."),
         (("could not determine delimiter", "emptydataerror"), "EMPTY_CSV", "Um CSV vazio/sem cabeçalho foi lido com detecção automática de separador."),
         (("arquivo/pasta legado reapareceu", "legacy"), "LEGACY_ARTIFACT", "Arquivos proibidos pela validação de integridade ainda existem ou foram recriados."),
         (("modulenotfounderror", "no module named"), "DEPENDENCY_OR_IMPORT", "Dependência ausente, instalação incompleta ou caminho de importação incorreto."),

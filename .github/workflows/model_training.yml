@@ -14,6 +14,10 @@ on:
     paths:
       - "config/competitions.yaml"
 
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+
 permissions:
   contents: write
 
@@ -32,6 +36,8 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+      - name: Clean legacy artifacts before the run
+        run: python scripts/ci_preflight.py
       - run: |
           pip install -r requirements.txt
           pip install -e .
@@ -49,12 +55,7 @@ jobs:
       - name: Validate trained artifacts
         env:
           COMPETITION: ${{ inputs.competition || 'all' }}
-        run: |
-          PYTHONDONTWRITEBYTECODE=1 pytest -p no:cacheprovider
-          PYTHONDONTWRITEBYTECODE=1 python scripts/validate_repository.py
-          if [ "$COMPETITION" = "all" ] || [ "$COMPETITION" = "world_cup_2026" ]; then
-            python scripts/testes/test_integridade_dados.py
-          fi
+        run: make test
       - name: Commit versioned model outputs
         run: |
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi

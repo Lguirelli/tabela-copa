@@ -23,6 +23,10 @@ on:
       - "Deploy static content to Pages"
     types: [completed]
 
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+
 permissions:
   contents: read
 
@@ -43,6 +47,8 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+      - name: Clean legacy artifacts in diagnostic workspace
+        run: python scripts/ci_preflight.py
       - name: Install diagnostic dependencies
         run: |
           python -m pip install -r requirements.txt

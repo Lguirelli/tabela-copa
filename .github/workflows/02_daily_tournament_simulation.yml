@@ -10,6 +10,10 @@ on:
         required: false
         default: ""
 
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+
 permissions:
   contents: write
 
@@ -27,6 +31,8 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+      - name: Clean legacy artifacts before the run
+        run: python scripts/ci_preflight.py
       - name: Install
         run: |
           pip install -r requirements.txt
@@ -34,6 +40,8 @@ jobs:
       - name: Enrich configured public datasets
         env:
           SPORTS_ENGINE_NETWORK: "1"
+          SPORTS_ENGINE_NETWORK_TIMEOUT: "8"
+          SPORTS_ENGINE_NETWORK_RETRIES: "1"
         run: python -m worldcup_brain.cli collect --allow-network
       - name: Replay tournament up to current cutoff
         env:
@@ -45,12 +53,12 @@ jobs:
       - name: Export model dashboard
         run: python scripts/export_model_dashboard.py
       - name: Test repository
-        run: pytest -q
+        run: make test
       - name: Commit daily state
         run: |
           if [ -z "$(git status --porcelain)" ]; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pre_worldcup_state data/temporal predictions learning models simulations reports logs src/model-analytics-data.js
+          git add -A data predictions learning models simulations reports logs src/model-analytics-data.js
           git commit -m "chore(worldcup): daily temporal simulation"
           git push

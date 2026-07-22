@@ -7,7 +7,8 @@ engine:
   minimum_samples_for_pattern: 30
   feature_correlation_threshold: 0.08
   monte_carlo_iterations: 12000
-  network_timeout_seconds: 45
+  network_timeout_seconds: 8
+  network_retries: 1
   max_enrichment_matches_per_run: 12
   allow_overwrite_observed_data: false
 

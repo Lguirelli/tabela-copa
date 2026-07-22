@@ -7,10 +7,10 @@ install:
 	$(PYTHON) -m pip install -r requirements.txt
 	$(PYTHON) -m pip install -e .
 
-test:
+test: clean-cache
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) -m pytest -p no:cacheprovider
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) scripts/validate_repository.py
-	$(PYTHON) scripts/testes/test_integridade_dados.py
+	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) scripts/testes/test_integridade_dados.py
 
 integrity:
 	PYTHONDONTWRITEBYTECODE=1 $(PYTHON) scripts/validate_repository.py

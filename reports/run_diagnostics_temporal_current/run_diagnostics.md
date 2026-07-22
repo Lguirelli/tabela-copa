@@ -1,6 +1,6 @@
 # Diagnóstico das GitHub Actions
 
-Gerado em: `2026-07-22T17:16:38.558161+00:00`
+Gerado em: `2026-07-22T17:17:00.442100+00:00`
 Iterações: **1**
 Status geral: **NO_FAILURE_REPRODUCED**
 
@@ -8,21 +8,12 @@ Status geral: **NO_FAILURE_REPRODUCED**
 
 | Cenário | Iteração | Etapa | Status | Classe | Duração |
 |---|---:|---|---|---|---:|
-| repository_quality | 1 | pytest | SUCCESS | NONE | 3.829s |
-| repository_quality | 1 | validate_repository | SUCCESS | NONE | 1.338s |
-| repository_quality | 1 | integrity | SUCCESS | NONE | 0.562s |
-| sports_pipeline | 1 | run_registry | SUCCESS | NONE | 1.612s |
-| sports_pipeline | 1 | export_dashboard | SUCCESS | NONE | 0.590s |
-| sports_pipeline | 1 | pytest_after_pipeline | SUCCESS | NONE | 3.711s |
-| sports_pipeline | 1 | validate_after_pipeline | SUCCESS | NONE | 1.322s |
-| sports_pipeline | 1 | integrity_after_pipeline | SUCCESS | NONE | 0.561s |
-| temporal_pre_worldcup | 1 | prepare | SUCCESS | NONE | 0.811s |
-| temporal_pre_worldcup | 1 | validate_pre_worldcup | SUCCESS | NONE | 0.892s |
-| temporal_pre_worldcup | 1 | pytest_initial_artifacts | SUCCESS | NONE | 3.863s |
-| temporal_boundary_replay | 1 | replay_at_pre_worldcup_cutoff | SUCCESS | NONE | 0.929s |
-| temporal_boundary_replay | 1 | validate_empty_boundary_indexes | SUCCESS | NONE | 0.578s |
-| temporal_boundary_replay | 1 | check_empty_indexes_have_headers | SUCCESS | NONE | 0.484s |
-| static_pages | 1 | validate_static_entrypoints | SUCCESS | NONE | 0.609s |
+| temporal_current | 1 | configure_fast_diagnostic_simulation | SUCCESS | NONE | 0.539s |
+| temporal_current | 1 | collect | SUCCESS | NONE | 1.108s |
+| temporal_current | 1 | daily_replay | SUCCESS | NONE | 6.370s |
+| temporal_current | 1 | validate_current | SUCCESS | NONE | 0.747s |
+| temporal_current | 1 | export_dashboard | SUCCESS | NONE | 0.592s |
+| temporal_current | 1 | pytest_current | SUCCESS | NONE | 3.606s |
 
 ## Falhas recorrentes
 
