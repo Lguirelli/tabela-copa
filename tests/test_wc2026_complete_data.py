@@ -31,9 +31,14 @@ def test_complete_package_coverage_and_mapping() -> None:
     assert (len(penalties), penalties["jogo"].nunique()) == (40, 4)
 
 
-def test_player_missing_fields_remain_missing_and_no_duplicate_keys() -> None:
+def test_player_derived_minutes_keep_provenance_and_no_duplicate_keys() -> None:
     players = pd.read_csv(ROOT / "data/platform/player_match_stats.csv")
-    assert players["minutes"].isna().all()
+    minutes = pd.to_numeric(players["minutes"], errors="coerce")
+    assert minutes.notna().all()
+    assert minutes.between(0, 120).all()
+    assert players["minutes_method"].notna().all()
+    assert players["minutes_data_quality"].eq("DERIVED_POST_MATCH").all()
+    assert players["minutes_derived_from"].eq("lineups+substitution_events+match_duration").all()
     assert players["xg"].isna().all()
     assert players["xa"].isna().all()
     assert players["rating"].isna().all()
@@ -45,6 +50,13 @@ def test_player_missing_fields_remain_missing_and_no_duplicate_keys() -> None:
     collected = pd.to_datetime(lineups["source_collected_at"], utc=True)
     assert available.equals(collected)
     assert (available >= pd.Timestamp("2026-07-20T00:00:00Z")).all()
+
+    availability = pd.read_csv(ROOT / "data/platform/player_availability.csv")
+    assert availability["match_id"].nunique() == 104
+    assert availability["status"].eq("AVAILABLE_MATCHDAY_SQUAD").all()
+    assert availability["temporal_status"].eq("POST_MATCH_DERIVED_FACT").all()
+    assert availability["data_quality"].eq("DERIVED_POST_MATCH").all()
+    assert not availability.duplicated(["match_id", "team", "player_name"]).any()
 
 
 def test_validated_results_are_aligned_to_canonical_results() -> None:

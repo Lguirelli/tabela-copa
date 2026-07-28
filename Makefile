@@ -1,7 +1,10 @@
 PYTHON ?= python
 COMPETITION ?= world_cup_2026
+MODE ?= daily
+AS_OF ?=
+NETWORK ?= 0
 
-.PHONY: install test integrity audit completeness update validate analyze train simulate all all-competitions export-dashboard clean-cache
+.PHONY: install test integrity audit completeness update validate analyze train simulate all all-competitions export-dashboard pipeline diagnose clean-cache
 
 install:
 	$(PYTHON) -m pip install -r requirements.txt
@@ -46,6 +49,15 @@ all-competitions:
 
 export-dashboard:
 	$(PYTHON) scripts/export_model_dashboard.py
+
+pipeline:
+	@args="--mode $(MODE) --competition $(COMPETITION) --run-tests"; \
+	if [ -n "$(AS_OF)" ]; then args="$$args --as-of $(AS_OF)"; fi; \
+	if [ "$(NETWORK)" = "1" ]; then args="$$args --allow-network"; fi; \
+	$(PYTHON) scripts/run_repository_pipeline.py $$args
+
+diagnose:
+	$(PYTHON) scripts/diagnose_github_actions.py
 
 clean-cache:
 	find . -type d -name __pycache__ -prune -exec rm -rf {} +

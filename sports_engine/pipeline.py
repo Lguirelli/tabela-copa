@@ -37,6 +37,13 @@ def run_all(config: CompetitionConfig) -> dict[str, Any]:
             limitations.append(f"{len(open_items)} aggregated missing-data requirements remain open; unavailable values stay NA.")
             if overall == "READY":
                 overall = "READY_WITH_LIMITATIONS"
+    derived_report = read_json(ROOT / "reports" / "derived_player_facts_report.json", {})
+    unresolved_minutes = int((derived_report.get("summary") or {}).get("minutes_unresolved", 0) or 0)
+    if unresolved_minutes:
+        limitations.append(
+            f"{unresolved_minutes} player-level minute rows remain NA because no deterministic substitution/dismissal interval was available; match-level minute coverage is complete."
+        )
+
     quarantined_path = ROOT / "data" / "conflicts" / "unmapped_espn_team_match_stats.csv"
     if quarantined_path.exists():
         quarantined = read_table(quarantined_path, required=False)
@@ -51,9 +58,10 @@ def run_all(config: CompetitionConfig) -> dict[str, Any]:
             "pattern and feature evidence registry", "prediction feedback",
             "Monte Carlo simulation with separate extra-time and penalty states",
             "versioned model recalibration", "competition-isolated artifacts",
-            "incremental composite-key enrichment merges", "GitHub Actions registry orchestration",
+            "incremental composite-key enrichment merges", "single-writer GitHub Actions orchestration",
+            "traceable post-match derivation of player minutes and matchday-squad availability",
         ],"steps":steps,"limitations":limitations,"next_steps":[
-            "Configure reliable player-minutes and historical availability providers; observed lineups already cover all matches.",
+            "Add an independent official provider when pre-match injury/availability history is required; matchday-squad availability is currently post-match derived.",
             "Add a new competition block and canonical datasets to reuse the engine without code changes.",
             "Review promoted model versions before using them for high-stakes decisions.",
         ],

@@ -1,0 +1,131 @@
+name: Update data and models
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Pipeline mode
+        required: true
+        type: choice
+        default: daily
+        options: [daily, post-match, prepare, validate]
+      competition:
+        description: Competition ID or all
+        required: false
+        default: all
+      as_of:
+        description: Optional timezone-aware cutoff
+        required: false
+        default: ""
+      allow_network:
+        description: Enable configured public providers
+        required: false
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths:
+      - "config/competitions.yaml"
+      - "config/worldcup_temporal.yaml"
+      - "data/entrada/**"
+      - "data/resultados_reais.csv"
+      - "data/matches.csv"
+      - "data/competitions/**/matches.csv"
+      - "data/competitions/**/results.csv"
+      - "data/platform/**"
+      - "data/normalized/**"
+
+permissions:
+  contents: write
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+  SPORTS_ENGINE_NETWORK_TIMEOUT: "15"
+  SPORTS_ENGINE_NETWORK_RETRIES: "3"
+
+concurrency:
+  group: repository-update-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install -e .[test]
+      - name: Resolve execution mode
+        shell: bash
+        env:
+          INPUT_MODE: ${{ inputs.mode }}
+          INPUT_COMPETITION: ${{ inputs.competition }}
+          INPUT_AS_OF: ${{ inputs.as_of }}
+          INPUT_ALLOW_NETWORK: ${{ inputs.allow_network }}
+        run: |
+          set -euo pipefail
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+            echo "PIPELINE_MODE=${INPUT_MODE:-daily}" >> "$GITHUB_ENV"
+            echo "COMPETITION=${INPUT_COMPETITION:-all}" >> "$GITHUB_ENV"
+            echo "AS_OF=${INPUT_AS_OF:-}" >> "$GITHUB_ENV"
+            echo "ALLOW_NETWORK=${INPUT_ALLOW_NETWORK:-true}" >> "$GITHUB_ENV"
+          elif [ "${GITHUB_EVENT_NAME}" = "push" ]; then
+            echo "PIPELINE_MODE=post-match" >> "$GITHUB_ENV"
+            echo "COMPETITION=all" >> "$GITHUB_ENV"
+            echo "AS_OF=" >> "$GITHUB_ENV"
+            echo "ALLOW_NETWORK=true" >> "$GITHUB_ENV"
+          else
+            echo "PIPELINE_MODE=daily" >> "$GITHUB_ENV"
+            echo "COMPETITION=all" >> "$GITHUB_ENV"
+            echo "AS_OF=" >> "$GITHUB_ENV"
+            echo "ALLOW_NETWORK=true" >> "$GITHUB_ENV"
+          fi
+      - name: Run canonical pipeline once
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--mode "$PIPELINE_MODE" --competition "$COMPETITION" --run-tests)
+          if [ -n "$AS_OF" ]; then args+=(--as-of "$AS_OF"); fi
+          if [ "$ALLOW_NETWORK" = "true" ]; then args+=(--allow-network); fi
+          python scripts/run_repository_pipeline.py "${args[@]}"
+      - name: Upload pipeline logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: repository-pipeline-${{ github.run_id }}
+          path: |
+            logs/pipeline
+            reports/pipeline
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Commit generated artifacts once
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for path in data models predictions learning simulations reports src/model-analytics-data.js; do
+            [ -e "$path" ] && git add -A "$path"
+          done
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+            exit 0
+          fi
+          git commit -m "chore(pipeline): ${PIPELINE_MODE} update [skip ci]"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            sleep $((attempt * 3))
+            git pull --rebase origin "$GITHUB_REF_NAME"
+          done

@@ -11,7 +11,8 @@ def build(config: TemporalConfig) -> dict[str, Any]:
     learning = read_json(config.output("reports", "worldcup_learning_report.json"), {}) or {}
     audit = read_json(config.output("reports", "worldcup_temporal_repository_audit.json"), {}) or {}
     queue = read_json(config.output("data", "temporal", "missing_information_queue.json"), {}) or {}
-    enrichment = read_json(config.output("logs", "temporal_enrichment_log.json"), {}) or {}
+    enrichment = read_json(config.output("reports", "enrichment_report.json"), {}) or {}
+    temporal_collection = read_json(config.output("logs", "temporal_enrichment_log.json"), {}) or {}
     predictions = read_csv(config.output("predictions", "pre_match", "index.csv"), required=False)
     learned = read_csv(config.output("learning", "game_analysis", "index.csv"), required=False)
     versions = list(config.output("models", "versions").glob("*.json"))
@@ -40,6 +41,7 @@ def build(config: TemporalConfig) -> dict[str, Any]:
             "timestamp-safe missing-information collection",
             "three dedicated GitHub Actions workflows",
             "complete post-match ESPN coverage for events, team statistics, player statistics, observed lineups and main referees",
+            "derived post-match player minutes and matchday-squad availability with provenance labels",
         ],
         "execution_summary": {
             "predictions": len(predictions),
@@ -60,11 +62,12 @@ def build(config: TemporalConfig) -> dict[str, Any]:
             "FIFA ranking and recent pre-Cup match form lack archived timestamps in the supplied repository.",
             "Pre-Cup injuries, physical condition and recent player minutes remain NA without archived sources.",
             "Observed lineups and player match statistics were collected after the tournament and are not backdated into historical pre-match snapshots.",
-            "Player minutes, xG, xA, ratings and historical availability remain NA because the supplied source does not contain them.",
+            "Post-match player minutes are derived and explicitly labeled; xG, xA, ratings and historical pre-match availability remain NA because the supplied sources do not contain them.",
             "Causal outputs describe observed associations and decisive events, not experimental causal proof.",
         ],
         "missing_information": queue.get("summary", {}),
         "latest_enrichment": enrichment.get("summary", {}),
+        "last_historical_collection_check": temporal_collection.get("summary", {}),
         "audit_risks": audit.get("risk_summary", {}),
         "final_report": "reports/worldcup_learning_report.json",
         "validation_report": "reports/temporal_validation_report.json",
@@ -72,7 +75,7 @@ def build(config: TemporalConfig) -> dict[str, Any]:
         "next_steps": [
             "Add archived pre-Cup rankings, results, injury reports and player-minute datasets with published_at timestamps.",
             "Add archived pre-match lineup and availability publications with trustworthy timestamps to resolve historical pre-match gaps.",
-            "Add a source for player minutes, xG, xA or ratings without replacing the observed ESPN records.",
+            "Add independent archived sources for pre-match player workload, injuries, xG, xA or ratings without replacing observed or derived records.",
             "Evaluate the learned feature set on another tournament before generalizing causal interpretations.",
         ],
     }

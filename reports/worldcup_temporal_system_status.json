@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:16:12.463600+00:00",
+  "generated_at": "2026-07-28T19:22:57.970040+00:00",
   "project_status": "READY_WITH_LIMITATIONS",
   "competition_id": "world_cup_2026",
   "architecture": "event-driven walk-forward temporal reconstruction",
@@ -14,7 +14,8 @@
     "group qualification and knockout Monte Carlo simulations",
     "timestamp-safe missing-information collection",
     "three dedicated GitHub Actions workflows",
-    "complete post-match ESPN coverage for events, team statistics, player statistics, observed lineups and main referees"
+    "complete post-match ESPN coverage for events, team statistics, player statistics, observed lineups and main referees",
+    "derived post-match player minutes and matchday-squad availability with provenance labels"
   ],
   "execution_summary": {
     "predictions": 104,
@@ -26,7 +27,7 @@
     "temporal_validation_status": "VALID",
     "observed_lineup_rows": 5323,
     "player_match_stat_rows": 5323,
-    "player_availability_rows": 0,
+    "player_availability_rows": 5318,
     "match_official_rows": 104
   },
   "learning_comparison": {
@@ -63,7 +64,7 @@
     "FIFA ranking and recent pre-Cup match form lack archived timestamps in the supplied repository.",
     "Pre-Cup injuries, physical condition and recent player minutes remain NA without archived sources.",
     "Observed lineups and player match statistics were collected after the tournament and are not backdated into historical pre-match snapshots.",
-    "Player minutes, xG, xA, ratings and historical availability remain NA because the supplied source does not contain them.",
+    "Post-match player minutes are derived and explicitly labeled; xG, xA, ratings and historical pre-match availability remain NA because the supplied sources do not contain them.",
     "Causal outputs describe observed associations and decisive events, not experimental causal proof."
   ],
   "missing_information": {
@@ -72,6 +73,11 @@
     "na_after_source_exhaustion": 625
   },
   "latest_enrichment": {
+    "queue_items": 0,
+    "resolved_this_run": 0,
+    "remaining_open": 0
+  },
+  "last_historical_collection_check": {
     "queue_items_checked": 625,
     "historically_resolved": 0,
     "kept_as_na": 625
@@ -87,7 +93,7 @@
   "next_steps": [
     "Add archived pre-Cup rankings, results, injury reports and player-minute datasets with published_at timestamps.",
     "Add archived pre-match lineup and availability publications with trustworthy timestamps to resolve historical pre-match gaps.",
-    "Add a source for player minutes, xG, xA or ratings without replacing the observed ESPN records.",
+    "Add independent archived sources for pre-match player workload, injuries, xG, xA or ratings without replacing observed or derived records.",
     "Evaluate the learned feature set on another tournament before generalizing causal interpretations."
   ]
 }

@@ -342,10 +342,11 @@ def markdown_report(payload: dict[str, Any]) -> str:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Diagnose failing GitHub Actions-equivalent runs")
-    parser.add_argument("--iterations", type=int, default=2, help="How many isolated repetitions per scenario")
+    parser.add_argument("--iterations", type=int, default=1, help="How many isolated repetitions per scenario")
     parser.add_argument("--scenario", action="append", help="Scenario to run; repeat to select multiple")
     parser.add_argument("--allow-network", action="store_true", help="Enable configured public network sources")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--full", action="store_true", help="Run every heavy replay scenario; default is a fast quality/static check")
     parser.add_argument("--fail-on-error", action="store_true", help="Exit non-zero when a step fails")
     return parser.parse_args()
 
@@ -355,7 +356,7 @@ def main() -> int:
     if args.iterations < 1 or args.iterations > 10:
         raise SystemExit("--iterations must be between 1 and 10")
     available = scenarios(args.allow_network)
-    selected = args.scenario or list(available)
+    selected = args.scenario or (list(available) if args.full else ["repository_quality", "static_pages"])
     unknown = sorted(set(selected) - set(available))
     if unknown:
         raise SystemExit(f"Unknown scenarios: {unknown}; available: {sorted(available)}")

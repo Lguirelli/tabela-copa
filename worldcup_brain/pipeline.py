@@ -503,10 +503,10 @@ def build_learning_report(
             "backfilled_data_policy": "Pre-tournament facts and post-match facts are explicitly labeled; no tournament outcome is backdated.",
         },
         "limitations": [
-            "Pre-Cup FIFA ranking, recent national-team matches, injuries and player minutes were not present with archived timestamps and remain NA.",
+            "Pre-Cup FIFA ranking, recent national-team matches, injuries and recent player minutes were not present with archived timestamps; derived post-match minutes are never backdated into predictions.",
             "Post-match causal outputs are evidence-based associations, not causal identification from a randomized design.",
             "Champion probabilities are intentionally unavailable before the round-of-32 teams become historically known; group qualification is simulated instead.",
-            "Player-level post-match evidence covers all matches, but minutes, xG, xA and player ratings remain unavailable and stay NA.",
+            "Player-level post-match evidence covers all matches and minutes are conservatively derived from match events; xG, xA and player ratings remain unavailable and stay NA.",
         ],
     }
     atomic_write_json(report, config.output("reports", "worldcup_learning_report.json"))

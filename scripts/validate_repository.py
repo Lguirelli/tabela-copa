@@ -95,9 +95,11 @@ def main() -> int:
         "models/patterns.json",
         "models/error_learning.json",
         "models/features_registry.json",
-        ".github/workflows/daily_update.yml",
-        ".github/workflows/post_match_update.yml",
-        ".github/workflows/model_training.yml",
+        "reports/derived_player_facts_report.json",
+        "scripts/run_repository_pipeline.py",
+        ".github/workflows/ci.yml",
+        ".github/workflows/update_pipeline.yml",
+        ".github/workflows/static.yml",
     ]
     missing_required = [rel for rel in required_artifacts if not (ROOT / rel).exists()]
     for rel in missing_required:

@@ -6,10 +6,11 @@ A plataforma é composta por processos determinísticos executados dentro do rep
 
 1. **Configuração por campeonato:** `config/competitions.yaml` define temporada, formato, datasets, fontes e limites estatísticos. `run-registry` executa todos os blocos não marcados como template.
 2. **Dados observados preservados:** módulos de enriquecimento somente inserem registros ausentes; valores existentes não são sobrescritos.
-3. **Ausência explícita:** dados não encontrados permanecem `NA` e geram itens em `data/queues/missing_data.json`.
-4. **Rastreabilidade:** relatórios e modelos incluem hashes dos arquivos de entrada, horário UTC e método utilizado.
-5. **Evidência antes de feature:** uma feature só entra no registro aceito quando possui amostra mínima, correlação mínima e direção estável no tempo.
-6. **Sem causalidade implícita:** padrões e feedback descrevem associações e sinais diagnósticos, não causas comprovadas.
+3. **Derivação explícita:** minutos e presença no elenco da partida podem ser derivados pós-jogo, mas sempre recebem método, qualidade e fontes de origem; fatos derivados não são apresentados como observados.
+4. **Ausência explícita:** dados não encontrados permanecem `NA` e geram itens em `data/queues/missing_data.json`.
+5. **Rastreabilidade:** relatórios e modelos incluem hashes dos arquivos de entrada, horário UTC e método utilizado.
+6. **Evidência antes de feature:** uma feature só entra no registro aceito quando possui amostra mínima, correlação mínima e direção estável no tempo.
+7. **Sem causalidade implícita:** padrões e feedback descrevem associações e sinais diagnósticos, não causas comprovadas.
 
 ## Fluxo
 
@@ -41,16 +42,18 @@ reports/competitions/<id>/final_system_status.json
 
 - `sports_engine/config.py`: carrega o campeonato selecionado.
 - `sports_engine/io.py`: leitura tolerante a CSV, escrita atômica, normalização e hashes.
-- `sports_engine/sources.py`: adaptadores de coleta; inclui dataset local e scoreboard público ESPN.
+- `sports_engine/sources.py`: adaptadores de coleta; inclui dataset local, scoreboard e summaries públicos ESPN.
+- `sports_engine/player_facts.py`: fallback determinístico para minutos e disponibilidade pós-jogo a partir de escalações e eventos.
 - `sports_engine/loops/`: oito loops independentes.
 - `sports_engine/modeling.py`: regressão ridge reprodutível para recalibração.
 - `sports_engine/pipeline.py`: orquestra os loops, sem comportamento autônomo.
 - Artefatos de execução são persistidos por competição; caminhos globais exigidos pelo projeto são aliases do último campeonato processado.
-- `sports_engine/cli.py`: interface executável para GitHub Actions e uso local.
+- `sports_engine/cli.py`: interface executável para uso local.
+- `scripts/run_repository_pipeline.py`: orquestrador único das atualizações, usado pelo único workflow com permissão de escrita.
 
 ## Fontes e confiança
 
-As fontes são ordenadas por prioridade. A configuração atual mantém fonte oficial como prioridade conceitual, API pública como complementar e arquivos locais já coletados como fallback. Um adaptador sem parser seguro não altera datasets: registra a tentativa e mantém `NA`.
+As fontes são ordenadas por prioridade. A configuração atual usa arquivos locais auditados, APIs públicas configuradas e um fallback determinístico baseado em fatos já observados. A rede é opcional, possui timeout/retry e é executada uma única vez por run. Um adaptador sem parser seguro não altera datasets: registra a tentativa e mantém `NA`.
 
 Campos que contenham indicação de simulação, como os perfis sintéticos de arbitragem legados, são excluídos automaticamente da descoberta de features.
 
@@ -60,4 +63,8 @@ A recalibração usa divisão cronológica 80/20 e regressão ridge para diferen
 
 ## Compatibilidade
 
-O visualizador da Copa 2026 e os scripts `neural_copa/` foram preservados. A nova engine não altera placares reais nem substitui automaticamente o modelo visual legado. Ela produz uma camada multicampeonato em `models/`, `reports/`, `logs/` e `data/queues/`.
+O visualizador da Copa 2026 foi preservado. A implementação antiga está isolada em `legacy/neural_copa/` e `legacy/scripts/`, fora dos workflows padrão. A engine atual não altera placares reais nem substitui automaticamente modelos visuais legados.
+
+## Automação
+
+A automação possui três workflows: `ci.yml`, `update_pipeline.yml` e `static.yml`. Somente `update_pipeline.yml` grava no repositório. Para a Copa 2026 encerrada, ele roda manualmente ou por mudança de dados canônicos, sem cron permanente. Não há cadeia de retreinamentos via `workflow_run`, e logs detalhados permanecem apenas como artefatos da Action.

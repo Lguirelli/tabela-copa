@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-20T18:16:15.133786+00:00",
+  "generated_at": "2026-07-28T19:21:26.288576+00:00",
   "competition_id": "world_cup_2026",
-  "project_status": "READY_WITH_LIMITATIONS",
+  "project_status": "READY",
   "improvements_realized": [
     "competition-driven configuration",
     "eight executable analytical loops",
@@ -13,7 +13,8 @@
     "versioned model recalibration",
     "competition-isolated artifacts",
     "incremental composite-key enrichment merges",
-    "GitHub Actions registry orchestration"
+    "single-writer GitHub Actions orchestration",
+    "traceable post-match derivation of player minutes and matchday-squad availability"
   ],
   "steps": [
     {
@@ -22,21 +23,18 @@
       "summary": {
         "matches_evaluated": 104,
         "requirements_evaluated": 14,
-        "open_queue_items": 2,
-        "missing_records_aggregated": 208,
-        "priority_counts": {
-          "high": 1,
-          "medium": 1
-        }
+        "open_queue_items": 0,
+        "missing_records_aggregated": 0,
+        "priority_counts": {}
       }
     },
     {
       "step": "02_data_enrichment",
       "status": "SUCCESS",
       "summary": {
-        "queue_items": 2,
+        "queue_items": 0,
         "resolved_this_run": 0,
-        "remaining_open": 2
+        "remaining_open": 0
       }
     },
     {
@@ -45,12 +43,9 @@
       "summary": {
         "matches_evaluated": 104,
         "requirements_evaluated": 14,
-        "open_queue_items": 2,
-        "missing_records_aggregated": 208,
-        "priority_counts": {
-          "high": 1,
-          "medium": 1
-        }
+        "open_queue_items": 0,
+        "missing_records_aggregated": 0,
+        "priority_counts": {}
       }
     },
     {
@@ -104,11 +99,10 @@
     }
   ],
   "limitations": [
-    "2 aggregated missing-data requirements remain open; unavailable values stay NA.",
     "18 legacy external statistic rows remain quarantined as CONFLICTING_DATA and are excluded from analysis."
   ],
   "next_steps": [
-    "Configure reliable player-minutes and historical availability providers; observed lineups already cover all matches.",
+    "Add an independent official provider when pre-match injury/availability history is required; matchday-squad availability is currently post-match derived.",
     "Add a new competition block and canonical datasets to reuse the engine without code changes.",
     "Review promoted model versions before using them for high-stakes decisions."
   ]

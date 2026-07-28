@@ -1,65 +1,26 @@
 {
-  "generated_at": "2026-07-22T17:16:38.558161+00:00",
-  "repository": "/mnt/data/repo_run_debug/tabela-copa-main",
+  "generated_at": "2026-07-28T19:23:23.194112+00:00",
+  "repository": "/mnt/data/repo_work/tabela-copa-main",
   "iterations": 1,
   "selected_scenarios": [
     "repository_quality",
-    "sports_pipeline",
-    "temporal_pre_worldcup",
-    "temporal_boundary_replay",
     "static_pages"
   ],
   "network_enabled": false,
   "status": "NO_FAILURE_REPRODUCED",
   "summary": {
-    "steps_executed": 15,
-    "steps_succeeded": 15,
+    "steps_executed": 4,
+    "steps_succeeded": 4,
     "steps_failed": 0,
-    "workflow_findings": 7
+    "workflow_findings": 1
   },
   "recurring_failures": [],
   "workflow_findings": [
     {
-      "severity": "INFO",
-      "workflow": "01_pre_worldcup_training.yml",
-      "check": "push_without_rebase",
-      "message": "git push has no rebase retry; global writer concurrency must remain shared."
-    },
-    {
-      "severity": "INFO",
-      "workflow": "02_daily_tournament_simulation.yml",
-      "check": "push_without_rebase",
-      "message": "git push has no rebase retry; global writer concurrency must remain shared."
-    },
-    {
-      "severity": "INFO",
-      "workflow": "03_post_match_learning.yml",
-      "check": "push_without_rebase",
-      "message": "git push has no rebase retry; global writer concurrency must remain shared."
-    },
-    {
-      "severity": "INFO",
-      "workflow": "daily_update.yml",
-      "check": "push_without_rebase",
-      "message": "git push has no rebase retry; global writer concurrency must remain shared."
-    },
-    {
-      "severity": "INFO",
-      "workflow": "model_training.yml",
-      "check": "push_without_rebase",
-      "message": "git push has no rebase retry; global writer concurrency must remain shared."
-    },
-    {
-      "severity": "INFO",
-      "workflow": "post_match_update.yml",
-      "check": "push_without_rebase",
-      "message": "git push has no rebase retry; global writer concurrency must remain shared."
-    },
-    {
       "severity": "PASS",
       "workflow": "MULTIPLE",
       "check": "writer_concurrency",
-      "message": "All 6 write workflows are serialized by repository-write-${{ github.ref }}."
+      "message": "All 1 write workflows are serialized by repository-update-${{ github.ref }}."
     }
   ],
   "steps": [
@@ -77,11 +38,11 @@
       ],
       "status": "SUCCESS",
       "exit_code": 0,
-      "duration_seconds": 3.829,
+      "duration_seconds": 6.431,
       "classification": "NONE",
       "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/repository_quality__iteration_1__pytest.log",
-      "tail": ".......................                                                  [100%]"
+      "log_path": "/mnt/data/repo_work/tabela-copa-main/reports/run_diagnostics/logs/repository_quality__iteration_1__pytest.log",
+      "tail": "...........................                                              [100%]"
     },
     {
       "scenario": "repository_quality",
@@ -93,11 +54,11 @@
       ],
       "status": "SUCCESS",
       "exit_code": 0,
-      "duration_seconds": 1.338,
+      "duration_seconds": 2.623,
       "classification": "NONE",
       "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/repository_quality__iteration_1__validate_repository.log",
-      "tail": "{\n  \"parsed_files\": {\n    \"python\": 66,\n    \"yaml\": 11,\n    \"json\": 704,\n    \"csv\": 78\n  },\n  \"controlled_mirrors_checked\": 3,\n  \"issues\": 0,\n  \"required_artifacts_checked\": 11,\n  \"status\": \"VALID\"\n}"
+      "log_path": "/mnt/data/repo_work/tabela-copa-main/reports/run_diagnostics/logs/repository_quality__iteration_1__validate_repository.log",
+      "tail": "{\n  \"parsed_files\": {\n    \"python\": 71,\n    \"yaml\": 6,\n    \"json\": 707,\n    \"csv\": 78\n  },\n  \"controlled_mirrors_checked\": 3,\n  \"issues\": 0,\n  \"required_artifacts_checked\": 13,\n  \"status\": \"VALID\"\n}"
     },
     {
       "scenario": "repository_quality",
@@ -109,213 +70,11 @@
       ],
       "status": "SUCCESS",
       "exit_code": 0,
-      "duration_seconds": 0.562,
+      "duration_seconds": 0.825,
       "classification": "NONE",
       "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/repository_quality__iteration_1__integrity.log",
+      "log_path": "/mnt/data/repo_work/tabela-copa-main/reports/run_diagnostics/logs/repository_quality__iteration_1__integrity.log",
       "tail": "\n=== Validação de integridade dos dados ===\nOK: CSV, JSON, JS, probabilidades e IDs principais estão sincronizados."
-    },
-    {
-      "scenario": "sports_pipeline",
-      "iteration": 1,
-      "step": "run_registry",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "sports_engine.cli",
-        "run-registry"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 1.612,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/sports_pipeline__iteration_1__run_registry.log",
-      "tail": "{\n  \"competitions_processed\": 1,\n  \"competition_ids\": [\n    \"world_cup_2026\"\n  ]\n}"
-    },
-    {
-      "scenario": "sports_pipeline",
-      "iteration": 1,
-      "step": "export_dashboard",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "scripts/export_model_dashboard.py"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.59,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/sports_pipeline__iteration_1__export_dashboard.log",
-      "tail": "Exportado: src/model-analytics-data.js (678,217 bytes)"
-    },
-    {
-      "scenario": "sports_pipeline",
-      "iteration": 1,
-      "step": "pytest_after_pipeline",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "pytest",
-        "-p",
-        "no:cacheprovider",
-        "-q"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 3.711,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/sports_pipeline__iteration_1__pytest_after_pipeline.log",
-      "tail": ".......................                                                  [100%]"
-    },
-    {
-      "scenario": "sports_pipeline",
-      "iteration": 1,
-      "step": "validate_after_pipeline",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "scripts/validate_repository.py"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 1.322,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/sports_pipeline__iteration_1__validate_after_pipeline.log",
-      "tail": "{\n  \"parsed_files\": {\n    \"python\": 66,\n    \"yaml\": 11,\n    \"json\": 704,\n    \"csv\": 78\n  },\n  \"controlled_mirrors_checked\": 3,\n  \"issues\": 0,\n  \"required_artifacts_checked\": 11,\n  \"status\": \"VALID\"\n}"
-    },
-    {
-      "scenario": "sports_pipeline",
-      "iteration": 1,
-      "step": "integrity_after_pipeline",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "scripts/testes/test_integridade_dados.py"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.561,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/sports_pipeline__iteration_1__integrity_after_pipeline.log",
-      "tail": "\n=== Validação de integridade dos dados ===\nOK: CSV, JSON, JS, probabilidades e IDs principais estão sincronizados."
-    },
-    {
-      "scenario": "temporal_pre_worldcup",
-      "iteration": 1,
-      "step": "prepare",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "worldcup_brain.cli",
-        "prepare"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.811,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/temporal_pre_worldcup__iteration_1__prepare.log",
-      "tail": "      \"intensity_proxy\"\n    ],\n    \"unavailable_fields\": [\n      \"fifa_ranking\",\n      \"recent_matches\",\n      \"recent_minutes\",\n      \"recent_assists\",\n      \"injuries\",\n      \"physical_condition\",\n      \"qualifying_performance\",\n      \"weather_forecast\",\n      \"travel_distance\",\n      \"psychological_moment\"\n    ],\n    \"inputs\": [\n      {\n        \"path\": \"data/database/team_strengths.csv\",\n        \"sha256\": \"53cf67c550c2ccc341ad5f8073885ffd03e16f4cdf42e23de4811d0a546bf97f\",\n        \"size_bytes\": 11369\n      },\n      {\n        \"path\": \"data/database/teams_tactical.csv\",\n        \"sha256\": \"26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd\",\n        \"size_bytes\": 12353\n      },\n      {\n        \"path\": \"data/database/players_database.csv\",\n        \"sha256\": \"156624077a8cdc1d51a5d44be9d9d5f23233eef136ceaedd3eaf43fccd64b0eb\",\n        \"size_bytes\": 624647\n      },\n      {\n        \"path\": \"data/matches.csv\",\n        \"sha256\": \"dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b\",\n        \"size_bytes\": 15867\n      }\n    ]\n  },\n  \"timeline_rows\": 104,\n  \"status\": \"READY\"\n}"
-    },
-    {
-      "scenario": "temporal_pre_worldcup",
-      "iteration": 1,
-      "step": "validate_pre_worldcup",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "worldcup_brain.cli",
-        "validate",
-        "--as-of",
-        "2026-06-10T23:59:59-04:00"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.892,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/temporal_pre_worldcup__iteration_1__validate_pre_worldcup.log",
-      "tail": "{\n  \"generated_at\": \"2026-07-22T17:16:31.682920+00:00\",\n  \"status\": \"VALID\",\n  \"summary\": {\n    \"timeline_matches\": 104,\n    \"predictions\": 104,\n    \"learning_analyses\": 104,\n    \"knowledge_records\": 5571,\n    \"model_versions\": 36,\n    \"issues\": 0\n  },\n  \"checks\": {\n    \"no_future_records_in_predictions\": true,\n    \"current_match_result_never_used\": true,\n    \"knockout_fixture_visibility_valid\": true,\n    \"workflows_present_and_valid_yaml\": true\n  },\n  \"issues\": []\n}"
-    },
-    {
-      "scenario": "temporal_pre_worldcup",
-      "iteration": 1,
-      "step": "pytest_initial_artifacts",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "pytest",
-        "-p",
-        "no:cacheprovider",
-        "-q",
-        "--ignore=tests/test_model_dashboard.py"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 3.863,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/temporal_pre_worldcup__iteration_1__pytest_initial_artifacts.log",
-      "tail": "....................                                                     [100%]"
-    },
-    {
-      "scenario": "temporal_boundary_replay",
-      "iteration": 1,
-      "step": "replay_at_pre_worldcup_cutoff",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "worldcup_brain.cli",
-        "replay",
-        "--as-of",
-        "2026-06-10T23:59:59-04:00"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.929,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/temporal_boundary_replay__iteration_1__replay_at_pre_worldcup_cutoff.log",
-      "tail": "      },\n      {\n        \"team\": \"Bósnia e Herzegovina\",\n        \"final_rating\": 1450.0,\n        \"games_observed\": 0,\n        \"points\": 0,\n        \"goals_for\": 0,\n        \"goals_against\": 0,\n        \"form_points\": 1.0\n      }\n    ],\n    \"final_model_parameters\": {\n      \"base_goals\": 1.22,\n      \"rating_weight\": 0.24,\n      \"attack_weight\": 0.12,\n      \"defense_weight\": 0.11,\n      \"form_weight\": 0.1,\n      \"schedule_weight\": 0.04,\n      \"rest_weight\": 0.015,\n      \"experience_weight\": 0.02,\n      \"goalkeeper_weight\": 0.025,\n      \"probability_temperature\": 1.0,\n      \"elo_k\": 24.0,\n      \"learning_rate\": 0.03\n    },\n    \"temporal_safety\": {\n      \"current_match_result_in_prediction\": false,\n      \"future_knockout_teams_hidden\": true,\n      \"results_visible_only_after_result_available_at\": true,\n      \"backfilled_data_policy\": \"Pre-tournament facts and post-match facts are explicitly labeled; no tournament outcome is backdated.\"\n    },\n    \"limitations\": [\n      \"Pre-Cup FIFA ranking, recent national-team matches, injuries and player minutes were not present with archived timestamps and remain NA.\",\n      \"Post-match causal outputs are evidence-based associations, not causal identification from a randomized design.\",\n      \"Champion probabilities are intentionally unavailable before the round-of-32 teams become historically known; group qualification is simulated instead.\",\n      \"Player-level post-match evidence covers all matches, but minutes, xG, xA and player ratings remain unavailable and stay NA.\"\n    ],\n    \"semantic_model_versions\": {}\n  }\n}"
-    },
-    {
-      "scenario": "temporal_boundary_replay",
-      "iteration": 1,
-      "step": "validate_empty_boundary_indexes",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-m",
-        "worldcup_brain.cli",
-        "validate",
-        "--as-of",
-        "2026-06-10T23:59:59-04:00"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.578,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/temporal_boundary_replay__iteration_1__validate_empty_boundary_indexes.log",
-      "tail": "{\n  \"generated_at\": \"2026-07-22T17:16:37.194801+00:00\",\n  \"status\": \"VALID\",\n  \"summary\": {\n    \"timeline_matches\": 104,\n    \"predictions\": 0,\n    \"learning_analyses\": 0,\n    \"knowledge_records\": 0,\n    \"model_versions\": 1,\n    \"issues\": 0\n  },\n  \"checks\": {\n    \"no_future_records_in_predictions\": true,\n    \"current_match_result_never_used\": true,\n    \"knockout_fixture_visibility_valid\": true,\n    \"workflows_present_and_valid_yaml\": true\n  },\n  \"issues\": []\n}"
-    },
-    {
-      "scenario": "temporal_boundary_replay",
-      "iteration": 1,
-      "step": "check_empty_indexes_have_headers",
-      "command": [
-        "/opt/pyvenv/bin/python",
-        "-c",
-        "from pathlib import Path; paths=[Path('predictions/pre_match/index.csv'),Path('learning/game_analysis/index.csv')]; assert all(p.read_text(encoding='utf-8').strip() for p in paths), paths; print('Boundary indexes contain stable headers')"
-      ],
-      "status": "SUCCESS",
-      "exit_code": 0,
-      "duration_seconds": 0.484,
-      "classification": "NONE",
-      "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/temporal_boundary_replay__iteration_1__check_empty_indexes_have_headers.log",
-      "tail": "Boundary indexes contain stable headers"
     },
     {
       "scenario": "static_pages",
@@ -328,10 +87,10 @@
       ],
       "status": "SUCCESS",
       "exit_code": 0,
-      "duration_seconds": 0.609,
+      "duration_seconds": 0.66,
       "classification": "NONE",
       "probable_cause": "Etapa concluída.",
-      "log_path": "/mnt/data/repo_run_debug/tabela-copa-main/reports/run_diagnostics/logs/static_pages__iteration_1__validate_static_entrypoints.log",
+      "log_path": "/mnt/data/repo_work/tabela-copa-main/reports/run_diagnostics/logs/static_pages__iteration_1__validate_static_entrypoints.log",
       "tail": "Static files OK"
     }
   ]

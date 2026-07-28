@@ -15,10 +15,10 @@ def test_competition_configuration_loads():
 
 def test_workflows_are_valid_yaml():
     workflows = list((ROOT / ".github" / "workflows").glob("*.yml"))
-    assert {path.name for path in workflows} >= {
-        "daily_update.yml",
-        "post_match_update.yml",
-        "model_training.yml",
+    assert {path.name for path in workflows} == {
+        "ci.yml",
+        "update_pipeline.yml",
+        "static.yml",
     }
     for path in workflows:
         payload = yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)

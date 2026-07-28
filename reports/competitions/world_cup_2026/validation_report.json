@@ -1,7 +1,7 @@
 {
   "loop": "03_data_validation",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-07-22T17:17:42.486066+00:00",
+  "generated_at": "2026-07-28T19:23:01.752315+00:00",
   "inputs": [
     {
       "path": "data/matches.csv",
@@ -60,13 +60,13 @@
     },
     {
       "path": "data/platform/player_match_stats.csv",
-      "sha256": "21914830fa22b151d9d91dbba5043b88850df78ddc3f2f2c9a3539debad8fcd0",
-      "size_bytes": 1749618
+      "sha256": "68d6240d8175b0643bb0f37d3abf503da8171d25c768af627f1e4d2632565b88",
+      "size_bytes": 2236156
     },
     {
       "path": "data/platform/player_availability.csv",
-      "sha256": "50d552ca2f07f7c2045ff8da93a1ec7d40bac9bf445c3152268144d2c204217d",
-      "size_bytes": 123
+      "sha256": "ce9012a94b20ebc526da58e6874c6a91d994755cd675eef30f7d4363d653adf7",
+      "size_bytes": 1767464
     }
   ],
   "status": "VALID",

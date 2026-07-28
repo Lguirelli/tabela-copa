@@ -8,7 +8,7 @@ A arquitetura é composta somente por código, scripts, módulos e GitHub Action
 
 - Copa do Mundo 2026: **104 partidas finalizadas** e preservadas como dados observados.
 - Validação estrutural: **VALID**, sem placares impossíveis, IDs duplicados ou conflitos entre calendário e resultados.
-- Dados completos de escalação, minutos, participação e disponibilidade ainda não estão disponíveis para todas as partidas; esses campos permanecem `NA` e estão registrados na fila de pendências.
+- Escalações e participação cobrem as 104 partidas. Minutos possuem cobertura completa nas 104 partidas por meio de derivação pós-jogo rastreável, sem sobrescrever valores observados. Disponibilidade significa somente presença no elenco da partida e não substitui histórico pré-jogo de lesões.
 - O modelo recalibrado mais recente foi mantido como candidato rejeitado porque não superou o baseline no holdout cronológico. A simulação continua usando os xG configurados, evitando promoção automática de um modelo pior.
 
 ## Arquitetura
@@ -23,6 +23,7 @@ sports_engine/
   io.py                          leitura, escrita atômica, NA e hashes
   lineage.py                     manifesto de entradas
   sources.py                     adaptadores de coleta e merge seguro
+  player_facts.py                minutos e disponibilidade pós-jogo derivados com rastreabilidade
   analytics.py                   preparação analítica
   modeling.py                    recalibração ridge
   pipeline.py                    execução ordenada dos loops
@@ -52,6 +53,8 @@ models/model_versions/<id>/      versões candidatas e promovidas por competiç�
 models/simulations/              aliases de compatibilidade da última simulação
 reports/competitions/<id>/       relatórios isolados por campeonato
 reports/                         aliases e auditoria global
+legacy/                          rede neural e modelo diário antigos, fora do pipeline padrão
+scripts/run_repository_pipeline.py  orquestrador único usado nas Actions
 ```
 
 A descrição completa está em [`docs/PLATFORM_ARCHITECTURE.md`](docs/PLATFORM_ARCHITECTURE.md).
@@ -76,11 +79,14 @@ Lê a fila, ordena fontes por prioridade e executa somente adaptadores configura
 - datasets locais já coletados;
 - scoreboard público ESPN para resultados ausentes;
 - summary público ESPN para eventos, estatísticas, escalações e desempenho individual quando o endpoint fornecer esses campos;
+- fallback determinístico para minutos usando escalação, substituições, expulsões e duração de 90/120 minutos;
+- disponibilidade pós-jogo limitada a jogadores publicados no elenco da partida;
+- preservação de valores observados e marcação explícita de todo valor derivado;
 - armazenamento bruto com SHA-256;
 - staging antes do merge;
 - inserção apenas de registros ausentes.
 
-Dados observados existentes não são sobrescritos. Em execução local, a rede fica desativada por padrão; os workflows definem `SPORTS_ENGINE_NETWORK=1` e limitam a coleta a 12 partidas por execução para reduzir carga e respeitar a fonte. O script `scripts/cleanup_external_mappings.py` documenta a migração dos registros ESPN legados: somente mapeamentos determinísticos foram aplicados, e 18 registros antigos sem vínculo validável foram preservados em `data/conflicts/` como `CONFLICTING_DATA`. Falhas e fontes insuficientes ficam registradas em:
+Dados observados existentes não são sobrescritos. Em execução local, a rede fica desativada por padrão. O pipeline configurado usa timeout de 15 segundos, até três tentativas e no máximo 24 summaries por execução. A coleta externa ocorre uma única vez por run; a camada temporal apenas reavalia o que foi coletado, evitando chamadas duplicadas. O script `scripts/cleanup_external_mappings.py` documenta a migração dos registros ESPN legados: somente mapeamentos determinísticos foram aplicados, e 18 registros antigos sem vínculo validável foram preservados em `data/conflicts/` como `CONFLICTING_DATA`. Falhas e fontes insuficientes ficam registradas em:
 
 ```text
 logs/enrichment_log.json
@@ -185,10 +191,11 @@ python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
 
-A rede neural legada da Copa usa PyTorch e permanece opcional:
+A rede neural legada da Copa usa PyTorch, permanece opcional e está isolada em `legacy/`:
 
 ```bash
 python -m pip install -r requirements-legacy-ml.txt
+python legacy/scripts/treinar_rede_neural_copa.py
 ```
 
 ## Execução
@@ -228,30 +235,37 @@ make test
 
 ## GitHub Actions
 
-### `daily_update.yml`
+Existem somente três workflows. Apenas um possui permissão de escrita no repositório.
 
-Executa diariamente todos os campeonatos não marcados como `template`, ou somente o ID escolhido manualmente:
+### `ci.yml`
 
-1. verificação de completude;
-2. enriquecimento seguro;
-3. validação;
-4. padrões e feedback;
-5. descoberta de features;
-6. recalibração;
-7. simulações;
-8. testes e commit dos artefatos gerados.
+Executa testes e validações em alterações de código, configuração e dados canônicos. O job não roda novamente para commits gerados pelo `github-actions[bot]`.
 
-### `post_match_update.yml`
+### `update_pipeline.yml`
 
-É acionado quando calendários, resultados, previsões, estatísticas ou entradas manuais mudam. Em eventos `push`, processa o registro completo para não associar um caminho novo ao campeonato errado; em execução manual, aceita um ID específico.
+É o único workflow escritor. Como a Copa 2026 já está encerrada, não possui cron permanente: executa por disparo manual ou quando entradas/resultados canônicos mudam. O script `scripts/run_repository_pipeline.py` serializa:
 
-### `model_training.yml`
+1. preflight da arquitetura;
+2. completude, enriquecimento, validação, padrões, feedback, features, recalibração e simulação;
+3. replay temporal, reconstrução da fila histórica e validação anti-vazamento;
+4. atualização da auditoria e do status consolidado;
+5. exportação do dashboard;
+6. testes completos;
+7. um único commit com rebase e retry de push.
 
-Executa após o workflow pós-jogo, por disparo manual ou quando a configuração de campeonatos muda. Processa todos os campeonatos configurados por padrão e verifica a amostra mínima antes de recalibrar.
+Os logs detalhados são enviados como artefato da Action, mas não são adicionados ao histórico Git.
+
+Não existe agendamento recorrente para a competição encerrada, nem encadeamento `workflow_run` para retreinar o mesmo modelo. Commits do próprio bot não reativam o pipeline. Para um campeonato futuro ativo, um cron pode ser reabilitado conscientemente no único workflow escritor.
 
 ### `static.yml`
 
-Mantém a publicação do visualizador estático existente.
+Publica o GitHub Pages somente quando HTML, assets ou arquivos de `src/` mudam.
+
+Execução local equivalente:
+
+```bash
+python scripts/run_repository_pipeline.py --mode daily --competition all --run-tests
+```
 
 ## Como adicionar outro campeonato
 
@@ -310,7 +324,7 @@ reports/final_system_status.json
 
 ## Compatibilidade com o projeto Copa 2026
 
-As páginas HTML, `src/`, `neural_copa/`, dados finais e scripts de atualização existentes foram preservados. A nova plataforma funciona como uma camada adicional e não altera os 104 resultados reais nem promove automaticamente modelos que não superem o baseline.
+As páginas HTML, `src/` e os dados finais foram preservados. A implementação anterior foi movida para `legacy/neural_copa/` e `legacy/scripts/`, sem participar das Actions padrão. A plataforma atual não altera os 104 resultados reais nem promove automaticamente modelos que não superem o baseline.
 
 ---
 
@@ -401,10 +415,16 @@ O exportador não cria novas métricas nem estima valores ausentes. Ele utiliza 
 
 ## Diagnóstico em loop das runs
 
-Para reproduzir as etapas dos workflows em cópias isoladas do repositório, repetir as execuções e classificar falhas recorrentes:
+Para uma verificação rápida em cópias isoladas do repositório:
 
 ```bash
-python scripts/diagnose_github_actions.py --iterations 2
+python scripts/diagnose_github_actions.py
+```
+
+Para repetir todos os replays pesados:
+
+```bash
+python scripts/diagnose_github_actions.py --full --iterations 2
 ```
 
 Os relatórios completos são gravados em:
@@ -415,4 +435,4 @@ reports/run_diagnostics/run_diagnostics.json
 reports/run_diagnostics/logs/
 ```
 
-O workflow `00_run_diagnostics.yml` também é executado automaticamente quando uma das principais GitHub Actions termina com falha. Ele não faz commit: publica os relatórios e logs como artefato da run.
+O diagnóstico deixou de ser um workflow automático para não criar novas runs após cada falha. O `update_pipeline.yml` já publica `logs/pipeline/` e `reports/pipeline/` como artefato em qualquer conclusão.

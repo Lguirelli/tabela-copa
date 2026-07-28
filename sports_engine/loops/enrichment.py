@@ -8,6 +8,7 @@ from ..config import CompetitionConfig, ROOT
 from ..io import read_json, read_table, utc_now, write_json_copies
 from ..lineage import metadata
 from ..sources import fetch_espn_scoreboard, fetch_espn_summaries, merge_scoreboard_results
+from ..player_facts import derive_player_facts
 from .completeness import _coverage_for_dataset
 
 
@@ -55,6 +56,25 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
                         attempt.update({"success": complete, "details": {"path": path.relative_to(ROOT).as_posix(), "coverage_note": note, "covered": len(covered), "requested": len(all_ids)}})
                         if complete:
                             break
+                elif source.get("type") == "derived_player_facts":
+                    source_id = str(source.get("id"))
+                    if source_id not in session_cache:
+                        session_cache[source_id] = derive_player_facts(config)
+                    derived = session_cache[source_id]
+                    all_ids = set(int(value) for value in item.get("entity_ids", []))
+                    covered, note = _coverage_for_dataset(config, item.get("provider_dataset", ""), str(field), all_ids)
+                    complete = all_ids.issubset(covered)
+                    attempt.update({
+                        "success": complete,
+                        "details": {
+                            "derivation": derived.get("summary", derived),
+                            "coverage_note": note,
+                            "covered": len(covered),
+                            "requested": len(all_ids),
+                        },
+                    })
+                    if complete:
+                        break
                 elif source.get("type") == "espn_summary":
                     source_id = str(source.get("id"))
                     if source_id not in session_cache:

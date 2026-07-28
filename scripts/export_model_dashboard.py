@@ -78,6 +78,7 @@ def build() -> dict[str, Any]:
     report = load_json(ROOT / "reports" / "worldcup_learning_report.json", {})
     integration = load_json(ROOT / "reports" / "wc2026_complete_data_integration.json", {})
     completeness = load_json(ROOT / "reports" / "data_completeness_report.json", {})
+    derived_player_facts = load_json(ROOT / "reports" / "derived_player_facts_report.json", {})
     features_registry = load_json(ROOT / "models" / "features_registry.json", {})
     feature_discovery = load_json(ROOT / "models" / "temporal_feature_discovery.json", {})
     results = {integer(row.get("jogo")): row for row in load_csv(ROOT / "data" / "resultados_reais.csv")}
@@ -301,6 +302,7 @@ def build() -> dict[str, Any]:
             "queuePath": completeness.get("queue_path"),
         },
         "integrationSummary": integration.get("summary", integration),
+        "derivedPlayerFacts": derived_player_facts,
     }
 
 

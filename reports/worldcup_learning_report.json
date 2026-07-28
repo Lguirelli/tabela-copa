@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:16:00.122897+00:00",
+  "generated_at": "2026-07-28T19:21:52.768296+00:00",
   "competition_id": "world_cup_2026",
   "objective": "Reconstruct the tournament using only information available at each historical cutoff.",
   "initial_pre_worldcup_outlook": {
@@ -1300,10 +1300,10 @@
     "backfilled_data_policy": "Pre-tournament facts and post-match facts are explicitly labeled; no tournament outcome is backdated."
   },
   "limitations": [
-    "Pre-Cup FIFA ranking, recent national-team matches, injuries and player minutes were not present with archived timestamps and remain NA.",
+    "Pre-Cup FIFA ranking, recent national-team matches, injuries and recent player minutes were not present with archived timestamps; derived post-match minutes are never backdated into predictions.",
     "Post-match causal outputs are evidence-based associations, not causal identification from a randomized design.",
     "Champion probabilities are intentionally unavailable before the round-of-32 teams become historically known; group qualification is simulated instead.",
-    "Player-level post-match evidence covers all matches, but minutes, xG, xA and player ratings remain unavailable and stay NA."
+    "Player-level post-match evidence covers all matches and minutes are conservatively derived from match events; xG, xA and player ratings remain unavailable and stay NA."
   ],
   "semantic_model_versions": {
     "model_after_group_stage": "models/versions/semantic/model_after_group_stage.json",

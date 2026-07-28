@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T17:17:43.024325+00:00",
+  "generated_at": "2026-07-28T19:23:02.772391+00:00",
   "competition_id": "world_cup_2026",
   "acceptance_rule": {
     "minimum_samples": 30,
@@ -285,7 +285,7 @@
     }
   ],
   "temporal_worldcup_2026": {
-    "generated_at": "2026-07-20T18:16:00.085072+00:00",
+    "generated_at": "2026-07-28T19:21:52.734321+00:00",
     "acceptance_rule": {
       "minimum_samples": 24,
       "correlation_threshold": 0.12,

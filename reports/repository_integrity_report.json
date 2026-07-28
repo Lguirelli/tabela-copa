@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-22T17:17:45.253373+00:00",
+  "generated_at": "2026-07-28T19:24:01.711697+00:00",
   "status": "VALID",
   "summary": {
     "parsed_files": {
-      "python": 66,
-      "yaml": 11,
-      "json": 706,
+      "python": 71,
+      "yaml": 6,
+      "json": 709,
       "csv": 78
     },
     "controlled_mirrors_checked": 3,
     "issues": 0,
-    "required_artifacts_checked": 11
+    "required_artifacts_checked": 13
   },
   "mirror_checks": [
     {

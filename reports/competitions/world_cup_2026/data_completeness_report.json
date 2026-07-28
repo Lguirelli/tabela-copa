@@ -1,7 +1,7 @@
 {
   "loop": "01_data_completeness",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-07-22T17:17:42.279050+00:00",
+  "generated_at": "2026-07-28T19:23:01.403970+00:00",
   "inputs": [
     {
       "path": "data/matches.csv",
@@ -17,12 +17,9 @@
   "summary": {
     "matches_evaluated": 104,
     "requirements_evaluated": 14,
-    "open_queue_items": 2,
-    "missing_records_aggregated": 208,
-    "priority_counts": {
-      "high": 1,
-      "medium": 1
-    }
+    "open_queue_items": 0,
+    "missing_records_aggregated": 0,
+    "priority_counts": {}
   },
   "coverage": [
     {
@@ -131,8 +128,8 @@
       "priority": "high",
       "provider_dataset": "player_match_stats",
       "total_matches": 104,
-      "covered_matches": 0,
-      "coverage_ratio": 0.0,
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
       "note": "match identifiers found in provider dataset with field-level validation"
     },
     {
@@ -161,9 +158,9 @@
       "priority": "medium",
       "provider_dataset": "player_availability",
       "total_matches": 104,
-      "covered_matches": 0,
-      "coverage_ratio": 0.0,
-      "note": "dataset is empty: data/platform/player_availability.csv"
+      "covered_matches": 104,
+      "coverage_ratio": 1.0,
+      "note": "match identifiers found in provider dataset with field-level validation"
     }
   ],
   "queue_path": "data/competitions/world_cup_2026/queues/missing_data.json"

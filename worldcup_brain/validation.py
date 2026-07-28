@@ -61,9 +61,9 @@ def validate(config: TemporalConfig, expect_complete: bool = True) -> dict[str, 
         issues.append({"severity": "ERROR", "check": "duplicate_model_version_cutoff"})
 
     workflow_names = {
-        "01_pre_worldcup_training.yml",
-        "02_daily_tournament_simulation.yml",
-        "03_post_match_learning.yml",
+        "ci.yml",
+        "update_pipeline.yml",
+        "static.yml",
     }
     workflow_dir = config.output(".github", "workflows")
     missing_workflows = [name for name in workflow_names if not (workflow_dir / name).exists()]

@@ -10,6 +10,7 @@ data/desempenho/
 src/desempenho-data.js
 
 # Artefatos de execução local
+logs/pipeline/
 .cache/
 *.log
 .pytest_cache/

@@ -1,6 +1,6 @@
 # Diagnóstico das GitHub Actions
 
-Gerado em: `2026-07-22T17:16:38.558161+00:00`
+Gerado em: `2026-07-28T19:23:23.194112+00:00`
 Iterações: **1**
 Status geral: **NO_FAILURE_REPRODUCED**
 
@@ -8,21 +8,10 @@ Status geral: **NO_FAILURE_REPRODUCED**
 
 | Cenário | Iteração | Etapa | Status | Classe | Duração |
 |---|---:|---|---|---|---:|
-| repository_quality | 1 | pytest | SUCCESS | NONE | 3.829s |
-| repository_quality | 1 | validate_repository | SUCCESS | NONE | 1.338s |
-| repository_quality | 1 | integrity | SUCCESS | NONE | 0.562s |
-| sports_pipeline | 1 | run_registry | SUCCESS | NONE | 1.612s |
-| sports_pipeline | 1 | export_dashboard | SUCCESS | NONE | 0.590s |
-| sports_pipeline | 1 | pytest_after_pipeline | SUCCESS | NONE | 3.711s |
-| sports_pipeline | 1 | validate_after_pipeline | SUCCESS | NONE | 1.322s |
-| sports_pipeline | 1 | integrity_after_pipeline | SUCCESS | NONE | 0.561s |
-| temporal_pre_worldcup | 1 | prepare | SUCCESS | NONE | 0.811s |
-| temporal_pre_worldcup | 1 | validate_pre_worldcup | SUCCESS | NONE | 0.892s |
-| temporal_pre_worldcup | 1 | pytest_initial_artifacts | SUCCESS | NONE | 3.863s |
-| temporal_boundary_replay | 1 | replay_at_pre_worldcup_cutoff | SUCCESS | NONE | 0.929s |
-| temporal_boundary_replay | 1 | validate_empty_boundary_indexes | SUCCESS | NONE | 0.578s |
-| temporal_boundary_replay | 1 | check_empty_indexes_have_headers | SUCCESS | NONE | 0.484s |
-| static_pages | 1 | validate_static_entrypoints | SUCCESS | NONE | 0.609s |
+| repository_quality | 1 | pytest | SUCCESS | NONE | 6.431s |
+| repository_quality | 1 | validate_repository | SUCCESS | NONE | 2.623s |
+| repository_quality | 1 | integrity | SUCCESS | NONE | 0.825s |
+| static_pages | 1 | validate_static_entrypoints | SUCCESS | NONE | 0.660s |
 
 ## Falhas recorrentes
 
@@ -30,10 +19,4 @@ Nenhuma falha foi reproduzida.
 
 ## Análise estática dos workflows
 
-- **INFO** `01_pre_worldcup_training.yml` / `push_without_rebase` — git push has no rebase retry; global writer concurrency must remain shared.
-- **INFO** `02_daily_tournament_simulation.yml` / `push_without_rebase` — git push has no rebase retry; global writer concurrency must remain shared.
-- **INFO** `03_post_match_learning.yml` / `push_without_rebase` — git push has no rebase retry; global writer concurrency must remain shared.
-- **INFO** `daily_update.yml` / `push_without_rebase` — git push has no rebase retry; global writer concurrency must remain shared.
-- **INFO** `model_training.yml` / `push_without_rebase` — git push has no rebase retry; global writer concurrency must remain shared.
-- **INFO** `post_match_update.yml` / `push_without_rebase` — git push has no rebase retry; global writer concurrency must remain shared.
-- **PASS** `MULTIPLE` / `writer_concurrency` — All 6 write workflows are serialized by repository-write-${{ github.ref }}.
+- **PASS** `MULTIPLE` / `writer_concurrency` — All 1 write workflows are serialized by repository-update-${{ github.ref }}.

@@ -7,9 +7,9 @@ engine:
   minimum_samples_for_pattern: 30
   feature_correlation_threshold: 0.08
   monte_carlo_iterations: 12000
-  network_timeout_seconds: 8
-  network_retries: 1
-  max_enrichment_matches_per_run: 12
+  network_timeout_seconds: 15
+  network_retries: 3
+  max_enrichment_matches_per_run: 24
   allow_overwrite_observed_data: false
 
 competitions:
@@ -77,6 +77,17 @@ competitions:
         confidence: variable
         provides: [team_performance]
         path: data/entrada/desempenho_manual.csv
+      - id: derived_player_facts
+        type: derived_player_facts
+        priority: 1
+        confidence: derived_high
+        provides: [minutes, availability]
+        enabled: true
+        inputs: [lineups, events, results]
+        rules:
+          preserve_observed_minutes: true
+          label_derived_values: true
+          availability_scope: matchday_squad_only
       - id: espn_public_summary
         type: espn_summary
         priority: 2
@@ -92,14 +103,6 @@ competitions:
         provides: [result, date]
         enabled: true
         url: https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=500
-      - id: official_source_placeholder
-        type: http_json
-        priority: 1
-        confidence: high
-        provides: []
-        enabled: false
-        url: ""
-
   champions_league_template:
     name: UEFA Champions League
     season: YYYY

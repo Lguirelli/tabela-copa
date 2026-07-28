@@ -48,9 +48,9 @@ def test_pre_worldcup_missing_fields_remain_na():
 def test_temporal_workflows_are_valid_yaml():
     config = load_config()
     names = [
-        "01_pre_worldcup_training.yml",
-        "02_daily_tournament_simulation.yml",
-        "03_post_match_learning.yml",
+        "ci.yml",
+        "update_pipeline.yml",
+        "static.yml",
     ]
     for name in names:
         path = config.output(".github", "workflows", name)

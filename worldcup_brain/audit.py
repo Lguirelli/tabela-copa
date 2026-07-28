@@ -44,10 +44,10 @@ def run(config: TemporalConfig) -> dict[str, Any]:
             "description": "Ranking, recent form, injuries and recent player minutes do not have archived publication timestamps and remain NA.",
         },
         {
-            "id": "PLAYER_MINUTES_AND_AVAILABILITY_INCOMPLETE",
+            "id": "PLAYER_ADVANCED_METRICS_AND_HISTORICAL_AVAILABILITY_INCOMPLETE",
             "severity": "medium",
             "status": "OPEN_LIMITATION",
-            "description": "Observed lineups and player statistics cover all matches, but minutes, xG, xA, ratings and historical player availability remain unavailable.",
+            "description": "Observed lineups cover all matches and post-match minutes are derived with provenance labels; xG, xA, ratings and historical pre-match availability remain unavailable.",
         },
         {
             "id": "POST_MATCH_FACTS_BACKFILLED",
@@ -88,6 +88,7 @@ def run(config: TemporalConfig) -> dict[str, Any]:
             "online Elo/Poisson learning and conservative recalibration",
             "post-match error, causal-association and significance analyses",
             "complete ESPN event, commentary, team-stat, player-stat, lineup and main-referee coverage",
+            "post-match player minutes derived with explicit provenance and temporal labels",
             "statistical feature discovery with permutation evidence",
             "daily model versions and Monte Carlo simulations",
             "temporal validation tests and GitHub Actions",
