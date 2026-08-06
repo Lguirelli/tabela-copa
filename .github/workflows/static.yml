@@ -27,8 +27,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+<<<<<<< HEAD
       - name: Build and validate minimal static artifact
         run: python scripts/build_static_site.py --output build/site
+=======
+      - name: Validate static site entrypoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          for page in rede-neural.html modelo-evolucao.html modelo-previsoes.html modelo-aprendizado.html modelo-simulacoes.html modelo-versoes.html; do
+            test -f "$page"
+          done
+          test -f src/model-analytics-data.js
+          test -f src/model-pages.js
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build/site

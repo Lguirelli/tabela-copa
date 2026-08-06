@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-06T20:52:53.080123+00:00",
+=======
+  "generated_at": "2026-07-28T19:21:26.288576+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "competition_id": "world_cup_2026",
   "project_status": "READY",
   "improvements_realized": [
@@ -34,8 +38,12 @@
       "summary": {
         "queue_items": 0,
         "resolved_this_run": 0,
+<<<<<<< HEAD
         "remaining_open": 0,
         "supplemental_sources_checked": 0
+=======
+        "remaining_open": 0
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       }
     },
     {
@@ -53,7 +61,11 @@
       "step": "03_data_validation",
       "status": "SUCCESS",
       "summary": {
+<<<<<<< HEAD
         "datasets_checked": 16,
+=======
+        "datasets_checked": 13,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "invalid_issues": 0,
         "conflicts": 0,
         "warnings": 0

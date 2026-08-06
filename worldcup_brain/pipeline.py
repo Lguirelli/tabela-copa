@@ -178,7 +178,11 @@ def _knowledge_records(
             "source": "data/resultados_reais.csv",
         })
     for check in data_check["checks"]:
+<<<<<<< HEAD
         if check["status"] == "AVAILABLE" and check["field"] in {"confirmed_lineup", "player_availability", "archived_news", "weather"}:
+=======
+        if check["status"] == "AVAILABLE" and check["field"] in {"confirmed_lineup", "player_availability", "archived_news"}:
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             records.append({
                 "record_type": check["field"],
                 "record_id": f"match_{int(match['match_id'])}",
@@ -195,6 +199,7 @@ def replay(config: TemporalConfig, as_of: Any | None = None, clean: bool = True)
         _clean_generated(config)
     timeline = read_csv(config.output("data", "temporal", "matches_timeline.csv"))
     team_profiles = read_csv(config.output("data", "pre_worldcup_state", "teams.csv"))
+<<<<<<< HEAD
     weather = read_csv(config.path("pre_match_weather"), required=False)
     state = TournamentState(team_profiles)
     model = TemporalPoissonEloModel(
@@ -203,6 +208,10 @@ def replay(config: TemporalConfig, as_of: Any | None = None, clean: bool = True)
         int(config.get("random_seed", 2026)),
         enable_weight_recalibration=bool(config.get("enable_online_weight_recalibration", False)),
     )
+=======
+    state = TournamentState(team_profiles)
+    model = TemporalPoissonEloModel(state, ModelParameters(), int(config.get("random_seed", 2026)))
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     replay_limit = parse_timestamp(as_of) if as_of else pd.Timestamp.max.tz_localize("UTC")
 
     initial_version = _save_model_version(
@@ -251,6 +260,7 @@ def replay(config: TemporalConfig, as_of: Any | None = None, clean: bool = True)
                 if data_check["status"] == "BLOCKED":
                     continue
                 knowledge = _knowledge_records(config, match, event_time, visible, data_check)
+<<<<<<< HEAD
                 context: dict[str, Any] = {}
                 if not weather.empty and "match_id" in weather.columns and "available_at" in weather.columns:
                     eligible_weather = weather[
@@ -263,6 +273,9 @@ def replay(config: TemporalConfig, as_of: Any | None = None, clean: bool = True)
                     str(match["team1"]), str(match["team2"]), match["kickoff_at"],
                     bool(match["is_knockout"]), context=context,
                 )
+=======
+                pred = model.predict(str(match["team1"]), str(match["team2"]), match["kickoff_at"], bool(match["is_knockout"]))
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
                 pred.update({
                     "match_id": match_id,
                     "competition_id": config.get("competition_id"),
@@ -313,9 +326,12 @@ def replay(config: TemporalConfig, as_of: Any | None = None, clean: bool = True)
                 result_events += 1
                 pred = predictions[match_id]
                 metrics = prediction_metrics(pred, match)
+<<<<<<< HEAD
                 metrics["features"] = pred["features"]
                 metrics["actual_goals1"] = int(match["result_team1_goals"])
                 metrics["actual_goals2"] = int(match["result_team2_goals"])
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
                 adjustment = model.update_after_result(
                     pred["team1"], pred["team2"], int(match["result_team1_goals"]), int(match["result_team2_goals"]), match["kickoff_at"], match["result_available_at"]
                 )

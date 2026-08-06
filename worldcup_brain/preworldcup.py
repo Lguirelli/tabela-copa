@@ -29,6 +29,7 @@ def _value(row: pd.Series, column: str | None, default: Any = "NA") -> Any:
     return value
 
 
+<<<<<<< HEAD
 def _latest_rankings(config: TemporalConfig, cutoff: pd.Timestamp) -> dict[str, pd.Series]:
     path = config.path("fifa_rankings")
     rankings = read_csv(path, required=False)
@@ -84,12 +85,19 @@ def _recent_form(config: TemporalConfig, cutoff: pd.Timestamp) -> dict[str, dict
 def build_pre_worldcup_state(config: TemporalConfig) -> dict[str, Any]:
     cutoff_ts = pd.Timestamp(config.get("pre_tournament_cutoff")).tz_convert("UTC")
     cutoff = cutoff_ts.isoformat()
+=======
+def build_pre_worldcup_state(config: TemporalConfig) -> dict[str, Any]:
+    cutoff = pd.Timestamp(config.get("pre_tournament_cutoff")).tz_convert("UTC").isoformat()
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     strengths = read_csv(config.path("team_strengths"))
     tactics = read_csv(config.path("team_tactics"))
     players = read_csv(config.path("players"))
     matches = read_csv(config.path("matches"))
+<<<<<<< HEAD
     ranking_index = _latest_rankings(config, cutoff_ts)
     recent_form = _recent_form(config, cutoff_ts)
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
     team_col = _first_existing(strengths, ["selecao", "seleção", "team"])
     if team_col is None:
@@ -126,15 +134,22 @@ def build_pre_worldcup_state(config: TemporalConfig) -> dict[str, Any]:
             "snapshot_at": cutoff,
             "temporal_status": "BACKFILLED_PRE_TOURNAMENT_FACT",
             "fifa_ranking": "NA",
+<<<<<<< HEAD
             "fifa_points": "NA",
             "recent_matches": "NA",
             "recent_points_per_match": "NA",
+=======
+            "recent_matches": "NA",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             "qualifying_performance": "NA",
             "recent_goals_for": "NA",
             "recent_goals_against": "NA",
             "source_dataset": config.path("team_strengths").relative_to(config.root).as_posix(),
+<<<<<<< HEAD
             "ranking_source": "NA",
             "recent_form_source": "NA",
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         }
         for field, column in strength_cols.items():
             payload[field] = _value(row, column)
@@ -146,6 +161,7 @@ def build_pre_worldcup_state(config: TemporalConfig) -> dict[str, Any]:
             }.items():
                 if payload.get(field, "NA") == "NA":
                     payload[field] = _value(tactic_row, _first_existing(tactics, candidates))
+<<<<<<< HEAD
         ranking = ranking_index.get(normalize_text(team))
         if ranking is not None:
             payload["fifa_ranking"] = _value(ranking, "rank")
@@ -158,6 +174,11 @@ def build_pre_worldcup_state(config: TemporalConfig) -> dict[str, Any]:
         team_rows.append(payload)
         for field, value in payload.items():
             if field in {"team", "snapshot_at", "source_dataset", "ranking_source", "recent_form_source"}:
+=======
+        team_rows.append(payload)
+        for field, value in payload.items():
+            if field in {"team", "snapshot_at", "source_dataset"}:
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
                 continue
             field_lineage.append({
                 "entity_type": "team",
@@ -264,10 +285,14 @@ def build_pre_worldcup_state(config: TemporalConfig) -> dict[str, Any]:
         "context_matches": len(context_frame),
         "available_team_fields": [col for col in teams_frame.columns if col not in {"team", "snapshot_at", "source_dataset"} and not (teams_frame[col].astype(str) == "NA").all()],
         "unavailable_fields": config.get("pre_worldcup_field_policy", {}).get("unavailable_without_archived_source", []),
+<<<<<<< HEAD
         "inputs": lineage([
             config.path("team_strengths"), config.path("team_tactics"), config.path("players"),
             config.path("matches"), config.path("fifa_rankings"), config.path("external_matches"),
         ], config.root),
+=======
+        "inputs": lineage([config.path("team_strengths"), config.path("team_tactics"), config.path("players"), config.path("matches")], config.root),
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     }
     atomic_write_json(manifest, out_dir / "manifest.json")
     return manifest

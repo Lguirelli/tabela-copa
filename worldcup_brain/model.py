@@ -21,9 +21,12 @@ class ModelParameters:
     rest_weight: float = 0.015
     experience_weight: float = 0.02
     goalkeeper_weight: float = 0.025
+<<<<<<< HEAD
     heat_weight: float = 0.0
     wind_weight: float = 0.0
     rain_weight: float = 0.0
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     probability_temperature: float = 1.0
     elo_k: float = 24.0
     learning_rate: float = 0.03
@@ -33,6 +36,7 @@ class ModelParameters:
 
 
 class TemporalPoissonEloModel:
+<<<<<<< HEAD
     def __init__(
         self,
         state: TournamentState,
@@ -44,6 +48,12 @@ class TemporalPoissonEloModel:
         self.parameters = parameters or ModelParameters()
         self.rng = np.random.default_rng(random_seed)
         self.enable_weight_recalibration = enable_weight_recalibration
+=======
+    def __init__(self, state: TournamentState, parameters: ModelParameters | None = None, random_seed: int = 2026):
+        self.state = state
+        self.parameters = parameters or ModelParameters()
+        self.rng = np.random.default_rng(random_seed)
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
     def _rest_days(self, team: TeamState, kickoff_at: Any) -> float:
         if not team.last_kickoff_at:
@@ -51,6 +61,7 @@ class TemporalPoissonEloModel:
         delta = pd.Timestamp(kickoff_at) - pd.Timestamp(team.last_kickoff_at)
         return float(np.clip(delta.total_seconds() / 86400.0, 1.0, 14.0))
 
+<<<<<<< HEAD
     def features(
         self,
         team1: str,
@@ -65,6 +76,11 @@ class TemporalPoissonEloModel:
         temperature = _finite(context.get("temperature_c"), 22.0)
         wind = _finite(context.get("wind_speed_kmh"), 0.0)
         rain = _finite(context.get("precipitation_mm"), 0.0)
+=======
+    def features(self, team1: str, team2: str, kickoff_at: Any, is_knockout: bool) -> dict[str, float]:
+        s1, s2 = self.state.get(team1), self.state.get(team2)
+        rest1, rest2 = self._rest_days(s1, kickoff_at), self._rest_days(s2, kickoff_at)
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         return {
             "rating_diff": (s1.rating - s2.rating) / 100.0,
             "initial_strength_diff": (s1.initial_strength - s2.initial_strength) / 10.0,
@@ -80,9 +96,12 @@ class TemporalPoissonEloModel:
             "knockout": 1.0 if is_knockout else 0.0,
             "rest_days_team1": rest1,
             "rest_days_team2": rest2,
+<<<<<<< HEAD
             "heat_load": float(np.clip((temperature - 28.0) / 10.0, 0.0, 1.5)),
             "wind_load": float(np.clip((wind - 20.0) / 25.0, 0.0, 1.5)),
             "rain_load": float(np.clip(rain / 10.0, 0.0, 1.5)),
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         }
 
     def expected_goals(self, features: dict[str, float]) -> tuple[float, float, dict[str, float]]:
@@ -95,6 +114,7 @@ class TemporalPoissonEloModel:
         rest_term = p.rest_weight * features["rest_diff"]
         experience_term = p.experience_weight * features["experience_diff"]
         goalkeeper_term = p.goalkeeper_weight * features["goalkeeper_diff"]
+<<<<<<< HEAD
         weather_term = (
             p.heat_weight * features.get("heat_load", 0.0)
             + p.wind_weight * features.get("wind_load", 0.0)
@@ -103,6 +123,11 @@ class TemporalPoissonEloModel:
         knockout_suppression = -0.08 * features["knockout"]
         log_lambda1 = math.log(p.base_goals) + shared_rating + attack_term_1 + form_term + schedule_term + rest_term + experience_term + goalkeeper_term + weather_term + knockout_suppression
         log_lambda2 = math.log(p.base_goals) - shared_rating + attack_term_2 - form_term - schedule_term - rest_term - experience_term - goalkeeper_term + weather_term + knockout_suppression
+=======
+        knockout_suppression = -0.08 * features["knockout"]
+        log_lambda1 = math.log(p.base_goals) + shared_rating + attack_term_1 + form_term + schedule_term + rest_term + experience_term + goalkeeper_term + knockout_suppression
+        log_lambda2 = math.log(p.base_goals) - shared_rating + attack_term_2 - form_term - schedule_term - rest_term - experience_term - goalkeeper_term + knockout_suppression
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         lambda1 = float(np.clip(math.exp(log_lambda1), 0.18, 4.2))
         lambda2 = float(np.clip(math.exp(log_lambda2), 0.18, 4.2))
         contributions = {
@@ -114,7 +139,10 @@ class TemporalPoissonEloModel:
             "rest": rest_term,
             "experience": experience_term,
             "goalkeeper": goalkeeper_term,
+<<<<<<< HEAD
             "weather": weather_term,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             "knockout_suppression": knockout_suppression,
         }
         return lambda1, lambda2, contributions
@@ -142,6 +170,7 @@ class TemporalPoissonEloModel:
         exp = np.exp(logits)
         return exp / exp.sum()
 
+<<<<<<< HEAD
     def predict(
         self,
         team1: str,
@@ -151,6 +180,10 @@ class TemporalPoissonEloModel:
         context: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
         features = self.features(team1, team2, kickoff_at, is_knockout, context=context)
+=======
+    def predict(self, team1: str, team2: str, kickoff_at: Any, is_knockout: bool) -> dict[str, Any]:
+        features = self.features(team1, team2, kickoff_at, is_knockout)
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         lambda1, lambda2, contributions = self.expected_goals(features)
         distribution = self.score_distribution(lambda1, lambda2)
         p1 = sum(item["probability"] for item in distribution if item["team1_goals"] > item["team2_goals"])
@@ -251,7 +284,10 @@ class TemporalPoissonEloModel:
         accepted = best["log_loss"] + 1e-9 < current_loss
         if accepted:
             self.parameters.probability_temperature = float(best["temperature"])
+<<<<<<< HEAD
         parameter_search = self._recalibrate_weights(evaluated_predictions)
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         # Goal baseline is updated conservatively from observed total goals, never future results.
         observed_mean = float(np.mean([item["total_goals"] for item in evaluated_predictions[-24:]])) / 2.0
         old_base = self.parameters.base_goals
@@ -265,11 +301,15 @@ class TemporalPoissonEloModel:
             "previous_log_loss": round(current_loss, 8),
             "selected_log_loss": round(best["log_loss"], 8),
             "candidate_temperatures": candidates,
+<<<<<<< HEAD
             "parameter_search": parameter_search,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             "base_goals_before": round(old_base, 8),
             "base_goals_after": round(proposed_base, 8),
             "observed_goals_per_team_recent": round(observed_mean, 8),
         }
+<<<<<<< HEAD
 
     def _recalibrate_weights(self, records: list[dict[str, Any]]) -> dict[str, Any]:
         """Conservatively tune one coefficient using only already observed matches.
@@ -343,3 +383,5 @@ def _finite(value: Any, default: float) -> float:
         return number if np.isfinite(number) else default
     except (TypeError, ValueError):
         return default
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3

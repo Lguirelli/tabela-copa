@@ -9,15 +9,19 @@ from .config import ROOT
 from .io import read_table, utc_now, write_json
 
 
+<<<<<<< HEAD
 SKIP_PARTS = {".git", "__pycache__", ".pytest_cache", "build", "dist"}
 SKIP_PREFIXES = {"logs/pipeline", "reports/pipeline"}
 
 
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 def run(output: Path | None = None) -> dict[str, Any]:
     files: list[dict[str, Any]] = []
     by_hash: dict[str, list[str]] = {}
     problems: list[dict[str, Any]] = []
     for path in sorted(ROOT.rglob("*")):
+<<<<<<< HEAD
         if not path.is_file() or any(part in SKIP_PARTS for part in path.parts):
             continue
         rel = path.relative_to(ROOT).as_posix()
@@ -25,6 +29,13 @@ def run(output: Path | None = None) -> dict[str, Any]:
             continue
         blob = path.read_bytes()
         sha = hashlib.sha256(blob).hexdigest()
+=======
+        if not path.is_file() or ".git" in path.parts:
+            continue
+        blob = path.read_bytes()
+        sha = hashlib.sha256(blob).hexdigest()
+        rel = path.relative_to(ROOT).as_posix()
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         files.append({"path": rel, "size_bytes": len(blob), "sha256": sha})
         by_hash.setdefault(sha, []).append(rel)
         if path.suffix == ".py":

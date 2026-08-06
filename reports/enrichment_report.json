@@ -1,20 +1,33 @@
 {
   "loop": "02_data_enrichment",
   "competition_id": "world_cup_2026",
+<<<<<<< HEAD
   "generated_at": "2026-08-06T20:52:52.163754+00:00",
   "inputs": [
     {
       "path": "data/competitions/world_cup_2026/queues/missing_data.json",
       "sha256": "2f29bca45753f10f3ec05647234eaddea548d1f750acf5fd4772b8a4809ea7e5",
+=======
+  "generated_at": "2026-07-28T19:21:25.266249+00:00",
+  "inputs": [
+    {
+      "path": "data/competitions/world_cup_2026/queues/missing_data.json",
+      "sha256": "ebdcbf0659a08acb2572d1ae6aa8767554e5845399976b370918cff49fddb654",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "size_bytes": 110
     }
   ],
   "summary": {
     "queue_items": 0,
     "resolved_this_run": 0,
+<<<<<<< HEAD
     "remaining_open": 0,
     "supplemental_sources_checked": 0
   },
   "supplemental_sources": [],
+=======
+    "remaining_open": 0
+  },
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "log_path": "logs/competitions/world_cup_2026/enrichment_log.json"
 }

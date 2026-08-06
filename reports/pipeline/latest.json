@@ -1,0 +1,120 @@
+{
+  "run_id": "20260728T192123Z",
+  "started_at": "2026-07-28T19:21:23.767184+00:00",
+  "mode": "daily",
+  "competition": "all",
+  "as_of": "2026-07-28T19:21:23Z",
+  "network_enabled": false,
+  "status": "SUCCESS",
+  "steps": [
+    {
+      "name": "preflight",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/ci_preflight.py",
+        "--check"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.627,
+      "log_path": "logs/pipeline/20260728T192123Z/01_preflight.log"
+    },
+    {
+      "name": "sports_pipeline",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "sports_engine.cli",
+        "run-registry"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 2.016,
+      "log_path": "logs/pipeline/20260728T192123Z/02_sports_pipeline.log"
+    },
+    {
+      "name": "temporal_daily",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "daily",
+        "--as-of",
+        "2026-07-28T19:21:23Z"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 26.478,
+      "log_path": "logs/pipeline/20260728T192123Z/03_temporal_daily.log"
+    },
+    {
+      "name": "temporal_validate",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "validate",
+        "--as-of",
+        "2026-07-28T19:21:23Z"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.823,
+      "log_path": "logs/pipeline/20260728T192123Z/04_temporal_validate.log"
+    },
+    {
+      "name": "temporal_audit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "audit"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.713,
+      "log_path": "logs/pipeline/20260728T192123Z/05_temporal_audit.log"
+    },
+    {
+      "name": "temporal_status",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "worldcup_brain.cli",
+        "status"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.742,
+      "log_path": "logs/pipeline/20260728T192123Z/06_temporal_status.log"
+    },
+    {
+      "name": "export_dashboard",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/export_model_dashboard.py"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 0.632,
+      "log_path": "logs/pipeline/20260728T192123Z/07_export_dashboard.log"
+    },
+    {
+      "name": "repository_tests",
+      "command": [
+        "make",
+        "test"
+      ],
+      "status": "SUCCESS",
+      "exit_code": 0,
+      "duration_seconds": 7.124,
+      "log_path": "logs/pipeline/20260728T192123Z/08_repository_tests.log"
+    }
+  ],
+  "finished_at": "2026-07-28T19:22:02.921909+00:00",
+  "summary": {
+    "steps_completed": 8,
+    "network_requests_are_single_pass": true,
+    "write_pipeline": "single_orchestrator"
+  }
+}

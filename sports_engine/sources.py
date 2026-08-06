@@ -5,7 +5,10 @@ import json
 import os
 from pathlib import Path
 from typing import Any
+<<<<<<< HEAD
 from urllib.parse import urlencode
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
 import pandas as pd
 import requests
@@ -166,6 +169,7 @@ def merge_scoreboard_results(config: CompetitionConfig, staging_path: Path) -> d
     return {"inserted": len(additions), "synced_mirrors": sorted(set(synced_mirrors))}
 
 
+<<<<<<< HEAD
 def _request_json(
     url: str,
     timeout: int,
@@ -174,10 +178,14 @@ def _request_json(
     headers: dict[str, str] | None = None,
     params: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+=======
+def _request_json(url: str, timeout: int, retries: int = 1) -> dict[str, Any]:
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     import time
     last_error: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
+<<<<<<< HEAD
             request_headers = {"User-Agent": "sports-engine-repository/2.1"}
             request_headers.update(headers or {})
             response = requests.get(
@@ -185,6 +193,12 @@ def _request_json(
                 timeout=(min(5, timeout), timeout),
                 headers=request_headers,
                 params=params,
+=======
+            response = requests.get(
+                url,
+                timeout=(min(5, timeout), timeout),
+                headers={"User-Agent": "sports-engine-repository/1.0"},
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             )
             response.raise_for_status()
             return response.json()
@@ -196,6 +210,7 @@ def _request_json(
     raise last_error
 
 
+<<<<<<< HEAD
 def _store_raw_payload(config: CompetitionConfig, source_id: str, payload: dict[str, Any]) -> tuple[str, str]:
     """Persist an immutable provider response and return repository path/hash."""
     raw = json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
@@ -383,6 +398,8 @@ def fetch_open_meteo_previous_runs(
     }
 
 
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 def _team_alias_lookup() -> dict[str, str]:
     aliases: dict[str, str] = {}
     path = ROOT / "data" / "mappings" / "team_name_aliases.csv"

@@ -98,11 +98,18 @@ def main() -> int:
         "canonical_workflows": ["ci.yml", "update_pipeline.yml", "static.yml"],
         "legacy_location": "legacy/",
     }
+<<<<<<< HEAD
     rendered = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     if not args.check:
         REPORT.parent.mkdir(parents=True, exist_ok=True)
         if not REPORT.exists() or REPORT.read_text(encoding="utf-8") != rendered:
             REPORT.write_text(rendered, encoding="utf-8")
+=======
+    REPORT.parent.mkdir(parents=True, exist_ok=True)
+    rendered = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    if not REPORT.exists() or REPORT.read_text(encoding="utf-8") != rendered:
+        REPORT.write_text(rendered, encoding="utf-8")
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     print(rendered, end="")
     return 1 if forbidden else 0
 

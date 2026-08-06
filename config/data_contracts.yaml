@@ -48,6 +48,7 @@ contracts:
       official: [official, referee]
       role: [role, funcao]
       source: [source, source_url]
+<<<<<<< HEAD
   fifa_rankings:
     required: [team, rank, published_at, source]
     accepted_aliases:
@@ -63,3 +64,5 @@ contracts:
       available_at: [available_at, published_at]
       source: [source, source_url]
     temporal_rule: available_at must be earlier than the prediction cutoff
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3

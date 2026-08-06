@@ -1,0 +1,70 @@
+name: Daily sports data update
+
+on:
+  schedule:
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      competition:
+        description: Competition ID from config/competitions.yaml, or all
+        required: false
+        default: all
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-write-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Clean legacy artifacts before the run
+        run: python scripts/ci_preflight.py
+      - name: Install core dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Run daily analytical pipeline
+        env:
+          COMPETITION: ${{ inputs.competition || 'all' }}
+          SPORTS_ENGINE_NETWORK: "1"
+          SPORTS_ENGINE_NETWORK_TIMEOUT: "8"
+          SPORTS_ENGINE_NETWORK_RETRIES: "1"
+        run: |
+          if [ "$COMPETITION" = "all" ]; then
+            python -m sports_engine.cli run-registry
+          else
+            python -m sports_engine.cli run-all --competition "$COMPETITION"
+          fi
+      - name: Export World Cup model dashboard
+        run: python scripts/export_model_dashboard.py
+      - name: Run tests
+        env:
+          COMPETITION: ${{ inputs.competition || 'all' }}
+        run: make test
+      - name: Commit generated reports and model artifacts
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for path in data logs models reports src/model-analytics-data.js; do
+            [ -e "$path" ] && git add -A "$path"
+          done
+          git commit -m "chore(data): daily analytical update"
+          git push

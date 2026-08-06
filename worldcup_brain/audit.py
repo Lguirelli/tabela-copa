@@ -9,6 +9,7 @@ from .io import atomic_write_json, sha256, utc_now
 
 
 def run(config: TemporalConfig) -> dict[str, Any]:
+<<<<<<< HEAD
     skip_parts = {".git", "__pycache__", ".pytest_cache", "build", "dist"}
     skip_prefixes = {"logs/pipeline", "reports/pipeline"}
     files = []
@@ -19,6 +20,9 @@ def run(config: TemporalConfig) -> dict[str, Any]:
         if any(relative == prefix or relative.startswith(f"{prefix}/") for prefix in skip_prefixes):
             continue
         files.append(path)
+=======
+    files = [path for path in config.root.rglob("*") if path.is_file() and ".git" not in path.parts and "__pycache__" not in path.parts]
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     by_extension: dict[str, int] = defaultdict(int)
     hash_groups: dict[str, list[str]] = defaultdict(list)
     for path in files:
@@ -95,8 +99,11 @@ def run(config: TemporalConfig) -> dict[str, Any]:
             "pre-match knowledge ledger",
             "missing-information queue and timestamp-safe collection",
             "online Elo/Poisson learning and conservative recalibration",
+<<<<<<< HEAD
             "shadow-only coefficient search with explicit activation gate",
             "FIFA ranking, independent match-feed and archived pre-match weather schemas",
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             "post-match error, causal-association and significance analyses",
             "complete ESPN event, commentary, team-stat, player-stat, lineup and main-referee coverage",
             "post-match player minutes derived with explicit provenance and temporal labels",

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-06T20:51:55.233042+00:00",
+=======
+  "generated_at": "2026-07-28T19:21:41.860042+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "version": "model_after_2026-07-06",
   "training_cutoff": "2026-07-07T00:00:00+00:00",
   "competition_id": "world_cup_2026",
@@ -13,9 +17,12 @@
     "rest_weight": 0.015,
     "experience_weight": 0.02,
     "goalkeeper_weight": 0.025,
+<<<<<<< HEAD
     "heat_weight": 0.0,
     "wind_weight": 0.0,
     "rain_weight": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "probability_temperature": 1.0,
     "elo_k": 24.0,
     "learning_rate": 0.03
@@ -64,6 +71,7 @@
         "log_loss": 0.9670987715763126
       }
     ],
+<<<<<<< HEAD
     "parameter_search": {
       "accepted": false,
       "eligible": true,
@@ -80,6 +88,8 @@
       "rule": "one coefficient per checkpoint; chronological holdout log-loss improvement >= 0.002",
       "activation_note": "Shadow candidates never alter predictions unless enable_online_weight_recalibration is explicitly enabled after external validation."
     },
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "base_goals_before": 1.4099999,
     "base_goals_after": 1.41219991,
     "observed_goals_per_team_recent": 1.4375
@@ -93,8 +103,11 @@
       "defense_proxy": 6.03,
       "goalkeeper_proxy": 6.3,
       "experience_proxy": 8.23,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 7,
       "goals_for": 11,
@@ -131,8 +144,11 @@
       "defense_proxy": 5.91,
       "goalkeeper_proxy": 6.0,
       "experience_proxy": 9.05,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 12,
       "goals_for": 11,
@@ -169,8 +185,11 @@
       "defense_proxy": 5.81,
       "goalkeeper_proxy": 4.8,
       "experience_proxy": 8.01,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 5,
@@ -207,8 +226,11 @@
       "defense_proxy": 5.12,
       "goalkeeper_proxy": 5.97,
       "experience_proxy": 8.39,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 2,
       "goals_for": 1,
@@ -242,8 +264,11 @@
       "defense_proxy": 5.01,
       "goalkeeper_proxy": 5.73,
       "experience_proxy": 7.93,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 5,
       "goals_for": 3,
@@ -280,8 +305,11 @@
       "defense_proxy": 5.44,
       "goalkeeper_proxy": 6.4,
       "experience_proxy": 8.4,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 10,
       "goals_for": 10,
@@ -321,8 +349,11 @@
       "defense_proxy": 5.61,
       "goalkeeper_proxy": 6.03,
       "experience_proxy": 8.74,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 8,
       "goals_for": 9,
@@ -359,8 +390,11 @@
       "defense_proxy": 4.97,
       "goalkeeper_proxy": 4.77,
       "experience_proxy": 7.51,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 5,
@@ -397,8 +431,11 @@
       "defense_proxy": 5.07,
       "goalkeeper_proxy": 5.7,
       "experience_proxy": 8.14,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 3,
       "goals_for": 4,
@@ -435,8 +472,11 @@
       "defense_proxy": 5.3,
       "goalkeeper_proxy": 5.6,
       "experience_proxy": 8.5,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 7,
       "goals_for": 9,
@@ -476,8 +516,11 @@
       "defense_proxy": 5.29,
       "goalkeeper_proxy": 5.77,
       "experience_proxy": 9.58,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 1,
       "goals_for": 2,
@@ -511,8 +554,11 @@
       "defense_proxy": 6.0,
       "goalkeeper_proxy": 6.13,
       "experience_proxy": 8.65,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 10,
       "goals_for": 5,
@@ -549,8 +595,11 @@
       "defense_proxy": 4.91,
       "goalkeeper_proxy": 6.2,
       "experience_proxy": 8.5,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 3,
       "goals_for": 2,
@@ -584,8 +633,11 @@
       "defense_proxy": 5.3,
       "goalkeeper_proxy": 5.3,
       "experience_proxy": 7.85,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 6,
       "goals_for": 5,
@@ -622,8 +674,11 @@
       "defense_proxy": 5.74,
       "goalkeeper_proxy": 6.07,
       "experience_proxy": 8.88,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 6,
       "goals_for": 6,
@@ -660,8 +715,11 @@
       "defense_proxy": 4.7,
       "goalkeeper_proxy": 5.83,
       "experience_proxy": 7.58,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 1,
       "goals_for": 1,
@@ -695,8 +753,11 @@
       "defense_proxy": 4.83,
       "goalkeeper_proxy": 4.95,
       "experience_proxy": 8.16,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 6,
       "goals_for": 6,
@@ -733,8 +794,11 @@
       "defense_proxy": 5.66,
       "goalkeeper_proxy": 4.83,
       "experience_proxy": 8.03,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 2,
@@ -771,8 +835,11 @@
       "defense_proxy": 5.92,
       "goalkeeper_proxy": 6.43,
       "experience_proxy": 8.53,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 3,
       "goals_for": 1,
@@ -806,8 +873,11 @@
       "defense_proxy": 4.93,
       "goalkeeper_proxy": 6.57,
       "experience_proxy": 7.91,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 13,
       "goals_for": 9,
@@ -847,8 +917,11 @@
       "defense_proxy": 6.17,
       "goalkeeper_proxy": 5.73,
       "experience_proxy": 8.51,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 9,
       "goals_for": 10,
@@ -885,8 +958,11 @@
       "defense_proxy": 5.27,
       "goalkeeper_proxy": 5.77,
       "experience_proxy": 8.07,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 15,
       "goals_for": 14,
@@ -926,8 +1002,11 @@
       "defense_proxy": 4.51,
       "goalkeeper_proxy": 4.93,
       "experience_proxy": 7.35,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 2,
@@ -964,8 +1043,11 @@
       "defense_proxy": 5.03,
       "goalkeeper_proxy": 6.7,
       "experience_proxy": 7.61,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 0,
       "goals_for": 2,
@@ -999,8 +1081,11 @@
       "defense_proxy": 5.06,
       "goalkeeper_proxy": 6.5,
       "experience_proxy": 8.17,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 13,
       "goals_for": 11,
@@ -1040,8 +1125,11 @@
       "defense_proxy": 4.73,
       "goalkeeper_proxy": 5.73,
       "experience_proxy": 8.15,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 0,
       "goals_for": 1,
@@ -1075,8 +1163,11 @@
       "defense_proxy": 5.51,
       "goalkeeper_proxy": 5.57,
       "experience_proxy": 8.91,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 3,
       "goals_for": 3,
@@ -1110,8 +1201,11 @@
       "defense_proxy": 5.26,
       "goalkeeper_proxy": 5.23,
       "experience_proxy": 8.13,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 5,
       "goals_for": 8,
@@ -1148,8 +1242,11 @@
       "defense_proxy": 4.94,
       "goalkeeper_proxy": 5.5,
       "experience_proxy": 8.69,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 0,
       "goals_for": 3,
@@ -1183,8 +1280,11 @@
       "defense_proxy": 5.18,
       "goalkeeper_proxy": 6.23,
       "experience_proxy": 7.85,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 11,
       "goals_for": 10,
@@ -1224,8 +1324,11 @@
       "defense_proxy": 6.61,
       "goalkeeper_proxy": 5.93,
       "experience_proxy": 9.02,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 12,
       "goals_for": 10,
@@ -1265,8 +1368,11 @@
       "defense_proxy": 5.31,
       "goalkeeper_proxy": 6.27,
       "experience_proxy": 8.08,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 12,
       "goals_for": 12,
@@ -1306,8 +1412,11 @@
       "defense_proxy": 5.19,
       "goalkeeper_proxy": 4.93,
       "experience_proxy": 8.16,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 1,
       "goals_for": 4,
@@ -1341,8 +1450,11 @@
       "defense_proxy": 6.11,
       "goalkeeper_proxy": 5.83,
       "experience_proxy": 9.51,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 0,
       "goals_for": 0,
@@ -1376,8 +1488,11 @@
       "defense_proxy": 5.32,
       "goalkeeper_proxy": 4.6,
       "experience_proxy": 7.8,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 5,
       "goals_for": 3,
@@ -1417,8 +1532,11 @@
       "defense_proxy": 6.19,
       "goalkeeper_proxy": 5.6,
       "experience_proxy": 8.27,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 8,
       "goals_for": 11,
@@ -1455,8 +1573,11 @@
       "defense_proxy": 5.96,
       "goalkeeper_proxy": 5.53,
       "experience_proxy": 8.88,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 5,
       "points": 8,
       "goals_for": 8,
@@ -1496,8 +1617,11 @@
       "defense_proxy": 5.3,
       "goalkeeper_proxy": 4.93,
       "experience_proxy": 8.05,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 5,
@@ -1534,8 +1658,11 @@
       "defense_proxy": 5.22,
       "goalkeeper_proxy": 5.87,
       "experience_proxy": 8.59,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 3,
       "goals_for": 10,
@@ -1572,8 +1699,11 @@
       "defense_proxy": 4.66,
       "goalkeeper_proxy": 5.2,
       "experience_proxy": 7.21,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 7,
@@ -1610,8 +1740,11 @@
       "defense_proxy": 5.81,
       "goalkeeper_proxy": 5.43,
       "experience_proxy": 8.86,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 10,
       "goals_for": 9,
@@ -1648,8 +1781,11 @@
       "defense_proxy": 5.34,
       "goalkeeper_proxy": 5.1,
       "experience_proxy": 7.9,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 1,
       "goals_for": 2,
@@ -1683,8 +1819,11 @@
       "defense_proxy": 4.73,
       "goalkeeper_proxy": 4.77,
       "experience_proxy": 7.45,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 0,
       "goals_for": 2,
@@ -1718,8 +1857,11 @@
       "defense_proxy": 6.39,
       "goalkeeper_proxy": 6.1,
       "experience_proxy": 8.53,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 3,
       "goals_for": 3,
@@ -1753,8 +1895,11 @@
       "defense_proxy": 5.69,
       "goalkeeper_proxy": 6.4,
       "experience_proxy": 8.39,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 2,
       "goals_for": 3,
@@ -1788,8 +1933,11 @@
       "defense_proxy": 4.66,
       "goalkeeper_proxy": 4.77,
       "experience_proxy": 8.46,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 3,
       "points": 0,
       "goals_for": 2,
@@ -1823,8 +1971,11 @@
       "defense_proxy": 4.4,
       "goalkeeper_proxy": 5.33,
       "experience_proxy": 7.22,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 2,
@@ -1861,8 +2012,11 @@
       "defense_proxy": 5.5,
       "goalkeeper_proxy": 5.37,
       "experience_proxy": 8.57,
+<<<<<<< HEAD
       "initial_form_points": 1.0,
       "initial_form_goal_diff": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "games": 4,
       "points": 4,
       "goals_for": 6,

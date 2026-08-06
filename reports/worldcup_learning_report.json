@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-06T20:52:05.636903+00:00",
+=======
+  "generated_at": "2026-07-28T19:21:52.768296+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "competition_id": "world_cup_2026",
   "objective": "Reconstruct the tournament using only information available at each historical cutoff.",
   "initial_pre_worldcup_outlook": {
@@ -1289,9 +1293,12 @@
     "rest_weight": 0.015,
     "experience_weight": 0.02,
     "goalkeeper_weight": 0.025,
+<<<<<<< HEAD
     "heat_weight": 0.0,
     "wind_weight": 0.0,
     "rain_weight": 0.0,
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "probability_temperature": 0.95,
     "elo_k": 24.0,
     "learning_rate": 0.03

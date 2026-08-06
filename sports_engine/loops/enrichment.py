@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Any
 import os
 
+<<<<<<< HEAD
 import pandas as pd
 
 from ..config import CompetitionConfig, ROOT
@@ -16,6 +17,12 @@ from ..sources import (
     fetch_open_meteo_previous_runs,
     merge_scoreboard_results,
 )
+=======
+from ..config import CompetitionConfig, ROOT
+from ..io import read_json, read_table, utc_now, write_json_copies
+from ..lineage import metadata
+from ..sources import fetch_espn_scoreboard, fetch_espn_summaries, merge_scoreboard_results
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 from ..player_facts import derive_player_facts
 from .completeness import _coverage_for_dataset
 
@@ -33,6 +40,7 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
     sources = sorted(config.data.get("sources", []), key=lambda item: int(item.get("priority", 99)))
     session_cache: dict[str, dict[str, Any]] = {}
     resolved = 0
+<<<<<<< HEAD
     supplemental: list[dict[str, Any]] = []
     network_enabled = os.getenv("SPORTS_ENGINE_NETWORK", "0").lower() in {"1", "true", "yes"}
 
@@ -57,6 +65,8 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
             supplemental.append({"source": source_id, **session_cache[source_id]})
         except Exception as exc:
             supplemental.append({"source": source_id, "success": False, "reason": f"{type(exc).__name__}: {exc}"})
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
     for item in items:
         if item.get("status") != "OPEN":
@@ -73,7 +83,11 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
         }
         for source in candidates:
             attempt["source"] = source.get("id", "NA")
+<<<<<<< HEAD
             if source.get("type") in {"espn_summary", "espn_scoreboard", "football_data_v4", "open_meteo_previous_runs", "http_json"} and os.getenv("SPORTS_ENGINE_NETWORK", "0").lower() not in {"1", "true", "yes"}:
+=======
+            if source.get("type") in {"espn_summary", "espn_scoreboard", "http_json"} and os.getenv("SPORTS_ENGINE_NETWORK", "0").lower() not in {"1", "true", "yes"}:
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
                 attempt["details"] = "Network collection is disabled for this local run. GitHub Actions enables it explicitly."
                 continue
             attempt["confidence"] = source.get("confidence", "NA")
@@ -150,6 +164,7 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
                         attempt.update({"success": merged.get("inserted", 0) > 0, "details": {"fetch": fetched, "merge": merged}})
                         if attempt["success"]:
                             break
+<<<<<<< HEAD
                 elif source.get("type") == "football_data_v4":
                     source_id = str(source.get("id"))
                     if source_id not in session_cache:
@@ -175,6 +190,8 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
                     })
                     if complete:
                         break
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
                 else:
                     attempt["details"] = f"Adapter '{source.get('type')}' is configured but not implemented for structured merge."
             except Exception as exc:
@@ -188,6 +205,7 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
     write_json_copies({"generated_at": utc_now(), "competition_id": config.competition_id, "items": items}, queue_path, queue_alias)
     write_json_copies(history, log_path, log_alias)
     report = metadata("02_data_enrichment", config.competition_id, [queue_path], ROOT, {
+<<<<<<< HEAD
         "summary": {
             "queue_items": len(items),
             "resolved_this_run": resolved,
@@ -195,6 +213,9 @@ def run(config: CompetitionConfig) -> dict[str, Any]:
             "supplemental_sources_checked": len(supplemental),
         },
         "supplemental_sources": supplemental,
+=======
+        "summary": {"queue_items": len(items), "resolved_this_run": resolved, "remaining_open": sum(1 for item in items if item.get("status") == "OPEN")},
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "log_path": log_path.relative_to(ROOT).as_posix(),
     })
     write_json_copies(

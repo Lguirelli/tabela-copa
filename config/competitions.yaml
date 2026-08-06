@@ -7,8 +7,13 @@ engine:
   minimum_samples_for_pattern: 30
   feature_correlation_threshold: 0.08
   monte_carlo_iterations: 12000
+<<<<<<< HEAD
   network_timeout_seconds: 8
   network_retries: 1
+=======
+  network_timeout_seconds: 15
+  network_retries: 3
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   max_enrichment_matches_per_run: 24
   allow_overwrite_observed_data: false
 
@@ -40,9 +45,12 @@ competitions:
       lineups: data/platform/lineups.csv
       player_match_stats: data/platform/player_match_stats.csv
       player_availability: data/platform/player_availability.csv
+<<<<<<< HEAD
       pre_match_weather: data/context/pre_match_weather.csv
       external_matches: data/external/football_data_matches.csv
       fifa_rankings: data/external/fifa_rankings.csv
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     required_data:
       matches:
         - {field: result, priority: high, provider_dataset: results}
@@ -106,6 +114,7 @@ competitions:
         provides: [result, date]
         enabled: true
         url: https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=500
+<<<<<<< HEAD
       - id: football_data_v4
         type: football_data_v4
         priority: 3
@@ -125,6 +134,8 @@ competitions:
         forecast_offset_days: 1
         venue_coordinates: data/context/venue_coordinates.csv
         url: https://previous-runs-api.open-meteo.com/v1/forecast
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   champions_league_template:
     name: UEFA Champions League
     season: YYYY

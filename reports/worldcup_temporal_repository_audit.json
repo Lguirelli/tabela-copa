@@ -1,15 +1,25 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-06T20:55:51.457095+00:00",
   "repository_root": "tabela-copa-main-atualizado",
   "files_analyzed": 1127,
   "files_by_extension": {
     ".css": 1,
     ".csv": 82,
+=======
+  "generated_at": "2026-07-28T19:21:54.310545+00:00",
+  "repository_root": "tabela-copa-main",
+  "files_analyzed": 1149,
+  "files_by_extension": {
+    ".css": 1,
+    ".csv": 78,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     ".html": 13,
     ".ipynb": 2,
     ".js": 11,
     ".json": 708,
     ".jsonl": 2,
+<<<<<<< HEAD
     ".md": 74,
     ".pdf": 1,
     ".png": 96,
@@ -19,6 +29,18 @@
     ".toml": 1,
     ".txt": 3,
     ".yaml": 4,
+=======
+    ".log": 32,
+    ".md": 72,
+    ".pdf": 1,
+    ".png": 96,
+    ".pt": 1,
+    ".py": 71,
+    ".svg": 48,
+    ".toml": 1,
+    ".txt": 3,
+    ".yaml": 3,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     ".yml": 3,
     "<none>": 3
   },
@@ -146,6 +168,7 @@
       "legacy/__init__.py"
     ],
     [
+<<<<<<< HEAD
       "models/error_learning.json",
       "models/competitions/world_cup_2026/error_learning.json"
     ],
@@ -160,12 +183,17 @@
     [
       "data/resultados.csv",
       "data/resultados_reais.csv"
+=======
+      "data/resultados_reais.csv",
+      "data/resultados.csv"
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     ],
     [
       "data/matches.csv",
       "data/database/matches.csv"
     ],
     [
+<<<<<<< HEAD
       "logs/enrichment_log.json",
       "logs/competitions/world_cup_2026/enrichment_log.json"
     ],
@@ -174,10 +202,13 @@
       "reports/competitions/world_cup_2026/model_recalibration_report.json"
     ],
     [
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "reports/validation_report.json",
       "reports/competitions/world_cup_2026/validation_report.json"
     ],
     [
+<<<<<<< HEAD
       "reports/derived_player_facts_report.json",
       "reports/competitions/world_cup_2026/derived_player_facts_report.json"
     ],
@@ -190,26 +221,144 @@
       "reports/competitions/world_cup_2026/enrichment_report.json"
     ],
     [
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "reports/final_system_status.json",
       "reports/competitions/world_cup_2026/final_system_status.json"
     ],
     [
+<<<<<<< HEAD
       "models/simulations/latest.json",
       "models/competitions/world_cup_2026/simulations/latest.json"
+=======
+      "reports/temporal_validation_report.json",
+      "logs/pipeline/20260728T192123Z/04_temporal_validate.log"
+    ],
+    [
+      "reports/ci_preflight_report.json",
+      "logs/pipeline/20260728T191021Z/01_preflight.log",
+      "logs/pipeline/20260728T191157Z/01_preflight.log",
+      "logs/pipeline/20260728T192123Z/01_preflight.log",
+      "logs/pipeline/20260728T191302Z/01_preflight.log",
+      "logs/pipeline/20260728T191655Z/01_preflight.log"
+    ],
+    [
+      "reports/model_recalibration_report.json",
+      "reports/competitions/world_cup_2026/model_recalibration_report.json"
+    ],
+    [
+      "reports/derived_player_facts_report.json",
+      "reports/competitions/world_cup_2026/derived_player_facts_report.json"
+    ],
+    [
+      "reports/enrichment_report.json",
+      "reports/competitions/world_cup_2026/enrichment_report.json"
+    ],
+    [
+      "reports/data_completeness_report.json",
+      "reports/competitions/world_cup_2026/data_completeness_report.json"
+    ],
+    [
+      "logs/temporal_enrichment_log.json",
+      "logs/pipeline/20260728T191302Z/03_temporal_collection_check.log"
+    ],
+    [
+      "logs/enrichment_log.json",
+      "logs/competitions/world_cup_2026/enrichment_log.json"
+    ],
+    [
+      "models/error_learning.json",
+      "models/competitions/world_cup_2026/error_learning.json"
+    ],
+    [
+      "models/patterns.json",
+      "models/competitions/world_cup_2026/patterns.json"
+    ],
+    [
+      "assets/teams/IRN_ira/sources.md",
+      "assets/teams/URY_uruguai/sources.md",
+      "assets/teams/BEL_belgica/sources.md",
+      "assets/teams/EGY_egito/sources.md",
+      "assets/teams/PRT_portugal/sources.md",
+      "assets/teams/ARG_argentina/sources.md",
+      "assets/teams/GHA_gana/sources.md",
+      "assets/teams/ZAF_africa-do-sul/sources.md",
+      "assets/teams/NOR_noruega/sources.md",
+      "assets/teams/PAN_panama/sources.md",
+      "assets/teams/USA_estados-unidos/sources.md",
+      "assets/teams/KOR_coreia-do-sul/sources.md",
+      "assets/teams/SCO_escocia/sources.md",
+      "assets/teams/HRV_croacia/sources.md",
+      "assets/teams/TUN_tunisia/sources.md",
+      "assets/teams/NZL_nova-zelandia/sources.md",
+      "assets/teams/CZE_tchequia/sources.md",
+      "assets/teams/JOR_jordania/sources.md",
+      "assets/teams/CPV_cabo-verde/sources.md",
+      "assets/teams/MEX_mexico/sources.md",
+      "assets/teams/BIH_bosnia-e-herzegovina/sources.md",
+      "assets/teams/CUW_curacao/sources.md",
+      "assets/teams/NLD_holanda/sources.md",
+      "assets/teams/BRA_brasil/sources.md",
+      "assets/teams/AUT_austria/sources.md",
+      "assets/teams/ENG_inglaterra/sources.md",
+      "assets/teams/CAN_canada/sources.md",
+      "assets/teams/AUS_australia/sources.md",
+      "assets/teams/FRA_franca/sources.md",
+      "assets/teams/CIV_costa-do-marfim/sources.md",
+      "assets/teams/SWE_suecia/sources.md",
+      "assets/teams/HTI_haiti/sources.md",
+      "assets/teams/DZA_argelia/sources.md",
+      "assets/teams/IRQ_iraque/sources.md",
+      "assets/teams/PRY_paraguai/sources.md",
+      "assets/teams/DEU_alemanha/sources.md",
+      "assets/teams/QAT_catar/sources.md",
+      "assets/teams/ECU_equador/sources.md",
+      "assets/teams/CHE_suica/sources.md",
+      "assets/teams/MAR_marrocos/sources.md",
+      "assets/teams/COD_rd-congo/sources.md",
+      "assets/teams/SEN_senegal/sources.md",
+      "assets/teams/ESP_espanha/sources.md",
+      "assets/teams/SAU_arabia-saudita/sources.md",
+      "assets/teams/TUR_turquia/sources.md",
+      "assets/teams/JPN_japao/sources.md",
+      "assets/teams/UZB_uzbequistao/sources.md",
+      "assets/teams/COL_colombia/sources.md"
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     ],
     [
       "models/simulations/latest.csv",
       "models/competitions/world_cup_2026/simulations/latest.csv"
     ],
     [
+<<<<<<< HEAD
       "data/temporal/missing_information_queue.json",
       "data/queues/missing_information_queue.json"
+=======
+      "models/simulations/latest.json",
+      "models/competitions/world_cup_2026/simulations/latest.json"
+    ],
+    [
+      "logs/pipeline/20260728T191021Z/02_sports_pipeline.log",
+      "logs/pipeline/20260728T191157Z/02_sports_pipeline.log",
+      "logs/pipeline/20260728T192123Z/02_sports_pipeline.log",
+      "logs/pipeline/20260728T191302Z/02_sports_pipeline.log",
+      "logs/pipeline/20260728T191655Z/02_sports_pipeline.log"
+    ],
+    [
+      "logs/pipeline/20260728T191157Z/06_export_dashboard.log",
+      "logs/pipeline/20260728T191302Z/06_export_dashboard.log"
+    ],
+    [
+      "data/modelo_diario/projecao_chaveamento_completa.csv",
+      "data/modelo_diario/previsoes_dia_a_dia.csv"
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     ],
     [
       "data/queues/missing_data.json",
       "data/competitions/world_cup_2026/queues/missing_data.json"
     ],
     [
+<<<<<<< HEAD
       "data/modelo_diario/previsoes_dia_a_dia.csv",
       "data/modelo_diario/projecao_chaveamento_completa.csv"
     ],
@@ -262,6 +411,10 @@
       "assets/teams/CIV_costa-do-marfim/sources.md",
       "assets/teams/AUT_austria/sources.md",
       "assets/teams/BIH_bosnia-e-herzegovina/sources.md"
+=======
+      "data/queues/missing_information_queue.json",
+      "data/temporal/missing_information_queue.json"
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     ]
   ],
   "duplicate_note": "Exact duplicates are reported for audit only; compatibility mirrors and asset variants are not removed automatically.",
@@ -272,8 +425,11 @@
     "pre-match knowledge ledger",
     "missing-information queue and timestamp-safe collection",
     "online Elo/Poisson learning and conservative recalibration",
+<<<<<<< HEAD
     "shadow-only coefficient search with explicit activation gate",
     "FIFA ranking, independent match-feed and archived pre-match weather schemas",
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "post-match error, causal-association and significance analyses",
     "complete ESPN event, commentary, team-stat, player-stat, lineup and main-referee coverage",
     "post-match player minutes derived with explicit provenance and temporal labels",

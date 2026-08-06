@@ -1,0 +1,75 @@
+name: 03 Post-match World Cup learning
+
+on:
+  schedule:
+    - cron: "30 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: Optional timezone-aware result cutoff
+        required: false
+        default: ""
+  push:
+    paths:
+      - "data/resultados_reais.csv"
+      - "data/matches.csv"
+      - "data/normalized/espn_match_events.csv"
+      - "data/normalized/espn_match_commentary.csv"
+      - "data/normalized/espn_team_match_stats.csv"
+      - "data/platform/lineups.csv"
+      - "data/platform/player_match_stats.csv"
+      - "data/platform/player_availability.csv"
+      - "data/platform/match_officials.csv"
+
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONUNBUFFERED: "1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repository-write-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  learn-after-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Clean legacy artifacts before the run
+        run: python scripts/ci_preflight.py
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          pip install -e .[test]
+      - name: Collect post-match facts
+        env:
+          SPORTS_ENGINE_NETWORK: "1"
+          SPORTS_ENGINE_NETWORK_TIMEOUT: "8"
+          SPORTS_ENGINE_NETWORK_RETRIES: "1"
+        run: python -m worldcup_brain.cli collect --allow-network
+      - name: Learn from all results available at cutoff
+        env:
+          INPUT_AS_OF: ${{ inputs.as_of }}
+        run: |
+          CUTOFF="${INPUT_AS_OF:-$(date -u +%Y-%m-%dT%H:%M:%SZ)}"
+          python -m worldcup_brain.cli post-match --as-of "$CUTOFF"
+          python -m worldcup_brain.cli validate --as-of "$CUTOFF"
+      - name: Export model dashboard
+        run: python scripts/export_model_dashboard.py
+      - name: Test temporal guarantees
+        run: make test
+      - name: Commit learning artifacts
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data predictions learning models simulations reports logs src/model-analytics-data.js
+          git commit -m "chore(worldcup): post-match temporal learning"
+          git push

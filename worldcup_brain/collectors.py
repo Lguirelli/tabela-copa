@@ -18,7 +18,11 @@ FIELD_DATASETS = {
     "player_availability": ("player_availability", ("available_at", "source_collected_at", "observation_date")),
     "archived_news": ("archived_news", ("published_at",)),
     "referee": ("match_officials", ("available_at", "source_collected_at")),
+<<<<<<< HEAD
     "weather": ("pre_match_weather", ("available_at",)),
+=======
+    "weather": (None, ()),
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "travel": (None, ()),
 }
 

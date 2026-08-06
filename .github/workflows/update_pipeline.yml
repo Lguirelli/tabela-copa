@@ -27,7 +27,10 @@ on:
     paths:
       - "config/competitions.yaml"
       - "config/worldcup_temporal.yaml"
+<<<<<<< HEAD
       - "config/external_sources.yaml"
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       - "data/entrada/**"
       - "data/resultados_reais.csv"
       - "data/matches.csv"
@@ -35,8 +38,11 @@ on:
       - "data/competitions/**/results.csv"
       - "data/platform/**"
       - "data/normalized/**"
+<<<<<<< HEAD
       - "data/context/**"
       - "data/external/**"
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
 permissions:
   contents: write
@@ -44,8 +50,13 @@ permissions:
 env:
   PYTHONDONTWRITEBYTECODE: "1"
   PYTHONUNBUFFERED: "1"
+<<<<<<< HEAD
   SPORTS_ENGINE_NETWORK_TIMEOUT: "8"
   SPORTS_ENGINE_NETWORK_RETRIES: "1"
+=======
+  SPORTS_ENGINE_NETWORK_TIMEOUT: "15"
+  SPORTS_ENGINE_NETWORK_RETRIES: "3"
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
 concurrency:
   group: repository-update-${{ github.ref }}
@@ -55,7 +66,11 @@ jobs:
   update:
     if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
+<<<<<<< HEAD
     timeout-minutes: 45
+=======
+    timeout-minutes: 60
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     steps:
       - uses: actions/checkout@v4
         with:
@@ -65,7 +80,13 @@ jobs:
           python-version: "3.11"
           cache: pip
       - name: Install
+<<<<<<< HEAD
         run: python -m pip install -e .[test]
+=======
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install -e .[test]
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       - name: Resolve execution mode
         shell: bash
         env:

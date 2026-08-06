@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-08-06T21:06:28.383426+00:00",
+=======
+  "generated_at": "2026-07-28T19:23:06.780657+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "snapshot_at": "2026-06-11T03:59:59+00:00",
   "competition_id": "world_cup_2026",
   "teams": 48,
@@ -52,6 +56,7 @@
       "path": "data/matches.csv",
       "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b",
       "size_bytes": 15867
+<<<<<<< HEAD
     },
     {
       "path": "data/external/fifa_rankings.csv",
@@ -62,6 +67,8 @@
       "path": "data/external/football_data_matches.csv",
       "sha256": "bd6b70e1e60310cc285aaf9fa5037e15cf822c401cd8b26d9cf27893d0154ae2",
       "size_bytes": 190
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     }
   ]
 }
