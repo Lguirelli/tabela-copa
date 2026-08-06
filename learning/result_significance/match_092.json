@@ -1,0 +1,14 @@
+{
+  "match_id": 92,
+  "classification": "acaso",
+  "confidence": "medium",
+  "surprise_index": 0.745454,
+  "pre_match_top_probability": 0.483771,
+  "quality_context": {
+    "rating_diff": 0.2401,
+    "schedule_strength_diff": -0.05975
+  },
+  "repetition_evidence": 0,
+  "decisive_event": "red_card_imbalance",
+  "interpretation_rule": "Classification is evidence-based and provisional; it does not assert psychological or tactical causes without observations."
+}

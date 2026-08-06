@@ -1,0 +1,42 @@
+{
+  "match_id": 26,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "Suíça",
+  "actual_outcome": "Suíça",
+  "brier_score": 0.08384323,
+  "log_loss": 0.52351749,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.349939
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.186
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0756
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Suíça",
+    "evidence": {
+      "Suíça": 0,
+      "Bósnia e Herzegovina": 1
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1599.795216,
+    "team2_rating_before": 1453.987346,
+    "team1_rating_after": 1617.072425,
+    "team2_rating_after": 1436.710137,
+    "rating_delta_team1": 17.277209,
+    "rating_delta_team2": -17.277209
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

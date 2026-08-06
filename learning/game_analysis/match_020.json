@@ -1,0 +1,42 @@
+{
+  "match_id": 20,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. Finishing efficiency differed materially between the teams.",
+  "predicted_outcome": "Áustria",
+  "actual_outcome": "Áustria",
+  "brier_score": 0.14809813,
+  "log_loss": 0.78553882,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.1776
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.114
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0048
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Áustria",
+    "evidence": {
+      "Áustria": 0.2727,
+      "Jordânia": 0.0909
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1576.0,
+    "team2_rating_before": 1502.0,
+    "team1_rating_after": 1595.899231,
+    "team2_rating_after": 1482.100769,
+    "rating_delta_team1": 19.899231,
+    "rating_delta_team2": -19.899231
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

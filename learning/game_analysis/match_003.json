@@ -1,0 +1,44 @@
+{
+  "match_id": 3,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Canadá",
+  "actual_outcome": "Empate",
+  "brier_score": 0.33995621,
+  "log_loss": 1.50575831,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.288
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1248
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0792
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "Bosnia-Herzegovina",
+    "evidence": {
+      "team": "Bosnia-Herzegovina",
+      "clock": "21'",
+      "player": "Jovo Lukic",
+      "text": "Goal! Canada 0, Bosnia and Herzegovina 1. Jovo Lukic (Bosnia and Herzegovina) header from very close range to the centre of the goal. Assisted by Sead Kolasinac with a headed pass following a corner."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1570.0,
+    "team2_rating_before": 1450.0,
+    "team1_rating_after": 1566.012654,
+    "team2_rating_after": 1453.987346,
+    "rating_delta_team1": -3.987346,
+    "rating_delta_team2": 3.987346
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

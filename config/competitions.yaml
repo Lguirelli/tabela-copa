@@ -1,0 +1,158 @@
+active_competition: world_cup_2026
+
+engine:
+  random_seed: 2026
+  missing_values: ["", "NA", "N/A", "null", "None"]
+  minimum_matches_for_training: 30
+  minimum_samples_for_pattern: 30
+  feature_correlation_threshold: 0.08
+  monte_carlo_iterations: 12000
+  network_timeout_seconds: 8
+  network_retries: 1
+  max_enrichment_matches_per_run: 24
+  allow_overwrite_observed_data: false
+
+competitions:
+  world_cup_2026:
+    name: Copa do Mundo
+    season: 2026
+    country: Internacional
+    format: group_and_knockout
+    match_id_column: jogo
+    team1_column: equipe1
+    team2_column: equipe2
+    date_column: data
+    phase_column: fase
+    status_column: status
+    final_statuses: [Finalizado, Finished, FT]
+    knockout_phases: ["32 avos de final", "Oitavas de final", "Quartas de final", "Semifinal", "Disputa de 3º lugar", "Final"]
+    datasets:
+      matches: data/matches.csv
+      results: data/resultados_reais.csv
+      predictions: data/modelo_diario/previsoes_dia_a_dia.csv
+      team_match_stats: data/normalized/espn_team_match_stats.csv
+      events: data/normalized/espn_match_events.csv
+      performance: data/entrada/desempenho_manual.csv
+      roster: data/database/players_database.csv
+      team_strength: data/database/team_strengths.csv
+      team_tactics: data/database/teams_tactical.csv
+      referees: data/platform/referees_observed.csv
+      lineups: data/platform/lineups.csv
+      player_match_stats: data/platform/player_match_stats.csv
+      player_availability: data/platform/player_availability.csv
+      pre_match_weather: data/context/pre_match_weather.csv
+      external_matches: data/external/football_data_matches.csv
+      fifa_rankings: data/external/fifa_rankings.csv
+    required_data:
+      matches:
+        - {field: result, priority: high, provider_dataset: results}
+        - {field: date, priority: high, provider_dataset: matches}
+        - {field: competition, priority: high, provider_dataset: configuration}
+        - {field: lineup, priority: medium, provider_dataset: lineups}
+        - {field: events, priority: medium, provider_dataset: events}
+        - {field: statistics, priority: high, provider_dataset: team_match_stats}
+      teams:
+        - {field: recent_form, priority: high, provider_dataset: results, derivable: true}
+        - {field: offensive_strength, priority: high, provider_dataset: results, derivable: true}
+        - {field: defensive_strength, priority: high, provider_dataset: results, derivable: true}
+        - {field: history, priority: medium, provider_dataset: results, derivable: true}
+      players:
+        - {field: minutes, priority: high, provider_dataset: player_match_stats}
+        - {field: performance, priority: high, provider_dataset: player_match_stats}
+        - {field: participation, priority: high, provider_dataset: lineups}
+        - {field: availability, priority: medium, provider_dataset: player_availability}
+    sources:
+      - id: local_espn_events
+        type: local_dataset
+        priority: 2
+        confidence: medium
+        provides: [events]
+        path: data/normalized/espn_match_events.csv
+      - id: local_espn_team_stats
+        type: local_dataset
+        priority: 2
+        confidence: medium
+        provides: [statistics]
+        path: data/normalized/espn_team_match_stats.csv
+      - id: local_manual_performance
+        type: local_dataset
+        priority: 3
+        confidence: variable
+        provides: [team_performance]
+        path: data/entrada/desempenho_manual.csv
+      - id: derived_player_facts
+        type: derived_player_facts
+        priority: 1
+        confidence: derived_high
+        provides: [minutes, availability]
+        enabled: true
+        inputs: [lineups, events, results]
+        rules:
+          preserve_observed_minutes: true
+          label_derived_values: true
+          availability_scope: matchday_squad_only
+      - id: espn_public_summary
+        type: espn_summary
+        priority: 2
+        confidence: medium
+        provides: [events, statistics, lineup, participation, minutes, performance]
+        enabled: true
+        event_map_path: data/normalized/espn_matches.csv
+        summary_url_template: https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event={event_id}
+      - id: espn_public_scoreboard
+        type: espn_scoreboard
+        priority: 2
+        confidence: medium
+        provides: [result, date]
+        enabled: true
+        url: https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=500
+      - id: football_data_v4
+        type: football_data_v4
+        priority: 3
+        confidence: medium_high
+        provides: [independent_results, recent_form, history]
+        enabled: true
+        proactive: true
+        token_env: FOOTBALL_DATA_API_TOKEN
+        url: https://api.football-data.org/v4/competitions/WC/matches?season=2026
+      - id: open_meteo_previous_runs
+        type: open_meteo_previous_runs
+        priority: 3
+        confidence: medium_high
+        provides: [weather]
+        enabled: true
+        proactive: true
+        forecast_offset_days: 1
+        venue_coordinates: data/context/venue_coordinates.csv
+        url: https://previous-runs-api.open-meteo.com/v1/forecast
+  champions_league_template:
+    name: UEFA Champions League
+    season: YYYY
+    country: Europa
+    format: league_and_knockout
+    template: true
+    datasets:
+      matches: data/competitions/champions_league/YYYY/matches.csv
+      results: data/competitions/champions_league/YYYY/results.csv
+      predictions: data/competitions/champions_league/YYYY/predictions.csv
+      team_match_stats: data/competitions/champions_league/YYYY/team_match_stats.csv
+      events: data/competitions/champions_league/YYYY/events.csv
+      lineups: data/competitions/champions_league/YYYY/lineups.csv
+      player_match_stats: data/competitions/champions_league/YYYY/player_match_stats.csv
+      player_availability: data/competitions/champions_league/YYYY/player_availability.csv
+
+  generic_competition_template:
+    name: New Competition
+    season: YYYY
+    country: NA
+    format: league
+    template: true
+    datasets:
+      matches: data/competitions/competition_id/YYYY/matches.csv
+      results: data/competitions/competition_id/YYYY/results.csv
+      predictions: data/competitions/competition_id/YYYY/predictions.csv
+      team_match_stats: data/competitions/competition_id/YYYY/team_match_stats.csv
+      events: data/competitions/competition_id/YYYY/events.csv
+      lineups: data/competitions/competition_id/YYYY/lineups.csv
+      player_match_stats: data/competitions/competition_id/YYYY/player_match_stats.csv
+      player_availability: data/competitions/competition_id/YYYY/player_availability.csv

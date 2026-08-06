@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Modelo diário | Copa 2026</title>
-  <meta name="description" content="Visualização do funcionamento, desempenho e atualização do modelo diário incremental da Copa 2026." />
-  <link rel="stylesheet" href="./src/styles.css" />
-</head>
-<body class="dashboard" data-page="neural-network">
-  <div class="app-frame">
-
-    <aside class="sidebar" aria-label="Menu lateral">
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Visão geral do modelo | Copa 2026</title><meta name="description" content="Resumo do aprendizado temporal, desempenho, variáveis e segurança contra vazamento de dados futuros."><link rel="stylesheet" href="./src/styles.css"></head><body class="dashboard model-dashboard" data-model-page="overview"><div class="app-frame"><aside class="sidebar" aria-label="Menu lateral">
       <div class="brand"><span class="brand-mark">✦</span><strong>Copa 2026</strong></div>
       <nav class="side-nav">
         <p>Fase de grupos</p>
@@ -19,112 +7,23 @@
         <p>Mata-mata</p>
         <a class="side-link" href="mata-mata-chave.html"><span>⌁</span><b>Chaveamento</b></a>
         <a class="side-link" href="mata-mata-jogos.html"><span>☰</span><b>Lista de jogos</b></a>
-        <p>Modelo</p>
-        <a class="side-link is-active" href="rede-neural.html"><span>⎇</span><b>Rede neural</b></a>
+        <p>Modelo preditivo</p>
+        <a class="side-link is-active" href="rede-neural.html"><span>◉</span><b>Visão geral</b></a>
+<a class="side-link" href="modelo-evolucao.html"><span>↗</span><b>Evolução temporal</b></a>
+<a class="side-link" href="modelo-previsoes.html"><span>◎</span><b>Previsões</b></a>
+<a class="side-link" href="modelo-aprendizado.html"><span>✦</span><b>Aprendizado</b></a>
+<a class="side-link" href="modelo-simulacoes.html"><span>⟳</span><b>Simulações</b></a>
+<a class="side-link" href="modelo-versoes.html"><span>◫</span><b>Versões</b></a>
       </nav>
-    </aside>
-
-    <main class="main-view">
-      <header class="topbar">
-        <div>
-          <span class="breadcrumb">Copa 2026 / Modelo</span>
-          <h1>Modelo diário incremental</h1>
-          <p>Visualização do modelo ativo: placar real quando disponível, previsão diária para jogos pendentes e impacto acumulado de resultado, momentum e desempenho dentro da Copa.</p>
-        </div>
-        <div class="top-actions">
-          <span class="mini-stat"><small>Jogos</small><b id="stat-total">104</b></span>
-          <span class="mini-stat"><small>Reais</small><b id="stat-finished">—</b></span>
-          <span class="mini-stat"><small>Modelo</small><b id="stat-simulated">—</b></span>
-        </div>
-      </header>
-
-      <section class="neural-layout neural-layout--visual">
-        <article class="panel neural-panel neural-panel--wide neural-visual-panel">
-          <div class="panel-title"><h2>Mapa do modelo interativo</h2><span>PixiJS / canvas</span></div>
-          <div class="pixi-visual-grid">
-            <div id="pixi-neural-stage" class="pixi-stage" aria-label="Visualização interativa do modelo"></div>
-            <aside id="pixi-neural-details" class="pixi-info" aria-label="Resumo do modelo diário"></aside>
-          </div>
-          <p class="pixi-help">Use o scroll para aproximar, arraste para mover e dê duplo clique para recentralizar. Quando o PixiJS externo não carregar, a página usa renderização Canvas local como fallback.</p>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide">
-          <div class="panel-title"><h2>Funcionamento do modelo</h2><span>pipeline</span></div>
-          <div id="neural-flow" class="neural-flow"></div>
-        </article>
-
-        <article class="panel neural-panel">
-          <div class="panel-title"><h2>Desempenho geral</h2><span>validação</span></div>
-          <div id="neural-metrics" class="neural-metrics"></div>
-        </article>
-
-        <article class="panel neural-panel">
-          <div class="panel-title"><h2>Pesos de entrada</h2><span>variáveis</span></div>
-          <div id="neural-weights" class="neural-weights"></div>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide neural-data-panel">
-          <div class="panel-title"><h2>Curva de treino</h2><span>loss por época</span></div>
-          <div class="viz-canvas-wrap"><canvas id="training-loss-chart" aria-label="Curva de treino e validação da rede neural"></canvas></div>
-        </article>
-
-        <article class="panel neural-panel neural-data-panel">
-          <div class="panel-title"><h2>Desempenho diário</h2><span>validação temporal</span></div>
-          <div class="viz-canvas-wrap"><canvas id="daily-performance-chart" aria-label="Acurácia diária do modelo"></canvas></div>
-        </article>
-
-        <article class="panel neural-panel neural-data-panel">
-          <div class="panel-title"><h2>Importância operacional</h2><span>variáveis do modelo</span></div>
-          <div id="feature-impact-bars" class="feature-impact-bars" aria-label="Pesos e influência das variáveis"></div>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide neural-data-panel">
-          <div class="panel-title"><h2>Mapa dos times</h2><span>liga x jogadores x força</span></div>
-          <div class="viz-canvas-wrap viz-canvas-wrap--large"><canvas id="team-feature-map" aria-label="Mapa 2D das seleções por competitividade de liga e desempenho dos jogadores"></canvas></div>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide neural-data-panel">
-          <div class="panel-title"><h2>Erro do modelo ativo</h2><span>previsão x real</span></div>
-          <div id="prediction-error-board" class="prediction-error-board" aria-label="Distribuição de erros por jogo"></div>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide">
-          <div class="panel-title"><h2>Desempenho por dia</h2><span>previsão x real</span></div>
-          <div class="neural-table-wrap">
-            <table class="neural-table">
-              <thead><tr><th>Data</th><th>Previstos</th><th>Validados</th><th>Vencedor</th><th>Placar exato</th><th>Erro médio gols</th></tr></thead>
-              <tbody id="neural-daily-body"></tbody>
-            </table>
-          </div>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide">
-          <div class="panel-title"><h2>Previsões do modelo diário</h2><span>saída ativa</span></div>
-          <div class="neural-table-wrap">
-            <table class="neural-table">
-              <thead><tr><th>Jogo</th><th>Fase</th><th>Confronto</th><th>Modelo diário</th><th>Vencedor</th><th>Real</th></tr></thead>
-              <tbody id="neural-predictions-body"></tbody>
-            </table>
-          </div>
-        </article>
-
-        <article class="panel neural-panel neural-panel--wide">
-          <div class="panel-title"><h2>Força contextual dos times</h2><span>top 12</span></div>
-          <div id="neural-team-grid" class="neural-team-grid"></div>
-        </article>
-      </section>
-    </main>
+    </aside><main class="main-view"><header class="topbar model-topbar"><div><span class="breadcrumb">Copa 2026 / Cérebro preditivo</span><h1>Visão geral do modelo</h1><p>Resumo do aprendizado temporal, desempenho, variáveis e segurança contra vazamento de dados futuros.</p></div><div class="top-actions model-top-actions"><span class="mini-stat"><small>Jogos</small><b id="model-stat-matches">—</b></span><span class="mini-stat"><small>Acurácia</small><b id="model-stat-accuracy">—</b></span><span class="mini-stat"><small>Placar</small><b id="model-stat-score">—</b></span><span class="mini-stat"><small>Versões</small><b id="model-stat-versions">—</b></span></div></header><section class="model-page model-page--overview">
+  <div id="overview-kpis" class="model-kpi-grid model-kpi-grid--six"></div>
+  <div class="model-grid model-grid--overview">
+    <article class="model-panel model-panel--span2"><div class="model-panel-title"><div><small>Walk-forward</small><h2>Evolução acumulada</h2></div><a href="modelo-evolucao.html">Abrir evolução →</a></div><div class="model-chart model-chart--large"><canvas id="overview-evolution-chart"></canvas></div></article>
+    <article class="model-panel"><div class="model-panel-title"><div><small>Antes x durante</small><h2>Ganho de aprendizado</h2></div></div><div id="overview-comparison" class="comparison-list"></div></article>
+    <article class="model-panel"><div class="model-panel-title"><div><small>Evidência estatística</small><h2>Variáveis aceitas</h2></div><a href="modelo-versoes.html">Ver parâmetros →</a></div><div id="overview-features" class="model-bars"></div></article>
+    <article class="model-panel"><div class="model-panel-title"><div><small>Pós-jogo</small><h2>Fatores mais observados</h2></div><a href="modelo-aprendizado.html">Abrir aprendizado →</a></div><div id="overview-factors" class="model-bars"></div></article>
+    <article class="model-panel"><div class="model-panel-title"><div><small>Modelo final</small><h2>Parâmetros ativos</h2></div></div><div id="overview-parameters" class="parameter-list"></div></article>
+    <article class="model-panel"><div class="model-panel-title"><div><small>Guardrails</small><h2>Segurança temporal</h2></div></div><div id="overview-safety" class="safety-list"></div></article>
+    <article class="model-panel model-panel--span3"><div class="model-panel-title"><div><small>Navegação analítica</small><h2>Explore o cérebro preditivo</h2></div></div><div class="model-shortcuts"><a href="modelo-evolucao.html"><span>↗</span><b>Evolução temporal</b><small>Acurácia, perdas e recalibração dia a dia.</small></a><a href="modelo-previsoes.html"><span>◎</span><b>Previsões por jogo</b><small>Probabilidades, placares, variáveis e dados disponíveis.</small></a><a href="modelo-aprendizado.html"><span>✦</span><b>Aprendizado pós-jogo</b><small>Acertos, erros, fatores e ajustes de rating.</small></a><a href="modelo-simulacoes.html"><span>⟳</span><b>Hipóteses de campeão</b><small>Como as chances mudaram ao longo da Copa.</small></a><a href="modelo-versoes.html"><span>◫</span><b>Versões e pesos</b><small>Checkpoints, parâmetros e histórico do modelo.</small></a></div></article>
   </div>
-
-  <script src="./src/data.js"></script>
-  <script src="./src/team-colors.js"></script>
-  <script src="./src/team-assets.js"></script>
-  <script src="./src/rede-neural-data.js"></script>
-  <script src="./src/modelo-diario-data.js"></script>
-  <script src="./src/prediction-source.js"></script>
-  <script src="https://pixijs.download/release/pixi.min.js"></script>
-  <script src="./src/pixi-neural-view.js"></script>
-  <script src="./src/dashboard.js"></script>
-  <script src="./src/neural-data-viz.js"></script>
-</body>
-</html>
+</section></main></div><script src="./src/team-assets.js"></script><script src="./src/model-analytics-data.js"></script><script src="./src/model-pages.js"></script></body></html>

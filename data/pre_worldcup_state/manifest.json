@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-08-06T21:06:28.383426+00:00",
+  "snapshot_at": "2026-06-11T03:59:59+00:00",
+  "competition_id": "world_cup_2026",
+  "teams": 48,
+  "players": 1248,
+  "context_matches": 104,
+  "available_team_fields": [
+    "temporal_status",
+    "coach",
+    "tactical_style",
+    "base_system",
+    "initial_strength_proxy",
+    "attack_proxy",
+    "midfield_proxy",
+    "defense_proxy",
+    "goalkeeper_proxy",
+    "experience_proxy",
+    "possession_proxy",
+    "pressing_proxy",
+    "intensity_proxy"
+  ],
+  "unavailable_fields": [
+    "fifa_ranking",
+    "recent_matches",
+    "recent_minutes",
+    "recent_assists",
+    "injuries",
+    "physical_condition",
+    "qualifying_performance",
+    "weather_forecast",
+    "travel_distance",
+    "psychological_moment"
+  ],
+  "inputs": [
+    {
+      "path": "data/database/team_strengths.csv",
+      "sha256": "53cf67c550c2ccc341ad5f8073885ffd03e16f4cdf42e23de4811d0a546bf97f",
+      "size_bytes": 11369
+    },
+    {
+      "path": "data/database/teams_tactical.csv",
+      "sha256": "26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd",
+      "size_bytes": 12353
+    },
+    {
+      "path": "data/database/players_database.csv",
+      "sha256": "156624077a8cdc1d51a5d44be9d9d5f23233eef136ceaedd3eaf43fccd64b0eb",
+      "size_bytes": 624647
+    },
+    {
+      "path": "data/matches.csv",
+      "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b",
+      "size_bytes": 15867
+    },
+    {
+      "path": "data/external/fifa_rankings.csv",
+      "sha256": "d96be721fa0801494f593586c3421e5c29c39b755757eebeb3638bf78bf3bbf3",
+      "size_bytes": 76
+    },
+    {
+      "path": "data/external/football_data_matches.csv",
+      "sha256": "bd6b70e1e60310cc285aaf9fa5037e15cf822c401cd8b26d9cf27893d0154ae2",
+      "size_bytes": 190
+    }
+  ]
+}

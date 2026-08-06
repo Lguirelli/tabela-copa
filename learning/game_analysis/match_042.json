@@ -1,0 +1,42 @@
+{
+  "match_id": 42,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "França",
+  "actual_outcome": "França",
+  "brier_score": 0.01700141,
+  "log_loss": 0.19968829,
+  "goal_absolute_error": 0,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": 0.43
+    },
+    {
+      "factor": "rating",
+      "contribution": 0.270906
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.0864
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "França",
+    "evidence": {
+      "França": 5.0,
+      "Iraque": 0.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1564.775857,
+    "team2_rating_before": 1451.898523,
+    "team1_rating_after": 1584.422147,
+    "team2_rating_after": 1432.252233,
+    "rating_delta_team1": 19.646291,
+    "rating_delta_team2": -19.646291
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

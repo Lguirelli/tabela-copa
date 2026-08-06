@@ -1,0 +1,289 @@
+{
+  "generated_at": "2026-08-06T20:55:51.457095+00:00",
+  "repository_root": "tabela-copa-main-atualizado",
+  "files_analyzed": 1127,
+  "files_by_extension": {
+    ".css": 1,
+    ".csv": 82,
+    ".html": 13,
+    ".ipynb": 2,
+    ".js": 11,
+    ".json": 708,
+    ".jsonl": 2,
+    ".md": 74,
+    ".pdf": 1,
+    ".png": 96,
+    ".pt": 1,
+    ".py": 74,
+    ".svg": 48,
+    ".toml": 1,
+    ".txt": 3,
+    ".yaml": 4,
+    ".yml": 3,
+    "<none>": 3
+  },
+  "temporal_input_files": [
+    {
+      "path": "data/matches.csv",
+      "exists": true,
+      "size_bytes": 15867,
+      "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b"
+    },
+    {
+      "path": "data/resultados_reais.csv",
+      "exists": true,
+      "size_bytes": 35210,
+      "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101"
+    },
+    {
+      "path": "data/database/team_strengths.csv",
+      "exists": true,
+      "size_bytes": 11369,
+      "sha256": "53cf67c550c2ccc341ad5f8073885ffd03e16f4cdf42e23de4811d0a546bf97f"
+    },
+    {
+      "path": "data/database/teams_tactical.csv",
+      "exists": true,
+      "size_bytes": 12353,
+      "sha256": "26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd"
+    },
+    {
+      "path": "data/database/players_database.csv",
+      "exists": true,
+      "size_bytes": 624647,
+      "sha256": "156624077a8cdc1d51a5d44be9d9d5f23233eef136ceaedd3eaf43fccd64b0eb"
+    },
+    {
+      "path": "data/normalized/espn_match_events.csv",
+      "exists": true,
+      "size_bytes": 1866089,
+      "sha256": "60ac4e961f1d2a05c9ee7381d8bba8a26139146bfad475889b9a1a65215c2ccd"
+    },
+    {
+      "path": "data/normalized/espn_team_match_stats.csv",
+      "exists": true,
+      "size_bytes": 74940,
+      "sha256": "7e4ae352e2b590d9bc2c5357b4c3ce8cecf5e9cc7b4790252fca7feeb72c0694"
+    },
+    {
+      "path": "data/platform/lineups.csv",
+      "exists": true,
+      "size_bytes": 1515258,
+      "sha256": "09483174553e5ef41db9afc3d6baee666709db131ead46712d3145373a7e4bf6"
+    },
+    {
+      "path": "data/platform/player_match_stats.csv",
+      "exists": true,
+      "size_bytes": 2236156,
+      "sha256": "68d6240d8175b0643bb0f37d3abf503da8171d25c768af627f1e4d2632565b88"
+    },
+    {
+      "path": "data/platform/player_availability.csv",
+      "exists": true,
+      "size_bytes": 1767464,
+      "sha256": "ce9012a94b20ebc526da58e6874c6a91d994755cd675eef30f7d4363d653adf7"
+    },
+    {
+      "path": "data/normalized/espn_match_commentary.csv",
+      "exists": true,
+      "size_bytes": 4338191,
+      "sha256": "3eeb5821be0f52494a8dd17f5cc9d1034ee43dc9dba1a2e83af165670ba6bb61"
+    },
+    {
+      "path": "data/platform/match_officials.csv",
+      "exists": true,
+      "size_bytes": 24752,
+      "sha256": "28bc1a4b15c6aacf33e3a998042a756f89bd3c8bfe0b4f6012ec0f0632b06195"
+    },
+    {
+      "path": "data/normalized/results_validated.csv",
+      "exists": true,
+      "size_bytes": 52185,
+      "sha256": "65ab072976e28a86d69d0ada781522651a1b6f509c4bd3bc567a458b791f0508"
+    }
+  ],
+  "problems_found": [
+    {
+      "id": "NO_AS_OF_CONTROL_IN_LEGACY_MODEL",
+      "severity": "high",
+      "status": "MITIGATED_BY_TEMPORAL_LAYER",
+      "description": "Legacy prediction artifacts combine final results and model fields without a formal per-record knowledge cutoff."
+    },
+    {
+      "id": "KNOCKOUT_TEAM_LEAKAGE_RISK",
+      "severity": "high",
+      "status": "MITIGATED_BY_FIXTURE_KNOWN_AT",
+      "description": "The finalized match table contains future knockout teams; historical replay must hide them until parent results are available."
+    },
+    {
+      "id": "PRE_TOURNAMENT_SOURCE_TIMESTAMPS_MISSING",
+      "severity": "high",
+      "status": "OPEN_LIMITATION",
+      "description": "Ranking, recent form, injuries and recent player minutes do not have archived publication timestamps and remain NA."
+    },
+    {
+      "id": "PLAYER_ADVANCED_METRICS_AND_HISTORICAL_AVAILABILITY_INCOMPLETE",
+      "severity": "medium",
+      "status": "OPEN_LIMITATION",
+      "description": "Observed lineups cover all matches and post-match minutes are derived with provenance labels; xG, xA, ratings and historical pre-match availability remain unavailable."
+    },
+    {
+      "id": "POST_MATCH_FACTS_BACKFILLED",
+      "severity": "medium",
+      "status": "CONTROLLED",
+      "description": "Some events and team statistics were collected after their matches; they are labeled as backfilled post-match facts and cannot enter pre-match snapshots."
+    },
+    {
+      "id": "MULTIPLE_PREDICTION_SYSTEMS",
+      "severity": "medium",
+      "status": "DOCUMENTED",
+      "description": "Legacy daily/neural predictions are preserved for compatibility; the temporal engine writes to separate predictions, learning and model-version directories."
+    }
+  ],
+  "duplicate_content_groups": [
+    [
+      ".nojekyll",
+      "legacy/__init__.py"
+    ],
+    [
+      "models/error_learning.json",
+      "models/competitions/world_cup_2026/error_learning.json"
+    ],
+    [
+      "models/features_registry.json",
+      "models/competitions/world_cup_2026/features_registry.json"
+    ],
+    [
+      "models/patterns.json",
+      "models/competitions/world_cup_2026/patterns.json"
+    ],
+    [
+      "data/resultados.csv",
+      "data/resultados_reais.csv"
+    ],
+    [
+      "data/matches.csv",
+      "data/database/matches.csv"
+    ],
+    [
+      "logs/enrichment_log.json",
+      "logs/competitions/world_cup_2026/enrichment_log.json"
+    ],
+    [
+      "reports/model_recalibration_report.json",
+      "reports/competitions/world_cup_2026/model_recalibration_report.json"
+    ],
+    [
+      "reports/validation_report.json",
+      "reports/competitions/world_cup_2026/validation_report.json"
+    ],
+    [
+      "reports/derived_player_facts_report.json",
+      "reports/competitions/world_cup_2026/derived_player_facts_report.json"
+    ],
+    [
+      "reports/data_completeness_report.json",
+      "reports/competitions/world_cup_2026/data_completeness_report.json"
+    ],
+    [
+      "reports/enrichment_report.json",
+      "reports/competitions/world_cup_2026/enrichment_report.json"
+    ],
+    [
+      "reports/final_system_status.json",
+      "reports/competitions/world_cup_2026/final_system_status.json"
+    ],
+    [
+      "models/simulations/latest.json",
+      "models/competitions/world_cup_2026/simulations/latest.json"
+    ],
+    [
+      "models/simulations/latest.csv",
+      "models/competitions/world_cup_2026/simulations/latest.csv"
+    ],
+    [
+      "data/temporal/missing_information_queue.json",
+      "data/queues/missing_information_queue.json"
+    ],
+    [
+      "data/queues/missing_data.json",
+      "data/competitions/world_cup_2026/queues/missing_data.json"
+    ],
+    [
+      "data/modelo_diario/previsoes_dia_a_dia.csv",
+      "data/modelo_diario/projecao_chaveamento_completa.csv"
+    ],
+    [
+      "assets/teams/SCO_escocia/sources.md",
+      "assets/teams/NLD_holanda/sources.md",
+      "assets/teams/UZB_uzbequistao/sources.md",
+      "assets/teams/HTI_haiti/sources.md",
+      "assets/teams/FRA_franca/sources.md",
+      "assets/teams/DEU_alemanha/sources.md",
+      "assets/teams/ECU_equador/sources.md",
+      "assets/teams/MAR_marrocos/sources.md",
+      "assets/teams/EGY_egito/sources.md",
+      "assets/teams/COL_colombia/sources.md",
+      "assets/teams/URY_uruguai/sources.md",
+      "assets/teams/GHA_gana/sources.md",
+      "assets/teams/ZAF_africa-do-sul/sources.md",
+      "assets/teams/SAU_arabia-saudita/sources.md",
+      "assets/teams/CZE_tchequia/sources.md",
+      "assets/teams/PAN_panama/sources.md",
+      "assets/teams/TUR_turquia/sources.md",
+      "assets/teams/BRA_brasil/sources.md",
+      "assets/teams/USA_estados-unidos/sources.md",
+      "assets/teams/TUN_tunisia/sources.md",
+      "assets/teams/SWE_suecia/sources.md",
+      "assets/teams/AUS_australia/sources.md",
+      "assets/teams/MEX_mexico/sources.md",
+      "assets/teams/NZL_nova-zelandia/sources.md",
+      "assets/teams/PRT_portugal/sources.md",
+      "assets/teams/CUW_curacao/sources.md",
+      "assets/teams/ESP_espanha/sources.md",
+      "assets/teams/CHE_suica/sources.md",
+      "assets/teams/JPN_japao/sources.md",
+      "assets/teams/IRQ_iraque/sources.md",
+      "assets/teams/NOR_noruega/sources.md",
+      "assets/teams/ARG_argentina/sources.md",
+      "assets/teams/ENG_inglaterra/sources.md",
+      "assets/teams/BEL_belgica/sources.md",
+      "assets/teams/KOR_coreia-do-sul/sources.md",
+      "assets/teams/JOR_jordania/sources.md",
+      "assets/teams/IRN_ira/sources.md",
+      "assets/teams/DZA_argelia/sources.md",
+      "assets/teams/HRV_croacia/sources.md",
+      "assets/teams/COD_rd-congo/sources.md",
+      "assets/teams/QAT_catar/sources.md",
+      "assets/teams/CPV_cabo-verde/sources.md",
+      "assets/teams/SEN_senegal/sources.md",
+      "assets/teams/PRY_paraguai/sources.md",
+      "assets/teams/CAN_canada/sources.md",
+      "assets/teams/CIV_costa-do-marfim/sources.md",
+      "assets/teams/AUT_austria/sources.md",
+      "assets/teams/BIH_bosnia-e-herzegovina/sources.md"
+    ]
+  ],
+  "duplicate_note": "Exact duplicates are reported for audit only; compatibility mirrors and asset variants are not removed automatically.",
+  "implemented_improvements": [
+    "pre-tournament state with field-level temporal status",
+    "event-driven historical replay",
+    "fixture visibility control for knockout rounds",
+    "pre-match knowledge ledger",
+    "missing-information queue and timestamp-safe collection",
+    "online Elo/Poisson learning and conservative recalibration",
+    "shadow-only coefficient search with explicit activation gate",
+    "FIFA ranking, independent match-feed and archived pre-match weather schemas",
+    "post-match error, causal-association and significance analyses",
+    "complete ESPN event, commentary, team-stat, player-stat, lineup and main-referee coverage",
+    "post-match player minutes derived with explicit provenance and temporal labels",
+    "statistical feature discovery with permutation evidence",
+    "daily model versions and Monte Carlo simulations",
+    "temporal validation tests and GitHub Actions"
+  ],
+  "risk_summary": {
+    "blocking_unmitigated": 0,
+    "open_data_limitations": 2,
+    "controlled_or_mitigated": 4
+  }
+}

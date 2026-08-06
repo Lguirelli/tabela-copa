@@ -1,0 +1,42 @@
+{
+  "match_id": 59,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Estados Unidos",
+  "actual_outcome": "Turquia",
+  "brier_score": 0.53326786,
+  "log_loss": 2.92393268,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": -0.365
+    },
+    {
+      "factor": "rating",
+      "contribution": -0.274607
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.1032
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Estados Unidos",
+    "evidence": {
+      "Turquia": 3.0,
+      "Estados Unidos": 7.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1534.040969,
+    "team2_rating_before": 1648.460362,
+    "team1_rating_after": 1560.818049,
+    "team2_rating_after": 1621.683282,
+    "rating_delta_team1": 26.77708,
+    "rating_delta_team2": -26.77708
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

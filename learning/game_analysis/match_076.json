@@ -1,0 +1,42 @@
+{
+  "match_id": 76,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Brasil",
+  "actual_outcome": "Brasil",
+  "brier_score": 0.13063274,
+  "log_loss": 0.71558504,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "rating",
+      "contribution": 0.07955
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.066667
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Brasil",
+    "evidence": {
+      "Brasil": 7.0,
+      "Japão": 2.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1625.193711,
+    "team2_rating_before": 1592.04767,
+    "team1_rating_after": 1643.578981,
+    "team2_rating_after": 1573.6624,
+    "rating_delta_team1": 18.385271,
+    "rating_delta_team2": -18.385271
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

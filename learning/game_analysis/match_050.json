@@ -1,0 +1,42 @@
+{
+  "match_id": 50,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Marrocos",
+  "actual_outcome": "Marrocos",
+  "brier_score": 0.04846425,
+  "log_loss": 0.37035813,
+  "goal_absolute_error": 4,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.249831
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.2325
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.0504
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Marrocos",
+    "evidence": {
+      "Marrocos": 11.0,
+      "Haiti": 2.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1560.715236,
+    "team2_rating_before": 1456.618932,
+    "team1_rating_after": 1578.571271,
+    "team2_rating_after": 1438.762897,
+    "rating_delta_team1": 17.856035,
+    "rating_delta_team2": -17.856035
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

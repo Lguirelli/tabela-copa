@@ -1,0 +1,18 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Previsões por jogo | Copa 2026</title><meta name="description" content="Explore cada previsão pré-jogo, as probabilidades, variáveis disponíveis e o confronto com o resultado real."><link rel="stylesheet" href="./src/styles.css"></head><body class="dashboard model-dashboard" data-model-page="predictions"><div class="app-frame"><aside class="sidebar" aria-label="Menu lateral">
+      <div class="brand"><span class="brand-mark">✦</span><strong>Copa 2026</strong></div>
+      <nav class="side-nav">
+        <p>Fase de grupos</p>
+        <a class="side-link" href="grupos-resultados.html"><span>▦</span><b>Resultados gerais</b></a>
+        <a class="side-link" href="grupos-jogos.html"><span>☷</span><b>Tabela de jogos</b></a>
+        <p>Mata-mata</p>
+        <a class="side-link" href="mata-mata-chave.html"><span>⌁</span><b>Chaveamento</b></a>
+        <a class="side-link" href="mata-mata-jogos.html"><span>☰</span><b>Lista de jogos</b></a>
+        <p>Modelo preditivo</p>
+        <a class="side-link" href="rede-neural.html"><span>◉</span><b>Visão geral</b></a>
+<a class="side-link" href="modelo-evolucao.html"><span>↗</span><b>Evolução temporal</b></a>
+<a class="side-link is-active" href="modelo-previsoes.html"><span>◎</span><b>Previsões</b></a>
+<a class="side-link" href="modelo-aprendizado.html"><span>✦</span><b>Aprendizado</b></a>
+<a class="side-link" href="modelo-simulacoes.html"><span>⟳</span><b>Simulações</b></a>
+<a class="side-link" href="modelo-versoes.html"><span>◫</span><b>Versões</b></a>
+      </nav>
+    </aside><main class="main-view"><header class="topbar model-topbar"><div><span class="breadcrumb">Copa 2026 / Cérebro preditivo</span><h1>Previsões por jogo</h1><p>Explore cada previsão pré-jogo, as probabilidades, variáveis disponíveis e o confronto com o resultado real.</p></div><div class="top-actions model-top-actions"><span class="mini-stat"><small>Jogos</small><b id="model-stat-matches">—</b></span><span class="mini-stat"><small>Acurácia</small><b id="model-stat-accuracy">—</b></span><span class="mini-stat"><small>Placar</small><b id="model-stat-score">—</b></span><span class="mini-stat"><small>Versões</small><b id="model-stat-versions">—</b></span></div></header><section class="model-page model-page--split"><article class="model-panel model-panel--list"><div class="model-panel-title model-panel-title--stack"><div><small>104 snapshots pré-jogo</small><h2>Previsões registradas</h2></div><span id="prediction-count">—</span></div><div class="model-filters"><input id="prediction-search" type="search" placeholder="Buscar jogo ou seleção"><select id="prediction-phase"></select><select id="prediction-result"><option value="">Acertos e erros</option><option value="hit">Somente acertos</option><option value="miss">Somente erros</option></select><select id="prediction-sort"><option value="match">Ordem dos jogos</option><option value="confidence">Maior confiança</option><option value="error">Maior log loss</option></select></div><div id="prediction-list" class="prediction-list"></div></article><article id="prediction-detail" class="model-panel model-detail-panel"></article></section></main></div><script src="./src/team-assets.js"></script><script src="./src/model-analytics-data.js"></script><script src="./src/model-pages.js"></script></body></html>

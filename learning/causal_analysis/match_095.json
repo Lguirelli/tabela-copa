@@ -1,0 +1,233 @@
+{
+  "match_id": 95,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Egypt",
+    "clock": "15'",
+    "player": "Yasser Ibrahim",
+    "text": "Goal! Argentina 0, Egypt 1. Yasser Ibrahim (Egypt) header from the centre of the box to the bottom right corner. Assisted by Marwan Attia with a cross following a corner."
+  },
+  "red_cards": {
+    "Argentina": 0,
+    "Egito": 0
+  },
+  "substitutions_detected": {
+    "Argentina": 5,
+    "Egito": 4
+  },
+  "team_stats": {
+    "Argentina": {
+      "stat_possessionPct": 63.6,
+      "stat_totalShots": 19.0,
+      "stat_shotsOnTarget": 7.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 0.0
+    },
+    "Egito": {
+      "stat_possessionPct": 36.4,
+      "stat_totalShots": 5.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 4.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Argentina",
+      "player_id": "espn:45843",
+      "player": "Lionel Messi",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 5,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:285450",
+      "player": "Enzo Fernández",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:96970",
+      "player": "Cristian Romero",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:265417",
+      "player": "Yasser Ibrahim",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:378495",
+      "player": "Mostafa Zico",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:219713",
+      "player": "Lautaro Martínez",
+      "position": "NA",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:228262",
+      "player": "Gonzalo Montiel",
+      "position": "NA",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:276440",
+      "player": "Haissem Hassan",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:357112",
+      "player": "Marawan Attia",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:308915",
+      "player": "Mostafa Shoubir",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:277206",
+      "player": "Julián Álvarez",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:249299",
+      "player": "Alexis Mac Allister",
+      "position": "CM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760509"
+    }
+  ],
+  "efficiency": {
+    "Argentina": 0.157895,
+    "Egito": 0.4
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Argentina",
+      "evidence": {
+        "Argentina": 7.0,
+        "Egito": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Egito",
+      "evidence": {
+        "Argentina": 0.1579,
+        "Egito": 0.4
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Egypt",
+      "evidence": {
+        "team": "Egypt",
+        "clock": "15'",
+        "player": "Yasser Ibrahim",
+        "text": "Goal! Argentina 0, Egypt 1. Yasser Ibrahim (Egypt) header from the centre of the box to the bottom right corner. Assisted by Marwan Attia with a cross following a corner."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Argentina",
+    "evidence": {
+      "Argentina": 7.0,
+      "Egito": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

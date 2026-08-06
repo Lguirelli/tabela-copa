@@ -1,0 +1,220 @@
+{
+  "match_id": 78,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Norway",
+    "clock": "39'",
+    "player": "Antonio Nusa",
+    "text": "Goal! Côte d'Ivoire 0, Norway 1. Antonio Nusa (Norway) right footed shot from the left side of the box to the top right corner. Assisted by Martin Ødegaard."
+  },
+  "red_cards": {
+    "Costa do Marfim": 0,
+    "Noruega": 0
+  },
+  "substitutions_detected": {
+    "Costa do Marfim": 5,
+    "Noruega": 3
+  },
+  "team_stats": {
+    "Costa do Marfim": {
+      "stat_possessionPct": 47.0,
+      "stat_totalShots": 14.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 1.0
+    },
+    "Noruega": {
+      "stat_possessionPct": 53.0,
+      "stat_totalShots": 9.0,
+      "stat_shotsOnTarget": 4.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Noruega",
+      "player_id": "espn:253989",
+      "player": "Erling Haaland",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 4,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Costa do Marfim",
+      "player_id": "espn:291630",
+      "player": "Amad Diallo",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Noruega",
+      "player_id": "espn:319368",
+      "player": "Antonio Nusa",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Costa do Marfim",
+      "player_id": "espn:210397",
+      "player": "Nicolas Pépé",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Noruega",
+      "player_id": "espn:203669",
+      "player": "Martin Ødegaard",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Noruega",
+      "player_id": "espn:205924",
+      "player": "Patrick Berg",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Noruega",
+      "player_id": "espn:193610",
+      "player": "Ørjan Nyland",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Costa do Marfim",
+      "player_id": "espn:261595",
+      "player": "Yahia Fofana",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Costa do Marfim",
+      "player_id": "espn:308449",
+      "player": "Emmanuel Agbadou",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Costa do Marfim",
+      "player_id": "espn:194711",
+      "player": "Franck Kessié",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Noruega",
+      "player_id": "espn:272867",
+      "player": "Torbjørn Heggem",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    },
+    {
+      "team": "Costa do Marfim",
+      "player_id": "espn:250888",
+      "player": "Ghislain Konan",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490"
+    }
+  ],
+  "efficiency": {
+    "Costa do Marfim": 0.071429,
+    "Noruega": 0.222222
+  },
+  "important_factors": [
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Noruega",
+      "evidence": {
+        "Costa do Marfim": 0.0714,
+        "Noruega": 0.2222
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Norway",
+      "evidence": {
+        "team": "Norway",
+        "clock": "39'",
+        "player": "Antonio Nusa",
+        "text": "Goal! Côte d'Ivoire 0, Norway 1. Antonio Nusa (Norway) right footed shot from the left side of the box to the top right corner. Assisted by Martin Ødegaard."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Noruega",
+    "evidence": {
+      "Costa do Marfim": 0.0714,
+      "Noruega": 0.2222
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-20T14:44:34.466662+00:00",
+  "competition_id": "world_cup_2026",
+  "mapping_source": "data/normalized/espn_matches.csv + data/matches.csv + team aliases",
+  "policy": "Only deterministic mappings are applied; unresolved rows are quarantined and marked CONFLICTING_DATA.",
+  "results": {
+    "events": {
+      "rows": 11274,
+      "mapped": 374,
+      "quarantined": 0
+    },
+    "team_match_stats": {
+      "rows": 208,
+      "mapped": 6,
+      "quarantined": 18
+    }
+  }
+}

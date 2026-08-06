@@ -1,0 +1,42 @@
+{
+  "match_id": 17,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Senegal",
+  "actual_outcome": "França",
+  "brier_score": 0.22513067,
+  "log_loss": 1.1037173,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": -0.0528
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0216
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": 0.0144
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "França",
+    "evidence": {
+      "França": 8.0,
+      "Senegal": 2.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1538.0,
+    "team2_rating_before": 1560.0,
+    "team1_rating_after": 1564.775857,
+    "team2_rating_after": 1533.224143,
+    "rating_delta_team1": 26.775857,
+    "rating_delta_team2": -26.775857
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

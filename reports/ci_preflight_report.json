@@ -1,0 +1,12 @@
+{
+  "status": "CLEAN",
+  "mode": "check",
+  "forbidden_paths": [],
+  "actions": [],
+  "canonical_workflows": [
+    "ci.yml",
+    "update_pipeline.yml",
+    "static.yml"
+  ],
+  "legacy_location": "legacy/"
+}

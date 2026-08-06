@@ -1,0 +1,42 @@
+{
+  "match_id": 80,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Inglaterra",
+  "actual_outcome": "Inglaterra",
+  "brier_score": 0.09182164,
+  "log_loss": 0.55795043,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.229435
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.1
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Inglaterra",
+    "evidence": {
+      "Inglaterra": 7.0,
+      "RD Congo": 2.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1615.788544,
+    "team2_rating_before": 1520.190491,
+    "team1_rating_after": 1630.652748,
+    "team2_rating_after": 1505.326286,
+    "rating_delta_team1": 14.864204,
+    "rating_delta_team2": -14.864204
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

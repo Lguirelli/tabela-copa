@@ -1,0 +1,1650 @@
+{
+  "generated_at": "2026-08-06T20:51:45.201459+00:00",
+  "version": "model_after_2026-06-24",
+  "training_cutoff": "2026-06-25T02:00:00+00:00",
+  "competition_id": "world_cup_2026",
+  "model_parameters": {
+    "base_goals": 1.3945461014039162,
+    "rating_weight": 0.24,
+    "attack_weight": 0.12,
+    "defense_weight": 0.11,
+    "form_weight": 0.1,
+    "schedule_weight": 0.04,
+    "rest_weight": 0.015,
+    "experience_weight": 0.02,
+    "goalkeeper_weight": 0.025,
+    "heat_weight": 0.0,
+    "wind_weight": 0.0,
+    "rain_weight": 0.0,
+    "probability_temperature": 0.85,
+    "elo_k": 24.0,
+    "learning_rate": 0.03
+  },
+  "metrics": {
+    "samples": 52,
+    "mean_log_loss": 0.97270879,
+    "mean_brier_score": 0.19358313,
+    "outcome_accuracy": 0.53846154,
+    "recent_20_log_loss": 0.84333805
+  },
+  "recalibration": {
+    "accepted": true,
+    "samples": 52,
+    "previous_temperature": 0.95,
+    "selected_temperature": 0.85,
+    "previous_log_loss": 0.97184437,
+    "selected_log_loss": 0.9717791,
+    "candidate_temperatures": [
+      {
+        "temperature": 0.75,
+        "log_loss": 0.9754335090000458
+      },
+      {
+        "temperature": 0.85,
+        "log_loss": 0.9717790989144764
+      },
+      {
+        "temperature": 0.95,
+        "log_loss": 0.9718443692310321
+      },
+      {
+        "temperature": 1.0,
+        "log_loss": 0.9727088071647676
+      },
+      {
+        "temperature": 1.1,
+        "log_loss": 0.9754309958855308
+      },
+      {
+        "temperature": 1.2,
+        "log_loss": 0.978929613533151
+      },
+      {
+        "temperature": 1.35,
+        "log_loss": 0.9847805993583655
+      }
+    ],
+    "parameter_search": {
+      "accepted": false,
+      "eligible": true,
+      "mode": "SHADOW_ONLY",
+      "samples": 52,
+      "validation_samples": 13,
+      "baseline_log_loss": 0.76577047,
+      "selected": {
+        "parameter": "form_weight",
+        "value": 0.12,
+        "log_loss": 0.75135023
+      },
+      "improvement": 0.01442024,
+      "rule": "one coefficient per checkpoint; chronological holdout log-loss improvement >= 0.002",
+      "activation_note": "Shadow candidates never alter predictions unless enable_online_weight_recalibration is explicitly enabled after external validation."
+    },
+    "base_goals_before": 1.39262257,
+    "base_goals_after": 1.3945461,
+    "observed_goals_per_team_recent": 1.41666667
+  },
+  "team_state": {
+    "Alemanha": {
+      "team": "Alemanha",
+      "initial_strength": 69.5,
+      "rating": 1636.7891686374467,
+      "attack_proxy": 4.92,
+      "defense_proxy": 6.03,
+      "goalkeeper_proxy": 6.3,
+      "experience_proxy": 8.23,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 9,
+      "goals_against": 2,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        6.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1495.0,
+        1551.5578907360346
+      ],
+      "last_result_available_at": "2026-06-20T23:30:00+00:00",
+      "last_kickoff_at": "2026-06-20T20:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 3.5,
+      "schedule_strength": 1523.2789453680173
+    },
+    "Argentina": {
+      "team": "Argentina",
+      "initial_strength": 70.9,
+      "rating": 1655.1877333160546,
+      "attack_proxy": 5.56,
+      "defense_proxy": 5.91,
+      "goalkeeper_proxy": 6.0,
+      "experience_proxy": 9.05,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 5,
+      "goals_against": 0,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        3.0,
+        2.0
+      ],
+      "recent_opponent_ratings": [
+        1548.0,
+        1595.8992313345677
+      ],
+      "last_result_available_at": "2026-06-22T20:30:00+00:00",
+      "last_kickoff_at": "2026-06-22T17:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 2.5,
+      "schedule_strength": 1571.949615667284
+    },
+    "Argélia": {
+      "team": "Argélia",
+      "initial_strength": 64.8,
+      "rating": 1542.2007248881782,
+      "attack_proxy": 5.3,
+      "defense_proxy": 5.81,
+      "goalkeeper_proxy": 4.8,
+      "experience_proxy": 8.01,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 2,
+      "goals_against": 4,
+      "recent_points": [
+        0.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        -3.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1609.0,
+        1482.1007686654323
+      ],
+      "last_result_available_at": "2026-06-23T06:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T03:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": -1.0,
+      "schedule_strength": 1545.550384332716
+    },
+    "Arábia Saudita": {
+      "team": "Arábia Saudita",
+      "initial_strength": 63.4,
+      "rating": 1508.2292164164505,
+      "attack_proxy": 5.17,
+      "defense_proxy": 5.12,
+      "goalkeeper_proxy": 5.97,
+      "experience_proxy": 8.39,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 1,
+      "goals_against": 5,
+      "recent_points": [
+        1.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        -4.0
+      ],
+      "recent_opponent_ratings": [
+        1563.0,
+        1585.7661599587443
+      ],
+      "last_result_available_at": "2026-06-21T19:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T16:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -2.0,
+      "schedule_strength": 1574.3830799793723
+    },
+    "Austrália": {
+      "team": "Austrália",
+      "initial_strength": 60.9,
+      "rating": 1521.1272184547822,
+      "attack_proxy": 4.91,
+      "defense_proxy": 5.01,
+      "goalkeeper_proxy": 5.73,
+      "experience_proxy": 7.93,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 2,
+      "goals_against": 2,
+      "recent_points": [
+        3.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        2.0,
+        -2.0
+      ],
+      "recent_opponent_ratings": [
+        1590.0,
+        1629.6371778792625
+      ],
+      "last_result_available_at": "2026-06-19T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-19T19:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1609.8185889396314
+    },
+    "Brasil": {
+      "team": "Brasil",
+      "initial_strength": 67.9,
+      "rating": 1625.1937108321001,
+      "attack_proxy": 5.51,
+      "defense_proxy": 5.44,
+      "goalkeeper_proxy": 6.4,
+      "experience_proxy": 8.4,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 7,
+      "goals_for": 7,
+      "goals_against": 1,
+      "recent_points": [
+        1.0,
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        3.0,
+        3.0
+      ],
+      "recent_opponent_ratings": [
+        1535.0,
+        1477.2117910903817,
+        1579.5846064428774
+      ],
+      "last_result_available_at": "2026-06-25T01:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T22:00:00+00:00",
+      "form_points": 2.3333333333333335,
+      "form_goal_diff": 2.0,
+      "schedule_strength": 1530.5987991777529
+    },
+    "Bélgica": {
+      "team": "Bélgica",
+      "initial_strength": 69.8,
+      "rating": 1592.6291302275845,
+      "attack_proxy": 5.42,
+      "defense_proxy": 5.61,
+      "goalkeeper_proxy": 6.03,
+      "experience_proxy": 8.74,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 2,
+      "goals_for": 1,
+      "goals_against": 1,
+      "recent_points": [
+        1.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1494.0,
+        1539.5563965144343
+      ],
+      "last_result_available_at": "2026-06-21T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T19:00:00+00:00",
+      "form_points": 1.0,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1516.7781982572171
+    },
+    "Bósnia e Herzegovina": {
+      "team": "Bósnia e Herzegovina",
+      "initial_strength": 55.0,
+      "rating": 1468.614299166064,
+      "attack_proxy": 4.26,
+      "defense_proxy": 4.97,
+      "goalkeeper_proxy": 4.77,
+      "experience_proxy": 7.51,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 4,
+      "goals_for": 5,
+      "goals_against": 6,
+      "recent_points": [
+        1.0,
+        0.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        -3.0,
+        2.0
+      ],
+      "recent_opponent_ratings": [
+        1570.0,
+        1599.7952155219152,
+        1531.7325660969632
+      ],
+      "last_result_available_at": "2026-06-24T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T19:00:00+00:00",
+      "form_points": 1.3333333333333333,
+      "form_goal_diff": -0.3333333333333333,
+      "schedule_strength": 1567.175927206293
+    },
+    "Cabo Verde": {
+      "team": "Cabo Verde",
+      "initial_strength": 59.3,
+      "rating": 1498.4785995035236,
+      "attack_proxy": 4.3,
+      "defense_proxy": 5.07,
+      "goalkeeper_proxy": 5.7,
+      "experience_proxy": 8.14,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 2,
+      "goals_for": 2,
+      "goals_against": 2,
+      "recent_points": [
+        1.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1589.0,
+        1562.0006951348457
+      ],
+      "last_result_available_at": "2026-06-22T01:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T22:00:00+00:00",
+      "form_points": 1.0,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1575.500347567423
+    },
+    "Canadá": {
+      "team": "Canadá",
+      "initial_strength": 67.0,
+      "rating": 1582.078043030081,
+      "attack_proxy": 5.63,
+      "defense_proxy": 5.3,
+      "goalkeeper_proxy": 5.6,
+      "experience_proxy": 8.5,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 4,
+      "goals_for": 8,
+      "goals_against": 3,
+      "recent_points": [
+        1.0,
+        3.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        6.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1450.0,
+        1567.2047844780848,
+        1617.072424931497
+      ],
+      "last_result_available_at": "2026-06-24T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T19:00:00+00:00",
+      "form_points": 1.3333333333333333,
+      "form_goal_diff": 1.6666666666666667,
+      "schedule_strength": 1544.7590698031938
+    },
+    "Catar": {
+      "team": "Catar",
+      "initial_strength": 66.6,
+      "rating": 1499.8284037113124,
+      "attack_proxy": 5.38,
+      "defense_proxy": 5.29,
+      "goalkeeper_proxy": 5.77,
+      "experience_proxy": 9.58,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 1,
+      "goals_for": 2,
+      "goals_against": 10,
+      "recent_points": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        -6.0,
+        -2.0
+      ],
+      "recent_opponent_ratings": [
+        1601.0,
+        1566.012653810005,
+        1436.7101367804132
+      ],
+      "last_result_available_at": "2026-06-24T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T19:00:00+00:00",
+      "form_points": 0.3333333333333333,
+      "form_goal_diff": -2.6666666666666665,
+      "schedule_strength": 1534.5742635301394
+    },
+    "Colômbia": {
+      "team": "Colômbia",
+      "initial_strength": 67.8,
+      "rating": 1613.0440184203726,
+      "attack_proxy": 5.03,
+      "defense_proxy": 6.0,
+      "goalkeeper_proxy": 6.13,
+      "experience_proxy": 8.65,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 4,
+      "goals_against": 1,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        2.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1499.0,
+        1513.3933626869348
+      ],
+      "last_result_available_at": "2026-06-24T05:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T02:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 1.5,
+      "schedule_strength": 1506.1966813434674
+    },
+    "Coreia do Sul": {
+      "team": "Coreia do Sul",
+      "initial_strength": 67.4,
+      "rating": 1571.1627073915206,
+      "attack_proxy": 5.1,
+      "defense_proxy": 4.91,
+      "goalkeeper_proxy": 6.2,
+      "experience_proxy": 8.5,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 2,
+      "goals_against": 2,
+      "recent_points": [
+        3.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        1.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1518.0,
+        1598.0740324147384
+      ],
+      "last_result_available_at": "2026-06-19T04:30:00+00:00",
+      "last_kickoff_at": "2026-06-19T01:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1558.037016207369
+    },
+    "Costa do Marfim": {
+      "team": "Costa do Marfim",
+      "initial_strength": 63.2,
+      "rating": 1535.2167901805296,
+      "attack_proxy": 5.03,
+      "defense_proxy": 5.3,
+      "goalkeeper_proxy": 5.3,
+      "experience_proxy": 7.85,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 2,
+      "goals_against": 2,
+      "recent_points": [
+        3.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        1.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1519.0,
+        1620.4480680819418
+      ],
+      "last_result_available_at": "2026-06-20T23:30:00+00:00",
+      "last_kickoff_at": "2026-06-20T20:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1569.7240340409708
+    },
+    "Croácia": {
+      "team": "Croácia",
+      "initial_strength": 68.2,
+      "rating": 1576.8934880431063,
+      "attack_proxy": 5.15,
+      "defense_proxy": 5.74,
+      "goalkeeper_proxy": 6.07,
+      "experience_proxy": 8.88,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 3,
+      "goals_against": 4,
+      "recent_points": [
+        0.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        -2.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1572.0,
+        1564.3649660670567
+      ],
+      "last_result_available_at": "2026-06-24T02:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T23:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": -0.5,
+      "schedule_strength": 1568.1824830335283
+    },
+    "Curaçao": {
+      "team": "Curaçao",
+      "initial_strength": 59.5,
+      "rating": 1470.581762625007,
+      "attack_proxy": 4.79,
+      "defense_proxy": 4.7,
+      "goalkeeper_proxy": 5.83,
+      "experience_proxy": 7.58,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 1,
+      "goals_against": 7,
+      "recent_points": [
+        0.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        -6.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1595.0,
+        1499.4421092639654
+      ],
+      "last_result_available_at": "2026-06-21T03:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T00:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -3.0,
+      "schedule_strength": 1547.2210546319827
+    },
+    "Egito": {
+      "team": "Egito",
+      "initial_strength": 59.4,
+      "rating": 1522.8860003400528,
+      "attack_proxy": 4.79,
+      "defense_proxy": 4.83,
+      "goalkeeper_proxy": 4.95,
+      "experience_proxy": 8.16,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 4,
+      "goals_against": 2,
+      "recent_points": [
+        1.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        2.0
+      ],
+      "recent_opponent_ratings": [
+        1598.0,
+        1500.4436034855657
+      ],
+      "last_result_available_at": "2026-06-22T04:30:00+00:00",
+      "last_kickoff_at": "2026-06-22T01:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 1.0,
+      "schedule_strength": 1549.2218017427829
+    },
+    "Equador": {
+      "team": "Equador",
+      "initial_strength": 61.9,
+      "rating": 1498.4122785570166,
+      "attack_proxy": 4.64,
+      "defense_proxy": 5.66,
+      "goalkeeper_proxy": 4.83,
+      "experience_proxy": 8.03,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 0,
+      "goals_against": 1,
+      "recent_points": [
+        0.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        -1.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1532.0,
+        1469.5519319180582
+      ],
+      "last_result_available_at": "2026-06-21T03:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T00:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -0.5,
+      "schedule_strength": 1500.7759659590292
+    },
+    "Escócia": {
+      "team": "Escócia",
+      "initial_strength": 68.9,
+      "rating": 1552.4721210436549,
+      "attack_proxy": 5.17,
+      "defense_proxy": 5.92,
+      "goalkeeper_proxy": 6.43,
+      "experience_proxy": 8.53,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 3,
+      "goals_for": 1,
+      "goals_against": 4,
+      "recent_points": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        1.0,
+        -1.0,
+        -3.0
+      ],
+      "recent_opponent_ratings": [
+        1492.0,
+        1536.5116334744862,
+        1598.0812254328775
+      ],
+      "last_result_available_at": "2026-06-25T01:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T22:00:00+00:00",
+      "form_points": 1.0,
+      "form_goal_diff": -1.0,
+      "schedule_strength": 1542.197619635788
+    },
+    "Espanha": {
+      "team": "Espanha",
+      "initial_strength": 68.9,
+      "rating": 1612.536248407448,
+      "attack_proxy": 5.79,
+      "defense_proxy": 4.93,
+      "goalkeeper_proxy": 6.57,
+      "experience_proxy": 7.91,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 4,
+      "goals_against": 0,
+      "recent_points": [
+        1.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        4.0
+      ],
+      "recent_opponent_ratings": [
+        1493.0,
+        1534.9993048651543
+      ],
+      "last_result_available_at": "2026-06-21T19:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T16:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 2.0,
+      "schedule_strength": 1513.999652432577
+    },
+    "Estados Unidos": {
+      "team": "Estados Unidos",
+      "initial_strength": 71.0,
+      "rating": 1648.4603620072603,
+      "attack_proxy": 5.97,
+      "defense_proxy": 6.17,
+      "goalkeeper_proxy": 5.73,
+      "experience_proxy": 8.51,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 6,
+      "goals_against": 1,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        3.0,
+        2.0
+      ],
+      "recent_opponent_ratings": [
+        1497.0,
+        1539.95040258278
+      ],
+      "last_result_available_at": "2026-06-19T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-19T19:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 2.5,
+      "schedule_strength": 1518.47520129139
+    },
+    "França": {
+      "team": "França",
+      "initial_strength": 63.8,
+      "rating": 1584.4221473358257,
+      "attack_proxy": 5.4,
+      "defense_proxy": 5.27,
+      "goalkeeper_proxy": 5.77,
+      "experience_proxy": 8.07,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 6,
+      "goals_against": 1,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        2.0,
+        3.0
+      ],
+      "recent_opponent_ratings": [
+        1560.0,
+        1451.898523299663
+      ],
+      "last_result_available_at": "2026-06-23T00:30:00+00:00",
+      "last_kickoff_at": "2026-06-22T21:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 2.5,
+      "schedule_strength": 1505.9492616498314
+    },
+    "Gana": {
+      "team": "Gana",
+      "initial_strength": 56.1,
+      "rating": 1492.289477925768,
+      "attack_proxy": 4.56,
+      "defense_proxy": 4.51,
+      "goalkeeper_proxy": 4.93,
+      "experience_proxy": 7.35,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 1,
+      "goals_against": 0,
+      "recent_points": [
+        3.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        1.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1592.0,
+        1597.9079823797797
+      ],
+      "last_result_available_at": "2026-06-23T23:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T20:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 0.5,
+      "schedule_strength": 1594.9539911898898
+    },
+    "Haiti": {
+      "team": "Haiti",
+      "initial_strength": 59.2,
+      "rating": 1438.7628972539487,
+      "attack_proxy": 4.89,
+      "defense_proxy": 5.03,
+      "goalkeeper_proxy": 6.7,
+      "experience_proxy": 7.61,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 0,
+      "goals_for": 2,
+      "goals_against": 8,
+      "recent_points": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -1.0,
+        -3.0,
+        -2.0
+      ],
+      "recent_opponent_ratings": [
+        1589.0,
+        1577.4883665255138,
+        1560.715235941227
+      ],
+      "last_result_available_at": "2026-06-25T01:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T22:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -2.0,
+      "schedule_strength": 1575.7345341555804
+    },
+    "Inglaterra": {
+      "team": "Inglaterra",
+      "initial_strength": 67.2,
+      "rating": 1594.253538386955,
+      "attack_proxy": 5.49,
+      "defense_proxy": 5.06,
+      "goalkeeper_proxy": 6.5,
+      "experience_proxy": 8.17,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 4,
+      "goals_against": 2,
+      "recent_points": [
+        3.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        2.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1582.0,
+        1488.6350339329433
+      ],
+      "last_result_available_at": "2026-06-23T23:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T20:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 1.0,
+      "schedule_strength": 1535.3175169664717
+    },
+    "Iraque": {
+      "team": "Iraque",
+      "initial_strength": 57.5,
+      "rating": 1432.2522325887069,
+      "attack_proxy": 4.55,
+      "defense_proxy": 4.73,
+      "goalkeeper_proxy": 5.73,
+      "experience_proxy": 8.15,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 1,
+      "goals_against": 7,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -3.0,
+        -3.0
+      ],
+      "recent_opponent_ratings": [
+        1543.0,
+        1564.7758566248694
+      ],
+      "last_result_available_at": "2026-06-23T00:30:00+00:00",
+      "last_kickoff_at": "2026-06-22T21:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -3.0,
+      "schedule_strength": 1553.8879283124347
+    },
+    "Irã": {
+      "team": "Irã",
+      "initial_strength": 64.1,
+      "rating": 1541.4388074763046,
+      "attack_proxy": 4.62,
+      "defense_proxy": 5.51,
+      "goalkeeper_proxy": 5.57,
+      "experience_proxy": 8.91,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 2,
+      "goals_for": 2,
+      "goals_against": 2,
+      "recent_points": [
+        1.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1499.0,
+        1594.5115411894549
+      ],
+      "last_result_available_at": "2026-06-21T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T19:00:00+00:00",
+      "form_points": 1.0,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1546.7557705947274
+    },
+    "Japão": {
+      "team": "Japão",
+      "initial_strength": 67.6,
+      "rating": 1595.517475776421,
+      "attack_proxy": 5.08,
+      "defense_proxy": 5.26,
+      "goalkeeper_proxy": 5.23,
+      "experience_proxy": 8.13,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 6,
+      "goals_against": 2,
+      "recent_points": [
+        1.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        4.0
+      ],
+      "recent_opponent_ratings": [
+        1591.0,
+        1432.115281616851
+      ],
+      "last_result_available_at": "2026-06-21T07:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T04:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 2.0,
+      "schedule_strength": 1511.5576408084255
+    },
+    "Jordânia": {
+      "team": "Jordânia",
+      "initial_strength": 60.2,
+      "rating": 1464.2410819469897,
+      "attack_proxy": 4.55,
+      "defense_proxy": 4.94,
+      "goalkeeper_proxy": 5.5,
+      "experience_proxy": 8.69,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 2,
+      "goals_against": 5,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -2.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1576.0,
+        1524.3410381697356
+      ],
+      "last_result_available_at": "2026-06-23T06:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T03:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -1.5,
+      "schedule_strength": 1550.170519084868
+    },
+    "Marrocos": {
+      "team": "Marrocos",
+      "initial_strength": 63.5,
+      "rating": 1578.5712708702963,
+      "attack_proxy": 4.61,
+      "defense_proxy": 5.18,
+      "goalkeeper_proxy": 6.23,
+      "experience_proxy": 7.85,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 7,
+      "goals_for": 6,
+      "goals_against": 3,
+      "recent_points": [
+        1.0,
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        1.0,
+        2.0
+      ],
+      "recent_opponent_ratings": [
+        1579.0,
+        1603.7882089096183,
+        1456.618932183018
+      ],
+      "last_result_available_at": "2026-06-25T01:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T22:00:00+00:00",
+      "form_points": 2.3333333333333335,
+      "form_goal_diff": 1.0,
+      "schedule_strength": 1546.4690470308788
+    },
+    "México": {
+      "team": "México",
+      "initial_strength": 67.9,
+      "rating": 1617.9823218944805,
+      "attack_proxy": 5.01,
+      "defense_proxy": 6.61,
+      "goalkeeper_proxy": 5.93,
+      "experience_proxy": 9.02,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 3,
+      "goals_against": 0,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        2.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1493.0,
+        1591.0709968712627
+      ],
+      "last_result_available_at": "2026-06-19T04:30:00+00:00",
+      "last_kickoff_at": "2026-06-19T01:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 1.5,
+      "schedule_strength": 1542.0354984356313
+    },
+    "Noruega": {
+      "team": "Noruega",
+      "initial_strength": 64.3,
+      "rating": 1584.5023199932361,
+      "attack_proxy": 5.05,
+      "defense_proxy": 5.31,
+      "goalkeeper_proxy": 6.27,
+      "experience_proxy": 8.08,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 6,
+      "goals_for": 7,
+      "goals_against": 3,
+      "recent_points": [
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        3.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1475.0,
+        1533.2241433751306
+      ],
+      "last_result_available_at": "2026-06-23T03:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T00:00:00+00:00",
+      "form_points": 3.0,
+      "form_goal_diff": 2.0,
+      "schedule_strength": 1504.1120716875653
+    },
+    "Nova Zelândia": {
+      "team": "Nova Zelândia",
+      "initial_strength": 59.9,
+      "rating": 1475.046061956058,
+      "attack_proxy": 4.62,
+      "defense_proxy": 5.19,
+      "goalkeeper_proxy": 4.93,
+      "experience_proxy": 8.16,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 3,
+      "goals_against": 5,
+      "recent_points": [
+        1.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        -2.0
+      ],
+      "recent_opponent_ratings": [
+        1541.0,
+        1497.4884588105451
+      ],
+      "last_result_available_at": "2026-06-22T04:30:00+00:00",
+      "last_kickoff_at": "2026-06-22T01:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -1.0,
+      "schedule_strength": 1519.2442294052726
+    },
+    "Panamá": {
+      "team": "Panamá",
+      "initial_strength": 69.2,
+      "rating": 1543.5634956441706,
+      "attack_proxy": 5.12,
+      "defense_proxy": 6.11,
+      "goalkeeper_proxy": 5.83,
+      "experience_proxy": 9.51,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 0,
+      "goals_against": 2,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -1.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1461.0,
+        1556.0920176202203
+      ],
+      "last_result_available_at": "2026-06-24T02:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T23:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -1.0,
+      "schedule_strength": 1508.5460088101102
+    },
+    "Paraguai": {
+      "team": "Paraguai",
+      "initial_strength": 59.7,
+      "rating": 1502.3714506779609,
+      "attack_proxy": 4.33,
+      "defense_proxy": 5.32,
+      "goalkeeper_proxy": 4.6,
+      "experience_proxy": 7.8,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 2,
+      "goals_against": 4,
+      "recent_points": [
+        0.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        -3.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1610.0,
+        1559.04959741722
+      ],
+      "last_result_available_at": "2026-06-20T06:30:00+00:00",
+      "last_kickoff_at": "2026-06-20T03:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": -1.0,
+      "schedule_strength": 1584.52479870861
+    },
+    "Países Baixos": {
+      "team": "Países Baixos",
+      "initial_strength": 69.1,
+      "rating": 1615.2598515260916,
+      "attack_proxy": 5.51,
+      "defense_proxy": 6.19,
+      "goalkeeper_proxy": 5.6,
+      "experience_proxy": 8.27,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 7,
+      "goals_against": 3,
+      "recent_points": [
+        1.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        4.0
+      ],
+      "recent_opponent_ratings": [
+        1576.0,
+        1516.884718383149
+      ],
+      "last_result_available_at": "2026-06-20T20:30:00+00:00",
+      "last_kickoff_at": "2026-06-20T17:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 2.0,
+      "schedule_strength": 1546.4423591915745
+    },
+    "Portugal": {
+      "team": "Portugal",
+      "initial_strength": 71.1,
+      "rating": 1629.2815988932857,
+      "attack_proxy": 5.87,
+      "defense_proxy": 5.96,
+      "goalkeeper_proxy": 5.53,
+      "experience_proxy": 8.88,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 4,
+      "goals_for": 6,
+      "goals_against": 1,
+      "recent_points": [
+        1.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        5.0
+      ],
+      "recent_opponent_ratings": [
+        1510.0,
+        1479.4461632507762
+      ],
+      "last_result_available_at": "2026-06-23T20:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T17:00:00+00:00",
+      "form_points": 2.0,
+      "form_goal_diff": 2.5,
+      "schedule_strength": 1494.7230816253882
+    },
+    "RD Congo": {
+      "team": "RD Congo",
+      "initial_strength": 61.0,
+      "rating": 1497.903181015786,
+      "attack_proxy": 4.76,
+      "defense_proxy": 5.3,
+      "goalkeeper_proxy": 4.93,
+      "experience_proxy": 8.05,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 1,
+      "goals_against": 2,
+      "recent_points": [
+        1.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1611.0,
+        1597.5538367492238
+      ],
+      "last_result_available_at": "2026-06-24T05:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T02:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -0.5,
+      "schedule_strength": 1604.2769183746118
+    },
+    "Senegal": {
+      "team": "Senegal",
+      "initial_strength": 66.0,
+      "rating": 1514.8233000822313,
+      "attack_proxy": 5.39,
+      "defense_proxy": 5.22,
+      "goalkeeper_proxy": 5.87,
+      "experience_proxy": 8.59,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 3,
+      "goals_against": 6,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -2.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1538.0,
+        1566.101476700337
+      ],
+      "last_result_available_at": "2026-06-23T03:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T00:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -1.5,
+      "schedule_strength": 1552.0507383501686
+    },
+    "Suécia": {
+      "team": "Suécia",
+      "initial_strength": 58.8,
+      "rating": 1492.10710686383,
+      "attack_proxy": 4.82,
+      "defense_proxy": 4.66,
+      "goalkeeper_proxy": 5.2,
+      "experience_proxy": 7.21,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 6,
+      "goals_against": 6,
+      "recent_points": [
+        3.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        4.0,
+        -4.0
+      ],
+      "recent_opponent_ratings": [
+        1461.0,
+        1590.4822400067726
+      ],
+      "last_result_available_at": "2026-06-20T20:30:00+00:00",
+      "last_kickoff_at": "2026-06-20T17:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1525.7411200033862
+    },
+    "Suíça": {
+      "team": "Suíça",
+      "initial_strength": 70.1,
+      "rating": 1636.4792540925425,
+      "attack_proxy": 5.6,
+      "defense_proxy": 5.81,
+      "goalkeeper_proxy": 5.43,
+      "experience_proxy": 8.86,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 3,
+      "points": 7,
+      "goals_for": 7,
+      "goals_against": 3,
+      "recent_points": [
+        1.0,
+        3.0,
+        3.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        3.0,
+        1.0
+      ],
+      "recent_opponent_ratings": [
+        1566.0,
+        1453.987346189995,
+        1601.4848721911267
+      ],
+      "last_result_available_at": "2026-06-24T22:30:00+00:00",
+      "last_kickoff_at": "2026-06-24T19:00:00+00:00",
+      "form_points": 2.3333333333333335,
+      "form_goal_diff": 1.3333333333333333,
+      "schedule_strength": 1540.490739460374
+    },
+    "Tchéquia": {
+      "team": "Tchéquia",
+      "initial_strength": 61.8,
+      "rating": 1499.998224706111,
+      "attack_proxy": 4.99,
+      "defense_proxy": 5.34,
+      "goalkeeper_proxy": 5.1,
+      "experience_proxy": 7.9,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 2,
+      "goals_against": 3,
+      "recent_points": [
+        0.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        -1.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1574.0,
+        1473.9259675852616
+      ],
+      "last_result_available_at": "2026-06-18T19:30:00+00:00",
+      "last_kickoff_at": "2026-06-18T16:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -0.5,
+      "schedule_strength": 1523.962983792631
+    },
+    "Tunísia": {
+      "team": "Tunísia",
+      "initial_strength": 56.1,
+      "rating": 1413.1155658336575,
+      "attack_proxy": 4.09,
+      "defense_proxy": 4.73,
+      "goalkeeper_proxy": 4.77,
+      "experience_proxy": 7.45,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 1,
+      "goals_against": 9,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -4.0,
+        -4.0
+      ],
+      "recent_opponent_ratings": [
+        1488.0,
+        1576.5177599932274
+      ],
+      "last_result_available_at": "2026-06-21T07:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T04:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -4.0,
+      "schedule_strength": 1532.2588799966138
+    },
+    "Turquia": {
+      "team": "Turquia",
+      "initial_strength": 69.0,
+      "rating": 1534.0409688599966,
+      "attack_proxy": 5.31,
+      "defense_proxy": 6.39,
+      "goalkeeper_proxy": 6.1,
+      "experience_proxy": 8.53,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 0,
+      "goals_against": 3,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -2.0,
+        -1.0
+      ],
+      "recent_opponent_ratings": [
+        1509.0,
+        1477.3628221207375
+      ],
+      "last_result_available_at": "2026-06-20T06:30:00+00:00",
+      "last_kickoff_at": "2026-06-20T03:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -1.5,
+      "schedule_strength": 1493.1814110603686
+    },
+    "Uruguai": {
+      "team": "Uruguai",
+      "initial_strength": 66.3,
+      "rating": 1559.7559356725778,
+      "attack_proxy": 4.74,
+      "defense_proxy": 5.69,
+      "goalkeeper_proxy": 6.4,
+      "experience_proxy": 8.39,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 2,
+      "goals_for": 3,
+      "goals_against": 3,
+      "recent_points": [
+        1.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        0.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1534.0,
+        1496.2338400412557
+      ],
+      "last_result_available_at": "2026-06-22T01:30:00+00:00",
+      "last_kickoff_at": "2026-06-21T22:00:00+00:00",
+      "form_points": 1.0,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1515.1169200206277
+    },
+    "Uzbequistão": {
+      "team": "Uzbequistão",
+      "initial_strength": 59.9,
+      "rating": 1457.7712016705557,
+      "attack_proxy": 4.63,
+      "defense_proxy": 4.66,
+      "goalkeeper_proxy": 4.77,
+      "experience_proxy": 8.46,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 0,
+      "goals_for": 1,
+      "goals_against": 8,
+      "recent_points": [
+        0.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        -2.0,
+        -5.0
+      ],
+      "recent_opponent_ratings": [
+        1578.0,
+        1607.6066373130652
+      ],
+      "last_result_available_at": "2026-06-23T20:30:00+00:00",
+      "last_kickoff_at": "2026-06-23T17:00:00+00:00",
+      "form_points": 0.0,
+      "form_goal_diff": -3.5,
+      "schedule_strength": 1592.8033186565326
+    },
+    "África do Sul": {
+      "team": "África do Sul",
+      "initial_strength": 59.3,
+      "rating": 1474.856746007888,
+      "attack_proxy": 4.91,
+      "defense_proxy": 4.4,
+      "goalkeeper_proxy": 5.33,
+      "experience_proxy": 7.22,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 1,
+      "goals_for": 1,
+      "goals_against": 3,
+      "recent_points": [
+        0.0,
+        1.0
+      ],
+      "recent_goal_diffs": [
+        -2.0,
+        0.0
+      ],
+      "recent_opponent_ratings": [
+        1579.0,
+        1500.9290031287373
+      ],
+      "last_result_available_at": "2026-06-18T19:30:00+00:00",
+      "last_kickoff_at": "2026-06-18T16:00:00+00:00",
+      "form_points": 0.5,
+      "form_goal_diff": -1.0,
+      "schedule_strength": 1539.9645015643687
+    },
+    "Áustria": {
+      "team": "Áustria",
+      "initial_strength": 67.6,
+      "rating": 1573.3704598487775,
+      "attack_proxy": 4.98,
+      "defense_proxy": 5.5,
+      "goalkeeper_proxy": 5.37,
+      "experience_proxy": 8.57,
+      "initial_form_points": 1.0,
+      "initial_form_goal_diff": 0.0,
+      "games": 2,
+      "points": 3,
+      "goals_for": 3,
+      "goals_against": 3,
+      "recent_points": [
+        3.0,
+        0.0
+      ],
+      "recent_goal_diffs": [
+        2.0,
+        -2.0
+      ],
+      "recent_opponent_ratings": [
+        1502.0,
+        1632.6589618302644
+      ],
+      "last_result_available_at": "2026-06-22T20:30:00+00:00",
+      "last_kickoff_at": "2026-06-22T17:00:00+00:00",
+      "form_points": 1.5,
+      "form_goal_diff": 0.0,
+      "schedule_strength": 1567.329480915132
+    }
+  },
+  "temporal_integrity": "State contains only results whose result_available_at is not later than training_cutoff."
+}

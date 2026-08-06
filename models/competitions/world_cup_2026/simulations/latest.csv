@@ -1,0 +1,105 @@
+match_id,competition_id,team1,team2,phase,expected_goals_team1,expected_goals_team2,probability_team1_win,probability_draw,probability_team2_win,probability_extra_time,probability_team1_win_in_extra_time,probability_team2_win_in_extra_time,probability_penalty_decision,probability_team1_win_penalties,mean_total_goals,iterations,model_source,simulation_role
+1,world_cup_2026,México,África do Sul,Fase de grupos,1.267,0.701,0.501667,0.291417,0.206917,0.0,0.0,0.0,0.0,NA,1.967417,12000,configured_expected_goals,retrospective_validation
+2,world_cup_2026,Coreia do Sul,Tchéquia,Fase de grupos,1.087,0.997,0.38025,0.294167,0.325583,0.0,0.0,0.0,0.0,NA,2.103917,12000,configured_expected_goals,retrospective_validation
+3,world_cup_2026,Canadá,Bósnia e Herzegovina,Fase de grupos,1.279,0.774,0.481667,0.2905,0.227833,0.0,0.0,0.0,0.0,NA,2.06575,12000,configured_expected_goals,retrospective_validation
+4,world_cup_2026,Estados Unidos,Paraguai,Fase de grupos,1.3,0.665,0.516083,0.29625,0.187667,0.0,0.0,0.0,0.0,NA,1.967583,12000,configured_expected_goals,retrospective_validation
+5,world_cup_2026,Haiti,Escócia,Fase de grupos,0.793,1.203,0.248917,0.304833,0.44625,0.0,0.0,0.0,0.0,NA,1.988417,12000,configured_expected_goals,retrospective_validation
+6,world_cup_2026,Austrália,Turquia,Fase de grupos,0.784,1.181,0.241,0.307583,0.451417,0.0,0.0,0.0,0.0,NA,1.943667,12000,configured_expected_goals,retrospective_validation
+7,world_cup_2026,Brasil,Marrocos,Fase de grupos,1.162,0.882,0.41675,0.302083,0.281167,0.0,0.0,0.0,0.0,NA,2.0515,12000,configured_expected_goals,retrospective_validation
+8,world_cup_2026,Catar,Suíça,Fase de grupos,0.903,1.208,0.271167,0.297583,0.43125,0.0,0.0,0.0,0.0,NA,2.104583,12000,configured_expected_goals,retrospective_validation
+9,world_cup_2026,Costa do Marfim,Equador,Fase de grupos,1.001,0.937,0.351833,0.318917,0.32925,0.0,0.0,0.0,0.0,NA,1.927333,12000,configured_expected_goals,retrospective_validation
+10,world_cup_2026,Alemanha,Curaçao,Fase de grupos,1.209,0.762,0.463833,0.304,0.232167,0.0,0.0,0.0,0.0,NA,1.964917,12000,configured_expected_goals,retrospective_validation
+11,world_cup_2026,Países Baixos,Japão,Fase de grupos,1.127,0.886,0.414667,0.307583,0.27775,0.0,0.0,0.0,0.0,NA,1.994917,12000,configured_expected_goals,retrospective_validation
+12,world_cup_2026,Suécia,Tunísia,Fase de grupos,1.11,0.906,0.403917,0.30375,0.292333,0.0,0.0,0.0,0.0,NA,2.013583,12000,configured_expected_goals,retrospective_validation
+13,world_cup_2026,Arábia Saudita,Uruguai,Fase de grupos,0.906,1.085,0.298667,0.30575,0.395583,0.0,0.0,0.0,0.0,NA,1.977,12000,configured_expected_goals,retrospective_validation
+14,world_cup_2026,Espanha,Cabo Verde,Fase de grupos,1.299,0.815,0.477917,0.2885,0.233583,0.0,0.0,0.0,0.0,NA,2.107667,12000,configured_expected_goals,retrospective_validation
+15,world_cup_2026,Irã,Nova Zelândia,Fase de grupos,0.959,0.948,0.346083,0.313083,0.340833,0.0,0.0,0.0,0.0,NA,1.924417,12000,configured_expected_goals,retrospective_validation
+16,world_cup_2026,Bélgica,Egito,Fase de grupos,1.308,0.771,0.491667,0.287667,0.220667,0.0,0.0,0.0,0.0,NA,2.094,12000,configured_expected_goals,retrospective_validation
+17,world_cup_2026,França,Senegal,Fase de grupos,1.059,1.097,0.335167,0.304917,0.359917,0.0,0.0,0.0,0.0,NA,2.161,12000,configured_expected_goals,retrospective_validation
+18,world_cup_2026,Iraque,Noruega,Fase de grupos,0.798,1.24,0.237167,0.291083,0.47175,0.0,0.0,0.0,0.0,NA,2.03825,12000,configured_expected_goals,retrospective_validation
+19,world_cup_2026,Argentina,Argélia,Fase de grupos,1.128,0.891,0.40625,0.305917,0.287833,0.0,0.0,0.0,0.0,NA,2.019167,12000,configured_expected_goals,retrospective_validation
+20,world_cup_2026,Áustria,Jordânia,Fase de grupos,1.214,0.766,0.458917,0.305833,0.23525,0.0,0.0,0.0,0.0,NA,1.992417,12000,configured_expected_goals,retrospective_validation
+21,world_cup_2026,Gana,Panamá,Fase de grupos,0.761,1.219,0.231167,0.291833,0.477,0.0,0.0,0.0,0.0,NA,1.987583,12000,configured_expected_goals,retrospective_validation
+22,world_cup_2026,Inglaterra,Croácia,Fase de grupos,1.029,1.069,0.335083,0.307083,0.357833,0.0,0.0,0.0,0.0,NA,2.103667,12000,configured_expected_goals,retrospective_validation
+23,world_cup_2026,Portugal,RD Congo,Fase de grupos,1.261,0.78,0.479583,0.289917,0.2305,0.0,0.0,0.0,0.0,NA,2.0415,12000,configured_expected_goals,retrospective_validation
+24,world_cup_2026,Uzbequistão,Colômbia,Fase de grupos,0.719,1.253,0.21475,0.298583,0.486667,0.0,0.0,0.0,0.0,NA,1.971333,12000,configured_expected_goals,retrospective_validation
+25,world_cup_2026,Tchéquia,África do Sul,Fase de grupos,1.377,1.03,0.4445,0.272333,0.283167,0.0,0.0,0.0,0.0,NA,2.402833,12000,configured_expected_goals,retrospective_validation
+26,world_cup_2026,Suíça,Bósnia e Herzegovina,Fase de grupos,1.354,0.837,0.487167,0.279417,0.233417,0.0,0.0,0.0,0.0,NA,2.176,12000,configured_expected_goals,retrospective_validation
+27,world_cup_2026,Canadá,Catar,Fase de grupos,1.189,1.194,0.361417,0.276,0.362583,0.0,0.0,0.0,0.0,NA,2.366667,12000,configured_expected_goals,retrospective_validation
+28,world_cup_2026,México,Coreia do Sul,Fase de grupos,1.187,1.008,0.4,0.293167,0.306833,0.0,0.0,0.0,0.0,NA,2.173083,12000,configured_expected_goals,retrospective_validation
+29,world_cup_2026,Brasil,Haiti,Fase de grupos,1.332,0.898,0.45725,0.291083,0.251667,0.0,0.0,0.0,0.0,NA,2.2235,12000,configured_expected_goals,retrospective_validation
+30,world_cup_2026,Escócia,Marrocos,Fase de grupos,1.225,0.832,0.452167,0.300083,0.24775,0.0,0.0,0.0,0.0,NA,2.060083,12000,configured_expected_goals,retrospective_validation
+31,world_cup_2026,Turquia,Paraguai,Fase de grupos,1.319,0.959,0.455917,0.277083,0.267,0.0,0.0,0.0,0.0,NA,2.265,12000,configured_expected_goals,retrospective_validation
+32,world_cup_2026,Estados Unidos,Austrália,Fase de grupos,1.44,1.018,0.4615,0.2615,0.277,0.0,0.0,0.0,0.0,NA,2.44225,12000,configured_expected_goals,retrospective_validation
+33,world_cup_2026,Alemanha,Costa do Marfim,Fase de grupos,1.242,0.979,0.422,0.277917,0.300083,0.0,0.0,0.0,0.0,NA,2.200167,12000,configured_expected_goals,retrospective_validation
+34,world_cup_2026,Equador,Curaçao,Fase de grupos,1.266,1.053,0.407833,0.287,0.305167,0.0,0.0,0.0,0.0,NA,2.318667,12000,configured_expected_goals,retrospective_validation
+35,world_cup_2026,Países Baixos,Suécia,Fase de grupos,1.459,1.113,0.457333,0.26275,0.279917,0.0,0.0,0.0,0.0,NA,2.557833,12000,configured_expected_goals,retrospective_validation
+36,world_cup_2026,Tunísia,Japão,Fase de grupos,0.829,1.716,0.17575,0.235667,0.588583,0.0,0.0,0.0,0.0,NA,2.56025,12000,configured_expected_goals,retrospective_validation
+37,world_cup_2026,Uruguai,Cabo Verde,Fase de grupos,1.052,0.861,0.3935,0.313667,0.292833,0.0,0.0,0.0,0.0,NA,1.917,12000,configured_expected_goals,retrospective_validation
+38,world_cup_2026,Espanha,Arábia Saudita,Fase de grupos,1.26,1.029,0.412583,0.282583,0.304833,0.0,0.0,0.0,0.0,NA,2.2765,12000,configured_expected_goals,retrospective_validation
+39,world_cup_2026,Bélgica,Irã,Fase de grupos,1.372,0.967,0.459667,0.276333,0.264,0.0,0.0,0.0,0.0,NA,2.346917,12000,configured_expected_goals,retrospective_validation
+40,world_cup_2026,Nova Zelândia,Egito,Fase de grupos,1.136,1.242,0.32975,0.283,0.38725,0.0,0.0,0.0,0.0,NA,2.359917,12000,configured_expected_goals,retrospective_validation
+41,world_cup_2026,Noruega,Senegal,Fase de grupos,1.477,1.151,0.454833,0.25625,0.288917,0.0,0.0,0.0,0.0,NA,2.63025,12000,configured_expected_goals,retrospective_validation
+42,world_cup_2026,França,Iraque,Fase de grupos,1.859,0.795,0.630083,0.218583,0.151333,0.0,0.0,0.0,0.0,NA,2.6665,12000,configured_expected_goals,retrospective_validation
+43,world_cup_2026,Argentina,Áustria,Fase de grupos,1.449,0.968,0.4845,0.264917,0.250583,0.0,0.0,0.0,0.0,NA,2.4005,12000,configured_expected_goals,retrospective_validation
+44,world_cup_2026,Jordânia,Argélia,Fase de grupos,1.003,1.415,0.265833,0.2705,0.463667,0.0,0.0,0.0,0.0,NA,2.403167,12000,configured_expected_goals,retrospective_validation
+45,world_cup_2026,Inglaterra,Gana,Fase de grupos,1.498,1.011,0.486667,0.2585,0.254833,0.0,0.0,0.0,0.0,NA,2.504,12000,configured_expected_goals,retrospective_validation
+46,world_cup_2026,Panamá,Croácia,Fase de grupos,1.104,1.237,0.333833,0.278583,0.387583,0.0,0.0,0.0,0.0,NA,2.346667,12000,configured_expected_goals,retrospective_validation
+47,world_cup_2026,Portugal,Uzbequistão,Fase de grupos,1.669,0.793,0.574833,0.240333,0.184833,0.0,0.0,0.0,0.0,NA,2.432417,12000,configured_expected_goals,retrospective_validation
+48,world_cup_2026,Colômbia,RD Congo,Fase de grupos,1.274,0.98,0.423583,0.287417,0.289,0.0,0.0,0.0,0.0,NA,2.26175,12000,configured_expected_goals,retrospective_validation
+49,world_cup_2026,Escócia,Brasil,Fase de grupos,0.965,1.212,0.287583,0.290583,0.421833,0.0,0.0,0.0,0.0,NA,2.201667,12000,configured_expected_goals,retrospective_validation
+50,world_cup_2026,Marrocos,Haiti,Fase de grupos,1.396,0.748,0.525667,0.268333,0.206,0.0,0.0,0.0,0.0,NA,2.157,12000,configured_expected_goals,retrospective_validation
+51,world_cup_2026,Suíça,Canadá,Fase de grupos,1.296,1.267,0.378667,0.258083,0.36325,0.0,0.0,0.0,0.0,NA,2.544083,12000,configured_expected_goals,retrospective_validation
+52,world_cup_2026,Bósnia e Herzegovina,Catar,Fase de grupos,1.136,1.345,0.311917,0.274333,0.41375,0.0,0.0,0.0,0.0,NA,2.48875,12000,configured_expected_goals,retrospective_validation
+53,world_cup_2026,Tchéquia,México,Fase de grupos,0.631,1.406,0.169667,0.276917,0.553417,0.0,0.0,0.0,0.0,NA,2.043,12000,configured_expected_goals,retrospective_validation
+54,world_cup_2026,África do Sul,Coreia do Sul,Fase de grupos,0.922,1.445,0.231667,0.267417,0.500917,0.0,0.0,0.0,0.0,NA,2.382917,12000,configured_expected_goals,retrospective_validation
+55,world_cup_2026,Curaçao,Costa do Marfim,Fase de grupos,0.932,1.437,0.240833,0.2695,0.489667,0.0,0.0,0.0,0.0,NA,2.362,12000,configured_expected_goals,retrospective_validation
+56,world_cup_2026,Equador,Alemanha,Fase de grupos,0.632,1.423,0.157417,0.2755,0.567083,0.0,0.0,0.0,0.0,NA,2.0635,12000,configured_expected_goals,retrospective_validation
+57,world_cup_2026,Japão,Suécia,Fase de grupos,1.664,1.057,0.517167,0.24575,0.237083,0.0,0.0,0.0,0.0,NA,2.7,12000,configured_expected_goals,retrospective_validation
+58,world_cup_2026,Tunísia,Países Baixos,Fase de grupos,0.559,1.982,0.092,0.192333,0.715667,0.0,0.0,0.0,0.0,NA,2.5085,12000,configured_expected_goals,retrospective_validation
+59,world_cup_2026,Turquia,Estados Unidos,Fase de grupos,0.683,1.544,0.162167,0.259167,0.578667,0.0,0.0,0.0,0.0,NA,2.226833,12000,configured_expected_goals,retrospective_validation
+60,world_cup_2026,Paraguai,Austrália,Fase de grupos,1.038,1.15,0.32875,0.287833,0.383417,0.0,0.0,0.0,0.0,NA,2.195917,12000,configured_expected_goals,retrospective_validation
+61,world_cup_2026,Noruega,França,Fase de grupos,1.264,1.369,0.351333,0.256333,0.392333,0.0,0.0,0.0,0.0,NA,2.620417,12000,configured_expected_goals,retrospective_validation
+62,world_cup_2026,Senegal,Iraque,Fase de grupos,1.646,1.038,0.509083,0.249167,0.24175,0.0,0.0,0.0,0.0,NA,2.704083,12000,configured_expected_goals,retrospective_validation
+63,world_cup_2026,Egito,Irã,Fase de grupos,1.192,1.041,0.39675,0.28325,0.32,0.0,0.0,0.0,0.0,NA,2.2325,12000,configured_expected_goals,retrospective_validation
+64,world_cup_2026,Nova Zelândia,Bélgica,Fase de grupos,0.838,1.466,0.215167,0.2655,0.519333,0.0,0.0,0.0,0.0,NA,2.31875,12000,configured_expected_goals,retrospective_validation
+65,world_cup_2026,Cabo Verde,Arábia Saudita,Fase de grupos,1.216,1.078,0.381833,0.28975,0.328417,0.0,0.0,0.0,0.0,NA,2.2865,12000,configured_expected_goals,retrospective_validation
+66,world_cup_2026,Uruguai,Espanha,Fase de grupos,0.947,1.445,0.251917,0.26475,0.483333,0.0,0.0,0.0,0.0,NA,2.393167,12000,configured_expected_goals,retrospective_validation
+67,world_cup_2026,Panamá,Inglaterra,Fase de grupos,0.887,1.304,0.25625,0.285583,0.458167,0.0,0.0,0.0,0.0,NA,2.178083,12000,configured_expected_goals,retrospective_validation
+68,world_cup_2026,Croácia,Gana,Fase de grupos,1.262,0.89,0.456833,0.282917,0.26025,0.0,0.0,0.0,0.0,NA,2.15475,12000,configured_expected_goals,retrospective_validation
+69,world_cup_2026,Argélia,Áustria,Fase de grupos,1.147,1.174,0.350083,0.28225,0.367667,0.0,0.0,0.0,0.0,NA,2.315917,12000,configured_expected_goals,retrospective_validation
+70,world_cup_2026,Jordânia,Argentina,Fase de grupos,0.469,1.903,0.082167,0.196333,0.7215,0.0,0.0,0.0,0.0,NA,2.364667,12000,configured_expected_goals,retrospective_validation
+71,world_cup_2026,Colômbia,Portugal,Fase de grupos,1.067,1.232,0.317,0.292833,0.390167,0.0,0.0,0.0,0.0,NA,2.306917,12000,configured_expected_goals,retrospective_validation
+72,world_cup_2026,RD Congo,Uzbequistão,Fase de grupos,1.468,0.883,0.513333,0.264833,0.221833,0.0,0.0,0.0,0.0,NA,2.360167,12000,configured_expected_goals,retrospective_validation
+73,world_cup_2026,África do Sul,Canadá,16 avos de final,0.874,1.387,0.2345,0.286417,0.479083,0.286417,0.049417,0.083333,0.153667,NA,2.268083,12000,configured_expected_goals,retrospective_validation
+74,world_cup_2026,Alemanha,Paraguai,16 avos de final,1.241,0.757,0.46925,0.302667,0.228083,0.302667,0.086333,0.046833,0.1695,NA,1.98125,12000,configured_expected_goals,retrospective_validation
+75,world_cup_2026,Países Baixos,Marrocos,16 avos de final,1.285,1.001,0.428917,0.278333,0.29275,0.278333,0.071583,0.053833,0.152917,NA,2.31075,12000,configured_expected_goals,retrospective_validation
+76,world_cup_2026,Brasil,Japão,16 avos de final,1.349,0.899,0.474083,0.2725,0.253417,0.2725,0.077583,0.05,0.144917,NA,2.2555,12000,configured_expected_goals,retrospective_validation
+77,world_cup_2026,França,Suécia,16 avos de final,1.578,0.871,0.533917,0.2595,0.206583,0.2595,0.084417,0.039,0.136083,NA,2.426583,12000,configured_expected_goals,retrospective_validation
+78,world_cup_2026,Costa do Marfim,Noruega,16 avos de final,1.214,1.078,0.3925,0.28525,0.32225,0.28525,0.071417,0.059917,0.153917,NA,2.285,12000,configured_expected_goals,retrospective_validation
+79,world_cup_2026,México,Equador,16 avos de final,1.185,0.57,0.515667,0.3075,0.176833,0.3075,0.082667,0.036167,0.188667,NA,1.73825,12000,configured_expected_goals,retrospective_validation
+80,world_cup_2026,Inglaterra,RD Congo,16 avos de final,1.3,0.853,0.471833,0.286,0.242167,0.286,0.084083,0.046417,0.1555,NA,2.149667,12000,configured_expected_goals,retrospective_validation
+81,world_cup_2026,Estados Unidos,Bósnia e Herzegovina,16 avos de final,1.502,0.838,0.531,0.254,0.215,0.254,0.085167,0.03625,0.132583,NA,2.344833,12000,configured_expected_goals,retrospective_validation
+82,world_cup_2026,Bélgica,Senegal,16 avos de final,1.289,1.077,0.417,0.27025,0.31275,0.27025,0.071917,0.05875,0.139583,NA,2.387167,12000,configured_expected_goals,retrospective_validation
+83,world_cup_2026,Portugal,Croácia,16 avos de final,1.14,0.978,0.392417,0.30025,0.307333,0.30025,0.0745,0.054667,0.171083,NA,2.105083,12000,configured_expected_goals,retrospective_validation
+84,world_cup_2026,Espanha,Áustria,16 avos de final,1.389,0.905,0.478333,0.28475,0.236917,0.28475,0.083833,0.0475,0.153417,NA,2.282,12000,configured_expected_goals,retrospective_validation
+85,world_cup_2026,Suíça,Argélia,16 avos de final,1.516,0.845,0.53875,0.254083,0.207167,0.254083,0.079,0.04225,0.132833,NA,2.351083,12000,configured_expected_goals,retrospective_validation
+86,world_cup_2026,Argentina,Cabo Verde,16 avos de final,1.485,0.503,0.612333,0.258083,0.129583,0.258083,0.087167,0.02775,0.143167,NA,1.980833,12000,configured_expected_goals,retrospective_validation
+87,world_cup_2026,Colômbia,Gana,16 avos de final,1.231,0.614,0.508917,0.303917,0.187167,0.303917,0.085667,0.03825,0.18,NA,1.865,12000,configured_expected_goals,retrospective_validation
+88,world_cup_2026,Austrália,Egito,16 avos de final,1.08,0.969,0.370667,0.307333,0.322,0.307333,0.067,0.062333,0.178,NA,2.047083,12000,configured_expected_goals,retrospective_validation
+89,world_cup_2026,Paraguai,França,Oitavas de final,0.698,1.406,0.18675,0.269083,0.544167,0.269083,0.03975,0.080333,0.149,NA,2.116,12000,configured_expected_goals,retrospective_validation
+90,world_cup_2026,Canadá,Marrocos,Oitavas de final,1.173,1.011,0.393917,0.290083,0.316,0.290083,0.075333,0.058333,0.156417,NA,2.181583,12000,configured_expected_goals,retrospective_validation
+91,world_cup_2026,Brasil,Noruega,Oitavas de final,1.429,0.95,0.482667,0.261083,0.25625,0.261083,0.075167,0.043333,0.142583,NA,2.379583,12000,configured_expected_goals,retrospective_validation
+92,world_cup_2026,México,Inglaterra,Oitavas de final,1.128,0.909,0.418583,0.298167,0.28325,0.298167,0.070667,0.0565,0.171,NA,2.02775,12000,configured_expected_goals,retrospective_validation
+93,world_cup_2026,Portugal,Espanha,Oitavas de final,1.098,1.131,0.343667,0.288667,0.367667,0.288667,0.06475,0.067333,0.156583,NA,2.229667,12000,configured_expected_goals,retrospective_validation
+94,world_cup_2026,Estados Unidos,Bélgica,Oitavas de final,1.238,1.099,0.398917,0.27875,0.322333,0.27875,0.072833,0.060333,0.145583,NA,2.334917,12000,configured_expected_goals,retrospective_validation
+95,world_cup_2026,Argentina,Egito,Oitavas de final,1.57,0.709,0.57925,0.254417,0.166333,0.254417,0.084333,0.035167,0.134917,NA,2.262167,12000,configured_expected_goals,retrospective_validation
+96,world_cup_2026,Suíça,Colômbia,Oitavas de final,1.132,0.84,0.4185,0.309083,0.272417,0.309083,0.078,0.058083,0.173,NA,1.9805,12000,configured_expected_goals,retrospective_validation
+97,world_cup_2026,França,Marrocos,Quartas de final,1.204,0.988,0.40975,0.294083,0.296167,0.294083,0.072583,0.060333,0.161167,NA,2.186667,12000,configured_expected_goals,retrospective_validation
+98,world_cup_2026,Espanha,Bélgica,Quartas de final,1.204,1.115,0.381583,0.28275,0.335667,0.28275,0.067583,0.062083,0.153083,NA,2.326,12000,configured_expected_goals,retrospective_validation
+99,world_cup_2026,Noruega,Inglaterra,Quartas de final,1.133,1.318,0.3255,0.27025,0.40425,0.27025,0.057417,0.075833,0.137,NA,2.43125,12000,configured_expected_goals,retrospective_validation
+100,world_cup_2026,Argentina,Suíça,Quartas de final,1.186,1.083,0.379833,0.289583,0.330583,0.289583,0.068833,0.064917,0.155833,NA,2.249,12000,configured_expected_goals,retrospective_validation
+101,world_cup_2026,França,Espanha,Semifinais,1.13,1.147,0.356,0.28675,0.35725,0.0,0.0,0.0,0.0,NA,2.279667,12000,configured_expected_goals,retrospective_validation
+102,world_cup_2026,Inglaterra,Argentina,Semifinais,1.123,1.352,0.3215,0.269167,0.409333,0.0,0.0,0.0,0.0,NA,2.492167,12000,configured_expected_goals,retrospective_validation
+103,world_cup_2026,França,Inglaterra,Disputa de 3º lugar,1.19,1.134,0.372167,0.283333,0.3445,0.283333,0.06825,0.06325,0.151833,NA,2.342833,12000,configured_expected_goals,retrospective_validation
+104,world_cup_2026,Espanha,Argentina,Final,1.176,1.185,0.354417,0.278583,0.367,0.278583,0.068833,0.065,0.14475,NA,2.35325,12000,configured_expected_goals,retrospective_validation

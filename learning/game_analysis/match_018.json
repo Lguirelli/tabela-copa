@@ -1,0 +1,42 @@
+{
+  "match_id": 18,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Noruega",
+  "actual_outcome": "Noruega",
+  "brier_score": 0.14412687,
+  "log_loss": 0.76958988,
+  "goal_absolute_error": 4,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": -0.1632
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.0912
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": 0.0384
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Noruega",
+    "evidence": {
+      "Iraque": 1.0,
+      "Noruega": 5.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1475.0,
+    "team2_rating_before": 1543.0,
+    "team1_rating_after": 1451.898523,
+    "team2_rating_after": 1566.101477,
+    "rating_delta_team1": -23.101477,
+    "rating_delta_team2": 23.101477
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

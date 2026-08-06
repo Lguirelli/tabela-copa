@@ -1,0 +1,42 @@
+{
+  "match_id": 86,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Argentina",
+  "actual_outcome": "Argentina",
+  "brier_score": 0.01926535,
+  "log_loss": 0.21305833,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.405501
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.221667
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1932
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Argentina",
+    "evidence": {
+      "Argentina": 10.0,
+      "Cabo Verde": 5.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1667.774072,
+    "team2_rating_before": 1498.815285,
+    "team1_rating_after": 1678.922901,
+    "team2_rating_after": 1487.666457,
+    "rating_delta_team1": 11.148829,
+    "rating_delta_team2": -11.148829
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

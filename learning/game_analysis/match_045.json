@@ -1,0 +1,39 @@
+{
+  "match_id": 45,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Inglaterra",
+  "actual_outcome": "Empate",
+  "brier_score": 0.39784402,
+  "log_loss": 1.7540187,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.262255
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.1176
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.065
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "scoreline_only",
+    "direction": "Empate",
+    "evidence": "0-0",
+    "strength": "low"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1597.907982,
+    "team2_rating_before": 1488.635034,
+    "team1_rating_after": 1594.253538,
+    "team2_rating_after": 1492.289478,
+    "rating_delta_team1": -3.654444,
+    "rating_delta_team2": 3.654444
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

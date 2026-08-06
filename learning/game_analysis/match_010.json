@@ -1,0 +1,42 @@
+{
+  "match_id": 10,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Alemanha",
+  "actual_outcome": "Alemanha",
+  "brier_score": 0.09310335,
+  "log_loss": 0.56217681,
+  "goal_absolute_error": 7,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.24
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1488
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0264
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Alemanha",
+    "evidence": {
+      "Alemanha": 12.0,
+      "Curaçao": 2.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1595.0,
+    "team2_rating_before": 1495.0,
+    "team1_rating_after": 1620.448068,
+    "team2_rating_after": 1469.551932,
+    "rating_delta_team1": 25.448068,
+    "rating_delta_team2": -25.448068
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

@@ -10,5 +10,18 @@ data/desempenho/
 src/desempenho-data.js
 
 # Artefatos de execução local
+logs/pipeline/
 .cache/
 *.log
+*.tmp
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+build/site/
+_site/
+reports/pipeline/
+
+# Relatórios legados de execução única
+VALIDACAO_FINAL_REPOSITORIO_*.json
+VALIDACAO_RECALCULO_PROBABILIDADES.json

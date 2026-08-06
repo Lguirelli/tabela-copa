@@ -1,0 +1,42 @@
+{
+  "match_id": 100,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "Argentina",
+  "actual_outcome": "Argentina",
+  "brier_score": 0.14157134,
+  "log_loss": 0.75944725,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.087926
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.067
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Argentina",
+    "evidence": {
+      "Argentina": 0,
+      "Suíça": 1
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1690.709239,
+    "team2_rating_before": 1654.073527,
+    "team1_rating_after": 1713.2469,
+    "team2_rating_after": 1631.535866,
+    "rating_delta_team1": 22.537661,
+    "rating_delta_team2": -22.537661
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

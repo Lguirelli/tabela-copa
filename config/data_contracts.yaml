@@ -1,0 +1,65 @@
+contracts:
+  matches:
+    required: [match_id, date, team1, team2, competition_id, season, status]
+    accepted_aliases:
+      match_id: [jogo, match_id]
+      date: [data, date]
+      team1: [equipe1, team1, home_team]
+      team2: [equipe2, team2, away_team]
+      status: [status, status_real]
+  results:
+    required: [match_id, goals_team1, goals_team2, source]
+    accepted_aliases:
+      match_id: [jogo, match_id]
+      goals_team1: [gols1_real, gols1, home_score]
+      goals_team2: [gols2_real, gols2, away_score]
+      source: [fonte, source, source_url]
+  predictions:
+    required: [match_id, probability_team1_win, probability_draw, probability_team2_win]
+    accepted_aliases:
+      match_id: [jogo, match_id]
+      probability_team1_win: [prob_vitoria_equipe1]
+      probability_draw: [prob_empate]
+      probability_team2_win: [prob_vitoria_equipe2]
+  provenance:
+    required: [source, collected_at]
+    missing_value: NA
+    observed_values_must_not_be_overwritten: true
+
+  team_match_stats:
+    required: [match_id, team, source, collected_at]
+    accepted_aliases:
+      match_id: [jogo, match_id]
+      team: [team, team_norm, team_espn]
+      source: [source, source_url]
+      collected_at: [collected_at, source_collected_at]
+  player_match_stats:
+    required: [match_id, team, player_id, player_name, source]
+    accepted_aliases:
+      match_id: [match_id, jogo]
+      team: [team, selecao]
+      player_id: [player_id, athlete_id]
+      player_name: [player_name, player, jogador]
+      source: [source, source_url]
+  match_officials:
+    required: [match_id, official, role, source]
+    accepted_aliases:
+      match_id: [match_id, jogo]
+      official: [official, referee]
+      role: [role, funcao]
+      source: [source, source_url]
+  fifa_rankings:
+    required: [team, rank, published_at, source]
+    accepted_aliases:
+      team: [team, selecao]
+      rank: [rank, ranking, fifa_ranking]
+      published_at: [published_at, available_at]
+      source: [source, source_url]
+  pre_match_weather:
+    required: [match_id, forecast_valid_at, available_at, source]
+    accepted_aliases:
+      match_id: [match_id, jogo]
+      forecast_valid_at: [forecast_valid_at]
+      available_at: [available_at, published_at]
+      source: [source, source_url]
+    temporal_rule: available_at must be earlier than the prediction cutoff

@@ -1,0 +1,1 @@
+match_id,kickoff_at,forecast_valid_at,forecast_issued_no_later_than,stadium,latitude,longitude,temperature_c,relative_humidity_pct,precipitation_mm,wind_speed_kmh,source,available_at,collected_at,temporal_status,data_quality

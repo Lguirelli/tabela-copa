@@ -1,0 +1,219 @@
+{
+  "match_id": 102,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "England",
+    "clock": "55'",
+    "player": "Anthony Gordon",
+    "text": "Goal! England 1, Argentina 0. Anthony Gordon (England) right footed shot from very close range to the bottom left corner. Assisted by Morgan Rogers with a cross."
+  },
+  "red_cards": {
+    "Inglaterra": 0,
+    "Argentina": 0
+  },
+  "substitutions_detected": {
+    "Inglaterra": 5,
+    "Argentina": 5
+  },
+  "team_stats": {
+    "Inglaterra": {
+      "stat_possessionPct": 35.8,
+      "stat_totalShots": 5.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 3.0
+    },
+    "Argentina": {
+      "stat_possessionPct": 64.2,
+      "stat_totalShots": 15.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 1.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Argentina",
+      "player_id": "espn:285450",
+      "player": "Enzo Fernández",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:219713",
+      "player": "Lautaro Martínez",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Inglaterra",
+      "player_id": "espn:268782",
+      "player": "Anthony Gordon",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:45843",
+      "player": "Lionel Messi",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "assists": 2,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Inglaterra",
+      "player_id": "espn:265653",
+      "player": "Morgan Rogers",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Inglaterra",
+      "player_id": "espn:159443",
+      "player": "Jordan Pickford",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:158626",
+      "player": "Emiliano Martínez",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:277206",
+      "player": "Julián Álvarez",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:249299",
+      "player": "Alexis Mac Allister",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:76017",
+      "player": "Nico González",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Inglaterra",
+      "player_id": "espn:238262",
+      "player": "Declan Rice",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:153115",
+      "player": "Leandro Paredes",
+      "position": "DM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760515"
+    }
+  ],
+  "efficiency": {
+    "Inglaterra": 0.2,
+    "Argentina": 0.133333
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Argentina",
+      "evidence": {
+        "Inglaterra": 2.0,
+        "Argentina": 5.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "England",
+      "evidence": {
+        "team": "England",
+        "clock": "55'",
+        "player": "Anthony Gordon",
+        "text": "Goal! England 1, Argentina 0. Anthony Gordon (England) right footed shot from very close range to the bottom left corner. Assisted by Morgan Rogers with a cross."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Argentina",
+    "evidence": {
+      "Inglaterra": 2.0,
+      "Argentina": 5.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

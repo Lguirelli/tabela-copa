@@ -1,0 +1,220 @@
+{
+  "match_id": 76,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Japan",
+    "clock": "29'",
+    "player": "Kaishu Sano",
+    "text": "Goal! Brazil 0, Japan 1. Kaishu Sano (Japan) right footed shot from outside the box to the bottom left corner following a fast break."
+  },
+  "red_cards": {
+    "Brasil": 0,
+    "Japão": 0
+  },
+  "substitutions_detected": {
+    "Brasil": 4,
+    "Japão": 5
+  },
+  "team_stats": {
+    "Brasil": {
+      "stat_possessionPct": 68.6,
+      "stat_totalShots": 19.0,
+      "stat_shotsOnTarget": 7.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 1.0
+    },
+    "Japão": {
+      "stat_possessionPct": 31.4,
+      "stat_totalShots": 5.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Brasil",
+      "player_id": "espn:173666",
+      "player": "Casemiro",
+      "position": "CM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:269844",
+      "player": "Gabriel Martinelli",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:357030",
+      "player": "Kaishu Sano",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:218522",
+      "player": "Bruno Guimarães",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:236322",
+      "player": "Gabriel Magalhães",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:265958",
+      "player": "Zion Suzuki",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:196876",
+      "player": "Alisson Becker",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:252107",
+      "player": "Vinícius Júnior",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:259902",
+      "player": "Matheus Cunha",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:274277",
+      "player": "Ayase Ueda",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:234715",
+      "player": "Lucas Paquetá",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:357719",
+      "player": "Rayan",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487"
+    }
+  ],
+  "efficiency": {
+    "Brasil": 0.105263,
+    "Japão": 0.2
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Brasil",
+      "evidence": {
+        "Brasil": 7.0,
+        "Japão": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Japan",
+      "evidence": {
+        "team": "Japan",
+        "clock": "29'",
+        "player": "Kaishu Sano",
+        "text": "Goal! Brazil 0, Japan 1. Kaishu Sano (Japan) right footed shot from outside the box to the bottom left corner following a fast break."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Brasil",
+    "evidence": {
+      "Brasil": 7.0,
+      "Japão": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

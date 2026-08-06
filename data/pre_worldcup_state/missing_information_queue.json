@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-08-06T21:06:28.383085+00:00",
+  "snapshot_at": "2026-06-11T03:59:59+00:00",
+  "mode": "backfilled_pre_tournament_facts",
+  "strict_temporal_warning": "Backfilled facts are allowed only when they describe pre-tournament attributes and never include tournament outcomes.",
+  "items": [
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "fifa_ranking",
+      "priority": "high",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "recent_matches",
+      "priority": "high",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "recent_minutes",
+      "priority": "medium",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "recent_assists",
+      "priority": "medium",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "injuries",
+      "priority": "high",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "physical_condition",
+      "priority": "medium",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "qualifying_performance",
+      "priority": "high",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "weather_forecast",
+      "priority": "medium",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "travel_distance",
+      "priority": "medium",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    },
+    {
+      "entity": "competition",
+      "entity_id": "world_cup_2026",
+      "missing_field": "psychological_moment",
+      "priority": "medium",
+      "status": "OPEN",
+      "required_before": "2026-06-11T03:59:59+00:00",
+      "allowed_resolution": "archived source with published_at <= required_before, otherwise NA"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-08-06T20:55:51.967101+00:00",
+  "status": "VALID",
+  "summary": {
+    "timeline_matches": 104,
+    "predictions": 104,
+    "learning_analyses": 104,
+    "knowledge_records": 5571,
+    "model_versions": 36,
+    "issues": 0
+  },
+  "checks": {
+    "no_future_records_in_predictions": true,
+    "current_match_result_never_used": true,
+    "knockout_fixture_visibility_valid": true,
+    "workflows_present_and_valid_yaml": true
+  },
+  "issues": []
+}

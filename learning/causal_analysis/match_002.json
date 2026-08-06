@@ -1,0 +1,213 @@
+{
+  "match_id": 2,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Czechia",
+    "clock": "59'",
+    "player": "Ladislav Krejcí",
+    "text": "Goal! Korea Republic 0, Czechia 1. Ladislav Krejcí (Czechia) header from very close range to the bottom right corner. Assisted by Vladimír Coufal."
+  },
+  "red_cards": {
+    "Coreia do Sul": 0,
+    "Tchéquia": 0
+  },
+  "substitutions_detected": {
+    "Coreia do Sul": 5,
+    "Tchéquia": 4
+  },
+  "team_stats": {
+    "Coreia do Sul": {
+      "stat_possessionPct": 61.5,
+      "stat_totalShots": 15.0,
+      "stat_shotsOnTarget": 6.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 3.0
+    },
+    "Tchéquia": {
+      "stat_possessionPct": 38.5,
+      "stat_totalShots": 7.0,
+      "stat_shotsOnTarget": 4.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:280061",
+      "player": "Hwang In-Beom",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 3,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:302434",
+      "player": "Oh Hyeon-Gyu",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Tchéquia",
+      "player_id": "espn:151714",
+      "player": "Ladislav Krejcí",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:274197",
+      "player": "Lee Kang-In",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Tchéquia",
+      "player_id": "espn:191209",
+      "player": "Vladimír Coufal",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Tchéquia",
+      "player_id": "espn:277313",
+      "player": "Matej Kovár",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:175921",
+      "player": "Kim Seung-Gyu",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Tchéquia",
+      "player_id": "espn:249525",
+      "player": "Michal Sadílek",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:149945",
+      "player": "Son Heung-Min",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 6,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:134103",
+      "player": "Lee Jae-Sung",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Tchéquia",
+      "player_id": "espn:292169",
+      "player": "Adam Hlozek",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    },
+    {
+      "team": "Coreia do Sul",
+      "player_id": "espn:297788",
+      "player": "Lee Han-Beom",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760414"
+    }
+  ],
+  "efficiency": {
+    "Coreia do Sul": 0.133333,
+    "Tchéquia": 0.142857
+  },
+  "important_factors": [
+    {
+      "factor": "first_goal",
+      "direction": "Czechia",
+      "evidence": {
+        "team": "Czechia",
+        "clock": "59'",
+        "player": "Ladislav Krejcí",
+        "text": "Goal! Korea Republic 0, Czechia 1. Ladislav Krejcí (Czechia) header from very close range to the bottom right corner. Assisted by Vladimír Coufal."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "first_goal",
+    "direction": "Czechia",
+    "evidence": {
+      "team": "Czechia",
+      "clock": "59'",
+      "player": "Ladislav Krejcí",
+      "text": "Goal! Korea Republic 0, Czechia 1. Ladislav Krejcí (Czechia) header from very close range to the bottom right corner. Assisted by Vladimír Coufal."
+    },
+    "strength": "contextual"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

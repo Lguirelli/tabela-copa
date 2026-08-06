@@ -1,0 +1,95 @@
+{
+  "loop": "03_data_validation",
+  "competition_id": "world_cup_2026",
+  "generated_at": "2026-08-06T21:06:26.588388+00:00",
+  "inputs": [
+    {
+      "path": "data/matches.csv",
+      "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b",
+      "size_bytes": 15867
+    },
+    {
+      "path": "data/resultados_reais.csv",
+      "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101",
+      "size_bytes": 35210
+    },
+    {
+      "path": "data/modelo_diario/previsoes_dia_a_dia.csv",
+      "sha256": "2d176d5d06be3e1e5ab5c8567af917d8ae4afcb5e8df2ea9f94def097a994f14",
+      "size_bytes": 52042
+    },
+    {
+      "path": "data/normalized/espn_team_match_stats.csv",
+      "sha256": "7e4ae352e2b590d9bc2c5357b4c3ce8cecf5e9cc7b4790252fca7feeb72c0694",
+      "size_bytes": 74940
+    },
+    {
+      "path": "data/normalized/espn_match_events.csv",
+      "sha256": "60ac4e961f1d2a05c9ee7381d8bba8a26139146bfad475889b9a1a65215c2ccd",
+      "size_bytes": 1866089
+    },
+    {
+      "path": "data/entrada/desempenho_manual.csv",
+      "sha256": "4ecc4e85758a686f77635d259280cb9d91df8a85bb43faf076ac7d98320656c8",
+      "size_bytes": 107346
+    },
+    {
+      "path": "data/database/players_database.csv",
+      "sha256": "156624077a8cdc1d51a5d44be9d9d5f23233eef136ceaedd3eaf43fccd64b0eb",
+      "size_bytes": 624647
+    },
+    {
+      "path": "data/database/team_strengths.csv",
+      "sha256": "53cf67c550c2ccc341ad5f8073885ffd03e16f4cdf42e23de4811d0a546bf97f",
+      "size_bytes": 11369
+    },
+    {
+      "path": "data/database/teams_tactical.csv",
+      "sha256": "26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd",
+      "size_bytes": 12353
+    },
+    {
+      "path": "data/platform/referees_observed.csv",
+      "sha256": "ce86922d626e0472cfe3d6e1b1c48156bf56fca8d4159f1252f608104236df1c",
+      "size_bytes": 62681
+    },
+    {
+      "path": "data/platform/lineups.csv",
+      "sha256": "09483174553e5ef41db9afc3d6baee666709db131ead46712d3145373a7e4bf6",
+      "size_bytes": 1515258
+    },
+    {
+      "path": "data/platform/player_match_stats.csv",
+      "sha256": "68d6240d8175b0643bb0f37d3abf503da8171d25c768af627f1e4d2632565b88",
+      "size_bytes": 2236156
+    },
+    {
+      "path": "data/platform/player_availability.csv",
+      "sha256": "ce9012a94b20ebc526da58e6874c6a91d994755cd675eef30f7d4363d653adf7",
+      "size_bytes": 1767464
+    },
+    {
+      "path": "data/context/pre_match_weather.csv",
+      "sha256": "80a4d69bfb33859d9df4fdd63dfd9e8acd3c81ba8e89e882fc8e9f73e2d78df6",
+      "size_bytes": 225
+    },
+    {
+      "path": "data/external/football_data_matches.csv",
+      "sha256": "bd6b70e1e60310cc285aaf9fa5037e15cf822c401cd8b26d9cf27893d0154ae2",
+      "size_bytes": 190
+    },
+    {
+      "path": "data/external/fifa_rankings.csv",
+      "sha256": "d96be721fa0801494f593586c3421e5c29c39b755757eebeb3638bf78bf3bbf3",
+      "size_bytes": 76
+    }
+  ],
+  "status": "VALID",
+  "summary": {
+    "datasets_checked": 16,
+    "invalid_issues": 0,
+    "conflicts": 0,
+    "warnings": 0
+  },
+  "issues": []
+}

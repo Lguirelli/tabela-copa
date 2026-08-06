@@ -1,0 +1,227 @@
+{
+  "match_id": 49,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Brazil",
+    "clock": "7'",
+    "player": "Vinícius Júnior",
+    "text": "Goal! Scotland 0, Brazil 1. Vinícius Júnior (Brazil) right footed shot from the centre of the box to the centre of the goal. Assisted by Rayan."
+  },
+  "red_cards": {
+    "Escócia": 0,
+    "Brasil": 0
+  },
+  "substitutions_detected": {
+    "Escócia": 5,
+    "Brasil": 5
+  },
+  "team_stats": {
+    "Escócia": {
+      "stat_possessionPct": 46.0,
+      "stat_totalShots": 14.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 5.0
+    },
+    "Brasil": {
+      "stat_possessionPct": 54.0,
+      "stat_totalShots": 21.0,
+      "stat_shotsOnTarget": 9.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 5.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Brasil",
+      "player_id": "espn:252107",
+      "player": "Vinícius Júnior",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 8,
+        "shots_on_target": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:259902",
+      "player": "Matheus Cunha",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 5,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:218522",
+      "player": "Bruno Guimarães",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 2,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:357719",
+      "player": "Rayan",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:196876",
+      "player": "Alisson Becker",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Escócia",
+      "player_id": "espn:181299",
+      "player": "Angus Gunn",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Escócia",
+      "player_id": "espn:255850",
+      "player": "Scott McTominay",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 4,
+        "shots_on_target": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Escócia",
+      "player_id": "espn:202429",
+      "player": "Lewis Ferguson",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:132948",
+      "player": "Neymar",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Escócia",
+      "player_id": "espn:224305",
+      "player": "Anthony Ralston",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Escócia",
+      "player_id": "espn:332948",
+      "player": "Ben Gannon-Doak",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    },
+    {
+      "team": "Escócia",
+      "player_id": "espn:173306",
+      "player": "Lawrence Shankland",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760465"
+    }
+  ],
+  "efficiency": {
+    "Escócia": 0.0,
+    "Brasil": 0.142857
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Brasil",
+      "evidence": {
+        "Escócia": 5.0,
+        "Brasil": 9.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Brasil",
+      "evidence": {
+        "Escócia": 0.0,
+        "Brasil": 0.1429
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Brazil",
+      "evidence": {
+        "team": "Brazil",
+        "clock": "7'",
+        "player": "Vinícius Júnior",
+        "text": "Goal! Scotland 0, Brazil 1. Vinícius Júnior (Brazil) right footed shot from the centre of the box to the centre of the goal. Assisted by Rayan."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Brasil",
+    "evidence": {
+      "Escócia": 5.0,
+      "Brasil": 9.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

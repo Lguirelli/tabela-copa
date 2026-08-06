@@ -1,0 +1,42 @@
+{
+  "match_id": 72,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "RD Congo",
+  "actual_outcome": "RD Congo",
+  "brier_score": 0.1108998,
+  "log_loss": 0.63601288,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": 0.2125
+    },
+    {
+      "factor": "rating",
+      "contribution": 0.096317
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.0804
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "RD Congo",
+    "evidence": {
+      "RD Congo": 4.0,
+      "Uzbequistão": 1.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1497.903181,
+    "team2_rating_before": 1457.771202,
+    "team1_rating_after": 1520.190491,
+    "team2_rating_after": 1435.483892,
+    "rating_delta_team1": 22.28731,
+    "rating_delta_team2": -22.28731
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

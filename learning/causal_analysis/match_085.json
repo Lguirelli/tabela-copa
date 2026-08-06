@@ -1,0 +1,226 @@
+{
+  "match_id": 85,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Switzerland",
+    "clock": "10'",
+    "player": "Breel Embolo",
+    "text": "Goal! Switzerland 1, Algeria 0. Breel Embolo (Switzerland) left footed shot from very close range to the bottom left corner. Assisted by Johan Manzambi following a fast break."
+  },
+  "red_cards": {
+    "Suíça": 0,
+    "Argélia": 0
+  },
+  "substitutions_detected": {
+    "Suíça": 5,
+    "Argélia": 5
+  },
+  "team_stats": {
+    "Suíça": {
+      "stat_possessionPct": 44.5,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 2.0
+    },
+    "Argélia": {
+      "stat_possessionPct": 55.5,
+      "stat_totalShots": 8.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 2.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Suíça",
+      "player_id": "espn:202099",
+      "player": "Breel Embolo",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:275842",
+      "player": "Dan Ndoye",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:386992",
+      "player": "Johan Manzambi",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:225561",
+      "player": "Luca Zidane",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:238544",
+      "player": "Gregor Kobel",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:241116",
+      "player": "Houssem Aouar",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:222628",
+      "player": "Denis Zakaria",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:308908",
+      "player": "Fabian Rieder",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:337306",
+      "player": "Farès Chaïbi",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:152600",
+      "player": "Remo Freuler",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:361212",
+      "player": "Ibrahim Maza",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    },
+    {
+      "team": "Argélia",
+      "player_id": "espn:163940",
+      "player": "Riyad Mahrez",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760498"
+    }
+  ],
+  "efficiency": {
+    "Suíça": 0.181818,
+    "Argélia": 0.0
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Suíça",
+      "evidence": {
+        "Suíça": 5.0,
+        "Argélia": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Suíça",
+      "evidence": {
+        "Suíça": 0.1818,
+        "Argélia": 0.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Switzerland",
+      "evidence": {
+        "team": "Switzerland",
+        "clock": "10'",
+        "player": "Breel Embolo",
+        "text": "Goal! Switzerland 1, Algeria 0. Breel Embolo (Switzerland) left footed shot from very close range to the bottom left corner. Assisted by Johan Manzambi following a fast break."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Suíça",
+    "evidence": {
+      "Suíça": 5.0,
+      "Argélia": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

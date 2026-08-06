@@ -1,0 +1,223 @@
+{
+  "match_id": 64,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Belgium",
+    "clock": "28'",
+    "player": "Leandro Trossard",
+    "text": "Goal! New Zealand 0, Belgium 1. Leandro Trossard (Belgium) right footed shot from very close range to the bottom right corner following a corner."
+  },
+  "red_cards": {
+    "Nova Zelândia": 0,
+    "Bélgica": 0
+  },
+  "substitutions_detected": {
+    "Nova Zelândia": 5,
+    "Bélgica": 5
+  },
+  "team_stats": {
+    "Nova Zelândia": {
+      "stat_possessionPct": 45.5,
+      "stat_totalShots": 6.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 5.0
+    },
+    "Bélgica": {
+      "stat_possessionPct": 54.5,
+      "stat_totalShots": 35.0,
+      "stat_shotsOnTarget": 10.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 1.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Bélgica",
+      "player_id": "espn:174980",
+      "player": "Leandro Trossard",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 7,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:139437",
+      "player": "Romelu Lukaku",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134947",
+      "player": "Kevin De Bruyne",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 7,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Nova Zelândia",
+      "player_id": "espn:266555",
+      "player": "Elijah Just",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 2,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:271132",
+      "player": "Alexis Saelemaekers",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:193849",
+      "player": "Hans Vanaken",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:260027",
+      "player": "Nicolas Raskin",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Nova Zelândia",
+      "player_id": "espn:168747",
+      "player": "Max Crocombe",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134283",
+      "player": "Thibaut Courtois",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:304222",
+      "player": "Arthur Theate",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:301327",
+      "player": "Maxim De Cuyper",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:283672",
+      "player": "Jérémy Doku",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760477"
+    }
+  ],
+  "efficiency": {
+    "Nova Zelândia": 0.166667,
+    "Bélgica": 0.142857
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Bélgica",
+      "evidence": {
+        "Nova Zelândia": 2.0,
+        "Bélgica": 10.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Belgium",
+      "evidence": {
+        "team": "Belgium",
+        "clock": "28'",
+        "player": "Leandro Trossard",
+        "text": "Goal! New Zealand 0, Belgium 1. Leandro Trossard (Belgium) right footed shot from very close range to the bottom right corner following a corner."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Bélgica",
+    "evidence": {
+      "Nova Zelândia": 2.0,
+      "Bélgica": 10.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

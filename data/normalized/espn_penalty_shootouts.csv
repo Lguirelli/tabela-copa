@@ -1,69 +1,41 @@
-﻿jogo,espn_event_id,event_id,period,clock,type,type_text,team,team_espn,player,text,scoring_play,shootout,source_file
-27,760440,,,,,,,,,VAR Decision: No Penalty Canada.,False,False,espn_summary_event_760440__ae5f05b3-26cb-4568-8874-5c0c5fc85d80.json
-63,760476,49626888,1.0,11',penalty---saved,Penalty - Saved,ira,Iran,Mehdi Taremi,Penalty saved. Mehdi Taremi (IR Iran) right footed shot saved in the bottom right corner by Mostafa Shobeir (Egypt).,False,False,espn_summary_event_760476__9b24e55c-6457-4da2-847b-3cb44cfd7bee.json
-63,760476,,,,,,,,,Penalty IR Iran. Mehdi Taremi draws a foul in the penalty area.,False,False,espn_summary_event_760476__9b24e55c-6457-4da2-847b-3cb44cfd7bee.json
-63,760476,,,,,,,,,Penalty conceded by Mohamed Abdelmonem (Egypt) after a foul in the penalty area.,False,False,espn_summary_event_760476__9b24e55c-6457-4da2-847b-3cb44cfd7bee.json
-63,760476,,,,,,,,,Penalty saved. Mehdi Taremi (IR Iran) right footed shot saved in the bottom right corner by Mostafa Shobeir (Egypt).,False,False,espn_summary_event_760476__9b24e55c-6457-4da2-847b-3cb44cfd7bee.json
-70,760483,49646042,1.0,31',penalty---scored,Penalty - Scored,argentina,Argentina,Lautaro Martínez,"Goal! Jordan 0, Argentina 2. Lautaro Martínez (Argentina) converts the penalty with a right footed shot to the bottom left corner.",True,False,espn_summary_event_760483__fc97ba5f-0f7a-4b38-8317-7e04032ee3eb.json
-70,760483,,,,,,,,,Penalty conceded by Nizar Al Rashdan (Jordan) after a foul in the penalty area.,False,False,espn_summary_event_760483__fc97ba5f-0f7a-4b38-8317-7e04032ee3eb.json
-70,760483,,,,,,,,,Penalty Argentina. Marcos Senesi draws a foul in the penalty area.,False,False,espn_summary_event_760483__fc97ba5f-0f7a-4b38-8317-7e04032ee3eb.json
-70,760483,,,,,,,,,VAR Decision: Penalty Argentina.,False,False,espn_summary_event_760483__fc97ba5f-0f7a-4b38-8317-7e04032ee3eb.json
-72,760482,49644299,2.0,68',penalty---scored,Penalty - Scored,rd congo,Congo DR,Yoane Wissa,"Goal! Congo DR 1, Uzbekistan 1. Yoane Wissa (Congo DR) converts the penalty with a right footed shot to the bottom right corner.",True,False,espn_summary_event_760482__14d836fe-0c32-41df-8e02-29d05367e7c5.json
-72,760482,,,,,,,,,Penalty conceded by Abdukodir Khusanov (Uzbekistan) after a foul in the penalty area.,False,False,espn_summary_event_760482__14d836fe-0c32-41df-8e02-29d05367e7c5.json
-72,760482,,,,,,,,,Penalty Congo DR. Yoane Wissa draws a foul in the penalty area.,False,False,espn_summary_event_760482__14d836fe-0c32-41df-8e02-29d05367e7c5.json
-8,760420,49493954,1.0,17',penalty---scored,Penalty - Scored,suica,Switzerland,Breel Embolo,"Goal! Qatar 0, Switzerland 1. Breel Embolo (Switzerland) converts the penalty with a right footed shot to the bottom left corner.",True,False,espn_summary_event_760420__9686c615-6578-40ee-a0fd-23d246836130.json
-8,760420,,,,,,,,,Penalty conceded by Mahmoud Abunada (Qatar) after a foul in the penalty area.,False,False,espn_summary_event_760420__9686c615-6578-40ee-a0fd-23d246836130.json
-8,760420,,,,,,,,,Penalty Switzerland. Remo Freuler draws a foul in the penalty area.,False,False,espn_summary_event_760420__9686c615-6578-40ee-a0fd-23d246836130.json
-75,760488,49665212,5.0,120',end-match,End Match,,,,"Penalty Shootout ends, Netherlands 1(2), Morocco 1(3).",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,"Penalty Shootout begins Netherlands 1, Morocco 1.",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,"Penalty missed! Still Netherlands 1(1), Morocco 1. Neil El Aynaoui (Morocco) hits the bar with a right footed shot.",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,"Penalty missed! Still Netherlands 1(1), Morocco 1. Justin Kluivert (Netherlands) hits the left post with a right footed shot.",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,"Penalty missed. Quinten Timber (Netherlands) right footed shot is close, but misses to the left.",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,"Penalty missed! Still Netherlands 1(2), Morocco 1(2). Achraf Hakimi (Morocco) hits the left post with a right footed shot.",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,Penalty saved. Crysencio Summerville (Netherlands) right footed shot saved in the top left corner by Yassine Bounou (Morocco).,False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-75,760488,,,,,,,,,"Penalty Shootout ends, Netherlands 1(2), Morocco 1(3).",False,False,espn_summary_event_760488__71387d98-23e5-461f-a00e-ca3a14182a3b.json
-43,760456,49582988,1.0,9',penalty---missed,Penalty - Missed,argentina,Argentina,Lionel Messi,"Penalty missed. Lionel Messi (Argentina) left footed shot is close, but misses to the right.",False,False,espn_summary_event_760456__aafddf57-ac0e-4e0a-a01c-8832aab64b82.json
-43,760456,,,,,,,,,Penalty conceded by Stefan Posch (Austria) after a foul in the penalty area.,False,False,espn_summary_event_760456__aafddf57-ac0e-4e0a-a01c-8832aab64b82.json
-43,760456,,,,,,,,,Penalty Argentina. Lautaro Martínez draws a foul in the penalty area.,False,False,espn_summary_event_760456__aafddf57-ac0e-4e0a-a01c-8832aab64b82.json
-43,760456,,,,,,,,,VAR Decision: Penalty Argentina.,False,False,espn_summary_event_760456__aafddf57-ac0e-4e0a-a01c-8832aab64b82.json
-43,760456,,,,,,,,,"Penalty missed. Lionel Messi (Argentina) left footed shot is close, but misses to the right.",False,False,espn_summary_event_760456__aafddf57-ac0e-4e0a-a01c-8832aab64b82.json
-20,760431,49538832,2.0,90'+12',penalty---scored,Penalty - Scored,austria,Austria,Marko Arnautovic,"Goal! Austria 3, Jordan 1. Marko Arnautovic (Austria) converts the penalty with a right footed shot to the bottom left corner.",True,False,espn_summary_event_760431__6986a2fe-ad5a-4312-a9d8-9632cae7c363.json
-20,760431,,,,,,,,,Penalty conceded by Saleem Obaid (Jordan) with a handball in the penalty area.,False,False,espn_summary_event_760431__6986a2fe-ad5a-4312-a9d8-9632cae7c363.json
-20,760431,,,,,,,,,VAR Decision: Penalty Austria.,False,False,espn_summary_event_760431__6986a2fe-ad5a-4312-a9d8-9632cae7c363.json
-74,760489,,,,,,,,,"Penalty Shootout begins Germany 1, Paraguay 1.",False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-74,760489,,,,,,,,,Penalty saved. Kai Havertz (Germany) left footed shot saved in the top centre of the goal by Orlando Gill (Paraguay).,False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-74,760489,,,,,,,,,Penalty saved. Nick Woltemade (Germany) right footed shot saved in the bottom right corner by Orlando Gill (Paraguay).,False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-74,760489,,,,,,,,,"Penalty missed. Antonio Sanabria (Paraguay) right footed shot is close, but misses to the left.",False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-74,760489,,,,,,,,,Penalty saved. Fabián Balbuena (Paraguay) right footed shot saved in the bottom right corner by Manuel Neuer (Germany).,False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-74,760489,,,,,,,,,Penalty missed. Jonathan Tah (Germany) right footed shot is too high.,False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-74,760489,,,,,,,,,"Penalty Shootout ends, Germany 1(3), Paraguay 1(4).",False,False,espn_summary_event_760489__feb79357-dffa-4f8a-a0d9-e551fb45bee6.json
-61,760475,49620579,2.0,50',penalty---saved,Penalty - Saved,noruega,Norway,Jørgen Strand Larsen,Penalty saved. Jørgen Strand Larsen (Norway) right footed shot saved in the bottom right corner by Mike Maignan (France).,False,False,espn_summary_event_760475__1227913f-6a07-49fc-a65b-88b9304a6ee8.json
-61,760475,,,,,,,,,Penalty Norway. Oscar Bobb draws a foul in the penalty area.,False,False,espn_summary_event_760475__1227913f-6a07-49fc-a65b-88b9304a6ee8.json
-61,760475,,,,,,,,,Penalty conceded by Théo Hernández (France) after a foul in the penalty area.,False,False,espn_summary_event_760475__1227913f-6a07-49fc-a65b-88b9304a6ee8.json
-61,760475,,,,,,,,,Penalty saved. Jørgen Strand Larsen (Norway) right footed shot saved in the bottom right corner by Mike Maignan (France).,False,False,espn_summary_event_760475__1227913f-6a07-49fc-a65b-88b9304a6ee8.json
-25,760438,49546146,2.0,83',penalty---scored,Penalty - Scored,africa do sul,South Africa,Teboho Mokoena,"Goal! Czechia 1, South Africa 1. Teboho Mokoena (South Africa) converts the penalty with a right footed shot to the bottom left corner.",True,False,espn_summary_event_760438__0ef912a3-8c81-4f92-bdbc-04f66d4e4fdc.json
-25,760438,,,,,,,,,Penalty conceded by Pavel Sulc (Czechia) with a handball in the penalty area.,False,False,espn_summary_event_760438__0ef912a3-8c81-4f92-bdbc-04f66d4e4fdc.json
-26,760439,49547869,2.0,90'+7',penalty---scored,Penalty - Scored,suica,Switzerland,Granit Xhaka,"Goal! Switzerland 4, Bosnia and Herzegovina 1. Granit Xhaka (Switzerland) converts the penalty with a left footed shot to the bottom right corner.",True,False,espn_summary_event_760439__d735307f-d27a-44ed-8de0-951759cee319.json
-26,760439,,,,,,,,,Penalty conceded by Amar Memic (Bosnia and Herzegovina) after a foul in the penalty area.,False,False,espn_summary_event_760439__d735307f-d27a-44ed-8de0-951759cee319.json
-26,760439,,,,,,,,,Penalty Switzerland. Djibril Sow draws a foul in the penalty area.,False,False,espn_summary_event_760439__d735307f-d27a-44ed-8de0-951759cee319.json
-17,760432,,,,,,,,,VAR Decision: No Penalty France.,False,False,espn_summary_event_760432__d040fbc8-8a25-4ac4-9775-89905ca13d04.json
-56,760468,,,,,,,,,VAR Decision: No Penalty Germany.,False,False,espn_summary_event_760468__9969e492-c58b-4632-85b0-ebd828c79f84.json
-82,760493,49674562,4.0,120'+5',penalty---scored,Penalty - Scored,belgica,Belgium,Youri Tielemans,"Goal! Belgium 3, Senegal 2. Youri Tielemans (Belgium) converts the penalty with a right footed shot to the top right corner.",True,False,espn_summary_event_760493__8a2e412b-a792-446b-99b8-e8817cffd743.json
-82,760493,,,,,,,,,Penalty conceded by Lamine Camara (Senegal) after a foul in the penalty area.,False,False,espn_summary_event_760493__8a2e412b-a792-446b-99b8-e8817cffd743.json
-82,760493,,,,,,,,,Penalty Belgium. Youri Tielemans draws a foul in the penalty area.,False,False,espn_summary_event_760493__8a2e412b-a792-446b-99b8-e8817cffd743.json
-82,760493,,,,,,,,,VAR Decision: Penalty Belgium.,False,False,espn_summary_event_760493__8a2e412b-a792-446b-99b8-e8817cffd743.json
-64,760477,,,,,,,,,VAR Decision: No Penalty Belgium.,False,False,espn_summary_event_760477__26c76989-8c14-4060-aba4-8a0e99c8ae77.json
-88,760499,,,,,,,,,"Penalty Shootout begins Australia 1, Egypt 1.",False,False,espn_summary_event_760499__b63205f8-cce9-4fbd-bcb0-c7397068ad03.json
-88,760499,,,,,,,,,Penalty missed. Harry Souttar (Australia) right footed shot is just a bit too high.,False,False,espn_summary_event_760499__b63205f8-cce9-4fbd-bcb0-c7397068ad03.json
-88,760499,,,,,,,,,"Penalty missed! Still Australia 1(2), Egypt 1(3). Lucas Herrington (Australia) hits the bar with a right footed shot.",False,False,espn_summary_event_760499__b63205f8-cce9-4fbd-bcb0-c7397068ad03.json
-88,760499,,,,,,,,,"Penalty Shootout ends, Australia 1(2), Egypt 1(4).",False,False,espn_summary_event_760499__b63205f8-cce9-4fbd-bcb0-c7397068ad03.json
-83,760496,49680272,2.0,68',penalty---scored,Penalty - Scored,portugal,Portugal,Cristiano Ronaldo,"Goal! Portugal 1, Croatia 1. Cristiano Ronaldo (Portugal) converts the penalty with a right footed shot to the centre of the goal.",True,False,espn_summary_event_760496__55441cde-87e0-498f-b5b9-eea9b4ae5991.json
-83,760496,,,,,,,,,Penalty conceded by Nikola Vlasic (Croatia) after a foul in the penalty area.,False,False,espn_summary_event_760496__55441cde-87e0-498f-b5b9-eea9b4ae5991.json
-83,760496,,,,,,,,,Penalty Portugal. Renato Veiga draws a foul in the penalty area.,False,False,espn_summary_event_760496__55441cde-87e0-498f-b5b9-eea9b4ae5991.json
-83,760496,,,,,,,,,VAR Decision: Penalty Portugal.,False,False,espn_summary_event_760496__55441cde-87e0-498f-b5b9-eea9b4ae5991.json
-22,760437,49540529,1.0,12',penalty---scored,Penalty - Scored,inglaterra,England,Harry Kane,"Goal! England 1, Croatia 0. Harry Kane (England) converts the penalty with a right footed shot to the bottom right corner.",True,False,espn_summary_event_760437__4faab7fa-ad17-4723-b956-f4fe1ba4c0b8.json
-22,760437,,,,,,,,,Penalty conceded by Luka Modric (Croatia) after a foul in the penalty area.,False,False,espn_summary_event_760437__4faab7fa-ad17-4723-b956-f4fe1ba4c0b8.json
-22,760437,,,,,,,,,Penalty England. Noni Madueke draws a foul in the penalty area.,False,False,espn_summary_event_760437__4faab7fa-ad17-4723-b956-f4fe1ba4c0b8.json
-10,760422,49507949,1.0,45'+5',penalty---scored,Penalty - Scored,alemanha,Germany,Kai Havertz,"Goal! Germany 3, Curaçao 1. Kai Havertz (Germany) converts the penalty with a left footed shot to the bottom left corner.",True,False,espn_summary_event_760422__bce2abb5-260c-4987-a82b-c80a7e99b1df.json
-10,760422,,,,,,,,,Penalty conceded by Riechedly Bazoer (Curaçao) after a foul in the penalty area.,False,False,espn_summary_event_760422__bce2abb5-260c-4987-a82b-c80a7e99b1df.json
-10,760422,,,,,,,,,Penalty Germany. Felix Nmecha draws a foul in the penalty area.,False,False,espn_summary_event_760422__bce2abb5-260c-4987-a82b-c80a7e99b1df.json
+jogo,jogo_original_fonte,espn_event_id,event_id,team_id,team,team_espn,player_id,player,kick_number,converted,result,source_url,collected_at
+74,74,760489,49663249,481,Alemanha,Germany,231182,Kai Havertz,1,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604254+00:00
+74,74,760489,49663250,210,Paraguai,Paraguay,289046,Maurício,1,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604338+00:00
+74,74,760489,49663251,481,Alemanha,Germany,190161,Joshua Kimmich,2,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604278+00:00
+74,74,760489,49663252,210,Paraguai,Paraguay,118395,Gustavo Gómez,2,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604349+00:00
+74,74,760489,49663253,481,Alemanha,Germany,303821,Jamal Musiala,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604291+00:00
+74,74,760489,49663254,210,Paraguai,Paraguay,297328,Matías Galarza,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604359+00:00
+74,74,760489,49663255,481,Alemanha,Germany,298349,Nick Woltemade,4,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604302+00:00
+74,74,760489,49663256,210,Paraguai,Paraguay,192162,Antonio Sanabria,4,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604370+00:00
+74,74,760489,49663257,481,Alemanha,Germany,210818,Nadiem Amiri,5,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604314+00:00
+74,74,760489,49663258,210,Paraguai,Paraguay,199101,Fabián Balbuena,5,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604380+00:00
+74,74,760489,49663259,481,Alemanha,Germany,188052,Jonathan Tah,6,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604324+00:00
+74,74,760489,49663260,210,Paraguai,Paraguay,227682,José Canale,6,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489,2026-07-20T17:28:13.604390+00:00
+75,75,760488,49665202,449,Países Baixos,Netherlands,258968,Teun Koopmeiners,1,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.175970+00:00
+75,75,760488,49665203,2869,Marrocos,Morocco,323807,Neil El Aynaoui,1,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176033+00:00
+75,75,760488,49665204,449,Países Baixos,Netherlands,245916,Justin Kluivert,2,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.175989+00:00
+75,75,760488,49665205,2869,Marrocos,Morocco,276139,Soufiane Rahimi,2,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176043+00:00
+75,75,760488,49665206,449,Países Baixos,Netherlands,177042,Wout Weghorst,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176001+00:00
+75,75,760488,49665207,2869,Marrocos,Morocco,360062,Chemsdine Talbi,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176051+00:00
+75,75,760488,49665208,449,Países Baixos,Netherlands,282230,Quinten Timber,4,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176011+00:00
+75,75,760488,49665209,2869,Marrocos,Morocco,240233,Achraf Hakimi,4,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176060+00:00
+75,75,760488,49665210,449,Países Baixos,Netherlands,284792,Crysencio Summerville,5,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176021+00:00
+75,75,760488,49665211,2869,Marrocos,Morocco,304572,Ismael Saibari,5,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488,2026-07-20T17:28:18.176069+00:00
+88,88,760499,49687110,628,Austrália,Australia,207461,Harry Souttar,1,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519233+00:00
+88,88,760499,49687111,2620,Egito,Egypt,314444,Mahmoud Saber,1,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519318+00:00
+88,88,760499,49687112,628,Austrália,Australia,178071,Jackson Irvine,2,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519258+00:00
+88,88,760499,49687113,2620,Egito,Egypt,187571,Ramy Rabia,2,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519332+00:00
+88,88,760499,49687114,628,Austrália,Australia,181707,Awer Mabil,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519276+00:00
+88,88,760499,49687115,2620,Egito,Egypt,173896,Mohamed Salah,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519345+00:00
+88,88,760499,49687116,628,Austrália,Australia,392320,Lucas Herrington,4,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519293+00:00
+88,88,760499,49687117,2620,Egito,Egypt,308926,Hossam Abdelmaguid,4,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499,2026-07-20T17:28:54.519357+00:00
+96,96,760508,49734349,208,Colômbia,Colombia,177780,Juan Fernando Quintero,1,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903569+00:00
+96,96,760508,49734350,475,Suíça,Switzerland,149981,Granit Xhaka,1,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903635+00:00
+96,96,760508,49734351,208,Colômbia,Colombia,197105,Davinson Sánchez,2,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903589+00:00
+96,96,760508,49734352,475,Suíça,Switzerland,320757,Zeki Amdouni,2,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903645+00:00
+96,96,760508,49734353,208,Colômbia,Colombia,255295,Jáminton Campaz,3,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903602+00:00
+96,96,760508,49734354,475,Suíça,Switzerland,214562,Manuel Akanji,3,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903655+00:00
+96,96,760508,49734355,208,Colômbia,Colombia,336809,Cucho Hernández,4,False,MISSED_OR_SAVED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903612+00:00
+96,96,760508,49734356,475,Suíça,Switzerland,234153,Cedric Itten,4,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903665+00:00
+96,96,760508,49734357,208,Colômbia,Colombia,257390,Luis Díaz,5,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903621+00:00
+96,96,760508,49734358,475,Suíça,Switzerland,259513,Rubén Vargas,5,True,CONVERTED,https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508,2026-07-20T17:29:29.903675+00:00

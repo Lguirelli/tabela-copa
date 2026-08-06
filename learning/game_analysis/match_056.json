@@ -1,0 +1,42 @@
+{
+  "match_id": 56,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome. Finishing efficiency differed materially between the teams.",
+  "predicted_outcome": "Alemanha",
+  "actual_outcome": "Equador",
+  "brier_score": 0.56118429,
+  "log_loss": 3.27449425,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": -0.3475
+    },
+    {
+      "factor": "rating",
+      "contribution": -0.332105
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.1668
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Equador",
+    "evidence": {
+      "Equador": 0.2857,
+      "Alemanha": 0.0909
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1498.412279,
+    "team2_rating_before": 1636.789169,
+    "team1_rating_after": 1526.41985,
+    "team2_rating_after": 1608.781597,
+    "rating_delta_team1": 28.007571,
+    "rating_delta_team2": -28.007571
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

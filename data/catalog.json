@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-20T18:05:02.039567+00:00",
+  "policy": "One canonical source per domain. Mirrors are retained only for legacy frontend/script compatibility and are validated byte-for-byte.",
+  "datasets": {
+    "matches": {
+      "canonical": "data/matches.csv",
+      "mirrors": [
+        "data/database/matches.csv"
+      ]
+    },
+    "results": {
+      "canonical": "data/resultados_reais.csv",
+      "mirrors": [
+        "data/resultados.csv"
+      ]
+    },
+    "predictions_daily": {
+      "canonical": "data/modelo_diario/previsoes_dia_a_dia.csv",
+      "mirrors": [
+        "data/modelo_diario/projecao_chaveamento_completa.csv"
+      ]
+    },
+    "referees_observed": {
+      "canonical": "data/platform/referees_observed.csv",
+      "legacy_excluded": "data/database/referees_fifa.csv",
+      "exclusion_reason": "contains explicitly synthetic simulation fields"
+    },
+    "validated_results_evidence": {
+      "canonical": "data/normalized/results_validated.csv"
+    },
+    "match_events": {
+      "canonical": "data/normalized/espn_match_events.csv"
+    },
+    "match_commentary": {
+      "canonical": "data/normalized/espn_match_commentary.csv"
+    },
+    "team_match_stats": {
+      "canonical": "data/normalized/espn_team_match_stats.csv"
+    },
+    "player_match_stats": {
+      "canonical": "data/platform/player_match_stats.csv"
+    },
+    "lineups_observed": {
+      "canonical": "data/platform/lineups.csv",
+      "temporal_policy": "collection timestamp is not backdated"
+    },
+    "match_officials": {
+      "canonical": "data/platform/match_officials.csv"
+    },
+    "penalty_shootouts": {
+      "canonical": "data/normalized/espn_penalty_shootouts.csv"
+    },
+    "fifa_rankings": {
+      "canonical": "data/external/fifa_rankings.csv",
+      "temporal_policy": "published_at must not exceed the prediction cutoff"
+    },
+    "independent_matches": {
+      "canonical": "data/external/football_data_matches.csv",
+      "temporal_policy": "published_at must not exceed the prediction cutoff"
+    },
+    "pre_match_weather": {
+      "canonical": "data/context/pre_match_weather.csv",
+      "temporal_policy": "archived forecast run must have been available before kickoff"
+    },
+    "raw_complete_package": {
+      "canonical": "data/audit/wc2026_complete_20260720/integration_manifest.csv",
+      "manifest": "data/audit/wc2026_complete_20260720/MANIFEST_SHA256.csv",
+      "raw_root": "data/raw/wc2026_complete_20260720/"
+    }
+  }
+}

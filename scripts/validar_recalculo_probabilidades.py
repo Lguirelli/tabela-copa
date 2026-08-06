@@ -18,12 +18,12 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 PRED = ROOT / "data" / "modelo_diario" / "previsoes_dia_a_dia.csv"
-OUT = ROOT / "VALIDACAO_RECALCULO_PROBABILIDADES_2026_06_30.json"
+OUT = ROOT / "VALIDACAO_RECALCULO_PROBABILIDADES.json"
 
 BRACKET_PARENTS = {
-    89: (73, 75), 90: (74, 77), 93: (83, 84), 94: (81, 82),
+    89: (74, 77), 90: (73, 75), 93: (83, 84), 94: (81, 82),
     91: (76, 78), 92: (79, 80), 96: (85, 87), 95: (86, 88),
-    97: (89, 90), 98: (93, 94), 99: (91, 92), 100: (96, 95),
+    97: (89, 90), 98: (93, 94), 99: (91, 92), 100: (95, 96),
     101: (97, 98), 102: (99, 100), 104: (101, 102), 103: (101, 102),
 }
 BRACKET_ORDER = [89, 90, 93, 94, 91, 92, 96, 95, 97, 98, 99, 100, 101, 102, 104, 103]

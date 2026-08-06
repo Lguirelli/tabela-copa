@@ -1,0 +1,332 @@
+{
+  "team1": "Iraque",
+  "team2": "Noruega",
+  "expected_goals_team1": 0.958844,
+  "expected_goals_team2": 1.549873,
+  "probability_team1_win": 0.259621,
+  "probability_draw": 0.277176,
+  "probability_team2_win": 0.463203,
+  "predicted_outcome": "Noruega",
+  "predicted_score": "0-1",
+  "probability_team1_advance": "NA",
+  "probability_team2_advance": "NA",
+  "probability_team1_win_penalties": "NA",
+  "predicted_advancer": "NA",
+  "confidence": 0.759259,
+  "features": {
+    "rating_diff": -0.68,
+    "initial_strength_diff": -0.68,
+    "attack_vs_defense": -0.76,
+    "defense_vs_attack": -0.32,
+    "goalkeeper_diff": -0.54,
+    "experience_diff": 0.07,
+    "form_points_diff": 0.0,
+    "form_goal_diff": 0.0,
+    "schedule_strength_diff": 0.0,
+    "rest_diff": 0.0,
+    "games_diff": 0.0,
+    "knockout": 0.0,
+    "rest_days_team1": 7.0,
+    "rest_days_team2": 7.0,
+    "heat_load": 0.0,
+    "wind_load": 0.0,
+    "rain_load": 0.0
+  },
+  "feature_contributions": {
+    "rating": -0.1632,
+    "attack_team1": -0.0912,
+    "attack_team2": 0.0384,
+    "recent_form": 0.0,
+    "schedule_strength": 0.0,
+    "rest": 0.0,
+    "experience": 0.0014,
+    "goalkeeper": -0.0135,
+    "weather": 0.0,
+    "knockout_suppression": -0.0
+  },
+  "top_scorelines": [
+    {
+      "score": "0-1",
+      "team1_goals": 0,
+      "team2_goals": 1,
+      "probability": 0.126122
+    },
+    {
+      "score": "1-1",
+      "team1_goals": 1,
+      "team2_goals": 1,
+      "probability": 0.120931
+    },
+    {
+      "score": "0-2",
+      "team1_goals": 0,
+      "team2_goals": 2,
+      "probability": 0.097736
+    },
+    {
+      "score": "1-2",
+      "team1_goals": 1,
+      "team2_goals": 2,
+      "probability": 0.093714
+    },
+    {
+      "score": "0-0",
+      "team1_goals": 0,
+      "team2_goals": 0,
+      "probability": 0.081376
+    },
+    {
+      "score": "1-0",
+      "team1_goals": 1,
+      "team2_goals": 0,
+      "probability": 0.078026
+    },
+    {
+      "score": "2-1",
+      "team1_goals": 2,
+      "team2_goals": 1,
+      "probability": 0.057977
+    },
+    {
+      "score": "0-3",
+      "team1_goals": 0,
+      "team2_goals": 3,
+      "probability": 0.050493
+    }
+  ],
+  "model_parameters": {
+    "base_goals": 1.2516625454545456,
+    "rating_weight": 0.24,
+    "attack_weight": 0.12,
+    "defense_weight": 0.11,
+    "form_weight": 0.1,
+    "schedule_weight": 0.04,
+    "rest_weight": 0.015,
+    "experience_weight": 0.02,
+    "goalkeeper_weight": 0.025,
+    "heat_weight": 0.0,
+    "wind_weight": 0.0,
+    "rain_weight": 0.0,
+    "probability_temperature": 1.35,
+    "elo_k": 24.0,
+    "learning_rate": 0.03
+  },
+  "match_id": 18,
+  "competition_id": "world_cup_2026",
+  "date": "2026-06-16",
+  "phase": "Fase de grupos",
+  "group": "I",
+  "kickoff_at": "2026-06-16T22:00:00+00:00",
+  "prediction_at": "2026-06-16T20:00:00+00:00",
+  "data_readiness": {
+    "match_id": 18,
+    "cutoff": "2026-06-16T20:00:00+00:00",
+    "team1": "Iraque",
+    "team2": "Noruega",
+    "status": "READY_WITH_NA",
+    "readiness_score": 0.4,
+    "checks": [
+      {
+        "field": "team_identity",
+        "status": "AVAILABLE",
+        "priority": "blocking",
+        "source": "data/temporal/matches_timeline.csv"
+      },
+      {
+        "field": "kickoff_time",
+        "status": "AVAILABLE",
+        "priority": "blocking",
+        "source": "data/temporal/matches_timeline.csv"
+      },
+      {
+        "field": "initial_team_profile",
+        "status": "AVAILABLE",
+        "priority": "blocking",
+        "source": "data/pre_worldcup_state/teams.csv"
+      },
+      {
+        "field": "confirmed_lineup",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/platform/lineups.csv"
+      },
+      {
+        "field": "player_availability",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/platform/player_availability.csv"
+      },
+      {
+        "field": "archived_news",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/temporal/archived_news.csv"
+      },
+      {
+        "field": "weather",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/context/pre_match_weather.csv"
+      },
+      {
+        "field": "travel",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "NA"
+      },
+      {
+        "field": "referee",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/platform/match_officials.csv"
+      },
+      {
+        "field": "recent_tournament_form",
+        "status": "AVAILABLE",
+        "priority": "non_blocking",
+        "source": "temporally visible official results"
+      }
+    ],
+    "blocking_missing": []
+  },
+  "data_available_at_prediction": [
+    {
+      "record_type": "team_profile",
+      "record_id": "Iraque",
+      "available_at": "2026-06-11T03:59:59+00:00",
+      "source": "data/pre_worldcup_state/teams.csv"
+    },
+    {
+      "record_type": "team_profile",
+      "record_id": "Noruega",
+      "available_at": "2026-06-11T03:59:59+00:00",
+      "source": "data/pre_worldcup_state/teams.csv"
+    },
+    {
+      "record_type": "fixture",
+      "record_id": 18,
+      "available_at": "2026-06-11T03:59:59+00:00",
+      "source": "data/temporal/matches_timeline.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 1,
+      "available_at": "2026-06-11T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 2,
+      "available_at": "2026-06-12T05:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 3,
+      "available_at": "2026-06-12T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 4,
+      "available_at": "2026-06-13T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 8,
+      "available_at": "2026-06-13T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 7,
+      "available_at": "2026-06-14T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 5,
+      "available_at": "2026-06-14T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 6,
+      "available_at": "2026-06-14T07:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 10,
+      "available_at": "2026-06-14T20:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 11,
+      "available_at": "2026-06-14T23:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 9,
+      "available_at": "2026-06-15T02:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 12,
+      "available_at": "2026-06-15T05:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 14,
+      "available_at": "2026-06-15T19:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 16,
+      "available_at": "2026-06-15T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 13,
+      "available_at": "2026-06-16T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 15,
+      "available_at": "2026-06-16T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    }
+  ],
+  "prior_result_ids": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    7,
+    5,
+    6,
+    10,
+    11,
+    9,
+    12,
+    14,
+    16,
+    13,
+    15
+  ],
+  "temporal_integrity": {
+    "cutoff": "2026-06-16T20:00:00+00:00",
+    "max_input_available_at": "2026-06-16T04:30:00+00:00",
+    "current_match_result_used": false,
+    "status": "PASS"
+  }
+}

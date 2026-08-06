@@ -1,0 +1,451 @@
+{
+  "team1": "Equador",
+  "team2": "Curaçao",
+  "expected_goals_team1": 1.901494,
+  "expected_goals_team2": 0.853736,
+  "probability_team1_win": 0.573113,
+  "probability_draw": 0.239012,
+  "probability_team2_win": 0.187875,
+  "predicted_outcome": "Equador",
+  "predicted_score": "1-0",
+  "probability_team1_advance": "NA",
+  "probability_team2_advance": "NA",
+  "probability_team1_win_penalties": "NA",
+  "predicted_advancer": "NA",
+  "confidence": 0.95,
+  "features": {
+    "rating_diff": 0.298902,
+    "initial_strength_diff": 0.24,
+    "attack_vs_defense": -0.06,
+    "defense_vs_attack": 0.87,
+    "goalkeeper_diff": -1.0,
+    "experience_diff": 0.45,
+    "form_points_diff": 0.0,
+    "form_goal_diff": 5.0,
+    "schedule_strength_diff": -0.63,
+    "rest_diff": -0.25,
+    "games_diff": 0.0,
+    "knockout": 0.0,
+    "rest_days_team1": 6.041667,
+    "rest_days_team2": 6.291667,
+    "heat_load": 0.0,
+    "wind_load": 0.0,
+    "rain_load": 0.0
+  },
+  "feature_contributions": {
+    "rating": 0.071736,
+    "attack_team1": -0.0072,
+    "attack_team2": -0.1044,
+    "recent_form": 0.325,
+    "schedule_strength": -0.0252,
+    "rest": -0.00375,
+    "experience": 0.009,
+    "goalkeeper": -0.025,
+    "weather": 0.0,
+    "knockout_suppression": -0.0
+  },
+  "top_scorelines": [
+    {
+      "score": "1-0",
+      "team1_goals": 1,
+      "team2_goals": 0,
+      "probability": 0.120944
+    },
+    {
+      "score": "2-0",
+      "team1_goals": 2,
+      "team2_goals": 0,
+      "probability": 0.114987
+    },
+    {
+      "score": "1-1",
+      "team1_goals": 1,
+      "team2_goals": 1,
+      "probability": 0.103254
+    },
+    {
+      "score": "2-1",
+      "team1_goals": 2,
+      "team2_goals": 1,
+      "probability": 0.098169
+    },
+    {
+      "score": "3-0",
+      "team1_goals": 3,
+      "team2_goals": 0,
+      "probability": 0.072883
+    },
+    {
+      "score": "0-0",
+      "team1_goals": 0,
+      "team2_goals": 0,
+      "probability": 0.063605
+    },
+    {
+      "score": "3-1",
+      "team1_goals": 3,
+      "team2_goals": 1,
+      "probability": 0.062223
+    },
+    {
+      "score": "0-1",
+      "team1_goals": 0,
+      "team2_goals": 1,
+      "probability": 0.054302
+    }
+  ],
+  "model_parameters": {
+    "base_goals": 1.3472338803037611,
+    "rating_weight": 0.24,
+    "attack_weight": 0.12,
+    "defense_weight": 0.11,
+    "form_weight": 0.1,
+    "schedule_weight": 0.04,
+    "rest_weight": 0.015,
+    "experience_weight": 0.02,
+    "goalkeeper_weight": 0.025,
+    "heat_weight": 0.0,
+    "wind_weight": 0.0,
+    "rain_weight": 0.0,
+    "probability_temperature": 1.2,
+    "elo_k": 24.0,
+    "learning_rate": 0.03
+  },
+  "match_id": 34,
+  "competition_id": "world_cup_2026",
+  "date": "2026-06-20",
+  "phase": "Fase de grupos",
+  "group": "E",
+  "kickoff_at": "2026-06-21T00:00:00+00:00",
+  "prediction_at": "2026-06-20T22:00:00+00:00",
+  "data_readiness": {
+    "match_id": 34,
+    "cutoff": "2026-06-20T22:00:00+00:00",
+    "team1": "Equador",
+    "team2": "Curaçao",
+    "status": "READY_WITH_NA",
+    "readiness_score": 0.4,
+    "checks": [
+      {
+        "field": "team_identity",
+        "status": "AVAILABLE",
+        "priority": "blocking",
+        "source": "data/temporal/matches_timeline.csv"
+      },
+      {
+        "field": "kickoff_time",
+        "status": "AVAILABLE",
+        "priority": "blocking",
+        "source": "data/temporal/matches_timeline.csv"
+      },
+      {
+        "field": "initial_team_profile",
+        "status": "AVAILABLE",
+        "priority": "blocking",
+        "source": "data/pre_worldcup_state/teams.csv"
+      },
+      {
+        "field": "confirmed_lineup",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/platform/lineups.csv"
+      },
+      {
+        "field": "player_availability",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/platform/player_availability.csv"
+      },
+      {
+        "field": "archived_news",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/temporal/archived_news.csv"
+      },
+      {
+        "field": "weather",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/context/pre_match_weather.csv"
+      },
+      {
+        "field": "travel",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "NA"
+      },
+      {
+        "field": "referee",
+        "status": "NA_SOURCE_EXHAUSTED",
+        "priority": "non_blocking",
+        "source": "data/platform/match_officials.csv"
+      },
+      {
+        "field": "recent_tournament_form",
+        "status": "AVAILABLE",
+        "priority": "non_blocking",
+        "source": "temporally visible official results"
+      }
+    ],
+    "blocking_missing": []
+  },
+  "data_available_at_prediction": [
+    {
+      "record_type": "team_profile",
+      "record_id": "Equador",
+      "available_at": "2026-06-11T03:59:59+00:00",
+      "source": "data/pre_worldcup_state/teams.csv"
+    },
+    {
+      "record_type": "team_profile",
+      "record_id": "Curaçao",
+      "available_at": "2026-06-11T03:59:59+00:00",
+      "source": "data/pre_worldcup_state/teams.csv"
+    },
+    {
+      "record_type": "fixture",
+      "record_id": 34,
+      "available_at": "2026-06-11T03:59:59+00:00",
+      "source": "data/temporal/matches_timeline.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 1,
+      "available_at": "2026-06-11T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 2,
+      "available_at": "2026-06-12T05:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 3,
+      "available_at": "2026-06-12T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 4,
+      "available_at": "2026-06-13T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 8,
+      "available_at": "2026-06-13T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 7,
+      "available_at": "2026-06-14T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 5,
+      "available_at": "2026-06-14T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 6,
+      "available_at": "2026-06-14T07:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 10,
+      "available_at": "2026-06-14T20:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 11,
+      "available_at": "2026-06-14T23:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 9,
+      "available_at": "2026-06-15T02:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 12,
+      "available_at": "2026-06-15T05:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 14,
+      "available_at": "2026-06-15T19:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 16,
+      "available_at": "2026-06-15T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 13,
+      "available_at": "2026-06-16T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 15,
+      "available_at": "2026-06-16T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 17,
+      "available_at": "2026-06-16T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 18,
+      "available_at": "2026-06-17T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 19,
+      "available_at": "2026-06-17T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 20,
+      "available_at": "2026-06-17T07:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 23,
+      "available_at": "2026-06-17T20:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 22,
+      "available_at": "2026-06-17T23:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 21,
+      "available_at": "2026-06-18T02:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 24,
+      "available_at": "2026-06-18T05:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 25,
+      "available_at": "2026-06-18T19:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 26,
+      "available_at": "2026-06-18T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 27,
+      "available_at": "2026-06-19T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 28,
+      "available_at": "2026-06-19T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 32,
+      "available_at": "2026-06-19T22:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 30,
+      "available_at": "2026-06-20T01:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 29,
+      "available_at": "2026-06-20T04:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 31,
+      "available_at": "2026-06-20T06:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "official_result",
+      "record_id": 35,
+      "available_at": "2026-06-20T20:30:00+00:00",
+      "source": "data/resultados_reais.csv"
+    }
+  ],
+  "prior_result_ids": [
+    1,
+    2,
+    3,
+    4,
+    8,
+    7,
+    5,
+    6,
+    10,
+    11,
+    9,
+    12,
+    14,
+    16,
+    13,
+    15,
+    17,
+    18,
+    19,
+    20,
+    23,
+    22,
+    21,
+    24,
+    25,
+    26,
+    27,
+    28,
+    32,
+    30,
+    29,
+    31,
+    35
+  ],
+  "temporal_integrity": {
+    "cutoff": "2026-06-20T22:00:00+00:00",
+    "max_input_available_at": "2026-06-20T20:30:00+00:00",
+    "current_match_result_used": false,
+    "status": "PASS"
+  }
+}

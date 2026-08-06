@@ -1,0 +1,42 @@
+{
+  "match_id": 62,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "Senegal",
+  "actual_outcome": "Senegal",
+  "brier_score": 0.0884997,
+  "log_loss": 0.54501342,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.198171
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.0975
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.0804
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Senegal",
+    "evidence": {
+      "Senegal": 0,
+      "Iraque": 1
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1514.8233,
+    "team2_rating_before": 1432.252233,
+    "team1_rating_after": 1540.509173,
+    "team2_rating_after": 1406.56636,
+    "rating_delta_team1": 25.685873,
+    "rating_delta_team2": -25.685873
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

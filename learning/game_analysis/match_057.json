@@ -1,0 +1,44 @@
+{
+  "match_id": 57,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Japão",
+  "actual_outcome": "Empate",
+  "brier_score": 0.41218917,
+  "log_loss": 1.81266855,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.248185
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.1475
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.0528
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "Japan",
+    "evidence": {
+      "team": "Japan",
+      "clock": "56'",
+      "player": "Daizen Maeda",
+      "text": "Goal! Japan 1, Sweden 0. Daizen Maeda (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Ritsu Doan with a through ball."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1595.517476,
+    "team2_rating_before": 1492.107107,
+    "team1_rating_after": 1592.04767,
+    "team2_rating_after": 1495.576912,
+    "rating_delta_team1": -3.469806,
+    "rating_delta_team2": 3.469806
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

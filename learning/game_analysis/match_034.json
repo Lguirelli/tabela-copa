@@ -1,0 +1,42 @@
+{
+  "match_id": 34,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Equador",
+  "actual_outcome": "Empate",
+  "brier_score": 0.31428609,
+  "log_loss": 1.43124152,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": 0.325
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1044
+    },
+    {
+      "factor": "rating",
+      "contribution": 0.071736
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Equador",
+    "evidence": {
+      "Equador": 15.0,
+      "Curaçao": 3.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1499.442109,
+    "team2_rating_before": 1469.551932,
+    "team1_rating_after": 1498.412279,
+    "team2_rating_after": 1470.581763,
+    "rating_delta_team1": -1.029831,
+    "rating_delta_team2": 1.029831
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

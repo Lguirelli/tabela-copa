@@ -1,0 +1,221 @@
+{
+  "match_id": 11,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Netherlands",
+    "clock": "51'",
+    "player": "Virgil van Dijk",
+    "text": "Goal! Netherlands 1, Japan 0. Virgil van Dijk (Netherlands) header from the centre of the box to the bottom right corner. Assisted by Ryan Gravenberch with a cross following a set piece situation."
+  },
+  "red_cards": {
+    "Países Baixos": 0,
+    "Japão": 0
+  },
+  "substitutions_detected": {
+    "Países Baixos": 5,
+    "Japão": 5
+  },
+  "team_stats": {
+    "Países Baixos": {
+      "stat_possessionPct": 59.8,
+      "stat_totalShots": 10.0,
+      "stat_shotsOnTarget": 6.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 1.0
+    },
+    "Japão": {
+      "stat_possessionPct": 40.2,
+      "stat_totalShots": 10.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Japão",
+      "player_id": "espn:265953",
+      "player": "Keito Nakamura",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:219362",
+      "player": "Daichi Kamada",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:157892",
+      "player": "Virgil van Dijk",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:284792",
+      "player": "Crysencio Summerville",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:274632",
+      "player": "Ryan Gravenberch",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:238016",
+      "player": "Koki Ogawa",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:256587",
+      "player": "Takefusa Kubo",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:265958",
+      "player": "Zion Suzuki",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:291609",
+      "player": "Bart Verbruggen",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:259481",
+      "player": "Donyell Malen",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Países Baixos",
+      "player_id": "espn:249524",
+      "player": "Cody Gakpo",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:265965",
+      "player": "Yukinari Sugawara",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760425"
+    }
+  ],
+  "efficiency": {
+    "Países Baixos": 0.2,
+    "Japão": 0.2
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Países Baixos",
+      "evidence": {
+        "Países Baixos": 6.0,
+        "Japão": 3.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Netherlands",
+      "evidence": {
+        "team": "Netherlands",
+        "clock": "51'",
+        "player": "Virgil van Dijk",
+        "text": "Goal! Netherlands 1, Japan 0. Virgil van Dijk (Netherlands) header from the centre of the box to the bottom right corner. Assisted by Ryan Gravenberch with a cross following a set piece situation."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Países Baixos",
+    "evidence": {
+      "Países Baixos": 6.0,
+      "Japão": 3.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}
