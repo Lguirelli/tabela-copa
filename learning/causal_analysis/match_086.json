@@ -1,0 +1,223 @@
+{
+  "match_id": 86,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Argentina",
+    "clock": "29'",
+    "player": "Lionel Messi",
+    "text": "Goal! Argentina 1, Cabo Verde 0. Lionel Messi (Argentina) left footed shot from the right side of the six yard box to the top right corner. Assisted by Lisandro Martínez with a through ball."
+  },
+  "red_cards": {
+    "Argentina": 0,
+    "Cabo Verde": 0
+  },
+  "substitutions_detected": {
+    "Argentina": 5,
+    "Cabo Verde": 6
+  },
+  "team_stats": {
+    "Argentina": {
+      "stat_possessionPct": 63.6,
+      "stat_totalShots": 22.0,
+      "stat_shotsOnTarget": 10.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 3.0
+    },
+    "Cabo Verde": {
+      "stat_possessionPct": 36.4,
+      "stat_totalShots": 16.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 8.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Argentina",
+      "player_id": "espn:233937",
+      "player": "Lisandro Martínez",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:45843",
+      "player": "Lionel Messi",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 9,
+        "shots_on_target": 6
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:332394",
+      "player": "Sidny Lopes Cabral",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:246442",
+      "player": "Deroy Duarte",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:249299",
+      "player": "Alexis Mac Allister",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:135216",
+      "player": "Ryan Mendes",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:101251",
+      "player": "Yannick Semedo",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:181330",
+      "player": "Vozinha",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 8
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:158626",
+      "player": "Emiliano Martínez",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:285450",
+      "player": "Enzo Fernández",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 4,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Cabo Verde",
+      "player_id": "espn:214683",
+      "player": "Diney Borges",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1,
+        "own_goals": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:153115",
+      "player": "Leandro Paredes",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760500"
+    }
+  ],
+  "efficiency": {
+    "Argentina": 0.136364,
+    "Cabo Verde": 0.125
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Argentina",
+      "evidence": {
+        "Argentina": 10.0,
+        "Cabo Verde": 5.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Argentina",
+      "evidence": {
+        "team": "Argentina",
+        "clock": "29'",
+        "player": "Lionel Messi",
+        "text": "Goal! Argentina 1, Cabo Verde 0. Lionel Messi (Argentina) left footed shot from the right side of the six yard box to the top right corner. Assisted by Lisandro Martínez with a through ball."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Argentina",
+    "evidence": {
+      "Argentina": 10.0,
+      "Cabo Verde": 5.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

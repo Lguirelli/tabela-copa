@@ -1,0 +1,27 @@
+{
+  "country_pt": "Tunísia",
+  "country_en": "Tunisia",
+  "iso2": "tn",
+  "iso3": "TUN",
+  "slug": "tunisia",
+  "federation_name": "Tunisian Football Federation",
+  "official_site": "https://www.ftf.org.tn",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/tn.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#E70013",
+    "#FFFFFF",
+    "#E6000A",
+    "#E70010",
+    "#E70012"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

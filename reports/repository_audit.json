@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "generated_at": "2026-08-06T20:55:50.995616+00:00",
   "audit_scope": "current repository",
   "summary": {
@@ -27,55 +26,6 @@
       "path": ".gitignore",
       "size_bytes": 479,
       "sha256": "52f8c0a88c72794aca35d5beac0a8901092765de125130f102ec0f5eaaeb9e71"
-=======
-  "generated_at": "2026-07-20T18:10:52.145781+00:00",
-  "audit_scope": "current repository",
-  "summary": {
-    "files_analyzed": 1097,
-    "problems_found": 0,
-    "duplicate_groups": 16
-  },
-  "files_analyzed": [
-    {
-      "path": ".github/workflows/01_pre_worldcup_training.yml",
-      "size_bytes": 1567,
-      "sha256": "22ff2acb4f65888adcdc8cf009a2d54c6d2ea7f32b11b1c619024d47e02de90e"
-    },
-    {
-      "path": ".github/workflows/02_daily_tournament_simulation.yml",
-      "size_bytes": 1683,
-      "sha256": "82f139d43ccc4e4fd3de02bf4a47bc0467d7efaa876db0e9dd89e892b2eb1d52"
-    },
-    {
-      "path": ".github/workflows/03_post_match_learning.yml",
-      "size_bytes": 2086,
-      "sha256": "a9d48e58a2f9f6de87a26004d9b34b7b88ca48c531b02b27698d137365de6870"
-    },
-    {
-      "path": ".github/workflows/daily_update.yml",
-      "size_bytes": 2020,
-      "sha256": "2a15f5ac1eaffa361cd5960b076748b29d793daa0289b8612b3f3f812c67adde"
-    },
-    {
-      "path": ".github/workflows/model_training.yml",
-      "size_bytes": 2121,
-      "sha256": "2cb1acad827bf70a80fd31db05f5a217225b8a3d630e3ef8cc36f5c8e250a307"
-    },
-    {
-      "path": ".github/workflows/post_match_update.yml",
-      "size_bytes": 2266,
-      "sha256": "b09cbaf0d9a815366c71ed36c28f6771fbe4df301e04004f85d6a69d602a2aa2"
-    },
-    {
-      "path": ".github/workflows/static.yml",
-      "size_bytes": 1122,
-      "sha256": "8b8086447716c2da1cbd58082728bce8824d25371b806351de7f6b9b2ebb435d"
-    },
-    {
-      "path": ".gitignore",
-      "size_bytes": 421,
-      "sha256": "4f53dab066963e47a1e54ba2c9850adee60bc2dcd3ab6a179a615f738796cff2"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": ".nojekyll",
@@ -84,7 +34,6 @@
     },
     {
       "path": "Makefile",
-<<<<<<< HEAD
       "size_bytes": 1892,
       "sha256": "1f49ac68adfe93e3963c759c3fed3aba26e583a7b2aaf4c63aa86bf076775a69"
     },
@@ -97,15 +46,6 @@
       "path": "VALIDACAO_RECALCULO_PROBABILIDADES_2026_06_30.json",
       "size_bytes": 353,
       "sha256": "cd48e3ca4f64daf189cacdcd5e2ef935dc9ae28dcfd824687ea29f28df90c488"
-=======
-      "size_bytes": 1440,
-      "sha256": "64e2561cd91be405a538b17d958e5169d2f104970f81d0ecca1bb7c6410ce49c"
-    },
-    {
-      "path": "README.md",
-      "size_bytes": 14521,
-      "sha256": "293f07f1c7bbb2889b4d7a6ed8433647effc8a027292060155ea3aeaa7c8117f"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "assets/teams/ARG_argentina/flag.png",
@@ -1309,7 +1249,6 @@
     },
     {
       "path": "config/competitions.yaml",
-<<<<<<< HEAD
       "size_bytes": 6759,
       "sha256": "27dc3cf32f841cbc9165f4b27b4aab0a534fbe488b1103209f9718b6d9a8fdf4"
     },
@@ -1357,25 +1296,6 @@
       "path": "data/audit/wc2026_complete_20260720/MANIFEST_SHA256.csv",
       "size_bytes": 121169,
       "sha256": "5b6bf179aa298302ff591d8adb8f24c93fc5160d40c7fd261d68c9037fd39bdf"
-=======
-      "size_bytes": 5653,
-      "sha256": "a064666b99be478c8a90cbe78db223a468c52c4e3549ffc14a579fa4da914687"
-    },
-    {
-      "path": "config/data_contracts.yaml",
-      "size_bytes": 1766,
-      "sha256": "c1453dc41a31767a2f07c3d2c0ba2e27d9d3e6321f955826194ce902294308cb"
-    },
-    {
-      "path": "config/worldcup_temporal.yaml",
-      "size_bytes": 2504,
-      "sha256": "58738bf36556548ca00de4d9498e210101a9a4798cbc5b393a4c4db947313a6a"
-    },
-    {
-      "path": "data/audit/wc2026_complete_20260720/MANIFEST_SHA256.csv",
-      "size_bytes": 121953,
-      "sha256": "97f5d1dc0f0e1633b3b5cfe0f5f08eb5e3924e77f171ceee4c594a24bd397f18"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/audit/wc2026_complete_20260720/data_conflicts.csv",
@@ -1384,7 +1304,6 @@
     },
     {
       "path": "data/audit/wc2026_complete_20260720/data_dictionary.csv",
-<<<<<<< HEAD
       "size_bytes": 4694,
       "sha256": "f54bc9e691e04139b21e6ba607a7cb933c13eb77150e701423e5f5e0c7d47152"
     },
@@ -1392,15 +1311,6 @@
       "path": "data/audit/wc2026_complete_20260720/data_gaps.csv",
       "size_bytes": 42,
       "sha256": "89f6baae67c14e9f9d132802ffbf96b1264fda6f105bf1445f5e090d1ca04573"
-=======
-      "size_bytes": 4709,
-      "sha256": "0be46f268d1bd054287c75acfbabd7ae2283127a60e4ff2bed3282082001d115"
-    },
-    {
-      "path": "data/audit/wc2026_complete_20260720/data_gaps.csv",
-      "size_bytes": 43,
-      "sha256": "7bd45b357b2b3cd7a5448d31b3d1e5a70ee8b03c16e4ce2396021972b3254efd"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/audit/wc2026_complete_20260720/extraction_summary.json",
@@ -1415,11 +1325,7 @@
     {
       "path": "data/audit/wc2026_complete_20260720/integration_manifest.csv",
       "size_bytes": 20488,
-<<<<<<< HEAD
       "sha256": "c93b29182a37a1bdd3373e2ce03f6f310415d15ead8ef55ee187f80bb78bc70b"
-=======
-      "sha256": "b3730c8fd05a51f0339e9b1d1bbb6bb192e48fb13f1fbb4dd70c45eac6a0627b"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/audit/wc2026_complete_20260720/quality_checks.csv",
@@ -1433,13 +1339,8 @@
     },
     {
       "path": "data/audit/wc2026_complete_20260720/summary_failures.csv",
-<<<<<<< HEAD
       "size_bytes": 55,
       "sha256": "5158175a7160fa63555e783e895325a6a1b7693cfcf18d3dbaccb8688dec10f8"
-=======
-      "size_bytes": 56,
-      "sha256": "1a2b8cd8e892ed85b4cf87527ea8e91374cb3a102bbb006fc04a202ca8a7d1d2"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/audit/wc2026_complete_20260720/validation_summary.json",
@@ -1447,7 +1348,6 @@
       "sha256": "03ce8c68e5639d1b8d0c097f1842975c91e8084633dad685f4a7f0d3af057fe9"
     },
     {
-<<<<<<< HEAD
       "path": "data/auditoria_dados.csv",
       "size_bytes": 2051,
       "sha256": "6fbc6ba48c90bf106011e3d13c74bfaef2e83a23964e09538c0b5b8b4c377d0e"
@@ -1461,16 +1361,6 @@
       "path": "data/competitions/world_cup_2026/queues/missing_data.json",
       "size_bytes": 110,
       "sha256": "c568f481fc5204deddb4a4da35533079eb1cc893457d4c7d3e97bf67a6923060"
-=======
-      "path": "data/catalog.json",
-      "size_bytes": 1873,
-      "sha256": "c83f806a8cacce56017a43f300f6abe8433402f7e70e72ee9126b3aae11b4258"
-    },
-    {
-      "path": "data/competitions/world_cup_2026/queues/missing_data.json",
-      "size_bytes": 3445,
-      "sha256": "0aea821551fe58d63236c1d03c3774d715f4a8fac1776773d9fb932ddc4df4a0"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/conflicts/data_conflicts.json",
@@ -1478,20 +1368,16 @@
       "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
     },
     {
-<<<<<<< HEAD
       "path": "data/conflicts/espn_result_conflicts_20260704T010732Z.csv",
       "size_bytes": 70,
       "sha256": "68cf06cc7358477a15eb9ca966e256a447c1c8223e9c5890c26adbec6aa58831"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/conflicts/unmapped_espn_team_match_stats.csv",
       "size_bytes": 9236,
       "sha256": "2ed9dc01aaff0617b646586df79f36133b3231e0943298d7e261ba0a44daac88"
     },
     {
-<<<<<<< HEAD
       "path": "data/context/pre_match_weather.csv",
       "size_bytes": 225,
       "sha256": "80a4d69bfb33859d9df4fdd63dfd9e8acd3c81ba8e89e882fc8e9f73e2d78df6"
@@ -1502,8 +1388,6 @@
       "sha256": "83b21c91a9cf283f8b7ca13cf8a6430b3553d104de32a3e3bd95214352d9c131"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/database/matches.csv",
       "size_bytes": 15867,
       "sha256": "dcdf78203eb440e4ed4e6505268ceae413b67ce7f5825c45307fac0112f4c70b"
@@ -1529,7 +1413,6 @@
       "sha256": "26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd"
     },
     {
-<<<<<<< HEAD
       "path": "data/desempenho_fase_grupos_selecoes.csv",
       "size_bytes": 18495,
       "sha256": "b36f6651576a6b3df52c88e913316f69f0c1da452a488fa20da8b2fe1e3def18"
@@ -1550,40 +1433,31 @@
       "sha256": "6a542af64b8c23ef7783133822ab9b65f8f8c2193ba389806168b42ab68b561c"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/entrada/README_ENTRADA_MANUAL.md",
       "size_bytes": 1603,
       "sha256": "704ce3bd693a50b38f17afce428458447e0dbc211eb5287cf1d29c23ad99d947"
     },
     {
-<<<<<<< HEAD
       "path": "data/entrada/desempenho_jogadores_destaques.csv",
       "size_bytes": 1231,
       "sha256": "7852ecfa0f4eda219e2d90c5fec99b46dbfb6495f2ccca4ef8e1d46ed387a731"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/entrada/desempenho_manual.csv",
       "size_bytes": 107346,
       "sha256": "4ecc4e85758a686f77635d259280cb9d91df8a85bb43faf076ac7d98320656c8"
     },
     {
-<<<<<<< HEAD
       "path": "data/entrada/desempenho_times_fase_grupos.csv",
       "size_bytes": 15718,
       "sha256": "0d667286f1de311b2862eabfc36a474cad46f36b85a8e7547a2cfba837b2a901"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/entrada/novos_resultados.csv",
       "size_bytes": 82,
       "sha256": "6b9198b486231f2cee377367e99491b28e75e645f2b9f486a2dcb7a567c81bdd"
     },
     {
-<<<<<<< HEAD
       "path": "data/external/fifa_rankings.csv",
       "size_bytes": 76,
       "sha256": "d96be721fa0801494f593586c3421e5c29c39b755757eebeb3638bf78bf3bbf3"
@@ -1599,8 +1473,6 @@
       "sha256": "b8e50a1dc69c0ef9f67e040520d3f51b54245fdef8fd3badad6241da4725c8f0"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/mappings/incoming_game_id_mapping_20260720.csv",
       "size_bytes": 8295,
       "sha256": "d82f52d535145d2aec9edb34a175143a3bed26a34f992712705d346f27d0509f"
@@ -1666,14 +1538,11 @@
       "sha256": "b7740d8a5b0da0938d8f26b253d238614f884ebd3c7612220edf30f7bc33305c"
     },
     {
-<<<<<<< HEAD
       "path": "data/normalized/espn_desempenho_manual_integrado.csv",
       "size_bytes": 82494,
       "sha256": "5d837419d5dfc118003deaf9ebd321967d50d4111beb52dfe4789373e47c4dd7"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/normalized/espn_event_mapping_report.csv",
       "size_bytes": 11674,
       "sha256": "dd1a8431b11db07309c823ce0f6cd76e72ec40c7bbfd9f4aaa5a5ed65a69fbc0"
@@ -1724,7 +1593,6 @@
       "sha256": "65ab072976e28a86d69d0ada781522651a1b6f509c4bd3bc567a458b791f0508"
     },
     {
-<<<<<<< HEAD
       "path": "data/normalized/source_manifest_20260704T010732Z.csv",
       "size_bytes": 61353,
       "sha256": "b3fea680d68403853e236bf520392cdd7b25a33d375d9065754b3a922498af7f"
@@ -1735,8 +1603,6 @@
       "sha256": "247f30b0c038b1cccf9f5f35a2a3a79363104b3be48975b64b21934dc1ea6cd7"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/platform/lineups.csv",
       "size_bytes": 1515258,
       "sha256": "09483174553e5ef41db9afc3d6baee666709db131ead46712d3145373a7e4bf6"
@@ -1748,7 +1614,6 @@
     },
     {
       "path": "data/platform/player_availability.csv",
-<<<<<<< HEAD
       "size_bytes": 1767464,
       "sha256": "ce9012a94b20ebc526da58e6874c6a91d994755cd675eef30f7d4363d653adf7"
     },
@@ -1756,15 +1621,6 @@
       "path": "data/platform/player_match_stats.csv",
       "size_bytes": 2236156,
       "sha256": "68d6240d8175b0643bb0f37d3abf503da8171d25c768af627f1e4d2632565b88"
-=======
-      "size_bytes": 123,
-      "sha256": "50d552ca2f07f7c2045ff8da93a1ec7d40bac9bf445c3152268144d2c204217d"
-    },
-    {
-      "path": "data/platform/player_match_stats.csv",
-      "size_bytes": 1749618,
-      "sha256": "21914830fa22b151d9d91dbba5043b88850df78ddc3f2f2c9a3539debad8fcd0"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/platform/referees_observed.csv",
@@ -1778,7 +1634,6 @@
     },
     {
       "path": "data/pre_worldcup_state/field_lineage.csv",
-<<<<<<< HEAD
       "size_bytes": 108494,
       "sha256": "a54a5b3c9dcf49a1955428b03644070ac1c078004dbee5baa320537caf834d43"
     },
@@ -1786,24 +1641,11 @@
       "path": "data/pre_worldcup_state/manifest.json",
       "size_bytes": 1828,
       "sha256": "dbcdbfcca1fcf6b3c21ba7efdde75c0bac768584112260afe2aecb7a75045c1a"
-=======
-      "size_bytes": 100648,
-      "sha256": "300c716c00b22c5b000078b2fe140ca793d7be3d24d9600f6303589c4a47b90d"
-    },
-    {
-      "path": "data/pre_worldcup_state/manifest.json",
-      "size_bytes": 1481,
-      "sha256": "5fa8260c92856a1b52d7a95450b5da0fec562bfa27d02db73aafa831f503e995"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/pre_worldcup_state/missing_information_queue.json",
       "size_bytes": 3570,
-<<<<<<< HEAD
       "sha256": "233ae3a80d4e26bfbe824aafe8660b3a413036ac9a004b790d325660542bd83b"
-=======
-      "sha256": "8ba4a90af118138423f4c36c6922d782585cc5ddd128b4496d37d1e0464aa842"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/pre_worldcup_state/players.csv",
@@ -1812,7 +1654,6 @@
     },
     {
       "path": "data/pre_worldcup_state/teams.csv",
-<<<<<<< HEAD
       "size_bytes": 12075,
       "sha256": "71018c365a543d0156cdd0ac35c4859a38556e6fe3c00fb16ce7b28b0d06d8be"
     },
@@ -1830,20 +1671,6 @@
       "path": "data/queues/missing_information_queue.json",
       "size_bytes": 271215,
       "sha256": "0d4669697cb37918fbde3d3fcddcde9029f2f0cf435f9bed4bdaebe3d359df99"
-=======
-      "size_bytes": 11429,
-      "sha256": "21f1dbc1f31f9a2838b25c87471feeacf237c5ede6c2622821b55dfa5f63bebf"
-    },
-    {
-      "path": "data/queues/missing_data.json",
-      "size_bytes": 3445,
-      "sha256": "0aea821551fe58d63236c1d03c3774d715f4a8fac1776773d9fb932ddc4df4a0"
-    },
-    {
-      "path": "data/queues/missing_information_queue.json",
-      "size_bytes": 267887,
-      "sha256": "11d3e8b78f590c55cf3170e6b7e4df652e01a16c390aea6c4c5689b477dde705"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/raw/wc2026_complete_20260720/espn_scoreboard/world_cup_2026_scoreboard__364bf327db4fa4fd.json",
@@ -2391,14 +2218,11 @@
       "sha256": "80d8c10c39a5e4459f0deaa3c441b28f1e7b539a955ad1fad3b0db32509f8f6e"
     },
     {
-<<<<<<< HEAD
       "path": "data/raw_manifest_20260704T010732Z.jsonl",
       "size_bytes": 85865,
       "sha256": "4ce9b096b5765fca15c3fa714f240baa167449143e039e3c6b71e346aab91f0a"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/rede_neural/dataset_treinamento_rede_neural.csv",
       "size_bytes": 54547,
       "sha256": "389d7e13ac556979268eacef14fd4d74453fa99d1907c432d3b4db2aa1090d4b"
@@ -2464,14 +2288,11 @@
       "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101"
     },
     {
-<<<<<<< HEAD
       "path": "data/state/ingestion_state.json",
       "size_bytes": 49,
       "sha256": "204d5f163dff4dc956d26f67e057820cfb4f79d6dcaa7909dc5124c505180eac"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "data/team_colors.csv",
       "size_bytes": 3658,
       "sha256": "56020a9a2163764f442551b32fd8766f7182b8f50f9cea9760f1ceb5afff195e"
@@ -2488,13 +2309,8 @@
     },
     {
       "path": "data/temporal/missing_information_queue.json",
-<<<<<<< HEAD
       "size_bytes": 271215,
       "sha256": "0d4669697cb37918fbde3d3fcddcde9029f2f0cf435f9bed4bdaebe3d359df99"
-=======
-      "size_bytes": 267887,
-      "sha256": "11d3e8b78f590c55cf3170e6b7e4df652e01a16c390aea6c4c5689b477dde705"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "data/temporal/prediction_knowledge_ledger.csv",
@@ -2504,11 +2320,7 @@
     {
       "path": "data/temporal/timeline_manifest.json",
       "size_bytes": 736,
-<<<<<<< HEAD
       "sha256": "476d8df597c9b5eba3c97a0a55a8e9ed7e1ebe956e602a464c824114911a72fc"
-=======
-      "sha256": "582dffbdb1e25422a1bfeb31a82b19662db69127bc6061e1c1bba0f2258221c5"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "docs/ADDING_A_COMPETITION.md",
@@ -2516,7 +2328,6 @@
       "sha256": "fffcda44cd573549fc177e5c2f72ba1c4f3f36d969f0e89cba508f63e530c300"
     },
     {
-<<<<<<< HEAD
       "path": "docs/ARCHITECTURE.md",
       "size_bytes": 188,
       "sha256": "1166a8d719d702bd946c20960603868bfa8607d67b469830144dfa72b617b332"
@@ -2540,11 +2351,6 @@
       "path": "docs/PLATFORM_ARCHITECTURE.md",
       "size_bytes": 4558,
       "sha256": "88b6cc8dc7470ff4dce9bc984c05c9ce937e519533c50082fcd019acd35aac7f"
-=======
-      "path": "docs/PLATFORM_ARCHITECTURE.md",
-      "size_bytes": 3628,
-      "sha256": "7f60183fe6fa0aab178f36e7241158c91df59ad960c4af6c8702c971450c2b5f"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "docs/Pesquisa aprofundada da Copa do Mundo FIFA 2026.pdf",
@@ -2552,7 +2358,6 @@
       "sha256": "2ec795d47ecf74a001da11b673d392df0de779b44b92cdb9c0e47fe56cc37090"
     },
     {
-<<<<<<< HEAD
       "path": "docs/RELATORIO_AJUSTE_PLACAR_PENALTIS_2026_07_01.md",
       "size_bytes": 2080,
       "sha256": "e548b38b28071822bb39215f21cf23ba68e07bda1083bb704ab0f890b519356f"
@@ -2578,27 +2383,21 @@
       "sha256": "c964372233e65b706d6b104ca65b15f6d504666190afd0f8c9fcdcfdc5582de9"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "docs/TEMPORAL_WORLD_CUP_BRAIN.md",
       "size_bytes": 2614,
       "sha256": "2a61ab6be36fb05489830562091f4a735a8805bf4807b41f15eeffe3a4558e70"
     },
     {
-<<<<<<< HEAD
       "path": "docs/VALIDACAO_INTEGRACAO_ESPN_RAW_2026_07_04.json",
       "size_bytes": 521,
       "sha256": "92fb4e87db45050a0a3158fb8dc05deb32768bca0b0d87e11229d4242a398ee4"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "docs/WC2026_COMPLETE_DATA_INTEGRATION.md",
       "size_bytes": 2527,
       "sha256": "846d5e2d9fda6d173303029e3a9dcd8644182696cb8b734a281bb71f9a0f7d9d"
     },
     {
-<<<<<<< HEAD
       "path": "docs/analise_deeplearningexamples.md",
       "size_bytes": 1294,
       "sha256": "ef623680e55ada6523ad70d09b7d569bf17f349e940a726eb434b458e13b638b"
@@ -2622,16 +2421,6 @@
       "path": "grupos-resultados.html",
       "size_bytes": 3477,
       "sha256": "cd1b400f149b502e9a521ebf8deb8ac7ae0cd62157982276ed3f261178fe6a08"
-=======
-      "path": "grupos-jogos.html",
-      "size_bytes": 3214,
-      "sha256": "327432612844b78fdbed94df1aae2fef8603677ace21d2395b5717ff44ae01d0"
-    },
-    {
-      "path": "grupos-resultados.html",
-      "size_bytes": 2976,
-      "sha256": "24a2f5cc72951215efcdc3cb6045bc0659e27fe08f4f172b4bab9a9905fd2fac"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "index.html",
@@ -4204,7 +3993,6 @@
       "sha256": "db8ee0da96f7fde04ee4cc1cb7d92626b1e70954685519c09bde3c4d81784f9c"
     },
     {
-<<<<<<< HEAD
       "path": "legacy/README.md",
       "size_bytes": 704,
       "sha256": "70a4b51292865d750460fef1b19538daf3ef7e1d9ccd99913690fa71573b70af"
@@ -4328,59 +4116,21 @@
       "path": "modelo-versoes.html",
       "size_bytes": 3658,
       "sha256": "47b99168f9a914f60909fdede23874d1e60368cbb817c1fc1a8c9e2fe88379da"
-=======
-      "path": "logs/competitions/world_cup_2026/enrichment_log.json",
-      "size_bytes": 26335,
-      "sha256": "d99d068369c294de63cca964eff556521ba48e3306b4ca06fc690ae053217121"
-    },
-    {
-      "path": "logs/enrichment_log.json",
-      "size_bytes": 26335,
-      "sha256": "d99d068369c294de63cca964eff556521ba48e3306b4ca06fc690ae053217121"
-    },
-    {
-      "path": "logs/temporal_enrichment_log.json",
-      "size_bytes": 438169,
-      "sha256": "d9a29a2d0af7738e85e1959c22cc8d1cc72b11cb72689b31982a38d71b803231"
-    },
-    {
-      "path": "mata-mata-chave.html",
-      "size_bytes": 2561,
-      "sha256": "60d704fd44f87f96a673f1303d1435714713901ef50e8a54d3ec50aa5796ca4b"
-    },
-    {
-      "path": "mata-mata-jogos.html",
-      "size_bytes": 3060,
-      "sha256": "cbb65c03030e0ad7d08b80065805fea674800d34b145f9c4950da8569b4df725"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "models/competitions/world_cup_2026/error_learning.json",
       "size_bytes": 51951,
-<<<<<<< HEAD
       "sha256": "d92e6e861916c26da7dff2f1fdfb0ca956ebd2189f002fa44494195df5927226"
     },
     {
       "path": "models/competitions/world_cup_2026/features_registry.json",
       "size_bytes": 22613,
       "sha256": "45507a73645d1d8abedcd2d207e5be98dd7ecc0a3119c5c6411623fe304da562"
-=======
-      "sha256": "c0942dc5ad3a1af8f248b1d3437c4e93923c6553be9d41792f57e549a77e9094"
-    },
-    {
-      "path": "models/competitions/world_cup_2026/features_registry.json",
-      "size_bytes": 21048,
-      "sha256": "edde33b42280f50fc23c4c9d53f96a04ec06ae830f41a761d33999e53a02fcb8"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "models/competitions/world_cup_2026/patterns.json",
       "size_bytes": 5193,
-<<<<<<< HEAD
       "sha256": "6027f363fd8f45fa6da5219fb75e88072c0798affb587f3285226d6e84b6500e"
-=======
-      "sha256": "27ee98087ddf0fe576932cdfd01b4aef9b488a3b857ef7beb6d5042910d3f103"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "models/competitions/world_cup_2026/simulations/latest.csv",
@@ -4390,11 +4140,7 @@
     {
       "path": "models/competitions/world_cup_2026/simulations/latest.json",
       "size_bytes": 91295,
-<<<<<<< HEAD
       "sha256": "715834b52c838b9b8e330d3da8d11a472a4e22f81c978d4090fac5a06fb4872b"
-=======
-      "sha256": "bf5b184fc9935630518eb3473b5236b87df43281c48d0a0f36fef0e031f61fca"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "models/daily_model_evolution.csv",
@@ -4404,21 +4150,12 @@
     {
       "path": "models/error_learning.json",
       "size_bytes": 51951,
-<<<<<<< HEAD
       "sha256": "d92e6e861916c26da7dff2f1fdfb0ca956ebd2189f002fa44494195df5927226"
     },
     {
       "path": "models/features_registry.json",
       "size_bytes": 22613,
       "sha256": "45507a73645d1d8abedcd2d207e5be98dd7ecc0a3119c5c6411623fe304da562"
-=======
-      "sha256": "c0942dc5ad3a1af8f248b1d3437c4e93923c6553be9d41792f57e549a77e9094"
-    },
-    {
-      "path": "models/features_registry.json",
-      "size_bytes": 21048,
-      "sha256": "edde33b42280f50fc23c4c9d53f96a04ec06ae830f41a761d33999e53a02fcb8"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "models/model_versions/world_cup_2026/world_cup_2026_7b85a22a2f199bbb.json",
@@ -4428,11 +4165,7 @@
     {
       "path": "models/patterns.json",
       "size_bytes": 5193,
-<<<<<<< HEAD
       "sha256": "6027f363fd8f45fa6da5219fb75e88072c0798affb587f3285226d6e84b6500e"
-=======
-      "sha256": "27ee98087ddf0fe576932cdfd01b4aef9b488a3b857ef7beb6d5042910d3f103"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "models/simulations/latest.csv",
@@ -4442,7 +4175,6 @@
     {
       "path": "models/simulations/latest.json",
       "size_bytes": 91295,
-<<<<<<< HEAD
       "sha256": "715834b52c838b9b8e330d3da8d11a472a4e22f81c978d4090fac5a06fb4872b"
     },
     {
@@ -4659,269 +4391,6 @@
       "path": "models/versions/semantic/model_final.json",
       "size_bytes": 47787,
       "sha256": "4d048d6c7e6dbeef7a1e8547a25a9571b2fd212a560c71b175c6642615edfa5d"
-=======
-      "sha256": "bf5b184fc9935630518eb3473b5236b87df43281c48d0a0f36fef0e031f61fca"
-    },
-    {
-      "path": "models/temporal_feature_discovery.json",
-      "size_bytes": 11158,
-      "sha256": "da474dc093982ef3e6d8994cd2bbc415d9186dc81c6e2b6eb3d6e6ba71e038e1"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-11.json",
-      "size_bytes": 28495,
-      "sha256": "855c63afab0784a4599a0193736e2a7da8409259faf635a5115f5ec19b728219"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-12.json",
-      "size_bytes": 28974,
-      "sha256": "c1d75fb1edd3e1e2a0348ad7ffcade8a2e3de630aaebfc5ebe7735ecad193fef"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-13.json",
-      "size_bytes": 29677,
-      "sha256": "6b140b2136cb69bfd5883934ac7410253f79f60a2c103640b402803b5b9f1d1f"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-14.json",
-      "size_bytes": 31733,
-      "sha256": "99edfe9cc4b72885004b26a570bb1d7c309ba9b893894d7bd1b307384eb81e0d"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-15.json",
-      "size_bytes": 32677,
-      "sha256": "de8ca5225e2eb08a12d9de5f585c2610d7ef2bb09b53c838cfb0b0ae31469454"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-16.json",
-      "size_bytes": 33392,
-      "sha256": "8fffdf3ce1eabd33545ffa0f9802ad8498ad087936d9ff4717f9864c0ec02ec7"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-17.json",
-      "size_bytes": 34582,
-      "sha256": "20ab5009f9699215a38780e35e0f5f5a07764933b6e44d90448804ebc8acb09a"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-18.json",
-      "size_bytes": 35213,
-      "sha256": "b02876ba4c58e5a4442e39b4c9cc075a9b36c650548a352ec097f473359e7689"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-19.json",
-      "size_bytes": 35606,
-      "sha256": "9e25e2df75a61bf5564e2e3e2503074e901f2f00cc851a3d0d8662c2102a56a9"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-20.json",
-      "size_bytes": 36264,
-      "sha256": "29ac3bfb116da3beb0728474dcc113bf1ad082678462d69365dee6a230305c47"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-21.json",
-      "size_bytes": 36786,
-      "sha256": "39931c3f53dc1a17720de0cf6cd7aca694a2002d61c11f298ecaae46e7041642"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-22.json",
-      "size_bytes": 37324,
-      "sha256": "8abaf5e2b5eb708554a24ff261814fe021a344d35f51692b81a979b657bd10af"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-23.json",
-      "size_bytes": 37846,
-      "sha256": "c8b8ecc0f216df8a7be8390775e14da940910b23d8d5715bdcd6b8b1b6988267"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-24.json",
-      "size_bytes": 38567,
-      "sha256": "830e4b577f62e0a247c109826e36e287f7e4aa1989afdcdb4e51c622ae746c04"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-25.json",
-      "size_bytes": 39426,
-      "sha256": "5570628cbca0d4b1bf63855037679b9d1953caa64b7e5af3c0c57000b3490428"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-26.json",
-      "size_bytes": 40308,
-      "sha256": "18cc3094046ecb766aa0ebae3c4ec2ec6a28410984f18a02fd72cb000dc11d9e"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-27.json",
-      "size_bytes": 41161,
-      "sha256": "e6038aa6033dd2ba46e78a05837f1e18895e9f99357e3130617105afad76f2de"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-28.json",
-      "size_bytes": 41499,
-      "sha256": "edb1fa52c7104d5ce51cf8d663a3b54ae524a30ffe8511d498231aaabc1341ad"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-29.json",
-      "size_bytes": 41655,
-      "sha256": "8603f818641f1cc0d9c989d847ae283a003a2c61ebea8ef38be4aaac51b93e64"
-    },
-    {
-      "path": "models/versions/model_after_2026-06-30.json",
-      "size_bytes": 41892,
-      "sha256": "f93d38c07e61180aebd89649da5e2d6ea9cb2755780b65715a195d2d703d2459"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-01.json",
-      "size_bytes": 42104,
-      "sha256": "257d91298a376c49589d334e09644358f2e0fb1cfc9b5188f16c30ccb9e15680"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-02.json",
-      "size_bytes": 42320,
-      "sha256": "1d0278cde3a43ddd7f920128c1a7bbf5599846794801ee528122f0fa36ffac7f"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-03.json",
-      "size_bytes": 42528,
-      "sha256": "7aead4bf0e4ea424fe409d7c302abb037c3014a09b8c7e9b264e30df954abca1"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-04.json",
-      "size_bytes": 42829,
-      "sha256": "9e7af81f5b2aa922227de14ceda39188322fe6570edd4607655353a14034043c"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-05.json",
-      "size_bytes": 42934,
-      "sha256": "e01060d8b15621ee2266b64e7b30443822e2cb855ae40fd8ea81df7c66bdb308"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-06.json",
-      "size_bytes": 43148,
-      "sha256": "7a959cf83bdd89ea3d2b967b57cffc54308ded0df4017e6fd0eaf590206d737f"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-07.json",
-      "size_bytes": 43480,
-      "sha256": "79fa304a2d479eb37cc644f09629f24b6d1c15a8b51013d7fd1e9833160745c3"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-09.json",
-      "size_bytes": 43501,
-      "sha256": "0eb7c60b2280796fa15b5d71ca7ce05bad28e28394abd7e717d1363cd93196af"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-10.json",
-      "size_bytes": 43528,
-      "sha256": "9adb760ace3d905184be70126770e464f6afe1d39d7e9428627da099e9fa84e9"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-11.json",
-      "size_bytes": 43564,
-      "sha256": "583f613a561177e14e6f292265ccf73870d8ba9185f99862f9f64b3d4a8da1ed"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-12.json",
-      "size_bytes": 43582,
-      "sha256": "0cb36a6ef0d1763775606ee9a61196effc6d2485ed63ebbe5c057128c01f01dc"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-14.json",
-      "size_bytes": 43591,
-      "sha256": "59c7944f35210a1e3c4fb7f7573cf4a46e2f9708fcb6dc39001451fa23b17168"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-15.json",
-      "size_bytes": 43589,
-      "sha256": "9181cb4aa8998049fdf68c6c3a158eb82d6216e44b1ec2a179c7812f4267fc47"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-18.json",
-      "size_bytes": 43596,
-      "sha256": "b414ea5d28a95ba114d531ec42e63ab0c2f2b84a2280c63052c30eb30355ca40"
-    },
-    {
-      "path": "models/versions/model_after_2026-07-19.json",
-      "size_bytes": 43599,
-      "sha256": "684b4557ef730bbfabcdad0f8bbc879fcae70aac234a552c51339a1612048812"
-    },
-    {
-      "path": "models/versions/model_pre_worldcup.json",
-      "size_bytes": 28213,
-      "sha256": "e6701cc2b549e8018e5e65ef7bef56d5c42ec8f1d319c3f8d4036f2ca6722dcc"
-    },
-    {
-      "path": "models/versions/semantic/model_after_group_stage.json",
-      "size_bytes": 41261,
-      "sha256": "6a38a0709748dc451bb358e9480ec854631b6dd1c59df5cbbeaf62a332dbad72"
-    },
-    {
-      "path": "models/versions/semantic/model_after_quarterfinals.json",
-      "size_bytes": 43685,
-      "sha256": "51282af93ede68e241e0f8fe95e1cb2d72cbe69e7965719d74d16a46efd4129e"
-    },
-    {
-      "path": "models/versions/semantic/model_after_round_of_16.json",
-      "size_bytes": 43580,
-      "sha256": "403a8f0e8bd5dd3fc7757d1d56080e6db4879b428f29001cd8e93374a5d38a68"
-    },
-    {
-      "path": "models/versions/semantic/model_after_round_of_32.json",
-      "size_bytes": 42628,
-      "sha256": "16e1c3aa42708f4faa8882c00b938d969bda27c99a4344d25988d90422084af7"
-    },
-    {
-      "path": "models/versions/semantic/model_after_semifinals.json",
-      "size_bytes": 43689,
-      "sha256": "133ee3b46cea2b732259212a0f080125da36586f3dc8ca530d754cb462c8bb5d"
-    },
-    {
-      "path": "models/versions/semantic/model_final.json",
-      "size_bytes": 43688,
-      "sha256": "42b1007a459923271d794c903c5f1f8bbb243714ae025a88a3da8fc32724f765"
-    },
-    {
-      "path": "neural_copa/__init__.py",
-      "size_bytes": 67,
-      "sha256": "ba5ec963c82dc04327c05f2a06e9206f0608d5f55463c96bfd7e9b3fad8722a7"
-    },
-    {
-      "path": "neural_copa/config.py",
-      "size_bytes": 693,
-      "sha256": "60af71dd8f52408859108ab24569fbb2ce43ba9cf1a7b0e5cde65e6db62e1649"
-    },
-    {
-      "path": "neural_copa/data_utils.py",
-      "size_bytes": 11482,
-      "sha256": "f9d2a82b1f634ea20b187dffb77b45875c25cf007144c3266c43e7ee358712cc"
-    },
-    {
-      "path": "neural_copa/export_frontend.py",
-      "size_bytes": 2340,
-      "sha256": "2862270ec54943ff9b0d55d13f240287b56dd50ef46d3a53753a4fd9fd4d481f"
-    },
-    {
-      "path": "neural_copa/inference.py",
-      "size_bytes": 2671,
-      "sha256": "f38c4f19b2c71d17f9edd93e14d6cd3b529a7befbd85ac4b5ae9d627ced79856"
-    },
-    {
-      "path": "neural_copa/knockout.py",
-      "size_bytes": 18973,
-      "sha256": "a4fae5e2a661f0d6409344e4db73ce17d87f592c47b1d222f7fe9c152c6714e6"
-    },
-    {
-      "path": "neural_copa/modeling.py",
-      "size_bytes": 1486,
-      "sha256": "338b275a58fcd59404c92b0d556fa44acb7e45c0a322e66d5b68711cf3c3fb85"
-    },
-    {
-      "path": "neural_copa/run_pipeline.py",
-      "size_bytes": 447,
-      "sha256": "03ecb3fde5d3ff9204849dfe26e8fe12fe76fec2c716684a3795657322aefdf6"
-    },
-    {
-      "path": "neural_copa/train.py",
-      "size_bytes": 10298,
-      "sha256": "af8da263ce1f52f79c20fbb75724cda5ee1d18b575d96b4852fcd1f3a88ed495"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "notebooks/extracao_copa_2026_independente.ipynb",
@@ -4945,7 +4414,6 @@
     },
     {
       "path": "predictions/pre_match/match_001.json",
-<<<<<<< HEAD
       "size_bytes": 5605,
       "sha256": "95fbdfb8dde107f8b28e5a9f5e12fb9c0f1b8da2e958d7db46c054a11db3ef50"
     },
@@ -5463,525 +4931,6 @@
       "path": "predictions/pre_match/match_104.json",
       "size_bytes": 24083,
       "sha256": "25173cc15c959f243ea8add265c477ca02469078584a9a3274c3ffbb16ea2f44"
-=======
-      "size_bytes": 5415,
-      "sha256": "4b0c95343474c4edbb5067eb435ece6d7639d7be0de5348025c76cadf99f9a65"
-    },
-    {
-      "path": "predictions/pre_match/match_002.json",
-      "size_bytes": 5605,
-      "sha256": "ead04e6465dde81a7ff7a1d2729f9088fb32fee37cbd9592afe7789af11eaf78"
-    },
-    {
-      "path": "predictions/pre_match/match_003.json",
-      "size_bytes": 5789,
-      "sha256": "44dde48b317cf3849a587bc930da09e2752eefd583d62e94a8b6b9fdcfcac2ca"
-    },
-    {
-      "path": "predictions/pre_match/match_004.json",
-      "size_bytes": 5957,
-      "sha256": "72421dca4e29fd65e2fc2ff8fdd00ee0c6d1ef0e8d2bc72d121b91c2499ef9a7"
-    },
-    {
-      "path": "predictions/pre_match/match_005.json",
-      "size_bytes": 6286,
-      "sha256": "a5da9361e997c96601f7fd475fe814fdfafcc9b1b0e52be9f1ec462f8e359c3b"
-    },
-    {
-      "path": "predictions/pre_match/match_006.json",
-      "size_bytes": 6470,
-      "sha256": "7c52b72f171380eadb49875cb158daf6e8ce85a2ac585ba8d0acd9173f01e9fe"
-    },
-    {
-      "path": "predictions/pre_match/match_007.json",
-      "size_bytes": 6106,
-      "sha256": "6a3acd60a18291b98b2a60bb7dc9b74816f8787808dd65b2a3ed947851baae73"
-    },
-    {
-      "path": "predictions/pre_match/match_008.json",
-      "size_bytes": 6106,
-      "sha256": "aaa4c597af5607231ad70efcc53828f672ffb23459eb91d9b4f09c341a63755e"
-    },
-    {
-      "path": "predictions/pre_match/match_009.json",
-      "size_bytes": 7030,
-      "sha256": "8eb9f5959fe0670d24f11c84bcdcc1557817d40026c2289c24757c846d31a1f0"
-    },
-    {
-      "path": "predictions/pre_match/match_010.json",
-      "size_bytes": 6816,
-      "sha256": "a84b360a4f8a1029ba010d3a517354b9ead6919300cb8d33365264b5bdb743bc"
-    },
-    {
-      "path": "predictions/pre_match/match_011.json",
-      "size_bytes": 6839,
-      "sha256": "415d7cf61254aa5cd3a76ffbda6fb61f0bb1b082a9a4cb67689694723d328102"
-    },
-    {
-      "path": "predictions/pre_match/match_012.json",
-      "size_bytes": 7181,
-      "sha256": "c1091ff0f9d929141bacd0aa2b89e83a6d5ef54257bbd7caa547d0a54f411242"
-    },
-    {
-      "path": "predictions/pre_match/match_013.json",
-      "size_bytes": 7753,
-      "sha256": "858eb47aea8f1ba912e1630b2a3286851d9d79ceb49ef90c0796863cd642d6d3"
-    },
-    {
-      "path": "predictions/pre_match/match_014.json",
-      "size_bytes": 7552,
-      "sha256": "f34d007f992a512e17ed9160db2d7577853c71326a5df8644ba627d8f572b1dc"
-    },
-    {
-      "path": "predictions/pre_match/match_015.json",
-      "size_bytes": 7914,
-      "sha256": "0e3a46033b577703613940403ad70b9bb9f6005c5b8a4c16fcb27f27f077df2f"
-    },
-    {
-      "path": "predictions/pre_match/match_016.json",
-      "size_bytes": 7538,
-      "sha256": "a99b0549075bc5cb54c4795c68c3fa4e574caaa9b062acc1afa96f8c0777373f"
-    },
-    {
-      "path": "predictions/pre_match/match_017.json",
-      "size_bytes": 8270,
-      "sha256": "3480d1814892b2977a23b999cb2c106dfbc2ef15a5c8e4b9a0f425fa3f7e3f1f"
-    },
-    {
-      "path": "predictions/pre_match/match_018.json",
-      "size_bytes": 8268,
-      "sha256": "865ccd4825a556cd4784ca725f09a5996ceecabead36ff25e89f07ad69643bee"
-    },
-    {
-      "path": "predictions/pre_match/match_019.json",
-      "size_bytes": 8449,
-      "sha256": "afa9c98877c6d1fc6d88e5401a105e5241ebf4850c6699b25461c13be371982d"
-    },
-    {
-      "path": "predictions/pre_match/match_020.json",
-      "size_bytes": 8635,
-      "sha256": "1f084967d6b3d60ce3bf35a8cd572ddbc2c78bc3bc8973e1369d696679a5e693"
-    },
-    {
-      "path": "predictions/pre_match/match_021.json",
-      "size_bytes": 9152,
-      "sha256": "7d05f7a54a414a0707f23602a5f2cb0983ba0c65e5f18bbba6119dc356791115"
-    },
-    {
-      "path": "predictions/pre_match/match_022.json",
-      "size_bytes": 8996,
-      "sha256": "94361dde32b47f1b02b4618d4965d0041f03450dd47d7a96460948001921dad4"
-    },
-    {
-      "path": "predictions/pre_match/match_023.json",
-      "size_bytes": 8978,
-      "sha256": "32b6390e0363b35ab80dfee110f85f05dde59f1cb668845805b6daef74f20de7"
-    },
-    {
-      "path": "predictions/pre_match/match_024.json",
-      "size_bytes": 9369,
-      "sha256": "e89937fb68ad7bb93c319b97caaf8980f46032d9498019612356eddcf99754df"
-    },
-    {
-      "path": "predictions/pre_match/match_025.json",
-      "size_bytes": 9756,
-      "sha256": "80dc0dc4846befa10fba9ba07c0b11d722495f1589b6bf6b9c9ea71ac7a92942"
-    },
-    {
-      "path": "predictions/pre_match/match_026.json",
-      "size_bytes": 9746,
-      "sha256": "414a7136fd040c6d6a150a92f8919190cabb6e825c6a90e09c05758a1eb4f895"
-    },
-    {
-      "path": "predictions/pre_match/match_027.json",
-      "size_bytes": 9890,
-      "sha256": "382ca3a94381a37d1dae9bcc6efed7648aeb65306f8b35a8a883036fe1f56d2d"
-    },
-    {
-      "path": "predictions/pre_match/match_028.json",
-      "size_bytes": 10099,
-      "sha256": "3d8412f7fe5bfe96be77059a8c7349a74e05fbabdf80686ab7e341962d698aa4"
-    },
-    {
-      "path": "predictions/pre_match/match_029.json",
-      "size_bytes": 10596,
-      "sha256": "9e6ac265fd62663e634c360134ca210a43e3171cfcf5c8bbca4c32ae27bd4ea3"
-    },
-    {
-      "path": "predictions/pre_match/match_030.json",
-      "size_bytes": 10442,
-      "sha256": "6844688eda6ddc1bc9ae5db2007b753e94de69a86474e57330f1167e380f478a"
-    },
-    {
-      "path": "predictions/pre_match/match_031.json",
-      "size_bytes": 10628,
-      "sha256": "16b4230540891cf0626e016f3d0f87e47be656cab00c8f93c98dce324bb1f7de"
-    },
-    {
-      "path": "predictions/pre_match/match_032.json",
-      "size_bytes": 10464,
-      "sha256": "e77cb7a1879e73a7c3fbe62d8cc7f3efe2b72e1180f0267d48d5e075b093352a"
-    },
-    {
-      "path": "predictions/pre_match/match_033.json",
-      "size_bytes": 11169,
-      "sha256": "b664234a6ba692951cda1ada4a270f9d69cf1322f01396b42a85c9b81de134c1"
-    },
-    {
-      "path": "predictions/pre_match/match_034.json",
-      "size_bytes": 11337,
-      "sha256": "278ecd282e4783c79db9c9522dae874280ea1ce8570d042fd3b24748a45e5ff8"
-    },
-    {
-      "path": "predictions/pre_match/match_035.json",
-      "size_bytes": 11170,
-      "sha256": "19358b72450ffe4621b301fe6afa4d3753189841ce9c0bd7341599f4838195f7"
-    },
-    {
-      "path": "predictions/pre_match/match_036.json",
-      "size_bytes": 11521,
-      "sha256": "e1b9592293e559282c6ee86b3f79db268acebb2d0e2f43a2ab5e13e7d7bd86c3"
-    },
-    {
-      "path": "predictions/pre_match/match_037.json",
-      "size_bytes": 12046,
-      "sha256": "7db04fb36196ba48e17396982bae8a11e5e7bdb7f1878e59e59876560d99cc76"
-    },
-    {
-      "path": "predictions/pre_match/match_038.json",
-      "size_bytes": 11881,
-      "sha256": "67c72fbad20099f72f896abe141a8173e1704d15153ccf507b94c5be05d1a740"
-    },
-    {
-      "path": "predictions/pre_match/match_039.json",
-      "size_bytes": 11858,
-      "sha256": "6366c963ebef720792dcd85502e5a9e5179f4b87faab5c579c49aea1baeff7da"
-    },
-    {
-      "path": "predictions/pre_match/match_040.json",
-      "size_bytes": 12229,
-      "sha256": "80e60c227635c22ec9a6c19d827c62c287466cc2b44b2db2d7d493bfacd43c49"
-    },
-    {
-      "path": "predictions/pre_match/match_041.json",
-      "size_bytes": 12768,
-      "sha256": "445e0fcc520cec933de64fe0b92ea22849e9801d8149e9a9c3a1f284fd1cfc90"
-    },
-    {
-      "path": "predictions/pre_match/match_042.json",
-      "size_bytes": 12581,
-      "sha256": "77b5e4db84feab3f2d40d623dc787740bcf77d202b1af6aa7b82c7e89983e3a3"
-    },
-    {
-      "path": "predictions/pre_match/match_043.json",
-      "size_bytes": 12597,
-      "sha256": "f972a7c27f717c40637dc012148070dea42bfbc0e4269d6343e9467b0ccbc2b6"
-    },
-    {
-      "path": "predictions/pre_match/match_044.json",
-      "size_bytes": 12960,
-      "sha256": "1f38b1403b403c6308958b5ff35663f2628b9bd1b21372a4f8fc7fc3e8cd0b6b"
-    },
-    {
-      "path": "predictions/pre_match/match_045.json",
-      "size_bytes": 13293,
-      "sha256": "be0428818203c49bb260e947aa81e301846fb0b7c8b1f6643490c50fdefcf42a"
-    },
-    {
-      "path": "predictions/pre_match/match_046.json",
-      "size_bytes": 13484,
-      "sha256": "596d7ae3a0d36bdf0588513cc7f591734af57b38b9bb9b7aa21008644e3c4c81"
-    },
-    {
-      "path": "predictions/pre_match/match_047.json",
-      "size_bytes": 13309,
-      "sha256": "ce318d14c18a4e13aba2eade1d98098fc09ca6fbdebe2a42435585e8b9ec4678"
-    },
-    {
-      "path": "predictions/pre_match/match_048.json",
-      "size_bytes": 13660,
-      "sha256": "1e7094f1bc402f6ce7c859a8f4e02a6541321c83904a4fb95a852167ccc00a7e"
-    },
-    {
-      "path": "predictions/pre_match/match_049.json",
-      "size_bytes": 14022,
-      "sha256": "35bb654bdee7deb1e44e7eee97c87bf7ac3e0668828f92b38b5f38bdfb7a398f"
-    },
-    {
-      "path": "predictions/pre_match/match_050.json",
-      "size_bytes": 14016,
-      "sha256": "579d196f222d4f65b1f80e53f1d27a1ffcdfaabf3eb909fa544886a8177c656f"
-    },
-    {
-      "path": "predictions/pre_match/match_051.json",
-      "size_bytes": 14020,
-      "sha256": "6b3cfac80e8eb7776af0efd1a6595cf96faafcd887dc7a5025c7bf6a14d1af82"
-    },
-    {
-      "path": "predictions/pre_match/match_052.json",
-      "size_bytes": 14054,
-      "sha256": "8ab06afccfdb29a3307faaf5166ede706c19ef717233db800b9081ea5bb74c91"
-    },
-    {
-      "path": "predictions/pre_match/match_053.json",
-      "size_bytes": 14394,
-      "sha256": "01b95c74a0d34c1c64a27c9a18c5fd588c6724e0520db48d80e2b7a4c41565ee"
-    },
-    {
-      "path": "predictions/pre_match/match_054.json",
-      "size_bytes": 14419,
-      "sha256": "a1f8ddf2368a8d2fa0ef17ca326e692da258e4d4d1a06d3c824951ffaf2006ef"
-    },
-    {
-      "path": "predictions/pre_match/match_055.json",
-      "size_bytes": 15135,
-      "sha256": "4a4a8c492f29ced9920d35ff14dab09cac64d16d3ed11784cb9d71748de572d5"
-    },
-    {
-      "path": "predictions/pre_match/match_056.json",
-      "size_bytes": 15111,
-      "sha256": "24a2a3ace4eb87a178ac02dfc73ffb4bd80a3295e992ab17ee5391f5d891ae8a"
-    },
-    {
-      "path": "predictions/pre_match/match_057.json",
-      "size_bytes": 15096,
-      "sha256": "ea0fde83814e6ed2c89925a5c78b4354d9bc77e56ccd3a02fd404b9175f48965"
-    },
-    {
-      "path": "predictions/pre_match/match_058.json",
-      "size_bytes": 15140,
-      "sha256": "a7248956f762c47a79b06ddbea976ec186b355f0cfb2241ee3a3bfbfc8d0fc01"
-    },
-    {
-      "path": "predictions/pre_match/match_059.json",
-      "size_bytes": 15495,
-      "sha256": "ffa772a7cbb096d6fee1e2f366a04ba82ddadb2177fba821eb4e501252926a2c"
-    },
-    {
-      "path": "predictions/pre_match/match_060.json",
-      "size_bytes": 15489,
-      "sha256": "bba63c06fac648eeb24579680e038b3d3150ea8b052c4f54e16e80b12c440cbe"
-    },
-    {
-      "path": "predictions/pre_match/match_061.json",
-      "size_bytes": 16181,
-      "sha256": "152588138c73e799cea37b6d058ac5db17a2ae1140c8db860b4e637f9f56a131"
-    },
-    {
-      "path": "predictions/pre_match/match_062.json",
-      "size_bytes": 16171,
-      "sha256": "de60ecf7c6bdea079fd3ac5d7b9939901297f01e11e1c420794ea3c22982c8ef"
-    },
-    {
-      "path": "predictions/pre_match/match_063.json",
-      "size_bytes": 16517,
-      "sha256": "7aac6b6ea3b490c0a7b2560c68d49e572d0d07ef6acbb79aff5aa18b5c77870d"
-    },
-    {
-      "path": "predictions/pre_match/match_064.json",
-      "size_bytes": 16563,
-      "sha256": "de899e6d43b72ab6f263d902bb9df8279c01e92c2bc7097523f92f10ddddc457"
-    },
-    {
-      "path": "predictions/pre_match/match_065.json",
-      "size_bytes": 16218,
-      "sha256": "ffdc5ddd9547f66e691d263e7eab3e020464590a8f0c08aab4eedf02aae46a34"
-    },
-    {
-      "path": "predictions/pre_match/match_066.json",
-      "size_bytes": 16179,
-      "sha256": "a4d4a1c5f8faab1ed8d650f1006eb164d2300cc5db40309195c9a45e604dda90"
-    },
-    {
-      "path": "predictions/pre_match/match_067.json",
-      "size_bytes": 17267,
-      "sha256": "b7f612182750a2556f163482efc8779a52c2188ce69e04868d2e69dfb48f111e"
-    },
-    {
-      "path": "predictions/pre_match/match_068.json",
-      "size_bytes": 17248,
-      "sha256": "3525f68b464296983c9e1fe83ffed1a6417c7f13a885ed15d7edabbf031d49a4"
-    },
-    {
-      "path": "predictions/pre_match/match_069.json",
-      "size_bytes": 17267,
-      "sha256": "91682dbe410b7717079ad9925ab9559f125d13aff0e6edcc2b621ff6b36312cf"
-    },
-    {
-      "path": "predictions/pre_match/match_070.json",
-      "size_bytes": 17270,
-      "sha256": "d45f9a29c854520fcc19525a6305612b3f8b4ddefb7a05d85608bc8f843dd04a"
-    },
-    {
-      "path": "predictions/pre_match/match_071.json",
-      "size_bytes": 17264,
-      "sha256": "6cc25a55bb714f6fdbf703687de46e36224419621f60d14019635d339ec2b15a"
-    },
-    {
-      "path": "predictions/pre_match/match_072.json",
-      "size_bytes": 17264,
-      "sha256": "ae9f0864fd5dc6faff9296f1e30f174e32f2e79f45e4f72d22fb5a9de57cf92b"
-    },
-    {
-      "path": "predictions/pre_match/match_073.json",
-      "size_bytes": 18362,
-      "sha256": "d2f89c07802727b745a14f0720f131279d0a06fb600fc119fd0ed7eb0ef9b6e0"
-    },
-    {
-      "path": "predictions/pre_match/match_074.json",
-      "size_bytes": 18533,
-      "sha256": "59d4ae70d4b65dfba6bd3c25cc454e0a6309f43f4bdd4f4467e9da031cae7f33"
-    },
-    {
-      "path": "predictions/pre_match/match_075.json",
-      "size_bytes": 18742,
-      "sha256": "3b2e494dcfce1747880e25b6274b35afb1190df5d16c25763cbaf281d3f22df8"
-    },
-    {
-      "path": "predictions/pre_match/match_076.json",
-      "size_bytes": 18522,
-      "sha256": "afd526c5795bfa48e6f2c82587b09e22d4f49f50f9489c4df7440a576664f2e8"
-    },
-    {
-      "path": "predictions/pre_match/match_077.json",
-      "size_bytes": 19070,
-      "sha256": "d71f95c203959dd40e4cfd35eede50b4dc34fe20012b6103c6f8db099c97e26a"
-    },
-    {
-      "path": "predictions/pre_match/match_078.json",
-      "size_bytes": 19105,
-      "sha256": "165087b8e3a8108f2dfe40c680c8efb9f41ac95dc2e97ecd193f915c091f93e1"
-    },
-    {
-      "path": "predictions/pre_match/match_079.json",
-      "size_bytes": 19239,
-      "sha256": "e364d1b2a869ff2296a1b40d5f50a6cbbd6e72dbc8da1e3cc90214cd3291cbbe"
-    },
-    {
-      "path": "predictions/pre_match/match_080.json",
-      "size_bytes": 19609,
-      "sha256": "0f347a0a866a880fc8a36b7c8963a1e661f0c333dfbe464b5d4541b67f8c3d9e"
-    },
-    {
-      "path": "predictions/pre_match/match_081.json",
-      "size_bytes": 19857,
-      "sha256": "aaf881c87b8089bc2266df54d958fe4e13577c2a3f23b43ed3667543aa1f62a4"
-    },
-    {
-      "path": "predictions/pre_match/match_082.json",
-      "size_bytes": 19610,
-      "sha256": "2a04c8f74843023fdda5def8c0283c5feb7e14247312f5fb16803aa198730004"
-    },
-    {
-      "path": "predictions/pre_match/match_083.json",
-      "size_bytes": 20155,
-      "sha256": "58c0707572b094928e4b771a8dd251a2166f1a4815a32979b1d464b4aa54ef61"
-    },
-    {
-      "path": "predictions/pre_match/match_084.json",
-      "size_bytes": 20140,
-      "sha256": "5366e78b300d0ac5d634f9a7104c7846bc3292a9aca38739a4c86275872b5966"
-    },
-    {
-      "path": "predictions/pre_match/match_085.json",
-      "size_bytes": 20316,
-      "sha256": "011bd4721e49584c1e1a00fc6d206980a69af4ea2837c987fb58307cec9b6e7d"
-    },
-    {
-      "path": "predictions/pre_match/match_086.json",
-      "size_bytes": 20695,
-      "sha256": "fc725d91aeea6ddb80774ed5b626859d589f0600f58cc3020ac5e68f4c6925c9"
-    },
-    {
-      "path": "predictions/pre_match/match_087.json",
-      "size_bytes": 20843,
-      "sha256": "3deb2263b89182a3d1f8c410a7801251b11be704c2cdb6696f2aa2f645f60133"
-    },
-    {
-      "path": "predictions/pre_match/match_088.json",
-      "size_bytes": 20688,
-      "sha256": "e4b41ee8e9ee6cfa242f40187f3f876fd9883924af9dcb6b9a2d516aa723c3ed"
-    },
-    {
-      "path": "predictions/pre_match/match_089.json",
-      "size_bytes": 21215,
-      "sha256": "e8d96c70e20a7e0d0ac7f159a03279349c7f799f9dbcd51c2c12d157def9add8"
-    },
-    {
-      "path": "predictions/pre_match/match_090.json",
-      "size_bytes": 21211,
-      "sha256": "a70ae5649a74d5f808e7743c83fbfab969b5bf854ac7ba22be148036f4cb2e4d"
-    },
-    {
-      "path": "predictions/pre_match/match_091.json",
-      "size_bytes": 21545,
-      "sha256": "f82bfc327f8ee94f1e744e404ad7d5d26e65cc2f9e5a786582da309ad0bf4fcb"
-    },
-    {
-      "path": "predictions/pre_match/match_092.json",
-      "size_bytes": 21577,
-      "sha256": "81c106069c426892bbd7e46f0bd1b636a9db30e21a4f13d2844e24bd575a2e93"
-    },
-    {
-      "path": "predictions/pre_match/match_093.json",
-      "size_bytes": 21925,
-      "sha256": "080b3caea0e9cf16ba1a1e5b396f1183343aa757fb5103ed0e1ba7fd9d183a0b"
-    },
-    {
-      "path": "predictions/pre_match/match_094.json",
-      "size_bytes": 21963,
-      "sha256": "5d1a7eaf207671c31529de85f012d83e07c0ffd81bfda706a24aa7546051bcf4"
-    },
-    {
-      "path": "predictions/pre_match/match_095.json",
-      "size_bytes": 22282,
-      "sha256": "4e981777ccea3ab414ebe1032016d34c0de2afb9a154ed393d5a1e2e2310f76e"
-    },
-    {
-      "path": "predictions/pre_match/match_096.json",
-      "size_bytes": 22286,
-      "sha256": "547e3b2660c324ca1eafe48b0e3d1341fc2beee434ff7a983d6978e64099ccaa"
-    },
-    {
-      "path": "predictions/pre_match/match_097.json",
-      "size_bytes": 22644,
-      "sha256": "664722a33d0286d453c9d386a3e9cbec9d28fb0601f25a053eb0be7e12bf19e7"
-    },
-    {
-      "path": "predictions/pre_match/match_098.json",
-      "size_bytes": 22822,
-      "sha256": "44ba0c66c2fb210529785f1c0ce2d17ec2316ad0ddcea5fd67186fe868b2b731"
-    },
-    {
-      "path": "predictions/pre_match/match_099.json",
-      "size_bytes": 23023,
-      "sha256": "9b300988e58ce72ced318a65e098c4e35d06384e20e3bca97d26b58bc5204bab"
-    },
-    {
-      "path": "predictions/pre_match/match_100.json",
-      "size_bytes": 23010,
-      "sha256": "b41e6363b0e60d04d2d775436f60f4f7dc623d471d34ec48e9dbe0426f20ce4e"
-    },
-    {
-      "path": "predictions/pre_match/match_101.json",
-      "size_bytes": 23354,
-      "sha256": "c689d1d178929128217cc6d70ec8d372be6b0a56451cdd25ff72e46d6194a784"
-    },
-    {
-      "path": "predictions/pre_match/match_102.json",
-      "size_bytes": 23555,
-      "sha256": "f4922121123a77c4fb3a17509b91e2aacafdb2288630faa9ce9dccf5f61adaa5"
-    },
-    {
-      "path": "predictions/pre_match/match_103.json",
-      "size_bytes": 23741,
-      "sha256": "fa821426bb4628a8c626a031c2a78d203a30366d9b9948283149ba69e61adff6"
-    },
-    {
-      "path": "predictions/pre_match/match_104.json",
-      "size_bytes": 23893,
-      "sha256": "e5cb91d581671e3ea7b2e085780384eee1e0c77d28ed9020e7a462baf44ef461"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "predictions/pre_worldcup_group_predictions.csv",
@@ -5995,7 +4944,6 @@
     },
     {
       "path": "rede-neural.html",
-<<<<<<< HEAD
       "size_bytes": 5110,
       "sha256": "a58c4d2345169b0cb46e5ae020fff59c8d37114c0c876e7c93ca1417a9f5307a"
     },
@@ -6033,30 +4981,10 @@
       "path": "reports/competitions/world_cup_2026/final_system_status.json",
       "size_bytes": 3212,
       "sha256": "e6be913f961513adc4c538dab80d85ba9323bee292ec8c607976583311750da2"
-=======
-      "size_bytes": 6953,
-      "sha256": "ac9b1df2ed4cd255b8f512e5bf0a5119ee1f53bc39f1d07dd3c0cbadc397ee87"
-    },
-    {
-      "path": "reports/competitions/world_cup_2026/data_completeness_report.json",
-      "size_bytes": 4963,
-      "sha256": "65ac5c373d18135cd4f2fae07680b1ae34d1325985cd3ca6e2104ab9fa95603e"
-    },
-    {
-      "path": "reports/competitions/world_cup_2026/enrichment_report.json",
-      "size_bytes": 506,
-      "sha256": "7196a9e884966ab5c36d52b790fac85c3a2c77e973046bf10925665369b17057"
-    },
-    {
-      "path": "reports/competitions/world_cup_2026/final_system_status.json",
-      "size_bytes": 3204,
-      "sha256": "29bd27294adce6c9c98410bbe25cdac757d07ea9c13fd0b57fa220378b88201d"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "reports/competitions/world_cup_2026/model_recalibration_report.json",
       "size_bytes": 3834,
-<<<<<<< HEAD
       "sha256": "933da46f723abcdc4ddc4f3e0cbbcb8411cc317e7e5a3273b5729c5cc4dc86d7"
     },
     {
@@ -6078,24 +5006,6 @@
       "path": "reports/enrichment_report.json",
       "size_bytes": 574,
       "sha256": "f4b0f5a74ccfdb94da4c87a28c5d08be15a5ccc5b17754b60af0d9c845ce5f4d"
-=======
-      "sha256": "8b68cd4c6190ee00dded474b5cea44e87d6f22830aa0d06a4e1f3e389dc1b8a7"
-    },
-    {
-      "path": "reports/competitions/world_cup_2026/validation_report.json",
-      "size_bytes": 2558,
-      "sha256": "81c8b71244a3aa5ecc12ebd54d42d5fc5892e0f9a4023be5afad7098763aa9d4"
-    },
-    {
-      "path": "reports/data_completeness_report.json",
-      "size_bytes": 4963,
-      "sha256": "65ac5c373d18135cd4f2fae07680b1ae34d1325985cd3ca6e2104ab9fa95603e"
-    },
-    {
-      "path": "reports/enrichment_report.json",
-      "size_bytes": 506,
-      "sha256": "7196a9e884966ab5c36d52b790fac85c3a2c77e973046bf10925665369b17057"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "reports/external_mapping_cleanup.json",
@@ -6109,13 +5019,8 @@
     },
     {
       "path": "reports/final_system_status.json",
-<<<<<<< HEAD
       "size_bytes": 3212,
       "sha256": "e6be913f961513adc4c538dab80d85ba9323bee292ec8c607976583311750da2"
-=======
-      "size_bytes": 6967,
-      "sha256": "b09f4dc5c4d34caa6b24015184975f839f7d3aa430049b7f38d1387257a4f12a"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "reports/implementation_manifest.json",
@@ -6125,7 +5030,6 @@
     {
       "path": "reports/model_recalibration_report.json",
       "size_bytes": 3834,
-<<<<<<< HEAD
       "sha256": "933da46f723abcdc4ddc4f3e0cbbcb8411cc317e7e5a3273b5729c5cc4dc86d7"
     },
     {
@@ -6157,24 +5061,10 @@
       "path": "reports/run_diagnostics/run_diagnostics.md",
       "size_bytes": 753,
       "sha256": "6c6d8cb84251ed9024bc01ed8092101b17a8f94baffde33b8619108d44f0f9de"
-=======
-      "sha256": "8b68cd4c6190ee00dded474b5cea44e87d6f22830aa0d06a4e1f3e389dc1b8a7"
-    },
-    {
-      "path": "reports/repository_audit.json",
-      "size_bytes": 71413,
-      "sha256": "2ae0882a08375032e2a0b0cc9bd1f536e1818108d591903b6ea70ea05b07a80c"
-    },
-    {
-      "path": "reports/repository_integrity_report.json",
-      "size_bytes": 1154,
-      "sha256": "0788ec45b229fa169d20e1982784e5e82c9017eb00bc4f6217f7e86dfffac4b5"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "reports/temporal_validation_report.json",
       "size_bytes": 472,
-<<<<<<< HEAD
       "sha256": "62762dc7fa4b93b1dfcee80364291d7fb894dbb851f79f778ca0ecb49ce2ddaa"
     },
     {
@@ -6201,34 +5091,6 @@
       "path": "reports/worldcup_temporal_system_status.json",
       "size_bytes": 4510,
       "sha256": "a867b39a48bf9858ae4449edfd43515720de1c243b8550e8ced34d98a3ce32b3"
-=======
-      "sha256": "5a583dbecd1182cd22d0ddb94ff1eb462d8755c86a68c2fdfa4f50b699c21fd3"
-    },
-    {
-      "path": "reports/validation_report.json",
-      "size_bytes": 2558,
-      "sha256": "81c8b71244a3aa5ecc12ebd54d42d5fc5892e0f9a4023be5afad7098763aa9d4"
-    },
-    {
-      "path": "reports/wc2026_complete_data_integration.json",
-      "size_bytes": 16037,
-      "sha256": "b75a2218f40412757204bd0f98fc04e3788556471e8a43befe237b2cb98e4df0"
-    },
-    {
-      "path": "reports/worldcup_learning_report.json",
-      "size_bytes": 39524,
-      "sha256": "a706068f794e32d927a009ea9366859721b6016a74c28c8543bf9c1372e9d5ef"
-    },
-    {
-      "path": "reports/worldcup_temporal_repository_audit.json",
-      "size_bytes": 8923,
-      "sha256": "982c1b4e73635960ddbb0ea810ad8492778041c1a9e6cbbe63d5837bf619c7f3"
-    },
-    {
-      "path": "reports/worldcup_temporal_system_status.json",
-      "size_bytes": 3563,
-      "sha256": "f34a45d9a1436915193e938153d7eb49bc68ca947082132b05e594fa458fc87d"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "requirements-legacy-ml.txt",
@@ -6241,7 +5103,6 @@
       "sha256": "45c8465a7ca9905ad017297679db533fe0fcd1e164b76a5439600fcd5af7e1bc"
     },
     {
-<<<<<<< HEAD
       "path": "scripts/README_integracao_pesquisa_2026_06_30.md",
       "size_bytes": 583,
       "sha256": "cc4b7f9a5d23ee35abadebbc4f742baa0be50f03a8fb43d05ce177dc4664bfe6"
@@ -6255,11 +5116,6 @@
       "path": "scripts/ci_preflight.py",
       "size_bytes": 4116,
       "sha256": "5c14954457757f4a196e22bb8537363ea12e9d79d6c97a33416a2fcaba5faa75"
-=======
-      "path": "scripts/atualizar_modelo.py",
-      "size_bytes": 7988,
-      "sha256": "6ab06f6d4a08910d50953f278c1c51f1d518849b73bef30af2daa124435f23c4"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "scripts/cleanup_external_mappings.py",
@@ -6267,7 +5123,6 @@
       "sha256": "cf17ce8cd6e9c53d0eb0015e486ff14924343ef33beb3286f6f65fa2c66ab2d2"
     },
     {
-<<<<<<< HEAD
       "path": "scripts/diagnose_github_actions.py",
       "size_bytes": 20596,
       "sha256": "ef595ef8e296a83da085fadf38ef7436ce3c392e0ebe08c2c5dde0c3dd8e2138"
@@ -6281,21 +5136,6 @@
       "path": "scripts/integrate_wc2026_complete_package.py",
       "size_bytes": 24506,
       "sha256": "054b82b0cbb905ca7c13c62a137b6a26da5e6c4b2911ef587ad31409dcb948e0"
-=======
-      "path": "scripts/integrate_wc2026_complete_package.py",
-      "size_bytes": 24414,
-      "sha256": "2d6f20e536333cca95ff6335ace52393b4047fecd3bc260b28c6fb263b098efc"
-    },
-    {
-      "path": "scripts/modelo_neural_diario.py",
-      "size_bytes": 67671,
-      "sha256": "3f650ec5f75bc6fa1e3c174c8fcab4099e942280a0c5111bf5bde9a8860f916b"
-    },
-    {
-      "path": "scripts/recalcular_chaveamento_completo.py",
-      "size_bytes": 22558,
-      "sha256": "9e5bf49626783e1253f2a373fd7c05c5df32b7a593eb1c35f58f404d07cc0b58"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "scripts/run_analytical_loops.py",
@@ -6303,40 +5143,24 @@
       "sha256": "5bf59ca599999c673baf530e329cdb37b6847597b9e0309ef3955c3c99d9f634"
     },
     {
-<<<<<<< HEAD
       "path": "scripts/run_repository_pipeline.py",
       "size_bytes": 9712,
       "sha256": "31b7c8ab068ddc8af534d2540ee4686dbe758130687e7906f90aeec1b405eb8a"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "scripts/testes/test_integridade_dados.py",
       "size_bytes": 13645,
       "sha256": "ea8ac762272ae55c18987eafe3191b4558b6ada0e39a8b2879fe220c137eaa0b"
     },
     {
-<<<<<<< HEAD
-=======
-      "path": "scripts/treinar_rede_neural_copa.py",
-      "size_bytes": 193,
-      "sha256": "2afbc1b48154402578e2e3172eb262678d8259ac3e3df28bd19fd08174c0bcb5"
-    },
-    {
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "scripts/validar_recalculo_probabilidades.py",
       "size_bytes": 4850,
       "sha256": "353e3d4ec9cb2fa72de6f77b16e318d35754ce5249560e0fe56235837eeeab75"
     },
     {
       "path": "scripts/validate_repository.py",
-<<<<<<< HEAD
       "size_bytes": 5082,
       "sha256": "9588973589ef8a527628868a25f181aedaef85c31cc16e4898ac0e9e846e823d"
-=======
-      "size_bytes": 5004,
-      "sha256": "6057476e2d6daab181f12d8308415c67ce49d8b305e437a339f619b317fdbc6f"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "simulations/daily/simulation_after_2026-06-11.json",
@@ -6519,72 +5343,14 @@
       "sha256": "ae5c3a5a83ef3d9796af8859f4322793fec977f89b3e502bd540ff4fc0aa6f10"
     },
     {
-<<<<<<< HEAD
-=======
-      "path": "sports_engine/__pycache__/__init__.cpython-313.pyc",
-      "size_bytes": 320,
-      "sha256": "629edc2eb84d7d3cb6660aed64671fa6bc3299f2bd184ab084b6f7f8b16ad690"
-    },
-    {
-      "path": "sports_engine/__pycache__/analytics.cpython-313.pyc",
-      "size_bytes": 7395,
-      "sha256": "3df45e357df940bdd1bff0d4bb8adcfc22c7dabf96c304ef1b825d8d6d7ed909"
-    },
-    {
-      "path": "sports_engine/__pycache__/audit.cpython-313.pyc",
-      "size_bytes": 3383,
-      "sha256": "ea01cb00ea5278e6d71de4fa7df6a8c77fa639babbfcd3e94dcb440bab81960c"
-    },
-    {
-      "path": "sports_engine/__pycache__/cli.cpython-313.pyc",
-      "size_bytes": 3208,
-      "sha256": "ee6def8a2a0b4aff27e8d633687a821fbf2977f787326a801d224e7c828bf2bf"
-    },
-    {
-      "path": "sports_engine/__pycache__/config.cpython-313.pyc",
-      "size_bytes": 5151,
-      "sha256": "1f01bf583fe44451fed9261e1fe9b29cb444503e988ebc84c45c4e6d894e20f3"
-    },
-    {
-      "path": "sports_engine/__pycache__/io.cpython-313.pyc",
-      "size_bytes": 8372,
-      "sha256": "d16f3ac21f36c4dacbe560ea800c6c063287169023a804ff93a7be4b2dad1080"
-    },
-    {
-      "path": "sports_engine/__pycache__/lineage.cpython-313.pyc",
-      "size_bytes": 848,
-      "sha256": "c43795b69ffb765d373cd311a6a0495fe0b9188b82e182b9f700fc6bf965571f"
-    },
-    {
-      "path": "sports_engine/__pycache__/modeling.cpython-313.pyc",
-      "size_bytes": 3425,
-      "sha256": "13871a451d0cd8f1c654dbbfed676aa6f2fa4cf963ddc9851511ba5d343816e1"
-    },
-    {
-      "path": "sports_engine/__pycache__/pipeline.cpython-313.pyc",
-      "size_bytes": 4596,
-      "sha256": "dc2fcd4ff268f4adfec400465482023aeb5aa8234e055f0bc2a70766f66e7d63"
-    },
-    {
-      "path": "sports_engine/__pycache__/sources.cpython-313.pyc",
-      "size_bytes": 30926,
-      "sha256": "76d2650706d78e9cb4403ea1702a34712241ba39101abdb895eaed8732755eec"
-    },
-    {
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "sports_engine/analytics.py",
       "size_bytes": 4557,
       "sha256": "e94e3a7406851ccbd36e57f371611769a0261652d5d333964a7d2c01169131dc"
     },
     {
       "path": "sports_engine/audit.py",
-<<<<<<< HEAD
       "size_bytes": 2607,
       "sha256": "f5deb769da4b1eb0bfba186499a0d38f3219e41bd6044155a7a5bbfb2b98560d"
-=======
-      "size_bytes": 2342,
-      "sha256": "1ccbec5a468bbe02a38c7065c44e99d509855f59e7dadb49e33cf577f51bfa36"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "sports_engine/cli.py",
@@ -6612,67 +5378,14 @@
       "sha256": "3c3aaa3fb522cbbb4eeca44f85d643e01cd047dbfa8d0d87c3d5acaf19772acd"
     },
     {
-<<<<<<< HEAD
-=======
-      "path": "sports_engine/loops/__pycache__/__init__.cpython-313.pyc",
-      "size_bytes": 259,
-      "sha256": "bd68059886ed24c48a2570097ad7673c8c74a0e2806e827429ce8771e2c25fc1"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/completeness.cpython-313.pyc",
-      "size_bytes": 9265,
-      "sha256": "10cd0a8ac2c4e6d1ad811604f9b7e71f5dcfc6bee1641009800bec418079f6eb"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/enrichment.cpython-313.pyc",
-      "size_bytes": 8788,
-      "sha256": "882f7862ce8d1f2df0c4a6b2f0f3fc199e1ac1b5f7577a9ab78b509ae6aa0853"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/features.cpython-313.pyc",
-      "size_bytes": 6364,
-      "sha256": "6ee3b36a34ca789c7d10ac3522417f66edb1475b90dd43231ee76b33d1bdba85"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/feedback.cpython-313.pyc",
-      "size_bytes": 6772,
-      "sha256": "5a0771a16b8f21f41ac2e2a1870f74331524a9356f50651e3521f4feab621677"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/patterns.cpython-313.pyc",
-      "size_bytes": 4771,
-      "sha256": "d85b91401566a29fdbbe10f02c343c9a386b190a4e1a0378b9bfc5ccd9441d5b"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/recalibration.cpython-313.pyc",
-      "size_bytes": 9663,
-      "sha256": "669acab5049d39890bf5cd1ac94f18fa06470ec11dab4a9a301d6bcf3da34c4a"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/simulation.cpython-313.pyc",
-      "size_bytes": 8823,
-      "sha256": "fa32a07b54b81e17127f1ac60b4357d2d46905e86196d336cdc7be3869e77fcf"
-    },
-    {
-      "path": "sports_engine/loops/__pycache__/validation.cpython-313.pyc",
-      "size_bytes": 16125,
-      "sha256": "8d6dc319cf62ea6f26921cb285e3c4687f5d18eb6d5b976bcfb5bd68d7bd6402"
-    },
-    {
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "sports_engine/loops/completeness.py",
       "size_bytes": 6892,
       "sha256": "c75cb4b420e468220dfd26db6b2bfd3722537304c5426811c558925465e8e08c"
     },
     {
       "path": "sports_engine/loops/enrichment.py",
-<<<<<<< HEAD
       "size_bytes": 11572,
       "sha256": "df93750b0b263773de42b05634955eda0748efe28bc862de0ca8a020cdc95443"
-=======
-      "size_bytes": 6503,
-      "sha256": "46283f0a8b5cd8f1fc27edbbb20814461ea8f3304e5f9ef103bea850aedaa2ac"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "sports_engine/loops/features.py",
@@ -6711,7 +5424,6 @@
     },
     {
       "path": "sports_engine/pipeline.py",
-<<<<<<< HEAD
       "size_bytes": 4047,
       "sha256": "e3a47e65fcc4245f6f9205d4b7c6e5ae24a6d8a8eac413868981e86bcb4dd3c9"
     },
@@ -6724,15 +5436,6 @@
       "path": "sports_engine/sources.py",
       "size_bytes": 32219,
       "sha256": "17a8f7a87486ab7b076e72a3706d14191c48d2bad11d0d271b2d822d3c4d135e"
-=======
-      "size_bytes": 3466,
-      "sha256": "11be7ef3adcd86fcb68c1720285d7f7b5e568e204941bf1e8ecd09c1f161225e"
-    },
-    {
-      "path": "sports_engine/sources.py",
-      "size_bytes": 22405,
-      "sha256": "470ff1d0095e1e6c761a07e41f6e818b2dbde6cf619e1efafe3bf73fef5937ab"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "src/dashboard.js",
@@ -6745,7 +5448,6 @@
       "sha256": "712320af166f1118057a7a97de79985540990cf95a6a0219161185342dae46be"
     },
     {
-<<<<<<< HEAD
       "path": "src/model-analytics-data.js",
       "size_bytes": 705873,
       "sha256": "0e4d998253c632edccae0b872931f2e5bff0e197de2843bd147c289f37d18a27"
@@ -6756,8 +5458,6 @@
       "sha256": "6b266d1603c54d0002b7f5e024b43081fef2404aeb15d1edcf6c7185b27429d6"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "src/modelo-diario-data.js",
       "size_bytes": 433143,
       "sha256": "adc07ac0f394193c7d6b15fc3631809fd349787e63b56039cbfda4edb9d631f3"
@@ -6784,13 +5484,8 @@
     },
     {
       "path": "src/styles.css",
-<<<<<<< HEAD
       "size_bytes": 46668,
       "sha256": "791917b504d5757ce7e0c24d0ccc9776255f552840a558c9aa599179f77cb6d5"
-=======
-      "size_bytes": 25007,
-      "sha256": "0b94a2ccbdda7efbb9fa31f923d8c25ae77578f57509d6712de2865e89ba912c"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "src/team-assets.js",
@@ -6808,7 +5503,6 @@
       "sha256": "0cb67ba91674c07e557440292720aa3c3c111f4c41b7db1f4d219a7c68dc6f52"
     },
     {
-<<<<<<< HEAD
       "path": "tests/test_ci_preflight.py",
       "size_bytes": 273,
       "sha256": "0dcadcecee34aa11fa649d1ecd270d8d25a3cc42297ae53d3b5e424d4146c137"
@@ -6827,11 +5521,6 @@
       "path": "tests/test_model_dashboard.py",
       "size_bytes": 2802,
       "sha256": "90967375530f31ee7b57135e28b9909bee480e108036fc6dee88a33adce2e538"
-=======
-      "path": "tests/test_engine.py",
-      "size_bytes": 2413,
-      "sha256": "ff6af9769c0dfc068cbe77cdc81d0ae115486e93d8ed78e4799dab6439f7961d"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "tests/test_no_synthetic_leakage.py",
@@ -6839,7 +5528,6 @@
       "sha256": "cd30415efdd35f5bf6c5c17bef34e90cfdbc9ce4d45e1930ff30b4d9d54a6c6d"
     },
     {
-<<<<<<< HEAD
       "path": "tests/test_pipeline_architecture.py",
       "size_bytes": 1307,
       "sha256": "6a72fb5f59c6aab4b05c15789967fabe863f62d951866ae2a757ad6562c8677a"
@@ -6850,14 +5538,11 @@
       "sha256": "be88897d978fe4d3028426216d33fd79e56be7e3908ee3cd7670816eb6192e56"
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "tests/test_sources.py",
       "size_bytes": 2672,
       "sha256": "d5f35551dcd8560acb227daf1d8e50af57d4607c7e827eac225b94ad6eb9fe53"
     },
     {
-<<<<<<< HEAD
       "path": "tests/test_static_site.py",
       "size_bytes": 479,
       "sha256": "8b980e8d98db0f569ae481c695add38eeb435c35770a8fe8b7bd3e213cdc4b3d"
@@ -6871,16 +5556,6 @@
       "path": "tests/test_worldcup_temporal.py",
       "size_bytes": 3346,
       "sha256": "8bdf025d1613542af124a4bf219f5e014fc90675485b50ad6dfb3e8f565fd0fc"
-=======
-      "path": "tests/test_wc2026_complete_data.py",
-      "size_bytes": 3407,
-      "sha256": "be869c70bdbfc384375d716913081ba1a1c4680d992579154d3d5351d24af605"
-    },
-    {
-      "path": "tests/test_worldcup_temporal.py",
-      "size_bytes": 3146,
-      "sha256": "2f799bf86842a681423b12c5aa80a2f5981113af60b23c557063e2c80a74c8f0"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "worldcup_brain/__init__.py",
@@ -6888,107 +5563,14 @@
       "sha256": "5858725d91c83d87aa35df4c3ce788bea5554996cd0d5a8f11fdf3141646e848"
     },
     {
-<<<<<<< HEAD
-=======
-      "path": "worldcup_brain/__pycache__/__init__.cpython-313.pyc",
-      "size_bytes": 311,
-      "sha256": "1d4dade059d9617c5b0ad8f14fd3258e8fb8d5474e6edbcd3d8c4ca161598241"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/analysis.cpython-313.pyc",
-      "size_bytes": 20789,
-      "sha256": "ab6c0d7bccf0bde025cee17a81b1b38fa79ed9b6c6a44fdbb10c4328f1dce8d4"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/audit.cpython-313.pyc",
-      "size_bytes": 5999,
-      "sha256": "1199bd3f075632f425c901fd8ec5f58f4ce989bd6d111b54a3e2b4e248f212c5"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/cli.cpython-313.pyc",
-      "size_bytes": 2770,
-      "sha256": "d67063dfbd76245afe6a5c7b505d18f28a16059adce65bb83bec476328493ba3"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/collectors.cpython-313.pyc",
-      "size_bytes": 6089,
-      "sha256": "f4ea8d8dedc790db0b80bc561115381a66ee5765d8b290366cf72337323d14b5"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/config.cpython-313.pyc",
-      "size_bytes": 2765,
-      "sha256": "586a7359f4d6227cafa6012260ad0bc25856a12b4236fe7e2f7e06d6a40f3d27"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/data_check.cpython-313.pyc",
-      "size_bytes": 7429,
-      "sha256": "e366b5c27ae6b5a05cde4a84f3cc1eb4bd46dd82b6fc930330b81f94dd030588"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/features.cpython-313.pyc",
-      "size_bytes": 5432,
-      "sha256": "36f589bfdc47973eed50c4613138f8c0bcfdee3471ab5b0c828f602e71f04b3b"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/io.cpython-313.pyc",
-      "size_bytes": 6447,
-      "sha256": "950cd579bddfaaea1a3ca3a15a2d1223fb15aa27dc023f7c449a9de79030108c"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/model.cpython-313.pyc",
-      "size_bytes": 19302,
-      "sha256": "5224123b63f7ac5e4e9680611a33bf369a5059a4b17a225f04073bffea0f26be"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/pipeline.cpython-313.pyc",
-      "size_bytes": 30098,
-      "sha256": "b980c9235b32278882ddc2c35b537b0fe5a3fd96439bc10877d52c71633205a4"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/preworldcup.cpython-313.pyc",
-      "size_bytes": 11135,
-      "sha256": "8b095c6cd1b2e755ac8e9bf80b61f1d17129d5c51e81ca7082cfb9cb88181d70"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/simulation.cpython-313.pyc",
-      "size_bytes": 13811,
-      "sha256": "7a6de48946a5b81c550e1aa31a8ebe061ca3dde256e59127e2629f34896ded9c"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/state.cpython-313.pyc",
-      "size_bytes": 5988,
-      "sha256": "2ca040dd80ef1cb1cde169deea73d98d3fd721c8809aabf8459554fe30df13d7"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/status.cpython-313.pyc",
-      "size_bytes": 6438,
-      "sha256": "c348eb582ea67f51209a71e21c530b606db8db40662e432490a29e496c52a425"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/temporal.cpython-313.pyc",
-      "size_bytes": 9481,
-      "sha256": "0dea1b2c2f160e4aea04fbe47d46ef0873423576e229402979e5605db49c86ff"
-    },
-    {
-      "path": "worldcup_brain/__pycache__/validation.cpython-313.pyc",
-      "size_bytes": 7464,
-      "sha256": "d3aa17495c1532c9e2fb6fcdace5150d57afac751d54b9d30b8dc41a4457b363"
-    },
-    {
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "path": "worldcup_brain/analysis.py",
       "size_bytes": 14956,
       "sha256": "b2fb47c7cc2aac5433dd2cc927a9b6227683c5f01849ea9cb38aa16d394f0b42"
     },
     {
       "path": "worldcup_brain/audit.py",
-<<<<<<< HEAD
       "size_bytes": 5705,
       "sha256": "50afbdb0e1e0146071a7bc619bd299cb8fc5379bda889326d1a9680a7a3da496"
-=======
-      "size_bytes": 5036,
-      "sha256": "efabd266e61486d31eb53184ed135b0fe85c342455d92ff59349a79fc295cad5"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "worldcup_brain/cli.py",
@@ -6997,13 +5579,8 @@
     },
     {
       "path": "worldcup_brain/collectors.py",
-<<<<<<< HEAD
       "size_bytes": 4563,
       "sha256": "bfbbf569b943bd846b97a4963b375b797a6bcebb3cbf6ab14d8f5cfe456284cb"
-=======
-      "size_bytes": 4533,
-      "sha256": "3d5ffd2adbe3fd357c1e2dad117086c05424b43a2d8c57dd5bb6e9633aefbf8a"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "worldcup_brain/config.py",
@@ -7012,13 +5589,8 @@
     },
     {
       "path": "worldcup_brain/data_check.py",
-<<<<<<< HEAD
       "size_bytes": 7366,
       "sha256": "90e6258dd54a9f750b5250d335aab1ce93854f1e9540c26ce308a6d98e091a23"
-=======
-      "size_bytes": 6222,
-      "sha256": "ee11bbc329d83c3682935c42ebf8a9054db7d0a9173e44a542aae470a2ab07de"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "worldcup_brain/features.py",
@@ -7027,7 +5599,6 @@
     },
     {
       "path": "worldcup_brain/io.py",
-<<<<<<< HEAD
       "size_bytes": 3368,
       "sha256": "52aee7d54396cb4908380cfe67f210370c17d412327d6396514072ac13835104"
     },
@@ -7045,25 +5616,6 @@
       "path": "worldcup_brain/preworldcup.py",
       "size_bytes": 13286,
       "sha256": "39cf9cd352876736a50ef4764497d3a5e433bcc4b80d22eb9a5d2825051a557a"
-=======
-      "size_bytes": 2986,
-      "sha256": "087fa719d30a6d228e0116e0966ed66b6f3d00085a4fe5ab791d3f0b7203ed3d"
-    },
-    {
-      "path": "worldcup_brain/model.py",
-      "size_bytes": 12285,
-      "sha256": "c8899134dd0ef9c94883bbb9ac1265686a7f8a08016ec8fe763bff6d2e2218fb"
-    },
-    {
-      "path": "worldcup_brain/pipeline.py",
-      "size_bytes": 26178,
-      "sha256": "278a4bab9e7ade699962ea1cb9c02c9a73b3a489e94210de4a0428ee3f491247"
-    },
-    {
-      "path": "worldcup_brain/preworldcup.py",
-      "size_bytes": 9363,
-      "sha256": "be65828024840c23fecfd5964c47bc0ca5da18c2163b1dd9e85cc08748fb5a8d"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "worldcup_brain/simulation.py",
@@ -7072,7 +5624,6 @@
     },
     {
       "path": "worldcup_brain/state.py",
-<<<<<<< HEAD
       "size_bytes": 3673,
       "sha256": "10c957b3fcbc28848e2fd3668cdd62c724592e2befd43f06fa338c228b9602d4"
     },
@@ -7080,15 +5631,6 @@
       "path": "worldcup_brain/status.py",
       "size_bytes": 5785,
       "sha256": "59ba991dd390ccf4f1129f2d00ee30d74012ee612160f45ababa653cc602b928"
-=======
-      "size_bytes": 3066,
-      "sha256": "ee8e53e06906c01edd9649824fb2cbdde494fb5f5117d675f558cb25a3b6210c"
-    },
-    {
-      "path": "worldcup_brain/status.py",
-      "size_bytes": 5401,
-      "sha256": "0ab3f9eeb64ff59b91f24058ecfd0c2cfe8d65db543ae01748594e0e407e2ace"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     {
       "path": "worldcup_brain/temporal.py",
@@ -7097,19 +5639,13 @@
     },
     {
       "path": "worldcup_brain/validation.py",
-<<<<<<< HEAD
       "size_bytes": 5314,
       "sha256": "5bc68800fce930c50ce77b36f935a56a7c41db03d07b405fe67f99912e3c022f"
-=======
-      "size_bytes": 5367,
-      "sha256": "ada099188e7555239874234df641a81d85b023a0008de053a396698a00747908"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     }
   ],
   "problems_found": [],
   "duplications": [
     {
-<<<<<<< HEAD
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "files": [
         ".nojekyll",
@@ -7117,8 +5653,6 @@
       ]
     },
     {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "sha256": "04932f22b550b3a033483bd45ae3dd8f488dc94ef00deca8cb2eca68eb826c2c",
       "files": [
         "assets/teams/ARG_argentina/sources.md",
@@ -7172,11 +5706,7 @@
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "c568f481fc5204deddb4a4da35533079eb1cc893457d4c7d3e97bf67a6923060",
-=======
-      "sha256": "0aea821551fe58d63236c1d03c3774d715f4a8fac1776773d9fb932ddc4df4a0",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "data/competitions/world_cup_2026/queues/missing_data.json",
         "data/queues/missing_data.json"
@@ -7197,11 +5727,7 @@
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "0d4669697cb37918fbde3d3fcddcde9029f2f0cf435f9bed4bdaebe3d359df99",
-=======
-      "sha256": "11d3e8b78f590c55cf3170e6b7e4df652e01a16c390aea6c4c5689b477dde705",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "data/queues/missing_information_queue.json",
         "data/temporal/missing_information_queue.json"
@@ -7215,44 +5741,28 @@
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "0da0755177e80a3ec43f92bcd3ddf8033de606483a1f1349b195c0914b3d8d7e",
-=======
-      "sha256": "d99d068369c294de63cca964eff556521ba48e3306b4ca06fc690ae053217121",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "logs/competitions/world_cup_2026/enrichment_log.json",
         "logs/enrichment_log.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "d92e6e861916c26da7dff2f1fdfb0ca956ebd2189f002fa44494195df5927226",
-=======
-      "sha256": "c0942dc5ad3a1af8f248b1d3437c4e93923c6553be9d41792f57e549a77e9094",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "models/competitions/world_cup_2026/error_learning.json",
         "models/error_learning.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "45507a73645d1d8abedcd2d207e5be98dd7ecc0a3119c5c6411623fe304da562",
-=======
-      "sha256": "edde33b42280f50fc23c4c9d53f96a04ec06ae830f41a761d33999e53a02fcb8",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "models/competitions/world_cup_2026/features_registry.json",
         "models/features_registry.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "6027f363fd8f45fa6da5219fb75e88072c0798affb587f3285226d6e84b6500e",
-=======
-      "sha256": "27ee98087ddf0fe576932cdfd01b4aef9b488a3b857ef7beb6d5042910d3f103",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "models/competitions/world_cup_2026/patterns.json",
         "models/patterns.json"
@@ -7266,29 +5776,20 @@
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "715834b52c838b9b8e330d3da8d11a472a4e22f81c978d4090fac5a06fb4872b",
-=======
-      "sha256": "bf5b184fc9935630518eb3473b5236b87df43281c48d0a0f36fef0e031f61fca",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "models/competitions/world_cup_2026/simulations/latest.json",
         "models/simulations/latest.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "19c32fe2cb06af9a70465009d3502e0be8bc0a3a1525ed7f3f36e5ad9f2f4e09",
-=======
-      "sha256": "65ac5c373d18135cd4f2fae07680b1ae34d1325985cd3ca6e2104ab9fa95603e",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "reports/competitions/world_cup_2026/data_completeness_report.json",
         "reports/data_completeness_report.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "7dda922e81b0feb150c5a2e6fb447b1fea17fa1ac2dcaeb34646e5716d8ba56a",
       "files": [
         "reports/competitions/world_cup_2026/derived_player_facts_report.json",
@@ -7297,16 +5798,12 @@
     },
     {
       "sha256": "f4b0f5a74ccfdb94da4c87a28c5d08be15a5ccc5b17754b60af0d9c845ce5f4d",
-=======
-      "sha256": "7196a9e884966ab5c36d52b790fac85c3a2c77e973046bf10925665369b17057",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "reports/competitions/world_cup_2026/enrichment_report.json",
         "reports/enrichment_report.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "e6be913f961513adc4c538dab80d85ba9323bee292ec8c607976583311750da2",
       "files": [
         "reports/competitions/world_cup_2026/final_system_status.json",
@@ -7315,20 +5812,13 @@
     },
     {
       "sha256": "933da46f723abcdc4ddc4f3e0cbbcb8411cc317e7e5a3273b5729c5cc4dc86d7",
-=======
-      "sha256": "8b68cd4c6190ee00dded474b5cea44e87d6f22830aa0d06a4e1f3e389dc1b8a7",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "reports/competitions/world_cup_2026/model_recalibration_report.json",
         "reports/model_recalibration_report.json"
       ]
     },
     {
-<<<<<<< HEAD
       "sha256": "8bf35ce1d51e584c50e58289d082c5183257aa3b5ba57368cdb50f55e7043b1e",
-=======
-      "sha256": "81c8b71244a3aa5ecc12ebd54d42d5fc5892e0f9a4023be5afad7098763aa9d4",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       "files": [
         "reports/competitions/world_cup_2026/validation_report.json",
         "reports/validation_report.json"

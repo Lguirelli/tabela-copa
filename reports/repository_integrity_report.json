@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "generated_at": "2026-08-06T21:06:25.207885+00:00",
   "status": "VALID",
   "summary": {
@@ -8,16 +7,6 @@
       "yaml": 7,
       "json": 708,
       "csv": 82
-=======
-  "generated_at": "2026-07-28T19:24:01.711697+00:00",
-  "status": "VALID",
-  "summary": {
-    "parsed_files": {
-      "python": 71,
-      "yaml": 6,
-      "json": 709,
-      "csv": 78
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     },
     "controlled_mirrors_checked": 3,
     "issues": 0,

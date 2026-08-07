@@ -1,0 +1,42 @@
+{
+  "match_id": 27,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome. A red-card imbalance was observed and may explain part of the divergence.",
+  "predicted_outcome": "Catar",
+  "actual_outcome": "Canadá",
+  "brier_score": 0.22306382,
+  "log_loss": 1.0934188,
+  "goal_absolute_error": 6,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "schedule_strength",
+      "contribution": -0.0604
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0408
+    },
+    {
+      "factor": "experience",
+      "contribution": -0.0216
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Canadá",
+    "evidence": {
+      "Canadá": 0,
+      "Catar": 2
+    },
+    "strength": "high"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1566.012654,
+    "team2_rating_before": 1567.204784,
+    "team1_rating_after": 1601.484872,
+    "team2_rating_after": 1531.732566,
+    "rating_delta_team1": 35.472218,
+    "rating_delta_team2": -35.472218
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

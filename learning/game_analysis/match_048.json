@@ -1,0 +1,42 @@
+{
+  "match_id": 48,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Colômbia",
+  "actual_outcome": "Colômbia",
+  "brier_score": 0.05629935,
+  "log_loss": 0.40583818,
+  "goal_absolute_error": 0,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.201985
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.2
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.1488
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Colômbia",
+    "evidence": {
+      "Colômbia": 9.0,
+      "RD Congo": 1.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1597.553837,
+    "team2_rating_before": 1513.393363,
+    "team1_rating_after": 1613.044018,
+    "team2_rating_after": 1497.903181,
+    "rating_delta_team1": 15.490182,
+    "rating_delta_team2": -15.490182
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

@@ -1,0 +1,27 @@
+{
+  "country_pt": "Costa do Marfim",
+  "country_en": "Ivory Coast",
+  "iso2": "ci",
+  "iso3": "CIV",
+  "slug": "costa-do-marfim",
+  "federation_name": "Ivorian Football Federation",
+  "official_site": "https://www.fifciv.com",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/ci.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#F77F00",
+    "#FFFFFF",
+    "#009E60",
+    "#F77B00",
+    "#FCD4A9"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

@@ -1,0 +1,27 @@
+{
+  "country_pt": "Austrália",
+  "country_en": "Australia",
+  "iso2": "au",
+  "iso3": "AUS",
+  "slug": "australia",
+  "federation_name": "Football Australia",
+  "official_site": "https://www.footballaustralia.com.au",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/au.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#012169",
+    "#FFFFFF",
+    "#E4002A",
+    "#E4002B",
+    "#F9C8D1"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

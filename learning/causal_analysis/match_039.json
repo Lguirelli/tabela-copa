@@ -1,0 +1,208 @@
+{
+  "match_id": 39,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": "NA",
+  "red_cards": {
+    "Bélgica": 1,
+    "Irã": 0
+  },
+  "substitutions_detected": {
+    "Bélgica": 5,
+    "Irã": 5
+  },
+  "team_stats": {
+    "Bélgica": {
+      "stat_possessionPct": 70.1,
+      "stat_totalShots": 23.0,
+      "stat_shotsOnTarget": 7.0,
+      "stat_redCards": 1.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 3.0
+    },
+    "Irã": {
+      "stat_possessionPct": 29.9,
+      "stat_totalShots": 7.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 7.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Irã",
+      "player_id": "espn:214798",
+      "player": "Alireza Beiranvand",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 7
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134283",
+      "player": "Thibaut Courtois",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:301327",
+      "player": "Maxim De Cuyper",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5,
+        "shots_on_target": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134947",
+      "player": "Kevin De Bruyne",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:193297",
+      "player": "Youri Tielemans",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:229443",
+      "player": "Dodi Lukébakio",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:194863",
+      "player": "Saeid Ezatolahi",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:219611",
+      "player": "Mehdi Taremi",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:243943",
+      "player": "Hossein Kanani",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:271132",
+      "player": "Alexis Saelemaekers",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:193849",
+      "player": "Hans Vanaken",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:191222",
+      "player": "Brandon Mechele",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760451"
+    }
+  ],
+  "efficiency": {
+    "Bélgica": 0.0,
+    "Irã": 0.0
+  },
+  "important_factors": [
+    {
+      "factor": "red_card_imbalance",
+      "direction": "Irã",
+      "evidence": {
+        "Bélgica": 1,
+        "Irã": 0
+      },
+      "strength": "high"
+    },
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Bélgica",
+      "evidence": {
+        "Bélgica": 7.0,
+        "Irã": 3.0
+      },
+      "strength": "medium"
+    }
+  ],
+  "primary_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Irã",
+    "evidence": {
+      "Bélgica": 1,
+      "Irã": 0
+    },
+    "strength": "high"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

@@ -1,0 +1,42 @@
+{
+  "match_id": 21,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome. Finishing efficiency differed materially between the teams.",
+  "predicted_outcome": "Panamá",
+  "actual_outcome": "Gana",
+  "brier_score": 0.36543304,
+  "log_loss": 1.77610662,
+  "goal_absolute_error": 3,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": -0.3144
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.186
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": 0.0732
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Gana",
+    "evidence": {
+      "Gana": 0.1429,
+      "Panamá": 0.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1461.0,
+    "team2_rating_before": 1592.0,
+    "team1_rating_after": 1488.635034,
+    "team2_rating_after": 1564.364966,
+    "rating_delta_team1": 27.635034,
+    "rating_delta_team2": -27.635034
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

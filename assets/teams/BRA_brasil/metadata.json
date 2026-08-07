@@ -1,0 +1,27 @@
+{
+  "country_pt": "Brasil",
+  "country_en": "Brazil",
+  "iso2": "br",
+  "iso3": "BRA",
+  "slug": "brasil",
+  "federation_name": "Confederação Brasileira de Futebol",
+  "official_site": "https://www.cbf.com.br",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/br.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#009440",
+    "#FFCB00",
+    "#302681",
+    "#FFCD00",
+    "#FFCC00"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

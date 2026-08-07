@@ -1,0 +1,42 @@
+{
+  "match_id": 78,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome. Finishing efficiency differed materially between the teams.",
+  "predicted_outcome": "Costa do Marfim",
+  "actual_outcome": "Noruega",
+  "brier_score": 0.20811523,
+  "log_loss": 1.03085458,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.0336
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.03
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Noruega",
+    "evidence": {
+      "Costa do Marfim": 0.0714,
+      "Noruega": 0.2222
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1555.768474,
+    "team2_rating_before": 1555.86018,
+    "team1_rating_after": 1535.456071,
+    "team2_rating_after": 1576.172583,
+    "rating_delta_team1": -20.312403,
+    "rating_delta_team2": 20.312403
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

@@ -19,11 +19,8 @@ class TeamState:
     defense_proxy: float = 5.5
     goalkeeper_proxy: float = 5.5
     experience_proxy: float = 7.0
-<<<<<<< HEAD
     initial_form_points: float = 1.0
     initial_form_goal_diff: float = 0.0
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     games: int = 0
     points: int = 0
     goals_for: int = 0
@@ -36,19 +33,11 @@ class TeamState:
 
     @property
     def form_points(self) -> float:
-<<<<<<< HEAD
         return float(np.mean(self.recent_points)) if self.recent_points else self.initial_form_points
 
     @property
     def form_goal_diff(self) -> float:
         return float(np.mean(self.recent_goal_diffs)) if self.recent_goal_diffs else self.initial_form_goal_diff
-=======
-        return float(np.mean(self.recent_points)) if self.recent_points else 1.0
-
-    @property
-    def form_goal_diff(self) -> float:
-        return float(np.mean(self.recent_goal_diffs)) if self.recent_goal_diffs else 0.0
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
     @property
     def schedule_strength(self) -> float:
@@ -70,7 +59,6 @@ class TournamentState:
         for _, row in team_profiles.iterrows():
             team = str(row["team"])
             strength = _float(row.get("initial_strength_proxy"), 60.0)
-<<<<<<< HEAD
             fifa_points = _float(row.get("fifa_points"), float("nan"))
             initial_rating = fifa_points if np.isfinite(fifa_points) else 1500.0 + (strength - 60.0) * 10.0
             recent_for = _float(row.get("recent_goals_for"), 0.0)
@@ -79,21 +67,12 @@ class TournamentState:
                 team=team,
                 initial_strength=strength,
                 rating=float(np.clip(initial_rating, 1100.0, 2100.0)),
-=======
-            self.teams[normalize_text(team)] = TeamState(
-                team=team,
-                initial_strength=strength,
-                rating=1500.0 + (strength - 60.0) * 10.0,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
                 attack_proxy=_float(row.get("attack_proxy"), 5.5),
                 defense_proxy=_float(row.get("defense_proxy"), 5.5),
                 goalkeeper_proxy=_float(row.get("goalkeeper_proxy"), 5.5),
                 experience_proxy=_float(row.get("experience_proxy"), 7.0),
-<<<<<<< HEAD
                 initial_form_points=_float(row.get("recent_points_per_match"), 1.0),
                 initial_form_goal_diff=recent_for - recent_against,
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
             )
 
     def get(self, team: str) -> TeamState:

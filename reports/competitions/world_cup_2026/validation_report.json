@@ -1,11 +1,7 @@
 {
   "loop": "03_data_validation",
   "competition_id": "world_cup_2026",
-<<<<<<< HEAD
   "generated_at": "2026-08-06T21:06:26.588388+00:00",
-=======
-  "generated_at": "2026-07-28T19:23:01.752315+00:00",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "inputs": [
     {
       "path": "data/matches.csv",
@@ -71,7 +67,6 @@
       "path": "data/platform/player_availability.csv",
       "sha256": "ce9012a94b20ebc526da58e6874c6a91d994755cd675eef30f7d4363d653adf7",
       "size_bytes": 1767464
-<<<<<<< HEAD
     },
     {
       "path": "data/context/pre_match_weather.csv",
@@ -87,17 +82,11 @@
       "path": "data/external/fifa_rankings.csv",
       "sha256": "d96be721fa0801494f593586c3421e5c29c39b755757eebeb3638bf78bf3bbf3",
       "size_bytes": 76
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     }
   ],
   "status": "VALID",
   "summary": {
-<<<<<<< HEAD
     "datasets_checked": 16,
-=======
-    "datasets_checked": 13,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "invalid_issues": 0,
     "conflicts": 0,
     "warnings": 0

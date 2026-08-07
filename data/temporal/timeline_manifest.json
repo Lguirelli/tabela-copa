@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "generated_at": "2026-08-06T21:06:28.257873+00:00",
-=======
-  "generated_at": "2026-07-28T19:23:06.615803+00:00",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "competition_id": "world_cup_2026",
   "temporal_rules": {
     "prediction_lead_minutes": 120,

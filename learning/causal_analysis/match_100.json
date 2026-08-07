@@ -1,0 +1,223 @@
+{
+  "match_id": 100,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Argentina",
+    "clock": "10'",
+    "player": "Alexis Mac Allister",
+    "text": "Goal! Argentina 1, Switzerland 0. Alexis Mac Allister (Argentina) header from the left side of the six yard box to the bottom right corner. Assisted by Lionel Messi with a cross following a corner."
+  },
+  "red_cards": {
+    "Argentina": 0,
+    "Suíça": 1
+  },
+  "substitutions_detected": {
+    "Argentina": 6,
+    "Suíça": 6
+  },
+  "team_stats": {
+    "Argentina": {
+      "stat_possessionPct": 59.0,
+      "stat_totalShots": 22.0,
+      "stat_shotsOnTarget": 7.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 4.0
+    },
+    "Suíça": {
+      "stat_possessionPct": 41.0,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 1.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Suíça",
+      "player_id": "espn:275842",
+      "player": "Dan Ndoye",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:249299",
+      "player": "Alexis Mac Allister",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:277206",
+      "player": "Julián Álvarez",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:219713",
+      "player": "Lautaro Martínez",
+      "position": "NA",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:45843",
+      "player": "Lionel Messi",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:311743",
+      "player": "José Manuel López",
+      "position": "NA",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:136865",
+      "player": "Ricardo Rodríguez",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:158626",
+      "player": "Emiliano Martínez",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:238544",
+      "player": "Gregor Kobel",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:277208",
+      "player": "Thiago Almada",
+      "position": "NA",
+      "starter": false,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 2,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Suíça",
+      "player_id": "espn:149981",
+      "player": "Granit Xhaka",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    },
+    {
+      "team": "Argentina",
+      "player_id": "espn:233937",
+      "player": "Lisandro Martínez",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760513"
+    }
+  ],
+  "efficiency": {
+    "Argentina": 0.136364,
+    "Suíça": 0.090909
+  },
+  "important_factors": [
+    {
+      "factor": "red_card_imbalance",
+      "direction": "Argentina",
+      "evidence": {
+        "Argentina": 0,
+        "Suíça": 1
+      },
+      "strength": "high"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Argentina",
+      "evidence": {
+        "team": "Argentina",
+        "clock": "10'",
+        "player": "Alexis Mac Allister",
+        "text": "Goal! Argentina 1, Switzerland 0. Alexis Mac Allister (Argentina) header from the left side of the six yard box to the bottom right corner. Assisted by Lionel Messi with a cross following a corner."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "red_card_imbalance",
+    "direction": "Argentina",
+    "evidence": {
+      "Argentina": 0,
+      "Suíça": 1
+    },
+    "strength": "high"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

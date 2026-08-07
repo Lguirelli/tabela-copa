@@ -1,0 +1,42 @@
+{
+  "match_id": 22,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Croácia",
+  "actual_outcome": "Inglaterra",
+  "brier_score": 0.22115513,
+  "log_loss": 1.0871354,
+  "goal_absolute_error": 4,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "attack_team1",
+      "contribution": -0.03
+    },
+    {
+      "factor": "rating",
+      "contribution": -0.024
+    },
+    {
+      "factor": "experience",
+      "contribution": -0.0142
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Inglaterra",
+    "evidence": {
+      "Inglaterra": 11.0,
+      "Croácia": 5.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1572.0,
+    "team2_rating_before": 1582.0,
+    "team1_rating_after": 1597.907982,
+    "team2_rating_after": 1556.092018,
+    "rating_delta_team1": 25.907982,
+    "rating_delta_team2": -25.907982
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

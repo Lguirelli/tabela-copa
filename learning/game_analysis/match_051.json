@@ -1,0 +1,42 @@
+{
+  "match_id": 51,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Canadá",
+  "actual_outcome": "Suíça",
+  "brier_score": 0.20933191,
+  "log_loss": 1.02615582,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "recent_form",
+      "contribution": -0.0975
+    },
+    {
+      "factor": "rating",
+      "contribution": 0.03741
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.036
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Canadá",
+    "evidence": {
+      "Suíça": 4.0,
+      "Canadá": 7.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1617.072425,
+    "team2_rating_before": 1601.484872,
+    "team1_rating_after": 1636.479254,
+    "team2_rating_after": 1582.078043,
+    "rating_delta_team1": 19.406829,
+    "rating_delta_team2": -19.406829
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

@@ -1,0 +1,44 @@
+{
+  "match_id": 23,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Portugal",
+  "actual_outcome": "Empate",
+  "brier_score": 0.29143103,
+  "log_loss": 1.3496539,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.2424
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.144
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0684
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "Portugal",
+    "evidence": {
+      "team": "Portugal",
+      "clock": "6'",
+      "player": "João Neves",
+      "text": "Goal! Portugal 1, Congo DR 0. João Neves (Portugal) header from the centre of the box to the bottom right corner. Assisted by Pedro Neto with a cross."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1611.0,
+    "team2_rating_before": 1510.0,
+    "team1_rating_after": 1607.606637,
+    "team2_rating_after": 1513.393363,
+    "rating_delta_team1": -3.393363,
+    "rating_delta_team2": 3.393363
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

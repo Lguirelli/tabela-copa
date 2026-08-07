@@ -1,0 +1,42 @@
+{
+  "match_id": 101,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result. Finishing efficiency differed materially between the teams.",
+  "predicted_outcome": "Espanha",
+  "actual_outcome": "Espanha",
+  "brier_score": 0.17038234,
+  "log_loss": 0.87187201,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": 0.0624
+    },
+    {
+      "factor": "rating",
+      "contribution": -0.059627
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Espanha",
+    "evidence": {
+      "França": 0.0,
+      "Espanha": 0.2
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1668.267787,
+    "team2_rating_before": 1693.112328,
+    "team1_rating_after": 1644.882195,
+    "team2_rating_after": 1716.49792,
+    "rating_delta_team1": -23.385591,
+    "rating_delta_team2": 23.385591
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

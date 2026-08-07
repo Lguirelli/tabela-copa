@@ -1,0 +1,14 @@
+{
+  "match_id": 76,
+  "classification": "tendencia_real",
+  "confidence": "medium",
+  "surprise_index": 0.511094,
+  "pre_match_top_probability": 0.488906,
+  "quality_context": {
+    "rating_diff": 0.33146,
+    "schedule_strength_diff": 0.255247
+  },
+  "repetition_evidence": 0,
+  "decisive_event": "shots_on_target_dominance",
+  "interpretation_rule": "Classification is evidence-based and provisional; it does not assert psychological or tactical causes without observations."
+}

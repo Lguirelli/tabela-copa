@@ -1,0 +1,27 @@
+{
+  "country_pt": "Paraguai",
+  "country_en": "Paraguay",
+  "iso2": "py",
+  "iso3": "PRY",
+  "slug": "paraguai",
+  "federation_name": "Paraguayan Football Association",
+  "official_site": "https://www.apf.org.py",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/py.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#D52B1E",
+    "#0038A8",
+    "#FFFFFF",
+    "#D42518",
+    "#F1BAB6"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

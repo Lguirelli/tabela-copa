@@ -1,0 +1,14 @@
+{
+  "match_id": 87,
+  "classification": "erro_estatistico",
+  "confidence": "medium",
+  "surprise_index": 0.277277,
+  "pre_match_top_probability": 0.722723,
+  "quality_context": {
+    "rating_diff": 1.367807,
+    "schedule_strength_diff": -0.417088
+  },
+  "repetition_evidence": 0,
+  "decisive_event": "shots_on_target_dominance",
+  "interpretation_rule": "Classification is evidence-based and provisional; it does not assert psychological or tactical causes without observations."
+}

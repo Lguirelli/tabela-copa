@@ -1,0 +1,208 @@
+{
+  "match_id": 16,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Egypt",
+    "clock": "20'",
+    "player": "Emam Ashour",
+    "text": "Goal! Belgium 0, Egypt 1. Emam Ashour (Egypt) right footed shot from outside the box to the bottom left corner. Assisted by Mohamed Salah."
+  },
+  "red_cards": {
+    "Bélgica": 0,
+    "Egito": 0
+  },
+  "substitutions_detected": {
+    "Bélgica": 5,
+    "Egito": 5
+  },
+  "team_stats": {
+    "Bélgica": {
+      "stat_possessionPct": 53.6,
+      "stat_totalShots": 15.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 2.0
+    },
+    "Egito": {
+      "stat_possessionPct": 46.4,
+      "stat_totalShots": 14.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 3.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Egito",
+      "player_id": "espn:299365",
+      "player": "Emam Ashour",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:173896",
+      "player": "Mohamed Salah",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:308915",
+      "player": "Mostafa Shoubir",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134283",
+      "player": "Thibaut Courtois",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134947",
+      "player": "Kevin De Bruyne",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:191222",
+      "player": "Brandon Mechele",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:378495",
+      "player": "Mostafa Zico",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:166473",
+      "player": "Thomas Meunier",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:303745",
+      "player": "Omar Marmoush",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:174980",
+      "player": "Leandro Trossard",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:193297",
+      "player": "Youri Tielemans",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:139437",
+      "player": "Romelu Lukaku",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760426"
+    }
+  ],
+  "efficiency": {
+    "Bélgica": 0.066667,
+    "Egito": 0.071429
+  },
+  "important_factors": [
+    {
+      "factor": "first_goal",
+      "direction": "Egypt",
+      "evidence": {
+        "team": "Egypt",
+        "clock": "20'",
+        "player": "Emam Ashour",
+        "text": "Goal! Belgium 0, Egypt 1. Emam Ashour (Egypt) right footed shot from outside the box to the bottom left corner. Assisted by Mohamed Salah."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "first_goal",
+    "direction": "Egypt",
+    "evidence": {
+      "team": "Egypt",
+      "clock": "20'",
+      "player": "Emam Ashour",
+      "text": "Goal! Belgium 0, Egypt 1. Emam Ashour (Egypt) right footed shot from outside the box to the bottom left corner. Assisted by Mohamed Salah."
+    },
+    "strength": "contextual"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

@@ -27,14 +27,10 @@
     "games_diff": 0.0,
     "knockout": 0.0,
     "rest_days_team1": 6.0,
-<<<<<<< HEAD
     "rest_days_team2": 5.625,
     "heat_load": 0.0,
     "wind_load": 0.0,
     "rain_load": 0.0
-=======
-    "rest_days_team2": 5.625
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   },
   "feature_contributions": {
     "rating": 0.307585,
@@ -45,10 +41,7 @@
     "rest": 0.005625,
     "experience": 0.0084,
     "goalkeeper": 0.019,
-<<<<<<< HEAD
     "weather": 0.0,
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "knockout_suppression": -0.0
   },
   "top_scorelines": [
@@ -111,12 +104,9 @@
     "rest_weight": 0.015,
     "experience_weight": 0.02,
     "goalkeeper_weight": 0.025,
-<<<<<<< HEAD
     "heat_weight": 0.0,
     "wind_weight": 0.0,
     "rain_weight": 0.0,
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "probability_temperature": 0.95,
     "elo_k": 24.0,
     "learning_rate": 0.03
@@ -176,11 +166,7 @@
         "field": "weather",
         "status": "NA_SOURCE_EXHAUSTED",
         "priority": "non_blocking",
-<<<<<<< HEAD
         "source": "data/context/pre_match_weather.csv"
-=======
-        "source": "NA"
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       },
       {
         "field": "travel",

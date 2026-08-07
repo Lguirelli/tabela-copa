@@ -1,0 +1,42 @@
+{
+  "match_id": 38,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Espanha",
+  "actual_outcome": "Espanha",
+  "brier_score": 0.15775473,
+  "log_loss": 0.82343128,
+  "goal_absolute_error": 4,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.12184
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0804
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": 0.0288
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Espanha",
+    "evidence": {
+      "Espanha": 8.0,
+      "Arábia Saudita": 1.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1585.76616,
+    "team2_rating_before": 1534.999305,
+    "team1_rating_after": 1612.536248,
+    "team2_rating_after": 1508.229216,
+    "rating_delta_team1": 26.770088,
+    "rating_delta_team2": -26.770088
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

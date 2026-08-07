@@ -1,0 +1,42 @@
+{
+  "match_id": 93,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Espanha",
+  "actual_outcome": "Espanha",
+  "brier_score": 0.19739258,
+  "log_loss": 0.98085592,
+  "goal_absolute_error": 1,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "attack_team1",
+      "contribution": 0.1128
+    },
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "recent_form",
+      "contribution": -0.05
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Espanha",
+    "evidence": {
+      "Portugal": 2.0,
+      "Espanha": 6.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1646.920256,
+    "team2_rating_before": 1653.730652,
+    "team1_rating_after": 1627.000706,
+    "team2_rating_after": 1673.650203,
+    "rating_delta_team1": -19.91955,
+    "rating_delta_team2": 19.91955
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

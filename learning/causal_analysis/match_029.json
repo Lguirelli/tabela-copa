@@ -1,0 +1,217 @@
+{
+  "match_id": 29,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Brazil",
+    "clock": "23'",
+    "player": "Matheus Cunha",
+    "text": "Goal! Brazil 1, Haiti 0. Matheus Cunha (Brazil) left footed shot from the centre of the box to the bottom left corner following a fast break."
+  },
+  "red_cards": {
+    "Brasil": 0,
+    "Haiti": 0
+  },
+  "substitutions_detected": {
+    "Brasil": 5,
+    "Haiti": 5
+  },
+  "team_stats": {
+    "Brasil": {
+      "stat_possessionPct": 56.7,
+      "stat_totalShots": 8.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 3.0
+    },
+    "Haiti": {
+      "stat_possessionPct": 43.3,
+      "stat_totalShots": 7.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 2.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Brasil",
+      "player_id": "espn:259902",
+      "player": "Matheus Cunha",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:252107",
+      "player": "Vinícius Júnior",
+      "position": "LF",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 3,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:234715",
+      "player": "Lucas Paquetá",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:196876",
+      "player": "Alisson Becker",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:89090",
+      "player": "Johny Placide",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:188106",
+      "player": "Ricardo Adé",
+      "position": "CD",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:265915",
+      "player": "Wilson Isidor",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:231050",
+      "player": "Raphinha",
+      "position": "RF",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:342631",
+      "player": "Dominique Simon",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:186575",
+      "player": "Douglas Santos",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Brasil",
+      "player_id": "espn:278210",
+      "player": "Éderson",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    },
+    {
+      "team": "Haiti",
+      "player_id": "espn:307861",
+      "player": "Ruben Providence",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760444"
+    }
+  ],
+  "efficiency": {
+    "Brasil": 0.375,
+    "Haiti": 0.0
+  },
+  "important_factors": [
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Brasil",
+      "evidence": {
+        "Brasil": 0.375,
+        "Haiti": 0.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Brazil",
+      "evidence": {
+        "team": "Brazil",
+        "clock": "23'",
+        "player": "Matheus Cunha",
+        "text": "Goal! Brazil 1, Haiti 0. Matheus Cunha (Brazil) left footed shot from the centre of the box to the bottom left corner following a fast break."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Brasil",
+    "evidence": {
+      "Brasil": 0.375,
+      "Haiti": 0.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

@@ -1,0 +1,212 @@
+{
+  "match_id": 63,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Egypt",
+    "clock": "5'",
+    "player": "Mahmoud Saber",
+    "text": "Goal! Egypt 1, IR Iran 0. Mahmoud Saber (Egypt) left footed shot from the left side of the box to the bottom left corner. Assisted by Trezeguet."
+  },
+  "red_cards": {
+    "Egito": 0,
+    "Irã": 0
+  },
+  "substitutions_detected": {
+    "Egito": 5,
+    "Irã": 3
+  },
+  "team_stats": {
+    "Egito": {
+      "stat_possessionPct": 61.4,
+      "stat_totalShots": 15.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 2.0
+    },
+    "Irã": {
+      "stat_possessionPct": 38.6,
+      "stat_totalShots": 13.0,
+      "stat_shotsOnTarget": 4.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 4.0,
+      "stat_saves": 2.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Egito",
+      "player_id": "espn:314444",
+      "player": "Mahmoud Saber",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:218086",
+      "player": "Ramin Rezaeian",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:157825",
+      "player": "Trézéguet",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 5,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:308915",
+      "player": "Mostafa Shoubir",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:214798",
+      "player": "Alireza Beiranvand",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:219611",
+      "player": "Mehdi Taremi",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:355158",
+      "player": "Mohammad Ghorbani",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:226302",
+      "player": "Milad Mohammadi",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:328932",
+      "player": "Mohanad Lashin",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:194863",
+      "player": "Saeid Ezatolahi",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Irã",
+      "player_id": "espn:235519",
+      "player": "Saman Ghoddos",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    },
+    {
+      "team": "Egito",
+      "player_id": "espn:119993",
+      "player": "Mohamed Hany",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760476"
+    }
+  ],
+  "efficiency": {
+    "Egito": 0.066667,
+    "Irã": 0.076923
+  },
+  "important_factors": [
+    {
+      "factor": "first_goal",
+      "direction": "Egypt",
+      "evidence": {
+        "team": "Egypt",
+        "clock": "5'",
+        "player": "Mahmoud Saber",
+        "text": "Goal! Egypt 1, IR Iran 0. Mahmoud Saber (Egypt) left footed shot from the left side of the box to the bottom left corner. Assisted by Trezeguet."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "first_goal",
+    "direction": "Egypt",
+    "evidence": {
+      "team": "Egypt",
+      "clock": "5'",
+      "player": "Mahmoud Saber",
+      "text": "Goal! Egypt 1, IR Iran 0. Mahmoud Saber (Egypt) left footed shot from the left side of the box to the bottom left corner. Assisted by Trezeguet."
+    },
+    "strength": "contextual"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

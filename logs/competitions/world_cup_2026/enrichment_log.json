@@ -2666,7 +2666,6 @@
       "covered": 104,
       "requested": 104
     }
-<<<<<<< HEAD
   },
   {
     "requested_data": {
@@ -2792,7 +2791,5 @@
     "success": false,
     "confidence": "NA",
     "details": "Network collection is disabled for this local run. GitHub Actions enables it explicitly."
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   }
 ]

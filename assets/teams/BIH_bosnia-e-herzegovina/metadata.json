@@ -1,0 +1,27 @@
+{
+  "country_pt": "Bósnia e Herzegovina",
+  "country_en": "Bosnia and Herzegovina",
+  "iso2": "ba",
+  "iso3": "BIH",
+  "slug": "bosnia-e-herzegovina",
+  "federation_name": "Football Association of Bosnia and Herzegovina",
+  "official_site": "https://www.nfsbih.ba",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/ba.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#002395",
+    "#FECB00",
+    "#002197",
+    "#FFCE00",
+    "#102D8C"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

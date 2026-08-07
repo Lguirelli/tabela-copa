@@ -7,10 +7,6 @@ NETWORK ?= 0
 .PHONY: install test integrity audit completeness update validate analyze train simulate all all-competitions export-dashboard pipeline diagnose clean-cache
 
 install:
-<<<<<<< HEAD
-=======
-	$(PYTHON) -m pip install -r requirements.txt
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 	$(PYTHON) -m pip install -e .
 
 test: clean-cache

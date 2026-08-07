@@ -56,10 +56,7 @@ def check_pre_match_data(
     availability = _available_rows(_cached_dataset(config, "player_availability"), cutoff, ("available_at", "source_collected_at", "observation_date"))
     news = _available_rows(_cached_dataset(config, "archived_news"), cutoff, ("published_at",))
     officials = _available_rows(_cached_dataset(config, "match_officials"), cutoff, ("available_at", "source_collected_at"))
-<<<<<<< HEAD
     weather = _available_rows(_cached_dataset(config, "pre_match_weather"), cutoff, ("available_at",))
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
     checks = []
     checks.append({
@@ -97,7 +94,6 @@ def check_pre_match_data(
         official_match_col
         and not officials[pd.to_numeric(officials[official_match_col], errors="coerce") == int(match["match_id"])].empty
     )
-<<<<<<< HEAD
     weather_match_col = next((col for col in ("match_id", "jogo") if col in weather.columns), None)
     weather_available = bool(
         weather_match_col
@@ -105,10 +101,6 @@ def check_pre_match_data(
     )
     checks.extend([
         {"field": "weather", "status": "AVAILABLE" if weather_available else "NA_SOURCE_EXHAUSTED", "priority": "non_blocking", "source": "data/context/pre_match_weather.csv"},
-=======
-    checks.extend([
-        {"field": "weather", "status": "NA_SOURCE_EXHAUSTED", "priority": "non_blocking", "source": "NA"},
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         {"field": "travel", "status": "NA_SOURCE_EXHAUSTED", "priority": "non_blocking", "source": "NA"},
         {"field": "referee", "status": "AVAILABLE" if official_available else "NA_SOURCE_EXHAUSTED", "priority": "non_blocking", "source": "data/platform/match_officials.csv"},
         {"field": "recent_tournament_form", "status": "AVAILABLE" if len(visible_prior_results) > 0 else "NA_NOT_YET_OBSERVED", "priority": "non_blocking", "source": "temporally visible official results"},

@@ -1,13 +1,9 @@
 entity_type,entity_id,field,value_status,available_at,temporal_status,source_path
 team,Argélia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Argélia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Argélia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argélia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argélia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Argélia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Argélia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argélia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argélia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -25,13 +21,9 @@ team,Argélia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Argélia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Argentina,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Argentina,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Argentina,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argentina,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argentina,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Argentina,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Argentina,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argentina,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Argentina,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -49,13 +41,9 @@ team,Argentina,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE
 team,Argentina,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Austrália,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Austrália,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Austrália,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Austrália,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Austrália,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Austrália,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Austrália,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Austrália,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Austrália,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -73,13 +61,9 @@ team,Austrália,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PR
 team,Austrália,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Áustria,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Áustria,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Áustria,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Áustria,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Áustria,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Áustria,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Áustria,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Áustria,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Áustria,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -97,13 +81,9 @@ team,Áustria,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Áustria,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Bélgica,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Bélgica,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Bélgica,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bélgica,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bélgica,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Bélgica,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Bélgica,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bélgica,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bélgica,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -121,13 +101,9 @@ team,Bélgica,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Bélgica,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Bósnia e Herzegovina,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Bósnia e Herzegovina,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Bósnia e Herzegovina,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bósnia e Herzegovina,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bósnia e Herzegovina,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Bósnia e Herzegovina,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Bósnia e Herzegovina,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bósnia e Herzegovina,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Bósnia e Herzegovina,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -145,13 +121,9 @@ team,Bósnia e Herzegovina,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BA
 team,Bósnia e Herzegovina,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Brasil,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Brasil,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Brasil,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Brasil,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Brasil,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Brasil,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Brasil,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Brasil,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Brasil,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -169,13 +141,9 @@ team,Brasil,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TO
 team,Brasil,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Canadá,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Canadá,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Canadá,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Canadá,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Canadá,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Canadá,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Canadá,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Canadá,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Canadá,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -193,13 +161,9 @@ team,Canadá,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Canadá,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Costa do Marfim,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Costa do Marfim,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Costa do Marfim,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Costa do Marfim,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Costa do Marfim,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Costa do Marfim,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Costa do Marfim,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Costa do Marfim,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Costa do Marfim,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -217,13 +181,9 @@ team,Costa do Marfim,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILL
 team,Costa do Marfim,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,RD Congo,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,RD Congo,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,RD Congo,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,RD Congo,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,RD Congo,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,RD Congo,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,RD Congo,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,RD Congo,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,RD Congo,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -241,13 +201,9 @@ team,RD Congo,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,RD Congo,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Colômbia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Colômbia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Colômbia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Colômbia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Colômbia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Colômbia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Colômbia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Colômbia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Colômbia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -265,13 +221,9 @@ team,Colômbia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE
 team,Colômbia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Cabo Verde,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Cabo Verde,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Cabo Verde,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Cabo Verde,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Cabo Verde,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Cabo Verde,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Cabo Verde,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Cabo Verde,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Cabo Verde,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -289,13 +241,9 @@ team,Cabo Verde,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PR
 team,Cabo Verde,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Croácia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Croácia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Croácia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Croácia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Croácia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Croácia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Croácia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Croácia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Croácia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -313,13 +261,9 @@ team,Croácia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Croácia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Curaçao,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Curaçao,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Curaçao,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Curaçao,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Curaçao,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Curaçao,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Curaçao,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Curaçao,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Curaçao,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -337,13 +281,9 @@ team,Curaçao,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Curaçao,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Tchéquia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Tchéquia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Tchéquia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tchéquia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tchéquia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Tchéquia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Tchéquia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tchéquia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tchéquia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -361,13 +301,9 @@ team,Tchéquia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE
 team,Tchéquia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Equador,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Equador,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Equador,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Equador,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Equador,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Equador,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Equador,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Equador,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Equador,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -385,13 +321,9 @@ team,Equador,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Equador,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Egito,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Egito,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Egito,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Egito,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Egito,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Egito,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Egito,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Egito,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Egito,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -409,13 +341,9 @@ team,Egito,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOU
 team,Egito,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Inglaterra,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Inglaterra,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Inglaterra,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Inglaterra,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Inglaterra,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Inglaterra,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Inglaterra,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Inglaterra,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Inglaterra,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -433,13 +361,9 @@ team,Inglaterra,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PR
 team,Inglaterra,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Espanha,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Espanha,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Espanha,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Espanha,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Espanha,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Espanha,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Espanha,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Espanha,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Espanha,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -457,13 +381,9 @@ team,Espanha,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Espanha,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,França,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,França,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,França,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,França,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,França,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,França,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,França,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,França,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,França,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -481,13 +401,9 @@ team,França,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,França,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Alemanha,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Alemanha,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Alemanha,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Alemanha,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Alemanha,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Alemanha,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Alemanha,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Alemanha,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Alemanha,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -505,13 +421,9 @@ team,Alemanha,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Alemanha,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Gana,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Gana,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Gana,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Gana,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Gana,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Gana,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Gana,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Gana,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Gana,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -529,13 +441,9 @@ team,Gana,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOUR
 team,Gana,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Haiti,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Haiti,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Haiti,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Haiti,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Haiti,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Haiti,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Haiti,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Haiti,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Haiti,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -553,13 +461,9 @@ team,Haiti,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOU
 team,Haiti,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Irã,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Irã,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Irã,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Irã,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Irã,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Irã,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Irã,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Irã,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Irã,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -577,13 +481,9 @@ team,Irã,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOUR
 team,Irã,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Iraque,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Iraque,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Iraque,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Iraque,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Iraque,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Iraque,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Iraque,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Iraque,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Iraque,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -601,13 +501,9 @@ team,Iraque,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TO
 team,Iraque,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Jordânia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Jordânia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Jordânia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Jordânia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Jordânia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Jordânia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Jordânia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Jordânia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Jordânia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -625,13 +521,9 @@ team,Jordânia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE
 team,Jordânia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Japão,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Japão,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Japão,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Japão,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Japão,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Japão,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Japão,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Japão,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Japão,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -649,13 +541,9 @@ team,Japão,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TO
 team,Japão,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Coreia do Sul,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Coreia do Sul,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Coreia do Sul,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Coreia do Sul,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Coreia do Sul,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Coreia do Sul,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Coreia do Sul,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Coreia do Sul,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Coreia do Sul,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -673,13 +561,9 @@ team,Coreia do Sul,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED
 team,Coreia do Sul,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Arábia Saudita,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Arábia Saudita,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Arábia Saudita,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Arábia Saudita,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Arábia Saudita,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Arábia Saudita,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Arábia Saudita,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Arábia Saudita,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Arábia Saudita,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -697,13 +581,9 @@ team,Arábia Saudita,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILL
 team,Arábia Saudita,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Marrocos,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Marrocos,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Marrocos,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Marrocos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Marrocos,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Marrocos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Marrocos,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Marrocos,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Marrocos,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -721,13 +601,9 @@ team,Marrocos,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Marrocos,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,México,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,México,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,México,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,México,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,México,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,México,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,México,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,México,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,México,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -745,13 +621,9 @@ team,México,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,México,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Países Baixos,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Países Baixos,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Países Baixos,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Países Baixos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Países Baixos,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Países Baixos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Países Baixos,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Países Baixos,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Países Baixos,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -769,13 +641,9 @@ team,Países Baixos,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLE
 team,Países Baixos,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Noruega,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Noruega,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Noruega,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Noruega,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Noruega,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Noruega,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Noruega,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Noruega,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Noruega,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -793,13 +661,9 @@ team,Noruega,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Noruega,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Nova Zelândia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Nova Zelândia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Nova Zelândia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Nova Zelândia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Nova Zelândia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Nova Zelândia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Nova Zelândia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Nova Zelândia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Nova Zelândia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -817,13 +681,9 @@ team,Nova Zelândia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLE
 team,Nova Zelândia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Panamá,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Panamá,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Panamá,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Panamá,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Panamá,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Panamá,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Panamá,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Panamá,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Panamá,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -841,13 +701,9 @@ team,Panamá,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Panamá,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Paraguai,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Paraguai,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Paraguai,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Paraguai,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Paraguai,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Paraguai,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Paraguai,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Paraguai,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Paraguai,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -865,13 +721,9 @@ team,Paraguai,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Paraguai,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Portugal,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Portugal,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Portugal,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Portugal,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Portugal,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Portugal,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Portugal,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Portugal,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Portugal,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -889,13 +741,9 @@ team,Portugal,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Portugal,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Catar,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Catar,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Catar,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Catar,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Catar,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Catar,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Catar,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Catar,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Catar,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -913,13 +761,9 @@ team,Catar,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOU
 team,Catar,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,África do Sul,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,África do Sul,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,África do Sul,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,África do Sul,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,África do Sul,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,África do Sul,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,África do Sul,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,África do Sul,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,África do Sul,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -937,13 +781,9 @@ team,África do Sul,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLE
 team,África do Sul,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Escócia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Escócia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Escócia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Escócia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Escócia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Escócia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Escócia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Escócia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Escócia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -961,13 +801,9 @@ team,Escócia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Escócia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Senegal,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Senegal,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Senegal,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Senegal,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Senegal,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Senegal,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Senegal,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Senegal,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Senegal,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -985,13 +821,9 @@ team,Senegal,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Senegal,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Suíça,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Suíça,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Suíça,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suíça,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suíça,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Suíça,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Suíça,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suíça,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suíça,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -1009,13 +841,9 @@ team,Suíça,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Suíça,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Suécia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Suécia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Suécia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suécia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suécia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Suécia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Suécia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suécia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Suécia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -1033,13 +861,9 @@ team,Suécia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Suécia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Tunísia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Tunísia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Tunísia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tunísia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tunísia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Tunísia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Tunísia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tunísia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Tunísia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -1057,13 +881,9 @@ team,Tunísia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_
 team,Tunísia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Turquia,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Turquia,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Turquia,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Turquia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Turquia,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Turquia,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Turquia,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Turquia,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Turquia,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -1081,13 +901,9 @@ team,Turquia,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Turquia,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Uruguai,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Uruguai,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Uruguai,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uruguai,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uruguai,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Uruguai,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Uruguai,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uruguai,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uruguai,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -1105,13 +921,9 @@ team,Uruguai,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_T
 team,Uruguai,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Estados Unidos,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Estados Unidos,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Estados Unidos,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Estados Unidos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Estados Unidos,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Estados Unidos,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Estados Unidos,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Estados Unidos,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Estados Unidos,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
@@ -1129,13 +941,9 @@ team,Estados Unidos,pressing_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLE
 team,Estados Unidos,intensity_proxy,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Uzbequistão,temporal_status,AVAILABLE,2026-06-11T03:59:59+00:00,BACKFILLED_PRE_TOURNAMENT_FACT,data/database/team_strengths.csv
 team,Uzbequistão,fifa_ranking,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-<<<<<<< HEAD
 team,Uzbequistão,fifa_points,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uzbequistão,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uzbequistão,recent_points_per_match,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
-=======
-team,Uzbequistão,recent_matches,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 team,Uzbequistão,qualifying_performance,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uzbequistão,recent_goals_for,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA
 team,Uzbequistão,recent_goals_against,MISSING,2026-06-11T03:59:59+00:00,UNAVAILABLE,NA

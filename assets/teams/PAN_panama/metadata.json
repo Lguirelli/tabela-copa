@@ -1,0 +1,27 @@
+{
+  "country_pt": "Panamá",
+  "country_en": "Panama",
+  "iso2": "pa",
+  "iso3": "PAN",
+  "slug": "panama",
+  "federation_name": "Panamanian Football Federation",
+  "official_site": "https://www.fepafut.com",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/pa.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#FFFFFF",
+    "#072357",
+    "#DA121A",
+    "#DA0F17",
+    "#042055"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

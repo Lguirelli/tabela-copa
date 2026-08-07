@@ -1,0 +1,27 @@
+{
+  "country_pt": "Estados Unidos",
+  "country_en": "United States",
+  "iso2": "us",
+  "iso3": "USA",
+  "slug": "estados-unidos",
+  "federation_name": "United States Soccer Federation",
+  "official_site": "https://www.ussoccer.com",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/us.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#FFFFFF",
+    "#B31942",
+    "#B0103B",
+    "#B2153F",
+    "#BC3458"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

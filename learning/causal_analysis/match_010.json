@@ -1,0 +1,234 @@
+{
+  "match_id": 10,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Germany",
+    "clock": "6'",
+    "player": "Felix Nmecha",
+    "text": "Goal! Germany 1, Curaçao 0. Felix Nmecha (Germany) right footed shot from the centre of the box to the bottom right corner. Assisted by Florian Wirtz."
+  },
+  "red_cards": {
+    "Alemanha": 0,
+    "Curaçao": 0
+  },
+  "substitutions_detected": {
+    "Alemanha": 5,
+    "Curaçao": 3
+  },
+  "team_stats": {
+    "Alemanha": {
+      "stat_possessionPct": 64.6,
+      "stat_totalShots": 26.0,
+      "stat_shotsOnTarget": 12.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 1.0
+    },
+    "Curaçao": {
+      "stat_possessionPct": 35.4,
+      "stat_totalShots": 8.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 4.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Alemanha",
+      "player_id": "espn:231182",
+      "player": "Kai Havertz",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 4,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:273300",
+      "player": "Deniz Undav",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 2,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:120829",
+      "player": "Nathaniel Brown",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "assists": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:281122",
+      "player": "Felix Nmecha",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 4,
+        "shots_on_target": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:286828",
+      "player": "Nico Schlotterbeck",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:303821",
+      "player": "Jamal Musiala",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Curaçao",
+      "player_id": "espn:317285",
+      "player": "Livano Comenencia",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:190161",
+      "player": "Joshua Kimmich",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:303748",
+      "player": "Florian Wirtz",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Curaçao",
+      "player_id": "espn:127444",
+      "player": "Eloy Room",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:84774",
+      "player": "Manuel Neuer",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    },
+    {
+      "team": "Alemanha",
+      "player_id": "espn:359370",
+      "player": "Aleksandar Pavlovic",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760422"
+    }
+  ],
+  "efficiency": {
+    "Alemanha": 0.269231,
+    "Curaçao": 0.125
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Alemanha",
+      "evidence": {
+        "Alemanha": 12.0,
+        "Curaçao": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Alemanha",
+      "evidence": {
+        "Alemanha": 0.2692,
+        "Curaçao": 0.125
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Germany",
+      "evidence": {
+        "team": "Germany",
+        "clock": "6'",
+        "player": "Felix Nmecha",
+        "text": "Goal! Germany 1, Curaçao 0. Felix Nmecha (Germany) right footed shot from the centre of the box to the bottom right corner. Assisted by Florian Wirtz."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Alemanha",
+    "evidence": {
+      "Alemanha": 12.0,
+      "Curaçao": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

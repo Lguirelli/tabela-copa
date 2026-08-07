@@ -1,0 +1,44 @@
+{
+  "match_id": 103,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "França",
+  "actual_outcome": "Inglaterra",
+  "brier_score": 0.20489396,
+  "log_loss": 1.01070856,
+  "goal_absolute_error": 8,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "knockout_suppression",
+      "contribution": -0.08
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": 0.0408
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.039
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "England",
+    "evidence": {
+      "team": "England",
+      "clock": "3'",
+      "player": "Declan Rice",
+      "text": "Goal! France 0, England 1. Declan Rice (England) right footed shot from outside the box to the bottom right corner."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1644.882195,
+    "team2_rating_before": 1651.889518,
+    "team1_rating_after": 1620.206694,
+    "team2_rating_after": 1676.565019,
+    "rating_delta_team1": -24.675501,
+    "rating_delta_team2": 24.675501
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

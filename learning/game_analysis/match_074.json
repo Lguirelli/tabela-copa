@@ -1,0 +1,42 @@
+{
+  "match_id": 74,
+  "prediction_error": "outcome_missed",
+  "explanation": "The observed 1X2 outcome differed from the model's highest-probability outcome.",
+  "predicted_outcome": "Alemanha",
+  "actual_outcome": "Empate",
+  "brier_score": 0.34344632,
+  "log_loss": 1.49920777,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": 0.253831
+    },
+    {
+      "factor": "attack_team2",
+      "contribution": -0.204
+    },
+    {
+      "factor": "recent_form",
+      "contribution": 0.196667
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Alemanha",
+    "evidence": {
+      "Alemanha": 6.0,
+      "Paraguai": 3.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1608.781597,
+    "team2_rating_before": 1503.018623,
+    "team1_rating_after": 1605.237476,
+    "team2_rating_after": 1506.562745,
+    "rating_delta_team1": -3.544121,
+    "rating_delta_team2": 3.544121
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

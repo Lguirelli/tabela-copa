@@ -50,7 +50,6 @@
     "penalty_shootouts": {
       "canonical": "data/normalized/espn_penalty_shootouts.csv"
     },
-<<<<<<< HEAD
     "fifa_rankings": {
       "canonical": "data/external/fifa_rankings.csv",
       "temporal_policy": "published_at must not exceed the prediction cutoff"
@@ -63,8 +62,6 @@
       "canonical": "data/context/pre_match_weather.csv",
       "temporal_policy": "archived forecast run must have been available before kickoff"
     },
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "raw_complete_package": {
       "canonical": "data/audit/wc2026_complete_20260720/integration_manifest.csv",
       "manifest": "data/audit/wc2026_complete_20260720/MANIFEST_SHA256.csv",

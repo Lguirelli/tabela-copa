@@ -1,0 +1,42 @@
+{
+  "match_id": 58,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Países Baixos",
+  "actual_outcome": "Países Baixos",
+  "brier_score": 0.00041771,
+  "log_loss": 0.02754285,
+  "goal_absolute_error": 2,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": -0.485146
+    },
+    {
+      "factor": "recent_form",
+      "contribution": -0.46
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.252
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Países Baixos",
+    "evidence": {
+      "Tunísia": 4.0,
+      "Países Baixos": 7.0
+    },
+    "strength": "medium"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1413.115566,
+    "team2_rating_before": 1615.259852,
+    "team1_rating_after": 1401.127929,
+    "team2_rating_after": 1627.247489,
+    "rating_delta_team1": -11.987637,
+    "rating_delta_team2": 11.987637
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}

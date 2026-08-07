@@ -1,0 +1,14 @@
+{
+  "match_id": 65,
+  "classification": "mudanca_estrutural",
+  "confidence": "medium",
+  "surprise_index": 0.729458,
+  "pre_match_top_probability": 0.392032,
+  "quality_context": {
+    "rating_diff": -0.097506,
+    "schedule_strength_diff": 0.011173
+  },
+  "repetition_evidence": 2,
+  "decisive_event": "scoreline_only",
+  "interpretation_rule": "Classification is evidence-based and provisional; it does not assert psychological or tactical causes without observations."
+}

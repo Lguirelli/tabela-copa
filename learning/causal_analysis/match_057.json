@@ -1,0 +1,211 @@
+{
+  "match_id": 57,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Japan",
+    "clock": "56'",
+    "player": "Daizen Maeda",
+    "text": "Goal! Japan 1, Sweden 0. Daizen Maeda (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Ritsu Doan with a through ball."
+  },
+  "red_cards": {
+    "Japão": 0,
+    "Suécia": 0
+  },
+  "substitutions_detected": {
+    "Japão": 5,
+    "Suécia": 5
+  },
+  "team_stats": {
+    "Japão": {
+      "stat_possessionPct": 52.3,
+      "stat_totalShots": 8.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 4.0
+    },
+    "Suécia": {
+      "stat_possessionPct": 47.7,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 5.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 2.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Suécia",
+      "player_id": "espn:296622",
+      "player": "Anthony Elanga",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:286347",
+      "player": "Daizen Maeda",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:219627",
+      "player": "Ritsu Doan",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:258906",
+      "player": "Viktor Gyökeres",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:265958",
+      "player": "Zion Suzuki",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:286810",
+      "player": "Jacob Widell Zetterström",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:235662",
+      "player": "Alexander Isak",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:265965",
+      "player": "Yukinari Sugawara",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:265953",
+      "player": "Keito Nakamura",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:301370",
+      "player": "Alexander Bernhardsson",
+      "position": "RM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Suécia",
+      "player_id": "espn:324930",
+      "player": "Gustaf Lagerbielke",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    },
+    {
+      "team": "Japão",
+      "player_id": "espn:253173",
+      "player": "Ao Tanaka",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760471"
+    }
+  ],
+  "efficiency": {
+    "Japão": 0.125,
+    "Suécia": 0.090909
+  },
+  "important_factors": [
+    {
+      "factor": "first_goal",
+      "direction": "Japan",
+      "evidence": {
+        "team": "Japan",
+        "clock": "56'",
+        "player": "Daizen Maeda",
+        "text": "Goal! Japan 1, Sweden 0. Daizen Maeda (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Ritsu Doan with a through ball."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "first_goal",
+    "direction": "Japan",
+    "evidence": {
+      "team": "Japan",
+      "clock": "56'",
+      "player": "Daizen Maeda",
+      "text": "Goal! Japan 1, Sweden 0. Daizen Maeda (Japan) right footed shot from the centre of the box to the bottom left corner. Assisted by Ritsu Doan with a through ball."
+    },
+    "strength": "contextual"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

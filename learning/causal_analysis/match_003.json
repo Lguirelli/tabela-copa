@@ -1,0 +1,211 @@
+{
+  "match_id": 3,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Bosnia-Herzegovina",
+    "clock": "21'",
+    "player": "Jovo Lukic",
+    "text": "Goal! Canada 0, Bosnia and Herzegovina 1. Jovo Lukic (Bosnia and Herzegovina) header from very close range to the centre of the goal. Assisted by Sead Kolasinac with a headed pass following a corner."
+  },
+  "red_cards": {
+    "Canadá": 0,
+    "Bósnia e Herzegovina": 0
+  },
+  "substitutions_detected": {
+    "Canadá": 5,
+    "Bósnia e Herzegovina": 5
+  },
+  "team_stats": {
+    "Canadá": {
+      "stat_possessionPct": 61.1,
+      "stat_totalShots": 13.0,
+      "stat_shotsOnTarget": 4.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 2.0
+    },
+    "Bósnia e Herzegovina": {
+      "stat_possessionPct": 38.9,
+      "stat_totalShots": 8.0,
+      "stat_shotsOnTarget": 3.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 3.0,
+      "stat_saves": 1.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Bósnia e Herzegovina",
+      "player_id": "espn:305118",
+      "player": "Jovo Lukic",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 3,
+        "shots_on_target": 2,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Canadá",
+      "player_id": "espn:205024",
+      "player": "Cyle Larin",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Canadá",
+      "player_id": "espn:318522",
+      "player": "Promise David",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Bósnia e Herzegovina",
+      "player_id": "espn:170553",
+      "player": "Sead Kolasinac",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Canadá",
+      "player_id": "espn:159382",
+      "player": "Maxime Crépeau",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Bósnia e Herzegovina",
+      "player_id": "espn:79941",
+      "player": "Nikola Vasilj",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Canadá",
+      "player_id": "espn:273499",
+      "player": "Jonathan David",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Canadá",
+      "player_id": "espn:294039",
+      "player": "Tani Oluwaseyi",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Bósnia e Herzegovina",
+      "player_id": "espn:269136",
+      "player": "Ermedin Demirovic",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Canadá",
+      "player_id": "espn:230626",
+      "player": "Richie Laryea",
+      "position": "LB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Bósnia e Herzegovina",
+      "player_id": "espn:318390",
+      "player": "Tarik Muharemovic",
+      "position": "CD-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    },
+    {
+      "team": "Bósnia e Herzegovina",
+      "player_id": "espn:352660",
+      "player": "Benjamin Tahirovic",
+      "position": "CM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760416"
+    }
+  ],
+  "efficiency": {
+    "Canadá": 0.076923,
+    "Bósnia e Herzegovina": 0.125
+  },
+  "important_factors": [
+    {
+      "factor": "first_goal",
+      "direction": "Bosnia-Herzegovina",
+      "evidence": {
+        "team": "Bosnia-Herzegovina",
+        "clock": "21'",
+        "player": "Jovo Lukic",
+        "text": "Goal! Canada 0, Bosnia and Herzegovina 1. Jovo Lukic (Bosnia and Herzegovina) header from very close range to the centre of the goal. Assisted by Sead Kolasinac with a headed pass following a corner."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "first_goal",
+    "direction": "Bosnia-Herzegovina",
+    "evidence": {
+      "team": "Bosnia-Herzegovina",
+      "clock": "21'",
+      "player": "Jovo Lukic",
+      "text": "Goal! Canada 0, Bosnia and Herzegovina 1. Jovo Lukic (Bosnia and Herzegovina) header from very close range to the centre of the goal. Assisted by Sead Kolasinac with a headed pass following a corner."
+    },
+    "strength": "contextual"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

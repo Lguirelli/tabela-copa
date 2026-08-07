@@ -1,0 +1,496 @@
+{
+  "competition_id": "world_cup_2026",
+  "cutoff": "2026-06-26T03:00:00+00:00",
+  "temporal_integrity": "Only results with result_available_at <= cutoff are fixed; future matches are sampled.",
+  "group_stage": {
+    "iterations": 4000,
+    "cutoff": "2026-06-26T03:00:00+00:00",
+    "qualification_probabilities": [
+      {
+        "team": "Alemanha",
+        "group": "E",
+        "probability_first": 1.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Argentina",
+        "group": "J",
+        "probability_first": 0.99925,
+        "probability_second": 0.00075,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Brasil",
+        "group": "C",
+        "probability_first": 1.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Bósnia e Herzegovina",
+        "group": "B",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 1.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 1.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Canadá",
+        "group": "B",
+        "probability_first": 0.0,
+        "probability_second": 1.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Colômbia",
+        "group": "K",
+        "probability_first": 0.564,
+        "probability_second": 0.436,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Costa do Marfim",
+        "group": "E",
+        "probability_first": 0.0,
+        "probability_second": 1.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Egito",
+        "group": "G",
+        "probability_first": 0.557,
+        "probability_second": 0.16425,
+        "probability_third": 0.27875,
+        "probability_top_two": 0.72125,
+        "probability_best_third": 0.27875,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Equador",
+        "group": "E",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 1.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 1.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Espanha",
+        "group": "H",
+        "probability_first": 0.79325,
+        "probability_second": 0.128,
+        "probability_third": 0.07875,
+        "probability_top_two": 0.92125,
+        "probability_best_third": 0.07875,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Estados Unidos",
+        "group": "D",
+        "probability_first": 0.99775,
+        "probability_second": 0.00225,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "França",
+        "group": "I",
+        "probability_first": 0.64325,
+        "probability_second": 0.35675,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Inglaterra",
+        "group": "L",
+        "probability_first": 0.60175,
+        "probability_second": 0.389,
+        "probability_third": 0.00925,
+        "probability_top_two": 0.99075,
+        "probability_best_third": 0.00925,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Japão",
+        "group": "F",
+        "probability_first": 0.0,
+        "probability_second": 1.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Marrocos",
+        "group": "C",
+        "probability_first": 0.0,
+        "probability_second": 1.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "México",
+        "group": "A",
+        "probability_first": 1.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Noruega",
+        "group": "I",
+        "probability_first": 0.35675,
+        "probability_second": 0.64325,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Países Baixos",
+        "group": "F",
+        "probability_first": 1.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "probability_first": 0.436,
+        "probability_second": 0.5545,
+        "probability_third": 0.0095,
+        "probability_top_two": 0.9905,
+        "probability_best_third": 0.0095,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Suécia",
+        "group": "F",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 1.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 1.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Suíça",
+        "group": "B",
+        "probability_first": 1.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "África do Sul",
+        "group": "A",
+        "probability_first": 0.0,
+        "probability_second": 1.0,
+        "probability_third": 0.0,
+        "probability_top_two": 1.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 1.0
+      },
+      {
+        "team": "Gana",
+        "group": "L",
+        "probability_first": 0.15675,
+        "probability_second": 0.3045,
+        "probability_third": 0.53875,
+        "probability_top_two": 0.46125,
+        "probability_best_third": 0.53825,
+        "probability_qualify": 0.9995
+      },
+      {
+        "team": "Áustria",
+        "group": "J",
+        "probability_first": 0.00075,
+        "probability_second": 0.709,
+        "probability_third": 0.2875,
+        "probability_top_two": 0.70975,
+        "probability_best_third": 0.2,
+        "probability_qualify": 0.90975
+      },
+      {
+        "team": "Austrália",
+        "group": "D",
+        "probability_first": 0.00225,
+        "probability_second": 0.7325,
+        "probability_third": 0.25575,
+        "probability_top_two": 0.73475,
+        "probability_best_third": 0.14975,
+        "probability_qualify": 0.8845
+      },
+      {
+        "team": "Croácia",
+        "group": "L",
+        "probability_first": 0.2415,
+        "probability_second": 0.3065,
+        "probability_third": 0.401,
+        "probability_top_two": 0.548,
+        "probability_best_third": 0.31975,
+        "probability_qualify": 0.86775
+      },
+      {
+        "team": "Bélgica",
+        "group": "G",
+        "probability_first": 0.18975,
+        "probability_second": 0.57075,
+        "probability_third": 0.128,
+        "probability_top_two": 0.7605,
+        "probability_best_third": 0.1045,
+        "probability_qualify": 0.865
+      },
+      {
+        "team": "Coreia do Sul",
+        "group": "A",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 1.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.7405,
+        "probability_qualify": 0.7405
+      },
+      {
+        "team": "Cabo Verde",
+        "group": "H",
+        "probability_first": 0.033,
+        "probability_second": 0.52075,
+        "probability_third": 0.18,
+        "probability_top_two": 0.55375,
+        "probability_best_third": 0.10125,
+        "probability_qualify": 0.655
+      },
+      {
+        "team": "Irã",
+        "group": "G",
+        "probability_first": 0.25325,
+        "probability_second": 0.16925,
+        "probability_third": 0.52975,
+        "probability_top_two": 0.4225,
+        "probability_best_third": 0.2145,
+        "probability_qualify": 0.637
+      },
+      {
+        "team": "Argélia",
+        "group": "J",
+        "probability_first": 0.0,
+        "probability_second": 0.29025,
+        "probability_third": 0.69775,
+        "probability_top_two": 0.29025,
+        "probability_best_third": 0.34025,
+        "probability_qualify": 0.6305
+      },
+      {
+        "team": "Paraguai",
+        "group": "D",
+        "probability_first": 0.0,
+        "probability_second": 0.26525,
+        "probability_third": 0.6995,
+        "probability_top_two": 0.26525,
+        "probability_best_third": 0.34475,
+        "probability_qualify": 0.61
+      },
+      {
+        "team": "RD Congo",
+        "group": "K",
+        "probability_first": 0.0,
+        "probability_second": 0.0095,
+        "probability_third": 0.80375,
+        "probability_top_two": 0.0095,
+        "probability_best_third": 0.588,
+        "probability_qualify": 0.5975
+      },
+      {
+        "team": "Senegal",
+        "group": "I",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.8435,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.486,
+        "probability_qualify": 0.486
+      },
+      {
+        "team": "Uruguai",
+        "group": "H",
+        "probability_first": 0.17375,
+        "probability_second": 0.08475,
+        "probability_third": 0.66275,
+        "probability_top_two": 0.2585,
+        "probability_best_third": 0.17825,
+        "probability_qualify": 0.43675
+      },
+      {
+        "team": "Arábia Saudita",
+        "group": "H",
+        "probability_first": 0.0,
+        "probability_second": 0.2665,
+        "probability_third": 0.0785,
+        "probability_top_two": 0.2665,
+        "probability_best_third": 0.07325,
+        "probability_qualify": 0.33975
+      },
+      {
+        "team": "Nova Zelândia",
+        "group": "G",
+        "probability_first": 0.0,
+        "probability_second": 0.09575,
+        "probability_third": 0.0635,
+        "probability_top_two": 0.09575,
+        "probability_best_third": 0.03525,
+        "probability_qualify": 0.131
+      },
+      {
+        "team": "Escócia",
+        "group": "C",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 1.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.12025,
+        "probability_qualify": 0.12025
+      },
+      {
+        "team": "Panamá",
+        "group": "L",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.051,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0445,
+        "probability_qualify": 0.0445
+      },
+      {
+        "team": "Turquia",
+        "group": "D",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.04475,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0245,
+        "probability_qualify": 0.0245
+      },
+      {
+        "team": "Iraque",
+        "group": "I",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.1565,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.01025,
+        "probability_qualify": 0.01025
+      },
+      {
+        "team": "Jordânia",
+        "group": "J",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.01475,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.00775,
+        "probability_qualify": 0.00775
+      },
+      {
+        "team": "Uzbequistão",
+        "group": "K",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.18675,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.00225,
+        "probability_qualify": 0.00225
+      },
+      {
+        "team": "Catar",
+        "group": "B",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 0.0
+      },
+      {
+        "team": "Curaçao",
+        "group": "E",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 0.0
+      },
+      {
+        "team": "Haiti",
+        "group": "C",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 0.0
+      },
+      {
+        "team": "Tchéquia",
+        "group": "A",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 0.0
+      },
+      {
+        "team": "Tunísia",
+        "group": "F",
+        "probability_first": 0.0,
+        "probability_second": 0.0,
+        "probability_third": 0.0,
+        "probability_top_two": 0.0,
+        "probability_best_third": 0.0,
+        "probability_qualify": 0.0
+      }
+    ]
+  },
+  "knockout": {
+    "status": "UNRESOLVED_GROUP_STAGE",
+    "reason": "Round-of-32 teams are intentionally hidden until all group-stage results are available.",
+    "champion_probabilities": "NA"
+  }
+}

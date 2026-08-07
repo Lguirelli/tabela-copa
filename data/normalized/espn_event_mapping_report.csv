@@ -1,0 +1,105 @@
+jogo,jogo_original_fonte,espn_event_id,date,home_team,away_team,calendar_equipe1_original,calendar_equipe2_original,mapping_confidence,mapping_reason,participant_change_required,completed
+1,1,760415,2026-06-11,México,África do Sul,México,África do Sul,date_team,Mesma dupla e data ±1 dia,False,True
+2,2,760414,2026-06-12,Coreia do Sul,Tchéquia,Coreia do Sul,Tchéquia,date_team,Mesma dupla e data ±1 dia,False,True
+3,3,760416,2026-06-12,Canadá,Bósnia e Herzegovina,Canadá,Bósnia e Herzegovina,date_team,Mesma dupla e data ±1 dia,False,True
+4,4,760417,2026-06-13,Estados Unidos,Paraguai,Estados Unidos,Paraguai,date_team,Mesma dupla e data ±1 dia,False,True
+5,5,760418,2026-06-14,Haiti,Escócia,Haiti,Escócia,date_team,Mesma dupla e data ±1 dia,False,True
+6,6,760421,2026-06-14,Austrália,Turquia,Austrália,Turquia,date_team,Mesma dupla e data ±1 dia,False,True
+7,7,760419,2026-06-13,Brasil,Marrocos,Brasil,Marrocos,date_team,Mesma dupla e data ±1 dia,False,True
+8,8,760420,2026-06-13,Catar,Suíça,Catar,Suíça,date_team,Mesma dupla e data ±1 dia,False,True
+9,9,760423,2026-06-14,Costa do Marfim,Equador,Costa do Marfim,Equador,date_team,Mesma dupla e data ±1 dia,False,True
+10,10,760422,2026-06-14,Alemanha,Curaçao,Alemanha,Curaçao,date_team,Mesma dupla e data ±1 dia,False,True
+11,11,760425,2026-06-14,Países Baixos,Japão,Países Baixos,Japão,date_team,Mesma dupla e data ±1 dia,False,True
+12,12,760424,2026-06-15,Suécia,Tunísia,Suécia,Tunísia,date_team,Mesma dupla e data ±1 dia,False,True
+13,13,760429,2026-06-15,Arábia Saudita,Uruguai,Arábia Saudita,Uruguai,date_team,Mesma dupla e data ±1 dia,False,True
+14,14,760428,2026-06-15,Espanha,Cabo Verde,Espanha,Cabo Verde,date_team,Mesma dupla e data ±1 dia,False,True
+15,15,760427,2026-06-16,Irã,Nova Zelândia,Irã,Nova Zelândia,date_team,Mesma dupla e data ±1 dia,False,True
+16,16,760426,2026-06-15,Bélgica,Egito,Bélgica,Egito,date_team,Mesma dupla e data ±1 dia,False,True
+17,17,760432,2026-06-16,França,Senegal,França,Senegal,date_team,Mesma dupla e data ±1 dia,False,True
+18,18,760430,2026-06-16,Iraque,Noruega,Iraque,Noruega,date_team,Mesma dupla e data ±1 dia,False,True
+19,19,760433,2026-06-17,Argentina,Argélia,Argentina,Argélia,date_team,Mesma dupla e data ±1 dia,False,True
+20,20,760431,2026-06-17,Áustria,Jordânia,Áustria,Jordânia,date_team,Mesma dupla e data ±1 dia,False,True
+21,21,760434,2026-06-17,Gana,Panamá,Gana,Panamá,date_team,Mesma dupla e data ±1 dia,False,True
+22,22,760437,2026-06-17,Inglaterra,Croácia,Inglaterra,Croácia,date_team,Mesma dupla e data ±1 dia,False,True
+23,23,760435,2026-06-17,Portugal,RD Congo,Portugal,RD Congo,date_team,Mesma dupla e data ±1 dia,False,True
+24,24,760436,2026-06-18,Uzbequistão,Colômbia,Uzbequistão,Colômbia,date_team,Mesma dupla e data ±1 dia,False,True
+25,25,760438,2026-06-18,Tchéquia,África do Sul,Tchéquia,África do Sul,date_team,Mesma dupla e data ±1 dia,False,True
+26,26,760439,2026-06-18,Suíça,Bósnia e Herzegovina,Suíça,Bósnia e Herzegovina,date_team,Mesma dupla e data ±1 dia,False,True
+27,27,760440,2026-06-18,Canadá,Catar,Canadá,Catar,date_team,Mesma dupla e data ±1 dia,False,True
+28,28,760441,2026-06-19,México,Coreia do Sul,México,Coreia do Sul,date_team,Mesma dupla e data ±1 dia,False,True
+29,29,760444,2026-06-20,Brasil,Haiti,Brasil,Haiti,date_team,Mesma dupla e data ±1 dia,False,True
+30,30,760445,2026-06-19,Escócia,Marrocos,Escócia,Marrocos,date_team,Mesma dupla e data ±1 dia,False,True
+31,31,760443,2026-06-20,Turquia,Paraguai,Turquia,Paraguai,date_team,Mesma dupla e data ±1 dia,False,True
+32,32,760442,2026-06-19,Estados Unidos,Austrália,Estados Unidos,Austrália,date_team,Mesma dupla e data ±1 dia,False,True
+33,33,760448,2026-06-20,Alemanha,Costa do Marfim,Alemanha,Costa do Marfim,date_team,Mesma dupla e data ±1 dia,False,True
+34,34,760446,2026-06-21,Equador,Curaçao,Equador,Curaçao,date_team,Mesma dupla e data ±1 dia,False,True
+35,35,760447,2026-06-20,Países Baixos,Suécia,Países Baixos,Suécia,date_team,Mesma dupla e data ±1 dia,False,True
+36,36,760449,2026-06-21,Tunísia,Japão,Tunísia,Japão,date_team,Mesma dupla e data ±1 dia,False,True
+37,37,760450,2026-06-21,Uruguai,Cabo Verde,Uruguai,Cabo Verde,date_team,Mesma dupla e data ±1 dia,False,True
+38,38,760453,2026-06-21,Espanha,Arábia Saudita,Espanha,Arábia Saudita,date_team,Mesma dupla e data ±1 dia,False,True
+39,39,760451,2026-06-21,Bélgica,Irã,Bélgica,Irã,date_team,Mesma dupla e data ±1 dia,False,True
+40,40,760452,2026-06-22,Nova Zelândia,Egito,Nova Zelândia,Egito,date_team,Mesma dupla e data ±1 dia,False,True
+41,41,760454,2026-06-23,Noruega,Senegal,Noruega,Senegal,date_team,Mesma dupla e data ±1 dia,False,True
+42,42,760457,2026-06-22,França,Iraque,França,Iraque,date_team,Mesma dupla e data ±1 dia,False,True
+43,43,760456,2026-06-22,Argentina,Áustria,Argentina,Áustria,date_team,Mesma dupla e data ±1 dia,False,True
+44,44,760455,2026-06-23,Jordânia,Argélia,Jordânia,Argélia,date_team,Mesma dupla e data ±1 dia,False,True
+45,45,760458,2026-06-23,Inglaterra,Gana,Inglaterra,Gana,date_team,Mesma dupla e data ±1 dia,False,True
+46,46,760460,2026-06-23,Panamá,Croácia,Panamá,Croácia,date_team,Mesma dupla e data ±1 dia,False,True
+47,47,760461,2026-06-23,Portugal,Uzbequistão,Portugal,Uzbequistão,date_team,Mesma dupla e data ±1 dia,False,True
+48,48,760459,2026-06-24,Colômbia,RD Congo,Colômbia,RD Congo,date_team,Mesma dupla e data ±1 dia,False,True
+49,49,760465,2026-06-24,Escócia,Brasil,Escócia,Brasil,date_team,Mesma dupla e data ±1 dia,False,True
+50,50,760464,2026-06-24,Marrocos,Haiti,Marrocos,Haiti,date_team,Mesma dupla e data ±1 dia,False,True
+51,51,760463,2026-06-24,Suíça,Canadá,Suíça,Canadá,date_team,Mesma dupla e data ±1 dia,False,True
+52,52,760462,2026-06-24,Bósnia e Herzegovina,Catar,Bósnia e Herzegovina,Catar,date_team,Mesma dupla e data ±1 dia,False,True
+53,53,760467,2026-06-25,Tchéquia,México,Tchéquia,México,date_team,Mesma dupla e data ±1 dia,False,True
+54,54,760466,2026-06-25,África do Sul,Coreia do Sul,África do Sul,Coreia do Sul,date_team,Mesma dupla e data ±1 dia,False,True
+55,55,760473,2026-06-25,Curaçao,Costa do Marfim,Curaçao,Costa do Marfim,date_team,Mesma dupla e data ±1 dia,False,True
+56,56,760468,2026-06-25,Equador,Alemanha,Equador,Alemanha,date_team,Mesma dupla e data ±1 dia,False,True
+57,57,760471,2026-06-25,Japão,Suécia,Japão,Suécia,date_team,Mesma dupla e data ±1 dia,False,True
+58,58,760472,2026-06-25,Tunísia,Países Baixos,Tunísia,Países Baixos,date_team,Mesma dupla e data ±1 dia,False,True
+59,59,760470,2026-06-26,Turquia,Estados Unidos,Turquia,Estados Unidos,date_team,Mesma dupla e data ±1 dia,False,True
+60,60,760469,2026-06-26,Paraguai,Austrália,Paraguai,Austrália,date_team,Mesma dupla e data ±1 dia,False,True
+61,61,760475,2026-06-26,Noruega,França,Noruega,França,date_team,Mesma dupla e data ±1 dia,False,True
+62,62,760474,2026-06-26,Senegal,Iraque,Senegal,Iraque,date_team,Mesma dupla e data ±1 dia,False,True
+63,63,760476,2026-06-27,Egito,Irã,Egito,Irã,date_team,Mesma dupla e data ±1 dia,False,True
+64,64,760477,2026-06-27,Nova Zelândia,Bélgica,Nova Zelândia,Bélgica,date_team,Mesma dupla e data ±1 dia,False,True
+65,65,760478,2026-06-27,Cabo Verde,Arábia Saudita,Cabo Verde,Arábia Saudita,date_team,Mesma dupla e data ±1 dia,False,True
+66,66,760479,2026-06-27,Uruguai,Espanha,Uruguai,Espanha,date_team,Mesma dupla e data ±1 dia,False,True
+67,67,760485,2026-06-27,Panamá,Inglaterra,Panamá,Inglaterra,date_team,Mesma dupla e data ±1 dia,False,True
+68,68,760480,2026-06-27,Croácia,Gana,Croácia,Gana,date_team,Mesma dupla e data ±1 dia,False,True
+69,69,760484,2026-06-28,Argélia,Áustria,Argélia,Áustria,date_team,Mesma dupla e data ±1 dia,False,True
+70,70,760483,2026-06-28,Jordânia,Argentina,Jordânia,Argentina,date_team,Mesma dupla e data ±1 dia,False,True
+71,71,760481,2026-06-27,Colômbia,Portugal,Colômbia,Portugal,date_team,Mesma dupla e data ±1 dia,False,True
+72,72,760482,2026-06-27,RD Congo,Uzbequistão,RD Congo,Uzbequistão,date_team,Mesma dupla e data ±1 dia,False,True
+73,73,760486,2026-06-28,África do Sul,Canadá,África do Sul,Canadá,date_team,Mesma dupla e data ±1 dia,False,True
+74,74,760489,2026-06-29,Alemanha,Paraguai,Alemanha,Paraguai,date_team,Mesma dupla e data ±1 dia,False,True
+75,75,760488,2026-06-30,Países Baixos,Marrocos,Países Baixos,Marrocos,date_team,Mesma dupla e data ±1 dia,False,True
+76,76,760487,2026-06-29,Brasil,Japão,Brasil,Japão,date_team,Mesma dupla e data ±1 dia,False,True
+77,77,760492,2026-06-30,França,Suécia,França,Suécia,date_team,Mesma dupla e data ±1 dia,False,True
+78,78,760490,2026-06-30,Costa do Marfim,Noruega,Costa do Marfim,Noruega,date_team,Mesma dupla e data ±1 dia,False,True
+79,79,760491,2026-07-01,México,Equador,México,Equador,date_team,Mesma dupla e data ±1 dia,False,True
+80,80,760495,2026-07-01,Inglaterra,RD Congo,Inglaterra,RD Congo,date_team,Mesma dupla e data ±1 dia,False,True
+81,81,760494,2026-07-02,Estados Unidos,Bósnia e Herzegovina,Estados Unidos,Bósnia e Herzegovina,date_team,Mesma dupla e data ±1 dia,False,True
+82,82,760493,2026-07-01,Bélgica,Senegal,Bélgica,Senegal,date_team,Mesma dupla e data ±1 dia,False,True
+83,83,760496,2026-07-02,Portugal,Croácia,Portugal,Croácia,date_team,Mesma dupla e data ±1 dia,False,True
+84,84,760497,2026-07-02,Espanha,Áustria,Espanha,Áustria,date_team,Mesma dupla e data ±1 dia,False,True
+85,85,760498,2026-07-03,Suíça,Argélia,Suíça,Argélia,date_team,Mesma dupla e data ±1 dia,False,True
+86,86,760500,2026-07-03,Argentina,Cabo Verde,Argentina,Cabo Verde,date_team,Mesma dupla e data ±1 dia,False,True
+87,87,760501,2026-07-04,Colômbia,Gana,Colômbia,Gana,date_team,Mesma dupla e data ±1 dia,False,True
+88,88,760499,2026-07-03,Austrália,Egito,Austrália,Egito,date_team,Mesma dupla e data ±1 dia,False,True
+89,90,760503,2026-07-04,Paraguai,França,Paraguai,França,date_team,Mesma dupla e data ±1 dia,False,True
+90,89,760502,2026-07-04,Canadá,Marrocos,Canadá,Marrocos,date_team,Mesma dupla e data ±1 dia,False,True
+91,91,760504,2026-07-05,Brasil,Noruega,Brasil,Noruega,date_team,Mesma dupla e data ±1 dia,False,True
+92,92,760505,2026-07-06,México,Inglaterra,México,Inglaterra,date_team,Mesma dupla e data ±1 dia,False,True
+93,93,760506,2026-07-06,Portugal,Espanha,Portugal,Espanha,date_team,Mesma dupla e data ±1 dia,False,True
+94,94,760507,2026-07-07,Estados Unidos,Bélgica,Estados Unidos,Bélgica,date_team,Mesma dupla e data ±1 dia,False,True
+95,95,760509,2026-07-07,Argentina,Egito,Argentina,Egito,date_team,Mesma dupla e data ±1 dia,False,True
+96,96,760508,2026-07-07,Suíça,Colômbia,Suíça,Colômbia,date_team,Mesma dupla e data ±1 dia,False,True
+97,97,760510,2026-07-09,França,Marrocos,Marrocos,França,date_team,Mesma dupla e data ±1 dia,False,True
+98,98,760511,2026-07-10,Espanha,Bélgica,Espanha,Bélgica,date_team,Mesma dupla e data ±1 dia,False,True
+99,99,760512,2026-07-11,Noruega,Inglaterra,Noruega,Inglaterra,date_team,Mesma dupla e data ±1 dia,False,True
+100,100,760513,2026-07-12,Argentina,Suíça,Suíça,Argentina,date_team,Mesma dupla e data ±1 dia,False,True
+101,101,760514,2026-07-14,França,Espanha,França,Espanha,date_team,Mesma dupla e data ±1 dia,False,True
+102,102,760515,2026-07-15,Inglaterra,Argentina,Inglaterra,Argentina,date_team,Mesma dupla e data ±1 dia,False,True
+103,103,760516,2026-07-18,França,Inglaterra,França,Inglaterra,date_team,Mesma dupla e data ±1 dia,False,True
+104,104,760517,2026-07-19,Espanha,Argentina,Espanha,Argentina,date_team,Mesma dupla e data ±1 dia,False,True

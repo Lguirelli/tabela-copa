@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "generated_at": "2026-08-06T21:06:27.067858+00:00",
-=======
-  "generated_at": "2026-07-28T19:23:02.772391+00:00",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
   "competition_id": "world_cup_2026",
   "acceptance_rule": {
     "minimum_samples": 30,
@@ -289,11 +285,7 @@
     }
   ],
   "temporal_worldcup_2026": {
-<<<<<<< HEAD
     "generated_at": "2026-08-06T20:52:05.608126+00:00",
-=======
-    "generated_at": "2026-07-28T19:21:52.734321+00:00",
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
     "acceptance_rule": {
       "minimum_samples": 24,
       "correlation_threshold": 0.12,
@@ -471,7 +463,6 @@
         "temporal_provenance": "feature values were frozen at each pre-match cutoff"
       },
       {
-<<<<<<< HEAD
         "feature": "heat_load",
         "status": "REJECTED",
         "correlation_with_goal_difference": 0.0,
@@ -484,8 +475,6 @@
         "temporal_provenance": "feature values were frozen at each pre-match cutoff"
       },
       {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "feature": "initial_strength_diff",
         "status": "ACCEPTED",
         "correlation_with_goal_difference": 0.458883,
@@ -501,11 +490,7 @@
         "feature": "knockout",
         "status": "REJECTED",
         "correlation_with_goal_difference": -0.086721,
-<<<<<<< HEAD
         "permutation_p_value": 0.378738,
-=======
-        "permutation_p_value": 0.352159,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "chronological_first_half_correlation": 0.0,
         "chronological_second_half_correlation": 0.169,
         "stable_direction": true,
@@ -514,7 +499,6 @@
         "temporal_provenance": "feature values were frozen at each pre-match cutoff"
       },
       {
-<<<<<<< HEAD
         "feature": "rain_load",
         "status": "REJECTED",
         "correlation_with_goal_difference": 0.0,
@@ -527,8 +511,6 @@
         "temporal_provenance": "feature values were frozen at each pre-match cutoff"
       },
       {
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "feature": "rating_diff",
         "status": "ACCEPTED",
         "correlation_with_goal_difference": 0.504834,
@@ -544,11 +526,7 @@
         "feature": "rest_days_team1",
         "status": "REJECTED",
         "correlation_with_goal_difference": 0.179575,
-<<<<<<< HEAD
         "permutation_p_value": 0.076412,
-=======
-        "permutation_p_value": 0.059801,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "chronological_first_half_correlation": 0.01377,
         "chronological_second_half_correlation": 0.024611,
         "stable_direction": true,
@@ -560,11 +538,7 @@
         "feature": "rest_days_team2",
         "status": "REJECTED",
         "correlation_with_goal_difference": 0.145093,
-<<<<<<< HEAD
         "permutation_p_value": 0.169435,
-=======
-        "permutation_p_value": 0.156146,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "chronological_first_half_correlation": -0.171462,
         "chronological_second_half_correlation": 0.054585,
         "stable_direction": false,
@@ -576,11 +550,7 @@
         "feature": "rest_diff",
         "status": "REJECTED",
         "correlation_with_goal_difference": 0.058497,
-<<<<<<< HEAD
         "permutation_p_value": 0.51495,
-=======
-        "permutation_p_value": 0.518272,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "chronological_first_half_correlation": 0.357333,
         "chronological_second_half_correlation": -0.035016,
         "stable_direction": false,
@@ -592,18 +562,13 @@
         "feature": "schedule_strength_diff",
         "status": "REJECTED",
         "correlation_with_goal_difference": 0.001532,
-<<<<<<< HEAD
         "permutation_p_value": 0.986711,
-=======
-        "permutation_p_value": 0.990033,
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
         "chronological_first_half_correlation": 0.085283,
         "chronological_second_half_correlation": -0.057437,
         "stable_direction": false,
         "sample_size": 104,
         "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
         "temporal_provenance": "feature values were frozen at each pre-match cutoff"
-<<<<<<< HEAD
       },
       {
         "feature": "wind_load",
@@ -616,8 +581,6 @@
         "sample_size": 104,
         "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
         "temporal_provenance": "feature values were frozen at each pre-match cutoff"
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
       }
     ]
   }

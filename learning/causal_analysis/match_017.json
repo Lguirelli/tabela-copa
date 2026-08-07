@@ -1,0 +1,217 @@
+{
+  "match_id": 17,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "France",
+    "clock": "66'",
+    "player": "Kylian Mbappé",
+    "text": "Goal! France 1, Senegal 0. Kylian Mbappé (France) right footed shot from the centre of the box to the centre of the goal. Assisted by Michael Olise with a through ball."
+  },
+  "red_cards": {
+    "França": 0,
+    "Senegal": 0
+  },
+  "substitutions_detected": {
+    "França": 2,
+    "Senegal": 5
+  },
+  "team_stats": {
+    "França": {
+      "stat_possessionPct": 53.4,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 8.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 2.0
+    },
+    "Senegal": {
+      "stat_possessionPct": 46.6,
+      "stat_totalShots": 6.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 5.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "França",
+      "player_id": "espn:231388",
+      "player": "Kylian Mbappé",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 2,
+        "shots": 4,
+        "shots_on_target": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "França",
+      "player_id": "espn:328238",
+      "player": "Bradley Barcola",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "Senegal",
+      "player_id": "espn:388522",
+      "player": "Ibrahim Mbaye",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "França",
+      "player_id": "espn:286831",
+      "player": "Michael Olise",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "França",
+      "player_id": "espn:176203",
+      "player": "Adrien Rabiot",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "Senegal",
+      "player_id": "espn:268641",
+      "player": "Iliman Ndiaye",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "Senegal",
+      "player_id": "espn:238362",
+      "player": "Édouard Mendy",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 5
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "França",
+      "player_id": "espn:189026",
+      "player": "Mike Maignan",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "França",
+      "player_id": "espn:336388",
+      "player": "Désiré Doué",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "Senegal",
+      "player_id": "espn:169797",
+      "player": "Sadio Mané",
+      "position": "AM-L",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "Senegal",
+      "player_id": "espn:241012",
+      "player": "Ismaïla Sarr",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    },
+    {
+      "team": "França",
+      "player_id": "espn:229744",
+      "player": "Ousmane Dembélé",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760432"
+    }
+  ],
+  "efficiency": {
+    "França": 0.272727,
+    "Senegal": 0.166667
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "França",
+      "evidence": {
+        "França": 8.0,
+        "Senegal": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "France",
+      "evidence": {
+        "team": "France",
+        "clock": "66'",
+        "player": "Kylian Mbappé",
+        "text": "Goal! France 1, Senegal 0. Kylian Mbappé (France) right footed shot from the centre of the box to the centre of the goal. Assisted by Michael Olise with a through ball."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "França",
+    "evidence": {
+      "França": 8.0,
+      "Senegal": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

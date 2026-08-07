@@ -1,0 +1,27 @@
+{
+  "country_pt": "Gana",
+  "country_en": "Ghana",
+  "iso2": "gh",
+  "iso3": "GHA",
+  "slug": "gana",
+  "federation_name": "Ghana Football Association",
+  "official_site": "https://www.ghanafa.org",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/gh.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#CE1126",
+    "#006B3F",
+    "#FCD116",
+    "#CD0B26",
+    "#000000"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

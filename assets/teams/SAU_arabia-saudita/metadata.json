@@ -1,0 +1,27 @@
+{
+  "country_pt": "Arábia Saudita",
+  "country_en": "Saudi Arabia",
+  "iso2": "sa",
+  "iso3": "SAU",
+  "slug": "arabia-saudita",
+  "federation_name": "Saudi Arabian Football Federation",
+  "official_site": "https://www.saff.com.sa",
+  "logo_status": "não baixado por licença indefinida",
+  "logo_source_url": "",
+  "logo_license": "",
+  "logo_attribution": "",
+  "logo_file": "",
+  "flag_source_url": "https://flagcdn.com/sa.svg",
+  "flag_license": "Domínio público (Flagpedia/Wikimedia Commons)",
+  "flag_file": "flag.svg",
+  "icon_file": "icon.png",
+  "hex_colors": [
+    "#005430",
+    "#00532F",
+    "#00522D",
+    "#00522E",
+    "#004E29"
+  ],
+  "confidence": "baixa",
+  "notes": "Logo não foi baixado devido a restrições de licenciamento; bandeira obtida de Flagpedia; cores extraídas da bandeira."
+}

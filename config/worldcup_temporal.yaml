@@ -14,10 +14,7 @@ feature_correlation_threshold: 0.12
 feature_permutation_pvalue: 0.05
 allow_na_after_source_exhaustion: true
 strict_temporal_mode: true
-<<<<<<< HEAD
 enable_online_weight_recalibration: false
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 reconstruction_mode: backfilled_pre_tournament_facts
 
 paths:
@@ -35,12 +32,9 @@ paths:
   player_availability: data/platform/player_availability.csv
   match_officials: data/platform/match_officials.csv
   archived_news: data/temporal/archived_news.csv
-<<<<<<< HEAD
   fifa_rankings: data/external/fifa_rankings.csv
   external_matches: data/external/football_data_matches.csv
   pre_match_weather: data/context/pre_match_weather.csv
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
 pre_worldcup_field_policy:
   verified_static:

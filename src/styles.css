@@ -582,7 +582,6 @@ body.dashboard { overflow: auto !important; }
   .simulation-control-panel{grid-template-columns:1fr;align-items:start}.simulation-control-panel strong{white-space:normal}.snapshot-summary dl{grid-template-columns:1fr 1fr}.snapshot-summary dl>div:nth-child(2){border-right:0}.snapshot-summary dl>div{border-bottom:1px solid rgba(255,255,255,.06)}
   .semantic-version-grid{grid-template-columns:1fr 1fr}.parameter-grid{grid-template-columns:1fr 1fr}.model-bars--scroll{max-height:none}
 }
-<<<<<<< HEAD
 
 /* ========================================================================== */
 /* Dark intelligence UI — visual system shared by every dashboard page       */
@@ -1094,5 +1093,3 @@ select:focus-visible {
   .model-panel,
   .model-kpi { border: 1px solid CanvasText !important; }
 }
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3

@@ -10,10 +10,7 @@ A arquitetura é composta somente por código, scripts, módulos e GitHub Action
 - Validação estrutural: **VALID**, sem placares impossíveis, IDs duplicados ou conflitos entre calendário e resultados.
 - Escalações e participação cobrem as 104 partidas. Minutos possuem cobertura completa nas 104 partidas por meio de derivação pós-jogo rastreável, sem sobrescrever valores observados. Disponibilidade significa somente presença no elenco da partida e não substitui histórico pré-jogo de lesões.
 - O modelo recalibrado mais recente foi mantido como candidato rejeitado porque não superou o baseline no holdout cronológico. A simulação continua usando os xG configurados, evitando promoção automática de um modelo pior.
-<<<<<<< HEAD
 - Fontes complementares são aceitas somente com proveniência e `available_at`. O modelo temporal testa alterações de coeficientes em modo sombra; elas não afetam previsões até superarem validação externa e serem explicitamente habilitadas.
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
 ## Arquitetura
 
@@ -47,11 +44,8 @@ data/
   platform/                      schemas canônicos ainda não preenchidos
   raw/                           respostas brutas coletadas, quando houver
   staging/                       dados coletados antes da validação/merge
-<<<<<<< HEAD
   external/                      feeds independentes e snapshots oficiais datados
   context/                       coordenadas e previsões meteorológicas pré-jogo
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 
 logs/enrichment_log.json         histórico de tentativas de enriquecimento
 models/competitions/<id>/        artefatos analíticos isolados por campeonato
@@ -68,7 +62,6 @@ scripts/run_repository_pipeline.py  orquestrador único usado nas Actions
 
 A descrição completa está em [`docs/PLATFORM_ARCHITECTURE.md`](docs/PLATFORM_ARCHITECTURE.md).
 
-<<<<<<< HEAD
 ## Fontes complementares
 
 O catálogo auditável está em [`config/external_sources.yaml`](config/external_sources.yaml). A ordem de confiança é:
@@ -85,12 +78,6 @@ O sistema nunca converte observação meteorológica pós-jogo em “previsão�
 
 ### 01 — Data completeness check
 
-=======
-## Os oito loops analíticos
-
-### 01 — Data completeness check
-
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 Verifica cobertura por partida para resultados, datas, competição, eventos, estatísticas, escalações e dados individuais. Gera:
 
 ```text
@@ -215,7 +202,6 @@ A versão só é copiada para `models/model_versions/<competition_id>/latest.jso
 Requer Python 3.11 ou superior.
 
 ```bash
-<<<<<<< HEAD
 python -m pip install -e .
 ```
 
@@ -273,60 +259,6 @@ Existem somente três workflows. Apenas um possui permissão de escrita no repos
 
 ### `ci.yml`
 
-=======
-python -m pip install -r requirements.txt
-python -m pip install -e .
-```
-
-A rede neural legada da Copa usa PyTorch, permanece opcional e está isolada em `legacy/`:
-
-```bash
-python -m pip install -r requirements-legacy-ml.txt
-python legacy/scripts/treinar_rede_neural_copa.py
-```
-
-## Execução
-
-Pipeline completo de uma competição:
-
-```bash
-python -m sports_engine.cli run-all --competition world_cup_2026
-```
-
-Todos os campeonatos executáveis configurados, ignorando templates:
-
-```bash
-python -m sports_engine.cli run-registry
-```
-
-Loops individuais:
-
-```bash
-python -m sports_engine.cli completeness --competition world_cup_2026
-python -m sports_engine.cli enrich --competition world_cup_2026
-python -m sports_engine.cli validate --competition world_cup_2026
-python -m sports_engine.cli patterns --competition world_cup_2026
-python -m sports_engine.cli feedback --competition world_cup_2026
-python -m sports_engine.cli features --competition world_cup_2026
-python -m sports_engine.cli recalibrate --competition world_cup_2026
-python -m sports_engine.cli simulate --competition world_cup_2026
-```
-
-Também é possível usar:
-
-```bash
-make all COMPETITION=world_cup_2026
-make all-competitions
-make test
-```
-
-## GitHub Actions
-
-Existem somente três workflows. Apenas um possui permissão de escrita no repositório.
-
-### `ci.yml`
-
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 Executa testes e validações em alterações de código, configuração e dados canônicos. O job não roda novamente para commits gerados pelo `github-actions[bot]`.
 
 ### `update_pipeline.yml`
@@ -343,11 +275,8 @@ Executa testes e validações em alterações de código, configuração e dados
 
 Os logs detalhados são enviados como artefato da Action, mas não são adicionados ao histórico Git.
 
-<<<<<<< HEAD
 O deploy do Pages publica apenas HTML, `src/`, `assets/` e `.nojekyll`; código Python, dados brutos, relatórios e configurações não são enviados como conteúdo público do site.
 
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 Não existe agendamento recorrente para a competição encerrada, nem encadeamento `workflow_run` para retreinar o mesmo modelo. Commits do próprio bot não reativam o pipeline. Para um campeonato futuro ativo, um cron pode ser reabilitado conscientemente no único workflow escritor.
 
 ### `static.yml`
@@ -490,14 +419,11 @@ modelo-simulacoes.html       evolução das hipóteses de classificação e tít
 modelo-versoes.html          versões temporais, checkpoints e parâmetros
 ```
 
-<<<<<<< HEAD
 Todas as páginas compartilham o sistema visual dark documentado em
 [`docs/UI_DARK_STYLE_GUIDE.md`](docs/UI_DARK_STYLE_GUIDE.md). O tema usa apenas
 CSS local e fontes do sistema, mantendo a publicação independente de serviços
 externos e preservando o desempenho do site estático.
 
-=======
->>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
 O frontend não consulta APIs durante a navegação. O script abaixo compacta os artefatos existentes em um bundle JavaScript rastreável:
 
 ```bash

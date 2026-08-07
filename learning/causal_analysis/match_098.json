@@ -1,0 +1,220 @@
+{
+  "match_id": 98,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Spain",
+    "clock": "30'",
+    "player": "Fabián Ruiz",
+    "text": "Goal! Spain 1, Belgium 0. Fabián Ruiz (Spain) right footed shot from the centre of the box to the high centre of the goal."
+  },
+  "red_cards": {
+    "Espanha": 0,
+    "Bélgica": 0
+  },
+  "substitutions_detected": {
+    "Espanha": 4,
+    "Bélgica": 5
+  },
+  "team_stats": {
+    "Espanha": {
+      "stat_possessionPct": 67.9,
+      "stat_totalShots": 17.0,
+      "stat_shotsOnTarget": 8.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 1.0
+    },
+    "Bélgica": {
+      "stat_possessionPct": 32.1,
+      "stat_totalShots": 5.0,
+      "stat_shotsOnTarget": 2.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 2.0,
+      "stat_saves": 6.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Bélgica",
+      "player_id": "espn:296319",
+      "player": "Charles De Ketelaere",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:214596",
+      "player": "Fabián Ruiz",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:209581",
+      "player": "Mikel Merino",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:197163",
+      "player": "Timothy Castagne",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134283",
+      "player": "Thibaut Courtois",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 4
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:301425",
+      "player": "Senne Lammens",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "saves": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:222375",
+      "player": "Unai Simón",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:362150",
+      "player": "Lamine Yamal",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 6,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Bélgica",
+      "player_id": "espn:134947",
+      "player": "Kevin De Bruyne",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:227765",
+      "player": "Dani Olmo",
+      "position": "AM",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:229018",
+      "player": "Mikel Oyarzabal",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    },
+    {
+      "team": "Espanha",
+      "player_id": "espn:368992",
+      "player": "Pau Cubarsí",
+      "position": "CD-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1,
+        "yellow_cards": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760511"
+    }
+  ],
+  "efficiency": {
+    "Espanha": 0.117647,
+    "Bélgica": 0.2
+  },
+  "important_factors": [
+    {
+      "factor": "shots_on_target_dominance",
+      "direction": "Espanha",
+      "evidence": {
+        "Espanha": 8.0,
+        "Bélgica": 2.0
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Spain",
+      "evidence": {
+        "team": "Spain",
+        "clock": "30'",
+        "player": "Fabián Ruiz",
+        "text": "Goal! Spain 1, Belgium 0. Fabián Ruiz (Spain) right footed shot from the centre of the box to the high centre of the goal."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "shots_on_target_dominance",
+    "direction": "Espanha",
+    "evidence": {
+      "Espanha": 8.0,
+      "Bélgica": 2.0
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

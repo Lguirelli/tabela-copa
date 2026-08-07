@@ -1,0 +1,216 @@
+{
+  "match_id": 20,
+  "question": "Por que este jogo terminou assim?",
+  "answer_scope": "Associations supported by available match evidence; not a causal proof.",
+  "first_goal": {
+    "team": "Austria",
+    "clock": "21'",
+    "player": "Romano Schmid",
+    "text": "Goal! Austria 1, Jordan 0. Romano Schmid (Austria) right footed shot from outside the box to the top right corner. Assisted by Xaver Schlager."
+  },
+  "red_cards": {
+    "Áustria": 0,
+    "Jordânia": 0
+  },
+  "substitutions_detected": {
+    "Áustria": 5,
+    "Jordânia": 5
+  },
+  "team_stats": {
+    "Áustria": {
+      "stat_possessionPct": 63.2,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 4.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 1.0,
+      "stat_saves": 3.0
+    },
+    "Jordânia": {
+      "stat_possessionPct": 36.8,
+      "stat_totalShots": 11.0,
+      "stat_shotsOnTarget": 4.0,
+      "stat_redCards": 0.0,
+      "stat_yellowCards": 0.0,
+      "stat_saves": 1.0
+    }
+  },
+  "individual_evidence": [
+    {
+      "team": "Jordânia",
+      "player_id": "espn:320908",
+      "player": "Ali Olwan",
+      "position": "CF-L",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 4,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:98193",
+      "player": "Marko Arnautovic",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 2,
+        "shots_on_target": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:238296",
+      "player": "Romano Schmid",
+      "position": "AM-R",
+      "starter": true,
+      "observed_stats": {
+        "goals": 1,
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Jordânia",
+      "player_id": "espn:295462",
+      "player": "Noor Al-Rawabdeh",
+      "position": "CM-L",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:238886",
+      "player": "Xaver Schlager",
+      "position": "LM",
+      "starter": true,
+      "observed_stats": {
+        "assists": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:195082",
+      "player": "Alexander Schlager",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 3
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Jordânia",
+      "player_id": "espn:235212",
+      "player": "Yazeed Abulaila",
+      "position": "G",
+      "starter": true,
+      "observed_stats": {
+        "saves": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Jordânia",
+      "player_id": "espn:257489",
+      "player": "Mousa Al-Tamari",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 4,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Jordânia",
+      "player_id": "espn:392204",
+      "player": "Odeh Fakhoury",
+      "position": "CF-R",
+      "starter": true,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:294317",
+      "player": "Carney Chukwuemeka",
+      "position": "SUB",
+      "starter": false,
+      "observed_stats": {
+        "shots": 1,
+        "shots_on_target": 1
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:238906",
+      "player": "Stefan Posch",
+      "position": "RB",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    },
+    {
+      "team": "Áustria",
+      "player_id": "espn:259131",
+      "player": "Sasa Kalajdzic",
+      "position": "F",
+      "starter": true,
+      "observed_stats": {
+        "shots": 2
+      },
+      "source": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760431"
+    }
+  ],
+  "efficiency": {
+    "Áustria": 0.272727,
+    "Jordânia": 0.090909
+  },
+  "important_factors": [
+    {
+      "factor": "finishing_efficiency",
+      "direction": "Áustria",
+      "evidence": {
+        "Áustria": 0.2727,
+        "Jordânia": 0.0909
+      },
+      "strength": "medium"
+    },
+    {
+      "factor": "first_goal",
+      "direction": "Austria",
+      "evidence": {
+        "team": "Austria",
+        "clock": "21'",
+        "player": "Romano Schmid",
+        "text": "Goal! Austria 1, Jordan 0. Romano Schmid (Austria) right footed shot from outside the box to the top right corner. Assisted by Xaver Schlager."
+      },
+      "strength": "contextual"
+    }
+  ],
+  "primary_factor": {
+    "factor": "finishing_efficiency",
+    "direction": "Áustria",
+    "evidence": {
+      "Áustria": 0.2727,
+      "Jordânia": 0.0909
+    },
+    "strength": "medium"
+  },
+  "evidence_status": "POST_MATCH_BACKFILLED_FACT"
+}

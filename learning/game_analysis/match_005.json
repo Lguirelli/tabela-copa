@@ -1,0 +1,44 @@
+{
+  "match_id": 5,
+  "prediction_error": "direction_correct",
+  "explanation": "The highest-probability 1X2 outcome matched the observed result.",
+  "predicted_outcome": "Escócia",
+  "actual_outcome": "Escócia",
+  "brier_score": 0.10246249,
+  "log_loss": 0.60090352,
+  "goal_absolute_error": 0,
+  "strongest_pre_match_factors": [
+    {
+      "factor": "rating",
+      "contribution": -0.2328
+    },
+    {
+      "factor": "attack_team1",
+      "contribution": -0.1236
+    },
+    {
+      "factor": "experience",
+      "contribution": -0.0184
+    }
+  ],
+  "important_post_match_factor": {
+    "factor": "first_goal",
+    "direction": "Scotland",
+    "evidence": {
+      "team": "Scotland",
+      "clock": "28'",
+      "player": "John McGinn",
+      "text": "Goal! Haiti 0, Scotland 1. John McGinn (Scotland) left footed shot from the centre of the box to the high centre of the goal."
+    },
+    "strength": "contextual"
+  },
+  "model_adjustment": {
+    "team1_rating_before": 1492.0,
+    "team2_rating_before": 1589.0,
+    "team1_rating_after": 1477.211791,
+    "team2_rating_after": 1603.788209,
+    "rating_delta_team1": -14.788209,
+    "rating_delta_team2": 14.788209
+  },
+  "learning_scope": "Online team-state update and conservative probability recalibration; no future matches used."
+}
