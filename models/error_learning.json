@@ -1,7 +1,7 @@
 {
   "loop": "05_prediction_feedback",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-08-06T21:06:26.702469+00:00",
+  "generated_at": "2026-08-07T11:53:16.560429+00:00",
   "inputs": [
     {
       "path": "data/modelo_diario/previsoes_dia_a_dia.csv",

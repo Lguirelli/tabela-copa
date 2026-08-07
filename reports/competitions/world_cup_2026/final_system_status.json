@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T20:52:53.080123+00:00",
+  "generated_at": "2026-08-07T11:52:34.262079+00:00",
   "competition_id": "world_cup_2026",
   "project_status": "READY",
   "improvements_realized": [
@@ -35,7 +35,7 @@
         "queue_items": 0,
         "resolved_this_run": 0,
         "remaining_open": 0,
-        "supplemental_sources_checked": 0
+        "supplemental_sources_checked": 2
       }
     },
     {

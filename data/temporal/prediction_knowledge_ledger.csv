@@ -2,21 +2,25 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 1,2026-06-11T17:00:00+00:00,team_profile,México,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 1,2026-06-11T17:00:00+00:00,team_profile,África do Sul,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 1,2026-06-11T17:00:00+00:00,fixture,1,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
+1,2026-06-11T17:00:00+00:00,weather,match_1,2026-06-11T17:00:00+00:00,data/context/pre_match_weather.csv
 2,2026-06-12T00:00:00+00:00,team_profile,Coreia do Sul,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 2,2026-06-12T00:00:00+00:00,team_profile,Tchéquia,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 2,2026-06-12T00:00:00+00:00,fixture,2,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
 2,2026-06-12T00:00:00+00:00,official_result,1,2026-06-11T22:30:00+00:00,data/resultados_reais.csv
+2,2026-06-12T00:00:00+00:00,weather,match_2,2026-06-12T00:00:00+00:00,data/context/pre_match_weather.csv
 3,2026-06-12T17:00:00+00:00,team_profile,Canadá,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 3,2026-06-12T17:00:00+00:00,team_profile,Bósnia e Herzegovina,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 3,2026-06-12T17:00:00+00:00,fixture,3,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
 3,2026-06-12T17:00:00+00:00,official_result,1,2026-06-11T22:30:00+00:00,data/resultados_reais.csv
 3,2026-06-12T17:00:00+00:00,official_result,2,2026-06-12T05:30:00+00:00,data/resultados_reais.csv
+3,2026-06-12T17:00:00+00:00,weather,match_3,2026-06-12T17:00:00+00:00,data/context/pre_match_weather.csv
 4,2026-06-12T23:00:00+00:00,team_profile,Estados Unidos,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 4,2026-06-12T23:00:00+00:00,team_profile,Paraguai,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 4,2026-06-12T23:00:00+00:00,fixture,4,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
 4,2026-06-12T23:00:00+00:00,official_result,1,2026-06-11T22:30:00+00:00,data/resultados_reais.csv
 4,2026-06-12T23:00:00+00:00,official_result,2,2026-06-12T05:30:00+00:00,data/resultados_reais.csv
 4,2026-06-12T23:00:00+00:00,official_result,3,2026-06-12T22:30:00+00:00,data/resultados_reais.csv
+4,2026-06-12T23:00:00+00:00,weather,match_4,2026-06-12T23:00:00+00:00,data/context/pre_match_weather.csv
 8,2026-06-13T17:00:00+00:00,team_profile,Catar,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 8,2026-06-13T17:00:00+00:00,team_profile,Suíça,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 8,2026-06-13T17:00:00+00:00,fixture,8,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -24,6 +28,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 8,2026-06-13T17:00:00+00:00,official_result,2,2026-06-12T05:30:00+00:00,data/resultados_reais.csv
 8,2026-06-13T17:00:00+00:00,official_result,3,2026-06-12T22:30:00+00:00,data/resultados_reais.csv
 8,2026-06-13T17:00:00+00:00,official_result,4,2026-06-13T04:30:00+00:00,data/resultados_reais.csv
+8,2026-06-13T17:00:00+00:00,weather,match_8,2026-06-13T17:00:00+00:00,data/context/pre_match_weather.csv
 7,2026-06-13T20:00:00+00:00,team_profile,Brasil,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 7,2026-06-13T20:00:00+00:00,team_profile,Marrocos,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 7,2026-06-13T20:00:00+00:00,fixture,7,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -31,6 +36,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 7,2026-06-13T20:00:00+00:00,official_result,2,2026-06-12T05:30:00+00:00,data/resultados_reais.csv
 7,2026-06-13T20:00:00+00:00,official_result,3,2026-06-12T22:30:00+00:00,data/resultados_reais.csv
 7,2026-06-13T20:00:00+00:00,official_result,4,2026-06-13T04:30:00+00:00,data/resultados_reais.csv
+7,2026-06-13T20:00:00+00:00,weather,match_7,2026-06-13T20:00:00+00:00,data/context/pre_match_weather.csv
 5,2026-06-13T23:00:00+00:00,team_profile,Haiti,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 5,2026-06-13T23:00:00+00:00,team_profile,Escócia,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 5,2026-06-13T23:00:00+00:00,fixture,5,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -39,6 +45,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 5,2026-06-13T23:00:00+00:00,official_result,3,2026-06-12T22:30:00+00:00,data/resultados_reais.csv
 5,2026-06-13T23:00:00+00:00,official_result,4,2026-06-13T04:30:00+00:00,data/resultados_reais.csv
 5,2026-06-13T23:00:00+00:00,official_result,8,2026-06-13T22:30:00+00:00,data/resultados_reais.csv
+5,2026-06-13T23:00:00+00:00,weather,match_5,2026-06-13T23:00:00+00:00,data/context/pre_match_weather.csv
 6,2026-06-14T02:00:00+00:00,team_profile,Austrália,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 6,2026-06-14T02:00:00+00:00,team_profile,Turquia,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 6,2026-06-14T02:00:00+00:00,fixture,6,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -125,6 +132,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 16,2026-06-15T17:00:00+00:00,official_result,11,2026-06-14T23:30:00+00:00,data/resultados_reais.csv
 16,2026-06-15T17:00:00+00:00,official_result,9,2026-06-15T02:30:00+00:00,data/resultados_reais.csv
 16,2026-06-15T17:00:00+00:00,official_result,12,2026-06-15T05:30:00+00:00,data/resultados_reais.csv
+16,2026-06-15T17:00:00+00:00,weather,match_16,2026-06-15T17:00:00+00:00,data/context/pre_match_weather.csv
 13,2026-06-15T20:00:00+00:00,team_profile,Arábia Saudita,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 13,2026-06-15T20:00:00+00:00,team_profile,Uruguai,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 13,2026-06-15T20:00:00+00:00,fixture,13,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -177,6 +185,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 17,2026-06-16T17:00:00+00:00,official_result,16,2026-06-15T22:30:00+00:00,data/resultados_reais.csv
 17,2026-06-16T17:00:00+00:00,official_result,13,2026-06-16T01:30:00+00:00,data/resultados_reais.csv
 17,2026-06-16T17:00:00+00:00,official_result,15,2026-06-16T04:30:00+00:00,data/resultados_reais.csv
+17,2026-06-16T17:00:00+00:00,weather,match_17,2026-06-16T17:00:00+00:00,data/context/pre_match_weather.csv
 18,2026-06-16T20:00:00+00:00,team_profile,Iraque,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 18,2026-06-16T20:00:00+00:00,team_profile,Noruega,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 18,2026-06-16T20:00:00+00:00,fixture,18,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -196,6 +205,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 18,2026-06-16T20:00:00+00:00,official_result,16,2026-06-15T22:30:00+00:00,data/resultados_reais.csv
 18,2026-06-16T20:00:00+00:00,official_result,13,2026-06-16T01:30:00+00:00,data/resultados_reais.csv
 18,2026-06-16T20:00:00+00:00,official_result,15,2026-06-16T04:30:00+00:00,data/resultados_reais.csv
+18,2026-06-16T20:00:00+00:00,weather,match_18,2026-06-16T20:00:00+00:00,data/context/pre_match_weather.csv
 19,2026-06-16T23:00:00+00:00,team_profile,Argentina,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 19,2026-06-16T23:00:00+00:00,team_profile,Argélia,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 19,2026-06-16T23:00:00+00:00,fixture,19,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -216,6 +226,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 19,2026-06-16T23:00:00+00:00,official_result,13,2026-06-16T01:30:00+00:00,data/resultados_reais.csv
 19,2026-06-16T23:00:00+00:00,official_result,15,2026-06-16T04:30:00+00:00,data/resultados_reais.csv
 19,2026-06-16T23:00:00+00:00,official_result,17,2026-06-16T22:30:00+00:00,data/resultados_reais.csv
+19,2026-06-16T23:00:00+00:00,weather,match_19,2026-06-16T23:00:00+00:00,data/context/pre_match_weather.csv
 20,2026-06-17T02:00:00+00:00,team_profile,Áustria,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 20,2026-06-17T02:00:00+00:00,team_profile,Jordânia,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 20,2026-06-17T02:00:00+00:00,fixture,20,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -283,6 +294,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 22,2026-06-17T18:00:00+00:00,official_result,18,2026-06-17T01:30:00+00:00,data/resultados_reais.csv
 22,2026-06-17T18:00:00+00:00,official_result,19,2026-06-17T04:30:00+00:00,data/resultados_reais.csv
 22,2026-06-17T18:00:00+00:00,official_result,20,2026-06-17T07:30:00+00:00,data/resultados_reais.csv
+22,2026-06-17T18:00:00+00:00,weather,match_22,2026-06-17T18:00:00+00:00,data/context/pre_match_weather.csv
 21,2026-06-17T21:00:00+00:00,team_profile,Gana,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 21,2026-06-17T21:00:00+00:00,team_profile,Panamá,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 21,2026-06-17T21:00:00+00:00,fixture,21,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv
@@ -307,6 +319,7 @@ prediction_match_id,prediction_cutoff,record_type,record_id,available_at,source
 21,2026-06-17T21:00:00+00:00,official_result,19,2026-06-17T04:30:00+00:00,data/resultados_reais.csv
 21,2026-06-17T21:00:00+00:00,official_result,20,2026-06-17T07:30:00+00:00,data/resultados_reais.csv
 21,2026-06-17T21:00:00+00:00,official_result,23,2026-06-17T20:30:00+00:00,data/resultados_reais.csv
+21,2026-06-17T21:00:00+00:00,weather,match_21,2026-06-17T21:00:00+00:00,data/context/pre_match_weather.csv
 24,2026-06-18T00:00:00+00:00,team_profile,Uzbequistão,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 24,2026-06-18T00:00:00+00:00,team_profile,Colômbia,2026-06-11T03:59:59+00:00,data/pre_worldcup_state/teams.csv
 24,2026-06-18T00:00:00+00:00,fixture,24,2026-06-11T03:59:59+00:00,data/temporal/matches_timeline.csv

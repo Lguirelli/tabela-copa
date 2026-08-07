@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T20:55:52.455806+00:00",
+  "generated_at": "2026-08-07T11:53:14.483901+00:00",
   "project_status": "READY_WITH_LIMITATIONS",
   "competition_id": "world_cup_2026",
   "architecture": "event-driven walk-forward temporal reconstruction",
@@ -22,7 +22,7 @@
     "post_match_learning_analyses": 104,
     "daily_model_versions": 36,
     "semantic_model_versions": 6,
-    "knowledge_ledger_records": 5571,
+    "knowledge_ledger_records": 5584,
     "accepted_temporal_features": 7,
     "temporal_validation_status": "VALID",
     "observed_lineup_rows": 5323,
@@ -70,13 +70,13 @@
   "missing_information": {
     "matches_checked": 104,
     "open_blocking": 0,
-    "na_after_source_exhaustion": 625
+    "na_after_source_exhaustion": 612
   },
   "latest_enrichment": {
     "queue_items": 0,
     "resolved_this_run": 0,
     "remaining_open": 0,
-    "supplemental_sources_checked": 0
+    "supplemental_sources_checked": 2
   },
   "last_historical_collection_check": {
     "queue_items_checked": 625,

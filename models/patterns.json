@@ -1,7 +1,7 @@
 {
   "loop": "04_pattern_discovery",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-08-06T21:06:26.681246+00:00",
+  "generated_at": "2026-08-07T11:53:16.529992+00:00",
   "inputs": [
     {
       "path": "data/resultados_reais.csv",

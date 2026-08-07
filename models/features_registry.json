@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T21:06:27.067858+00:00",
+  "generated_at": "2026-08-07T11:53:17.086440+00:00",
   "competition_id": "world_cup_2026",
   "acceptance_rule": {
     "minimum_samples": 30,
@@ -285,7 +285,7 @@
     }
   ],
   "temporal_worldcup_2026": {
-    "generated_at": "2026-08-06T20:52:05.608126+00:00",
+    "generated_at": "2026-08-07T11:53:12.398370+00:00",
     "acceptance_rule": {
       "minimum_samples": 24,
       "correlation_threshold": 0.12,
@@ -465,9 +465,9 @@
       {
         "feature": "heat_load",
         "status": "REJECTED",
-        "correlation_with_goal_difference": 0.0,
-        "permutation_p_value": 1.0,
-        "chronological_first_half_correlation": 0.0,
+        "correlation_with_goal_difference": 0.046892,
+        "permutation_p_value": 0.654485,
+        "chronological_first_half_correlation": 0.0172,
         "chronological_second_half_correlation": 0.0,
         "stable_direction": true,
         "sample_size": 104,
@@ -501,9 +501,9 @@
       {
         "feature": "rain_load",
         "status": "REJECTED",
-        "correlation_with_goal_difference": 0.0,
-        "permutation_p_value": 1.0,
-        "chronological_first_half_correlation": 0.0,
+        "correlation_with_goal_difference": 0.025399,
+        "permutation_p_value": 0.790698,
+        "chronological_first_half_correlation": 0.001278,
         "chronological_second_half_correlation": 0.0,
         "stable_direction": true,
         "sample_size": 104,
@@ -573,9 +573,9 @@
       {
         "feature": "wind_load",
         "status": "REJECTED",
-        "correlation_with_goal_difference": 0.0,
-        "permutation_p_value": 1.0,
-        "chronological_first_half_correlation": 0.0,
+        "correlation_with_goal_difference": 0.067584,
+        "permutation_p_value": 0.418605,
+        "chronological_first_half_correlation": 0.052186,
         "chronological_second_half_correlation": 0.0,
         "stable_direction": true,
         "sample_size": 104,

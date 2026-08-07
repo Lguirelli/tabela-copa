@@ -1,11 +1,11 @@
 {
   "loop": "02_data_enrichment",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-08-06T20:52:52.163754+00:00",
+  "generated_at": "2026-08-07T11:52:32.938621+00:00",
   "inputs": [
     {
       "path": "data/competitions/world_cup_2026/queues/missing_data.json",
-      "sha256": "2f29bca45753f10f3ec05647234eaddea548d1f750acf5fd4772b8a4809ea7e5",
+      "sha256": "8e34724b5a30c5f8be5df5307a3b4fdde9de0c9ae9d89176f525dfdc5300ab68",
       "size_bytes": 110
     }
   ],
@@ -13,8 +13,82 @@
     "queue_items": 0,
     "resolved_this_run": 0,
     "remaining_open": 0,
-    "supplemental_sources_checked": 0
+    "supplemental_sources_checked": 2
   },
-  "supplemental_sources": [],
+  "supplemental_sources": [
+    {
+      "source": "football_data_v4",
+      "success": false,
+      "reason": "environment variable FOOTBALL_DATA_API_TOKEN is not configured"
+    },
+    {
+      "source": "open_meteo_previous_runs",
+      "success": true,
+      "matches_received": 13,
+      "records_inserted": 13,
+      "failures": [
+        {
+          "match_id": 6,
+          "reason": "DateParseError: hour must be in 0..23: 2026-06-13 24:00"
+        },
+        {
+          "match_id": 9,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 10,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 11,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 12,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 13,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 14,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 15,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 20,
+          "reason": "DateParseError: hour must be in 0..23: 2026-06-16 24:00"
+        },
+        {
+          "match_id": 23,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        },
+        {
+          "match_id": 24,
+          "reason": "ReadTimeout: HTTPSConnectionPool(host='previous-runs-api.open-meteo.com', port=443): Read timed out. (read timeout=5)"
+        }
+      ],
+      "raw_files": [
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115130.818458+0000_eeaea06cfbc1.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115131.620958+0000_a77e60b5c959.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115132.244048+0000_9a279f9f0164.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115132.826942+0000_a4249a1bbd7f.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115133.511413+0000_e71ddf9e6a83.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115135.848531+0000_4be0672150c4.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115139.276750+0000_6a52ee33eb52.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115216.523426+0000_3258ef05f346.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115219.911985+0000_def2dd4aa3a4.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115220.810930+0000_4e2737e7355f.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115221.380488+0000_20ededd769c3.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115222.002365+0000_5b8c88c82c0a.json",
+        "data/raw/world_cup_2026/open_meteo_previous_runs/2026-08-07T115222.593306+0000_8e58e5eae56c.json"
+      ],
+      "target": "data/context/pre_match_weather.csv"
+    }
+  ],
   "log_path": "logs/competitions/world_cup_2026/enrichment_log.json"
 }

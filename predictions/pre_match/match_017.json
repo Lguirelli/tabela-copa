@@ -124,7 +124,7 @@
     "team1": "França",
     "team2": "Senegal",
     "status": "READY_WITH_NA",
-    "readiness_score": 0.4,
+    "readiness_score": 0.5,
     "checks": [
       {
         "field": "team_identity",
@@ -164,7 +164,7 @@
       },
       {
         "field": "weather",
-        "status": "NA_SOURCE_EXHAUSTED",
+        "status": "AVAILABLE",
         "priority": "non_blocking",
         "source": "data/context/pre_match_weather.csv"
       },
@@ -303,6 +303,12 @@
       "record_id": 15,
       "available_at": "2026-06-16T04:30:00+00:00",
       "source": "data/resultados_reais.csv"
+    },
+    {
+      "record_type": "weather",
+      "record_id": "match_17",
+      "available_at": "2026-06-16T17:00:00+00:00",
+      "source": "data/context/pre_match_weather.csv"
     }
   ],
   "prior_result_ids": [
@@ -325,7 +331,7 @@
   ],
   "temporal_integrity": {
     "cutoff": "2026-06-16T17:00:00+00:00",
-    "max_input_available_at": "2026-06-16T04:30:00+00:00",
+    "max_input_available_at": "2026-06-16T17:00:00+00:00",
     "current_match_result_used": false,
     "status": "PASS"
   }

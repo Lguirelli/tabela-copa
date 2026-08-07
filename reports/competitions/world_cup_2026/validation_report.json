@@ -1,7 +1,7 @@
 {
   "loop": "03_data_validation",
   "competition_id": "world_cup_2026",
-  "generated_at": "2026-08-06T21:06:26.588388+00:00",
+  "generated_at": "2026-08-07T11:53:16.401728+00:00",
   "inputs": [
     {
       "path": "data/matches.csv",
@@ -35,18 +35,18 @@
     },
     {
       "path": "data/database/players_database.csv",
-      "sha256": "156624077a8cdc1d51a5d44be9d9d5f23233eef136ceaedd3eaf43fccd64b0eb",
-      "size_bytes": 624647
+      "sha256": "c1446540364e9f15cf02486ea9981ab7284fda781ba65c56fd6ee98233c6c089",
+      "size_bytes": 623398
     },
     {
       "path": "data/database/team_strengths.csv",
-      "sha256": "53cf67c550c2ccc341ad5f8073885ffd03e16f4cdf42e23de4811d0a546bf97f",
-      "size_bytes": 11369
+      "sha256": "86539a15114e59cb153ded6db1c23c510337a3ab830e8d66b72dbf53b9bd5604",
+      "size_bytes": 11320
     },
     {
       "path": "data/database/teams_tactical.csv",
-      "sha256": "26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd",
-      "size_bytes": 12353
+      "sha256": "32e0d0e251d882dd92b113ef9e19b5c0b403467b04c95aa465e47e61ba9b9060",
+      "size_bytes": 12304
     },
     {
       "path": "data/platform/referees_observed.csv",
@@ -70,8 +70,8 @@
     },
     {
       "path": "data/context/pre_match_weather.csv",
-      "sha256": "80a4d69bfb33859d9df4fdd63dfd9e8acd3c81ba8e89e882fc8e9f73e2d78df6",
-      "size_bytes": 225
+      "sha256": "8715cee00f20427eb35dc6ef61a994ffe52b6c4aee4a1ad62aa92ad1414ae3a5",
+      "size_bytes": 7004
     },
     {
       "path": "data/external/football_data_matches.csv",

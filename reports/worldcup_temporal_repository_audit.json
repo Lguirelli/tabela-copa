@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-06T20:55:51.457095+00:00",
-  "repository_root": "tabela-copa-main-atualizado",
-  "files_analyzed": 1127,
+  "generated_at": "2026-08-07T11:53:13.801536+00:00",
+  "repository_root": "tabela-copa",
+  "files_analyzed": 1147,
   "files_by_extension": {
     ".css": 1,
     ".csv": 82,
     ".html": 13,
     ".ipynb": 2,
     ".js": 11,
-    ".json": 708,
+    ".json": 721,
     ".jsonl": 2,
-    ".md": 74,
+    ".md": 75,
     ".pdf": 1,
     ".png": 96,
     ".pt": 1,
     ".py": 74,
     ".svg": 48,
     ".toml": 1,
-    ".txt": 3,
+    ".txt": 8,
     ".yaml": 4,
     ".yml": 3,
-    "<none>": 3
+    "<none>": 4
   },
   "temporal_input_files": [
     {
@@ -38,20 +38,20 @@
     {
       "path": "data/database/team_strengths.csv",
       "exists": true,
-      "size_bytes": 11369,
-      "sha256": "53cf67c550c2ccc341ad5f8073885ffd03e16f4cdf42e23de4811d0a546bf97f"
+      "size_bytes": 11320,
+      "sha256": "86539a15114e59cb153ded6db1c23c510337a3ab830e8d66b72dbf53b9bd5604"
     },
     {
       "path": "data/database/teams_tactical.csv",
       "exists": true,
-      "size_bytes": 12353,
-      "sha256": "26c95d1cfbbaec0f6ba2a4b1b52862c05396d17c3f4c8445cb14539b716182bd"
+      "size_bytes": 12304,
+      "sha256": "32e0d0e251d882dd92b113ef9e19b5c0b403467b04c95aa465e47e61ba9b9060"
     },
     {
       "path": "data/database/players_database.csv",
       "exists": true,
-      "size_bytes": 624647,
-      "sha256": "156624077a8cdc1d51a5d44be9d9d5f23233eef136ceaedd3eaf43fccd64b0eb"
+      "size_bytes": 623398,
+      "sha256": "c1446540364e9f15cf02486ea9981ab7284fda781ba65c56fd6ee98233c6c089"
     },
     {
       "path": "data/normalized/espn_match_events.csv",
@@ -150,118 +150,118 @@
       "models/competitions/world_cup_2026/error_learning.json"
     ],
     [
-      "models/features_registry.json",
-      "models/competitions/world_cup_2026/features_registry.json"
-    ],
-    [
       "models/patterns.json",
       "models/competitions/world_cup_2026/patterns.json"
     ],
     [
-      "data/resultados.csv",
-      "data/resultados_reais.csv"
+      "models/competitions/world_cup_2026/simulations/latest.csv",
+      "models/simulations/latest.csv"
     ],
     [
-      "data/matches.csv",
-      "data/database/matches.csv"
+      "models/competitions/world_cup_2026/simulations/latest.json",
+      "models/simulations/latest.json"
     ],
     [
       "logs/enrichment_log.json",
       "logs/competitions/world_cup_2026/enrichment_log.json"
     ],
     [
-      "reports/model_recalibration_report.json",
-      "reports/competitions/world_cup_2026/model_recalibration_report.json"
-    ],
-    [
-      "reports/validation_report.json",
-      "reports/competitions/world_cup_2026/validation_report.json"
-    ],
-    [
-      "reports/derived_player_facts_report.json",
-      "reports/competitions/world_cup_2026/derived_player_facts_report.json"
-    ],
-    [
       "reports/data_completeness_report.json",
       "reports/competitions/world_cup_2026/data_completeness_report.json"
-    ],
-    [
-      "reports/enrichment_report.json",
-      "reports/competitions/world_cup_2026/enrichment_report.json"
     ],
     [
       "reports/final_system_status.json",
       "reports/competitions/world_cup_2026/final_system_status.json"
     ],
     [
-      "models/simulations/latest.json",
-      "models/competitions/world_cup_2026/simulations/latest.json"
+      "reports/enrichment_report.json",
+      "reports/competitions/world_cup_2026/enrichment_report.json"
     ],
     [
-      "models/simulations/latest.csv",
-      "models/competitions/world_cup_2026/simulations/latest.csv"
+      "reports/model_recalibration_report.json",
+      "reports/competitions/world_cup_2026/model_recalibration_report.json"
+    ],
+    [
+      "reports/derived_player_facts_report.json",
+      "reports/competitions/world_cup_2026/derived_player_facts_report.json"
+    ],
+    [
+      "reports/validation_report.json",
+      "reports/competitions/world_cup_2026/validation_report.json"
+    ],
+    [
+      "src/replicable_sports_engine.egg-info/dependency_links.txt",
+      "src/replicable_sports_engine.egg-info/top_level.txt"
+    ],
+    [
+      "data/resultados_reais.csv",
+      "data/resultados.csv"
+    ],
+    [
+      "data/matches.csv",
+      "data/database/matches.csv"
     ],
     [
       "data/temporal/missing_information_queue.json",
       "data/queues/missing_information_queue.json"
     ],
     [
-      "data/queues/missing_data.json",
-      "data/competitions/world_cup_2026/queues/missing_data.json"
+      "data/competitions/world_cup_2026/queues/missing_data.json",
+      "data/queues/missing_data.json"
     ],
     [
-      "data/modelo_diario/previsoes_dia_a_dia.csv",
-      "data/modelo_diario/projecao_chaveamento_completa.csv"
+      "data/modelo_diario/projecao_chaveamento_completa.csv",
+      "data/modelo_diario/previsoes_dia_a_dia.csv"
     ],
     [
-      "assets/teams/SCO_escocia/sources.md",
-      "assets/teams/NLD_holanda/sources.md",
-      "assets/teams/UZB_uzbequistao/sources.md",
-      "assets/teams/HTI_haiti/sources.md",
-      "assets/teams/FRA_franca/sources.md",
-      "assets/teams/DEU_alemanha/sources.md",
-      "assets/teams/ECU_equador/sources.md",
-      "assets/teams/MAR_marrocos/sources.md",
-      "assets/teams/EGY_egito/sources.md",
-      "assets/teams/COL_colombia/sources.md",
-      "assets/teams/URY_uruguai/sources.md",
-      "assets/teams/GHA_gana/sources.md",
-      "assets/teams/ZAF_africa-do-sul/sources.md",
-      "assets/teams/SAU_arabia-saudita/sources.md",
-      "assets/teams/CZE_tchequia/sources.md",
-      "assets/teams/PAN_panama/sources.md",
-      "assets/teams/TUR_turquia/sources.md",
-      "assets/teams/BRA_brasil/sources.md",
-      "assets/teams/USA_estados-unidos/sources.md",
-      "assets/teams/TUN_tunisia/sources.md",
-      "assets/teams/SWE_suecia/sources.md",
-      "assets/teams/AUS_australia/sources.md",
-      "assets/teams/MEX_mexico/sources.md",
-      "assets/teams/NZL_nova-zelandia/sources.md",
-      "assets/teams/PRT_portugal/sources.md",
-      "assets/teams/CUW_curacao/sources.md",
-      "assets/teams/ESP_espanha/sources.md",
-      "assets/teams/CHE_suica/sources.md",
-      "assets/teams/JPN_japao/sources.md",
-      "assets/teams/IRQ_iraque/sources.md",
-      "assets/teams/NOR_noruega/sources.md",
-      "assets/teams/ARG_argentina/sources.md",
-      "assets/teams/ENG_inglaterra/sources.md",
-      "assets/teams/BEL_belgica/sources.md",
-      "assets/teams/KOR_coreia-do-sul/sources.md",
-      "assets/teams/JOR_jordania/sources.md",
-      "assets/teams/IRN_ira/sources.md",
-      "assets/teams/DZA_argelia/sources.md",
-      "assets/teams/HRV_croacia/sources.md",
-      "assets/teams/COD_rd-congo/sources.md",
-      "assets/teams/QAT_catar/sources.md",
-      "assets/teams/CPV_cabo-verde/sources.md",
-      "assets/teams/SEN_senegal/sources.md",
       "assets/teams/PRY_paraguai/sources.md",
-      "assets/teams/CAN_canada/sources.md",
+      "assets/teams/QAT_catar/sources.md",
+      "assets/teams/AUS_australia/sources.md",
+      "assets/teams/ESP_espanha/sources.md",
       "assets/teams/CIV_costa-do-marfim/sources.md",
+      "assets/teams/SCO_escocia/sources.md",
+      "assets/teams/KOR_coreia-do-sul/sources.md",
+      "assets/teams/MAR_marrocos/sources.md",
+      "assets/teams/USA_estados-unidos/sources.md",
+      "assets/teams/BRA_brasil/sources.md",
+      "assets/teams/CAN_canada/sources.md",
+      "assets/teams/HTI_haiti/sources.md",
+      "assets/teams/IRQ_iraque/sources.md",
+      "assets/teams/CZE_tchequia/sources.md",
+      "assets/teams/DZA_argelia/sources.md",
+      "assets/teams/CUW_curacao/sources.md",
+      "assets/teams/CPV_cabo-verde/sources.md",
+      "assets/teams/TUR_turquia/sources.md",
+      "assets/teams/SEN_senegal/sources.md",
+      "assets/teams/HRV_croacia/sources.md",
+      "assets/teams/ARG_argentina/sources.md",
+      "assets/teams/GHA_gana/sources.md",
+      "assets/teams/FRA_franca/sources.md",
+      "assets/teams/IRN_ira/sources.md",
+      "assets/teams/PAN_panama/sources.md",
+      "assets/teams/URY_uruguai/sources.md",
+      "assets/teams/MEX_mexico/sources.md",
+      "assets/teams/NLD_holanda/sources.md",
+      "assets/teams/BEL_belgica/sources.md",
+      "assets/teams/SAU_arabia-saudita/sources.md",
+      "assets/teams/UZB_uzbequistao/sources.md",
+      "assets/teams/SWE_suecia/sources.md",
+      "assets/teams/BIH_bosnia-e-herzegovina/sources.md",
+      "assets/teams/COL_colombia/sources.md",
+      "assets/teams/EGY_egito/sources.md",
+      "assets/teams/TUN_tunisia/sources.md",
+      "assets/teams/NZL_nova-zelandia/sources.md",
+      "assets/teams/NOR_noruega/sources.md",
+      "assets/teams/ENG_inglaterra/sources.md",
+      "assets/teams/CHE_suica/sources.md",
       "assets/teams/AUT_austria/sources.md",
-      "assets/teams/BIH_bosnia-e-herzegovina/sources.md"
+      "assets/teams/ECU_equador/sources.md",
+      "assets/teams/DEU_alemanha/sources.md",
+      "assets/teams/JOR_jordania/sources.md",
+      "assets/teams/JPN_japao/sources.md",
+      "assets/teams/COD_rd-congo/sources.md",
+      "assets/teams/ZAF_africa-do-sul/sources.md",
+      "assets/teams/PRT_portugal/sources.md"
     ]
   ],
   "duplicate_note": "Exact duplicates are reported for audit only; compatibility mirrors and asset variants are not removed automatically.",

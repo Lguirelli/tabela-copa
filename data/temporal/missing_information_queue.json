@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T20:52:05.412505+00:00",
+  "generated_at": "2026-08-07T11:53:12.094651+00:00",
   "competition_id": "world_cup_2026",
   "items": [
     {
@@ -36,18 +36,6 @@
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
       "required_before": "2026-06-11T17:00:00+00:00",
       "source_candidate": "data/temporal/archived_news.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 1,
-      "team1": "México",
-      "team2": "África do Sul",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-11T17:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
       "temporal_rule": "source record must have published_at/available_at <= required_before"
     },
     {
@@ -127,18 +115,6 @@
       "entity_id": 2,
       "team1": "Coreia do Sul",
       "team2": "Tchéquia",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-12T00:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 2,
-      "team1": "Coreia do Sul",
-      "team2": "Tchéquia",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -199,18 +175,6 @@
       "entity_id": 3,
       "team1": "Canadá",
       "team2": "Bósnia e Herzegovina",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-12T17:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 3,
-      "team1": "Canadá",
-      "team2": "Bósnia e Herzegovina",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -271,18 +235,6 @@
       "entity_id": 4,
       "team1": "Estados Unidos",
       "team2": "Paraguai",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-12T23:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 4,
-      "team1": "Estados Unidos",
-      "team2": "Paraguai",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -343,18 +295,6 @@
       "entity_id": 8,
       "team1": "Catar",
       "team2": "Suíça",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-13T17:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 8,
-      "team1": "Catar",
-      "team2": "Suíça",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -415,18 +355,6 @@
       "entity_id": 7,
       "team1": "Brasil",
       "team2": "Marrocos",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-13T20:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 7,
-      "team1": "Brasil",
-      "team2": "Marrocos",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -487,18 +415,6 @@
       "entity_id": 5,
       "team1": "Haiti",
       "team2": "Escócia",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-13T23:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 5,
-      "team1": "Haiti",
-      "team2": "Escócia",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -991,18 +907,6 @@
       "entity_id": 16,
       "team1": "Bélgica",
       "team2": "Egito",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-15T17:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 16,
-      "team1": "Bélgica",
-      "team2": "Egito",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -1207,18 +1111,6 @@
       "entity_id": 17,
       "team1": "França",
       "team2": "Senegal",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-16T17:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 17,
-      "team1": "França",
-      "team2": "Senegal",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -1279,18 +1171,6 @@
       "entity_id": 18,
       "team1": "Iraque",
       "team2": "Noruega",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-16T20:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 18,
-      "team1": "Iraque",
-      "team2": "Noruega",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -1351,18 +1231,6 @@
       "entity_id": 19,
       "team1": "Argentina",
       "team2": "Argélia",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-16T23:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 19,
-      "team1": "Argentina",
-      "team2": "Argélia",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -1567,18 +1435,6 @@
       "entity_id": 22,
       "team1": "Inglaterra",
       "team2": "Croácia",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-17T18:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 22,
-      "team1": "Inglaterra",
-      "team2": "Croácia",
       "missing_field": "travel",
       "priority": "medium",
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
@@ -1632,18 +1488,6 @@
       "status": "NA_AFTER_SOURCE_EXHAUSTION",
       "required_before": "2026-06-17T21:00:00+00:00",
       "source_candidate": "data/temporal/archived_news.csv",
-      "temporal_rule": "source record must have published_at/available_at <= required_before"
-    },
-    {
-      "entity": "match",
-      "entity_id": 21,
-      "team1": "Gana",
-      "team2": "Panamá",
-      "missing_field": "weather",
-      "priority": "medium",
-      "status": "NA_AFTER_SOURCE_EXHAUSTION",
-      "required_before": "2026-06-17T21:00:00+00:00",
-      "source_candidate": "data/context/pre_match_weather.csv",
       "temporal_rule": "source record must have published_at/available_at <= required_before"
     },
     {
@@ -7506,6 +7350,6 @@
   "summary": {
     "matches_checked": 104,
     "open_blocking": 0,
-    "na_after_source_exhaustion": 625
+    "na_after_source_exhaustion": 612
   }
 }

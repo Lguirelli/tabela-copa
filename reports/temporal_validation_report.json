@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-06T20:55:51.967101+00:00",
+  "generated_at": "2026-08-07T11:53:13.198502+00:00",
   "status": "VALID",
   "summary": {
     "timeline_matches": 104,
     "predictions": 104,
     "learning_analyses": 104,
-    "knowledge_records": 5571,
+    "knowledge_records": 5584,
     "model_versions": 36,
     "issues": 0
   },
