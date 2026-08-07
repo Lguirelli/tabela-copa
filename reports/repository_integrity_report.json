@@ -1,0 +1,52 @@
+{
+<<<<<<< HEAD
+  "generated_at": "2026-08-06T21:06:25.207885+00:00",
+  "status": "VALID",
+  "summary": {
+    "parsed_files": {
+      "python": 74,
+      "yaml": 7,
+      "json": 708,
+      "csv": 82
+=======
+  "generated_at": "2026-07-28T19:24:01.711697+00:00",
+  "status": "VALID",
+  "summary": {
+    "parsed_files": {
+      "python": 71,
+      "yaml": 6,
+      "json": 709,
+      "csv": 78
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+    },
+    "controlled_mirrors_checked": 3,
+    "issues": 0,
+    "required_artifacts_checked": 13
+  },
+  "mirror_checks": [
+    {
+      "domain": "matches",
+      "canonical": "data/matches.csv",
+      "mirror": "data/database/matches.csv",
+      "status": "VALID"
+    },
+    {
+      "domain": "results",
+      "canonical": "data/resultados_reais.csv",
+      "mirror": "data/resultados.csv",
+      "status": "VALID"
+    },
+    {
+      "domain": "predictions_daily",
+      "canonical": "data/modelo_diario/previsoes_dia_a_dia.csv",
+      "mirror": "data/modelo_diario/projecao_chaveamento_completa.csv",
+      "status": "VALID"
+    }
+  ],
+  "issues": [],
+  "duplicate_policy": {
+    "controlled_dataset_mirrors": "allowed only when declared in data/catalog.json and byte-identical",
+    "team_source_templates": "identical sources.md templates are documentation scaffolding, not competing data sources",
+    "all_other_duplicate_sources_of_truth": "not allowed"
+  }
+}

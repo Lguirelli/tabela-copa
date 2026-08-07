@@ -1,0 +1,624 @@
+{
+<<<<<<< HEAD
+  "generated_at": "2026-08-06T21:06:27.067858+00:00",
+=======
+  "generated_at": "2026-07-28T19:23:02.772391+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+  "competition_id": "world_cup_2026",
+  "acceptance_rule": {
+    "minimum_samples": 30,
+    "absolute_correlation_threshold": 0.08,
+    "requires_stable_direction_across_chronological_halves": true
+  },
+  "features": [
+    {
+      "feature": "feature_possession_diff",
+      "concept": "style",
+      "status": "ACCEPTED",
+      "correlation": 0.513843,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.377444,
+      "second_half_correlation": 0.601181,
+      "confidence": 0.99,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_pressing_diff",
+      "concept": "style",
+      "status": "ACCEPTED",
+      "correlation": 0.329884,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.306532,
+      "second_half_correlation": 0.318475,
+      "confidence": 0.965409,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_intensity_diff",
+      "concept": "style",
+      "status": "ACCEPTED",
+      "correlation": 0.104051,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.084276,
+      "second_half_correlation": 0.128775,
+      "confidence": 0.653929,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_league_diff",
+      "concept": "league_quality",
+      "status": "ACCEPTED",
+      "correlation": 0.461766,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.481768,
+      "second_half_correlation": 0.426409,
+      "confidence": 0.99,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_player_quality_diff",
+      "concept": "player_quality",
+      "status": "ACCEPTED",
+      "correlation": 0.499993,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.414232,
+      "second_half_correlation": 0.538785,
+      "confidence": 0.99,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_momentum_diff",
+      "concept": "recent_form",
+      "status": "ACCEPTED",
+      "correlation": 0.31492,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.227337,
+      "second_half_correlation": 0.365474,
+      "confidence": 0.959707,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_offensive_form_diff",
+      "concept": "recent_form",
+      "status": "ACCEPTED",
+      "correlation": 0.258007,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.334191,
+      "second_half_correlation": 0.219612,
+      "confidence": 0.928006,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_defensive_form_diff",
+      "concept": "recent_form",
+      "status": "ACCEPTED",
+      "correlation": 0.174536,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.068374,
+      "second_half_correlation": 0.246522,
+      "confidence": 0.831349,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    }
+  ],
+  "evaluated_candidates": [
+    {
+      "feature": "feature_rest_diff",
+      "concept": "rest",
+      "status": "REJECTED",
+      "correlation": -0.070856,
+      "sample_size": 104,
+      "stable_direction": false,
+      "first_half_correlation": 0.177418,
+      "second_half_correlation": -0.11092,
+      "confidence": 0.51451,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_experience_diff",
+      "concept": "experience",
+      "status": "REJECTED",
+      "correlation": 0.088479,
+      "sample_size": 104,
+      "stable_direction": false,
+      "first_half_correlation": -0.061899,
+      "second_half_correlation": 0.201224,
+      "confidence": 0.59437,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_possession_diff",
+      "concept": "style",
+      "status": "ACCEPTED",
+      "correlation": 0.513843,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.377444,
+      "second_half_correlation": 0.601181,
+      "confidence": 0.99,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_pressing_diff",
+      "concept": "style",
+      "status": "ACCEPTED",
+      "correlation": 0.329884,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.306532,
+      "second_half_correlation": 0.318475,
+      "confidence": 0.965409,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_intensity_diff",
+      "concept": "style",
+      "status": "ACCEPTED",
+      "correlation": 0.104051,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.084276,
+      "second_half_correlation": 0.128775,
+      "confidence": 0.653929,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_schedule_strength_diff",
+      "concept": "calendar",
+      "status": "REJECTED",
+      "correlation": -0.009573,
+      "sample_size": 104,
+      "stable_direction": false,
+      "first_half_correlation": 0.179683,
+      "second_half_correlation": -0.26186,
+      "confidence": 0.093014,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_rest_diff",
+      "concept": "physical_load",
+      "status": "REJECTED",
+      "correlation": -0.070856,
+      "sample_size": 104,
+      "stable_direction": false,
+      "first_half_correlation": 0.177418,
+      "second_half_correlation": -0.11092,
+      "confidence": 0.51451,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_league_diff",
+      "concept": "league_quality",
+      "status": "ACCEPTED",
+      "correlation": 0.461766,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.481768,
+      "second_half_correlation": 0.426409,
+      "confidence": 0.99,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_player_quality_diff",
+      "concept": "player_quality",
+      "status": "ACCEPTED",
+      "correlation": 0.499993,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.414232,
+      "second_half_correlation": 0.538785,
+      "confidence": 0.99,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_momentum_diff",
+      "concept": "recent_form",
+      "status": "ACCEPTED",
+      "correlation": 0.31492,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.227337,
+      "second_half_correlation": 0.365474,
+      "confidence": 0.959707,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_offensive_form_diff",
+      "concept": "recent_form",
+      "status": "ACCEPTED",
+      "correlation": 0.258007,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.334191,
+      "second_half_correlation": 0.219612,
+      "confidence": 0.928006,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    },
+    {
+      "feature": "feature_defensive_form_diff",
+      "concept": "recent_form",
+      "status": "ACCEPTED",
+      "correlation": 0.174536,
+      "sample_size": 104,
+      "stable_direction": true,
+      "first_half_correlation": 0.068374,
+      "second_half_correlation": 0.246522,
+      "confidence": 0.831349,
+      "provenance": "derived from configured prediction features and real results",
+      "data_type": "derived"
+    }
+  ],
+  "unavailable_concepts": [
+    {
+      "concept": "travel",
+      "reason": "no observed or derived column is available"
+    },
+    {
+      "concept": "average_age",
+      "reason": "no observed or derived column is available"
+    },
+    {
+      "concept": "refereeing",
+      "reason": "no observed or derived column is available"
+    }
+  ],
+  "temporal_worldcup_2026": {
+<<<<<<< HEAD
+    "generated_at": "2026-08-06T20:52:05.608126+00:00",
+=======
+    "generated_at": "2026-07-28T19:21:52.734321+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+    "acceptance_rule": {
+      "minimum_samples": 24,
+      "correlation_threshold": 0.12,
+      "permutation_p_value": 0.05
+    },
+    "features": [
+      {
+        "feature": "attack_vs_defense",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.413011,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.45489,
+        "chronological_second_half_correlation": 0.362556,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "defense_vs_attack",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.298776,
+        "permutation_p_value": 0.009967,
+        "chronological_first_half_correlation": 0.195411,
+        "chronological_second_half_correlation": 0.35288,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "form_goal_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.321167,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.137567,
+        "chronological_second_half_correlation": 0.466839,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "form_points_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.310071,
+        "permutation_p_value": 0.009967,
+        "chronological_first_half_correlation": 0.124356,
+        "chronological_second_half_correlation": 0.447361,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "goalkeeper_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.347354,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.166296,
+        "chronological_second_half_correlation": 0.475232,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "initial_strength_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.458883,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.388256,
+        "chronological_second_half_correlation": 0.495372,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "rating_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.504834,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.429162,
+        "chronological_second_half_correlation": 0.556271,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      }
+    ],
+    "evaluated_candidates": [
+      {
+        "feature": "attack_vs_defense",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.413011,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.45489,
+        "chronological_second_half_correlation": 0.362556,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "defense_vs_attack",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.298776,
+        "permutation_p_value": 0.009967,
+        "chronological_first_half_correlation": 0.195411,
+        "chronological_second_half_correlation": 0.35288,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "experience_diff",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.124969,
+        "permutation_p_value": 0.199336,
+        "chronological_first_half_correlation": 0.008073,
+        "chronological_second_half_correlation": 0.231542,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "form_goal_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.321167,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.137567,
+        "chronological_second_half_correlation": 0.466839,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "form_points_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.310071,
+        "permutation_p_value": 0.009967,
+        "chronological_first_half_correlation": 0.124356,
+        "chronological_second_half_correlation": 0.447361,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "games_diff",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.0,
+        "permutation_p_value": 1.0,
+        "chronological_first_half_correlation": 0.0,
+        "chronological_second_half_correlation": 0.0,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "goalkeeper_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.347354,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.166296,
+        "chronological_second_half_correlation": 0.475232,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+<<<<<<< HEAD
+        "feature": "heat_load",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.0,
+        "permutation_p_value": 1.0,
+        "chronological_first_half_correlation": 0.0,
+        "chronological_second_half_correlation": 0.0,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "feature": "initial_strength_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.458883,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.388256,
+        "chronological_second_half_correlation": 0.495372,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "knockout",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": -0.086721,
+<<<<<<< HEAD
+        "permutation_p_value": 0.378738,
+=======
+        "permutation_p_value": 0.352159,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "chronological_first_half_correlation": 0.0,
+        "chronological_second_half_correlation": 0.169,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+<<<<<<< HEAD
+        "feature": "rain_load",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.0,
+        "permutation_p_value": 1.0,
+        "chronological_first_half_correlation": 0.0,
+        "chronological_second_half_correlation": 0.0,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "feature": "rating_diff",
+        "status": "ACCEPTED",
+        "correlation_with_goal_difference": 0.504834,
+        "permutation_p_value": 0.003322,
+        "chronological_first_half_correlation": 0.429162,
+        "chronological_second_half_correlation": 0.556271,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "rest_days_team1",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.179575,
+<<<<<<< HEAD
+        "permutation_p_value": 0.076412,
+=======
+        "permutation_p_value": 0.059801,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "chronological_first_half_correlation": 0.01377,
+        "chronological_second_half_correlation": 0.024611,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "rest_days_team2",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.145093,
+<<<<<<< HEAD
+        "permutation_p_value": 0.169435,
+=======
+        "permutation_p_value": 0.156146,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "chronological_first_half_correlation": -0.171462,
+        "chronological_second_half_correlation": 0.054585,
+        "stable_direction": false,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "rest_diff",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.058497,
+<<<<<<< HEAD
+        "permutation_p_value": 0.51495,
+=======
+        "permutation_p_value": 0.518272,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "chronological_first_half_correlation": 0.357333,
+        "chronological_second_half_correlation": -0.035016,
+        "stable_direction": false,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+      },
+      {
+        "feature": "schedule_strength_diff",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.001532,
+<<<<<<< HEAD
+        "permutation_p_value": 0.986711,
+=======
+        "permutation_p_value": 0.990033,
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+        "chronological_first_half_correlation": 0.085283,
+        "chronological_second_half_correlation": -0.057437,
+        "stable_direction": false,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+<<<<<<< HEAD
+      },
+      {
+        "feature": "wind_load",
+        "status": "REJECTED",
+        "correlation_with_goal_difference": 0.0,
+        "permutation_p_value": 1.0,
+        "chronological_first_half_correlation": 0.0,
+        "chronological_second_half_correlation": 0.0,
+        "stable_direction": true,
+        "sample_size": 104,
+        "evidence_rule": "abs(correlation)>=0.12, permutation_p<=0.05, stable chronological direction",
+        "temporal_provenance": "feature values were frozen at each pre-match cutoff"
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+      }
+    ]
+  }
+}

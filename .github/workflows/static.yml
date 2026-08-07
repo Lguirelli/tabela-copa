@@ -1,0 +1,61 @@
+name: Deploy static content to Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - ".nojekyll"
+      - "assets/**"
+      - "src/**"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Pages artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+<<<<<<< HEAD
+      - name: Build and validate minimal static artifact
+        run: python scripts/build_static_site.py --output build/site
+=======
+      - name: Validate static site entrypoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          for page in rede-neural.html modelo-evolucao.html modelo-previsoes.html modelo-aprendizado.html modelo-simulacoes.html modelo-versoes.html; do
+            test -f "$page"
+          done
+          test -f src/model-analytics-data.js
+          test -f src/model-pages.js
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

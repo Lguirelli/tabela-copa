@@ -1,0 +1,115 @@
+{
+  "loop": "08_model_recalibration",
+  "competition_id": "world_cup_2026",
+<<<<<<< HEAD
+  "generated_at": "2026-08-06T21:06:26.747963+00:00",
+=======
+  "generated_at": "2026-07-28T19:23:02.207418+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+  "inputs": [
+    {
+      "path": "data/modelo_diario/previsoes_dia_a_dia.csv",
+      "sha256": "2d176d5d06be3e1e5ab5c8567af917d8ae4afcb5e8df2ea9f94def097a994f14",
+      "size_bytes": 52042
+    },
+    {
+      "path": "data/resultados_reais.csv",
+      "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101",
+      "size_bytes": 35210
+    }
+  ],
+  "status": "CANDIDATE_REJECTED",
+  "reason": null,
+  "model": {
+    "version": "world_cup_2026_7b85a22a2f199bbb",
+    "trained_at": "2026-07-20T14:35:10.897929+00:00",
+    "input_signature": "7b85a22a2f199bbbd99842e2770b5d4c131ed7781024dce7c0cf39ff9e834500",
+    "competition_id": "world_cup_2026",
+    "status": "CANDIDATE_REJECTED",
+    "training_matches": 83,
+    "validation_matches": 21,
+    "features": [
+      "feature_possession_diff",
+      "feature_pressing_diff",
+      "feature_intensity_diff",
+      "feature_league_diff",
+      "feature_player_quality_diff",
+      "feature_momentum_diff",
+      "feature_offensive_form_diff",
+      "feature_defensive_form_diff"
+    ],
+    "feature_means": {
+      "feature_possession_diff": 0.4819277108433735,
+      "feature_pressing_diff": 0.3927710843373494,
+      "feature_intensity_diff": 0.2602409638554217,
+      "feature_league_diff": 1.664843373493976,
+      "feature_player_quality_diff": 2.056921686746988,
+      "feature_momentum_diff": 0.005187951807228906,
+      "feature_offensive_form_diff": 0.0016518072289156587,
+      "feature_defensive_form_diff": -0.0038481927710843364
+    },
+    "feature_scales": {
+      "feature_possession_diff": 2.6658096072758375,
+      "feature_pressing_diff": 2.206768510934174,
+      "feature_intensity_diff": 1.6935696782800032,
+      "feature_league_diff": 14.037956102225076,
+      "feature_player_quality_diff": 7.935911018072129,
+      "feature_momentum_diff": 0.5662265729396969,
+      "feature_offensive_form_diff": 0.3857831669400886,
+      "feature_defensive_form_diff": 0.3925666918588164
+    },
+    "goal_difference_coefficients": [
+      0.6265060240963857,
+      0.582437780474846,
+      -0.2899139717857574,
+      0.6155873323538601,
+      0.5717336317563065,
+      0.362865515959693,
+      0.08866478465250724,
+      0.03225371938750222,
+      0.1732890149804039
+    ],
+    "total_goals_coefficients": [
+      2.9397590361445785,
+      -0.1838191605533164,
+      0.07034334094469773,
+      -0.004212657029427705,
+      0.23603506739478486,
+      0.02976779622194367,
+      -0.14541139968654332,
+      0.06212640847509854,
+      -0.12755545663463813
+    ],
+    "metrics": {
+      "baseline_goal_difference_mae": 1.251048,
+      "recalibrated_goal_difference_mae": 1.219244,
+      "baseline_total_goals_mae": 1.526381,
+      "recalibrated_total_goals_mae": 1.559349,
+      "baseline_average_mae": 1.388714,
+      "recalibrated_average_mae": 1.389296
+    },
+    "promotion_rule": "lower chronological holdout average MAE",
+    "data_lineage": {
+      "loop": "08_model_recalibration",
+      "competition_id": "world_cup_2026",
+      "generated_at": "2026-07-20T14:35:10.897952+00:00",
+      "inputs": [
+        {
+          "path": "data/modelo_diario/previsoes_dia_a_dia.csv",
+          "sha256": "2d176d5d06be3e1e5ab5c8567af917d8ae4afcb5e8df2ea9f94def097a994f14",
+          "size_bytes": 52042
+        },
+        {
+          "path": "data/resultados_reais.csv",
+          "sha256": "c6a4040fb0d5ec6972337a894180ee59e698f9cb41b5d3ba1f74edc824e41101",
+          "size_bytes": 35210
+        },
+        {
+          "path": "models/competitions/world_cup_2026/features_registry.json",
+          "sha256": "02e6b87c32a054f595af1ff139a2107a04dc6e366d1b1136f37934b8d73270aa",
+          "size_bytes": 9283
+        }
+      ]
+    }
+  }
+}

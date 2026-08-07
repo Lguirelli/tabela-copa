@@ -1,0 +1,33 @@
+# Saídas locais/temporárias
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
+
+# Bases de desempenho geradas localmente. A fonte versionada é data/entrada/desempenho_manual.csv
+data/desempenho/
+src/desempenho-data.js
+
+# Artefatos de execução local
+logs/pipeline/
+.cache/
+*.log
+<<<<<<< HEAD
+*.tmp
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+<<<<<<< HEAD
+build/site/
+_site/
+reports/pipeline/
+=======
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+
+# Relatórios legados de execução única
+VALIDACAO_FINAL_REPOSITORIO_*.json
+VALIDACAO_RECALCULO_PROBABILIDADES.json

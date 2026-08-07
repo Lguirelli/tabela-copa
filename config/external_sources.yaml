@@ -1,0 +1,55 @@
+version: 1
+policy:
+  observed_values_are_immutable: true
+  require_source_url: true
+  require_collected_at: true
+  require_available_at_for_predictive_features: true
+  reject_post_match_data_from_pre_match_features: true
+  unavailable_values: NA
+
+sources:
+  fifa_world_ranking:
+    authority: primary
+    provider: FIFA
+    access: curated_snapshot
+    url: https://inside.fifa.com/fifa-world-ranking/men
+    provides: [ranking, ranking_points]
+    destination: data/external/fifa_rankings.csv
+    temporal_key: published_at
+    notes: FIFA has no stable public bulk API in this project; snapshots must retain their publication timestamp.
+
+  football_data_v4:
+    authority: independent_structured_provider
+    provider: football-data.org
+    access: api_token
+    token_env: FOOTBALL_DATA_API_TOKEN
+    url: https://api.football-data.org/v4
+    provides: [fixtures, results, head_to_head, recent_form]
+    destination: data/external/football_data_matches.csv
+    temporal_key: published_at
+
+  statsbomb_open_data:
+    authority: open_historical_provider
+    provider: Hudl StatsBomb
+    access: public_repository
+    url: https://github.com/statsbomb/open-data
+    provides: [historical_events, lineups, selected_360_frames]
+    usage: offline_pretraining_and_feature_validation_only
+    notes: Coverage varies by competition and season; never infer 2026 facts from absent historical coverage.
+
+  open_meteo_previous_runs:
+    authority: archived_forecast_provider
+    provider: Open-Meteo
+    access: public_api
+    url: https://previous-runs-api.open-meteo.com/v1/forecast
+    provides: [temperature, humidity, precipitation, wind]
+    destination: data/context/pre_match_weather.csv
+    temporal_key: available_at
+    notes: Uses archived previous model runs, not post-match observations, in historical prediction replay.
+
+  espn_public:
+    authority: secondary_structured_provider
+    provider: ESPN
+    access: public_json
+    provides: [scoreboard, events, team_statistics, lineups, player_statistics]
+    notes: Existing adapter; independent sources should confirm critical results.

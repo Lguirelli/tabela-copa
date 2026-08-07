@@ -1,0 +1,17 @@
+stadium,city,country,latitude,longitude,timezone,coordinate_source
+Estadio Azteca,Mexico City,México,19.3029,-99.1505,America/Mexico_City,repository_curated_venue_mapping
+Estadio Akron,Guadalajara,México,20.6818,-103.4627,America/Mexico_City,repository_curated_venue_mapping
+BMO Field,Toronto,Canadá,43.6332,-79.4186,America/Toronto,repository_curated_venue_mapping
+SoFi Stadium,Los Angeles,Estados Unidos,33.9535,-118.3392,America/Los_Angeles,repository_curated_venue_mapping
+Gillette Stadium,Boston,Estados Unidos,42.0909,-71.2643,America/New_York,repository_curated_venue_mapping
+BC Place,Vancouver,Canadá,49.2768,-123.1119,America/Vancouver,repository_curated_venue_mapping
+MetLife Stadium,New York/New Jersey,Estados Unidos,40.8135,-74.0745,America/New_York,repository_curated_venue_mapping
+Levi's Stadium,San Francisco Bay Area,Estados Unidos,37.4030,-121.9700,America/Los_Angeles,repository_curated_venue_mapping
+Lincoln Financial Field,Philadelphia,Estados Unidos,39.9008,-75.1675,America/New_York,repository_curated_venue_mapping
+NRG Stadium,Houston,Estados Unidos,29.6847,-95.4107,America/Chicago,repository_curated_venue_mapping
+AT&T Stadium,Dallas,Estados Unidos,32.7473,-97.0945,America/Chicago,repository_curated_venue_mapping
+Estadio BBVA,Monterrey,México,25.6693,-100.2443,America/Monterrey,repository_curated_venue_mapping
+Hard Rock Stadium,Miami,Estados Unidos,25.9580,-80.2389,America/New_York,repository_curated_venue_mapping
+Mercedes-Benz Stadium,Atlanta,Estados Unidos,33.7554,-84.4008,America/New_York,repository_curated_venue_mapping
+Lumen Field,Seattle,Estados Unidos,47.5952,-122.3316,America/Los_Angeles,repository_curated_venue_mapping
+Arrowhead Stadium,Kansas City,Estados Unidos,39.0489,-94.4839,America/Chicago,repository_curated_venue_mapping

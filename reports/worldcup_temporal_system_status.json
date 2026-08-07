@@ -1,0 +1,108 @@
+{
+<<<<<<< HEAD
+  "generated_at": "2026-08-06T20:55:52.455806+00:00",
+=======
+  "generated_at": "2026-07-28T19:22:57.970040+00:00",
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+  "project_status": "READY_WITH_LIMITATIONS",
+  "competition_id": "world_cup_2026",
+  "architecture": "event-driven walk-forward temporal reconstruction",
+  "implemented": [
+    "pre-World Cup team, player and context snapshot",
+    "per-record available_at knowledge control",
+    "pre-match prediction files for every match",
+    "post-match error learning for every match",
+    "causal-association analysis and result significance classification",
+    "statistical feature discovery without synthetic variables",
+    "daily and semantic model versions",
+    "group qualification and knockout Monte Carlo simulations",
+    "timestamp-safe missing-information collection",
+    "three dedicated GitHub Actions workflows",
+    "complete post-match ESPN coverage for events, team statistics, player statistics, observed lineups and main referees",
+    "derived post-match player minutes and matchday-squad availability with provenance labels"
+  ],
+  "execution_summary": {
+    "predictions": 104,
+    "post_match_learning_analyses": 104,
+    "daily_model_versions": 36,
+    "semantic_model_versions": 6,
+    "knowledge_ledger_records": 5571,
+    "accepted_temporal_features": 7,
+    "temporal_validation_status": "VALID",
+    "observed_lineup_rows": 5323,
+    "player_match_stat_rows": 5323,
+    "player_availability_rows": 5318,
+    "match_official_rows": 104
+  },
+  "learning_comparison": {
+    "comparison_scope": "Same 72 group-stage matches: frozen pre-tournament model versus walk-forward predictions that used only earlier available results.",
+    "frozen_pre_worldcup_model": {
+      "samples": 72,
+      "outcome_accuracy": 0.486111,
+      "exact_score_accuracy": 0.069444,
+      "mean_log_loss": 1.010979,
+      "mean_brier_score": 0.201134
+    },
+    "progressive_walk_forward_model": {
+      "samples": 72,
+      "outcome_accuracy": 0.541667,
+      "exact_score_accuracy": 0.125,
+      "mean_log_loss": 1.00859,
+      "mean_brier_score": 0.197918
+    },
+    "improvement": {
+      "outcome_accuracy_delta": 0.055556,
+      "exact_score_accuracy_delta": 0.055556,
+      "log_loss_reduction": 0.002389,
+      "brier_score_reduction": 0.003216
+    },
+    "interpretation": "The final model is not retroactively evaluated on past matches; the valid comparison is frozen versus contemporaneous walk-forward prediction."
+  },
+  "temporal_guarantees": {
+    "no_future_records_in_predictions": true,
+    "current_match_result_never_used": true,
+    "knockout_fixture_visibility_valid": true,
+    "workflows_present_and_valid_yaml": true
+  },
+  "data_limitations": [
+    "FIFA ranking and recent pre-Cup match form lack archived timestamps in the supplied repository.",
+    "Pre-Cup injuries, physical condition and recent player minutes remain NA without archived sources.",
+    "Observed lineups and player match statistics were collected after the tournament and are not backdated into historical pre-match snapshots.",
+    "Post-match player minutes are derived and explicitly labeled; xG, xA, ratings and historical pre-match availability remain NA because the supplied sources do not contain them.",
+    "Causal outputs describe observed associations and decisive events, not experimental causal proof."
+  ],
+  "missing_information": {
+    "matches_checked": 104,
+    "open_blocking": 0,
+    "na_after_source_exhaustion": 625
+  },
+  "latest_enrichment": {
+    "queue_items": 0,
+    "resolved_this_run": 0,
+<<<<<<< HEAD
+    "remaining_open": 0,
+    "supplemental_sources_checked": 0
+=======
+    "remaining_open": 0
+>>>>>>> 0fb9a768f5f7adf18fc6e3a227415ccd8e396ee3
+  },
+  "last_historical_collection_check": {
+    "queue_items_checked": 625,
+    "historically_resolved": 0,
+    "kept_as_na": 625
+  },
+  "audit_risks": {
+    "blocking_unmitigated": 0,
+    "open_data_limitations": 2,
+    "controlled_or_mitigated": 4
+  },
+  "final_report": "reports/worldcup_learning_report.json",
+  "validation_report": "reports/temporal_validation_report.json",
+  "audit_report": "reports/worldcup_temporal_repository_audit.json",
+  "next_steps": [
+    "Add archived pre-Cup rankings, results, injury reports and player-minute datasets with published_at timestamps.",
+    "Add archived pre-match lineup and availability publications with trustworthy timestamps to resolve historical pre-match gaps.",
+    "Add independent archived sources for pre-match player workload, injuries, xG, xA or ratings without replacing observed or derived records.",
+    "Evaluate the learned feature set on another tournament before generalizing causal interpretations."
+  ]
+}
